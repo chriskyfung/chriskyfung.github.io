@@ -3,7 +3,10 @@
 		<title>Chris KY, Fung's Homepage</title>
 	</head>
 	<body>
-    		<ul>
+		<h1>Launch New Site</h1>
+		<p>I am going to move my old site "<a herf="http://chrisfung1125.wixsite.com/research-blog">Blog of a POLIDA post-grad II .</a>" now hosting in Wix to this new location. Please keep track the new movement. Thank You!</p>
+		<h2>Resources</h2>
+	 	<ul>
         		<li><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channel</a></li>
         		<li><a href="https://github.com/chriskyfung">github.com/chriskyfung</a></li>
 		</ul>
