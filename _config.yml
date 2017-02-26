@@ -2,4 +2,3 @@ theme: jekyll-theme-architect
 title: Welcome to the Chris KY FUNG's Homepage
 description: Feel free to bookmark this to keep an eye on my project updates
 timezone: HK
-Please <a href="https://github.com/{{ site.github.repository_nwo }}/edit/{{ site.branch }}/{{ page.path }}">help improve this article</a>.
