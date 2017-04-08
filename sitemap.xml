@@ -12,7 +12,7 @@
     {% if page.layout != nil %}
     {% if page.layout != 'feed' %}
     <url>
-        <loc>httpa://chriskyfung.github.io{{ page.url | remove: 'index.html' }}</loc>
+        <loc>https://chriskyfung.github.io{{ page.url | remove: 'index.html' }}</loc>
     </url>
     {% endif %}
     {% endif %}
