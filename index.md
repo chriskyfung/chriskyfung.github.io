@@ -15,7 +15,7 @@
 		  <ul>
 		    <li><a href="https://chriskyfung.github.io/modela_mdx-15_20_control_panel_scilab/">Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</a></li>
 		  </ul>
-		<p>
+		</p>
 	    </div>
 	    
 	    <h1>Resources</h1>
