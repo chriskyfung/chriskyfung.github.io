@@ -4,7 +4,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}
     <url>
-        <loc>httpa://chriskyfung.github.io{{ post.url | remove: 'index.html' }}</loc>
+        <loc>https://chriskyfung.github.io{{ post.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 
