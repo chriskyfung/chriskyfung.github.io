@@ -26,7 +26,7 @@
 	    <h1>Resources</h1>		
 	 	<ul>
 		<li><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">Chris's Research Channel - YouTube</a></li>
-		<li><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks-Hong Kong - YouTube</a>
+		<li><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks-Hong Kong - YouTube</a></li>
 		</ul>
 	</div>
 	</body>
