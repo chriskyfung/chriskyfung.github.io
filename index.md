@@ -17,9 +17,8 @@
 	<div>
 	<h1>Projects</h1>
 	  <ul>
-	    <li><a href="https://craftweeks.github.io/modela_mdx-15_20_control_panel_scilab/">Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</a><br />Screenshot<br />
-
-<a href='https://kl7.info/img-59328e6e79dd9.html'><img src='https://kl7.info/thumb/59328e6e79dd9.png' alt='image'><br />v0.4</a></li>
+	    <li><a href="https://craftweeks.github.io/modela_mdx-15_20_control_panel_scilab/">Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</a><br />
+<a href='https://kl7.info/img-59328e6e79dd9.html'><img src='https://kl7.info/thumb/59328e6e79dd9.png' alt='image'><br />Screenshot of v0.4</a></li>
 	  </ul>
 	</div>
 	<div>
