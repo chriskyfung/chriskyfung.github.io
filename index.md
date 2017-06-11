@@ -22,6 +22,10 @@
 	  </ul>
 	</div>
 	<div>
+	<h1>Give me a help</h1>
+	    <ul><li><a href="https://www.paypal.me/chrisfungky/50">Paypal.me</a></li></ul>
+	</div>
+	<div>
 	    <h1>Resources</h1>		
 	 	<ul>
 		<li><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">Chris's Research Channel - YouTube</a></li>
