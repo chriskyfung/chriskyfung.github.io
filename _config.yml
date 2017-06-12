@@ -9,6 +9,3 @@ paginate_path: "/blog/page:num/"
 
 gems:
   - jekyll-sitemap
-
-image:
-  background: https://scontent.xx.fbcdn.net/v/t1.0-9/19030395_1446916822036408_4482890102250202742_n.png?oh=74d595ba25a2af74100278a100cdb258&oe=599C7223
