@@ -8,7 +8,7 @@
 	<h1>Bio</h1>
 		<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="chris-fung-65390948"><a class="LI-simple-link" href='https://hk.linkedin.com/in/chris-fung-65390948?trk=profile-badge'>Chris Fung</a></div>
 		<p>Hi, my name is Chris FUNG, living in Hong Kong. I am currently a PhD student in Engineering. I am trying to transfer my old research blog to here.</p>
-		<p>I am also a maker and the founder of a local community, called <a href="https://craftweeks.tumblr.com/">Craftweeks - DTClub.swc.HK</a>. Please also visit this website if you're interested in DIY, design and making things.</p>
+		<p>I am also a maker and the founder of a local community, called <a href="https://craftweeks.tumblr.com/">Craftweeks - Hong Kong</a>. Please also visit this website if you're interested in DIY, design and making things.</p>
 	</div>
 	<div>
 		<h1>Launch New Site</h1>
