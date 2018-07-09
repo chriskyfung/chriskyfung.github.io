@@ -18,7 +18,7 @@
 	<h1>Projects</h1>
 	  <ul>
 	    <li><a href="https://craftweeks.github.io/MDX-LabPanel/">Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</a><br />
-<a href='https://kl7.info/img-59328e6e79dd9.html'><img src='https://kl7.info/thumb/59328e6e79dd9.png' alt='image'><br />Screenshot of v0.4</a></li>
+<a href='https://craftweeks.github.io/MDX-LabPanel/'><img src='https://github.com/Craftweeks/MDX-LabPanel/raw/master/Screenshot%20of%20v0.4.1.png' alt='image'><br />Screenshot of v0.4</a></li>
 	  </ul>
 	</div>
 	<div>
@@ -29,7 +29,7 @@
 	    <h1>Resources</h1>		
 	 	<ul>
 		<li><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">Chris's Research Channel - YouTube</a></li>
-		<li><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks-Hong Kong - YouTube</a></li>
+		<li><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Creative Space - YouTube</a></li>
 		</ul>
 	</div>
 	</body>
