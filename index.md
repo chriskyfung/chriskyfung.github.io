@@ -17,8 +17,8 @@
 	<div>
 	<h1>Projects</h1>
 	  <ul>
-	    <li><a href="https://craftweeks.github.io/MDX-LabPanel/">Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</a><br />
-<a href='https://craftweeks.github.io/MDX-LabPanel/'><img src='https://github.com/Craftweeks/MDX-LabPanel/raw/master/Screenshot%20of%20v0.4.1.png' alt='image'><br />Screenshot of v0.4</a></li>
+		  <li><h2><a href="https://www.craftweeks.com/software/mdxlabpanel">MDXLabPanel</a></h2><p>Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</p><p><a href='https://www.craftweeks.com/software/mdxlabpanel'><img src='https://github.com/Craftweeks/MDX-LabPanel/raw/master/Screenshot%20of%20v0.4.1.png' alt='image'><br />Fig. Screenshot of v0.4</a></p></li>
+		  <li><h2><a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr">Amazon Association Ads Loader for Tumblr</a></h2><p></p>A converter to change a Amazon Association Ads script to a HTML tag<p><a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr"><img src="amzn_assoc_loader_for_tumblr.png" width="700"></a></p></li>
 	  </ul>
 	</div>
 	<div>
