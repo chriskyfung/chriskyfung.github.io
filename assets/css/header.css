@@ -9,6 +9,7 @@ header h1 {
   background-color: rgba(2, 62, 95, 0.39);
   padding: 15px;
   font-size: 41px;
+  width: 340px;
 }
 header h2 {
   color: #000000;
@@ -23,11 +24,9 @@ header a.button {
   .inner {
     width: 740px;
   }
-  header h1, header h2 {
-    width: 340px;
-  }
   header h1 {
     font-size: 41px;
+    width: 340px;
   }
   header h2 {
     font-size: 23px;
