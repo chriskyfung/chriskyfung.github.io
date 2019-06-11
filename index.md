@@ -18,13 +18,3 @@ Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine
 
 A converter to change a Amazon Associates Ads script to a HTML tag
 <a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr" target="_blank"><img src="/images/amzn_assoc_loader_for_tumblr.png" width="700"></a>
-
-* * *
-
-### Give me a help
-
-- <a href="https://www.paypal.me/chrisfungky/50" target="_blank">Paypal.me</a>
-
-### More Resources
-- <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel - Ytarget="_blank
-- <a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Creative Space - YouTube</a>
