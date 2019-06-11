@@ -1,15 +1,19 @@
 ---
 layout: default
+comments: true
+
 ---
 <h2 class="title">{{ page.title }}</h2>
 
 <h3 class="date"><info datetime="{{ page.date }}">
 	{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
 </info></h3>
+
 <!-- Post content -->
 <div class="notebody">
 	{{ content }}
 </div>
+
 <!-- Post info -->
 <div class="noteinfo">
 <!-- include some categories and tags maybe? -->
@@ -18,6 +22,6 @@ layout: default
 <hr>
 
 <!-- Post comments -->
-<div class="notecomments">
-	{% include disqus.html %}	 
-</div>
+{% if page.comments %} and a 
+   {% include disqus.html %}
+{% endif %}
