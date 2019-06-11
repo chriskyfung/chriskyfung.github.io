@@ -27,8 +27,9 @@ nav {
   background-color: lightgray;
 }
 nav li {
+  list-style: none;
   font-weight: bold;
-  padding: 5px;
+  padding: 3px 10px;
 }
 footer {
   background-color: dimgray;
