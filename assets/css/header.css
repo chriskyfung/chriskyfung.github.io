@@ -3,8 +3,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 134px;
-    height: 58px;
+    width: 124px;
+    height: 52px;
     padding-top: 22px;
     padding-left: 68px;
     font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
@@ -59,11 +59,14 @@
 @media only screen and (max-width: 479px) { 
   header h1 {
     font-size: 24px;
+    width: 170px;
   }
   header h2 {
     font-size: 18px;
+    width: 100%;
   }
   header a.button {
+    top: -30px;
     right: -30px;
     transform: scale(0.7,0.7);
   }
