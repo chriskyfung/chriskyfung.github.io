@@ -763,7 +763,7 @@ dl dd {
 @media only screen and (max-width: 959px) { }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 718px) and (max-width: 959px) {
   .inner {
     width: 740px;
   }
@@ -792,7 +792,7 @@ dl dd {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 717px) {
+@media only screen and (min-width: 480px) and (max-width: 718px) {
   header h1 {
     font-size: 31px;
     width: 170px;
