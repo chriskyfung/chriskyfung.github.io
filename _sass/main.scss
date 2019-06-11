@@ -1,0 +1,25 @@
+.current {
+  color: green;
+}
+header {
+  background-image: url("/images/header-bg.jpg");  
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-position: center;
+height: 220px;
+}
+header h1 {
+  color: #ffffff;
+  background-color: rgba(2, 62, 95, 0.39);
+  font-size: 300%;
+  padding: 15px;
+}
+header h2 {
+  color: #000000;
+  background-color: rgba(204, 204, 204, 0.91);
+  width: 90%;
+  font-size: 21px;
+}
+header a.button {
+  background: rgba(102, 102, 102, 0.55) url(../images/github-button.png) 0 0 no-repeat;
+}
