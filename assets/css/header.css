@@ -1,18 +1,11 @@
-@media only screen and (max-width: 768px) {
-  header a.button { 
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 124px;
-    height: 52px;
-    padding-top: 22px;
-    padding-left: 68px;
-    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 23px;
-    line-height: 1.2;
-    color: #fff;
-  }
+header h1 {
+  font-size: 41px;
 }
+header h1 {
+  font-size: 41px;
+  width: 820px;
+}
+
 
 @media only screen and (min-width: 718px) and (max-width: 959px) {
   .inner {
@@ -22,10 +15,11 @@
     width: 340px;
   }
   header h1 {
-    font-size: 60px;
+    font-size: 41px;
   }
   header h2 {
-    font-size: 30px;
+    font-size: 23px;
+    width: 100%;
   }
   #main-content {
     width: 490px;
@@ -39,6 +33,22 @@
     padding-right: 0;
     margin-left: 0;
     content: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header a.button { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 124px;
+    height: 52px;
+    padding-top: 22px;
+    padding-left: 68px;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 23px;
+    line-height: 1.2;
+    color: #fff;
   }
 }
 
