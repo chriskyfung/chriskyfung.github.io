@@ -26,13 +26,16 @@ header a.button {
 nav {
   background-color: lightgray;
 }
-nav li {
-  list-style: none;
+nav ul {
   font-weight: bold;
+  list-style: none;
+  display: inline-flex;
+}
+nav li {
   padding: 3px 10px;
 }
 footer {
-  background-color: dimgray;
+  background-color: black;
 }
 
 #footer-copyright {
