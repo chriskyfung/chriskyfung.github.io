@@ -8,6 +8,7 @@ date: 2014-06-13
    <img src="/images/lammps-send-email.webp" alt="image: send email from Lammps"/>
 </div>
 
+
 Molecular dynamics simulations often take long computational times, from several hours to a few days. It is a boring job to monitor the progress of simulations. Very often, we switch to do other work on another computer, but you may be anxious to see the simulation results. So, how can we better spend our time and focus on our research work? Here is one solution to allow the LAMMPS send you an email, so you can no longer actively checking the progress of simulations. It is also important to minimize the idle time and maximize the utility of your computer.
 
 I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-REAXC Libraries. The Linux platform also allows me to work more efficiently on a low end desktop computer that only consists of an Intel Core 2 Duo CPU and 2GB DDRII RAM. So, I am going to show you how to configure the email package and use the shell command of LAMMPS in Ubuntu. You may run the LAMMPS in Microsoft Windows. If so, please read the section at the end of this post.
