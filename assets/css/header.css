@@ -1,11 +1,23 @@
-header h1 {
-  font-size: 41px;
+header {
+  background-image: url("/images/header-bg.jpg");  
+  background-color: #cccccc;
+  background-position: center;
+  height: 140px;
 }
 header h1 {
+  color: #ffffff;
+  background-color: rgba(2, 62, 95, 0.39);
+  padding: 15px;
   font-size: 41px;
+}
+header h2 {
+  color: #000000;
+  background-color: rgba(204, 204, 204, 0.91);
   width: 820px;
 }
-
+header a.button {
+  background: rgba(102, 102, 102, 0.55) url(../images/github-button.png) 0 0 no-repeat;
+}
 
 @media only screen and (min-width: 718px) and (max-width: 959px) {
   .inner {
