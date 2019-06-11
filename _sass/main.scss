@@ -22,11 +22,26 @@ footer {
 #footer-powered {
   text-align: right;
 }
-.post-tags {
-  display: inline;
-  font-family: initial;
-  font-size: initial;
+
+.post-date { 
+  font-size: normal;
+  color: black;
+  white-space: nowrap;
+}
+
+.page-info {
+  margin-bottom: 32pt;
+}
+.date {
+  color: dimgray;
+  font-weight: bold;
+  font-size: smaller;
+  font-family: cursive;
+}
+.page-tags {
+  margin: 20px;
 }
 iframe {
   max-width: 100%;
+
 }
