@@ -23,3 +23,13 @@ header h2 {
 header a.button {
   background: rgba(102, 102, 102, 0.55) url(../images/github-button.png) 0 0 no-repeat;
 }
+footer {
+  background-color: dimgray;
+}
+
+#footer-copyright {
+  text-align: left;
+}
+#footer-powered {
+  text-align: right;
+}
