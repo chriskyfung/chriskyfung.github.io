@@ -2,6 +2,7 @@
 layout: post
 title: "How to Send a Notification from a LAMMPS Simulation to Your Email"
 date: 2014-06-13
+tags: lammps email command-line
 ---
 
 <div style="background-color:#ccc;">
@@ -32,7 +33,3 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 ### For Windows
 
 I have tested this method in Windows. But the same concept should also work in Windows. I found a web page here (http://www.wikihow.com/Send-Email-Using-Telnet), which describes how to use the cmd prompt and telnet commend to ping an SMTP server and send an email. You can try this if you like running LAMMPS in Windows.
-
-* * *
-
-Tags: lammps email command-line
