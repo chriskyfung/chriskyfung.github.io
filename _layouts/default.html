@@ -36,16 +36,17 @@
     </header>
 	  
     {% include navigation.html %}
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          {{ content }}
-        </section>
-      </div>
-    </div>
-    
+    <div>
+	<div id="content-wrapper">
+	<div class="inner clearfix">
+	<section id="main-content">
+	  {{ content }}
+	</section>
+	</div>
+	</div>    
     {% include sidebar.html %}
+    </div>  
+
     {% include footer.html %}
 	
     {% if site.google_analytics %}
