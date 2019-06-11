@@ -791,52 +791,6 @@ dl dd {
   }
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 718px) {
-  .inner {
-    width: 93%;
-  }
-  header {
-    padding: 20px 0;
-  }
-  header .inner {
-    position: relative;
-  }
-  header h1 {
-    font-size: 31px;
-    width: 400px;
-  }
-  header h2 {
-    font-size: 18px;
-    width: 568px;
-  }
-  #main-content,
-  aside#sidebar {
-    float: none;
-    width: 100% ! important;
-  }
-  aside#sidebar {
-    min-height: 0;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-image: none;
-    border-top: solid 1px #ddd;
-  }
-  aside#sidebar a.button {
-    display: none;
-  }
-  #main-content h1:before,
-  #main-content h2:before,
-  #main-content h3:before,
-  #main-content h4:before,
-  #main-content h5:before,
-  #main-content h6:before {
-    padding-right: 0;
-    margin-left: 0;
-    content: none;
-  }
-}
-
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 717px) {
   header h1 {
