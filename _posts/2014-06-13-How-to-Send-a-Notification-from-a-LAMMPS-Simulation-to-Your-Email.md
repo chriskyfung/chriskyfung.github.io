@@ -24,6 +24,7 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
    `shell echo “Email Content“ | mail -s "Title" to-this-email-address`
 
   For examples,
+  
   `shell echo "Simulation has completed" | mail -s "LAMMPS - simulation done" address@email.com`
   
   You can add this line in various places if you want to know the progress of a multi-stage simulation.
