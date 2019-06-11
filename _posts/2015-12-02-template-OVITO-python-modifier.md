@@ -2,7 +2,7 @@
 layout: post
 title: "[template] OVITO python modifier"
 date: 2015-11-27
-tags: OVITIO Python custom-function 
+tags: OVITO Python custom-function 
 ---
 
 OVITO 2.6.0 allows users to program their own modifier in Python. Here provides a template including the common headers and a for-loop for per-particle assignmeet.
