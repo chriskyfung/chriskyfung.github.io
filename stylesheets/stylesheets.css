@@ -467,6 +467,8 @@ header h1 {
 }
 
 header h2 {
+  position: relative;
+  top: 30px;
   width: 540px;
   margin-top: 0;
   margin-bottom: 0;
@@ -790,7 +792,7 @@ dl dd {
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 718px) {
   .inner {
     width: 93%;
   }
@@ -800,35 +802,13 @@ dl dd {
   header .inner {
     position: relative;
   }
-  header h1, header h2 {
-    width: 100%;
-  }
   header h1 {
-    font-size: 48px;
+    font-size: 31px;
+    width: 400px;
   }
   header h2 {
-    font-size: 24px;
-  }
-  header a.button {
-    position: relative;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding: 5px 10px;
-    margin-top: 15px;
-    font-size: 13px;
-    line-height: 1;
-    color: #2879d0;
-    text-align: center;
-    background-color: #9ddcff;
-    background-image: none;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-  }
-  header a.button small {
-    display: inline;
-    font-size: 13px;
+    font-size: 18px;
+    width: 568px;
   }
   #main-content,
   aside#sidebar {
@@ -858,7 +838,28 @@ dl dd {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) { }
+@media only screen and (min-width: 480px) and (max-width: 717px) {
+  header h1 {
+    font-size: 31px;
+    width: 170px;
+  }
+  header h2 {
+    font-size: 18px;
+    width: 100%;
+    top: 0;
+  }
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
+@media only screen and (max-width: 479px) { 
+  header h1 {
+    font-size: 24px;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  header a.button {
+    right: -30px;
+    transform: scale(0.7,0.7);
+  }
+}
