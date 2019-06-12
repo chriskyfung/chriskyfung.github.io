@@ -126,7 +126,5 @@ I hope this article can help you to solve your problem.
 ### References
 
 1. [How to Install Chrome Remote Desktop on Ubuntu 18.04 - Medium](https://medium.com/@vsimon/how-to-install-chrome-remote-desktop-on-ubuntu-18-04-52d99980d83e)
-
 2. [Access another computer with Chrome Remote Desktop - Computer - Google Chrome Help](https://support.google.com/chrome/answer/1649523)
-
 3. [Chrome Remote desktop Install for Linux - Everything Linux 101](https://www.everything-linux-101.com/how-to/remote-control/chrome-remote-desktop-install-for-linux/)
