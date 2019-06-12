@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: OVITIO"
-tag: OVITIO
+title: "Tag: Kubuntu"
+tag: Kubuntu
 robots: noindex
 ---
