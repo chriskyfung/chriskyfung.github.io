@@ -5,21 +5,25 @@ date: 2019-04-04
 tags: Kubuntu remote-desktop linux
 ---
 
-![image: Setup Google Chrome Remote Desktop on Kubuntu 14.04 LTS](Kubuntu_14.04_LTS)
+![image: Setup Google Chrome Remote Desktop on Kubuntu 14.04 LTS](/images/Kubuntu_14.04_LTS)
 
 Teamviewer is the primary choice of cross-platform remote desktop software for Windows, Mac, and Linux systems. It is quite often that universities and institutes have a secured network, therefore traditional VNC connect fails to receive incoming packets via listening ports. The Teamviewer allows PC connections beyond private networks, that are blocked by firewalls or router settings. It is also easy to setup, as it installs its host and client at one time. It is wonderful to remotely access your desktop at anytime and anywhere. Teamviewer is awesome and free for personal, non-commercial use.
 
 Remote desktop is useful for research students and part-time researchers. It assists them to read and download journal papers from the databases subscribed by their universities via remotely access their campus networks. I also use remote desktop to monitor the servers for running simulations. However, accessing campus networks is defined as using in a commercial environment, according to the Teamviewer licenses. For many years, the Teamviewer team had not taken any actions to restrict the above usages. However, it has started to detect invalid connections and delivery 'Commercial use suspected' / 'Commercial use detected' messages since 2018. Once your connection pair is restricted, you have to purchase a [service license](http://bit.ly/2Ia9XIr) or [send an appeal to the Teamviewer](http://bit.ly/2WEkbtI) if you believe you used it for personal use only. The monthly license is not cheap (for students). And, sadly there is no plan or offer for educational use. If you think the price is affordable, I'll recommend you to continue using the Teamviewer, which I think is the best remote desktop software. Otherwise, I suggest you to try Chrome Remote Desktop as an alternative solution.
 
-Chrome Remote Desktop is a free product provided by Google. It is the only one remote desktop software that can access PCs in secured networks as well as the Teamviewer among a bundle of the similar software. If you install the Chrome Remote Desktop on Windows or Mac, there should be no big issues. But if you want to setup it on Linux, you may encounter many troubles. You must correctly install and setup the configurations for the host service on Linux.
+Chrome Remote Desktop is a free product provided by Google. It is the only one remote desktop software that can access PCs in secured networks as well as the Teamviewer among a bundle of the similar software. If you install the Chrome Remote Desktop on Windows or Mac, there should be no big issues. But if you want to setup it on Linux, you may encounter many troubles. You must correctly install and setup the configurations for the host component on Linux.
 
 For Ubuntu users, I think you can find a fix if you use a GNOME or Unity graphical interface. Unfortunately, I didn't find a workable solution for my Kubuntu 14.04 LTS, which operates with a KDE desktop environment. I believe that many Kubuntu users also face the same problem and feel disappointed. So, I write this article to share my solution.
 
-### Procedures
+### **Procedures**
 
 I eventually successfully run the host of Chrome Remote Desktop on my Kubuntu 14.04 LTS. The installation procedures were as below.
 
 #### Part 1 - Installation
+
+Before the following steps, please read the [Google's help document](https://support.google.com/chrome/answer/1649523).
+
+<span style="color:red">Note: ** Ubuntu 12.04 is no longer supported due to outdated chrome version **</span>
 
 **Install Google Chrome**
 
@@ -30,12 +34,13 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
-**Download and Install Chrome Remote Desktop package**
+**Download and Install Chrome Remote Desktop Host Component Package**
 
-Use a browser to download the host installer for Linux, and save to the Download folder under your home directory. Then, run the installer with the following commands.
+Run the following commands to download and install the host component of Chrome Remote Desktop for 64-bit Debian,
 
 ```
-sudo dpkg -i ~/Downloads/chrome-remote-desktop_current_amd64.deb
+wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+sudo dpkg -i chrome-remote-desktop_current_amd64.deb
 sudo apt-get install -f
 ```
 
@@ -48,7 +53,7 @@ sudo usermod -a -G chrome-remote-desktop <username>
 sudo reboot
 ```
 
-### Part 2 - Modify Configurations
+### Part 2 - Edit Configuration Files
 
 Create a file called .chrome-remote-desktop-session in your home directory, and add the following line for Kubuntu,
 
@@ -112,5 +117,7 @@ Now you should able to register your Linux desktop as a computer on your Chrome 
 ### Unsolved Problem
 
 Although the above method can set up the Chrome Remote Desktop on an Ubuntu with KDE desktop, I haven't figure out how to register it as a permanent service. The chrome remote desktop service will not start after rebooting the system. You have to manually launch the Chrome Remote Desktop extension from your Chrome browser. If you know how to set the host as a permanent service, please share your method in the comment section below.
+
+* * *
 
 I hope this article can help you to solve your problem.
