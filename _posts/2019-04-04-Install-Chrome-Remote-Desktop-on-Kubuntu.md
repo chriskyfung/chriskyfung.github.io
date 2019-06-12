@@ -5,7 +5,7 @@ date: 2019-04-04
 tags: Kubuntu remote-desktop linux
 ---
 
-![image: Setup Google Chrome Remote Desktop on Kubuntu 14.04 LTS](/images/Kubuntu_14.04_LTS)
+![image: Setup Google Chrome Remote Desktop on Kubuntu 14.04 LTS](/images/Kubuntu_14.04_LTS.jpg)
 
 Teamviewer is the primary choice of cross-platform remote desktop software for Windows, Mac, and Linux systems. It is quite often that universities and institutes have a secured network, therefore traditional VNC connect fails to receive incoming packets via listening ports. The Teamviewer allows PC connections beyond private networks, that are blocked by firewalls or router settings. It is also easy to setup, as it installs its host and client at one time. It is wonderful to remotely access your desktop at anytime and anywhere. Teamviewer is awesome and free for personal, non-commercial use.
 
@@ -121,3 +121,12 @@ Although the above method can set up the Chrome Remote Desktop on an Ubuntu with
 * * *
 
 I hope this article can help you to solve your problem.
+
+
+### References
+
+1. [How to Install Chrome Remote Desktop on Ubuntu 18.04 - Medium](https://medium.com/@vsimon/how-to-install-chrome-remote-desktop-on-ubuntu-18-04-52d99980d83e)
+
+2. [Access another computer with Chrome Remote Desktop - Computer - Google Chrome Help](https://support.google.com/chrome/answer/1649523)
+
+3. [Chrome Remote desktop Install for Linux - Everything Linux 101](https://www.everything-linux-101.com/how-to/remote-control/chrome-remote-desktop-install-for-linux/)
