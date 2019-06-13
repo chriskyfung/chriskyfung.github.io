@@ -60,8 +60,9 @@
 	  gtag('config', {{ site.google_analytics | prepend: "'"| append: "'" }});
 	</script>
     {% endif %}
-	  
-    {% include viglink.html %}    
+    
+    {% include addthis.html %}
+    {% include viglink.html %}
 	  
   </body>
 </html>

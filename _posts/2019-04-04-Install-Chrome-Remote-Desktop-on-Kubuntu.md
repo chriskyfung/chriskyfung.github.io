@@ -15,6 +15,8 @@ Chrome Remote Desktop is a free product provided by Google. It is the only one r
 
 For Ubuntu users, I think you can find a fix if you use a GNOME or Unity graphical interface. Unfortunately, I didn't find a workable solution for my Kubuntu 14.04 LTS, which operates with a KDE desktop environment. I believe that many Kubuntu users also face the same problem and feel disappointed. So, I write this article to share my solution.
 
+* * *
+
 ### **Procedures**
 
 I eventually successfully run the host of Chrome Remote Desktop on my Kubuntu 14.04 LTS. The installation procedures were as below.
@@ -52,6 +54,8 @@ Use the commands below to add your `<username>` to the chrome-remote-desktop gro
 sudo usermod -a -G chrome-remote-desktop <username>
 sudo reboot
 ```
+
+* * *
 
 ### Part 2 - Edit Configuration Files
 
