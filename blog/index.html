@@ -1,18 +1,14 @@
 ---
 layout: default
-title: Chris KY, Fung's Blog
+title: Blog
 ---
 
+<h2>Latest Posts</h2>
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date | date_to_string }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a> &nbsp; <span class="post-date">({{ post.date | date_to_string }})</span></h3>
+  <p>{{ post.excerpt }}</p>
 {% endfor %}
 
 <!-- Pagination links -->
