@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 
-## Launch New Site
+## Welcome to my New Site
 
-I am going to move my old site "<a href="http://chrisfung1125.wixsite.com/research-blog/" target="_blank">Blog of a POLIDA post-grad II .</a>" now hosting in Wix.com to this new location. Please keep track the new movement. Thank You!
+This site is a new version of my old site "<a href="http://chrisfung1125.wixsite.com/research-blog/" target="_blank">Blog of a POLIDA post-grad II .</a>" which was hosting in Wix.com. Now it has been moved to GitHub page. It should deliver a much faster page loading speed and a nicer display of codes. I hope you will better enjoy my contents.
 
 ## Projects
 
