@@ -3,8 +3,9 @@ title: Chris KY FUNG's GitHub Page
 description: Feel free to bookmark this to keep an eye on my project updates
 timezone: HK
 google_analytics: UA-72575541-9
+disqus: chriskyfung
 permalink: /blog/:year/:month/:day/:title
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num/"
 
 gems:
