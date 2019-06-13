@@ -39,4 +39,4 @@ One little problem is that you have to copy and taste the code to the JavaScript
 * * *
 
 ### _See also_
-- How do I use JavaScript in PDF XChange Editor?
+- [How do I use JavaScript in PDF XChange Editor?](https://www.tracker-software.com/knowledgebase/355-How-do-I-use-JavaScript-in-PDF-XChange-Editor)

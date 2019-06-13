@@ -12,3 +12,9 @@ The research experience let me know that programming and computer skills become 
 * * *
 
 I am also a maker and the founder of a local community, called [Craftweeks](https://www.craftweeks.com). You may also visit www.craftweeks.com and [the YouTube channel](http://youtube.craftweeks.com), if you're interested in designing and making things.
+
+## Vision
+
+Computer programming is one important ability necessary for scientific research. It is not only useful in data analytics and simulations, but also helpful to automate and streamline our daily and research tasks.
+
+I hope all of us can share ideas, codes, tips here, and collaborate to make our programming tasks easier soon.
