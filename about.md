@@ -7,6 +7,8 @@ title: About Me
 
 Hi, my name is Chris KY FUNG, an individual researcher in Engineering living in Hong Kong. Well, I am not a proficient programmer, but I frequently code for my engineering research projects. I mainly used MATLAB when I was studying my MPhil in Computational Intelligence. After graduated, I had participated a research on atomistic simulation of material processing with molecular dynamics (MD) for six years. To conduct such huge simulations, I had to deal and play with Linux servers and High-Performance Computing (HPC). My job also included developing models and data analysis with various programming languages.
 
+Being the exploration of molecular dynamics simulations, I am lucky to touch and use the high-performance computing (HPC) facilities in our university. I believe that HPC will be an essential weapon for various areas, including research, finance, business, etc. Thanks for the efforts of many researchers who developed the codes and tools, which make us more easily analyze and/or simulate the experimental data. I wish I will be able to deliver my research outputs and contribute to the successive development in HPC applications for science too.
+
 The research experience lets me know that programming and computer skills become increasingly important for a wide variety of student and research projects. Many students and researchers are, however, lack of a strong background in computer programming. The computer issues kill a lot of their time and energy, when they have to review papers, conduct experiments, and writing reports and theses. This GitHub Page is to share my programming and computer skills as well as research experience for solving their headaches.
 
 * * *
