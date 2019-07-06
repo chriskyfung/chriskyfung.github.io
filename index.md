@@ -12,7 +12,13 @@ This site is a new version of my old site "<a href="http://chrisfung1125.wixsite
 ### <a href="https://www.craftweeks.com/software/mdxlabpanel" target="_blank">MDXLabPanel</a>
 
 Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine
-<a href='https://www.craftweeks.com/software/mdxlabpanel' target="_blank"><img src='https://github.com/Craftweeks/MDX-LabPanel/raw/master/Screenshot%20of%20v0.4.1.png' alt='image'><br />Fig. Screenshot of v0.4</a>
+<a href='https://www.craftweeks.com/software/mdxlabpanel' target="_blank"><img src='https://github.com/Craftweeks/modela_mdx-15_20_control_panel_scilab/raw/master/Screenshot%20of%20v0.4.1.png' alt='image'><br />Fig. Screenshot of v0.4</a>
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A465478P)
+
+### [AutoFetcher for Saving IG Stories to GDrive](/AutoFetcher-IG-Stories-to-GDrive/)
+
+A Google App Script for deploying a web application that automatically fetches the latest avaliable IG Stories of a target Instagram user to your Google Drive.
 
 ### <a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr" target="_blank">Amazon Associates Ads Loader for Tumblr</a>
 
