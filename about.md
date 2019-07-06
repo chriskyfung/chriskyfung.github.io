@@ -11,6 +11,11 @@ Being the exploration of molecular dynamics simulations, I am lucky to touch and
 
 The research experience lets me know that programming and computer skills become increasingly important for a wide variety of student and research projects. Many students and researchers are, however, lack of a strong background in computer programming. The computer issues kill a lot of their time and energy, when they have to review papers, conduct experiments, and writing reports and theses. This GitHub Page is to share my programming and computer skills as well as research experience for solving their headaches.
 
+<br>
+
+<i class="fa fa-id-card-o"></i> **Public Profiles:** 
+- <i class="fa fa-graduation-cap"></i> **[Google Scholar](https://scholar.google.com.hk/citations?user=UxJpoYcAAAAJ)**
+
 * * *
 
 I am also a maker and the founder of a local community, called [Craftweeks](https://www.craftweeks.com). You may also visit www.craftweeks.com and [the YouTube channel](http://youtube.craftweeks.com), if you're interested in designing and making things.
