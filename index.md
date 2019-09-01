@@ -9,6 +9,18 @@ This site is a new version of my old site "<a href="http://chrisfung1125.wixsite
 
 ## Projects
 
+### [AutoFetcher for Saving IG Stories to GDrive](/AutoFetcher-IG-Stories-to-GDrive/)
+
+A Google App Script for deploying a web application that automatically fetches the latest avaliable IG Stories of a target Instagram user to your Google Drive.
+
+<br>
+
+### [Qwiklabs Complete Indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator)
+
+![Qwiklabs Complete Indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image2.png)
+
+<br>
+
 ### <a href="https://www.craftweeks.com/software/mdxlabpanel" target="_blank">MDXLabPanel</a>
 
 Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine
@@ -16,9 +28,7 @@ Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A465478P)
 
-### [AutoFetcher for Saving IG Stories to GDrive](/AutoFetcher-IG-Stories-to-GDrive/)
-
-A Google App Script for deploying a web application that automatically fetches the latest avaliable IG Stories of a target Instagram user to your Google Drive.
+<br>
 
 ### <a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr" target="_blank">Amazon Associates Ads Loader for Tumblr</a>
 
