@@ -33,3 +33,8 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 ### For Windows
 
 I have tested this method in Windows. But the same concept should also work in Windows. I found a web page here (http://www.wikihow.com/Send-Email-Using-Telnet), which describes how to use the cmd prompt and telnet commend to ping an SMTP server and send an email. You can try this if you like running LAMMPS in Windows.
+
+* * *
+
+Related post: _[Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables
+](/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables)_
