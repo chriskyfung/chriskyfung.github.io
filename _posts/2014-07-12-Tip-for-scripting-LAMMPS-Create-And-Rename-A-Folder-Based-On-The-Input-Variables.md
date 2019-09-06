@@ -62,3 +62,7 @@ $ lammps_linux  -v potential  y1990 -v vx  1.0 < in.script
 ### Results
 
 As the results, the LAMMPS will create a folder **"1.0x100_m_s-1_Tersoff_y1990"** in the current directory. All the log, restart and dump files for this set of variables will be contained under this folder.
+
+* * *
+
+Related post: _[How to Send a Notification from a LAMMPS Simulation to Your Email](/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email)_

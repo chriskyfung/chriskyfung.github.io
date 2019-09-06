@@ -23,3 +23,8 @@ A prototype was developed using Tampermonkey <i class="fa fa-plug"></i> for Goog
 ![demo image](https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png)
 
 For more information, you can visit in my GitHub repository <i class="fa fa-github"></i> ([chriskyfung/qwiklabs-complete-indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator)).
+
+
+* * *
+
+Related post: _[Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)_
