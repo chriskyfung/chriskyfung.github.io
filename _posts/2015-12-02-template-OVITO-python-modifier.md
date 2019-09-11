@@ -2,6 +2,7 @@
 layout: post
 title: "[template] OVITO python modifier"
 date: 2015-11-27
+category: Atomistic
 tags: OVITO Python custom-function 
 ---
 

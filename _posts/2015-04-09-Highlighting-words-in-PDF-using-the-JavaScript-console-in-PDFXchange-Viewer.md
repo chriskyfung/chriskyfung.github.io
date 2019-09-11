@@ -2,6 +2,7 @@
 layout: post
 title: "Highlighting words in PDF using the JavaScript console in PDF-Xchange Viewer"
 date: 2015-04-09
+category: Productivity
 tags: PDF-Viewer shorthand makeuseof
 ---
 

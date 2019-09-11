@@ -2,6 +2,7 @@
 layout: post
 title: "How to Send a Notification from a LAMMPS Simulation to Your Email"
 date: 2014-06-13
+category: Atomistic
 tags: lammps email command-line
 ---
 

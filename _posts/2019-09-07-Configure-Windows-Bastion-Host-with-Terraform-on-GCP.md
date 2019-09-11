@@ -2,6 +2,7 @@
 layout: post
 title: "Configure Secure RDP using a Windows Bastion Host with Terraform on GCP"
 date: 2019-09-07
+category: Cloud
 tags: Qwiklabs Windows_server Google_Cloud Terraform
 ---
 

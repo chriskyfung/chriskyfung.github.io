@@ -2,6 +2,7 @@
 layout: post
 title: "Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables"
 date: 2014-07-12
+category: Atomistic
 tags: lammps linux commend-line
 ---
 
