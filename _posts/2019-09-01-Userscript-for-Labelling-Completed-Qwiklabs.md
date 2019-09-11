@@ -2,6 +2,7 @@
 layout: post
 title: "Userscript for Labelling Completed Qwiklabs"
 date: 2019-09-01
+category: Hack
 tags: Qwiklabs Userscript
 ---
 

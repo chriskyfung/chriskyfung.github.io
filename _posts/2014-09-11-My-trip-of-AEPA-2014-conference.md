@@ -2,6 +2,7 @@
 layout: post
 title: "My trip of AEPA 2014 conference"
 date: 2014-09-12
+category: Research
 tags: conference taiwan
 ---
 

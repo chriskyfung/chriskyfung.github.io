@@ -2,6 +2,7 @@
 layout: post
 title: "My new conference paper is now available online"
 date: 2014-08-22
+category: Research
 tags: conference-paper molecular-dynamics-simulation single-crystal-diamond
 ---
 

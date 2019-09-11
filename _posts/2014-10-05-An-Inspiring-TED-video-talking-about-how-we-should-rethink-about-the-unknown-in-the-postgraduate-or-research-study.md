@@ -2,6 +2,7 @@
 layout: post
 title: "An Inspiring TED video talking about how we should rethink about the unknown in the postgraduate or research study"
 date: 2014-10-05
+category: Research
 tags: TED how-to-research
 ---
 

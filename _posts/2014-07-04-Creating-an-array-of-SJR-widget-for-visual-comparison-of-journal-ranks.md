@@ -2,6 +2,7 @@
 layout: post
 title: "Creating an array of SJR widget for visual comparison of journal ranks"
 date: 2014-07-04
+category: Research
 tags: journal-ranks
 ---
 
