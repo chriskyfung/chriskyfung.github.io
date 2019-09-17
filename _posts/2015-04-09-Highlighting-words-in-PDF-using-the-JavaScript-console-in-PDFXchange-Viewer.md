@@ -7,7 +7,9 @@ category: Productivity
 tags: [PDF Viewer, shorthand, makeuseof]
 ---
 
-For a long time, I have used PDF-Xchange Viewer to the PDF files of ebooks, papers, dissertations, etc. I prefer it rather than Adobe Reader. One of the reasons is because Xchange provides a JavaScript console, which can be invoked by hitting Ctrl+J. Thus, we can attempt to automate some annotations. ; for example, search and highlight words. You can find a source code from the knowledge base of Xchange (http://www.tracker-software.com/knowledgebase/385-How-do-I-Highlight-My-Search-Results). However, the original code can only find words that match exactly. Here, I modified the code in line 10 and thereby it highlights words that contains the text to be searched.
+For a long time, I have used PDF-Xchange Viewer to the PDF files of ebooks, papers, dissertations, etc. I prefer it rather than Adobe Reader. One of the reasons is because Xchange provides a JavaScript console, which can be invoked by hitting Ctrl+J. Thus, we can attempt to automate some annotations; for example, search and highlight words. You can find a source code from the knowledge base of Xchange (http://www.tracker-software.com/knowledgebase/385-How-do-I-Highlight-My-Search-Results). However, the original code can only find words that match exactly. Here, I modified the code in line 10 and thereby it highlights words that contains the text to be searched.
+
+<!--more-->
 
 ### Modified JS script
 

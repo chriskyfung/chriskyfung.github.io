@@ -4,12 +4,15 @@ title: "Userscript for Labelling Completed Qwiklabs"
 author: Chris KY Fung
 date: 2019-09-01
 category: Hack
+permalink: /blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs
 tags: Qwiklabs Userscript
 ---
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of Google Cloud Platform. It has over 400 hands-on labs and quests for learn and practice.
 
 As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results (https://www.qwiklabs.com/catalog). I desired to make a straight-forward way to idenify the catalog items, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Complete Indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator)".
+
+<!--more-->
 
 <br>
 
