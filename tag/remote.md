@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: TED"
-tag: TED
+title: "Tag: remote"
+tag: remote
 robots: noindex
 ---

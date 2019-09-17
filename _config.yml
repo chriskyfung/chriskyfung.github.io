@@ -8,5 +8,6 @@ permalink: /blog/:year/:month/:day/:title
 paginate: 10
 paginate_path: "/blog/page:num/"
 site_url: https://chriskyfung.github.io/
+excerpt_separator: "<!--more-->"
 gems:
   - jekyll-sitemap

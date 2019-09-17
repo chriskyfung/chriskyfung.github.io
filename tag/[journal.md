@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: Ovito"
-tag: Ovito
+title: "Tag: [journal"
+tag: [journal
 robots: noindex
 ---

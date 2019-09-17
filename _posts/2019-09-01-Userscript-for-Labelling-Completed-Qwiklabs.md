@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Userscript for Labelling Completed Qwiklabs"
+author: Chris KY Fung
 date: 2019-09-01
 category: Hack
 tags: Qwiklabs Userscript
