@@ -57,11 +57,15 @@ Keep inside the VM instances console, click **SSH** to launch a terminal and con
 
 In the SSH terminal, update the package index:
 
-```sudo apt-get update```
+```bash
+sudo apt-get update
+```
 
 Install the apache2 package:
 
-```sudo apt-get install apache2 -y```
+```bash
+sudo apt-get install apache2 -y
+```
 
 <br> 
 Copy the External IP of the instance to your web browser. You should see an Apache2 Debian Default Page if the web server is successfully installed.
@@ -70,7 +74,9 @@ Copy the External IP of the instance to your web browser. You should see an Apac
 
 Finally, you have to overwrite the default web page to rendering with **"Hello World!"**:
 
-```echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee /var/www/html/index.html```
+```bash
+echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee /var/www/html/index.html
+```
 
 Refresh the web page in your browser,
 
