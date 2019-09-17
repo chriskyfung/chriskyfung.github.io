@@ -8,11 +8,10 @@ title: Blog
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a> &nbsp; <span class="post-date">({{ post.date | date_to_string }})</span></h3>
-  <p>{{ post.excerpt }}
-    {% if post.header.teaser %}
-      <img src="{{ post.header.teaser }}" width="240px"/>
-    {% endif %}
-  </p>
+  <p>{{ post.excerpt }}</p>
+  {% if post.header.teaser %}
+    <p><img src="{{ post.header.teaser }}" width="240px"/></p>
+  {% endif %}
 {% endfor %}
 
 <!-- Pagination links -->
