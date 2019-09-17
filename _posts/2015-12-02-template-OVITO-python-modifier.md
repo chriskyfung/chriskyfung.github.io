@@ -9,6 +9,8 @@ tags: [OVITO, Python, Ovito custom function]
 
 OVITO 2.6.0 allows users to program their own modifier in Python. Here provides a template including the common headers and a for-loop for per-particle assignmeet.
 
+<!--more-->
+
 ```python
 # Import OVITO modules. 
 

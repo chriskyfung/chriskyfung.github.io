@@ -5,9 +5,10 @@ autor: Chris KY Fung
 date: 2019-09-18
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
-permalink: /qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab/
-excerpt: A lab summary of qwiklab **GSP101** _"Google Cloud Essential Skills&#58; Challenge Lab | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
-teaser: /images/qwiklabs-GSP101-step4-test-custom-default-web-page.png)
+permalink: /blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab
+excerpt: A lab summary of qwiklab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
+header: 
+   teaser: /images/qwiklabs-GSP101-step4-test-custom-default-web-page.png
 
 ---
 

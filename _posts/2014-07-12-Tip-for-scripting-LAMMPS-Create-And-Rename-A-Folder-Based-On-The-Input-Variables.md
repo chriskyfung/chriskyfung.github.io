@@ -15,6 +15,8 @@ It is very useful as it allows to call the system commands and other programs.
 
 ![image: New folder with LAMMPS scripts](/images/new_3folder_80x80.png)
 
+<!--more-->
+
 ### Methods
 
 I use the mkdir and cp commands this time.
