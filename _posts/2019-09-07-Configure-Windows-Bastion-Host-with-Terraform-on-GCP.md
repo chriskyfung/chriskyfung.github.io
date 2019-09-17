@@ -6,6 +6,8 @@ date: 2019-09-07
 category: Cloud
 permalink: /blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook]
+header:
+  teaser: /images/qwiklabs-GSP303-diagram.png
 ---
 
 The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challenging lab that I took in Qwiklabs (here is the [link to the lab](https://www.qwiklabs.com/catalog?keywords=GSP303)). It was a tricky one that I failed and did it a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
