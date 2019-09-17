@@ -5,6 +5,8 @@ author: Chris KY Fung
 date: 2014-07-04
 category: Research
 tags: [journal ranks]
+header:
+  teaser: /images/sjr_widget_array.png
 ---
 
 Impact factor is very useful for us to rank SCI journals. However, I can't access Journal Citation Report (JCR) outside my campus. The browsed section losses if the session time out or restart the browser. Rather than search the information of a journal on the JCR site every time, I made a list to store the journal names and their impact factors in an excel file.  Although I can find the impact factors of the journals that I commonly read, the table does not help me to remember the ranks easily.
