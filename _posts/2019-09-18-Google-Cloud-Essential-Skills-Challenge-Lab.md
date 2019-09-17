@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab"
+autor: Chris KY Fung
 date: 2019-09-18
 category: Cloud
-tags: Qwiklabs Google_Cloud Logbook
-excerpt: A lab summary of qwiklab **GSP101** _"Google Cloud Essential Skills&#58; Challenge Lab
-"_.<br>1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page<br>![Hello World!](/images/qwiklabs-GSP101-step4-test-custom-default-web-page.png)
+tags: [Qwiklabs, Google Cloud, Logbook]
+permalink: /qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab/
+excerpt: A lab summary of qwiklab **GSP101** _"Google Cloud Essential Skills&#58; Challenge Lab | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
+teaser: /images/qwiklabs-GSP101-step4-test-custom-default-web-page.png)
 
 ---
-
 
 Last time I wrote about a challenging lab entited _"[Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)"_ within the Qwiklabs quest of "[Challenge: GCP Architecture](https://google.qwiklabs.com/quests/47)". Different from the normal hand-on-labs in Qwiklabs, the challenge labs do not provide with step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
 
