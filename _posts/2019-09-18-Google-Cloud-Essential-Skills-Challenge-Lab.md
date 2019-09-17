@@ -4,7 +4,7 @@ title: "Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab"
 date: 2019-09-18
 category: Cloud
 tags: Qwiklabs Google_Cloud Logbook
-summary: 'A lab summary of qwiklab GSP101 "Google Cloud Essential Skills: Challenge Lab
+excerpt: 'A lab summary of qwiklab GSP101 "Google Cloud Essential Skills: Challenge Lab
 ". 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page'
 ---
 
