@@ -9,7 +9,7 @@ title: Blog
 {% for post in paginator.posts %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a> &nbsp; <span class="post-date">({{ post.date | date_to_string }})</span></h3>
   <p>{{ post.excerpt }}
-    {% if post.teaser %}
+    {% if post.header.teaser %}
       <img src="{{ post.header.teaser }}" width="240px"/>
     {% endif %}
   </p>
