@@ -5,6 +5,8 @@ author: Chris KY Fung
 date: 2015-03-10
 category: Data-Science
 tags: [MATLAB, MS Excel]
+headr:
+  teaser: /images/excel_addin_menu.png
 ---
 
 This is a tutorial to show the installation of **Spreadsheet Link EX for use with MATLAB and Excel**.
