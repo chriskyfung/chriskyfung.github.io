@@ -5,7 +5,7 @@ author: Chris KY Fung
 date: 2014-08-22
 category: Research
 tags: [conference paper, molecular-dynamics, single crystal diamond]
-execrpt: K.Y. Fung, C.Y. Tang, Chi Fai Cheung, W.C. Law (2014). Molecular Dynamics Simulation of Plastic Deformation of Diamond at an Elevated Temperature.  Key Engineering Materials, 626, 329. doi:10.4028/www.scientific.net/KEM.626.329
+excerpt: K.Y. Fung, C.Y. Tang, Chi Fai Cheung, W.C. Law (2014). Molecular Dynamics Simulation of Plastic Deformation of Diamond at an Elevated Temperature.  Key Engineering Materials, 626, 329. doi:10.4028/www.scientific.net/KEM.626.329
 
 ---
 
