@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher"
+author: Chris KY Fung
 date: 2019-04-04
 category: Utilties
-tags: Kubuntu remote-desktop linux
+tags: [Kubuntu, remote desktop, linux]
 ---
 
 ![image: Setup Google Chrome Remote Desktop on Kubuntu 14.04 LTS](/images/Kubuntu_14.04_LTS.jpg)

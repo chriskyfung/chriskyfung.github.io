@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: shorthand"
-tag: shorthand
+title: "Tag: [TED,"
+tag: [TED,
 robots: noindex
 ---

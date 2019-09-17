@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Working MATLAB with MS Excel"
+author: Chris KY Fung
 date: 2015-03-10
 category: Data-Science
-tags: MATLAB MS-Excel
+tags: [MATLAB, MS Excel]
 ---
 
 This is a tutorial to show the installation of **Spreadsheet Link EX for use with MATLAB and Excel**.

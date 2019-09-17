@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "My new conference paper is now available online"
+author: Chris KY Fung
 date: 2014-08-22
 category: Research
-tags: conference-paper molecular-dynamics-simulation single-crystal-diamond
+tags: [conference paper, molecular-dynamics, single crystal diamond]
 ---
 
 ### Molecular Dynamics Simulation of Plastic Deformation of Diamondat an Elevated Temperature
