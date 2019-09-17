@@ -243,7 +243,12 @@ terraform apply
 
 After the cloud infrastructure are deployed to your GCP project, you need to install IIS in Windows 2016 Server inside the instance `vm-securehost` to finish the lab. You can follow this [installation guide](https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/) (https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/).
 
+Congratulations! You should accomplish the lab if you follow all above steps.
 
 * * *
 
-Related post: _[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)_
+Related post: 
+
+- _[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)_
+
+- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab)_
