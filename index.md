@@ -7,7 +7,9 @@ title: Home
 
 This site is a new version of my old site "<a href="http://chrisfung1125.wixsite.com/research-blog/" target="_blank">Blog of a POLIDA post-grad II .</a>" which was hosting in Wix.com. Now it has been moved to GitHub page. It should deliver a much faster page loading speed and a nicer display of codes. I hope you will better enjoy my contents.
 
-## <i class='fas fa-graduation-cap'></i> Academic Projects
+## Academic Projects
+
+_keywords: Molecular Dynamics, LAMMPS, OVITO_ 
 
 ### <i class='fas fa-atom'></i> [Skills and User Tips for "Large-scale Atomic/Molecular Massively Parallel Simulator" (LAMMPS)](/tag/lammps)
 
@@ -16,7 +18,9 @@ This site is a new version of my old site "<a href="http://chrisfung1125.wixsite
 - [template] OVITO python modifier
 
 
-## <i class='fas fa-shapes'></i> Personal Projects
+## Personal Projects
+
+_keywords: Instagram, Qwiklabs, CNC Milling, Tumblr_ 
 
 ### <i class="fab fa-instagram"></i>  [AutoFetcher for Saving IG Stories to GDrive](/AutoFetcher-IG-Stories-to-GDrive/) <i class='fas fa-cloud-download-alt'></i><i class='fab fa-google-drive'></i>
 
