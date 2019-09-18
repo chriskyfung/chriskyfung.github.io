@@ -22,7 +22,7 @@ This site is a new version of my old site "<a href="http://chrisfung1125.wixsite
 
 A Google App Script for deploying a web application that automatically fetches the latest avaliable IG Stories of a target Instagram user to your Google Drive.
 
-### <i class='fas fa-flask'></i> [Qwiklabs Complete Indicator](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs) <i class='fas fa-tasks'></i>
+### <i class='fas fa-flask'></i> [Qwiklabs Complete Indicator](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs) <i class='fas fa-tasks'></i>
 
 ![Qwiklabs Complete Indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image2.png)
 
