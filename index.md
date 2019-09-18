@@ -9,7 +9,7 @@ This site is a new version of my old site "<a href="http://chrisfung1125.wixsite
 
 ## <i class='fas fa-graduation-cap'></i> Academic Projects
 
-### <i class='fas fa-atom'></i> [Skills and User Tips for for "Large-scale Atomic/Molecular Massively Parallel Simulator" (LAMMPS)](/tag/lammps)
+### <i class='fas fa-atom'></i> [Skills and User Tips for "Large-scale Atomic/Molecular Massively Parallel Simulator" (LAMMPS)](/tag/lammps)
 
 - How to Send a Notification from a LAMMPS Simulation to Your Email
 - Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables
