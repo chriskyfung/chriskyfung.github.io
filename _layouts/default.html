@@ -18,8 +18,27 @@
     <![endif]-->
 
     <title>{{ page.title }} - {{ site.title | default: site.github.repository_name }}</title>
-	<meta name="author" content={{ site.github.owner_name }}>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content={{ site.github.owner_name }}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.title %}
+      <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+      <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+    {% if page.description %}
+      <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+      <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.og.image %}
+      <meta content="{{ page.og.image }}" property="og:image">
+    {% elsif page.image %}
+      <meta content="{{ page.image }}" property="og:image">
+    {% else %}
+      <meta content="{{ site.url }}/images/header-bg.jpg" property="og:image">
+    {% endif %}
+{% endif %}
+
   </head>
 
   <body>
