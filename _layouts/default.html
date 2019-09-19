@@ -21,7 +21,7 @@
     <meta name="author" content={{ site.github.owner_name }}>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if page.title %}
-      <meta content="{{ page.title }}" property="og:title">
+      <meta content="{{ page.title }} - {{ site.title | default: site.github.repository_name }}" property="og:title">
     {% else %}
       <meta content="{{ site.title }}" property="og:title">
     {% endif %}
