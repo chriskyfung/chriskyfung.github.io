@@ -13,7 +13,7 @@ I like storing each set of the simulation results to a well-labelled folder. Thi
 
 It is very useful as it allows to call the system commands and other programs.
 
-![image: New folder with LAMMPS scripts](/images/new_3folder_80x80.png)
+![image: New folder with LAMMPS scripts](/images/posts/lammps/new_3folder_80x80.png)
 
 <!--more-->
 
