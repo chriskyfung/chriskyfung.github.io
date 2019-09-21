@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab"
-autor: Chris KY Fung
+author: Chris KY Fung
 date: 2019-09-18
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab
-excerpt: A lab summary of qwiklab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
+excerpt: A lab summary of qwiklab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab" | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
 header: 
-   teaser: /images/qwiklabs-GSP101-step4-test-custom-default-web-page.png
+   teaser: /images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png
 
 ---
 
@@ -22,10 +22,10 @@ This time is about the easiest lab in the challenge quest -- **GSP101** _"[Googl
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101](/images/score_box_of_qwiklabs_GSP101.png)
+![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP101.png)
 
 
-This lab requires:
+The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
 1. Create a Linux virtual machine, name it `apache` and specify the zone as `us-central1-a` with necessary firewall rules (`allow HTTP`).
 
@@ -42,13 +42,13 @@ To create a Compute Engine instance, the most easy way is through the GCP web co
 - Make sure you give the instance a name, called `apache`, and
 - Select `Allow HTTP traffic` in the Firewall section.
 
-![Create a GCP VM instance called apache via GCP web console](/images/qwiklabs-GSP101-step1-create-GCP-VM-instance.png)
+![Create a GCP VM instance called apache via GCP web console](/images/posts/qwiklabs/qwiklabs-GSP101-step1-create-GCP-VM-instance.png)
 
-![Select allow HTTP traffic in the firewall setting](/images/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting.png)
+![Select allow HTTP traffic in the firewall setting](/images/posts/qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting.png)
 
 You can leave other fields with the default settings, then click **Create**.
 
-![Check your progress: Created Compute Engine instance, called apache](/images/qwiklabs-GSP101-check-progress1-VM-created.png)
+![Check your progress: Created Compute Engine instance, called apache](/images/posts/qwiklabs/qwiklabs-GSP101-check-progress1-VM-created.png)
 
 <br>
 
@@ -73,7 +73,7 @@ sudo apt-get install apache2 -y
 <br> 
 Copy the External IP of the instance to your web browser. You should see an Apache2 Debian Default Page if the web server is successfully installed.
 
-![Apache2 Debian Default Page](/images/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance.png)
+![Apache2 Debian Default Page](/images/posts/qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance.png)
 
 Finally, you have to overwrite the default web page to rendering with **"Hello World!"**:
 
@@ -83,11 +83,14 @@ echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee
 
 Refresh the web page in your browser,
 
-![Hello World!](/images/qwiklabs-GSP101-step4-test-custom-default-web-page.png)
-
+![Hello World!](/images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png)
 
 Congratulations! You should accomplish the lab if you follow all above steps.
 
 * * *
 
-Related post: _[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)_
+Related post:
+
+- _[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)_
+
+- _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)_

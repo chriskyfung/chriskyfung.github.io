@@ -25,11 +25,11 @@ After you logged in to Qwiklabs, you can see there are five training catalogies,
 - Machine Learning
 - Security, Backup & Recovery
 
-![Five default training catagories defined by Qwiklabs](/images/qwiklabs-default-catagories.png)
+![Five default training catagories defined by Qwiklabs](/images/posts/qwiklabs/qwiklabs-default-catagories.png)
 
 You can start your training based on your goal and purpose, or find the quests for Google Cloud Platform using the filter function available on the Catalog page. Qwiklabs grouped different kinds of labs into 56 quests for learning GCP, and divided them to 4 levels: Introductory, Fundammental, Advanced, and Expert. You may also look for the resources by search, but the results are sorted by relevance rather than an appropiate order for study or learning. As a result, I tried to organise the Qwiklabs quests to the diagram below. I hope this visual map will help you or any beginners to better seek your desired learning paths.
 
-![Using filter to find quests for Google Cloud Platform on Qwiklabs Catalog page](/images/qwiklabs-catalog-with-quest-filter-for-gcp.png)
+![Using filter to find quests for Google Cloud Platform on Qwiklabs Catalog page](/images/posts/qwiklabs/qwiklabs-catalog-with-quest-filter-for-gcp.png)
 
 <br>
 
