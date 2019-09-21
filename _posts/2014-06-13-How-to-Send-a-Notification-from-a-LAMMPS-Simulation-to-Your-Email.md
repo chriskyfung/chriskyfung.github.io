@@ -8,7 +8,7 @@ tags: lammps email command-line
 ---
 
 <div style="background-color:#ccc;">
-   <img src="/images/lammps-send-email.webp" alt="image: send email from Lammps"/>
+   <img src="/images/posts/lammps/lammps-send-email.webp" alt="image: send email from Lammps"/>
 </div>
 
 
