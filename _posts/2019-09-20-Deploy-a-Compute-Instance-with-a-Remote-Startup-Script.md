@@ -7,6 +7,8 @@ tags: Qwiklabs Google_Cloud Logbook
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
+redirect_from:
+ - /blog/2019/09/20/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
 excerpt: A lab summary of qwiklab GSP301 "Deploy a Compute Instance with a Remote Startup Script" | 1. Download Sample Startup Script | 2. Upload the Startup Script to a Cloud Storage Bucket | 3. Configure Metadata in Creating VM instance | 4. Inspect Instance Correctly Running Startup Script
 header: 
    teaser: /images/posts/qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata.png
@@ -51,7 +53,7 @@ First of all, find **Sample Startup Script** below the Start button and the time
 Add a new **User**,type `allUsers` to the name field, and choose **Reader**.<br>
 ![Confirm the install-web.sh file become pubilcly accessible](/images/posts/qwiklabs/qwiklabs-GSP301-make-install-web-sh-publicly-accessible.png)<br>
 
-5. Click the filename and copy the URL, i.e. `gs://.../install-web.sh` for later use.<br>![](/images/posts/qwiklabs/qwiklabs-GSP301-obtain-gs-url-startup-script-file.png)
+5. Click the filename and copy the URL, i.e. `gs://.../install-web.sh` for later use.<br>![Object details in Cloud Storage](/images/posts/qwiklabs/qwiklabs-GSP301-obtain-gs-url-startup-script-file.png)
 
 ## Configure Metadata in Creating VM instance
 
@@ -85,6 +87,6 @@ Congratulations! You should accomplish the lab if you follow all above steps.
 
 Related posts:
 
-- _[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)_
+- _[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
 
-- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab)_
+- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_

@@ -5,6 +5,8 @@ author: Chris KY Fung
 date: 2019-09-01
 category: Hack
 permalink: /blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs
+redirect_from:
+ - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs
 tags: Qwiklabs Userscript
 header:
   teaser: https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png
@@ -35,6 +37,6 @@ For more information, you can visit in my GitHub repository <i class="fa fa-gith
 * * *
 
 Related posts:
-- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab)_
+- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
 
 - _[Qwiklabs/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)_
