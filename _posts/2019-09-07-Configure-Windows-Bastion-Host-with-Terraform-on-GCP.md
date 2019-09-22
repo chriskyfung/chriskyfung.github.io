@@ -5,6 +5,8 @@ author: Chris KY Fung
 date: 2019-09-07
 category: Cloud
 permalink: /blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
+redirect_from:
+ - /blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook]
 header:
   teaser: /images/posts/qwiklabs/qwiklabs-GSP303-diagram.png
@@ -255,6 +257,6 @@ Congratulations! You should accomplish the lab if you follow all above steps.
 
 Related posts: 
 
-- _[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)_
+- _[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
 
-- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab)_
+- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
