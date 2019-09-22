@@ -56,7 +56,7 @@ The prototyped tool can help you visually identify the completed catalog items w
 
 ![demo image](https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png)
 
-For more information, you can read my post _"[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)"_
+For more information, you can read my post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)"_
 
 
 <br>
@@ -72,4 +72,4 @@ Related post:
 
 _[Qwiklabs/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)_
 
-)[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab)_
+)[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_

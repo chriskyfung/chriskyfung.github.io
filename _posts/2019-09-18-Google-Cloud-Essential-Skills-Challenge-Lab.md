@@ -6,6 +6,8 @@ date: 2019-09-18
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab
+redirect_from:
+ - /blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab
 excerpt: A lab summary of qwiklab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab" | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
 header: 
    teaser: /images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png
@@ -91,6 +93,6 @@ Congratulations! You should accomplish the lab if you follow all above steps.
 
 Related post:
 
-- _[Userscript for Labelling Completed Qwiklabs](/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs)_
+- _[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
 
 - _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)_
