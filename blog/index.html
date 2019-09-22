@@ -22,6 +22,11 @@ title: Blog
       <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
       {% endfor %}
     </span>
+    {% if post.content contains "<!--more-->" %}
+      <div style="text-align:right;">
+        <a href="{{ post.url }}" style="color:#000;"> Read More </a>
+      </div>
+    {% endif %}
   </div>
 {% endfor %}
 

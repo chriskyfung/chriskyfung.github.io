@@ -37,7 +37,7 @@ Scilab-Programmed GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A465478P)
 
-### <i class='fab fa-amazon'></i><i class='fab fa-tumblr-square'></i> <a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr" target="_blank">Amazon Associates Ads Loader for Tumblr</a> <i class='fab fa-js'></i>
+### <i class='fab fa-tumblr-square'></i><i class='fab fa-amazon'></i> <a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr" target="_blank">Amazon Associates Ads Loader for Tumblr</a> <i class='fab fa-js'></i>
 
 A converter to change a Amazon Associates Ads script to a HTML tag
 <a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr" target="_blank"><img src="/images/projects/amzn_assoc_loader_for_tumblr.png" width="700"></a>
