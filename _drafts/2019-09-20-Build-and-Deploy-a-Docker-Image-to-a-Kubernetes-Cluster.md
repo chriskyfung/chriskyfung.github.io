@@ -1,10 +1,16 @@
 ---
 layout: post
 title:  "Qwiklab/Logbook: Build and Deploy a Docker Image to a Kubernetes Cluster"
+author: Chris KY Fing
 date: 2019-09-11 21:12
 category: Cloud
-tags: Qwiklabs Google_Cloud Logbook
-summary: 
+tags: [Qwiklabs, Google Cloud, Logbook]
+permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
+redirect_from:
+ - /blog/2019/09/20/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
+excerpt: A lab summary of qwiklab GSP303 "Configure a Firewall and a Startup Script with Deployment Manager" | 1.  | 2.  | 3.  | 4. 
+header: 
+   teaser: /images/posts/qwiklabs/
 ---
 
 ## Brief Introduction of Challenge Scenario
