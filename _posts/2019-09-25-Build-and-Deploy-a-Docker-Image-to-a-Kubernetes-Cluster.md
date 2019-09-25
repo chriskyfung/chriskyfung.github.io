@@ -54,7 +54,8 @@ If you do not remember how to build a docker image on GCP, I recommend you revis
 2. The `echo-web.tar.gz` file has already been copied to a Google Cloud storage bucket called `gs://[PROJECT_ID]` during the lab provision. Navigate to **_Storage_**, confirm the file exists in the bucket. Then, click the file name and copy the URL of the file from its detail page.<br>
 ![Look for the given archive in Cloug Storage](/images/posts/qwiklabs/qwiklabs-GSP304-step2-echo-web-tar-gz-in-cloud-storage.png)
 
-3. Open a Cloud Shell, use the following commands to copy and unzip `echo-web.tar.gz` to the shell environment:<br>
+3. Open a Cloud Shell, use the following commands to copy and unzip `echo-web.tar.gz` to the shell environment:
+
 ```bash
 export PROJECT_ID=$(gcloud info --format='value(config.project)')
 gsutil cp gs://${PROJECT_ID}/echo-web.tar.gz .
@@ -62,9 +63,9 @@ gsutil cp gs://${PROJECT_ID}/echo-web.tar.gz .
 ```
 
 4. Build a docker image of the sample application with a tag called `v1`, and push the image to Google Container Registry,
+
 ```bash
 docker build -t echo-app:v1 .
-
 docker tag echo-app:v1 gcr.io/${PROJECT_ID}/echo-app:v1
 docker push gcr.io/${PROJECT_ID}/echo-app:v1
 ```
@@ -113,23 +114,27 @@ Click **Expose** to create the service.<br>
 Alternatively, you can deploy the application using cloud shell instead.
 After creating your cluster, you need to get authentication credentials to interact with the cluster.
 
-To authenticate the cluster run the following command, 
+To authenticate the cluster run the following command,
+
 ```bash
 gcloud container clusters get-credentials echo-cluster
 ```
 
 Run the following `kubectl run` command in Cloud Shell to create a new Deployment `echo-app` from the `echo-app` container image with opening TCP port 8000:
+
 ```bash
 kubectl run echo-app --image=gcr.io/${PROJECT_ID}/echo-app:v1 --port 8000
 ```
 
 Now create a Kubernetes Service, which is a Kubernetes resource that lets you expose your application (that responds on **port 8000**) to external traffic that respond to normal web requests on **port 80**, by running the following `kubectl expose` command:
+
 ```bash
 kubectl expose deployment echo-app --name echo-web --type="LoadBalancer"
  --type LoadBalancer --port 80 --target-port 8000
 ```
 
 Inspect the `echo-web` Service by running kubectl get:
+
 ```bash
 kubectl get service echo-web
 ```
