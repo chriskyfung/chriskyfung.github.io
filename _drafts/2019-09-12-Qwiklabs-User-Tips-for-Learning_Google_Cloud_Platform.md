@@ -68,7 +68,7 @@ For more information, you can read my post _"[Userscript for Labelling Completed
 
 * * *
 
-Related post: 
+Related posts: 
 
 _[Qwiklabs/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)_
 

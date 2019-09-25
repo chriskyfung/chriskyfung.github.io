@@ -207,6 +207,8 @@ Congratulations! You should accomplish the lab if you follow all above steps.
 
 * * *
 
+If you finished the first three labs of the challenge quest, you are capable of building linux-based web servers on Google Cloud. How about a Windows server, do you know how to set up an IIS web server on it and allow RDP access through the VPC network? [Next lab](https://chriskyfung.github.io/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP) is a challenge of configuring a secure Windows web server with a Bastion host (or jumpbox).
+
 **Related posts:**
 
 - _[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_

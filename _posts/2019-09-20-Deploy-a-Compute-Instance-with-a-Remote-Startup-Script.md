@@ -85,7 +85,9 @@ Congratulations! You should accomplish the lab if you follow all above steps.
 
 * * *
 
-Related posts:
+With the GCP web console, you can to set up a VM instance as a web server without touch any codes. In this lab, you also automate the installation of web server packages using a startup script. But if you need to repeatedly deploy cloud resources more systematically, you go for Cloud Deployment Manager. [Next lab](/blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager) tests your proficiency of building a deployment template for creating a VM instance with appropriate firewall rule for HTTP traffic.
+
+**Related posts:**
 
 - _[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
 
