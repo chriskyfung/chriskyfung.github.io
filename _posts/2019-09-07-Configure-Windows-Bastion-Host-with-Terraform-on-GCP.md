@@ -255,7 +255,9 @@ Congratulations! You should accomplish the lab if you follow all above steps.
 
 * * *
 
-Related posts: 
+[Next lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you will be examined the skils for building and deloplying a containerized application with Docker and Google Kubernetes Engine.
+
+**Related posts:**
 
 - _[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
 

@@ -20,7 +20,7 @@ If you read my [last post](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challeng
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP301.png)
+![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP301](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP301.png)
 
 
 The screenshot above shows that there are 4 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
