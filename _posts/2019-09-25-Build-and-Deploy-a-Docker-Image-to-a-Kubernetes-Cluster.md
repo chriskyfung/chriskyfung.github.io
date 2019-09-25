@@ -48,13 +48,13 @@ I recommend starting from preparing the hardware because the process takes time.
 
 If you do not remember how to build a docker image on GCP, I recommend you revise the lab _"[Introduction to Docker](https://www.qwiklabs.com/focuses/1029?parent=catalog)"_ before you start.
 
-1. (_Optional_)  While the provisioning of lab resources, you may click the [link](https://www.qwiklabs.com/instructions/162200/download) below the timer to download the given archive called `echo-web.tar.gz`. You may spend some time to study the contained files in your local storage.
+1. (_Optional_)  While the provisioning of lab resources, you may click the [link](https://www.qwiklabs.com/instructions/162200/download) below the timer to download the given archive called `echo-web.tar.gz`. You may spend some time to study the contained files in your local storage.<br>
 ![Download "Sample Application with Docker Configuration"](/images/posts/qwiklabs/qwiklabs-GSP304-step1-Download-Sample-Application-Files.png)
 
-2. The `echo-web.tar.gz` file has already been copied to a Google Cloud storage bucket called `gs://[PROJECT_ID]` during the lab provision. Navigate to **_Storage_**, confirm the file exists in the bucket. Then, click the file name and copy the URL of the file from its detail page.
+2. The `echo-web.tar.gz` file has already been copied to a Google Cloud storage bucket called `gs://[PROJECT_ID]` during the lab provision. Navigate to **_Storage_**, confirm the file exists in the bucket. Then, click the file name and copy the URL of the file from its detail page.<br>
 ![Look for the given archive in Cloug Storage](/images/posts/qwiklabs/qwiklabs-GSP304-step2-echo-web-tar-gz-in-cloud-storage.png)
 
-3. Open a Cloud Shell, use the following commands to copy and unzip `echo-web.tar.gz` to the shell environment:
+3. Open a Cloud Shell, use the following commands to copy and unzip `echo-web.tar.gz` to the shell environment:<br>
 ```bash
 export PROJECT_ID=$(gcloud info --format='value(config.project)')
 gsutil cp gs://${PROJECT_ID}/echo-web.tar.gz .
@@ -69,7 +69,7 @@ docker tag echo-app:v1 gcr.io/${PROJECT_ID}/echo-app:v1
 docker push gcr.io/${PROJECT_ID}/echo-app:v1
 ```
 
-5. In the web console, navigate to _**Container Registry > Images**_ to confirm the docker image has been pushed to the cloud repositories.
+5. In the web console, navigate to _**Container Registry > Images**_ to confirm the docker image has been pushed to the cloud repositories.<br>
 ![Confirm your docker image existing in Google Container Registry](/images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png)
 
 Next, you need to deploy the application to the Kubernetes Cluster. There are two ways to do this: (1) deploy using web console, and (2) deploy using Cloud Shell. You can choose either way to finish the lab.
@@ -78,21 +78,21 @@ Next, you need to deploy the application to the Kubernetes Cluster. There are tw
 
 ## Deploy the Application to the Kubernetes Cluster Using Web Console (Method #1)
 
-1. In the Container Registry page, click the image name **echo-app**. There should be an image version with a tag `v1` . Click three-dots icon (<i class='fas fa-ellipsis-v'></i>) and select **Deploy to GKE**.
+1. In the Container Registry page, click the image name **echo-app**. There should be an image version with a tag `v1` . Click three-dots icon (<i class='fas fa-ellipsis-v'></i>) and select **Deploy to GKE**.<br>
 ![Deploy an image to GKE using web console](/images/posts/qwiklabs/qwiklabs-GSP304-step4-deploy-docker-image-in-container-registry.png)
 
-2. The web console will be redirected to _**Kubernetes Engine**_ > **Create a deployment** dialog,
+2. The web console will be redirected to _**Kubernetes Engine**_ > **Create a deployment** dialog,<br>
 ![select a container image in Create a deployment dialog](/images/posts/qwiklabs/qwiklabs-GSP304-step5-create-a-deployment-to-GKE.png)
 Click **CONTINUE**.
 
-3. In the Configuration section, enter `echo-app` as the application name and choose `echo-cluster` as the cluster in which the deployment will be created.
+3. In the Configuration section, enter `echo-app` as the application name and choose `echo-cluster` as the cluster in which the deployment will be created.<br>
 ![edit configuration in Create a deployment dialog](/images/posts/qwiklabs/qwiklabs-GSP304-step6-create-a-deployment-to-GKE-configuration.png)
 Click **CREATE NEW CLUSTER**.
 
-4. Navigate to _**Kubernetes Engine > Workload**_ page, wait the status of the deployment becomes **OK**.
+4. Navigate to _**Kubernetes Engine > Workload**_ page, wait the status of the deployment becomes **OK**.<br>
 ![Confirm the deployment status](/images/posts/qwiklabs/qwiklabs-GSP304-step7-deployed-echo-app.png)
 
-5. Click the name **echo-app**, then click **Expose** displayed at the top right corner of the Deploymemt Details page to create a service for the deployment.
+5. Click the name **echo-app**, then click **Expose** displayed at the top right corner of the Deploymemt Details page to create a service for the deployment.<br>
 ![Snapshot of Deploymemt Details page](/images/posts/qwiklabs/qwiklabs-GSP304-step8-details-of-echo-app.png)
 
 6. In the **Expose a deployment** dialog, configure the service with a new port mapping as below:
@@ -102,10 +102,10 @@ Click **CREATE NEW CLUSTER**.
 - Service type: `Load balancer`
 - Service name: `echo-web`<br>
 ![Snapshot of Expost a deployment dialog](/images/posts/qwiklabs/qwiklabs-GSP304-step9-Port-mapping-with-Load-balancer.png)
-Click **Expose** to create the service.
+Click **Expose** to create the service.<br>
 ![Service details page of the deployed GKE service](/images/posts/qwiklabs/qwiklabs-GSP304-step10-Service-details-of-echo-web.png)
 
-7. In the service details, copy and open the IP address of the external endpoints in a new tab of your browser. The sample application should look like:
+7. In the service details, copy and open the IP address of the external endpoints in a new tab of your browser. The sample application should look like:<br>
 ![Snapshot of the deployed echo-web application](/images/posts/qwiklabs/qwiklabs-GSP304-step11-deployed-echo-web.png)
 
 ## Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method #2)
@@ -134,7 +134,7 @@ Inspect the `echo-web` Service by running kubectl get:
 kubectl get service echo-web
 ```
 
-Copy and open the IP address of the external endpoints in a new tab of your browser, the sample application should look like:
+Copy and open the IP address of the external endpoints in a new tab of your browser, the sample application should look like:<br>
 ![Snapshot of the deployed echo-web application](/images/posts/qwiklabs/qwiklabs-GSP304-step11-deployed-echo-web.png)
 
 Congratulations! You should accomplish the lab if you follow the above steps.
