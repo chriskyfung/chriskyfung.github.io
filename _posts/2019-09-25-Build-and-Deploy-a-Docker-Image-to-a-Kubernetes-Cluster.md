@@ -68,6 +68,7 @@ docker build -t echo-app:v1 .
 docker tag echo-app:v1 gcr.io/${PROJECT_ID}/echo-app:v1
 docker push gcr.io/${PROJECT_ID}/echo-app:v1
 ```
+
 5. In the web console, navigate to _**Container Registry > Images**_ to confirm the docker image has been pushed to the cloud repositories.
 ![Confirm your docker image existing in Google Container Registry](/images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png)
 
