@@ -55,7 +55,6 @@ If you do not remember how to build a docker image on GCP, I recommend you revis
 ![Look for the given archive in Cloug Storage](/images/posts/qwiklabs/qwiklabs-GSP304-step2-echo-web-tar-gz-in-cloud-storage.png)
 
 3. Open a Cloud Shell, use the following commands to copy and unzip `echo-web.tar.gz` to the shell environment:
-
 ```bash
 export PROJECT_ID=$(gcloud info --format='value(config.project)')
 gsutil cp gs://${PROJECT_ID}/echo-web.tar.gz .
@@ -63,7 +62,6 @@ gsutil cp gs://${PROJECT_ID}/echo-web.tar.gz .
 ```
 
 4. Build a docker image of the sample application with a tag called `v1`, and push the image to Google Container Registry,
-
 ```bash
 docker build -t echo-app:v1 .
 docker tag echo-app:v1 gcr.io/${PROJECT_ID}/echo-app:v1
