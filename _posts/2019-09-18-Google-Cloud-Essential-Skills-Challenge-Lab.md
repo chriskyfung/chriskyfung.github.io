@@ -91,8 +91,9 @@ Congratulations! You should accomplish the lab if you follow all above steps.
 
 * * *
 
-Related post:
+Creating a Compute Engine instance as a web server using the web console is pretty basic. It is always a good start for you to build anything from scratch, and manually install packages via an SSH terminal. Alternatively, you can initialize identical instances with a startup script automatically, and you can practise it in the next lab, _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)_.
+
+
+**Related post:**
 
 - _[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
-
-- _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)_
