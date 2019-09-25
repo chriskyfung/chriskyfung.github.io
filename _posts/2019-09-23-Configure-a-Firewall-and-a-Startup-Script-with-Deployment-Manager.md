@@ -7,7 +7,7 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
 redirect_from:
- - /blog/2019/09/20/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
+ - /blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
 excerpt: A lab summary of qwiklab GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
 header: 
    teaser: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
@@ -24,7 +24,7 @@ the Qwiklabs quest called [Deployment Manager](https://www.qwiklabs.com/quests/3
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP302.png)
+![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP302](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP302.png)
 
 The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
