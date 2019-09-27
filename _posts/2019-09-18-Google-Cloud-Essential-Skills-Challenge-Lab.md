@@ -26,7 +26,6 @@ When you open the page of this lab in Qwiklabs, you can find the task requiremen
 
 ![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP101.png)
 
-
 The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
 1. Create a Linux virtual machine, name it `apache` and specify the zone as `us-central1-a` with necessary firewall rules (`allow HTTP`).

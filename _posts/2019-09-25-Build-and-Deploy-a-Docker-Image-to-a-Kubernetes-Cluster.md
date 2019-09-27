@@ -8,20 +8,20 @@ tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
 permalink: /blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster
 redirect_from:
  - /blog/2019/09/25/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster
-excerpt: A lab summary of qwiklab GSP304 "Configure a Firewall and a Startup Script with Deployment Manager" | 1. Create a Kubernetes Cluster | 2. Build a Docker Image of Sample Application | 3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)  | 3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)
-
+excerpt: A lab summary of qwiklab GSP304 "Build and Deploy a Docker Image to a Kubernetes Cluster" | 1. Create a Kubernetes Cluster | 2. Build a Docker Image of Sample Application | 3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)  | 3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)
 header: 
    teaser: /images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png
 ---
 
 Containerization with Docker and Kubernetes (K8s) is an emerging application architecture for deploying, scaling and managing distributed applications. The challenge lab **GSP304** _"[Build and Deploy a Docker Image to a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1738?parent=catalog)"_ is a test to assess the essential professional skills in deploying your application on GKE.
 
-
 ## Brief Introduction of Challenge Scenario
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 ![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP304](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP304.png)
+
+The screenshot above shows that there are 4 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
 1. Use the sample application and docker configuration to build a docker image, and push the image to the gcr.io repository with a `v1` tag.
 
@@ -143,6 +143,8 @@ Copy and open the IP address of the external endpoints in a new tab of your brow
 Congratulations! You should accomplish the lab if you follow the above steps.
 
 * * *
+
+[Next lab](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster) will continue this exercise and need to update the running `echo-app` application in the `echo-web` deployment from the v1 to the v2.
 
 **Related post:**
 
