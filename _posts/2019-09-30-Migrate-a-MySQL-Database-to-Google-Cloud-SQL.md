@@ -119,7 +119,7 @@ Click **IMPORT** button at the top of the page, click **Browse** to select the d
 
 While the database is importing to the cloud SQL, choose **USERS** tab and click **Create user account**. In the dialog, enter `blogadmin` as the user name and `Password1*` as the password.
 
-![Add blogadmin to ](/images/posts/qwiklabs/qwiklabs-GSP306-step7-create-user-in-cloud-sql.png)
+![Add blogadmin to ](/images/posts/qwiklabs/qwiklabs-GSP306-step6-create-databases-in-cloud-sql.png)
 
 Choose **CONNETIONS** tab, under the Public IP click **Add network**. Copy the IP of the Demo Blog site to the Network field and format the number in form of a CIDR noatatoin `X.X.X.0/24`. Click **Done** and **Save** to authorize the VM instance `blog` to access the Cloud SQL.
 
