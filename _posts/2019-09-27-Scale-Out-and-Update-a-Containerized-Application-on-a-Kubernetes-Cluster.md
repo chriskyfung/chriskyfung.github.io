@@ -91,7 +91,7 @@ In this article, I will show you the method using the GCP web console. If you pr
 
 Navigate to _**Kubernetes Engine > Workloads**_, click the name `echo-web` to show the Deployment details. Press the <i class='fas fa-list-ul'></i> icon to expand the menu and select **Scale**.<br>
 
-![Seletet Scale from menu items on Deployment details page](/images/posts/qwiklabs/qwiklabs-GSP305-step2-select-scale-from-expanded-menu-in-Kubernetes-Engine-page.png)
+![Seletet Scale from menu items on Deployment details page](/images/posts/qwiklabs/qwiklabs-GSP305-step4-select-scale-from-expanded-menu-in-Kubernetes-Engine-page.png)
 
 In the Scale dialog, type 2 to the field **Replicas**,
 
@@ -105,6 +105,8 @@ Open the IP address of the external endpoint, you should see a similiar web resp
 Congratulations! You should accomplish the lab if you follow the above steps.
 
 * * *
+
+Do you feel this lab difficult for you? [Next lab](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL) will be even more challenging, but do not stop here. That is the final lab of the quest. You can earn a badge very soon!
 
 **Related post:**
 
