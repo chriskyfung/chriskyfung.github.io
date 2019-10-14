@@ -22,7 +22,8 @@ If you read my [last post](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challeng
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 ![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP301](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP301.png)
-
+<p class="img-caption">Fig. Screenshot of Qwiklabs hands-on-lab GSP301 score box
+</p>
 
 The screenshot above shows that there are 4 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -37,7 +38,7 @@ The screenshot above shows that there are 4 steps required for completing this l
 <br>
 
 ![Schematic diagram of Qwiklabs GSP301: Deploy a Compute Instance with a Remote Startup Script](/images/posts/qwiklabs/qwiklab-GSP301-schematic.png)
-<small class="img-caption">Schematic diagram of GSP301: Deploy a Compute Instance with a Remote Startup Script</small>
+<p class="img-caption">Fig. Schematic diagram of GSP301: Deploy a Compute Instance with a Remote Startup Script</p>
 
 <br>
 
@@ -46,6 +47,7 @@ The screenshot above shows that there are 4 steps required for completing this l
 First of all, find **Sample Startup Script** below the Start button and the timer of the lab. Then, download the startup script file to your computer. This lab requires a minute for provisioning lab resoureces. You may make use of this interval to download the file or take a drink.
 
 ![download sample startup script below the qwiklabs start button and lab timer](/images/posts/qwiklabs/qwiklabs-GSP301-download-startup-script-file.png)
+<p class="img-caption">Fig. Download sample startup script below the qwiklabs start button and lab timer</p>
 
 ## Upload the Startup Script to a Cloud Storage Bucket
 
@@ -60,6 +62,7 @@ Add a new **User**,type `allUsers` to the name field, and choose **Reader**.<br>
 ![Confirm the install-web.sh file become pubilcly accessible](/images/posts/qwiklabs/qwiklabs-GSP301-make-install-web-sh-publicly-accessible.png)<br>
 
 5. Click the filename and copy the URL, i.e. `gs://.../install-web.sh` for later use.<br>![Object details in Cloud Storage](/images/posts/qwiklabs/qwiklabs-GSP301-obtain-gs-url-startup-script-file.png)
+<p class="img-caption">Fig. Confirm the startup script file become pubilcly accessible</p>
 
 ## Configure Metadata in Creating VM instance
 
@@ -73,6 +76,7 @@ If you want to learn more, please refer [Running Startup Scripts](https://cloud.
 <br>
 5. Click **Create** to create the instance.
 ![Successfully created instance-1](/images/posts/qwiklabs/qwiklabs-GSP301-check-progress-created-instance-1.png)
+<p class="img-caption">Fig. The new Compute Engine, `instance-1`</p>
 
 ## Inspect Instance Correctly Running Startup Script
 
@@ -82,9 +86,11 @@ If you want to learn more, please refer [Running Startup Scripts](https://cloud.
 3. The startup script automatically installs the Apache web server software while creating the VM instance. You should able to find the log events about downloading the startup script and installing the apache packages.
 ![Serial Log: downloading startup script](/images/posts/qwiklabs/qwiklabs-GSP301-logs-of-serial-port-1.png)<br><br>
 ![Serial Logs: installing Apache with startup script](/images/posts/qwiklabs/qwiklabs-GSP301-apache-installation-in-logs-of-serial-port-1.png)
+<p class="img-caption">Fig. Logs that shows the execution of the startup script</p>
 
 4. Open the external IP in your web browser. You should view the Apache default page, if the startup script has been successfully executed.
 ![Apache2 Debian Default Page](/images/posts/qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance.png)
+<p class="img-caption">Fig. The Apache web server installed by the startup script</p>
 
 Congratulations! You should accomplish the lab if you follow all above steps.
 
