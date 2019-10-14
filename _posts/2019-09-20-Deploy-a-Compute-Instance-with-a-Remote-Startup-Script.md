@@ -10,6 +10,8 @@ permalink: /blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
 redirect_from:
  - /blog/2019/09/20/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
 excerpt: A lab summary of qwiklab GSP301 "Deploy a Compute Instance with a Remote Startup Script" | 1. Download Sample Startup Script | 2. Upload the Startup Script to a Cloud Storage Bucket | 3. Configure Metadata in Creating VM instance | 4. Inspect Instance Correctly Running Startup Script
+description:
+A step-by-step guilde for deploying a VM instance with automaticlly installing Apache web server package by using a Remote Startup Script on Google Cloud Platform.
 header: 
    teaser: /images/posts/qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata.png
 ---
@@ -35,6 +37,10 @@ The screenshot above shows that there are 4 steps required for completing this l
 
 <br>
 
+![Schematic diagram of Qwiklabs GSP301: Deploy a Compute Instance with a Remote Startup Script](/images/posts/qwiklabs/qwiklab-GSP301-schematic.png)<br><small class="img-caption">Schematic diagram of GSP301: Deploy a Compute Instance with a Remote Startup Script</small>
+
+<br>
+
 ## Download Sample Startup Script
 
 First of all, find **Sample Startup Script** below the Start button and the timer of the lab. Then, download the startup script file to your computer. This lab requires a minute for provisioning lab resoureces. You may make use of this interval to download the file or take a drink.
@@ -43,11 +49,11 @@ First of all, find **Sample Startup Script** below the Start button and the time
 
 ## Upload the Startup Script to a Cloud Storage Bucket
 
-1. In the web console, go to **_Storage_**.
+1. In the web console, navigate to **_Storage_**.
 2. Create a bucket with a unique bucket name.
 3. Upload the `install-web.sh` file to the bucket.
 4. Make the file publicly accessible (This ensures the file can be access by the VM instance deployed soon).
- <br>![GCP web console](/images/posts/qwiklabs/qwiklabs-GSP301-edit-file-permission-in-GCP-storage-bucket.png)<br>
+ <br>![Edit the file permissions in Cloud Storage using GCP web console](/images/posts/qwiklabs/qwiklabs-GSP301-edit-file-permission-in-GCP-storage-bucket.png)<br>
  Click the three dots (<i class='fas fa-ellipsis-v'></i>) icon at the right end of the filename. Choose **_Edit permissions_** in the dropdown menu.<br>
 ![Add allUsers and Reader access to the file](/images/posts/qwiklabs/qwiklabs-GSP301-add-allusers-read-permission-to-install-web-sh.png)<br>
 Add a new **User**,type `allUsers` to the name field, and choose **Reader**.<br>
@@ -58,7 +64,7 @@ Add a new **User**,type `allUsers` to the name field, and choose **Reader**.<br>
 ## Configure Metadata in Creating VM instance
 
 1. Go to **_Compute Engine_**, create a new VM instance.
-2. Select `Allow HTTP traffic` in the Firewall section.
+2. Select `Allow HTTP traffic` under the Firewall section.
 ![Firewall rule setting for creating a VM instance](/images/posts/qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting.png)
 3. Expand **Management, security, disks, networking, sole tenancy**.
 4. In the Metadata section, add `startup-script-url` and paste the URL of the script file as the key value.
@@ -73,8 +79,7 @@ If you want to learn more, please refer [Running Startup Scripts](https://cloud.
 1. Wait for the new VM instance startup.
 2. Click the instance name to open its Details tab. Then, expand the Logs and click **Serial port 1 (console)**.
 ![Serial port logs showing in the Details tab of instance-1](/images/posts/qwiklabs/qwiklabs-GSP301-view-serial-port-of-created-vm-instance.png)
-installs the Apache web server software
-3. You should able to find the lines about downloading the startup script and installing the apache packages.
+3. The startup script automatically installs the Apache web server software while creating the VM instance. You should able to find the log events about downloading the startup script and installing the apache packages.
 ![Serial Log: downloading startup script](/images/posts/qwiklabs/qwiklabs-GSP301-logs-of-serial-port-1.png)<br><br>
 ![Serial Logs: installing Apache with startup script](/images/posts/qwiklabs/qwiklabs-GSP301-apache-installation-in-logs-of-serial-port-1.png)
 
