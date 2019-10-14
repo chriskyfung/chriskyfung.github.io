@@ -38,10 +38,10 @@ The screenshot above shows that there are 6 steps required for completing this l
 
 ## Step 1 - Create a VM instance
 
-To create a Compute Engine instance, the most easy way is through the GCP web console. In the Console, navigate to _Navigation menu_ > _Compute Engine_ > _VM instances_. When you create a new VN instance,
+To create a Compute Engine instance, the most easy way is through the GCP web console. In the Console, navigate to _Compute Engine_ > _VM instances_. When you create a new VN instance,
 
 - Make sure you give the instance a name, called `apache`, and
-- Select `Allow HTTP traffic` in the Firewall section.
+- Select `Allow HTTP traffic` under the Firewall section.
 
 ![Create a GCP VM instance called apache via GCP web console](/images/posts/qwiklabs/qwiklabs-GSP101-step1-create-GCP-VM-instance.png)
 
@@ -53,7 +53,7 @@ You can leave other fields with the default settings, then click **Create**.
 
 <br>
 
-## Install Apache and Overwrite Default Web Page
+## Step 2 - Install Apache and Overwrite Default Web Page
 
 After the VM instance is really, you have to configure it as an Apache webserver. If you do not remember how to install Apache, I advise you look up the **_command lines_** from the lab **GSP212** _"[VPC Flow Logs - Analyzing Network Traffic](https://www.qwiklabs.com/catalog?keywords=GSP212)"_.
 
