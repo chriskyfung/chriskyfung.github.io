@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: OVITO"
-tag: OVITO
+title: "Tag: shorthand"
+tag: shorthand
 robots: noindex
 ---

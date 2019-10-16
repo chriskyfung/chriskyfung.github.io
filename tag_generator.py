@@ -2,7 +2,7 @@
 
 '''
 tag_generator.py
-Copyright 2017 Long Qian
+Copyright 2017, 2019 Long Qian, Chris K. Fung
 Contact: lqian8@jhu.edu
 This script creates tags for your Jekyll blog hosted by Github page.
 No plugins required.
@@ -22,7 +22,8 @@ for filename in filenames:
     crawl = False
     for line in f:
         if crawl:
-            current_tags = line.strip().split()
+            current_tags = line.replace("[", ",").replace("]", "").strip().split(",")  # line.strip().split()
+            current_tags = [ c.strip() for c in current_tags]
             if current_tags[0] == 'tags:':
                 total_tags.extend(current_tags[1:])
                 crawl = False
