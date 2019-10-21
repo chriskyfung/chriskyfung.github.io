@@ -79,7 +79,7 @@ sudo ln -s $HOME/terraform
 cd $HOME
 source ~/.bashrc
 
-# CCreate a directory for your Terraform configuration
+# Create a directory for your Terraform configuration
 terraform --version
 ```
 
@@ -241,6 +241,9 @@ resource "google_compute_instance" "vm_instance" {
 }
 ```
 ### Deploy the Terraform Configuration
+
+Use the following codes to initatize and apply the Terraform to build the infrastructures,
+
 ```
 terraform fmt
 terraform init
