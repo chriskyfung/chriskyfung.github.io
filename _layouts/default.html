@@ -35,7 +35,7 @@
     {% elsif page.image %}
       <meta content="{{ page.image }}" property="og:image">
     {% elsif page.header.teaser %}
-      <meta content="{{ page.header.teaser }}" property="og:image">
+      <meta content="{{ site.url }}{{ page.header.teaser }}" property="og:image">
     {% else %}
       <meta content="{{ site.url }}/images/header-bg.jpg" property="og:image">
     {% endif %}
