@@ -13,7 +13,9 @@ header:
    teaser: /images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png
 ---
 
-In the [last lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you built a docker image and created a Kubernetes cluster for a containerized application, called `echo-app`. Considering your developer team delivers a new version of the application to you, so you need to update the running application on the cluster to the new version. You may also need to scale the cluster size to optimize the usage and performance. You will do this in the lab **GSP304** _"[Build and Deploy a Docker Image to a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1738?parent=catalog)"_. This lab will provision the application `echo-app:v1`, as the same in the previous lab. You will continue practising with the `echo-app` application in the `echo-web` deployment, and update its version from v1 to v2.
+<!--more-->
+
+In the [last lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you built a docker image and created a Kubernetes cluster for a containerized application, called `echo-app`. Considering your developer team delivers a new version of the application to you, so you need to update the running application on the cluster to the new version. You may also need to scale the cluster size to optimize the usage and performance. You will do this in the lab **GSP305** _"[Scale Out and Update a Containerized Application on a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1739?parent=catalog)"_. This lab will provision the application `echo-app:v1`, as the same in the previous lab. You will continue practising with the `echo-app` application in the `echo-web` deployment, and update its version from v1 to v2.
 
 <br>
 
@@ -91,7 +93,7 @@ In this article, I will show you the method using the GCP web console. If you pr
 
 Navigate to _**Kubernetes Engine > Workloads**_, click the name `echo-web` to show the Deployment details. Press the <i class='fas fa-list-ul'></i> icon to expand the menu and select **Scale**.<br>
 
-![Seletet Scale from menu items on Deployment details page](/images/posts/qwiklabs/qwiklabs-GSP305-step4-select-scale-from-expanded-menu-in-Kubernetes-Engine-page.png)
+![Select Scale from menu items on Deployment details page](/images/posts/qwiklabs/qwiklabs-GSP305-step4-select-scale-from-expanded-menu-in-Kubernetes-Engine-page.png)
 
 In the Scale dialog, type 2 to the field **Replicas**,
 
