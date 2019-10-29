@@ -13,6 +13,8 @@ header:
    teaser: /images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png
 ---
 
+<!--more-->
+
 Containerization with Docker and Kubernetes (K8s) is an emerging application architecture for deploying, scaling and managing distributed applications. The challenge lab **GSP304** _"[Build and Deploy a Docker Image to a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1738?parent=catalog)"_ is a test to assess the essential professional skills in deploying your application on GKE.
 
 ## Brief Introduction of Challenge Scenario
@@ -52,13 +54,13 @@ If you do not remember how to build a docker image on GCP, I recommend you revis
 ![Download "Sample Application with Docker Configuration"](/images/posts/qwiklabs/qwiklabs-GSP304-step1-Download-Sample-Application-Files.png)
 
 2. The `echo-web.tar.gz` file has already been copied to a Google Cloud storage bucket called `gs://[PROJECT_ID]` during the lab provision. Navigate to **_Storage_**, confirm the file exists in the bucket. Then, click the file name and copy the URL of the file from its detail page.<br>
-![Look for the given archive in Cloug Storage](/images/posts/qwiklabs/qwiklabs-GSP304-step2-echo-web-tar-gz-in-cloud-storage.png)
+![Look for the given archive in Cloud Storage](/images/posts/qwiklabs/qwiklabs-GSP304-step2-echo-web-tar-gz-in-cloud-storage.png)
 
 3. Open a Cloud Shell, use the following commands to copy and unzip `echo-web.tar.gz` to the shell environment:
 ```bash
 export PROJECT_ID=$(gcloud info --format='value(config.project)')
 gsutil cp gs://${PROJECT_ID}/echo-web.tar.gz .
-`tar -xvzf echo-web.tar.gz`
+tar -xvzf echo-web.tar.gz
 ```
 
 4. Build a docker image of the sample application with a tag called `v1`, and push the image to Google Container Registry,
