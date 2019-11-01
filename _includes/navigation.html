@@ -11,11 +11,11 @@
   <div class="gcse-search"></div>
   <script>
     function toggleSearchBar() {
-      var displaySearchBar = document.querySelector("#___gcse_0").style.display;
-      if ( displaySearchBar == "none") {
-        displaySearchBar = "block";
+      var searchBar = document.querySelector("#___gcse_0");
+      if ( searchBar.style.display == "block") {
+        searchBar.style.display = "none";
       } else {
-        displaySearchBar = "none";
+        searchBar.style.display = "block";
       }
     }
   </script>    
