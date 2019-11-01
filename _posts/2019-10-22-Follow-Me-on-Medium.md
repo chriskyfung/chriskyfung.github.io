@@ -6,9 +6,8 @@ category: Chris KY Fung
 author: Chris K. Fung
 tags: [changelog, Qwiklabs, Medium]
 summary: Follow me on Medium, the Qwiklabs tips are now reissued now to it!
-header:
-    teaser: /images/posts/qwiklabs/medium_profile.png
-
+header: 
+   teaser: /images/posts/qwiklabs/medium_profile_top.png
 ---
 
 Recently, I started publishing on Medium. I will gradually reissue my Qwiklabs articles to Medium platform. Not all, but some posts will be updated and/or upgraded with high resolution images. Although the contents may not be quite different, Medium is a great platform for readers, with no Ads, consistent styling and formatting, highlighting and interactive inline-commenting features.
