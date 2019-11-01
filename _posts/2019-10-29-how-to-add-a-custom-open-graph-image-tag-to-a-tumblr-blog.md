@@ -70,15 +70,22 @@ Log in your Tumblr account and go to edit the HTML code of your theme. Next, add
 
     {block:IfOGTags}
         <!-- og -->
+        <meta property="og:title" content="{block:PostSummary}{PostSummary} - {/block:PostSummary}{block:DayPage}{DayOfMonth} {ShortMonth} - {/block:DayPage}{block:TagPage}#{Tag} - {/block:TagPage}{block:SearchPage}{SearchQuery} - {/block:SearchPage}" />
+        <meta property="og:site_name" content="{title}" />
+        <meta property="og:locale" content="zh_HK"/>
+        <meta property="og:locale:alternate" content="zh_tw" />
+        <meta property="og:locale:alternate" content="en_US" />
+        {block:Description}
+            <meta property="og:description" content="{MetaDescription}" />
+        {/block:Description}
         {block:IndexPage}
             <meta property="og:type" content="website" />
-            {block:Description}
-                <meta property="og:description" content="{MetaDescription}" />
-            {/block:Description}
+            <meta property="og:url" content="{URL}" />
             <meta property="og:image" content="{PortraitURL-128}"/>
         {/block:IndexPage}
         {block:PermalinkPage}
             <meta property="og:type" content="article" />
+            <meta property="og:url" content="{Permalink}" />
             {block:Posts}
                 {block:Text}
                     <meta property="og:image" content="https://<your-github-page-url>/og-images/{PostID}.png"/>
@@ -106,6 +113,7 @@ Log in your Tumblr account and go to edit the HTML code of your theme. Next, add
         {/block:PermalinkPage}
     {/block:IfOGTags}
 ```
+Please replace the `og:locale` tags with your languages, you can find the choices from [Yoast SEO's Knowledge Base](https://kb.yoast.com/kb/changing-the-og-locale-output/)
 
 The above code specifies the `og:image` of all Text posts to point at **`https://<your-github-page-url>/og-images/{PostID}.png`**. For example:
 - `https://res.example.com/og-images/1234.png` _(with custom domain)_, or
