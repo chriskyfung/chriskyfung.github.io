@@ -7,14 +7,14 @@
   {% endfor %}
   <li id="toggle-search"><i class="fas fa-search" onclick="toggleSearchBar()"></i></li>
   </ul>
-</nav>
-
-<script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+  <script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
   <div class="gcse-search"></div>
-
-<script>
-  document.querySelector("#___gcse_0").hidden = false;
-  function toggleSearchBar() {
-    document.querySelector("#___gcse_0").hidden = ! document.querySelector("#___gcse_0").hidden;
-  }
-</script>
+  <script>
+      window.onload = function () {
+        document.querySelector("#___gcse_0").hidden = false;
+      }  
+      function toggleSearchBar() {
+        document.querySelector("#___gcse_0").hidden = ! document.querySelector("#___gcse_0").hidden;
+      }
+    </script>    
+</nav>
