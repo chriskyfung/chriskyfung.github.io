@@ -4,6 +4,7 @@ title: Follow Me on Medium !
 date: 2019-10-22 18:15
 category: Chris KY Fung
 author: Chris K. Fung
+category: Announcement
 tags: [changelog, Qwiklabs, Medium]
 summary: Follow me on Medium, the Qwiklabs tips are now reissued now to it!
 header: 

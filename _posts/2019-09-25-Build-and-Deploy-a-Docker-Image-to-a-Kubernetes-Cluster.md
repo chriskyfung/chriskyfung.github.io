@@ -144,6 +144,8 @@ Copy and open the IP address of the external endpoints in a new tab of your brow
 
 Congratulations! You should accomplish the lab if you follow the above steps.
 
+This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-build-and-deploy-a-docker-image-to-a-kubernetes-cluster-778e99626f30).
+
 * * *
 
 [Next lab](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster) will continue this exercise and need to update the running `echo-app` application in the `echo-web` deployment from the v1 to the v2.

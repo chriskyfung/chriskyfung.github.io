@@ -256,6 +256,8 @@ After the cloud infrastructure are deployed to your GCP project, you need to ins
 
 Congratulations! You should accomplish the lab if you follow all above steps.
 
+This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-secure-rdp-using-a-windows-bastion-host-with-terraform-on-gcp-26d2311a35b3).
+
 * * *
 
 [Next lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you will be examined the skils for building and deloplying a containerized application with Docker and Google Kubernetes Engine.
