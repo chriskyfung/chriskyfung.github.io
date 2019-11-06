@@ -207,6 +207,8 @@ In the web console, navigate to **_Deployment Manager_** to monitor the progress
 
 Congratulations! You should accomplish the lab if you follow all above steps.
 
+This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-a-firewall-and-a-startup-script-with-deployment-manager-342f822e5595).
+
 * * *
 
 If you finished the first three labs of the challenge quest, you are capable of building linux-based web servers on Google Cloud. How about a Windows server, do you know how to set up an IIS web server on it and allow RDP access through the VPC network? [Next lab](https://chriskyfung.github.io/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP) is a challenge of configuring a secure Windows web server with a Bastion host (or jumpbox).

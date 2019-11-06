@@ -106,6 +106,8 @@ Open the IP address of the external endpoint, you should see a similiar web resp
 
 Congratulations! You should accomplish the lab if you follow the above steps.
 
+This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-scale-out-and-update-a-containerized-application-on-a-kubernetes-cluster-e08aa89e6aee).
+
 * * *
 
 Do you feel this lab difficult for you? [Next lab](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL) will be even more challenging, but do not stop here. That is the final lab of the quest. You can earn a badge very soon!
