@@ -16,6 +16,7 @@ header:
 
 **Tumblr**  is a popular micro-blogging and social media platform, which is lightweight and highly-customizable with HTML, CSS and JavaScript. It is completely free without storage and bandwidth limits, like Facebook, Twitter, Blogger and Medium, but you can tailor-made your theme and use your custom domain name. It also allows monetizing with Google Adsense. Tumblr is a good alternative of WordPress and GitHub Page for hosting blog websites because no complex PHP or Jekyll knowledge is required. But the shortage of Tumblr includes slow page speed and limited SEO settings. On the whole, Tumblr is a great blogging platform for beginners. You can make use of the following plugins, tools, tips-and-tricks to enrich your Tumblr sites.
 
+<!--more-->
 <br>
 
 ## Personalize Your Tumblr Site:
