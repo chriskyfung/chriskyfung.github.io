@@ -146,5 +146,7 @@ I hope you think this trick is helpful, and share with other Tumblr bloggers. If
 * * *
 
 **Related project:**
-
 <i class='fab fa-tumblr-square'></i> [Tumblr Quick Tools in Python](https://github.com/chriskyfung/pytumblrtools) <i class='fab fa-python'></i>
+
+**Related post:**
+[Featured Tips, Tricks, and Tools for Tumblr Bloggers](/blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers)
