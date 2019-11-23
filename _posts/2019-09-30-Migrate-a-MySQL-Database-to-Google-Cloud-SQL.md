@@ -15,7 +15,7 @@ header:
 
 <!--more-->
 
-This is the last article of the series about the Qwiklabs quest **_"Challenge: GCP Architecture"_**. Compared to the previous labs, this one is more practical and also valuable for non-developers. We will touch a WordPress site in the lab **GSP306** _"[Migrate a MySQL Database to Google Cloud SQL](https://www.qwiklabs.com/focuses/1740?parent=catalog)"_ this time. It is useful if you are going to move or integrate your applications with flexiable and scalable Cloud SQL service.
+This is the last article of the series about the Qwiklabs quest **_"Challenge: GCP Architecture"_**. Compared to the previous labs, this one is more practical and also valuable for non-developers. We will touch a WordPress site in the lab **GSP306** _"[Migrate a MySQL Database to Google Cloud SQL](https://www.qwiklabs.com/focuses/1740?parent=catalog)"_ this time. It is useful if you are going to move or integrate your applications with flexible and scalable Cloud SQL service.
 
 An existing WordPress installation in the Compute Instance called `blog` that is already running in the lab. The blog is connecting with a MySQL database running on the same server. You need to migrate the local database to Google Cloud SQL, and reconfigure the WordPress to access the Cloud database instead.
 
@@ -59,7 +59,7 @@ In the web console, navigate to _**SQL**_ and click **Create instance**. Choose 
 
 ![Create Cloud SQL Instance on GCP](/images/posts/qwiklabs/qwiklabs-GSP306-step3-Create-Cloud-SQL-Instance-on-GCP.png)
 
-Wait for the instance to be initiatized, usually the process takes 5 to 10 minutes.
+Wait for the instance to be initialized, the process usually takes 5 to 10 minutes.
 
 ![Instance details of the created demo MySQL](/images/posts/qwiklabs/qwiklabs-GSP306-step4-instance-details-of-Cloud-SQL.png)
 
@@ -67,12 +67,12 @@ You can continue the procedure below without waiting here.
 
 ## Export SQL Database
 
-If you read "[Migration from MySQL to Cloud SQL](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-concept) in the documatation of Google Cloud Solutions. There are two ways to migrate the database, namely, (a) [Export/import approach](https://cloud.google.com/sql/docs/mysql/replication/replication-from-external) or (b) [External replica promotion approach](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-using-automated-migration-workflow-tutorial).
+If you read "[Migration from MySQL to Cloud SQL](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-concept) in the documentation of Google Cloud Solutions. There are two ways to migrate the database, namely, (a) [Export/import approach](https://cloud.google.com/sql/docs/mysql/replication/replication-from-external) or (b) [External replica promotion approach](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-using-automated-migration-workflow-tutorial).
 
 - **Export/import migration**
 This method requires to export the entire source database and import the dump data to replica, typically requires downtime for the database during the entire process to keep data in sync. 
 - **External replica promotion migration**
-This method process through the automated migration workflow provided by Goolge Cloud SQL, which aims to minimize the database uptime by promoting the replica database to replace the source after the data is synchronized.
+This method process through the automated migration workflow provided by Google Cloud SQL, which aims to minimize the database uptime by promoting the replica database to replace the source after the data is synchronized.
 
 In a production environment, you may consider the automated workflow to take its advantage. In this article, I will only show you the **export/import** approach because it is simpler. I want to make sure you can accomplish this challenge lab.
 
@@ -89,7 +89,7 @@ mysqldump \
 --default-character-set=utf8mb4 > [SQL_FILE].sql
 ```
 
-In this lab, you can remove the `--ignore-table [VIEW_NAME1]` flag because the database does not include any views. Replace the arguement values, the command line should look like:
+In this lab, you can remove the `--ignore-table [VIEW_NAME1]` flag because the database does not include any views. Replace the argument values, the command line should look like:
 
 ```bash
 mysqldump --databases wordpress -h localhost -u blogadmin -p \
@@ -115,13 +115,13 @@ Go back to the web console, navigate to ***SQL*** to check whether the cloud SQL
 
 Choose **DATABASES** tab, and click **Create database**.
 
-In the dialog, enter `wordpress` as the name and select `utf8mb4` as the character set.
+In the dialogue, enter `wordpress` as the name and select `utf8mb4` as the character set.
 
 ![Add wordpress database to Cloud SQL](/images/posts/qwiklabs/qwiklabs-GSP306-step6-create-databases-in-cloud-sql.png)
 
 Now you prepared an empty database called `wordpress` in the Cloud SQL. Click **IMPORT** button at the top of the page.
 
-In the dialog, click **Browse** to select the dump file in the Cloud Storage, and select `wordpress` in the Database field.
+In the dialogue, click **Browse** to select the dump file in the Cloud Storage, and select `wordpress` in the Database field.
 ![](/images/posts/qwiklabs/qwiklabs-GSP306-step7-import-database-to-cloud-sql.png)
 
 Click **Import** to start the process.
@@ -130,13 +130,13 @@ Click **Import** to start the process.
 
 While the database is importing to the cloud SQL, choose **USERS** tab and click **Create user account**.
 
-In the dialog, enter `blogadmin` as the user name and `Password1*` as the password.
+In the dialogue, enter `blogadmin` as the user name and `Password1*` as the password.
 
 ![Add blogadmin to ](/images/posts/qwiklabs/qwiklabs-GSP306-step8-create-user-in-cloud-sql.png)
 
-Choose **CONNETIONS** tab, under the Public IP click **Add network**.
+Choose **CONNECTIONS** tab, under the Public IP click **Add network**.
 
-Copy the IP of the Demo Blog site to the Network field, and format the number in form of a CIDR noatatoin `X.X.X.0/24`.
+Copy the IP of the Demo Blog site to the Network field, and format the number in form of a CIDR notation `X.X.X.0/24`.
 
 ![](/images/posts/qwiklabs/qwiklabs-GSP306-step9-athorized-networks.png)
 
@@ -154,7 +154,7 @@ You should find a file called `wp-config.php`.
 
 ![](/images/posts/qwiklabs/qwiklabs-GSP306-step11-locate-wordpress-config-file.png)
 
-(_Optional_) Before change the WordPress configuration, I recommand you stop the local MySQL server using the following commands in the SSH session:
+(_Optional_)  Before changing the WordPress configuration, I recommend you stop the local MySQL server using the following commands in the SSH session:
 ```bash
 sudo service mysql stop
 sudo service mysql status
@@ -188,20 +188,20 @@ define('DB_HOST', '35.226.248.101');
 
 Press **Ctrl + x** and type **Y** to save and exit the file.
 
-If you refresh the website in your web browser, it should be restored. That means the WordPress site is connected to the Cloud SQL. Otherwise, use the following command to restart the web server,
+If you refresh the website in your web browser, it should be restored. That means the WordPress site is connected to the Cloud SQL. Otherwise, use the following command to restart the webserver,
 
 ```bash
 sudo service apache2 restart
 sudo service apache2 status
 ```
 
-(Optinal) Test the website to check if any issues after migration.
+(Optional) Test the website to check if any issues after migration.
 
 ![Screenshot of the Blog-Demo Website](/images/posts/qwiklabs/qwiklabs-GSP306-step2-Blog-Demo-wordpress-site.png)
 
 Congratulations! You should accomplish the lab if you follow the above steps. Also, you earned a badge if you completed the quest _"[Challenge: GCP Architecture](https://www.qwiklabs.com/quests/47)"_. You become a cloud expert now!
 
-This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-migrate-a-mysql-database-to-google-cloud-sql-7c129ba586c9).
+This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-migrate-a-mysql-database-to-google-cloud-sql-7c129ba586c9).
 
 * * *
 
