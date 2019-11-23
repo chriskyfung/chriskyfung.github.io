@@ -21,12 +21,10 @@ header:
 
 ## Personalize Your Tumblr Site:
 
-### Edit Theme/Appearance
-
 If you prefer to present your Tumblr like a normal website, you definitely want to erase the Tumblr controls, buttons and toolbars from your pages. You can follow the **two** instructions below to kill them from
 screens.
 
-#### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
+### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
 
 You can follow the procedures below to disable the Tumblr bottoms for non-Tumblr users:
 
@@ -39,7 +37,7 @@ You can follow the procedures below to disable the Tumblr bottoms for non-Tumblr
 4. Uncheck **Promote Tumblr!**
 5. Click **Save**
 
-#### Hide the "Open / Install the App" from mobile pages
+### Hide the "Open / Install the App" from mobile pages
 
 When a Tumblr site is opened with a mobile device, buttons asking users to open/install the native Tumblr app will be rendered by default (as shown in the image below).
 
@@ -62,6 +60,8 @@ When a Tumblr site is opened with a mobile device, buttons asking users to open/
 2. Navigate to **Edit Appearance** > **Edit Theme** > **Advanced Settings** from your Tumblr dashboard, paste the code below **ADD CUSTOM CSS**
 3. Click **Save**.
 
+<br>
+
 ### Recover Custom Themes
 
 Tumblr automatically backups your custom theme when you make and save any changes, and you can revert to previous versions. I think many Tumblr bloggers may not know this important feature because it isn't written clearly in the Tumblr Help Center. _Weird_!
@@ -74,7 +74,7 @@ In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, c
 
 ## Plugins for Tumblr Sites:
 
-#### Amazon Associates Ads Loader for Tumblr <small>([Demo page](https://www.craftweeks.com/post/163368373526/gcc-laserpro-venus-laser-system))</small>
+### Amazon Associates Ads Loader for Tumblr <small>([Demo page](https://www.craftweeks.com/post/163368373526/gcc-laserpro-venus-laser-system))</small>
 
 ![Amazon Associates Ads Loader for Tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr/raw/master/images/amzn_assoc_loader_for_tumblr.png)
 
@@ -83,7 +83,7 @@ Tumblr blocks executing Javascript snippets directly embedded in a post body. Fo
 For more detail, please visit the repository in GitHub (https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr).
 
 
-#### Tumblr Featured Posts Plugin<br><small>_by [BANDIT DESIGN](https://blog.bandit.co.nz/post/87511743/tumblr-featured-posts-javascript-plugin)_ </small>
+### Tumblr Featured Posts Plugin<br><small>_by [BANDIT DESIGN](https://blog.bandit.co.nz/post/87511743/tumblr-featured-posts-javascript-plugin)_ </small>
 
 This plugin outputs a link to render posts tagged with "featured". Click [Demo](https://test-featured-plugin.tumblr.com/) to visit the sample site I made.
 
@@ -131,7 +131,7 @@ This application is a crawler that scans through a Tumblr site and reports the u
 
 #### Tag Replacer <small>(tags.circumfluo.us)</small>
 
-![Tag Replacer (tags.circumfluo.us)](/images/posts/tumblr/tagreplacer-tags.circumfluo.us.png)
+![Tag Replacer ([tags.circumfluo.us](https://tags.circumfluo.us))](/images/posts/tumblr/tagreplacer-tags.circumfluo.us.png)
 
 Tag Replacer is a great tool that speedups tag editing. It can search the posts with a specific tag from your Tumblr blog and perform a **bulk tag replace/delete** process. _Quick & Easy_!
 
@@ -146,6 +146,7 @@ If you worry about the security, you can revoke the app after tag editing. In yo
 
 The Tag Replacer is an open-source project under Peer Production License.  You can find and download the source code from this GitHub repository (https://github.com/cubeghost/tagreplacer).
 
+<br>
 
 ### Download & Backup Tools
 
@@ -240,7 +241,7 @@ A set of python scripts for manipulating Tumblr blogs
      - Check Your Post Limit
 
 ## References:
-- [Customization with META | Build Themes](https://buildthemes.tumblr.com/ch3/customization)
+- [Customization with META - Build Themes](https://buildthemes.tumblr.com/ch3/customization)
 - [Removing "Open"/"Install the App" header toolbar from mobile Tumblr page : web_design](https://www.reddit.com/r/web_design/comments/3vtb1z/removing_openinstall_the_app_header_toolbar_from/)
 - [How to increase you Tumblr SEO. - How to increase you Tumblr SEO. - Nerd Ramblings](https://nerdramblings.tumblr.com/post/4388960162/how-to-increase-you-tumblr-seo)
 
