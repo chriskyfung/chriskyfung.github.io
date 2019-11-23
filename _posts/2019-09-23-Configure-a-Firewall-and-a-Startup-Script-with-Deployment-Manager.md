@@ -15,9 +15,9 @@ header:
 
 <!--more-->
 
-With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Challenge: GCP Architecture](https://google.qwiklabs.com/quests/47)". The web console assists quick access of the GCP resources for testing and building small projects. If you are a amateur or hobbyist developer, just make use of the web console is pretty enough.
+With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Challenge: GCP Architecture](https://google.qwiklabs.com/quests/47)". The web console assists quick access of the GCP resources for testing and building small projects. If you are an amateur or hobbyist developer, just make use of the web console is pretty enough.
 
-But if you aim to be a professional cloud engineer, you must know and apply some more advanced skills, such as creating and managing cloud resources with simple templates for a repeatable deployment process. The third lab of the challenge quest, **GSP302** _"[Configure a Firewall and a Startup Script with Deployment Manager](https://www.qwiklabs.com/focuses/1736?parent=catalog)"_, is to test your ability to define the resources of a basic apache web server. You need to know how to format and parameterize the resource properties in yaml as a Jinja2 configuration file. It is much harder than the previous labs. I recommend you revise
+But if you aim to be a professional cloud engineer, you must know and apply some more advanced skills, such as creating and managing cloud resources with simple templates for a repeatable deployment process. The third lab of the challenge quest, **GSP302** _"[Configure a Firewall and a Startup Script with Deployment Manager](https://www.qwiklabs.com/focuses/1736?parent=catalog)"_, is to test your ability to define the resources of a basic apache web server. You need to know how to format and parameterize the resource properties in YAML as a Jinja2 configuration file. It is much harder than the previous labs. I recommend you revise
 the Qwiklabs quest called [Deployment Manager](https://www.qwiklabs.com/quests/30), if you are not familiar with building custom templates.
 
 <br>
@@ -30,13 +30,13 @@ When you open the page of this lab in Qwiklabs, you can find the task requiremen
 
 The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
-1. Configure a deployment template and apply it to Deployment Manager.
+1. Configure a deployment template and apply it to the Deployment Manager.
 
 2. The deployment creates a VM instance with an embedded `startup-script`.
 
-3. The VM instance that has a startup-script also has a tag item called `http`.
+3. The VM instance that has a startup-script also has a tag called `http`.
 
-4. Create a firewall rule that allows port 80 (http) traffic and is applied using the tag `http`.
+4. Create a firewall rule that allows port 80 (HTTP) traffic and is applied using the tag `http`.
 
 5. The virtual machine responds to web requests using the Apache web server, which should be installed by the startup script.
 
@@ -74,8 +74,8 @@ The template already includes the following configurations:
 - Network Interfaces: Default Network with a public IP address
 
 To fulfil the lab requirements, the template still does not have,
-- a metadata for embedding the startup script, and
-- a tag item called `http`.
+- metadata for embedding the startup script, and
+- a tag called `http`.
 
 Next, you need to add two more properties to the instance configuration. If you want to know more about the properties of a GCE instance, read [REST Resource: instances](https://cloud.google.com/compute/docs/reference/rest/v1/instances) in the Compute Engine Documentation.
 
@@ -88,7 +88,7 @@ Open the `install-web.sh` file, you should see the following codes:
 
 Let recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)"_.
 
-This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)"_. You have to configure a metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). For more information, read [Setting Metadata and Using Startup Scripts](https://cloud.google.com/deployment-manager/docs/step-by-step-guide/setting-metadata-and-startup-scripts) in the Cloud Deployment Manager Documentation.
+This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)"_. You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). For more information, read [Setting Metadata and Using Startup Scripts](https://cloud.google.com/deployment-manager/docs/step-by-step-guide/setting-metadata-and-startup-scripts) in the Cloud Deployment Manager documentation.
 
 Add the following properties to the instance configuration:
 
@@ -104,7 +104,7 @@ Add the following properties to the instance configuration:
 
 ### Add Tag Item
 
-A tag item called `http` is required to associate the GCE instance with the firewall rule that will be created in the next section. Append the following properties to the instance configuration:
+A tag called `http` is required to associate the GCE instance with the firewall rule that will be created in the next section. Append the following properties to the instance configuration:
 
 ```jinja
     tags:
@@ -207,11 +207,11 @@ In the web console, navigate to **_Deployment Manager_** to monitor the progress
 
 Congratulations! You should accomplish the lab if you follow all above steps.
 
-This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-a-firewall-and-a-startup-script-with-deployment-manager-342f822e5595).
+This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-a-firewall-and-a-startup-script-with-deployment-manager-342f822e5595).
 
 * * *
 
-If you finished the first three labs of the challenge quest, you are capable of building linux-based web servers on Google Cloud. How about a Windows server, do you know how to set up an IIS web server on it and allow RDP access through the VPC network? [Next lab](https://chriskyfung.github.io/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP) is a challenge of configuring a secure Windows web server with a Bastion host (or jumpbox).
+If you finished the first three labs of the challenge quest, you are capable of building Linux-based web servers on Google Cloud. How about a Windows server, do you know how to set up an IIS web server on it and allow RDP access through the VPC network? [Next lab](https://chriskyfung.github.io/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP) is a challenge of configuring a secure Windows web server with a Bastion host (or jump box).
 
 **Related posts:**
 

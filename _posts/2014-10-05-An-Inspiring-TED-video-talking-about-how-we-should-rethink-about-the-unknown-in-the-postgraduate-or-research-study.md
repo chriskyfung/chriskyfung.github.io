@@ -9,7 +9,7 @@ header:
   teaser: https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/cf7d29a98470c8576d76fb122b9433596d3495b8_2400x1800.jpg?c=1050%2C550&w=1050
 ---
 
-Prof. Uri Alon gave an inspiring talk in TED. He pointed out what most Ph.D students face in their postgraduate studies. We traditionally think science should be objective and rational. There should be a straight forward path going from questions to answers. But Aion this is rarely the situation in the real life. He and he found many colleagues and his students feel depression and frustration because many times the things can go wrong. For examples, experiments generate unexpected results. Then, the research becomes get away from the path and go into messy and unknown status, that he called a cloud. 
+Prof. Uri Alon gave an inspiring talk in TED. He pointed out what most PhD students face in their postgraduate studies. We traditionally think science should be objective and rational. There should be a straight forward path going from questions to answers. But Aion this is rarely the situation in real life. He and he found many colleagues and his students feel depression and frustration because many times the things can go wrong. For examples, experiments generate unexpected results. Then, the research becomes to get away from the path and go into messy and unknown status, that he called a cloud.
 
 <!--more-->
 

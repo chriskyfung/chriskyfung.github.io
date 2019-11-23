@@ -13,11 +13,11 @@ This is a tutorial to show the installation of **Spreadsheet Link EX for use wit
 
 <!--more-->
 
-### Proceduces
+### Procedures
 
 1. First, make sure you can find the `excllink.xlam` file under your MATLAB program directory `\matlabroot\toolbox\exlink\`.
 
-2. Click Open. In the Add-Ins dialog box, the Spreadsheet Link EX for use with MATLAB and Excel check box is selected.
+2. Click Open. In the Add-Ins dialogue box, the Spreadsheet Link EX for use with MATLAB and Excel checkbox is selected.
 
 ![image: MS Excel Add-in Dialog](/images/posts/matlab/excel_addins_available.png)
  

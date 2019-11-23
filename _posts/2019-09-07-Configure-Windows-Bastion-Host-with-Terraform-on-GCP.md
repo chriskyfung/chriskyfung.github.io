@@ -34,7 +34,7 @@ The screenshot above shows that there are six steps required for completing this
 
 4. Create a Windows 2016 server instance `vm-bastionhost` with applying the above firewall rule.
 
-5. Create a Windows 2016 server instance called `vm-securehost` that does not have a public ip-address.
+5. Create a Windows 2016 server instance called `vm-securehost` that does not have a public IP-address.
 
 6. The `vm-securehost` is running Microsoft IIS web server software.
 
@@ -47,7 +47,7 @@ The screenshot above shows that there are six steps required for completing this
 
 <br>
 
-You can manually create and configure the cloud resources using the GCP console, but [Terraform](https://www.terraform.io/) is a more robust approach to deploy the solution automatically with appropirate declrative configuration files.
+You can manually create and configure the cloud resources using the GCP console, but [Terraform](https://www.terraform.io/) is a more robust approach to deploy the solution automatically with appropriate declarative configuration files.
 
 ![Schematic Diagram of the Secure RDP Windows Network](/images/posts/qwiklabs/qwiklabs-GSP303-diagram.png)
 <br><small>Schematic Diagram of the Secure RDP Windows Network</small>
@@ -61,7 +61,7 @@ If you are not familiar with Terraform, I recommend you learn or practise the Qu
 
 ### Verifying Terraform Installation
 
-In your GCP project, launch a Cloud Shell to run the following scripts to download and setup Terraform.
+In your GCP project, launch a Cloud Shell to run the following scripts to download and set up Terraform.
 ``` bash
 # Check the current Terraform version
 terraform --version
@@ -242,7 +242,7 @@ resource "google_compute_instance" "vm_instance" {
 ```
 ### Deploy the Terraform Configuration
 
-Use the following codes to initatize and apply the Terraform to build the infrastructures,
+Use the following codes to initialize and apply the Terraform to build the infrastructures,
 
 ```
 terraform fmt
@@ -256,11 +256,11 @@ After the cloud infrastructure are deployed to your GCP project, you need to ins
 
 Congratulations! You should accomplish the lab if you follow all above steps.
 
-This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-secure-rdp-using-a-windows-bastion-host-with-terraform-on-gcp-26d2311a35b3).
+This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-secure-rdp-using-a-windows-bastion-host-with-terraform-on-gcp-26d2311a35b3).
 
 * * *
 
-[Next lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you will be examined the skils for building and deloplying a containerized application with Docker and Google Kubernetes Engine.
+[Next lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you will be examined the skils for building and deploying a containerized application with Docker and Google Kubernetes Engine.
 
 **Related posts:**
 

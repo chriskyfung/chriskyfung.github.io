@@ -15,9 +15,9 @@ header:
 
 <!--more-->
 
-Last time I wrote about a challenging lab entited _"[Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)"_ within the Qwiklabs quest of "[Challenge: GCP Architecture](https://google.qwiklabs.com/quests/47)". Different from the normal hand-on-labs in Qwiklabs, the challenge labs do not provide with step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
+Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)"_ within the Qwiklabs quest of "[Challenge: GCP Architecture](https://google.qwiklabs.com/quests/47)". Different from the normal hand-on-labs in Qwiklabs, the challenge labs do not provide step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
 
-This time is about the easiest lab in the challenge quest -- **GSP101** _"[Google Cloud Essential Skills: Challenge Lab](https://google.qwiklabs.com/focuses/1734?parent=catalog)"_. It just asks you to setup a VM instance with running Apache web server. **Pretty BASIC!** If you know how to do that, I recommend you to try your best. Do not read the rest of the article unless you really need some more Hints.
+This time is about the easiest lab in the challenge quest -- **GSP101** _"[Google Cloud Essential Skills: Challenge Lab](https://google.qwiklabs.com/focuses/1734?parent=catalog)"_. It just asks you to set up a VM instance with running Apache webserver. **Pretty BASIC!** If you know how to do that, I recommend you to try your best. Do not read the rest of the article unless you really need some more Hints.
 
 <br>
 
@@ -39,7 +39,7 @@ The screenshot above shows that there are 6 steps required for completing this l
 
 ## Step 1 - Create a VM instance
 
-To create a Compute Engine instance, the most easy way is through the GCP web console. In the Console, navigate to _Compute Engine_ > _VM instances_. When you create a new VN instance,
+To create a Compute Engine instance, the easiest way is through the GCP web console. In the Console, navigate to _Compute Engine_ > _VM instances_. When you create a new VN instance,
 
 - Make sure you give the instance a name, called `apache`, and
 - Select `Allow HTTP traffic` under the Firewall section.
@@ -87,9 +87,9 @@ Refresh the web page in your browser,
 
 ![Hello World!](/images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png)
 
-Congratulations! You should accomplish the lab if you follow all above steps.
+Congratulations! You should accomplish the lab if you follow all the above steps.
 
-This post has also been published to Medium. If you like read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-google-cloud-essential-skills-challenge-lab-dda48c5915cf).
+This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-google-cloud-essential-skills-challenge-lab-dda48c5915cf).
 
 * * *
 
