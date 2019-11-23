@@ -10,13 +10,13 @@ redirect_from:
  - /blog/2019/10/30/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
 ---
 
-Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups to your blogs without a clear mechanism. I found that some of my Tumblr blog posts including the markups, but some of them not. Indeed, we have lack of control over what kind of information to be auto-tagged. The Tumblr crawler may also pick up incorrect contents, especially og:type and og:image. You can use [Facebook's Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/) to inspect the tags of your posts.
+Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups to your blogs without a clear mechanism. I found that some of my Tumblr blog posts including the markups, but some of them not. Indeed, we have a lack of control over what kind of information to be auto-tagged. The Tumblr crawler may also pick up incorrect contents, especially og:type and og:image. You can use [Facebook's Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/) to inspect the tags of your posts.
 
 <!--more-->
 
-![Example Facebook Open Graph tags auto-generated in Tumblr blog](/images/posts/tumblr/Tumblr-Facebook-OpenGraph-Tags-Block.png)
+![Example Facebook Open Graph tags auto-generated in the Tumblr blog](/images/posts/tumblr/Tumblr-Facebook-OpenGraph-Tags-Block.png)
 
-<small>Fig. Sample of Facebook Open Graph tags auto-generated in Tumblr blog</small>
+<small>Fig. Sample of Facebook Open Graph tags auto-generated in the Tumblr blog</small>
 
 You may want to fix the tags, so you explicitly define your own in your Custom Theme. Tumblr will stop auto-generate the entire markup, once you add an Open Graph meta tags. Therefore, you need to reengineer those by your own codes. Here is an example found on GitHub gists:
 
@@ -24,7 +24,7 @@ You may want to fix the tags, so you explicitly define your own in your Custom T
 
 You can refer the documentation ["Creating a custom Tumblr HTML theme"](https://www.tumblr.com/docs/hk/custom_themes) for more details and study the custom theme variables. One big challenge is how to set an og:image tag, since only some types of posts, such as Photo and Audio, possesses a variable tag for obtaining the URL of the post images. Most other post types do not have a way to access the image resources contained within the post objects. For example, only `{Title}` and `{Body}` variables are available for describing Text posts. This causes a big problem to me because I use Text posts as the primary type of my blog articles.
 
-To work around, I figured out a way to map between each post and an external image source. Each Tumblr post has a unique identifier called `{PostID}`, so I used this variable to look up the corresponding file located in my own cloud storage.
+To workaround, I figured out a way to map between each post and an external image source. Each Tumblr post has a unique identifier called `{PostID}`, so I used this variable to look up the corresponding file located in my own cloud storage.
 
 The following cloud services are some possible choices for static web hosting:
 
@@ -44,7 +44,7 @@ In the **Settings** tab of the new repository, go to **GitHub Pages** section an
 
  - Source: `master branch`
  - Theme: _(Optional) chooses a theme as you like_
- - Custom domain: _(Optional) recommands to use a subdomain, e.g. `res.example.com`_
+ - Custom domain: _(Optional) recommends using a subdomain, e.g. `res.example.com`_
  - Enforce HTTPS: _(Optional)_
 
 ![Example GitHub Pages configuration](/images/posts/tumblr/GitHub-Page-Settings.png)
@@ -53,7 +53,7 @@ In the **Settings** tab of the new repository, go to **GitHub Pages** section an
 
 If you use a subdomain as the custom domain, add a CNAME record to your DNS server and point it to `<your-github-username>.github.io`. Otherwise, the Project Site URL will under the domain `github.io`, in the form of `http(s)://<your-github-username>.github.io/<repository-name>/`.
 
-Go back to the **Code** tab of the repository, I suggest to create a folder, called `og-images` and store all post cover images to it. You can also upload and host your CSS and JavaScript files via the same way.
+Go back to the **Code** tab of the repository, I suggest creating a folder, called `og-images` and store all post cover images to it. You can also upload and host your CSS and JavaScript files in the same way.
 
 ![](/images/posts/tumblr/GitHub-Page-Files.png)
 
@@ -118,7 +118,7 @@ Log in your Tumblr account and go to edit the HTML code of your theme. Next, add
 Please replace the `og:locale` tags with your languages, you can find the choices from [Yoast SEO's Knowledge Base](https://kb.yoast.com/kb/changing-the-og-locale-output/)
 
 The above code specifies the `og:image` of all Text posts to point at **`https://<your-github-page-url>/og-images/{PostID}.png`**. For example:
-- `https://res.example.com/og-images/1234.png` _(with custom domain)_, or
+- `https://res.example.com/og-images/1234.png` _(with a custom domain)_, or
 - `https://john.github.io/repository-abc/og-images/1234.png` _(without custom domain)_
 
 So, you must upload an image to the same path. Otherwise, this will cause a _File Not Found Error_.
