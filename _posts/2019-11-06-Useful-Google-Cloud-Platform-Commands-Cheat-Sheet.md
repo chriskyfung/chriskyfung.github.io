@@ -4,7 +4,7 @@ title: Useful Google Cloud Platform Commands Cheat Sheet (15 Practical Tips)
 date: 2019-11-06 13:12
 category: Cloud
 author: Chris KY Fung
-tags: [Google Cloud, shorthand, gcloud, terraform, Qwiklabs]
+tags: [Google Cloud, shorthand, gcloud, Terraform, Qwiklabs]
 permalink: /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
 ---
 
@@ -61,7 +61,7 @@ echo $PROJECT_ID
 
 There are so many situations that use the project ID as a parameter. This keeps your codes much tiny and secure by using the environment variable.
 
-For example, the project ID is often used as the namespace of bucket names of Google Cloud Storage:
+For example, the project ID is often used as the namespace of the bucket names in Google Cloud Storage:
 
 ```bash
 export BUCKET=${PROJECT_ID}
@@ -81,7 +81,7 @@ gcloud compute ... --format=json | jq -r '<key>')
 
 ### Find the Service Account for Compute Engine API
 
-Besides the project ID, a service account email is reqired for several command-line tools, like creating a VM instance to GCE. You can extract the service account for the Compute Engine API using the following code:
+Besides the project ID, a service account email is required for several command-line tools, like creating a VM instance to GCE. You can extract the service account for the Compute Engine API using the following code:
 
 ```bash
 export SERVICE_ACCOUNT=$(gcloud --project=$PROJECT_ID \
@@ -102,7 +102,7 @@ echo $USED_IP_ADDRESS
 
 ### Change default zone
 
-To set default zone to use when working with zonal Compute Engine resources, such as us-west1-b, run:
+To set a default zone to use when working with zonal Compute Engine resources, such as us-west1-b, run:
 
 ```bash
 gcloud config set compute/zone us-west1-b
@@ -134,7 +134,7 @@ _Replace `user`, `your-server-name-1-vm` and `/path/to/the/directory/that/you/wa
 
 ### Create a new Kubernetes Cluster
 
-The following command is a example to create a new Kubernetes cluster named `my-cluster` with _two_ nodes (_N1 standard 1_) in the zone **us-central1-f**:
+The following command is an example to create a new Kubernetes cluster named `my-cluster` with _two_ nodes (_N1 standard 1_) in the zone **us-central1-f**:
 
 ```bash
 gcloud container clusters create my-cluster \
@@ -245,4 +245,4 @@ _Replace `<your-filename>` and `/*text contents*/` with yours._
 
 * * *
 
-> This list will be kept update. If you need more, please leave me your feedback, questions, comments, suggestions below.
+> This list will be kept updated. If you need more, please leave me your feedback, questions, comments, suggestions below.
