@@ -8,8 +8,7 @@ tags: [Tumblr, makeuseof, Custom Theme, shorthand]
 permalink: /blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers
 redirect_from:
  - /blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers
-header: 
-  teaser: /images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png
+image: /images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png
 ---
 
 ![Tips, Tricks, and Tools for Tumblr Bloggers](/images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png)
@@ -80,7 +79,7 @@ In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, c
 
 Tumblr blocks executing Javascript snippets directly embedded in a post body. For that reason, Amazon Ads cannot display if we just copy an Ads code to a Tumblr post. To workaround, I created a converter to format the Ads code to HTML data, and a plugin to insert the Ads back to the post body by interpreting the HTML elements in the DOM File.
 
-For more detail, please visit the repository in GitHub (https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr).
+For more detail, please visit the repository in GitHub ([https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr)).
 
 
 ### Tumblr Featured Posts Plugin<br><small>_by [BANDIT DESIGN](https://blog.bandit.co.nz/post/87511743/tumblr-featured-posts-javascript-plugin)_ </small>
@@ -144,7 +143,7 @@ If you worry about the security, you can revoke the app after tag editing. In yo
 
 ![Remove Tag Replacer (tags.circumfluo.us)from Tumblr App page](/images/posts/tumblr/tagreplacer-tags.circumfluo.us-remove-app.png)
 
-The Tag Replacer is an open-source project under Peer Production License.  You can find and download the source code from this GitHub repository (https://github.com/cubeghost/tagreplacer).
+The Tag Replacer is an open-source project under Peer Production License.  You can find and download the source code from this GitHub repository ([https://github.com/cubeghost/tagreplacer](https://github.com/cubeghost/tagreplacer)).
 
 <br>
 
@@ -154,7 +153,7 @@ The Tag Replacer is an open-source project under Peer Production License.  You c
 
 ![TumblThree demo screenshot](/images/posts/tumblr/TumblThree.png)
 
-**[TumblThree](https://www.jzab.de/content/tumblthree)** is a _free and open-source_ Tumblr Blog Backup Application for Windows. You can download both its source codes and executable files from [this GitHub repository](https://github.com/TumblThreeApp/TumblThree/releases).
+**[TumblThree](https://www.jzab.de/content/tumblthree)** is a _free and open-source_ Tumblr Blog Backup Application for Windows. You can download both its source codes and executable files from [this GitHub repository](https://github.com/TumblThreeApp/TumblThree/releases) ([https://github.com/TumblThreeApp/TumblThree/releases](https://github.com/TumblThreeApp/TumblThree/releases)).
 
 To use the application, unzip the downloaded _TumblThree-vx.x.x.x-Application.zip_ file, and run **TumblThree.exe**.
 
@@ -172,7 +171,6 @@ The screenshot below shows the files been downloaded from Google Design's Tumblr
 
 ![TumblThree demo screenshot](/images/posts/tumblr/TumblThree-resulted-google-design-files.png)
 
-
 * * *
 
 ## API Tools
@@ -180,19 +178,20 @@ The screenshot below shows the files been downloaded from Google Design's Tumblr
 ### pytumblrtools
 
 A set of python scripts for manipulating Tumblr blogs
-(https://github.com/chriskyfung/pytumblrtools)
+([https://github.com/chriskyfung/pytumblrtools](https://github.com/chriskyfung/pytumblrtools))
 
 - Transfer Tumblr posts to a new account
 - List the URLs of all blog posts and export as a CSV file to local storage
 - List all tags with counts, and export as a CSV file to local storage (Can use `SPECTAG` to specify the only lookup the posts contain this given tag.)
 - Replace a string in the body and caption of all text and photo
 
-
 * * *
 
 ## Suggested Reading: <span style='font-size:small'>(Get Tips Feed <a href="https://www.diigo.com/rss/user/chriskyfung?query=%23tumblr&sort=updated" target="_blank"><i class='fas fa-rss' style="color:orange;"></i></a>)</span>
 
 - [How to add a custom Open Graph image tag to your tumblr blog](/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog)
+
+- [A Guide to the Best Tumblr Features for Bloggers](https://www.lifewire.com/tumblr-features-for-bloggers-3476404)
 
 - [Tumblr SEO: An Internet Marketers Guide to Owning Tumblr
 ](http://elite-strategies.com/tumblr-seo/)
@@ -244,6 +243,7 @@ A set of python scripts for manipulating Tumblr blogs
 - [Customization with META - Build Themes](https://buildthemes.tumblr.com/ch3/customization)
 - [Removing "Open"/"Install the App" header toolbar from mobile Tumblr page : web_design](https://www.reddit.com/r/web_design/comments/3vtb1z/removing_openinstall_the_app_header_toolbar_from/)
 - [How to increase you Tumblr SEO. - How to increase you Tumblr SEO. - Nerd Ramblings](https://nerdramblings.tumblr.com/post/4388960162/how-to-increase-you-tumblr-seo)
+- [Tumblr Vs. Medium: Comparing Popular Blogging Platforms](https://www.lifewire.com/tumblr-vs-medium-comparing-popular-blogging-platforms-3485755)
 
 <style>
     .discontinued {

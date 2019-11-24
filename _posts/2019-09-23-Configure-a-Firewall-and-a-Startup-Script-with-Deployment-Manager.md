@@ -137,7 +137,7 @@ Format the REST profile using a JSON to YAML converter, such as https://www.json
 
 Copy the above firewall configuration to the .jinja file. The final `qwiklabs.jinja` file should become:
 
-<script src="https://gist.github.com/chriskyfung/245e0eb142df08d97f42717ea188be72.js"></script>
+{% gist 245e0eb142df08d97f42717ea188be72 qwiklabs.jinja %}
 
 **Save** the file change.
 
