@@ -9,7 +9,8 @@ tags: [Qwiklabs, Google Cloud, user tips]
 permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
-
+header: 
+   teaser: /images/posts/tumblr/qwiklabs-quests-map.png
 ---
 
 <!--more-->
