@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: makeuseof"
-tag: makeuseof
+title: "Tag: user tips"
+tag: user tips
 robots: noindex
 ---

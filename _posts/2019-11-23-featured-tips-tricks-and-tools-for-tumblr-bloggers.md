@@ -4,7 +4,7 @@ title: Featured Tips, Tricks, and Tools for Tumblr Bloggers (2019)
 date: 2019-11-23 20:09
 category: Web Development
 author: Chris KY FUng
-tags: [Tumblr, makeuseof, Custom Theme, shorthand]
+tags: [Tumblr, user tips, Custom Theme, shorthand]
 permalink: /blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers
 redirect_from:
  - /blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers
@@ -25,7 +25,7 @@ screens.
 
 ### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
 
-You can follow the procedures below to disable the Tumblr bottoms for non-Tumblr users:
+You can follow the procedures below to disable the Tumblr buttons for non-Tumblr users:
 
 1. In the Tumblr Dashboard, click on the _Account_ → **Edit Appearance**
 2. Click on **Edit Theme** button (same **Customize**)
@@ -173,7 +173,7 @@ The screenshot below shows the files been downloaded from Google Design's Tumblr
 
 * * *
 
-## API Tools
+## API Tools:
 
 ### pytumblrtools
 
@@ -202,6 +202,7 @@ A set of python scripts for manipulating Tumblr blogs
 - [Is it possible to Monetize tumblr Blog by AdSense?](https://www.bloggerspice.com/2016/01/how-to-Add-adsense-ads-on-tumblr-blog.html)
 
 - [30+ Tumblr Tips Tricks, and Tools (2019) - Hongkiat](https://www.hongkiat.com/blog/tumblr-tips-tricks-tools/)
+
 <u>Tips & Tricks</u>
      - ~~Avoid Reblogging Long Posts As Links~~
      - Use Keyboard Shortcuts On The Dashboard
@@ -244,6 +245,8 @@ A set of python scripts for manipulating Tumblr blogs
 - [Removing "Open"/"Install the App" header toolbar from mobile Tumblr page : web_design](https://www.reddit.com/r/web_design/comments/3vtb1z/removing_openinstall_the_app_header_toolbar_from/)
 - [How to increase you Tumblr SEO. - How to increase you Tumblr SEO. - Nerd Ramblings](https://nerdramblings.tumblr.com/post/4388960162/how-to-increase-you-tumblr-seo)
 - [Tumblr Vs. Medium: Comparing Popular Blogging Platforms](https://www.lifewire.com/tumblr-vs-medium-comparing-popular-blogging-platforms-3485755)
+
+This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/featured-tips-tricks-and-tools-for-tumblr-bloggers-2019-25c51fad73ee).
 
 <style>
     .discontinued {

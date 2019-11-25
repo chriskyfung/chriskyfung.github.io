@@ -4,7 +4,7 @@ title: Useful Google Cloud Platform Commands Cheat Sheet (15 Practical Tips)
 date: 2019-11-06 13:12
 category: Cloud
 author: Chris KY Fung
-tags: [Google Cloud, shorthand, gcloud, Terraform, Qwiklabs]
+tags: [Google Cloud, user tips, gcloud, Terraform, Qwiklabs, shorthand]
 permalink: /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
 ---
 
