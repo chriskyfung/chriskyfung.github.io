@@ -43,7 +43,7 @@ You can start your training based on your goal and purpose, or find the quests f
 
 I spent about three months to take all the Qwiklabs quests for Google Cloud Platform.
 
-{% include /_data/qwiklabs-quests-map.html %}
+{% include qwiklabs-quests-map.html %}
 
 <br>
 
