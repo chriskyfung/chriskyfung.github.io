@@ -1,22 +1,22 @@
 ---
 layout: post
 title: "User Tips for Learning GCP on Qwiklabs"
-date: 2019-09-12 18:15
+date: 2019-11-25 18:15
 category: Cloud
 tags: Qwiklabs User-tips Google_Cloud
 category: Cloud
 tags: [Qwiklabs, Google Cloud, user tips]
 permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 redirect_from:
- - /blog/2019/09/30/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
+ - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 
 ---
 
-[Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice.
+<!--more-->
 
 ## What is Qwiklabs
 
-If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
+[Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice. If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
 
 <center>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cyp7soKLOYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
