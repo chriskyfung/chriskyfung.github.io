@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "User Tips for Learning GCP on Qwiklabs"
-date: 2019-11-25 18:15
+title: "Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips"
+date: 2019-11-26 11:56
 category: Cloud
-tags: Qwiklabs User-tips Google_Cloud
-category: Cloud
-tags: [Qwiklabs, Google Cloud, user tips]
+tags: [Qwiklabs, Google Cloud, user tips, learning map]
 permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
@@ -34,7 +32,7 @@ After you logged in to Qwiklabs, you can see there are five training categories,
 
 ![Five default training catagories defined by Qwiklabs](/images/posts/qwiklabs/qwiklabs-default-catagories.png)
 
-You can start your training based on your goal and purpose, or find the quests for Google Cloud Platform using the filter function available on the Catalog page. Qwiklabs grouped different kinds of labs into 56 quests for learning GCP, and divided them to 4 levels: Introductory, Fundamental, Advanced, and Expert. You may also look for the resources by search, but the results are sorted by relevance rather than an appropriate order for study or learning. As a result, I tried to organise the Qwiklabs quests to the diagram below. I hope this visual map will help you or any beginners to better seek your desired learning paths.
+You can start your training based on your goal and purpose, or find the quests for Google Cloud Platform using the filter function available on the Catalog page. Qwiklabs grouped different kinds of labs into 56 quests for learning GCP, and divided them to 4 levels: Introductory, Fundamental, Advanced, and Expert. You may also look for the resources by search, but the results are sorted by relevance rather than an appropriate order for study or learning. As a result, I tried to organise the Qwiklabs quests to be a learning map to trace the connections among them.
 
 ![Using filter to find quests for Google Cloud Platform on Qwiklabs Catalog page](/images/posts/qwiklabs/qwiklabs-catalog-with-quest-filter-for-gcp.png)
 
@@ -42,7 +40,7 @@ You can start your training based on your goal and purpose, or find the quests f
 
 ## Visual Map of Qwiklabs GCP Quests
 
-I spent about three months to take all the Qwiklabs quests for Google Cloud Platform.
+I spent about three months to take all the Qwiklabs quests for Google Cloud Platform. In the end, I think that there is a need to create a visual map to indicate and understand the relationships between the quests, thereby an easier way for any beginners to seek their desired learning paths. I illustrated the following map by connecting the boxes based on the quest descriptions in the Qwiklabs webpages.
 
 {% include qwiklabs-quests-map.html %}
 
@@ -65,6 +63,8 @@ For more information, you can read my post _"[Userscript for Labelling Completed
 Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Medium](https://medium.com/@qwiklabs) ([@qwiklabs](https://medium.com/@qwiklabs)). Also, you may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 * * *
 
