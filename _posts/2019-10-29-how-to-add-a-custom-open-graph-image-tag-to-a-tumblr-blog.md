@@ -139,14 +139,15 @@ To correctly link between each post and its Open Graph image, you must store eac
 
 ![](/images/posts/tumblr/GitHub-Page-og-images.png)
 
-<small>Fig. An `og-images` repository uploaded with cover images for Tumblr posts
+<small>Fig. An `og-images` repository uploaded with cover images for Tumblr posts</small>
 
 I hope you think this trick is helpful, and share with other Tumblr bloggers. If you have any questions, please feel free to leave a comment below. Also, if you know any better solution, I wish you can share with me.
 
 * * *
 
 **Related project:**
-<i class='fab fa-tumblr-square'></i> [Tumblr Quick Tools in Python](https://github.com/chriskyfung/pytumblrtools) <i class='fab fa-python'></i>
+- <i class='fab fa-tumblr-square'></i> _[Tumblr Quick Tools in Python](https://github.com/chriskyfung/pytumblrtools)_ <i class='fab fa-python'></i>
 
 **Related post:**
-[Featured Tips, Tricks, and Tools for Tumblr Bloggers](/blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers)
+
+- _[Featured Tips, Tricks, and Tools for Tumblr Bloggers](/blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers)_
