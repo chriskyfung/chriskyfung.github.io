@@ -55,7 +55,7 @@ The prototyped tool can help you visually identify the completed catalogue items
 
 ![demo image](https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png)
 
-For more information, you can read my post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)"_
+For more information, you can read my post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs)"_.
 
 <br>
 
@@ -75,7 +75,7 @@ amzn_assoc_ad_mode = "manual";
 amzn_assoc_ad_type = "smart";
 amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
-amzn_assoc_title = "My Amazon Picks";
+amzn_assoc_title = "Recommended Books";
 amzn_assoc_linkid = "9cf248fb1fbaccac1da576f76533a29c";
 amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
 </script>
