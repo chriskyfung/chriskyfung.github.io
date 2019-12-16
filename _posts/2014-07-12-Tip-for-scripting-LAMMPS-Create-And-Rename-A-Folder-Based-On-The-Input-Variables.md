@@ -4,7 +4,7 @@ title: "Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input 
 author: Chris KY Fung
 date: 2014-07-12
 category: Atomistic
-tags: lammps linux commend-line
+tags: [lammps, linux, command-line]
 ---
 
 In a molecular dynamics study, simulation is often repeated with different sets of parameters, e.g. dimensions, velocity, initial pressure and temperature. If the parameters are defined as variables in the LAMMPS input script, we can change the value of the variables using the command line/terminal. So, we don't need to modify the script each time.
