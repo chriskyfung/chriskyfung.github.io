@@ -7,7 +7,7 @@ category: Hack
 permalink: /blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs
 redirect_from:
  - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs
-tags: Qwiklabs Userscript
+tags: [Qwiklabs, userscript]
 header:
   teaser: https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png
 ---
