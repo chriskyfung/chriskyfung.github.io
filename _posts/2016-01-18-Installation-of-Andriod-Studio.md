@@ -7,6 +7,10 @@ author: Chris KY Fung
 tags: [Android Studio]
 ---
 
+![Andriod Studio Setup dialogue](/images/posts/android/Android_Studio_setup.png)
+
+<!--more-->
+
 ### Preparation
 Before hand, you have to download the installers of **Android Studio** and **JDK7 or higher** from the following links:
 
@@ -24,8 +28,6 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.h
 	ii. Then open **Advanced tab** > **Environment Variables**.
 	iii. Add a new system variable **JAVA_HOME** that points to your _JDK folder_, for example `C:\Program Files\Java\jdk1.7.0_xx`
 3. After setup the JDK, run the Android Studio installer. (it will take about 10 mins for installation)
-
-![Andriod Studio Setup dialogue](/images/posts/android/Android_Studio_setup.png)
 
 * * *
 <small>※ Updates: You can find the change log of Android Studio from this page (http://tools.android.com/recent).</small>
