@@ -15,51 +15,41 @@ This post records the correct answers for the Qwiklabs quiz ["Knowledge Check: C
 
 <br>
 
-> Q: Which of the following best describes the ideal use cases for setting up a budget?
-
-<i class="far fa-check-circle" style="color:green"></i> To receive an email alert notification for when your costs hit, or are forecasted to hit, a specified amount.
-
-<i class="far fa-check-circle" style="color:green"></i> To monitor resource consumption at specific intervals before the end of the billing cycle (e.g., at 25%, 50%, etc.)
+> Q: Which of the following best describes the ideal use cases for setting up a budget?<br>
+> <i class="far fa-check-circle" style="color:green"></i> To receive an email alert notification for when your costs hit, or are forecasted to hit, a specified amount.
+> <i class="far fa-check-circle" style="color:green"></i> To monitor resource consumption at specific intervals before the end of the billing cycle (e.g., at 25%, 50%, etc.)
 
 <br>
 
-> Q: A budget can only be set for _______________ and configured to cover the scope of _____________ and/or ________________.
-
-<i class="far fa-check-circle" style="color:green"></i> A single billing account, projects, products
-
-<br>
-
-> Q: What is meant by the scope of a budget?
-
-<i class="far fa-check-circle" style="color:green"></i> Refers to the combination of GCP projects and products that the budget covers.
+> Q: A budget can only be set for _______________ and configured to cover the scope of _____________ and/or ________________.<br>
+> <i class="far fa-check-circle" style="color:green"></i> A single billing account, projects, products
 
 <br>
 
-> Q: Which of the following is not a usage-based credit type that you can filter your billing data by?
-
-<i class="far fa-check-circle" style="color:green"></i> Tax reductions issued by Google Cloud for using cloud resources.
-
-<br>
-
-> Q: When should you set up quotas?
-
-<i class="far fa-check-circle" style="color:green"></i> When you want to set a limit on the number of concurrent resources in a project or the number of API requests.
+> Q: What is meant by the scope of a budget?<br>
+> <i class="far fa-check-circle" style="color:green"></i> Refers to the combination of GCP projects and products that the budget covers.
 
 <br>
 
-> Q: Suppose one of your engineers spun up an expensive compute instance in a Test environment and left it running overnight. You receive an alert notification the next day with a significant spike in your costs. Which of the following could you implement using cost management tools to help prevent this from happening in the future?
-
-<i class="far fa-check-circle" style="color:green"></i> Set up a quota limit to cap service usage when developing and testing applications.
-
-<i class="far fa-check-circle" style="color:green"></i> Change the quota limit for that resource type to unlimited.
+> Q: Which of the following is not a usage-based credit type that you can filter your billing data by?<br>
+> <i class="far fa-check-circle" style="color:green"></i> Tax reductions issued by Google Cloud for using cloud resources.
 
 <br>
 
-> Q: You run a query for the fifth time in BigQuery, and you receive the following error message - 'Custom quota exceeded: Your usage exceeded the custom quota for QueryUsagePerUserPerDay, which is set by your administrator.' What does this message mean?
+> Q: When should you set up quotas?<br>
+> <i class="far fa-check-circle" style="color:green"></i> When you want to set a limit on the number of concurrent resources in a project or the number of API requests.
 
-<i class="far fa-check-circle" style="color:green"></i> The limit will be reset the following day.
+<br>
 
-<i class="far fa-check-circle" style="color:green"></i> Only your project administrator can adjust the quota limit.
+> Q: Suppose one of your engineers spun up an expensive compute instance in a Test environment and left it running overnight. You receive an alert notification the next day with a significant spike in your costs. Which of the following could you implement using cost management tools to help prevent this from happening in the future?<br>
+> <i class="far fa-check-circle" style="color:green"></i> Set up a quota limit to cap service usage when developing and testing applications.
+> <i class="far fa-check-circle" style="color:green"></i> Change the quota limit for that resource type to unlimited.
+
+<br>
+
+> Q: You run a query for the fifth time in BigQuery, and you receive the following error message - 'Custom quota exceeded: Your usage exceeded the custom quota for QueryUsagePerUserPerDay, which is set by your administrator.' What does this message mean?<br>
+> <i class="far fa-check-circle" style="color:green"></i> The limit will be reset the following day.
+> <i class="far fa-check-circle" style="color:green"></i> Only your project administrator can adjust the quota limit.
 
 * * *
 
