@@ -7,6 +7,9 @@ category: Data-Science
 tags: [MATLAB, MS Excel]
 header:
   teaser: /images/posts/matlab/excel_addin_menu.png
+permalink: /blog/matlab/Working-MATLAB-with-MS-Excel
+redirect_from:
+ - /blog/2015/03/10/Working-MATLAB-with-MS-Excel
 ---
 
 This is a tutorial to show the installation of **Spreadsheet Link EX for use with MATLAB and Excel**.
@@ -35,3 +38,6 @@ The **MATLAB Command Window** button appears on the Microsoft Windows taskbar. S
 Now, you can see a list of the MATLAB options in the context menu when you right-click a cell in Excel.
 
 ![image: context menu of MATLAB Spreadsheet Link EX Add-In](/images/posts/matlab/excel_addin_menu_right_click.png)
+
+**Related post:**
+- [Matrix Conversion between MATLAB and Microsoft Equation Editor](/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation)

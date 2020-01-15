@@ -3,7 +3,7 @@ layout: post
 title: Featured Tips, Tricks, and Tools for Tumblr Bloggers (2019)
 date: 2019-11-23 20:09
 category: Web Development
-author: Chris KY FUng
+author: Chris KY Fung
 tags: [Tumblr, user tips, Custom Theme, shorthand]
 permalink: /blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers
 redirect_from:
