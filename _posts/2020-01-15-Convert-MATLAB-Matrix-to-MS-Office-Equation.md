@@ -8,6 +8,7 @@ tags: [MATLAB, MS Office]
 permalink: /blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation
 redirect_from:
  - /blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation
+image: /images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg
 ---
 
 ![MATLAB TIPS - Convert Matrix between MATLAB and MS Equation](/images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg)
