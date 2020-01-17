@@ -36,7 +36,7 @@ martixA = [1 0 0; 0 1 0; 0 0 1];
 s = mat2mseq(martixA, '%g');
 
 => s =
-     ■(1\&0\&0@0\&1\&0@0\&0\&1)
+     ■(1&0&0@0&1&0@0&0&1)
 ```
 
 Copy the text output to an equation object in Microsoft Word, OneNote or PowerPoint.
@@ -48,10 +48,10 @@ You will obtain ![matrixA](/images/posts/matlab/matrixA.png) in the MS Equation 
 The file `mseq2mat.m` contains the function to convert an MS Equation matrix to numerical data in MATLAB. The function requires the following argument:
 - \<string\> a matrix in the MS office equation (in plain-text format)
 
-For example, when you copy ![matrixA](/images/posts/matlab/matrixA.png) from MS Word and paste it to MATLAB. The matrix will be displayed in the plain-text format of MS Equation, like `■(1\&0\&0@0\&1\&0@0\&0\&1)` in the command line. Convert it to numerical data by evaluating the text with the function, as the example below:
+For example, when you copy ![matrixA](/images/posts/matlab/matrixA.png) from MS Word and paste it to MATLAB. The matrix will be displayed in the plain-text format of MS Equation, like `■(1&0&0@0&1&0@0&0&1)` in the command line. Convert it to numerical data by evaluating the text with the function, as the example below:
 
 ```matlab
-A = mseq2mat('■(1\&0\&0@0\&1\&0@0\&0\&1)')
+A = mseq2mat('■(1&0&0@0&1&0@0&0&1)')
 	
 => A = 
 	[ 1 0 0 ; 
