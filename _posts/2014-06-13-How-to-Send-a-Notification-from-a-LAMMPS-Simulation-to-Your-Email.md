@@ -22,7 +22,7 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 
 1. First, you need an email account with supporting SMTP outgoing service. For example, Gmail. The following web page describes how to download and set up the Gmail SMTP service in Ubuntu.
 
-   > <a href="http://foksh.com/site/configure-ubuntu-server-to-send-emails-from-gmail-account/" target="_blank">Configure Ubuntu Server to Send Emails From Gmail Account « Foksh.com</a>
+   > <a href="https://foksh.com/site/configure-ubuntu-server-to-send-emails-from-gmail-account/" target="_blank">Configure Ubuntu Server to Send Emails From Gmail Account « Foksh.com</a>
 
 2. Next, we have to add a line at the end of our LAMMPS input script.
 
@@ -36,7 +36,7 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 
 ### For Windows
 
-I have tested this method in Windows. But the same concept should also work in Windows. I found a web page here (http://www.wikihow.com/Send-Email-Using-Telnet), which describes how to use the cmd prompt and telnet command to ping an SMTP server and send an email. You can try this if you like running LAMMPS in Windows.
+I have tested this method in Windows. But the same concept should also work in Windows. I found a web page here (https://www.wikihow.com/Send-Email-Using-Telnet), which describes how to use the cmd prompt and telnet command to ping an SMTP server and send an email. You can try this if you like running LAMMPS in Windows.
 
 * * *
 
