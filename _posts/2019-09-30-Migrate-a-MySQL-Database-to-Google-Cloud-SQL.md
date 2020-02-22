@@ -115,13 +115,13 @@ Go back to the web console, navigate to ***SQL*** to check whether the cloud SQL
 
 Choose **DATABASES** tab, and click **Create database**.
 
-In the dialogue, enter `wordpress` as the name and select `utf8mb4` as the character set.
+In the dialog, enter `wordpress` as the name and select `utf8mb4` as the character set.
 
 ![Add wordpress database to Cloud SQL](/images/posts/qwiklabs/qwiklabs-GSP306-step6-create-databases-in-cloud-sql.png)
 
 Now you prepared an empty database called `wordpress` in the Cloud SQL. Click **IMPORT** button at the top of the page.
 
-In the dialogue, click **Browse** to select the dump file in the Cloud Storage, and select `wordpress` in the Database field.
+In the dialog, click **Browse** to select the dump file in the Cloud Storage, and select `wordpress` in the Database field.
 ![](/images/posts/qwiklabs/qwiklabs-GSP306-step7-import-database-to-cloud-sql.png)
 
 Click **Import** to start the process.
@@ -130,7 +130,7 @@ Click **Import** to start the process.
 
 While the database is importing to the cloud SQL, choose **USERS** tab and click **Create user account**.
 
-In the dialogue, enter `blogadmin` as the user name and `Password1*` as the password.
+In the dialog, enter `blogadmin` as the user name and `Password1*` as the password.
 
 ![Add blogadmin to ](/images/posts/qwiklabs/qwiklabs-GSP306-step8-create-user-in-cloud-sql.png)
 

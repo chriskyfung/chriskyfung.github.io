@@ -82,12 +82,12 @@ Next, you need to deploy the application to the Kubernetes Cluster. There are tw
 1. In the Container Registry page, click the image name **echo-app**. There should be an image version with a tag `v1` . Click the three-dots icon (<i class='fas fa-ellipsis-v'></i>) and select **Deploy to GKE**.<br>
 ![Deploy an image to GKE using web console](/images/posts/qwiklabs/qwiklabs-GSP304-step4-deploy-docker-image-in-container-registry.png)
 
-2. The web console will be redirected to _**Kubernetes Engine**_ > **Create a deployment** dialogue,<br>
-![select a container image in Create a deployment dialogue](/images/posts/qwiklabs/qwiklabs-GSP304-step5-create-a-deployment-to-GKE.png)<br>
+2. The web console will be redirected to _**Kubernetes Engine**_ > **Create a deployment** dialog,<br>
+![select a container image in Create a deployment dialog](/images/posts/qwiklabs/qwiklabs-GSP304-step5-create-a-deployment-to-GKE.png)<br>
 Click **CONTINUE**.
 
 3. In the Configuration section, enter `echo-app` as the application name and choose `echo-cluster` as the cluster in which the deployment will be created.<br>
-![edit configuration in Create a deployment dialogue](/images/posts/qwiklabs/qwiklabs-GSP304-step6-create-a-deployment-to-GKE-configuration.png)<br>
+![edit configuration in Create a deployment dialog](/images/posts/qwiklabs/qwiklabs-GSP304-step6-create-a-deployment-to-GKE-configuration.png)<br>
 Click **CREATE NEW CLUSTER**.
 
 4. Navigate to _**Kubernetes Engine > Workload**_ page, wait the status of the deployment becomes **OK**.<br>
@@ -96,13 +96,13 @@ Click **CREATE NEW CLUSTER**.
 5. Click the name **echo-app**, then click **Expose** displayed at the top right corner of the Deployment Details page to create a service for the deployment.<br>
 ![Snapshot of Deploymemt Details page](/images/posts/qwiklabs/qwiklabs-GSP304-step8-details-of-echo-app.png)
 
-6. In the **Expose a deployment** dialogue, configure the service with a new port mapping as below:
+6. In the **Expose a deployment** dialog, configure the service with a new port mapping as below:
 - Port: `80`
 - Target port: `8000`
 - Protocol: `TCP`
 - Service type: `Load balancer`
 - Service name: `echo-web`<br>
-![Snapshot of Expost a deployment dialogue](/images/posts/qwiklabs/qwiklabs-GSP304-step9-Port-mapping-with-Load-balancer.png)
+![Snapshot of Expost a deployment dialog](/images/posts/qwiklabs/qwiklabs-GSP304-step9-Port-mapping-with-Load-balancer.png)
 Click **Expose** to create the service.<br>
 ![Service details page of the deployed GKE service](/images/posts/qwiklabs/qwiklabs-GSP304-step10-Service-details-of-echo-web.png)
 

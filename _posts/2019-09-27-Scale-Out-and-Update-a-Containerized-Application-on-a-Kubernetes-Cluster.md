@@ -81,9 +81,9 @@ Next, you need to update the application to the Kubernetes Cluster.
 Navigate to _**Kubernetes Engine > Workloads**_, click the name `echo-web` to show the Deployment details. Press the <i class='fas fa-list-ul'></i> icon to expand the menu and select **Rolling Update**.<br>
 ![Autoscale, Expose, Rolling Update, Scale - menu items on Deployment details page](/images/posts/qwiklabs/qwiklabs-GSP305-step2-expand-menu-in-Kubernetes-Engine-page.png)
 
-In the Rolling Update dialogue, modify the end of the image field from `v1` to `v2`.
+In the Rolling Update dialog, modify the end of the image field from `v1` to `v2`.
 
-![Rolling update dialogue](/images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png)
+![Rolling update dialog](/images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png)
 
 Click **UPDATE**.
 
@@ -95,7 +95,7 @@ Navigate to _**Kubernetes Engine > Workloads**_, click the name `echo-web` to sh
 
 ![Select Scale from menu items on Deployment details page](/images/posts/qwiklabs/qwiklabs-GSP305-step4-select-scale-from-expanded-menu-in-Kubernetes-Engine-page.png)
 
-In the Scale dialogue, type 2 to the field **Replicas**,
+In the Scale dialog, type 2 to the field **Replicas**,
 
 ![Scale a workload to a new size](/images/posts/qwiklabs/qwiklabs-GSP305-step5-scale-to-2-replicas.png)
 
