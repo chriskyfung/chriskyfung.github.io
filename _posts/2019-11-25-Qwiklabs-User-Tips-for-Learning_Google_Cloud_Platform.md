@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips"
-date: 2019-11-26 11:56
+title: "Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips (2020)"
+date: 2020-2-22 22:10
 author: Chris KY Fung
 category: Cloud
 tags: [Qwiklabs, Google Cloud, user tips, learning map]
@@ -41,9 +41,9 @@ You can start your training based on your goal and purpose, or find the quests f
 
 ## Visual Map of Qwiklabs GCP Quests
 
-I spent about three months to take all the Qwiklabs quests for Google Cloud Platform. In the end, I think that there is a need to create a visual map to indicate and understand the relationships between the quests, thereby an easier way for any beginners to seek their desired learning paths. I illustrated the following map by connecting the blocks based on the quest descriptions. You can navigate in the map and click on the boxes to open the corresponding quest webpages.
+I spent about three months to take all the Qwiklabs quests for Google Cloud Platform. In the end, I think that there is a need to create a visual map to indicate and understand the relationships between the quests, thereby an easier way for any beginner to seek their desired learning paths. I illustrated the following map by connecting the blocks based on the quest descriptions. You can navigate in the map and click on the boxes to open the corresponding quest webpages.
 
-{% include qwiklabs-quests-map.html %}
+{% include qwiklabs-quests-map-2020-2-22.html %}
 <p class="img-caption">Learning map of GCP quests (keep update)</p>
 
 <br>
