@@ -194,7 +194,7 @@ A set of python scripts for manipulating Tumblr blogs
 - [A Guide to the Best Tumblr Features for Bloggers](https://www.lifewire.com/tumblr-features-for-bloggers-3476404)
 
 - [Tumblr SEO: An Internet Marketers Guide to Owning Tumblr
-](http://elite-strategies.com/tumblr-seo/)
+](https://elite-strategies.com/tumblr-seo/)
 
 - [The Complete Guide to Tumblr Search Engine Optimization (SEO)
 ](https://www.pitiya.com/tumblr-seo.html)

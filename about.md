@@ -19,7 +19,7 @@ The research experience lets me know that programming and computer skills become
 
 * * *
 
-I am also a maker and the founder of a local community, called [Craftweeks](https://www.craftweeks.com). You may also visit www.craftweeks.com and [the YouTube channel](http://youtube.craftweeks.com), if you're interested in designing and making things.
+I am also a maker and the founder of a local community, called [Craftweeks](https://www.craftweeks.com). You may also visit www.craftweeks.com and [the YouTube channel](https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A), if you're interested in designing and making things.
 
 ## Vision
 
