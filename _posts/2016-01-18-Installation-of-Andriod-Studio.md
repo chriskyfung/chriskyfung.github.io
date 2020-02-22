@@ -7,7 +7,7 @@ author: Chris KY Fung
 tags: [Android Studio]
 ---
 
-![Andriod Studio Setup dialogue](/images/posts/android/Android_Studio_setup.png)
+![Andriod Studio Setup dialog](/images/posts/android/Android_Studio_setup.png)
 
 <!--more-->
 
