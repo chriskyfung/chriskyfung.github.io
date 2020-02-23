@@ -28,7 +28,7 @@ The Windows Registry contains the keys and values for all store apps, including 
 
 2. Registry Editor will open.
 
-3. Navigate to `Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages`.
+3. Navigate to *Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages*.
 
 4. Look for the key with the app name, or press **Ctrl+F** to use the "Find" dialog for a quick search under the registry tree.
 
