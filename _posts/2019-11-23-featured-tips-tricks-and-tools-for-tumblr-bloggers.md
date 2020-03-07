@@ -203,42 +203,47 @@ A set of python scripts for manipulating Tumblr blogs
 
 - [30+ Tumblr Tips Tricks, and Tools (2019) - Hongkiat](https://www.hongkiat.com/blog/tumblr-tips-tricks-tools/)
 
-<u>Tips & Tricks</u>
-     - ~~Avoid Reblogging Long Posts As Links~~
-     - Use Keyboard Shortcuts On The Dashboard
-     - ~~Allow Users To Reply To Your Posts From The Dashboard~~
-     - Customize Follow & Share Buttons
-     - Send Asks To Other Users From The Dashboard
-     - **Recover Old Themes**
-     - Mass Edit Posts And Tags
-     - Queue Your Posts
-     - Delay Your Reply To Asks
-     - Play Around With Tumblr’s Logo
-     - View Search The Old Fashioned Way
-     - **Share A Preview Of A Draft**
-     - Rearrange Queued Posts
-     - ~~Find Out What Your Friends Like~~
-     - Search For Posts On Blogs Without Search Bar
-     - View Tagged Posts From Earliest To Latest
-     - Search For Posts On A Specific Date
-     - View Archives
-     - Find All Your Tags
-     - Display Individual Author’s Avatar
-
-<u>Extensions & Tools</u>
-     -  <span class="discontinued">Missing E</span>
-     - <span class="discontinued">~~Add A View Count~~</span>
-     - Add A Music Player
-     - Get A Dashboard Theme
-     - <span class="discontinued">~~Endless Scrolling~~</span>
-     - ~~Share Content Via Bookmarklet~~
-     - <span class="discontinued">~~Customize Your Mouse Cursor~~</span>
-     - <span class="discontinued">~~Customize your Scroll Bar~~</span>
-     - Tumblr Savior
-     - #Wrap
-     - Google Analytics
-     - Disqus
-     - Check Your Post Limit
+<ul style="margin-left:30px;">
+<li><u>Tips & Tricks</u></li>
+    <ul>
+        <li>~~Avoid Reblogging Long Posts As Links~~</li>
+        <li>Use Keyboard Shortcuts On The Dashboard</li>
+        <li>~~Allow Users To Reply To Your Posts From The Dashboard~~</li>
+        <li>Customize Follow & Share Buttons</li>
+        <li>Send Asks To Other Users From The Dashboard</li>
+        <li>**Recover Old Themes**</li>
+        <li>Mass Edit Posts And Tags</li>
+        <li>Queue Your Posts</li>
+        <li>Delay Your Reply To Asks</li>
+        <li>Play Around With Tumblr’s Logo</li>
+        <li>View Search The Old Fashioned Way</li>
+        <li>**Share A Preview Of A Draft**</li>
+        <li>Rearrange Queued Posts</li>
+        <li>~~Find Out What Your Friends Like~~</li>
+        <li>Search For Posts On Blogs Without Search Bar</li>
+        <li>View Tagged Posts From Earliest To Latest</li>
+        <li>Search For Posts On A Specific Date</li>
+        <li>View Archives</li>
+        <li>Find All Your Tags</li>
+        <li>Display Individual Author’s Avatar</li>
+    </ul>
+<li><u>Extensions & Tools</u></li>
+    <ul>
+        <li><span class="discontinued">Missing E</span></li>
+        <li><span class="discontinued">~~Add A View Count~~</span></li>
+        <li>Add A Music Player</li>
+        <li>Get A Dashboard Theme</li>
+        <li><span class="discontinued">~~Endless Scrolling~~</span></li>
+        <li>~~Share Content Via Bookmarklet~~</li>
+        <li><span class="discontinued">~~Customize Your Mouse Cursor~~</span></li>
+        <li><span class="discontinued">~~Customize your Scroll Bar~~</span></li>
+        <li>Tumblr Savior</li>
+        <li>#Wrap</li>
+        <li>Google Analytics</li>
+        <li>Disqus</li>
+        <li>Check Your Post Limit</li>
+    </ul>
+</ul>
 
 ## References:
 - [Customization with META - Build Themes](https://buildthemes.tumblr.com/ch3/customization)
