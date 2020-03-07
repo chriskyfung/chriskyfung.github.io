@@ -77,7 +77,7 @@ In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, c
 
 ![Amazon Associates Ads Loader for Tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr/raw/master/images/amzn_assoc_loader_for_tumblr.png)
 
-Tumblr blocks executing Javascript snippets directly embedded in a post body. For that reason, Amazon Ads cannot display if we just copy an Ads code to a Tumblr post. To workaround, I created a converter to format the Ads code to HTML data, and a plugin to insert the Ads back to the post body by interpreting the HTML elements in the DOM File.
+Tumblr blocks executing Javascript snippets directly embedded in a post body. For that reason, Amazon Ads cannot display if we just copy an Ads code to a Tumblr post. To workaround, I created a converter to format the Ads code to HTML data, and a plugin to insert the Ads back to the post body by interpreting the HTML elements in the DOM File. Visit a [Demo](https://releasemind.com/post/172027040926/6-benefits-of-networking-for-your-success) page!
 
 For more detail, please visit the repository in GitHub ([https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr)).
 
