@@ -120,10 +120,11 @@ Firewall rules and VM instances are separated resources, so make sure to correct
 Format the REST profile using a JSON to YAML converter, such as https://www.json2yaml.com/. You should obtain something similar to the following codes:
 
 ```jinja
+{% raw %}
 - type: compute.v1.firewall
   name: default-allow-http
   properties:
-    network: https://www.googleapis.com/compute/v1/projects/&#123;&#123; env["project"] &#125;&#125;/global/networks/default
+    network: https://www.googleapis.com/compute/v1/projects/{{ env["project"] }}/global/networks/default
     targetTags:
     - http
     allowed:
@@ -132,6 +133,7 @@ Format the REST profile using a JSON to YAML converter, such as https://www.json
       - '80'
     sourceRanges:
     - 0.0.0.0/0
+{% endraw %}
 ```
 
 Copy the above firewall configuration to the .jinja file. The final `qwiklabs.jinja` file should become:
