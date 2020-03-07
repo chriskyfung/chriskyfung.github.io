@@ -206,20 +206,20 @@ A set of python scripts for manipulating Tumblr blogs
 <ul style="margin-left:30px;">
 <li><u>Tips & Tricks</u></li>
     <ul>
-        <li>~~Avoid Reblogging Long Posts As Links~~</li>
+        <li><del>Avoid Reblogging Long Posts As Links</del></li>
         <li>Use Keyboard Shortcuts On The Dashboard</li>
-        <li>~~Allow Users To Reply To Your Posts From The Dashboard~~</li>
+        <li><del>Allow Users To Reply To Your Posts From The Dashboard</del></li>
         <li>Customize Follow & Share Buttons</li>
         <li>Send Asks To Other Users From The Dashboard</li>
-        <li>**Recover Old Themes**</li>
+        <li><strong>Recover Old Themes</strong></li>
         <li>Mass Edit Posts And Tags</li>
         <li>Queue Your Posts</li>
         <li>Delay Your Reply To Asks</li>
         <li>Play Around With Tumblr’s Logo</li>
         <li>View Search The Old Fashioned Way</li>
-        <li>**Share A Preview Of A Draft**</li>
+        <li><strong>Share A Preview Of A Draft</strong></li>
         <li>Rearrange Queued Posts</li>
-        <li>~~Find Out What Your Friends Like~~</li>
+        <li><del>Find Out What Your Friends Like</del></li>
         <li>Search For Posts On Blogs Without Search Bar</li>
         <li>View Tagged Posts From Earliest To Latest</li>
         <li>Search For Posts On A Specific Date</li>
@@ -230,13 +230,13 @@ A set of python scripts for manipulating Tumblr blogs
 <li><u>Extensions & Tools</u></li>
     <ul>
         <li><span class="discontinued">Missing E</span></li>
-        <li><span class="discontinued">~~Add A View Count~~</span></li>
+        <li><span class="discontinued"><del>Add A View Count</del></span></li>
         <li>Add A Music Player</li>
         <li>Get A Dashboard Theme</li>
-        <li><span class="discontinued">~~Endless Scrolling~~</span></li>
-        <li>~~Share Content Via Bookmarklet~~</li>
-        <li><span class="discontinued">~~Customize Your Mouse Cursor~~</span></li>
-        <li><span class="discontinued">~~Customize your Scroll Bar~~</span></li>
+        <li><span class="discontinued"><del>Endless Scrolling</del></span></li>
+        <li><del>Share Content Via Bookmarklet</del></li>
+        <li><span class="discontinued"><del>Customize Your Mouse Cursor</del></span></li>
+        <li><span class="discontinued"><del>Customize your Scroll Bar</del></span></li>
         <li>Tumblr Savior</li>
         <li>#Wrap</li>
         <li>Google Analytics</li>
