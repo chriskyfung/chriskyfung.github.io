@@ -123,7 +123,7 @@ Format the REST profile using a JSON to YAML converter, such as https://www.json
 - type: compute.v1.firewall
   name: default-allow-http
   properties:
-    network: https://www.googleapis.com/compute/v1/projects/\{\{ env["project"] \}\}/global/networks/default
+    network: https://www.googleapis.com/compute/v1/projects/*{{ env["project"] }}*/global/networks/default
     targetTags:
     - http
     allowed:
