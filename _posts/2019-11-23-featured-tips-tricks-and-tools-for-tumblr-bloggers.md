@@ -73,7 +73,7 @@ In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, c
 
 ## Plugins for Tumblr Sites:
 
-### Amazon Associates Ads Loader for Tumblr <small>([Demo page](https://www.craftweeks.com/post/163368373526/gcc-laserpro-venus-laser-system))</small>
+### Amazon Associates Ads Loader for Tumblr
 
 ![Amazon Associates Ads Loader for Tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr/raw/master/images/amzn_assoc_loader_for_tumblr.png)
 
@@ -81,6 +81,19 @@ Tumblr blocks executing Javascript snippets directly embedded in a post body. Fo
 
 For more detail, please visit the repository in GitHub ([https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr)).
 
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "cfky05-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "My Amazon Picks";
+amzn_assoc_linkid = "bfc0f57bf0ff0a864c81efdd3904066e";
+amzn_assoc_asins = "1118335953,1119950155,B082RSGN62,B00GOMDPRI";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
 ### Tumblr Featured Posts Plugin<br><small>_by [BANDIT DESIGN](https://blog.bandit.co.nz/post/87511743/tumblr-featured-posts-javascript-plugin)_ </small>
 
