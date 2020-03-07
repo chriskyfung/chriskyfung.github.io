@@ -45,6 +45,7 @@ The screenshot above shows that there are 6 steps required for completing this l
 <br>
 
 ## Download the baseline Deployment Manager template
+
 The lab gives a basic deployment manager template, containing with the `.jinja`, `.yaml` and `.jinja.schema` files as well as the sample startup script. In a cloud shell, use the following commands to download and unpack the files.
 
 ```bash
@@ -54,7 +55,6 @@ gsutil cp gs://spls/gsp302/* .
 ```
 
 You can explore the files by opening a Cloud Shell code editor. The template for you to deploy a virtual machine
-
 
 ![Snapshot of the Deployment Manager template in Cloud Shell code editor](/images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png)
 
@@ -77,8 +77,7 @@ To fulfil the lab requirements, the template still does not have,
 - metadata for embedding the startup script, and
 - a tag called `http`.
 
-Next, you need to add two more properties to the instance configuration. If you want to know more about the properties of a GCE instance, read [REST Resource: instances](https://cloud.google.com/compute/docs/reference/rest/v1/instances) in the Compute Engine Documentation.
-
+Next, you need to add two more properties to the instance configuration. If you want to know more about the properties of a GCE instance, read [REST Resource: instances](https://cloud.google.com/compute/docs/reference/rest/v1/instances) in the Compute Engine documentation.
 
 ### Setting Metadata and Using Startup Scripts
 
@@ -112,7 +111,7 @@ A tag called `http` is required to associate the GCE instance with the firewall 
       - http
 ```
 
-Next, you need to add a firewall resourece to the same .jinja file.
+Next, you need to add a firewall resource to the same .jinja file.
 
 ### Add Firewall Rule for HTTP traffic
 
@@ -124,7 +123,7 @@ Format the REST profile using a JSON to YAML converter, such as https://www.json
 - type: compute.v1.firewall
   name: default-allow-http
   properties:
-    network: https://www.googleapis.com/compute/v1/projects/{{ env["project"] }}/global/networks/default
+    network: https://www.googleapis.com/compute/v1/projects/\{\{ env["project"] \}\}/global/networks/default
     targetTags:
     - http
     allowed:
@@ -147,12 +146,12 @@ Copy the above firewall configuration to the .jinja file. The final `qwiklabs.ji
 
 It's the time to deploy the configuration file and see if the deployment works.
 Run the following `gcloud` command in Cloud Shell.
+
 ```bash
 gcloud deployment-manager deployments create vm-test --config=qwiklabs.yaml
 ```
 
 In the web console, navigate to **_Deployment Manager_** to monitor the progress. Also, go to **_Compute Engine_** and **_VPC Network > Firewall_** to verify the deployment results.
-
 
 Congratulations! You should accomplish the lab if you follow all above steps.
 
