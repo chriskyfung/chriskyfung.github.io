@@ -225,7 +225,7 @@ A set of python scripts for manipulating Tumblr blogs
      - Find All Your Tags
      - Display Individual Author’s Avatar
 
-    <u>Extensions & Tools</u>
+<u>Extensions & Tools</u>
      -  <span class="discontinued">Missing E</span>
      - <span class="discontinued">~~Add A View Count~~</span>
      - Add A Music Player
