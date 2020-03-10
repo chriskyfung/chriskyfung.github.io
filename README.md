@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## Chris KY FUNG's GitHub Page
 
-You can use the [editor on GitHub](https://github.com/chriskyfung/chrisfungky.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This site is a new version of my old site “Blog of a POLIDA post-grad II .” which was hosting in Wix.com. Now it has been moved to the GitHub page. It should deliver a much faster page loading speed and a nicer display of codes. I hope you will better enjoy my content.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Vision
 
-### Markdown
+Computer programming is one important ability necessary for scientific research. It is not only useful in data analytics and simulations, but also helpful to automate and streamline our daily and research tasks.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I hope all of us can share ideas, codes, tips here, and collaborate to make our programming tasks easier soon.
 
-```markdown
-Syntax highlighted code block
+## Copyright
+© 2014-2020 Chris KY FUNG. All rights reserved.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chriskyfung/chrisfungky.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<a href="http://www.copyscape.com/"><img src="https://banners.copyscape.com/img/copyscape-banner-white-160x56.png" width="160" height="56" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a>
