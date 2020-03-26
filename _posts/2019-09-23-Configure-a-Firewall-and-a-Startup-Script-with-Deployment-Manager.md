@@ -13,6 +13,8 @@ header:
    teaser: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
 ---
 
+_Last update: 2020-03-26_
+
 <!--more-->
 
 With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Challenge: GCP Architecture](https://google.qwiklabs.com/quests/47)". The web console assists quick access of the GCP resources for testing and building small projects. If you are an amateur or hobbyist developer, just make use of the web console is pretty enough.
@@ -140,6 +142,8 @@ Copy the above firewall configuration to the .jinja file. The final `qwiklabs.ji
 
 {% gist 245e0eb142df08d97f42717ea188be72 qwiklabs.jinja %}
 
+_Replace `<YOUR-SERVICE-ACCOUNT-EMAIL>` in Line 31 to the Service Account of your GCP project, if you copy the codes from this snippet._
+
 **Save** the file change.
 
 <br>
@@ -155,7 +159,7 @@ gcloud deployment-manager deployments create vm-test --config=qwiklabs.yaml
 
 In the web console, navigate to **_Deployment Manager_** to monitor the progress. Also, go to **_Compute Engine_** and **_VPC Network > Firewall_** to verify the deployment results.
 
-Congratulations! You should accomplish the lab if you follow all above steps.
+Congratulations! You should accomplish the lab if you follow all the above steps.
 
 This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-a-firewall-and-a-startup-script-with-deployment-manager-342f822e5595).
 
