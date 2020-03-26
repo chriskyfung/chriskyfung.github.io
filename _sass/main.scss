@@ -76,3 +76,29 @@ pre code {
 #___gcse_0 {
   display: none;
 }
+
+.tags-expo .tags-expo-list .post-tag::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02b";
+  margin: 0 2px;
+}
+
+.tags-expo .tags-expo-section h2::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02b" !important;
+}
+
+.categories-expo .tags-expo-list .post-tag::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "f1ea";
+  margin: 0 2px;
+}
+
+.categories-expo .tags-expo-section h2::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02b" !important;
+}

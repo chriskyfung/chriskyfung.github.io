@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tag
+title: Categories
 noindex: true
 ---
 
@@ -9,7 +9,7 @@ noindex: true
 	+ categories page from https://codinfox.github.io
 -->
 
-<div class="tags-expo">
+<div class="categories-expo">
 	<div class="tags-expo-list">
 		{% for tag in site.categories %}
 		<a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
