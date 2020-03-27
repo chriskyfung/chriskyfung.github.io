@@ -123,7 +123,6 @@ Press `Ctrl+X` and then `Y` to save the file and exit the editor. Finally, start
 
 Now you should able to register your Linux desktop as a computer on your Chrome Remote Desktop. Try to remotely access this desktop from other computers to test the connections.
 
-
 * * *
 
 ### Unsolved Problem
@@ -144,4 +143,4 @@ I hope this article can help you to solve your problem.
 ### Related
 
 - [Useful command lines in Ubuntu that help using terminals
-](/blog/2014/10/08/Useful-Ubuntu-Commands)
+](/blog/linux/Useful-Ubuntu-Commands)
