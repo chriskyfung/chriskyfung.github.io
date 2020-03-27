@@ -11,5 +11,4 @@ site_url: https://chriskyfung.github.io/
 excerpt_separator: "<!--more-->"
 gems:
   - jekyll-sitemap
-plugins:
   - jekyll-redirect-from
