@@ -70,3 +70,7 @@ For more infomation, please find from:
    where _**n**_ is the index of a command displayed by history, e.g. `!4`
 - `Ctrl+R`
    Suggest a previous command that start with the chars as you type
+
+### Related
+
+- [Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher](/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu)
