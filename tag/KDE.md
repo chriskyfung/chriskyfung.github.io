@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: Kubuntu"
-tag: Kubuntu
+title: "Tag: KDE"
+tag: KDE
 robots: noindex
 ---
