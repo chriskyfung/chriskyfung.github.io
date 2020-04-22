@@ -20,9 +20,10 @@ In the last few months, I received a few comments that ask for help in those cha
 In this article, we will go through the lab **GSP313** _"[Google Cloud Essentials: Challenge Lab](https://www.qwiklabs.com/focuses/10258?parent=catalog)"_. This exercise is in the introductory-level Quest called “Google Cloud Essentials”, which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.
 
 **The challenge contains 3 compulsory tasks:**
-Create a project jumphost instance;
-Create a Kubernetes service cluster;
-Setup an HTTP load balancer to create the web server frontend.
+
+1. Create a project jumphost instance;
+2. Create a Kubernetes service cluster;
+3. Setup an HTTP load balancer to create the web server frontend.
 
 * * *
 
@@ -32,9 +33,9 @@ _Hint_: Refer and modify the procedures in the lab **GSP001** _"[Creating a Virt
 
 This task is simple. Make sure you create the VM instance with:
 
-Name: **nucleus-jumphost**
-Zone: **us-east1-b**
-Machine Type: **f1-micro**
+- Name: **nucleus-jumphost**
+- Zone: **us-east1-b**
+- Machine Type: **f1-micro**
 
 ![Create a project VM instance, called nucleus-jumphost in Google Cloud Platform](/images/posts/qwiklabs/qwiklabs-GSP313-task1.png)
 
