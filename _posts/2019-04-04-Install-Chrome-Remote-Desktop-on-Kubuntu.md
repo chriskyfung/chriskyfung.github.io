@@ -48,7 +48,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 Run the following commands to download and install the host component of Chrome Remote Desktop for 64-bit Debian,
 
-```
+```bash
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg -i chrome-remote-desktop_current_amd64.deb
 sudo apt-get install -f
@@ -99,14 +99,14 @@ Set the X display number to the current display number (obtain it with echo $DIS
 
 Add `#` in front of the following two lines to comment out sections that look for additional displays,
 
-```
+```conf
 # while os.path.exists(X_LOCK_FILE_TEMPLATE % display):
 # display += 1
 ```
 
 To reuse the existing X session instead of launching a new one, altering `launch_session()` by commenting out `launch_x_server()` and `launch_x_session()` and instead setting the display environment variable, by adding the last two lines below, so that the function definition ultimately looks like the following:
 
-```
+```conf
 def launch_session(self, x_args):
 self._init_child_env()
 self._setup_pulseaudio()
@@ -132,7 +132,6 @@ Although the above method can set up the Chrome Remote Desktop on an Ubuntu with
 * * *
 
 I hope this article can help you to solve your problem.
-
 
 ### References
 
