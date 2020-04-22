@@ -86,7 +86,9 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
 
 **Related posts:**
 
-[Useful Google Cloud Platform Commands Cheat Sheet](/blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet)
+_Resources:_
+
+- [Useful Google Cloud Platform Commands Cheat Sheet](/blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet)
 
 _The Cookbooks of Challenge Quest Series:_
 - [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
@@ -96,6 +98,9 @@ _The Cookbooks of Challenge Quest Series:_
 - [Qwiklab/Logbook: Build and Deploy a Docker Image to a Kubernetes Cluster](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster)
 - [Qwiklab/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster)
 - [Qwiklab/Logbook: Migrate a MySQL Database to Google Cloud SQL](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL)
+
+_The Hints for Challenge Labs 2020:_
+- [Qwiklab/Logbook: Google Cloud Essentials: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab)
 
 _Quizzes Answers:_
 
