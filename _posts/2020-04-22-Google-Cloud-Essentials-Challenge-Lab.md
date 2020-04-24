@@ -17,7 +17,7 @@ Qwiklabs implemented a big change to the format of its quests in 2020. Multiple 
 
 In the last few months, I received a few comments that ask for help in those challenge labs. I am going to publish a series of logbooks to provide hints and instructions for those difficult labs.
 
-In this article, we will go through the lab **GSP313** _"[Google Cloud Essentials: Challenge Lab](https://www.qwiklabs.com/focuses/10258?parent=catalog)"_. This exercise is in the introductory-level Quest called “Google Cloud Essentials”, which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.
+In this article, we will go through the lab **GSP313** _[Google Cloud Essentials: Challenge Lab](https://www.qwiklabs.com/focuses/10258?parent=catalog)_. This exercise is in the introductory-level Quest called “Google Cloud Essentials”, which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.
 
 **The challenge contains 3 compulsory tasks:**
 
@@ -29,7 +29,7 @@ In this article, we will go through the lab **GSP313** _"[Google Cloud Essential
 
 ## Task 1: Create a project jumphost instance
 
-_Hint_: Refer and modify the procedures in the lab **GSP001** _"[Creating a Virtual Machine](https://google.qwiklabs.com/focuses/3563?parent=catalog#step4)"_.
+_Hint_: Refer and modify the procedures in the lab GSP001 [Creating a Virtual Machine](https://google.qwiklabs.com/focuses/3563?parent=catalog#step4).
 
 This task is simple. Make sure you create the VM instance with:
 
@@ -41,7 +41,7 @@ This task is simple. Make sure you create the VM instance with:
 
 ## Task 2: Create a Kubernetes service cluster
 
-_Hint_: Refer and modify the procedures in the lab **GSP100** _"[Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog)"_.
+_Hint_: Refer and modify the procedures in the lab GSP100[Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog).
 
 Make sure you:
 
@@ -52,7 +52,7 @@ Make sure you:
 
 ## Task 3: Setup an HTTP load balancer
 
-_Hint_: Refer and modify the procedures in the lab **GSP007** _"[Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/558?parent=catalog)"_.
+_Hint_: Refer and modify the procedures in the lab GSP007[Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/558?parent=catalog).
 
 Make sure you:
 
