@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
 permalink: /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
 excerpt: Hints for qwiklab GSP314 "Cloud Architecture &#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
 header: 
-   teaser: /images/posts/qwiklab-GSP314-spinaker-production.png
+   teaser: /images/posts/qwiklabs/qwiklab-GSP314-spinaker-production.png
 ---
 
 <!--more-->
@@ -31,7 +31,7 @@ In the lab scenario, your client has already established a product development e
 
 We can further subdivide it to 3 sub-tasks:
 
-#### 1.1 Create the kraken-prod-vpc using the given Deployment Manager configuration
+### 1.1 Create the kraken-prod-vpc using the given Deployment Manager configuration
 
 First of all, navigate to **Deployment Manager** in the Console to check the deployment status of **kraken-jumphost**.
 
@@ -49,7 +49,7 @@ After the jumphost has been created, navigate to **Compute Engine** > **VM insta
 4. Create the **kraken-prod-vpc** with the YAML file using `gcloud` command.<br>
 _Hint_: Refer and modify the `gcloud deployment-manager` command in the lab GSP060 [Deployment Manager - Full Production](https://www.qwiklabs.com/focuses/981?parent=catalog#step9).
 
-#### 1.2 Create a Kubernetes cluster in the new network
+### 1.2 Create a Kubernetes cluster in the new network
 
 Return to Cloud Console, click on **Navigation menu** > **Kubernetes Engine** > **Cluster**.
 
@@ -59,7 +59,7 @@ Click **Create Cluster**. Make sure you:
 - set the number of nodes to **2**
 - choose **kraken-prod-vpc** in the network tab
 
-#### 1.3 Create the frontend and backend deployments and services
+### 1.3 Create the frontend and backend deployments and services
 
 Hint: Refer and modify the **kubectl create** command in the lab GSP021 [Orchestrating the Cloud with Kubernetes](https://www.qwiklabs.com/focuses/557?parent=catalog).
 
@@ -81,11 +81,11 @@ Click **Check my progress** to verify **Task 1**.
 
 ## Task 2: Setup the Admin instance
 
-#### 2.1 Create a VM instance
+### 2.1 Create a VM instance
 
-In the Console, click on **Navigation menu** > **Compute Engine** > **VM instances**.
+1. In the Console, click on **Navigation menu** > **Compute Engine** > **VM instances**.
 
-Click **Create instance**.
+2. Click **Create instance**.
 
 Make sure you:
 
@@ -97,7 +97,7 @@ Make sure you:
 
 After the instance being created, copy **ID** from its detail page.
 
-#### 2.2 Create a Monitoring workspace
+### 2.2 Create a Monitoring workspace
 
 1. Click on **Navigation menu** > **Monitoring**.
 
@@ -131,7 +131,7 @@ In this lab, several resources have been already provisioned. you **DO NOT** nee
 - Configure the Cloud Build triggers
 - Configuring the deployment pipelines
 
-#### 3.1 Connect the Spinnaker console
+### 3.1 Connect the Spinnaker console
 
 The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** the **spin-deck** pod from port **9000** to **8080**, while I perform to work around with the Cloud Console using the following steps.
 
@@ -152,7 +152,7 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
    
    ![](/images/posts/qwiklabs/qwiklab-GSP314-spinnaker.png)
 
-#### 3.2 Clone your source code repository
+### 3.2 Clone your source code repository
 
 1. In the Console, click on **Navigation menu** > **Source Repositories**.
 
@@ -170,7 +170,7 @@ git config --global user.email "$(gcloud config get-value core/account)"
 git config --global user.name "$(gcloud config get-value core/account)"
 ```
 
-#### 3.3 Triggering your pipeline from code changes
+### 3.3 Triggering your pipeline from code changes
 
 From your sample-app directory, change the color of the app from orange to blue:
 
@@ -196,7 +196,7 @@ Once the pipeline completes, the color of the sample application has changed fro
 
 <br>
 
-### Summary
+## Summary
 
 This lab is challenging. You might not know what need to do if you cannot spot the similar pieces from the prior training labs. You need to familiar with `kubectl` and `git` commands as well as VPCs and Kubernetes in the multiple network environment. Since some steps are hard to undo, it is necessary to well-check the options and parameters before attempting create resources and update the pipeline.
 
