@@ -2,7 +2,7 @@
 layout: post
 title:  "Qwiklab/Logbook: Cloud Architecture: Challenge Lab"
 author: Chris KY Fing
-date: 2020-04-2
+date: 2020-04-24
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
 permalink: /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
