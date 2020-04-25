@@ -14,6 +14,8 @@ header:
 
 <!--more-->
 
+_Last update: 2020-04-25_
+
 ## What is Qwiklabs
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice. If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
@@ -99,7 +101,7 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
         {% for quest in site.data.qwiklabs-quests %}
         <tr>
             <td>{{ quest.id }}</td>
-            <td>{{ quest.name }}</td>
+            <td><a href="https://www.qwiklabs.com/quests/{{ quest.id }}" target="_blank">{{ quest.name }}</a></td>
             <td>{{ quest.level }}</td>
             <td>{{ quest.duration }}</td>
             <td>{{ quest.costs }}</td>
@@ -108,6 +110,35 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
         {% endfor %}
     </tbody>
 </table>
+
+## List of Labs
+
+<table id="lab-list" class="display">
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Level</th>
+        <th>Duration</th>
+        <th>Costs</th>
+        <th>Env</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for lab in site.data.qwiklabs-labs %}
+        <tr>
+            <td>{{ lab.id }}</td>
+            <td><a href="https://www.qwiklabs.com/focuses/{{ lab.id }}?parent=catalog" target="_blank">{{ lab.name }}</a></td>
+            <td>{{ lab.level }}</td>
+            <td>{{ lab.duration }}</td>
+            <td>{{ lab.costs }}</td>
+            <td>{{ lab.env }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<br>
 
 * * *
 
@@ -143,5 +174,6 @@ _Quizzes Answers:_
 <script>
 $(document).ready( function () {
     $('#quest-list').DataTable();
+    $('#lab-list').DataTable();
 } );
 </script>
