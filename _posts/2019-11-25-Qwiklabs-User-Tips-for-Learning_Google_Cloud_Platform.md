@@ -43,7 +43,7 @@ You can start your training based on your goal and purpose, or find the quests f
 
 I spent about three months to take all the Qwiklabs quests for Google Cloud Platform. In the end, I think that there is a need to create a visual map to indicate and understand the relationships between the quests, thereby an easier way for any beginner to seek their desired learning paths. I illustrated the following map by connecting the blocks based on the quest descriptions. You can navigate in the map and click on the boxes to open the corresponding quest webpages.
 
-{% include qwiklabs-quests-map-2020-2-22.html %}
+{% include qwiklabs-quests-map-2020-4-25.html %}
 <p class="img-caption">Learning map of GCP quests (keep update)</p>
 
 <br>
