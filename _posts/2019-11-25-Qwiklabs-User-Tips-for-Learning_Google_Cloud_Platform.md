@@ -107,9 +107,8 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
           <td>{{ quest.env }}</td>
         </tr>
       {% endfor %}
-      </tbody>
-    </table>
-  </div>
+    </tbody>
+  </table>
 </div>
 
 * * *
@@ -141,6 +140,8 @@ _Quizzes Answers:_
   
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 
+<script>
 $(document).ready( function () {
     $('#quest-list').DataTable();
 } );
+</script>
