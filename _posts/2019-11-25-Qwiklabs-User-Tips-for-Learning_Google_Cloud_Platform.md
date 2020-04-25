@@ -84,7 +84,7 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
 
 ## List of Quests
 
-<div class="clusterize">
+<div id="quest-list" class="datatable">
   <table>
     <thead>
       <tr>
@@ -96,10 +96,7 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
         <th>Env</th>
       </tr>
     </thead>
-  </table>
-  <div id="scrollArea" class="clusterize-scroll">
-    <table>
-      <tbody id="contentArea" class="clusterize-content">
+    <tbody>
       {% for quest in site.data.qwiklabs-quests %}
         <tr>
           <td>{{ quest.id }}</td>
@@ -140,10 +137,10 @@ _Quizzes Answers:_
 
 - [Qwiklab/Logbook: Controlling Your Costs [Quiz]](/blog/qwiklabs/Controlling-Your-Costs-Quiz)
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 
-var clusterize = new Clusterize({
-  scrollId: 'scrollArea',
-  contentId: 'contentArea'
-});
+$(document).ready( function () {
+    $('#quest-list').DataTable();
+} );
