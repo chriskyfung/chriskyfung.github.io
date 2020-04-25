@@ -82,6 +82,39 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
+## List of Quests
+
+<div class="clusterize">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Level</th>
+        <th>Duration</th>
+        <th>Costs</th>
+        <th>Env</th>
+      </tr>
+    </thead>
+  </table>
+  <div id="scrollArea" class="clusterize-scroll">
+    <table>
+      <tbody id="contentArea" class="clusterize-content">
+      {% for quest in site.data.qwiklabs-quests %}
+        <tr>
+          <td>{{ quest.id }}</td>
+          <td>{{ quest.name }}</td>
+          <td>{{ quest.level }}</td>
+          <td>{{ quest.duration }}</td>
+          <td>{{ quest.costs }}</td>
+          <td>{{ quest.env }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
 * * *
 
 **Related posts:**
@@ -106,3 +139,11 @@ _The Hints for Challenge Labs 2020:_
 _Quizzes Answers:_
 
 - [Qwiklab/Logbook: Controlling Your Costs [Quiz]](/blog/qwiklabs/Controlling-Your-Costs-Quiz)
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.js"></script>
+
+var clusterize = new Clusterize({
+  scrollId: 'scrollArea',
+  contentId: 'contentArea'
+});
