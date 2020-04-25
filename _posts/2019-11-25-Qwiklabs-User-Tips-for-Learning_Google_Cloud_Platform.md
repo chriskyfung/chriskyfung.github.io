@@ -84,32 +84,30 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
 
 ## List of Quests
 
-<div id="quest-list" class="datatable">
-  <table>
+<table id="quest-list" class="display">
     <thead>
-      <tr>
+        <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Level</th>
         <th>Duration</th>
         <th>Costs</th>
         <th>Env</th>
-      </tr>
+        </tr>
     </thead>
     <tbody>
-      {% for quest in site.data.qwiklabs-quests %}
+        {% for quest in site.data.qwiklabs-quests %}
         <tr>
-          <td>{{ quest.id }}</td>
-          <td>{{ quest.name }}</td>
-          <td>{{ quest.level }}</td>
-          <td>{{ quest.duration }}</td>
-          <td>{{ quest.costs }}</td>
-          <td>{{ quest.env }}</td>
+            <td>{{ quest.id }}</td>
+            <td>{{ quest.name }}</td>
+            <td>{{ quest.level }}</td>
+            <td>{{ quest.duration }}</td>
+            <td>{{ quest.costs }}</td>
+            <td>{{ quest.env }}</td>
         </tr>
-      {% endfor %}
+        {% endfor %}
     </tbody>
-  </table>
-</div>
+</table>
 
 * * *
 
