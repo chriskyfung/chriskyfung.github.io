@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklab/Logbook: Migrate a MySQL Database to Google Cloud SQL"
+title: "QLogbook: Migrate a MySQL Database to Google Cloud SQL"
 author: Chris KY Fung
 date: 2019-09-30
 category: Cloud

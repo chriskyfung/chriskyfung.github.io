@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script"
+title: "QLogbook: Deploy a Compute Instance with a Remote Startup Script"
 date: 2019-09-20
 category: Cloud
 tags: Qwiklabs Google_Cloud Logbook

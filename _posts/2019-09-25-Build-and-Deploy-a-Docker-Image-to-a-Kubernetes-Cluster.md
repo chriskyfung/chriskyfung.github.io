@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Qwiklab/Logbook: Build and Deploy a Docker Image to a Kubernetes Cluster"
+title:  "QLogbook: Build and Deploy a Docker Image to a Kubernetes Cluster"
 author: Chris KY Fing
 date: 2019-09-25
 category: Cloud

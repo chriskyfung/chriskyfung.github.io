@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklab/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster"
+title: "QLogbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster"
 author: Chris KY Fung
 date: 2019-09-27
 category: Cloud
