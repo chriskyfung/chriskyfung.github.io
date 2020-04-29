@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklab/Logbook: Google Cloud Essentials: Challenge Lab"
+title: "QLogbook: Google Cloud Essentials: Challenge Lab"
 author: Chris KY Fung
 date: 2020-04-22
 category: Cloud

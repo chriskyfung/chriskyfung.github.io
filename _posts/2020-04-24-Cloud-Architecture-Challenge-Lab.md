@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Qwiklab/Logbook: Cloud Architecture: Challenge Lab"
+title:  "QLogbook: Cloud Architecture: Challenge Lab"
 author: Chris KY Fing
 date: 2020-04-24
 category: Cloud

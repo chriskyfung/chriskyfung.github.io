@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklab/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform on GCP"
+title: "QLogbook: Configure Secure RDP using a Windows Bastion Host with Terraform on GCP"
 author: Chris KY Fung
 date: 2019-09-07
 category: Cloud

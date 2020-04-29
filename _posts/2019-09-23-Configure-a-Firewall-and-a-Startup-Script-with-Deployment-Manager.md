@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklab/Logbook: Configure a Firewall and a Startup Script with Deployment Manager"
+title: "QLogbook: Configure a Firewall and a Startup Script with Deployment Manager"
 author: Chris KY Fing
 date: 2019-09-23
 category: Cloud
