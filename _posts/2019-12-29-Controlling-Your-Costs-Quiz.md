@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklab/Logbook: Controlling Your Costs [Quiz]"
+title: "QLogbook: Controlling Your Costs [Quiz]"
 date: 2019-11-26 11:56
 author: Chris KY Fung
 category: Cloud
@@ -11,6 +11,8 @@ redirect_from:
 ---
 
 This post records the correct answers for the Qwiklabs quiz ["Knowledge Check: Controlling Your Costs search"](https://www.qwiklabs.com/quizzes/183), which is a part of the quest [_"Optimizing Your GCP Costs"_](https://www.qwiklabs.com/quests/97).
+
+_Last update: 2020-04-29
 
 <!--more-->
 
@@ -52,15 +54,25 @@ This post records the correct answers for the Qwiklabs quiz ["Knowledge Check: C
 >
 > <i class="far fa-check-circle" style="color:green"></i> Set up a quota limit to cap service usage when developing and testing applications.
 >
-> <i class="far fa-check-circle" style="color:green"></i> Change the quota limit for that resource type to unlimited.
+> <i class="far fa-check-circle" style="color:green"></i> Set up a programmatic budget notification to disable billing for the project specific to the test environment to stop usage when exceeding the budget threshold.
+>
+> <i class="far fa-times-circle" style="color:red"></i> Disable that individual’s access to all GCP resources until the next billing cycle.
+>
+> <i class="far fa-times-circle" style="color:red"></i> Use the shared responsibility model to encourage project owners to make cost-effective decisions when consuming GCP resources.
+>
+> <i class="far fa-times-circle" style="color:red"></i> Change the quota limit for that resource type to unlimited.
 
 <br>
 
 > Q: You run a query for the fifth time in BigQuery, and you receive the following error message - 'Custom quota exceeded: Your usage exceeded the custom quota for QueryUsagePerUserPerDay, which is set by your administrator.' What does this message mean?
 >
+> <i class="far fa-check-circle" style="color:green"></i> You’ve exceeded the limit on the amount of queries that you can run for the day.
+>
 > <i class="far fa-check-circle" style="color:green"></i> The limit will be reset the following day.
 >
 > <i class="far fa-check-circle" style="color:green"></i> Only your project administrator can adjust the quota limit.
+>
+> <i class="far fa-times-circle" style="color:red"></i> Your access to BigQuery has been revoked indefinitely.
 
 * * *
 
