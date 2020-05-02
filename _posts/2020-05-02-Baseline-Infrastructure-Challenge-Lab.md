@@ -52,19 +52,19 @@ Make sure you remember the topic name, which will be used in Task 3.
 
 3. In the Create function dialog, enter the following values:
 
-| Field               |   Value       |
-|---------------------|---------------|
-| Function to execute | thumbnail     |
-| Runtime             | Node.js 8     |
-| Trigger             | Cloud Storage |
+   | Field               |   Value       |
+   |---------------------|---------------|
+   | Function to execute | thumbnail     |
+   | Runtime             | Node.js 8     |
+   | Trigger             | Cloud Storage |
 
 4. Copy the given `index.js` and `package.json` to the dialog.
 
-Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic you created in task 2, in line 15 of index.js.
+   Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic you created in task 2, in line 15 of index.js.
 
 5. Upload a JPG or PNG image file to the bucket created in Task 1.
 
-![](/images/posts/qwiklabs/map.jpg)
+   ![](/images/posts/qwiklabs/map.jpg)
 
 <br>
 
