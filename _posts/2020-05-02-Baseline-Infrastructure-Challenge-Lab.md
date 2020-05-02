@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP315 "Baseline-Infrastructure-Challenge-Lab &#58; Challenge Lab".
 header: 
-   teaser: /images/posts/qwiklabs/images/posts/qwiklabs/map.jpg
+   teaser: /images/posts/qwiklabs/map.jpg
 ---
 
 <!--more-->
