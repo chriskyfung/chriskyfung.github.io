@@ -207,6 +207,4 @@ This post has also been published to Medium. If you like to read and take notes 
 
 Next time, I will try to write a review about different quests in Qwiklabs. I hope you will visit my site again. See you soon!
 
-**Related post:**
-
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
+**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)

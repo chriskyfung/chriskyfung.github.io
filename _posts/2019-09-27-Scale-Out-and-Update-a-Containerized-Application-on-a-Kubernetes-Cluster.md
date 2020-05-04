@@ -112,6 +112,4 @@ This post has also been published to Medium. If you like to read and take notes 
 
 Do you feel this lab difficult for you? [Next lab](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL) will be even more challenging, but do not stop here. That is the final lab of the quest. You can earn a badge very soon!
 
-**Related post:**
-
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
+**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)

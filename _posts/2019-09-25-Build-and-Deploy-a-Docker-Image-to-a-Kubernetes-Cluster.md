@@ -150,6 +150,4 @@ This post has also been published to Medium. If you like to read and take notes 
 
 [Next lab](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster) will continue this exercise and need to update the running `echo-app` application in the `echo-web` deployment from the v1 to the v2.
 
-**Related post:**
-
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
+**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
