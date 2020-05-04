@@ -161,6 +161,7 @@ _The Hints for Challenge Labs 2020:_
 - [Qwiklab/Logbook: Google Cloud Essentials: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab)
 - [Qwiklab/Logbook: Cloud Architecture: Challenge Lab](/blog/qwiklabs/Cloud-Architecture-Challenge-Lab)
 - [Qwiklab/Logbook: Baseline Infrastructure: Challenge Lab](/blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab)
+- [QLogbook: Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab)
 
 _Quizzes Answers:_
 

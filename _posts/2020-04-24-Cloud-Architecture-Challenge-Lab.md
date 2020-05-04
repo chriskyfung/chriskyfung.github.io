@@ -202,6 +202,4 @@ This lab is challenging. You might not know what need to do if you cannot spot t
 
 * * *
 
-**Related post:**
-
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
+**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
