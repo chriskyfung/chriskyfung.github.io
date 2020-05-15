@@ -66,6 +66,7 @@ Do you use any great tools when writing your reports and essays? Have a question
 
 * * *
 
-**Related post:**
+**Related posts:**
 
 - [Working MATLAB with MS Excel](/blog/matlab/Working-MATLAB-with-MS-Excel)
+- [Expand shorten URLs in MATLAB](/blog/matlab/expand-twitter-short-url)
