@@ -39,5 +39,6 @@ Now, you can see a list of the MATLAB options in the context menu when you right
 
 ![image: context menu of MATLAB Spreadsheet Link EX Add-In](/images/posts/matlab/excel_addin_menu_right_click.png)
 
-**Related post:**
+**Related posts:**
 - [Matrix Conversion between MATLAB and Microsoft Equation Editor](/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation)
+- [Expand shorten URLs in MATLAB](/blog/matlab/expand-twitter-short-url)
