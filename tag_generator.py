@@ -14,10 +14,15 @@ import os
 post_dir = '_posts/'
 tag_dir = 'tag/'
 
+'''
 filenames = glob.glob(post_dir + '*md')
+'''
+
+filenames = [y for x in os.walk(post_dir) for y in glob.glob(os.path.join(x[0], '*.md'))]
 
 total_tags = []
 for filename in filenames:
+    print(filename)
     f = open(filename, 'r', encoding='utf8')
     crawl = False
     for line in f:
