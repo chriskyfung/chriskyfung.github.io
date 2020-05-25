@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msvalidate.01" content="9C87A2FE066C755406F5FFCAE1321439" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>QLogbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster | Chris KY FUNG's GitHub Page</title>
+    <meta name="author" content=>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta content="QLogbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster | Chris KY FUNG's GitHub Page" property="og:title">
+    
+    
+      <meta content="Feel free to bookmark this to keep an eye on my project updates" property="og:description">
+    
+    
+      <meta content="http://localhost:4000/images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png" property="og:image">
+    
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="http://localhost:4000/">
+          <h1>Chris KY FUNG's GitHub Page</h1>
+        </a>
+        <h2>Feel free to bookmark this to keep an eye on my project updates</h2>
+        
+        
+      </div>
+    </header>
+	  
+    <nav>
+  <ul>
+    
+    <li><a href="/" >
+      Home
+    </a></li>
+    
+    <li><a href="/about.html" >
+      About
+    </a></li>
+    
+    <li><a href="/blog/index.html" >
+      Blog
+    </a></li>
+    
+    <li id="toggle-search"><i class="fas fa-search" onclick="toggleSearchBar()"></i></li>
+  </ul>
+</nav>
+<script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+<div class="gcse-search"></div>
+<script>
+  function toggleSearchBar() {
+    var searchBar = document.querySelector("#___gcse_0");
+    if ( searchBar.style.display == "block") {
+      searchBar.style.display = "none";
+    } else {
+      searchBar.style.display = "block";
+    }
+  }
+</script>
+    <div id="content-wrapper">
+	<div class="inner clearfix">
+	<section id="main-content">
+	  <h2 class="title">QLogbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster</h2>
+
+<div class="page-info">
+	<span class="date"><info datetime="2019-09-27 00:00:00 +0000">
+		27 Sep 2019  by Chris KY Fung 
+	</info></span>
+	<span class="page-tags">
+		
+		
+		<a href="/tag/Qwiklabs"><code class="highligher-rouge"><nobr>Qwiklabs</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Google Cloud"><code class="highligher-rouge"><nobr>Google Cloud</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Logbook"><code class="highligher-rouge"><nobr>Logbook</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Kubernetes"><code class="highligher-rouge"><nobr>Kubernetes</nobr></code>&nbsp;</a>
+		
+	</span>
+	<br><br>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
+</div>
+
+<!-- Post content -->
+<div class="notebody">
+	<!--more-->
+
+<p>In the <a href="/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster">last lab</a>, you built a docker image and created a Kubernetes cluster for a containerized application, called <code class="highlighter-rouge">echo-app</code>. Considering your developer team delivers a new version of the application to you, so you need to update the running application on the cluster to the new version. You may also need to scale the cluster size to optimize the usage and performance. You will do this in the lab <strong>GSP305</strong> <em>“<a href="https://www.qwiklabs.com/focuses/1739?parent=catalog">Scale Out and Update a Containerized Application on a Kubernetes Cluster</a>“</em>. This lab will perform provisioning of the application <code class="highlighter-rouge">echo-app:v1</code> as the same in the previous lab. You will continue practising with the <code class="highlighter-rouge">echo-app</code> application in the <code class="highlighter-rouge">echo-web</code> deployment, and update its version from v1 to v2.</p>
+
+<p><br /></p>
+
+<h2 id="brief-introduction-of-challenge-scenario">Brief Introduction of Challenge Scenario</h2>
+
+<p>When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.</p>
+
+<p><img src="/images/posts/qwiklabs/score_box_of_qwiklabs_GSP305.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP305" /></p>
+
+<p>The screenshot above shows that there are 4 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.</p>
+
+<ol>
+  <li>Update a docker application and push a new version of image tagged <code class="highlighter-rouge">echo-app:v2</code> to a container repository (gcr.io).</li>
+  <li>Upload the deployment running on the Kubernetes cluster to <code class="highlighter-rouge">echo-app:v2</code>.</li>
+  <li>Scale out the application so that the Kubernetes cluster deployment is running 2 replicas.</li>
+  <li>The application must respond to web requests with V2.0.0.</li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="build-a-docker-image-of-sample-application-with-a-v2-tag">Build a Docker Image of Sample Application with a <code class="highlighter-rouge">v2</code> tag</h2>
+
+<p>Just similar to the <a href="/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster">steps in the last lab</a>, you can start with the pre-uploaded archive that contains the sample application and the docker configuration in the Cloud Storage bucket. Use a <code class="highlighter-rouge">gsutil cp</code> command to copy the archive from the Cloud Storage to the Cloud Shell environment. Next, use a <code class="highlighter-rouge">tar -xvzf</code> command to unzip the files. You may use a code editor to compare the change between the v1 and v2 codes. After that, use <code class="highlighter-rouge">docker</code> commands to build, tag and push the new container image to Google Container Registry (gcr.io). If you do not remember how to build a docker image on GCP, I recommend you revise the lab <em>“<a href="https://www.qwiklabs.com/focuses/1029?parent=catalog">Introduction to Docker</a>“</em> before you start.</p>
+
+<p>Edit the line in the <code class="highlighter-rouge">/manifests/echoweb-deployment.yaml</code> file defining which image to use:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">apps/v1beta1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Deployment</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">echoweb</span>
+  <span class="na">labels</span><span class="pi">:</span>
+    <span class="na">app</span><span class="pi">:</span> <span class="s">echo</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">template</span><span class="pi">:</span>
+    <span class="na">metadata</span><span class="pi">:</span>
+      <span class="na">labels</span><span class="pi">:</span>
+        <span class="na">app</span><span class="pi">:</span> <span class="s">echo</span>
+        <span class="na">tier</span><span class="pi">:</span> <span class="s">web</span>
+    <span class="na">spec</span><span class="pi">:</span>
+      <span class="na">containers</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">echo-app</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">gcr.io/PROJECT_ID/echo-app:v2</span> <span class="c1"># Update this to v2.</span>
+                                             <span class="c1"># Replace PROJECT_ID</span>
+                                             <span class="c1"># with your project</span>
+        <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">containerPort</span><span class="pi">:</span> <span class="m">8000</span>
+</code></pre></div></div>
+<p><strong>Save</strong> the file.</p>
+
+<p>Build a new docker image of the sample application with a tag called <code class="highlighter-rouge">v2</code>, and push the image to Google Container Registry,</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> echo-app:v2 <span class="nb">.</span>
+<span class="nb">export </span><span class="nv">PROJECT_ID</span><span class="o">=</span><span class="si">$(</span>gcloud info <span class="nt">--format</span><span class="o">=</span><span class="s1">'value(config.project)'</span><span class="si">)</span>
+docker tag echo-app:v2 gcr.io/<span class="k">${</span><span class="nv">PROJECT_ID</span><span class="k">}</span>/echo-app:v2
+docker push gcr.io/<span class="k">${</span><span class="nv">PROJECT_ID</span><span class="k">}</span>/echo-app:v2
+</code></pre></div></div>
+
+<p>In the web console, navigate to <em><strong>Container Registry &gt; Images</strong></em> to confirm the docker image tagged <code class="highlighter-rouge">v2</code> has been pushed to the cloud repositories.<br />
+<img src="/images/posts/qwiklabs/qwiklabs-GSP305-step1-new-container-image-tagged-v2-in-container-registry.png" alt="Confirm your docker image tagged v2 existing in Google Container Registry" /></p>
+
+<p>Next, you need to update the application to the Kubernetes Cluster.</p>
+
+<h2 id="update-the-application-to-the-kubernetes-cluster-using-web-console">Update the Application to the Kubernetes Cluster Using Web Console</h2>
+
+<p>Navigate to <em><strong>Kubernetes Engine &gt; Workloads</strong></em>, click the name <code class="highlighter-rouge">echo-web</code> to show the Deployment details. Press the <i class="fas fa-list-ul"></i> icon to expand the menu and select <strong>Rolling Update</strong>.<br />
+<img src="/images/posts/qwiklabs/qwiklabs-GSP305-step2-expand-menu-in-Kubernetes-Engine-page.png" alt="Autoscale, Expose, Rolling Update, Scale - menu items on Deployment details page" /></p>
+
+<p>In the Rolling Update dialog, modify the end of the image field from <code class="highlighter-rouge">v1</code> to <code class="highlighter-rouge">v2</code>.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png" alt="Rolling update dialog" /></p>
+
+<p>Click <strong>UPDATE</strong>.</p>
+
+<h2 id="scale-out-the-application-so-that-the-kubernetes-cluster-deployment">Scale out the application so that the Kubernetes cluster deployment</h2>
+
+<p>In this article, I will show you the method of using the GCP web console. If you prefer to use command-line tools, you can refer to the lab <strong>GSP053</strong> <em>“<a href="https://google.qwiklabs.com/focuses/639?parent=catalog">Managing Deployments Using Kubernetes Engine</a>“</em> in Qwiklabs.</p>
+
+<p>Navigate to <em><strong>Kubernetes Engine &gt; Workloads</strong></em>, click the name <code class="highlighter-rouge">echo-web</code> to show the Deployment details. Press the <i class="fas fa-list-ul"></i> icon to expand the menu and select <strong>Scale</strong>.<br /></p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP305-step4-select-scale-from-expanded-menu-in-Kubernetes-Engine-page.png" alt="Select Scale from menu items on Deployment details page" /></p>
+
+<p>In the Scale dialog, type 2 to the field <strong>Replicas</strong>,</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP305-step5-scale-to-2-replicas.png" alt="Scale a workload to a new size" /></p>
+
+<p>Click <strong>SCALE</strong>, then waits for creating/deleting instances until 2 replicas exist in the Kubernetes cluster.</p>
+
+<p>Open the IP address of the external endpoint, you should see a similiar web response:<br />
+<img src="/images/posts/qwiklabs/qwiklabs-GSP305-step6-updated-echo-app-application.png" alt="Resulted web page" /></p>
+
+<p>Congratulations! You should accomplish the lab if you follow the above steps.</p>
+
+<p>This post has also been published to Medium. If you like to read and take notes in Medium, please visit <a href="https://medium.com/@chriskyfung/qwiklab-logbook-scale-out-and-update-a-containerized-application-on-a-kubernetes-cluster-e08aa89e6aee">Medium (@chriskyfung)</a>.</p>
+
+<hr />
+
+<p>Do you feel this lab difficult for you? <a href="/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL">Next lab</a> will be even more challenging, but do not stop here. That is the final lab of the quest. You can earn a badge very soon!</p>
+
+<p><strong>Related:</strong> <a href="/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform">Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips</a></p>
+
+</div>
+
+<!-- Post info -->
+<div class="noteinfo">
+<!-- include some categories and tags maybe? -->
+</div>
+
+<hr>
+
+<!-- Post comments -->
+
+
+<!-- Disqus comments -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://chriskyfung.github.io//blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https://chriskyfung.github.io//blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://chriskyfung.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	</section>
+	<aside id="sidebar">
+  
+  
+  
+  <h2><i class='far fa-newspaper'></i> <a href="/blog/index.html">Blog</a></h2>
+  <h3><a href="/blog/categories.html">Categories</a></h3>
+  <h3><a href="/blog/tags.html">Tags</a></h3>
+  <ul>    
+    <li><h3><a href="/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></h3></li>
+    <li><h3><a href="/tag/Tumblr">For Tumblr Developer</a></h3></li>
+    <li><h3><a href="/tag/MATLAB">MATLAB Tips</a></h3></li>
+  </ul>
+  <h2><i class='fab fa-youtube'></i> <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channels</a></h2>
+  <ul><li><h3><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></h3></li>
+    <li><h3><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></h3></li>
+  </ul>
+  
+  <h2>&nbsp;<a href="https://www.paypal.me/chrisfungky/50" target="_blank"><button class="round">Give me a help <i class='fas fa-donate'></i></button></a></h2>
+  
+  <h2><i class='fas fa-gift'></i> <a href="https://invitation.codes/u/qgcUCyqa" target="_blank">Promo Codes</a></h2>
+  
+  <!-- Copyscape Banner -->
+  <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+
+  <!-- Google Adsense -->  
+  <script data-ad-client="ca-pub-4819282024314540" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- github_resp_sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4819282024314540"
+     data-ad-slot="1391498756"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  
+  <!-- Affiliate Disclouse -->
+  <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="60" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120"/></a></div>
+</aside>
+
+	</div>
+    </div>  
+
+    <footer>   
+    <div class="invitation-codes invitation-codes-badge1" data-type="badge1" data-product="" style="float:left;"><a class="" href="https://invitation.codes/" data-type="badge1">Use my referral codes</a></div>
+<script async defer src="//invitation.codes/embed/user/qgcUCyqa/embed.js"></script>
+
+    <div id="footer-copyright">&copy; 2014-2020 Chris KY FUNG. All rights reserved</div>
+    <div id="footer-powered">Powered by <a href="https://pages.github.com">GitHub Pages</a></div>
+</footer>
+
+	
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72575541-9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-72575541-9');
+	</script>
+    
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>
+    <script type="text/javascript">
+  var vglnk = {key: '56a8cde8bc46ec169ed23320c0e35c68'};
+  (function(d, t) {
+      var s = d.createElement(t);
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0];
+          r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+	  
+  </body>
+</html>
+

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msvalidate.01" content="9C87A2FE066C755406F5FFCAE1321439" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>How to add a custom Open Graph image tag to your tumblr blog | Chris KY FUNG's GitHub Page</title>
+    <meta name="author" content=>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta content="How to add a custom Open Graph image tag to your tumblr blog | Chris KY FUNG's GitHub Page" property="og:title">
+    
+    
+      <meta content="Feel free to bookmark this to keep an eye on my project updates" property="og:description">
+    
+    
+      <meta content="http://localhost:4000/images/posts/write-2160925.svg" property="og:image">
+    
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="http://localhost:4000/">
+          <h1>Chris KY FUNG's GitHub Page</h1>
+        </a>
+        <h2>Feel free to bookmark this to keep an eye on my project updates</h2>
+        
+        
+      </div>
+    </header>
+	  
+    <nav>
+  <ul>
+    
+    <li><a href="/" >
+      Home
+    </a></li>
+    
+    <li><a href="/about.html" >
+      About
+    </a></li>
+    
+    <li><a href="/blog/index.html" >
+      Blog
+    </a></li>
+    
+    <li id="toggle-search"><i class="fas fa-search" onclick="toggleSearchBar()"></i></li>
+  </ul>
+</nav>
+<script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+<div class="gcse-search"></div>
+<script>
+  function toggleSearchBar() {
+    var searchBar = document.querySelector("#___gcse_0");
+    if ( searchBar.style.display == "block") {
+      searchBar.style.display = "none";
+    } else {
+      searchBar.style.display = "block";
+    }
+  }
+</script>
+    <div id="content-wrapper">
+	<div class="inner clearfix">
+	<section id="main-content">
+	  <h2 class="title">How to add a custom Open Graph image tag to your tumblr blog</h2>
+
+<div class="page-info">
+	<span class="date"><info datetime="2019-10-30 00:00:00 +0000">
+		30 Oct 2019  by Chris KY FUng 
+	</info></span>
+	<span class="page-tags">
+		
+		
+		<a href="/tag/Tumblr"><code class="highligher-rouge"><nobr>Tumblr</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Custom Theme"><code class="highligher-rouge"><nobr>Custom Theme</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Open Graph"><code class="highligher-rouge"><nobr>Open Graph</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Meta Tags"><code class="highligher-rouge"><nobr>Meta Tags</nobr></code>&nbsp;</a>
+		
+	</span>
+	<br><br>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
+</div>
+
+<!-- Post content -->
+<div class="notebody">
+	<p>Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups to your blogs without a clear mechanism. I found that some of my Tumblr blog posts including the markups, but some of them not. Indeed, we have a lack of control over what kind of information to be auto-tagged. The Tumblr crawler may also pick up incorrect contents, especially og:type and og:image. You can use <a href="https://developers.facebook.com/tools/debug/og/object/">Facebook’s Open Graph Object Debugger</a> to inspect the tags of your posts.</p>
+
+<!--more-->
+
+<p><img src="/images/posts/tumblr/Tumblr-Facebook-OpenGraph-Tags-Block.png" alt="Example Facebook Open Graph tags auto-generated in the Tumblr blog" /></p>
+
+<p><small>Fig. Sample of Facebook Open Graph tags auto-generated in the Tumblr blog</small></p>
+
+<p>You may want to fix the tags, so you explicitly define your own in your Custom Theme. Tumblr will stop auto-generate the entire markup, once you add an Open Graph meta tags. Therefore, you need to reengineer those by your own codes. Here is an example found on GitHub gists:</p>
+
+<script src="https://gist.github.com/JuanitoFatas/4744199.js"></script>
+
+<p>You can refer the documentation <a href="https://www.tumblr.com/docs/hk/custom_themes">“Creating a custom Tumblr HTML theme”</a> for more details and study the custom theme variables. One big challenge is how to set an og:image tag, since only some types of posts, such as Photo and Audio, possesses a variable tag for obtaining the URL of the post images. Most other post types do not have a way to access the image resources contained within the post objects. For example, only <code class="highlighter-rouge">{Title}</code> and <code class="highlighter-rouge">{Body}</code> variables are available for describing Text posts. This causes a big problem to me because I use Text posts as the primary type of my blog articles.</p>
+
+<p>To workaround, I figured out a way to map between each post and an external image source. Each Tumblr post has a unique identifier called <code class="highlighter-rouge">{PostID}</code>, so I used this variable to look up the corresponding file located in my own cloud storage.</p>
+
+<p>The following cloud services are some possible choices for static web hosting:</p>
+
+<ul>
+  <li>Google Cloud Storage</li>
+  <li>Amazon S3</li>
+  <li>GitHub Page</li>
+</ul>
+
+<p>The traffic of my Tumblr blogs is subtle. So, I chose to host on a GitHub Page, as it is entirely free with 1GB storage and a <em>soft</em> bandwidth limit of 100GB per month. This is more than enough for hosting the cover images of all my blog posts. For more details about GitHub Page, please read <a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages">“About GitHub Pages”</a> in GitHub Help.</p>
+
+<p><br /></p>
+
+<h2 id="create-a-github-page-for-hosting-your-images">Create a GitHub Page for hosting your images</h2>
+
+<p>In this section, I will demonstrate how to set up a GitHub repository to a GitHub page with a custom domain. First, I suggest you create a new repository. If you have multiple Tumblr blogs, you can distribute their resources to individual repositories or put all files to a single repository with separate folders.</p>
+
+<p>In the <strong>Settings</strong> tab of the new repository, go to <strong>GitHub Pages</strong> section and configure the settings as below:</p>
+
+<ul>
+  <li>Source: <code class="highlighter-rouge">master branch</code></li>
+  <li>Theme: <em>(Optional) chooses a theme as you like</em></li>
+  <li>Custom domain: <em>(Optional) recommends using a subdomain, e.g. <code class="highlighter-rouge">res.example.com</code></em></li>
+  <li>Enforce HTTPS: <em>(Optional)</em></li>
+</ul>
+
+<p><img src="/images/posts/tumblr/GitHub-Page-Settings.png" alt="Example GitHub Pages configuration" /></p>
+
+<p><small>Fig. Example GitHub Pages configuration</small></p>
+
+<p>If you use a subdomain as the custom domain, add a CNAME record to your DNS server and point it to <code class="highlighter-rouge">&lt;your-github-username&gt;.github.io</code>. Otherwise, the Project Site URL will under the domain <code class="highlighter-rouge">github.io</code>, in the form of <code class="highlighter-rouge">http(s)://&lt;your-github-username&gt;.github.io/&lt;repository-name&gt;/</code>.</p>
+
+<p>Go back to the <strong>Code</strong> tab of the repository, I suggest creating a folder, called <code class="highlighter-rouge">og-images</code> and store all post cover images to it. You can also upload and host your CSS and JavaScript files in the same way.</p>
+
+<p><img src="/images/posts/tumblr/GitHub-Page-Files.png" alt="" /></p>
+
+<p><small>Fig. Example file structure for the GitHub Page</small></p>
+
+<p><br /></p>
+
+<h2 id="add-og-tags-to-your-custom-theme">Add og tags to your Custom Theme</h2>
+
+<p>Log in your Tumblr account and go to edit the HTML code of your theme. Next, add the following code in the HTML head and <strong>replace</strong> <code class="highlighter-rouge">&lt;your-github-page-url&gt;</code> with your GitHub Page URL,</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    {block:hidden}
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"if:OG Tags"</span> <span class="na">content=</span><span class="s">"1"</span> <span class="nt">/&gt;</span>
+    {/block:hidden}
+
+    {block:IfOGTags}
+        <span class="c">&lt;!-- og --&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:title"</span> <span class="na">content=</span><span class="s">"{block:PostSummary}{PostSummary} - {/block:PostSummary}{block:DayPage}{DayOfMonth} {ShortMonth} - {/block:DayPage}{block:TagPage}#{Tag} - {/block:TagPage}{block:SearchPage}{SearchQuery} - {/block:SearchPage}"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:site_name"</span> <span class="na">content=</span><span class="s">"{title}"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:locale"</span> <span class="na">content=</span><span class="s">"zh_HK"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:locale:alternate"</span> <span class="na">content=</span><span class="s">"zh_tw"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:locale:alternate"</span> <span class="na">content=</span><span class="s">"en_US"</span> <span class="nt">/&gt;</span>
+        {block:Description}
+            <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:description"</span> <span class="na">content=</span><span class="s">"{MetaDescription}"</span> <span class="nt">/&gt;</span>
+        {/block:Description}
+        {block:IndexPage}
+            <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:type"</span> <span class="na">content=</span><span class="s">"website"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:url"</span> <span class="na">content=</span><span class="s">"{URL}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"{PortraitURL-128}"</span><span class="nt">/&gt;</span>
+        {/block:IndexPage}
+        {block:PermalinkPage}
+            <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:type"</span> <span class="na">content=</span><span class="s">"article"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:url"</span> <span class="na">content=</span><span class="s">"{Permalink}"</span> <span class="nt">/&gt;</span>
+            {block:Posts}
+                {block:Text}
+                    <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"https://&lt;your-github-page-url&gt;/og-images/{PostID}.png"</span><span class="nt">/&gt;</span>
+                {/block:Text}
+                {block:Photo}
+                    <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"{PhotoURL-500}"</span><span class="nt">/&gt;</span>
+                {/block:Photo}
+                {block:Photoset}
+                    {block:Photos}
+                        <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"{PhotoURL-500}"</span><span class="nt">/&gt;</span>
+                    {/block:Photos}
+                {/block:Photoset}
+                {block:Link}
+                    {block:Thumbnail}
+                        <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"{Thumbnail}"</span><span class="nt">/&gt;</span>
+                    {/block:Thumbnail}
+                {/block:Link}
+                {block:Video}
+                    {block:Caption}<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:description"</span> <span class="na">content=</span><span class="s">"{PlaintextCaption}"</span><span class="nt">/&gt;</span>{/block:Caption}
+                    {block:VideoThumbnail}
+                                <span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"{VideoThumbnailURL}"</span><span class="nt">/&gt;</span>
+                    {/block:VideoThumbnail}
+                {/block:Video}
+            {/block:Posts}
+        {/block:PermalinkPage}
+    {/block:IfOGTags}
+</code></pre></div></div>
+<p>Please replace the <code class="highlighter-rouge">og:locale</code> tags with your languages, you can find the choices from <a href="https://kb.yoast.com/kb/changing-the-og-locale-output/">Yoast SEO’s Knowledge Base</a></p>
+
+<p>The above code specifies the <code class="highlighter-rouge">og:image</code> of all Text posts to point at <strong><code class="highlighter-rouge">https://&lt;your-github-page-url&gt;/og-images/{PostID}.png</code></strong>. For example:</p>
+<ul>
+  <li><code class="highlighter-rouge">https://res.example.com/og-images/1234.png</code> <em>(with a custom domain)</em>, or</li>
+  <li><code class="highlighter-rouge">https://john.github.io/repository-abc/og-images/1234.png</code> <em>(without custom domain)</em></li>
+</ul>
+
+<p>So, you must upload an image to the same path. Otherwise, this will cause a <em>File Not Found Error</em>.</p>
+
+<p><br /></p>
+
+<h2 id="format-and-upload-images-to-github-repository">Format and Upload images to GitHub repository</h2>
+
+<p>To correctly link between each post and its Open Graph image, you must store each image file with a proper filename to the GitHub repository. I suggest you follow the procedure below,</p>
+
+<ol>
+  <li>
+    <p>Carefully copy the <strong><code class="highlighter-rouge">{PostID}</code></strong> of each post and use it to rename its corresponding file.<br />* You can find the <code class="highlighter-rouge">{PostID}</code> from a post URL,<br />e.g. <code class="highlighter-rouge">https://example.tumblr.com/post/{PostID}/......</code>.</p>
+  </li>
+  <li>
+    <p>Convert all image files to PNG format and name them with <strong>.png</strong> extension.<br />* This ensures that all the images will be renamed with the same format, i.e. <strong><code class="highlighter-rouge">{PostID}</code></strong>.png.</p>
+  </li>
+  <li>
+    <p>Use a Git tool to commit and push the files to the GitHub repository.</p>
+  </li>
+  <li>
+    <p>Finally, use <a href="https://developers.facebook.com/tools/debug/og/object/">Facebook’s Open Graph Object Debugger</a> to inspect whether the og:image tag is properly crawled.</p>
+  </li>
+</ol>
+
+<p><img src="/images/posts/tumblr/GitHub-Page-og-images.png" alt="" /></p>
+
+<p><small>Fig. An <code class="highlighter-rouge">og-images</code> repository uploaded with cover images for Tumblr posts</small></p>
+
+<p>I hope you think this trick is helpful, and share with other Tumblr bloggers. If you have any questions, please feel free to leave a comment below. Also, if you know any better solution, I wish you can share with me.</p>
+
+<hr />
+
+<p><strong>Related project:</strong></p>
+<ul>
+  <li><i class="fab fa-tumblr-square"></i> <em><a href="https://github.com/chriskyfung/pytumblrtools">Tumblr Quick Tools in Python</a></em> <i class="fab fa-python"></i></li>
+</ul>
+
+<p><strong>Related</strong> <a href="/blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers">Featured Tips, Tricks, and Tools for Tumblr Bloggers</a></p>
+
+</div>
+
+<!-- Post info -->
+<div class="noteinfo">
+<!-- include some categories and tags maybe? -->
+</div>
+
+<hr>
+
+<!-- Post comments -->
+
+
+<!-- Disqus comments -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://chriskyfung.github.io//blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https://chriskyfung.github.io//blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://chriskyfung.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	</section>
+	<aside id="sidebar">
+  
+  
+  
+  <h2><i class='far fa-newspaper'></i> <a href="/blog/index.html">Blog</a></h2>
+  <h3><a href="/blog/categories.html">Categories</a></h3>
+  <h3><a href="/blog/tags.html">Tags</a></h3>
+  <ul>    
+    <li><h3><a href="/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></h3></li>
+    <li><h3><a href="/tag/Tumblr">For Tumblr Developer</a></h3></li>
+    <li><h3><a href="/tag/MATLAB">MATLAB Tips</a></h3></li>
+  </ul>
+  <h2><i class='fab fa-youtube'></i> <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channels</a></h2>
+  <ul><li><h3><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></h3></li>
+    <li><h3><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></h3></li>
+  </ul>
+  
+  <h2>&nbsp;<a href="https://www.paypal.me/chrisfungky/50" target="_blank"><button class="round">Give me a help <i class='fas fa-donate'></i></button></a></h2>
+  
+  <h2><i class='fas fa-gift'></i> <a href="https://invitation.codes/u/qgcUCyqa" target="_blank">Promo Codes</a></h2>
+  
+  <!-- Copyscape Banner -->
+  <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+
+  <!-- Google Adsense -->  
+  <script data-ad-client="ca-pub-4819282024314540" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- github_resp_sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4819282024314540"
+     data-ad-slot="1391498756"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  
+  <!-- Affiliate Disclouse -->
+  <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="60" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120"/></a></div>
+</aside>
+
+	</div>
+    </div>  
+
+    <footer>   
+    <div class="invitation-codes invitation-codes-badge1" data-type="badge1" data-product="" style="float:left;"><a class="" href="https://invitation.codes/" data-type="badge1">Use my referral codes</a></div>
+<script async defer src="//invitation.codes/embed/user/qgcUCyqa/embed.js"></script>
+
+    <div id="footer-copyright">&copy; 2014-2020 Chris KY FUNG. All rights reserved</div>
+    <div id="footer-powered">Powered by <a href="https://pages.github.com">GitHub Pages</a></div>
+</footer>
+
+	
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72575541-9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-72575541-9');
+	</script>
+    
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>
+    <script type="text/javascript">
+  var vglnk = {key: '56a8cde8bc46ec169ed23320c0e35c68'};
+  (function(d, t) {
+      var s = d.createElement(t);
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0];
+          r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+	  
+  </body>
+</html>
+

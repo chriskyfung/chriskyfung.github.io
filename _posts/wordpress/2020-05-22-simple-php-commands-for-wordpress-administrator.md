@@ -6,6 +6,10 @@ category: WordPress
 author: Chris KY Fung
 tags: [WordPress, PHP]
 permalink: /blog/wordpress/simple-php-commands-for-wordpress-administrator
+image: /images/posts/wordpress/wordpress-1863504.svg
+header:
+  showteaser: false
+  
 ---
 
 ![WordPress - Code is Poetry](/images/posts/wordpress/wordpress-1863504.svg)

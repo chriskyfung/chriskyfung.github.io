@@ -1,0 +1,94 @@
+header {
+  background-image: url("/images/header-bg.jpg");  
+  background-color: #cccccc;
+  background-position: center;
+  height: 140px;
+}
+header h1 {
+  color: #ffffff;
+  background-color: rgba(2, 62, 95, 0.39);
+  padding: 15px;
+  font-size: 41px;
+  width: 340px;
+}
+header h2 {
+  color: #000000;
+  background-color: rgba(204, 204, 204, 0.91);
+  width: 820px;
+}
+header a.button {
+  background: rgba(102, 102, 102, 0.55) url(../images/github-button.png) 0 0 no-repeat;
+}
+
+@media only screen and (min-width: 718px) and (max-width: 959px) {
+  .inner {
+    width: 740px;
+  }
+  header h1 {
+    font-size: 41px;
+    width: 340px;
+  }
+  header h2 {
+    font-size: 23px;
+    width: 100%;
+  }
+  #main-content {
+    width: 490px;
+  }
+  #main-content h1:before,
+  #main-content h2:before,
+  #main-content h3:before,
+  #main-content h4:before,
+  #main-content h5:before,
+  #main-content h6:before {
+    padding-right: 0;
+    margin-left: 0;
+    content: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header a.button { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 124px;
+    height: 52px;
+    padding-top: 22px;
+    padding-left: 68px;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 23px;
+    line-height: 1.2;
+    color: #fff;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 718px) {
+  header h1 {
+    font-size: 25px;
+    width: 170px;
+  }
+  header h2 {
+    font-size: 18px;
+    width: 100%;
+    top: 0;
+  }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) { 
+  header h1 {
+    font-size: 24px;
+    width: 170px;
+  }
+  header h2 {
+    font-size: 18px;
+    width: 100%;
+  }
+  header a.button {
+    top: -30px;
+    right: -30px;
+    transform: scale(0.7,0.7);
+  }
+}

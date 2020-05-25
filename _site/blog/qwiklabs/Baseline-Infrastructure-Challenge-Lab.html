@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msvalidate.01" content="9C87A2FE066C755406F5FFCAE1321439" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>QLogbook: Baseline Infrastructure: Challenge Lab | Chris KY FUNG's GitHub Page</title>
+    <meta name="author" content=>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta content="QLogbook: Baseline Infrastructure: Challenge Lab | Chris KY FUNG's GitHub Page" property="og:title">
+    
+    
+      <meta content="Feel free to bookmark this to keep an eye on my project updates" property="og:description">
+    
+    
+      <meta content="http://localhost:4000/images/posts/qwiklabs/map.jpg" property="og:image">
+    
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="http://localhost:4000/">
+          <h1>Chris KY FUNG's GitHub Page</h1>
+        </a>
+        <h2>Feel free to bookmark this to keep an eye on my project updates</h2>
+        
+        
+      </div>
+    </header>
+	  
+    <nav>
+  <ul>
+    
+    <li><a href="/" >
+      Home
+    </a></li>
+    
+    <li><a href="/about.html" >
+      About
+    </a></li>
+    
+    <li><a href="/blog/index.html" >
+      Blog
+    </a></li>
+    
+    <li id="toggle-search"><i class="fas fa-search" onclick="toggleSearchBar()"></i></li>
+  </ul>
+</nav>
+<script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+<div class="gcse-search"></div>
+<script>
+  function toggleSearchBar() {
+    var searchBar = document.querySelector("#___gcse_0");
+    if ( searchBar.style.display == "block") {
+      searchBar.style.display = "none";
+    } else {
+      searchBar.style.display = "block";
+    }
+  }
+</script>
+    <div id="content-wrapper">
+	<div class="inner clearfix">
+	<section id="main-content">
+	  <h2 class="title">QLogbook: Baseline Infrastructure: Challenge Lab</h2>
+
+<div class="page-info">
+	<span class="date"><info datetime="2020-05-02 00:00:00 +0000">
+		02 May 2020  by Chris KY Fing 
+	</info></span>
+	<span class="page-tags">
+		
+		
+		<a href="/tag/Qwiklabs"><code class="highligher-rouge"><nobr>Qwiklabs</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Google Cloud"><code class="highligher-rouge"><nobr>Google Cloud</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Logbook"><code class="highligher-rouge"><nobr>Logbook</nobr></code>&nbsp;</a>
+		
+	</span>
+	<br><br>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
+</div>
+
+<!-- Post content -->
+<div class="notebody">
+	<!--more-->
+
+<p>Did the hints from the <a href="/blog/qwiklabs/Cloud-Architecture-Challenge-Lab">last article</a> help you to finish the Cloud Architecture: Challenge lab? This time moves back to a very easy lab. A brief procedure for  <strong>GSP315</strong> <em><a href="https://www.qwiklabs.com/focuses/10379?parent=catalog">Baseline Infrastructure: Challenge Lab</a></em> are listed below.</p>
+
+<p><strong>The challenge contains 4 required tasks:</strong></p>
+
+<ol>
+  <li>Create a bucket;</li>
+  <li>Create a Pub/Sub topic;</li>
+  <li>Create the Cloud Function;</li>
+  <li>Remove the previous cloud engineer.</li>
+</ol>
+
+<p>Actually, would anyone need to read this guide? Because I think everybody can do this lab. There is nothing worth for you to highlight and discuss with you. Therefore, I only wrote the key points for this lab below.</p>
+
+<hr />
+
+<h2 id="task-1-create-a-bucket">Task 1: Create a bucket</h2>
+
+<ol>
+  <li>
+    <p>In the console, click the <strong>Navigation menu</strong> &gt; <strong>Storage</strong>.</p>
+  </li>
+  <li>
+    <p>Click Create a bucket.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="task-2-create-a-pubsub-topic">Task 2: Create a Pub/Sub topic</h2>
+
+<ol>
+  <li>
+    <p>In the console, click the <strong>Navigation menu</strong> &gt; <strong>Pub/Sub</strong> &gt; <strong>Topics</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Create a topic</strong>.</p>
+  </li>
+</ol>
+
+<p>Make sure you remember the topic name, which will be used in Task 3.</p>
+
+<p><br /></p>
+
+<h2 id="task-3-create-the-cloud-function">Task 3: Create the Cloud Function</h2>
+
+<ol>
+  <li>
+    <p>In the console, click the <strong>Navigation menu</strong> &gt; <strong>Cloud Functions</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Create function</strong>.</p>
+  </li>
+  <li>
+    <p>In the Create function dialog, enter the following values:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Function to execute</td>
+          <td>thumbnail</td>
+        </tr>
+        <tr>
+          <td>Runtime</td>
+          <td>Node.js 8</td>
+        </tr>
+        <tr>
+          <td>Trigger</td>
+          <td>Cloud Storage</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Copy the given <code class="highlighter-rouge">index.js</code> and <code class="highlighter-rouge">package.json</code> to the dialog.</p>
+
+    <p>Make sure you replace the text <strong>REPLACE_WITH_YOUR_TOPIC</strong> with the topic you created in task 2, in line 15 of index.js.</p>
+  </li>
+  <li>
+    <p>Upload a JPG or PNG image file to the bucket created in Task 1.</p>
+
+    <p><img src="/images/posts/qwiklabs/map.jpg" alt="" /></p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="task-4-remove-the-previous-cloud-engineer">Task 4: Remove the previous cloud engineer</h2>
+
+<ol>
+  <li>
+    <p>In the console, click the <strong>Navigation menu</strong> &gt; <strong>I AM</strong>.</p>
+  </li>
+  <li>
+    <p>Find the second user.</p>
+  </li>
+  <li>
+    <p>Click the pencil icon, select <strong>Delete</strong>.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="summary">Summary</h2>
+
+<p>All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than <a href="/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab">Google Cloud Essentials: Challenge Lab</a>. 9 credits! Is this cheating money?</p>
+
+<hr />
+
+<p><strong>Related:</strong> <a href="/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform">Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips</a></p>
+
+</div>
+
+<!-- Post info -->
+<div class="noteinfo">
+<!-- include some categories and tags maybe? -->
+</div>
+
+<hr>
+
+<!-- Post comments -->
+
+
+<!-- Disqus comments -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://chriskyfung.github.io//blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https://chriskyfung.github.io//blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://chriskyfung.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	</section>
+	<aside id="sidebar">
+  
+  
+  
+  <h2><i class='far fa-newspaper'></i> <a href="/blog/index.html">Blog</a></h2>
+  <h3><a href="/blog/categories.html">Categories</a></h3>
+  <h3><a href="/blog/tags.html">Tags</a></h3>
+  <ul>    
+    <li><h3><a href="/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></h3></li>
+    <li><h3><a href="/tag/Tumblr">For Tumblr Developer</a></h3></li>
+    <li><h3><a href="/tag/MATLAB">MATLAB Tips</a></h3></li>
+  </ul>
+  <h2><i class='fab fa-youtube'></i> <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channels</a></h2>
+  <ul><li><h3><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></h3></li>
+    <li><h3><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></h3></li>
+  </ul>
+  
+  <h2>&nbsp;<a href="https://www.paypal.me/chrisfungky/50" target="_blank"><button class="round">Give me a help <i class='fas fa-donate'></i></button></a></h2>
+  
+  <h2><i class='fas fa-gift'></i> <a href="https://invitation.codes/u/qgcUCyqa" target="_blank">Promo Codes</a></h2>
+  
+  <!-- Copyscape Banner -->
+  <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+
+  <!-- Google Adsense -->  
+  <script data-ad-client="ca-pub-4819282024314540" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- github_resp_sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4819282024314540"
+     data-ad-slot="1391498756"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  
+  <!-- Affiliate Disclouse -->
+  <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="60" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120"/></a></div>
+</aside>
+
+	</div>
+    </div>  
+
+    <footer>   
+    <div class="invitation-codes invitation-codes-badge1" data-type="badge1" data-product="" style="float:left;"><a class="" href="https://invitation.codes/" data-type="badge1">Use my referral codes</a></div>
+<script async defer src="//invitation.codes/embed/user/qgcUCyqa/embed.js"></script>
+
+    <div id="footer-copyright">&copy; 2014-2020 Chris KY FUNG. All rights reserved</div>
+    <div id="footer-powered">Powered by <a href="https://pages.github.com">GitHub Pages</a></div>
+</footer>
+
+	
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72575541-9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-72575541-9');
+	</script>
+    
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>
+    <script type="text/javascript">
+  var vglnk = {key: '56a8cde8bc46ec169ed23320c0e35c68'};
+  (function(d, t) {
+      var s = d.createElement(t);
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0];
+          r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+	  
+  </body>
+</html>
+

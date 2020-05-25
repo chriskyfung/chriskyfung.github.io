@@ -5,6 +5,8 @@ author: Chris KY Fung
 date: 2014-06-13
 category: Atomistic
 tags: [lammps, email, command-line]
+header:
+  showteaser: false
 ---
 
 <div style="background-color:#ccc;">

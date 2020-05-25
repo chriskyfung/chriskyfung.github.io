@@ -10,8 +10,8 @@ noindex: true
 {% for post in paginator.posts %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p>{{ post.excerpt }}</p>
-  {% if post.header.teaser %}
-    <p><img src="{{ post.header.teaser }}" width="240px"/></p>
+  {% if post.header.teaser and post.header.showteaser %}
+    <p><img src="{{ post.header.teaser }}" {% if post.header.teaser=="/images/posts/write-2160925.svg" %}style="display:block;width:125px;margin:0 auto;"{% endif %}/></p>
   {% endif %}
   <div class="page-info">
     <span class="date"><info datetime="{{ post.date }}">
