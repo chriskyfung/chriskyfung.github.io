@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msvalidate.01" content="9C87A2FE066C755406F5FFCAE1321439" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>How to find the installation path of Windows store apps for default program settings in Windows 10 | Chris KY FUNG's GitHub Page</title>
+    <meta name="author" content=>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta content="How to find the installation path of Windows store apps for default program settings in Windows 10 | Chris KY FUNG's GitHub Page" property="og:title">
+    
+    
+      <meta content="Feel free to bookmark this to keep an eye on my project updates" property="og:description">
+    
+    
+      <meta content="http://localhost:4000/images/posts/write-2160925.svg" property="og:image">
+    
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="http://localhost:4000/">
+          <h1>Chris KY FUNG's GitHub Page</h1>
+        </a>
+        <h2>Feel free to bookmark this to keep an eye on my project updates</h2>
+        
+        
+      </div>
+    </header>
+	  
+    <nav>
+  <ul>
+    
+    <li><a href="/" >
+      Home
+    </a></li>
+    
+    <li><a href="/about.html" >
+      About
+    </a></li>
+    
+    <li><a href="/blog/index.html" >
+      Blog
+    </a></li>
+    
+    <li id="toggle-search"><i class="fas fa-search" onclick="toggleSearchBar()"></i></li>
+  </ul>
+</nav>
+<script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+<div class="gcse-search"></div>
+<script>
+  function toggleSearchBar() {
+    var searchBar = document.querySelector("#___gcse_0");
+    if ( searchBar.style.display == "block") {
+      searchBar.style.display = "none";
+    } else {
+      searchBar.style.display = "block";
+    }
+  }
+</script>
+    <div id="content-wrapper">
+	<div class="inner clearfix">
+	<section id="main-content">
+	  <h2 class="title">How to find the installation path of Windows store apps for default program settings in Windows 10</h2>
+
+<div class="page-info">
+	<span class="date"><info datetime="2020-02-22 11:32:00 +0000">
+		22 Feb 2020  by Chris KY Fung 
+	</info></span>
+	<span class="page-tags">
+		
+		
+		<a href="/tag/Windows 10"><code class="highligher-rouge"><nobr>Windows 10</nobr></code>&nbsp;</a>
+		
+	</span>
+	<br><br>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
+</div>
+
+<!-- Post content -->
+<div class="notebody">
+	<!--more-->
+
+<p>Recently, I faced a problem to choose a Windows Store app as the default app for a specific file type. The app was not found by using neither <a href="https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/">Windows 10’s Settings page or the “Open With” option from the right-click menu of the files</a>. So I need to go for the “Look for another app on this PC” and locate where is the program (.exe) file.</p>
+
+<p>Windows typically installs conventional programs to <em>C:\Program Files</em> or <em>C:\Program Files (x86)</em>, while it stores the store apps in a different folder called <strong>WindowsApps</strong> under the <strong><em>C:\Program Files</em></strong> directory. You can find the folder by enabling the display of hidden files in File Explorer, but Windows will alert that you do not have permission to access the folder. To browser the folder, you might <a href="https://www.techmesto.com/windows-store-apps-installed-save-data/">change the owner and the permission under its Advanced Security Settings</a>. However, it can turn your system at risk. A better way is to look for the installation path from the Windows Registry.</p>
+
+<p><br /></p>
+
+<h2 id="find-the-key-using-registry-editor">Find the key using Registry Editor</h2>
+
+<p>The Windows Registry contains the keys and values for all store apps, including their installed locations. You can find them by following this procedure:</p>
+
+<ol>
+  <li>
+    <p>Press <strong>Start</strong>, search for <a href="https://www.lifewire.com/how-to-open-registry-editor-2625150"><em>regedit.exe</em></a> and then open it.<br />
+<img src="/images/posts/windows/icon%20of%20regedit.exe.png" alt="icon of regedit.exe" /></p>
+  </li>
+  <li>
+    <p>Registry Editor will open.</p>
+  </li>
+  <li>
+    <p>Navigate to <em>Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages</em>.</p>
+  </li>
+  <li>
+    <p>Look for the key with the app name, or press <strong>Ctrl+F</strong> to use the “Find” dialog for a quick search under the registry tree.</p>
+  </li>
+  <li>
+    <p>Open the app key you found, there should be a subkey called <code class="highlighter-rouge">PackageID</code> and another called <code class="highlighter-rouge">PackageRootFolder</code>, shown as the example below.<br />
+<img src="/images/posts/windows/Example%20registry%20of%20a%20windows%20store%20app.png" alt="Example registry of a windows store app" /></p>
+  </li>
+  <li>
+    <p>Double-click the name of the subkey <code class="highlighter-rouge">PackageRootFolder</code>, and copy the value data to the clipboard.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="use-the-open-with-command-to-change-the-default-program-for-the-specific-file-type">Use the “Open With” command to change the default program for the specific file type</h2>
+
+<ol>
+  <li>
+    <p>In File Explorer, right-click on a file whose default program you want to change. Select <strong>Open With</strong> &gt; Choose <strong>Another App</strong>.</p>
+  </li>
+  <li>
+    <p>Scroll down and click on <strong>Look for another app on this PC</strong>.</p>
+  </li>
+  <li>
+    <p>In the “Open with…” dialog, paste the copied path to the field “<em>File name:</em>” and hit Enter.<br />
+<img src="/images/posts/windows/The%20app%20root%20folder%20in%20WindowsApps.jpg" alt="The app root folder in WindowsApps" /></p>
+  </li>
+  <li>
+    <p>The app root folder will open. Find and choose the Program (.exe) file inside the folder and in its subfolders, for the application you want to make as the default.<br />
+<img src="/images/posts/windows/The%20draw-io-exe%20under%20WindowsApps.png" alt="The draw.io.exe under WindowsApps" /></p>
+  </li>
+</ol>
+
+<p>The specific file type should now associate with the application. You can try to double-click a file to open it with the default program.</p>
+
+<hr />
+
+<p>Have a question or suggestion? Let us know in the comments below.</p>
+
+</div>
+
+<!-- Post info -->
+<div class="noteinfo">
+<!-- include some categories and tags maybe? -->
+</div>
+
+<hr>
+
+<!-- Post comments -->
+
+
+<!-- Disqus comments -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://chriskyfung.github.io//blog/windows/find-windows10-store-app-path-for-default-program";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https://chriskyfung.github.io//blog/windows/find-windows10-store-app-path-for-default-program"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://chriskyfung.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	</section>
+	<aside id="sidebar">
+  
+  
+  
+  <h2><i class='far fa-newspaper'></i> <a href="/blog/index.html">Blog</a></h2>
+  <h3><a href="/blog/categories.html">Categories</a></h3>
+  <h3><a href="/blog/tags.html">Tags</a></h3>
+  <ul>    
+    <li><h3><a href="/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></h3></li>
+    <li><h3><a href="/tag/Tumblr">For Tumblr Developer</a></h3></li>
+    <li><h3><a href="/tag/MATLAB">MATLAB Tips</a></h3></li>
+  </ul>
+  <h2><i class='fab fa-youtube'></i> <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channels</a></h2>
+  <ul><li><h3><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></h3></li>
+    <li><h3><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></h3></li>
+  </ul>
+  
+  <h2>&nbsp;<a href="https://www.paypal.me/chrisfungky/50" target="_blank"><button class="round">Give me a help <i class='fas fa-donate'></i></button></a></h2>
+  
+  <h2><i class='fas fa-gift'></i> <a href="https://invitation.codes/u/qgcUCyqa" target="_blank">Promo Codes</a></h2>
+  
+  <!-- Copyscape Banner -->
+  <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+
+  <!-- Google Adsense -->  
+  <script data-ad-client="ca-pub-4819282024314540" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- github_resp_sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4819282024314540"
+     data-ad-slot="1391498756"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  
+  <!-- Affiliate Disclouse -->
+  <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="60" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120"/></a></div>
+</aside>
+
+	</div>
+    </div>  
+
+    <footer>   
+    <div class="invitation-codes invitation-codes-badge1" data-type="badge1" data-product="" style="float:left;"><a class="" href="https://invitation.codes/" data-type="badge1">Use my referral codes</a></div>
+<script async defer src="//invitation.codes/embed/user/qgcUCyqa/embed.js"></script>
+
+    <div id="footer-copyright">&copy; 2014-2020 Chris KY FUNG. All rights reserved</div>
+    <div id="footer-powered">Powered by <a href="https://pages.github.com">GitHub Pages</a></div>
+</footer>
+
+	
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72575541-9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-72575541-9');
+	</script>
+    
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>
+    <script type="text/javascript">
+  var vglnk = {key: '56a8cde8bc46ec169ed23320c0e35c68'};
+  (function(d, t) {
+      var s = d.createElement(t);
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0];
+          r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+	  
+  </body>
+</html>
+

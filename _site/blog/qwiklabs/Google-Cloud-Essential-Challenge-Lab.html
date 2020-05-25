@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msvalidate.01" content="9C87A2FE066C755406F5FFCAE1321439" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>QLogbook: Google Cloud Essentials: Challenge Lab | Chris KY FUNG's GitHub Page</title>
+    <meta name="author" content=>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta content="QLogbook: Google Cloud Essentials: Challenge Lab | Chris KY FUNG's GitHub Page" property="og:title">
+    
+    
+      <meta content="Feel free to bookmark this to keep an eye on my project updates" property="og:description">
+    
+    
+      <meta content="http://localhost:4000/images/posts/qwiklabs/qwiklabs-GSP313-task1.png" property="og:image">
+    
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="http://localhost:4000/">
+          <h1>Chris KY FUNG's GitHub Page</h1>
+        </a>
+        <h2>Feel free to bookmark this to keep an eye on my project updates</h2>
+        
+        
+      </div>
+    </header>
+	  
+    <nav>
+  <ul>
+    
+    <li><a href="/" >
+      Home
+    </a></li>
+    
+    <li><a href="/about.html" >
+      About
+    </a></li>
+    
+    <li><a href="/blog/index.html" >
+      Blog
+    </a></li>
+    
+    <li id="toggle-search"><i class="fas fa-search" onclick="toggleSearchBar()"></i></li>
+  </ul>
+</nav>
+<script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+<div class="gcse-search"></div>
+<script>
+  function toggleSearchBar() {
+    var searchBar = document.querySelector("#___gcse_0");
+    if ( searchBar.style.display == "block") {
+      searchBar.style.display = "none";
+    } else {
+      searchBar.style.display = "block";
+    }
+  }
+</script>
+    <div id="content-wrapper">
+	<div class="inner clearfix">
+	<section id="main-content">
+	  <h2 class="title">QLogbook: Google Cloud Essentials: Challenge Lab</h2>
+
+<div class="page-info">
+	<span class="date"><info datetime="2020-04-22 00:00:00 +0000">
+		22 Apr 2020  by Chris KY Fung 
+	</info></span>
+	<span class="page-tags">
+		
+		
+		<a href="/tag/Qwiklabs"><code class="highligher-rouge"><nobr>Qwiklabs</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Google Cloud"><code class="highligher-rouge"><nobr>Google Cloud</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/Logbook"><code class="highligher-rouge"><nobr>Logbook</nobr></code>&nbsp;</a>
+		
+	</span>
+	<br><br>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
+</div>
+
+<!-- Post content -->
+<div class="notebody">
+	<!--more-->
+
+<p>Qwiklabs implemented a big change to the format of its quests in 2020. Multiple quests patched with a new challenge lab, to test user’s skills and knowledge, respectively. New users can no longer complete a quest and earn the badge as easily as before.</p>
+
+<p>In the last few months, I received a few comments that ask for help in those challenge labs. I am going to publish a series of logbooks to provide hints and instructions for those difficult labs.</p>
+
+<p>In this article, we will go through the lab <strong>GSP313</strong> <em><a href="https://www.qwiklabs.com/focuses/10258?parent=catalog">Google Cloud Essentials: Challenge Lab</a></em>. This exercise is in the introductory-level Quest called “Google Cloud Essentials”, which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.</p>
+
+<p><strong>The challenge contains 3 compulsory tasks:</strong></p>
+
+<ol>
+  <li>Create a project jumphost instance;</li>
+  <li>Create a Kubernetes service cluster;</li>
+  <li>Setup an HTTP load balancer to create the web server frontend.</li>
+</ol>
+
+<hr />
+
+<h2 id="task-1-create-a-project-jumphost-instance">Task 1: Create a project jumphost instance</h2>
+
+<p><em>Hint</em>: Refer and modify the procedures in the lab GSP001 <a href="https://google.qwiklabs.com/focuses/3563?parent=catalog#step4">Creating a Virtual Machine</a>.</p>
+
+<p>This task is simple. Make sure you create the VM instance with:</p>
+
+<ul>
+  <li>Name: <strong>nucleus-jumphost</strong></li>
+  <li>Zone: <strong>us-east1-b</strong></li>
+  <li>Machine Type: <strong>f1-micro</strong></li>
+</ul>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP313-task1.png" alt="Create a project VM instance, called nucleus-jumphost in Google Cloud Platform" /></p>
+
+<h2 id="task-2-create-a-kubernetes-service-cluster">Task 2: Create a Kubernetes service cluster</h2>
+
+<p><em>Hint</em>: Refer and modify the procedures in the lab GSP100<a href="https://google.qwiklabs.com/focuses/878?parent=catalog">Kubernetes Engine: Qwik Start</a>.</p>
+
+<p>Make sure you:</p>
+
+<ul>
+  <li>create the cluster to the zone <strong>us-east1-b</strong> by setting your default compute zone correctly;</li>
+  <li>deploy the Docker container <strong>hello-app:2.0</strong>, instead of <em>hello-app:1.0</em>.</li>
+</ul>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP313-task2.png" alt="hello-app deployed on a GCP Kubernetes cluster" /></p>
+
+<h2 id="task-3-setup-an-http-load-balancer">Task 3: Setup an HTTP load balancer</h2>
+
+<p><em>Hint</em>: Refer and modify the procedures in the lab GSP007<a href="https://google.qwiklabs.com/focuses/558?parent=catalog">Set Up Network and HTTP Load Balancers</a>.</p>
+
+<p>Make sure you:</p>
+
+<ul>
+  <li>create the instance-group with <strong>–size 2</strong>;</li>
+  <li>create the backend-services to the zone <strong>us-east1-b</strong>.</li>
+</ul>
+
+<p>The deployed nginx web servers:</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP313-task3.png" alt="Nginx web servers deployed on Google Cloud Platform" /></p>
+
+<h3 id="summary">Summary</h3>
+
+<p>In a nutshell, this challenge lab is basic and simple that only requires directly reuse the steps and Cloud Shell commands from the labs in the Google Cloud Essentials quest. I recommend you open the labs that listed in the above hints in new tabs when you are carrying out this challenge lab. You can find all instructions from those references, and try your best to finish the challenge lab by yourself.</p>
+
+<p>If you still have questions, you can leave a comment below.</p>
+
+<hr />
+
+<p><strong>Related:</strong> <a href="/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform">Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips</a></p>
+
+</div>
+
+<!-- Post info -->
+<div class="noteinfo">
+<!-- include some categories and tags maybe? -->
+</div>
+
+<hr>
+
+<!-- Post comments -->
+
+
+<!-- Disqus comments -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://chriskyfung.github.io//blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https://chriskyfung.github.io//blog/qwiklabs/Google-Cloud-Essentials-Challenge-Lab"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://chriskyfung.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	</section>
+	<aside id="sidebar">
+  
+  
+  
+  <h2><i class='far fa-newspaper'></i> <a href="/blog/index.html">Blog</a></h2>
+  <h3><a href="/blog/categories.html">Categories</a></h3>
+  <h3><a href="/blog/tags.html">Tags</a></h3>
+  <ul>    
+    <li><h3><a href="/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></h3></li>
+    <li><h3><a href="/tag/Tumblr">For Tumblr Developer</a></h3></li>
+    <li><h3><a href="/tag/MATLAB">MATLAB Tips</a></h3></li>
+  </ul>
+  <h2><i class='fab fa-youtube'></i> <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channels</a></h2>
+  <ul><li><h3><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></h3></li>
+    <li><h3><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></h3></li>
+  </ul>
+  
+  <h2>&nbsp;<a href="https://www.paypal.me/chrisfungky/50" target="_blank"><button class="round">Give me a help <i class='fas fa-donate'></i></button></a></h2>
+  
+  <h2><i class='fas fa-gift'></i> <a href="https://invitation.codes/u/qgcUCyqa" target="_blank">Promo Codes</a></h2>
+  
+  <!-- Copyscape Banner -->
+  <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+
+  <!-- Google Adsense -->  
+  <script data-ad-client="ca-pub-4819282024314540" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- github_resp_sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4819282024314540"
+     data-ad-slot="1391498756"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  
+  <!-- Affiliate Disclouse -->
+  <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="60" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120"/></a></div>
+</aside>
+
+	</div>
+    </div>  
+
+    <footer>   
+    <div class="invitation-codes invitation-codes-badge1" data-type="badge1" data-product="" style="float:left;"><a class="" href="https://invitation.codes/" data-type="badge1">Use my referral codes</a></div>
+<script async defer src="//invitation.codes/embed/user/qgcUCyqa/embed.js"></script>
+
+    <div id="footer-copyright">&copy; 2014-2020 Chris KY FUNG. All rights reserved</div>
+    <div id="footer-powered">Powered by <a href="https://pages.github.com">GitHub Pages</a></div>
+</footer>
+
+	
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72575541-9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-72575541-9');
+	</script>
+    
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>
+    <script type="text/javascript">
+  var vglnk = {key: '56a8cde8bc46ec169ed23320c0e35c68'};
+  (function(d, t) {
+      var s = d.createElement(t);
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0];
+          r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+	  
+  </body>
+</html>
+

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msvalidate.01" content="9C87A2FE066C755406F5FFCAE1321439" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Simple PHP commands for WordPress administrators | Chris KY FUNG's GitHub Page</title>
+    <meta name="author" content=>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta content="Simple PHP commands for WordPress administrators | Chris KY FUNG's GitHub Page" property="og:title">
+    
+    
+      <meta content="Feel free to bookmark this to keep an eye on my project updates" property="og:description">
+    
+    
+      <meta content="/images/posts/wordpress/wordpress-1863504.svg" property="og:image">
+    
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="http://localhost:4000/">
+          <h1>Chris KY FUNG's GitHub Page</h1>
+        </a>
+        <h2>Feel free to bookmark this to keep an eye on my project updates</h2>
+        
+        
+      </div>
+    </header>
+	  
+    <nav>
+  <ul>
+    
+    <li><a href="/" >
+      Home
+    </a></li>
+    
+    <li><a href="/about.html" >
+      About
+    </a></li>
+    
+    <li><a href="/blog/index.html" >
+      Blog
+    </a></li>
+    
+    <li id="toggle-search"><i class="fas fa-search" onclick="toggleSearchBar()"></i></li>
+  </ul>
+</nav>
+<script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+<div class="gcse-search"></div>
+<script>
+  function toggleSearchBar() {
+    var searchBar = document.querySelector("#___gcse_0");
+    if ( searchBar.style.display == "block") {
+      searchBar.style.display = "none";
+    } else {
+      searchBar.style.display = "block";
+    }
+  }
+</script>
+    <div id="content-wrapper">
+	<div class="inner clearfix">
+	<section id="main-content">
+	  <h2 class="title">Simple PHP commands for WordPress administrators</h2>
+
+<div class="page-info">
+	<span class="date"><info datetime="2020-05-22 10:40:00 +0000">
+		22 May 2020  by Chris KY Fung 
+	</info></span>
+	<span class="page-tags">
+		
+		
+		<a href="/tag/WordPress"><code class="highligher-rouge"><nobr>WordPress</nobr></code>&nbsp;</a>
+		
+		
+		<a href="/tag/PHP"><code class="highligher-rouge"><nobr>PHP</nobr></code>&nbsp;</a>
+		
+	</span>
+	<br><br>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
+</div>
+
+<!-- Post content -->
+<div class="notebody">
+	<p><img src="/images/posts/wordpress/wordpress-1863504.svg" alt="WordPress - Code is Poetry" /></p>
+
+<!--more-->
+
+<h2 id="get-blog-info">Get blog info</h2>
+
+<p>See WordPress version and number of posts</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">global</span> <span class="nv">$wpdb</span><span class="p">;</span>
+
+<span class="nv">$query</span> <span class="o">=</span> <span class="s2">"SELECT COUNT(*) FROM </span><span class="si">{</span><span class="nv">$wpdb</span><span class="o">-&gt;</span><span class="na">posts</span><span class="si">}</span><span class="s2"> WHERE post_type='post' AND post_status='publish'"</span><span class="p">;</span>
+<span class="nv">$post_count</span> <span class="o">=</span> <span class="nv">$wpdb</span><span class="o">-&gt;</span><span class="na">get_var</span><span class="p">(</span><span class="nv">$query</span><span class="p">);</span>
+
+<span class="k">echo</span> <span class="nx">get_bloginfo</span><span class="p">(</span><span class="s1">'name'</span><span class="p">)</span><span class="o">.</span><span class="s1">' is using Wordpress '</span><span class="o">.</span><span class="nx">get_bloginfo</span><span class="p">(</span><span class="s1">'version'</span><span class="p">)</span><span class="o">.</span><span class="s1">' and has '</span><span class="o">.</span><span class="nv">$post_count</span><span class="o">.</span><span class="s1">' published posts.'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Example response:</strong></p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Example</span> <span class="n">Blog</span> <span class="n">is</span> <span class="n">using</span> <span class="n">Wordpress</span> <span class="mf">5.4</span><span class="o">.</span><span class="mi">1</span> <span class="nb">and</span> <span class="n">has</span> <span class="mi">3</span> <span class="n">published</span> <span class="n">posts</span><span class="o">.</span>
+</code></pre></div></div>
+
+<h2 id="list-plugins">List plugins</h2>
+
+<p>List files in Plugins directory</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$files</span> <span class="o">=</span> <span class="nb">scandir</span><span class="p">(</span><span class="s2">"wp-content/plugins"</span><span class="p">);</span>
+
+<span class="k">foreach</span><span class="p">(</span><span class="nv">$files</span> <span class="k">as</span> <span class="nv">$file</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$file</span><span class="o">.</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Example response:</strong></p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">.</span>
+<span class="o">..</span>
+<span class="n">elementor</span>
+<span class="n">index</span><span class="o">.</span><span class="n">php</span>
+<span class="n">responsive</span><span class="o">-</span><span class="n">lightbox</span>
+<span class="n">yoast</span>
+</code></pre></div></div>
+
+<h2 id="check-free-space-on-your-server">Check free space on your server</h2>
+
+<p>Very useful snippet to check the free space on your server</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$bytes</span> <span class="o">=</span> <span class="nb">disk_free_space</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+<span class="nv">$si_prefix</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="s1">'B'</span><span class="p">,</span> <span class="s1">'KB'</span><span class="p">,</span> <span class="s1">'MB'</span><span class="p">,</span> <span class="s1">'GB'</span><span class="p">,</span> <span class="s1">'TB'</span><span class="p">,</span> <span class="s1">'EB'</span><span class="p">,</span> <span class="s1">'ZB'</span><span class="p">,</span> <span class="s1">'YB'</span> <span class="p">);</span>
+<span class="nv">$base</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">;</span>
+<span class="nv">$class</span> <span class="o">=</span> <span class="nb">min</span><span class="p">((</span><span class="nx">int</span><span class="p">)</span><span class="nb">log</span><span class="p">(</span><span class="nv">$bytes</span> <span class="p">,</span> <span class="nv">$base</span><span class="p">)</span> <span class="p">,</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$si_prefix</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$bytes</span> <span class="o">.</span> <span class="s1">'&lt;br /&gt;'</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">sprintf</span><span class="p">(</span><span class="s1">'%1.2f'</span> <span class="p">,</span> <span class="nv">$bytes</span> <span class="o">/</span> <span class="nb">pow</span><span class="p">(</span><span class="nv">$base</span><span class="p">,</span><span class="nv">$class</span><span class="p">))</span> <span class="o">.</span> <span class="s1">' '</span> <span class="o">.</span> <span class="nv">$si_prefix</span><span class="p">[</span><span class="nv">$class</span><span class="p">]</span> <span class="o">.</span> <span class="s1">'&lt;br /&gt;'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Example response:</strong></p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">138288971776</span><span class="o">&lt;</span><span class="n">br</span> <span class="p">/</span><span class="o">&gt;</span><span class="mf">128.79</span> <span class="n">GB</span><span class="o">&lt;</span><span class="n">br</span> <span class="p">/</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="get-theme-directory-in-wordpress">Get theme directory in WordPress</h2>
+
+<p>WordPress comes with a number of useful functions you can use to get the current theme path or URL. You can run the following PHP code to list their values:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="s1">'The URL of the current theme (parent):'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_template_directory_uri</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">'The URL of the current theme (child):'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_stylesheet_directory_uri</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">'the URL of the current theme stylesheet URL'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_stylesheet_uri</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">'the URL of the theme directory.'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_theme_root_uri</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">'the URL of the file path of the themes directory without a trailing slash'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_theme_root</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">'Array of themes located in the themes directory'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_theme_roots</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">'The full file path to the current theme directory'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_stylesheet_directory</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">'The full file path to the current theme directory'</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">get_template_directory</span><span class="p">()</span> <span class="o">.</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Example response:</strong></p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">The</span> <span class="n">URL</span> <span class="n">of</span> <span class="n">the</span> <span class="n">current</span> <span class="n">theme</span> <span class="p">(</span><span class="n">parent</span><span class="p">):</span>
+<span class="n">https</span><span class="p">://</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">themes</span><span class="p">/</span><span class="n">twentytwenty</span>
+<span class="n">The</span> <span class="n">URL</span> <span class="n">of</span> <span class="n">the</span> <span class="n">current</span> <span class="n">theme</span> <span class="p">(</span><span class="n">child</span><span class="p">):</span>
+<span class="n">https</span><span class="p">://</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">themes</span><span class="p">/</span><span class="n">twentytwenty</span>
+<span class="n">the</span> <span class="n">URL</span> <span class="n">of</span> <span class="n">the</span> <span class="n">current</span> <span class="n">theme</span> <span class="n">stylesheet</span> <span class="n">URL</span>
+<span class="n">https</span><span class="p">://</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">themes</span><span class="p">/</span><span class="n">twentytwenty</span><span class="p">/</span><span class="n">style</span><span class="o">.</span><span class="n">css</span>
+<span class="n">the</span> <span class="n">URL</span> <span class="n">of</span> <span class="n">the</span> <span class="n">theme</span> <span class="n">directory</span><span class="o">.</span>
+<span class="n">https</span><span class="p">://</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">themes</span>
+<span class="n">the</span> <span class="n">URL</span> <span class="n">of</span> <span class="n">the</span> <span class="n">file</span> <span class="nb">path</span> <span class="n">of</span> <span class="n">the</span> <span class="n">themes</span> <span class="n">directory</span> <span class="n">without</span> <span class="n">a</span> <span class="n">trailing</span> <span class="n">slash</span>
+<span class="p">/</span><span class="nb">home</span><span class="p">/</span><span class="n">www</span><span class="p">/</span><span class="n">html</span><span class="p">/</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">themes</span>
+<span class="n">Array</span> <span class="n">of</span> <span class="n">themes</span> <span class="n">located</span> <span class="n">in</span> <span class="n">the</span> <span class="n">themes</span> <span class="n">directory</span>
+<span class="p">/</span><span class="n">themes</span>
+<span class="n">The</span> <span class="nb">full</span> <span class="n">file</span> <span class="nb">path</span> <span class="n">to</span> <span class="n">the</span> <span class="n">current</span> <span class="n">theme</span> <span class="n">directory</span>
+<span class="p">/</span><span class="nb">home</span><span class="p">/</span><span class="n">www</span><span class="p">/</span><span class="n">html</span><span class="p">/</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">themes</span><span class="p">/</span><span class="n">twentytwenty</span>
+<span class="n">the</span> <span class="nb">full</span> <span class="n">file</span> <span class="nb">path</span> <span class="n">to</span> <span class="n">the</span> <span class="n">current</span> <span class="n">theme</span> <span class="n">directory</span>
+<span class="p">/</span><span class="nb">home</span><span class="p">/</span><span class="n">www</span><span class="p">/</span><span class="n">html</span><span class="p">/</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">themes</span><span class="p">/</span><span class="n">twentytwenty</span>
+</code></pre></div></div>
+
+<p><strong>Reference</strong>: <a href="https://paulund.co.uk/get-theme-directory-in-wordpress">Get Theme Directory In WordPress - Paulund</a></p>
+
+<hr />
+
+<h2 id="get-the-url-of-the-wp-upload-directory">Get the URL of the WP upload directory</h2>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="nx">wp_get_upload_dir</span><span class="p">()[</span><span class="s1">'baseurl'</span><span class="p">];</span>
+</code></pre></div></div>
+
+<p><strong>Example response:</strong></p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">https</span><span class="p">://</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="p">/</span><span class="n">uploads</span>
+</code></pre></div></div>
+
+<h2 id="rename-files-with-garbled-filename">Rename files with garbled filename</h2>
+
+<p>The command <code class="highlighter-rouge">ls -i</code> shows the inode number of files</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="sb">`ls -i ./filepath`</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The command <code class="highlighter-rouge">find -inum</code> returns the filepath of a specific inode in the file system</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="sb">`find ./filepath -inum 55340444  `</span><span class="p">;</span> 
+</code></pre></div></div>
+
+<p>With the parameter and the placeholder <code class="highlighter-rouge">-exec {}</code>, the command apply the second part to rename the specific inode file</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="sb">`find ./filepath -inum 55340444 -exec mv {} newfilepath \;`</span><span class="p">;</span>
+</code></pre></div></div>
+
+</div>
+
+<!-- Post info -->
+<div class="noteinfo">
+<!-- include some categories and tags maybe? -->
+</div>
+
+<hr>
+
+<!-- Post comments -->
+
+
+<!-- Disqus comments -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://chriskyfung.github.io//blog/wordpress/simple-php-commands-for-wordpress-administrator";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https://chriskyfung.github.io//blog/wordpress/simple-php-commands-for-wordpress-administrator"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://chriskyfung.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+	</section>
+	<aside id="sidebar">
+  
+  
+  
+  <h2><i class='far fa-newspaper'></i> <a href="/blog/index.html">Blog</a></h2>
+  <h3><a href="/blog/categories.html">Categories</a></h3>
+  <h3><a href="/blog/tags.html">Tags</a></h3>
+  <ul>    
+    <li><h3><a href="/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></h3></li>
+    <li><h3><a href="/tag/Tumblr">For Tumblr Developer</a></h3></li>
+    <li><h3><a href="/tag/MATLAB">MATLAB Tips</a></h3></li>
+  </ul>
+  <h2><i class='fab fa-youtube'></i> <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channels</a></h2>
+  <ul><li><h3><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></h3></li>
+    <li><h3><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></h3></li>
+  </ul>
+  
+  <h2>&nbsp;<a href="https://www.paypal.me/chrisfungky/50" target="_blank"><button class="round">Give me a help <i class='fas fa-donate'></i></button></a></h2>
+  
+  <h2><i class='fas fa-gift'></i> <a href="https://invitation.codes/u/qgcUCyqa" target="_blank">Promo Codes</a></h2>
+  
+  <!-- Copyscape Banner -->
+  <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+
+  <!-- Google Adsense -->  
+  <script data-ad-client="ca-pub-4819282024314540" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- github_resp_sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4819282024314540"
+     data-ad-slot="1391498756"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  
+  <!-- Affiliate Disclouse -->
+  <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="60" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120"/></a></div>
+</aside>
+
+	</div>
+    </div>  
+
+    <footer>   
+    <div class="invitation-codes invitation-codes-badge1" data-type="badge1" data-product="" style="float:left;"><a class="" href="https://invitation.codes/" data-type="badge1">Use my referral codes</a></div>
+<script async defer src="//invitation.codes/embed/user/qgcUCyqa/embed.js"></script>
+
+    <div id="footer-copyright">&copy; 2014-2020 Chris KY FUNG. All rights reserved</div>
+    <div id="footer-powered">Powered by <a href="https://pages.github.com">GitHub Pages</a></div>
+</footer>
+
+	
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72575541-9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-72575541-9');
+	</script>
+    
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>
+    <script type="text/javascript">
+  var vglnk = {key: '56a8cde8bc46ec169ed23320c0e35c68'};
+  (function(d, t) {
+      var s = d.createElement(t);
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0];
+          r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+	  
+  </body>
+</html>
+

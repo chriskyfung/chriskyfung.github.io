@@ -1,7 +1,7 @@
 theme: jekyll-theme-architect
 title: Chris KY FUNG's GitHub Page
 description: Feel free to bookmark this to keep an eye on my project updates
-timezone: HK
+timezone: Asia/Hong_Kong
 google_analytics: UA-72575541-9
 disqus: chriskyfung
 permalink: /blog/:year/:month/:day/:title
@@ -9,6 +9,17 @@ paginate: 10
 paginate_path: "/blog/page:num/"
 site_url: https://chriskyfung.github.io/
 excerpt_separator: "<!--more-->"
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      author: Chris KY Fung
+      header:
+        teaser: /images/posts/write-2160925.svg
+        showteaser: true

@@ -8,12 +8,13 @@ tags: [MATLAB, MS Office]
 permalink: /blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation
 redirect_from:
  - /blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation
-image: /images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg
+header: 
+   teaser: /images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg
 ---
 
-![MATLAB TIPS - Convert Matrix between MATLAB and MS Equation](/images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg)
-
 <!--more-->
+
+![MATLAB TIPS - Convert Matrix between MATLAB and MS Equation](/images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg)
 
 When I was studying my MPhil and PhD degrees, one bothering job was to rewrite the programmed formulas and computational results that were coded with numerical analysis software, MATLAB to my papers and my theses. At that time, I used Microsoft Word as my primary word processing software. Manually typing and formatting the data (in the MS Equation Editor) consume time and easily generate human mistakes. Thus, I developed a couple of functions to convert matrix data between MATLAB and MS Office Equation formats. The MATLAB codes are available in my GitHub repository.
 

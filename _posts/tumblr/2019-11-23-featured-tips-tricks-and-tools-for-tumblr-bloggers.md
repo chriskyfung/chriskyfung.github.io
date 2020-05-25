@@ -9,6 +9,8 @@ permalink: /blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-blogger
 redirect_from:
  - /blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers
 image: /images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png
+header:
+  showteaser: false
 ---
 
 ![Tips, Tricks, and Tools for Tumblr Bloggers](/images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png)
