@@ -1,0 +1,293 @@
+I"`><p>In this article, we will go through the lab <strong>GSP318</strong> <em><a href="https://www.qwiklabs.com/focuses/10457?parent=catalog">Kubernetes in Google Cloud: Challenge Lab</a></em>, which is labeled as an expert-level exercise. You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.</p>
+
+<p><strong>The challenge contains 4 required tasks:</strong></p>
+
+<ol>
+  <li>Create a Docker image and store the Dockerfile</li>
+  <li>Test the created Docker image</li>
+  <li>Push the Docker image in the Google Container Repository</li>
+  <li>Create and expose a deployment in Kubernetes</li>
+  <li>Increase the replicas from 1 to 3</li>
+  <li>Update the deployment with a new version of valkyrie-app</li>
+  <li>Create a pipeline in Jenkins to deploy your app</li>
+</ol>
+
+<h2 id="task-1-create-a-docker-image-and-store-the-dockerfile">Task 1: Create a Docker image and store the Dockerfile</h2>
+
+<p><em>Hint</em>: Refer procedures and modify the codes in the lab GSP055 <a href="https://google.qwiklabs.com/focuses/1029?parent=catalog#step5">Introduction to Docker</a></p>
+
+<ol>
+  <li>
+    <p>First of all, you have to run the following command in Cloud Shell.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> &lt;<span class="o">(</span>gsutil <span class="nb">cat </span>gs://cloud-training/gsp318/marking/setup_marking.sh<span class="o">)</span>
+</code></pre></div>    </div>
+
+    <p>It installs the marking scripts, which use to check your progress.</p>
+  </li>
+  <li>
+    <p>Then, run the commands below to clone the valkyrie-app source code repository to the Cloud Shell. (<em>Remember to <strong>replace</strong></em> <code class="highlighter-rouge">YOUR_PROJECT</code> <em>with your Project ID</em>)</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud <span class="nb">source </span>repos clone valkyrie-app <span class="nt">--project</span><span class="o">=</span>YOUR_PROJECT
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a <code class="highlighter-rouge">Dockerfile</code> under the <code class="highlighter-rouge">valkyrie-app</code> directory and add the configuration to the file. Copy the given codes from the lab page to the following snippet, and then run the commands in the Cloud Shell.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>valkyrie-app
+
+<span class="nb">cat</span> <span class="o">&gt;</span> Dockerfile <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+   
+// COPY TO HERE
+</span><span class="no">   
+EOF
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build the image with the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> valkyrie-app:v0.0.1 <span class="nb">.</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run <code class="highlighter-rouge">docker images</code> to look at the images you built.</p>
+  </li>
+</ol>
+
+<p>Before clicking <strong>Check my progress</strong> in the lab page, don’t forget to run the following commands to execute the marking script:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/marking
+./step1.sh
+</code></pre></div></div>
+
+<h2 id="task-2-test-the-created-docker-image">Task 2: Test the created Docker image</h2>
+
+<p><em>Hint</em>: Refer procedures and modify the codes in the lab GSP055 <a href="https://google.qwiklabs.com/focuses/1029?parent=catalog#step6">Introduction to Docker</a></p>
+
+<p>The lab instruction requires you to run the docker image built in task 1 and show the running application by <strong>Web Preview</strong> on port 8080. Based on the requirements, the docker command will be:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p</span> 8080:8080 <span class="nt">--name</span> valkyrie-app valkyrie-app:v0.0.1 &amp;
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>In the Cloud Shell, go back to the <code class="highlighter-rouge">valkyrie-app</code> directory, and run the above command.</p>
+  </li>
+  <li>
+    <p>Click <strong>Web Preview</strong> to see the running app.</p>
+
+    <p><img src="/images/posts/qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1.png" alt="" /></p>
+  </li>
+</ol>
+
+<p>After that, open a new Cloud Shell to run the <code class="highlighter-rouge">step2.sh</code> marking script.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/marking
+./step2.sh
+</code></pre></div></div>
+
+<h2 id="task-3-push-the-docker-image-in-the-container-repository">Task 3: Push the Docker image in the Container Repository</h2>
+
+<p><em>Hint</em>: Refer procedures and modify the codes in the lab GSP055 <a href="https://google.qwiklabs.com/focuses/1029?parent=catalog#step8">Introduction to Docker</a></p>
+
+<p>In this task, you will push the Docker image valkyrie-app:v0.0.1 into the Container Registry with a tag <code class="highlighter-rouge">gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1</code>.</p>
+
+<p>Thus, you should format the docker commands as below.
+(<em>Remember to <strong>replace</strong></em> <code class="highlighter-rouge">YOUR_PROJECT</code> <em>with your Project ID</em>)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker tag valkyrie-app:v0.0.1 gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1
+docker images
+docker push gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1
+</code></pre></div></div>
+
+<p>After pushing the container, the <code class="highlighter-rouge">valkyrie-app</code> repository will appear in the Cloud Console as shown in the image below.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklab-GSP318-container-repositories.png" alt="Push the Docker image of valkyrie-app in the Google Container Repository" /></p>
+
+<h2 id="task-4-create-and-expose-a-deployment-in-kubernetes">Task 4: Create and expose a deployment in Kubernetes</h2>
+
+<p><em>Hint</em>: Refer procedures in the labs GSP100 <a href="https://google.qwiklabs.com/focuses/878?parent=catalog">Kubernetes Engine: Qwik Start</a> and GSP021 <a href="https://google.qwiklabs.com/focuses/557?parent=catalog">Orchestrating the Cloud with Kubernetes</a> for steps 1-2 and steps 3-4, respectively.</p>
+
+<ol>
+  <li>
+    <p>In the Cloud Shell, go to the <code class="highlighter-rouge">valkyrie-app/k8s</code> subdirectory.</p>
+  </li>
+  <li>
+    <p>Get authentication credentials for the cluster</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcloud container clusters get-credentials valkyrie-dev
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use a text editor to modify <code class="highlighter-rouge">deployment.yaml</code> and replace <code class="highlighter-rouge">IMAGE_HERE</code> with <code class="highlighter-rouge">gcr.io/YOUR-PROJECT-ID/valkyrie-app:v0.0.1</code></p>
+  </li>
+  <li>
+    <p>Use <code class="highlighter-rouge">kubectl create -f</code> command to deploy <strong>deployment.yaml</strong> and <strong>service.yaml</strong></p>
+  </li>
+</ol>
+
+<h2 id="task-5-update-the-deployment-with-a-new-version-of-valkyrie-app">Task 5: Update the deployment with a new version of valkyrie-app</h2>
+
+<p><em>Hint</em>: Refer the skills in lab GSP053 <a href="https://google.qwiklabs.com/focuses/639?parent=catalog">Managing Deployments Using Kubernetes Engine</a> or my previous article <a href="/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster">Qwiklabs/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster</a></p>
+
+<p><strong>Step 5-1</strong> Increase the replicas from 1 to 3</p>
+
+<p><strong>Step 5-2</strong> Update the deployment with a new version of valkyrie-app</p>
+
+<ol>
+  <li>
+    <p>Go back to the <code class="highlighter-rouge">valkyrie-app</code> directory in the Cloud Shell.</p>
+  </li>
+  <li>
+    <p>Merge the branch called <code class="highlighter-rouge">kurt-dev</code> into master using the following <code class="highlighter-rouge">git</code> command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git merge origin/kurt-dev
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build and push the new version with tagged v0.0.2:
+(<em>Remember to <strong>replace</strong></em> <code class="highlighter-rouge">YOUR_PROJECT</code> <em>with your Project ID</em>)</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> valkyrie-app:v0.0.2 <span class="nb">.</span>
+docker tag valkyrie-app:v0.0.2 gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.2
+docker images
+docker push gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.2
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Trigger a rolling update by running the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl edit deployment valkyrie-app
+</code></pre></div>    </div>
+
+    <p>Change the image tag from <code class="highlighter-rouge">v0.0.1</code> to <code class="highlighter-rouge">v0.0.2</code>. then save and exit.</p>
+  </li>
+</ol>
+
+<h2 id="task-6-create-a-pipeline-in-jenkins-to-deploy-your-app">Task 6: Create a pipeline in Jenkins to deploy your app</h2>
+
+<p><em>Hint</em>: Refer procedures in the labs GSP051 <a href="https://google.qwiklabs.com/focuses/1104?parent=catalog">Continuous Delivery with Jenkins in Kubernetes Engine</a></p>
+
+<p>In this task, you will need to:</p>
+
+<ol>
+  <li>Connect to Jenkins</li>
+  <li>Adding your service account credentials</li>
+  <li>Creating a Jenkins job</li>
+  <li>Modifying the pipeline definition</li>
+  <li>Modify the site</li>
+  <li>Kick off Deployment</li>
+</ol>
+
+<h4 id="61-to-connect-the-jenkines">6.1 To connect the Jenkines</h4>
+
+<ol>
+  <li>
+    <p>Get the password with the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">printf</span> <span class="si">$(</span>kubectl get secret cd-jenkins <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.data.jenkins-admin-password}"</span> | <span class="nb">base64</span> <span class="nt">--decode</span><span class="si">)</span><span class="p">;</span><span class="nb">echo</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Connect to the Jenkins console using the commands below:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/component=jenkins-master" -l "app.kubernetes.io/instance=cd" -o jsonpath="{.items[0].metadata.name}")
+kubectl port-forward $POD_NAME 8080:8080 &gt;&gt; /dev/null &amp;
+</code></pre></div>    </div>
+
+    <p>If there is another running container, use the <code class="highlighter-rouge">docker</code> commands below to kill it:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps
+docker container <span class="nb">kill</span> <span class="si">$(</span>docker ps <span class="nt">-q</span><span class="si">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Click on the <strong>Web Preview</strong> button in cloud shell, then click “Preview on port 8080” to connect to the Jenkins console.<br />
+<strong>Username</strong>: admin</p>
+  </li>
+</ol>
+
+<h4 id="62-adding-your-service-account-credentials">6.2 Adding your service account credentials</h4>
+
+<ol>
+  <li>
+    <p>In the Jenkins user interface, click <strong>Credentials</strong> in the left navigation.</p>
+  </li>
+  <li>
+    <p>Click <strong>Jenkins</strong></p>
+  </li>
+  <li>
+    <p>Click <strong>Global credentials (unrestricted)</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Add Credentials</strong> in the left navigation.</p>
+  </li>
+  <li>
+    <p>Select <strong>Google Service Account from metadata</strong> from the <strong>Kind</strong> drop-down and click <strong>OK</strong>.</p>
+  </li>
+</ol>
+
+<h4 id="63-creating-the-jenkins-job">6.3 Creating the Jenkins job</h4>
+
+<p>Create a pipeline job that points to your */master branch on your source code.</p>
+
+<ol>
+  <li>
+    <p>Click <strong>Jenkins</strong> &gt; <strong>New Item</strong> in the left navigation:</p>
+  </li>
+  <li>
+    <p>Name the project <strong>valkyrie-app</strong>, then choose the <strong>Multibranch Pipeline</strong> option and click <strong>OK</strong>.</p>
+  </li>
+  <li>
+    <p>On the next page, in the Branch Sources section, click <strong>Add Source</strong> and select <strong>git</strong>.</p>
+  </li>
+  <li>
+    <p>Paste the HTTPS clone URL of your sample-app repo in Cloud Source Repositories <code class="highlighter-rouge">https://source.developers.google.com/p/YOUR_PROJECT/r/valkyrie-app</code> into the Project Repository field. Remember to replace <strong>YOUR_PROJECT</strong> with your GCP Project ID.</p>
+  </li>
+  <li>
+    <p>From the <strong>Credentials</strong> drop-down, select the name of the credentials you created when adding your service account in the previous steps.</p>
+  </li>
+  <li>
+    <p>Under <strong>Scan Multibranch Pipeline Triggers</strong> section, check the <strong>Periodically if not otherwise run</strong> box and set the <strong>Interval</strong> value to 1 minute.</p>
+  </li>
+  <li>
+    <p>Your job configuration should look like this:</p>
+
+    <p><img src="/images/posts/qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png" alt="" /></p>
+  </li>
+</ol>
+
+<h4 id="64-modifying-the-pipeline-definition">6.4 Modifying the pipeline definition</h4>
+
+<p>Open <code class="highlighter-rouge">Jenkinsfile</code> file in a text editor, and replace <strong>YOUR_PROJECT</strong> with your GCP project ID.</p>
+
+<h4 id="65-modify-the-site">6.5 Modify the site</h4>
+
+<p>Open <code class="highlighter-rouge">source/html.go</code> file in a text editor, and change the color of headings from green to orange.</p>
+
+<h4 id="66-kick-off-deployment">6.6 Kick off Deployment</h4>
+
+<p>Commit and push the changes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.email YOUR_PROJECT
+git config <span class="nt">--global</span> user.name YOUR_PROJECT
+
+git add Jenkinsfile <span class="nb">source</span>/html.go
+git commit <span class="nt">-m</span> <span class="s1">'green to orange'</span>
+git push origin master
+</code></pre></div></div>
+
+<p>Finally, manually trigger the build in the Jenkins console</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklab-GSP318-jenkins-build-queue.png" alt="" /></p>
+
+<p><img src="/images/posts/qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2.png" alt="" /></p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Do you feel this challenge lab quite difficult? You might if you don’t get enough practice on Kubernetes Engines. Other than that, you might be disturbed if you don’t know how to use <code class="highlighter-rouge">docker</code> command to kill a container and <code class="highlighter-rouge">git config</code> command before committing the changes. Despite this, most tasks reproduce based on the contents from the labs in the Kubernetes in Google Cloud quest. There is nothing to be afraid of.</p>
+
+<hr />
+
+<p><strong>Related:</strong> <a href="/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform">Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips</a></p>
+:ET

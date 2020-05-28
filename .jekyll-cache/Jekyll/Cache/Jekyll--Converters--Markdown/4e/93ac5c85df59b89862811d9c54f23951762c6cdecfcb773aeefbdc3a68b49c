@@ -1,0 +1,2 @@
+I" <p>Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups to your blogs without a clear mechanism. I found that some of my Tumblr blog posts including the markups, but some of them not. Indeed, we have a lack of control over what kind of information to be auto-tagged. The Tumblr crawler may also pick up incorrect contents, especially og:type and og:image. You can use <a href="https://developers.facebook.com/tools/debug/og/object/">Facebook’s Open Graph Object Debugger</a> to inspect the tags of your posts.</p>
+:ET

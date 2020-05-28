@@ -1,10 +1,18 @@
 ---
-layout: default
-title: About Me
-permalink: /about/
+layout: page
+title: About
+comments: false
 ---
 
-## Bio
+<div class="row post-top-meta">
+    <div class="col-md-2">
+        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ site.authors.chris.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+    </div>
+    <div class="col-md-10">
+        <a target="_blank" class="link-dark" href="{{ site.authors.chris.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ site.authors.chris.facebook }}" class="btn follow">Follow</a>
+        <span class="author-description">{{ site.authors.chris.description }}</span>						
+    </div>
+</div>
 
 Hi, my name is Chris KY FUNG, an individual researcher in Engineering living in Hong Kong. Well, I am not a proficient programmer, but I frequently code for my engineering research projects. I mainly used MATLAB when I was studying my MPhil in Computational Intelligence. After graduated, I had participated a research on atomistic simulation of material processing with molecular dynamics (MD) for six years. To conduct such huge simulations, I had to deal and play with Linux servers and High-Performance Computing (HPC). My job also included developing models and data analysis with various programming languages.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Working MATLAB with MS Excel"
-author: Chris KY Fung
+author: chris
 date: 2015-03-10
 category: Data-Science
 tags: [MATLAB, MS Excel]
-header:
-  teaser: /images/posts/matlab/excel_addin_menu.png
+image: images/posts/matlab/excel_addin_menu.png
+hideimage: true
 permalink: /blog/matlab/Working-MATLAB-with-MS-Excel
 redirect_from:
  - /blog/2015/03/10/Working-MATLAB-with-MS-Excel

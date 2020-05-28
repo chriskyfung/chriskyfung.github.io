@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  "QLogbook: Cloud Architecture: Challenge Lab"
-author: Chris KY Fing
+author: chris
 date: 2020-04-24
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
 permalink: /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
 excerpt: Hints for qwiklab GSP314 "Cloud Architecture &#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
-header: 
-   teaser: /images/posts/qwiklabs/qwiklab-GSP314-spinaker-production.png
+image: images/posts/qwiklabs/qwiklab-GSP314-spinaker-production.png
 ---
 
 <!--more-->

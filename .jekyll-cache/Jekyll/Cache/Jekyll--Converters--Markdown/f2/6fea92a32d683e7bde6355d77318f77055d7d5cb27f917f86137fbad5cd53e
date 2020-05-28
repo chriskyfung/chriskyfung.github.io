@@ -1,0 +1,190 @@
+I"6;<!--more-->
+
+<p>This is the last article of the series about the Qwiklabs quest <strong><em>“Challenge: GCP Architecture”</em></strong>. Compared to the previous labs, this one is more practical and also valuable for non-developers. We will touch a WordPress site in the lab <strong>GSP306</strong> <em>“<a href="https://www.qwiklabs.com/focuses/1740?parent=catalog">Migrate a MySQL Database to Google Cloud SQL</a>“</em> this time. It is useful if you are going to move or integrate your applications with flexible and scalable Cloud SQL service.</p>
+
+<p>An existing WordPress installation in the Compute Instance called <code class="highlighter-rouge">blog</code> that is already running in the lab. The blog is connecting with a MySQL database running on the same server. You need to migrate the local database to Google Cloud SQL, and reconfigure the WordPress to access the Cloud database instead.</p>
+
+<p><br /></p>
+
+<h2 id="brief-introduction-of-challenge-scenario">Brief Introduction of Challenge Scenario</h2>
+
+<p>When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.</p>
+
+<p><img src="/images/posts/qwiklabs/score_box_of_qwiklabs_GSP306.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP306" /></p>
+
+<p>The screenshot above shows that there are 5 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.</p>
+
+<ol>
+  <li>Create a Cloud SQL instance</li>
+  <li>Export and import the <code class="highlighter-rouge">wordpress</code> database to the Cloud SQL instance</li>
+  <li>Authorize the VM instance <code class="highlighter-rouge">blog</code> to access the Cloud SQL</li>
+  <li>Change <code class="highlighter-rouge">wp-config.php</code> points to the Cloud SQL instance</li>
+  <li>Check that the blog still responds to requests</li>
+</ol>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png" alt="Scheme diagram of Export / Import Database Mirgration" /></p>
+
+<p><br /></p>
+
+<h2 id="check-existing-wordpress-resources">Check Existing WordPress Resources</h2>
+
+<p>In the lab page, there is the IP of the Demo Blog Site shown in the left panel after provisioning lab resources.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step0-project-information.png" alt="a sample of project information panel" /></p>
+
+<p>In the web console, navigate to <em><strong>Compute Engine &gt; VM instances</strong></em>. You should find a VM instance called <code class="highlighter-rouge">blog</code> has been provisioned. A WordPress server is running on this instance.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step1-wordpress-server-instance-called-blog.png" alt="VM instances called blog" /></p>
+
+<p>The instance should have the same external IP as shown in the panel. Copy the external IP and open it in a new tab. A website called Blog-Demo will be displayed.</p>
+
+<h2 id="create-cloud-sql-instance">Create Cloud SQL Instance</h2>
+
+<p>Next, you need to create a new Google Cloud SQL instance to host the migrated database.</p>
+
+<p>In the web console, navigate to <em><strong>SQL</strong></em> and click <strong>Create instance</strong>. Choose <strong>MySQL</strong>, give a name to the SQL instance, e.g. <code class="highlighter-rouge">demo</code>. Generate a root password and then click <strong>Create</strong>.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step3-Create-Cloud-SQL-Instance-on-GCP.png" alt="Create Cloud SQL Instance on GCP" /></p>
+
+<p>Wait for the instance to be initialized, the process usually takes 5 to 10 minutes.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step4-instance-details-of-Cloud-SQL.png" alt="Instance details of the created demo MySQL" /></p>
+
+<p>You can continue the procedure below without waiting here.</p>
+
+<h2 id="export-sql-database">Export SQL Database</h2>
+
+<p>If you read “<a href="https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-concept">Migration from MySQL to Cloud SQL</a> in the documentation of Google Cloud Solutions. There are two ways to migrate the database, namely, (a) <a href="https://cloud.google.com/sql/docs/mysql/replication/replication-from-external">Export/import approach</a> or (b) <a href="https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-using-automated-migration-workflow-tutorial">External replica promotion approach</a>.</p>
+
+<ul>
+  <li><strong>Export/import migration</strong>
+This method requires to export the entire source database and import the dump data to replica, typically requires downtime for the database during the entire process to keep data in sync.</li>
+  <li><strong>External replica promotion migration</strong>
+This method process through the automated migration workflow provided by Google Cloud SQL, which aims to minimize the database uptime by promoting the replica database to replace the source after the data is synchronized.</li>
+</ul>
+
+<p>In a production environment, you may consider the automated workflow to take its advantage. In this article, I will only show you the <strong>export/import</strong> approach because it is simpler. I want to make sure you can accomplish this challenge lab.</p>
+
+<p>In the web console, navigate to <strong><em>Compute Engine &gt; VM instances</em></strong> and click the <strong>SSH</strong> button of the instance called <code class="highlighter-rouge">blog</code>.</p>
+
+<p>Both the WordPress and its MySQL database are running in this VM instance. The existing MySQL database is called <code class="highlighter-rouge">wordpress</code> and the user called <code class="highlighter-rouge">blogadmin</code> with password <code class="highlighter-rouge">Password1*</code>.</p>
+
+<p>In the SSH session, use <code class="highlighter-rouge">mysqldump</code> to export the MySQL database to a dump file with the following flags:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysqldump <span class="se">\</span>
+<span class="nt">--databases</span> <span class="o">[</span>DATABASE_NAME1, DATABASE_NAME2, ...] <span class="nt">-h</span> <span class="o">[</span>INSTANCE_IP] <span class="nt">-u</span> <span class="o">[</span>USERNAME] <span class="nt">-p</span> <span class="se">\</span>
+<span class="nt">--hex-blob</span> <span class="nt">--skip-triggers</span> <span class="nt">--single-transaction</span> <span class="nt">--ignore-table</span> <span class="o">[</span>VIEW_NAME1] <span class="o">[</span>...] <span class="se">\</span>
+<span class="nt">--default-character-set</span><span class="o">=</span>utf8mb4 <span class="o">&gt;</span> <span class="o">[</span>SQL_FILE].sql
+</code></pre></div></div>
+
+<p>In this lab, you can remove the <code class="highlighter-rouge">--ignore-table [VIEW_NAME1]</code> flag because the database does not include any views. Replace the argument values, the command line should look like:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysqldump <span class="nt">--databases</span> wordpress <span class="nt">-h</span> localhost <span class="nt">-u</span> blogadmin <span class="nt">-p</span> <span class="se">\</span>
+<span class="nt">--hex-blob</span> <span class="nt">--skip-triggers</span> <span class="nt">--single-transaction</span> <span class="se">\</span>
+<span class="nt">--default-character-set</span><span class="o">=</span>utf8mb4 <span class="o">&gt;</span> wordpress.sql
+</code></pre></div></div>
+
+<p>Now you need to copy the dump file to Cloud Storage. Use the following commands to create a bucket and upload the file to it.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PROJECT_ID</span><span class="o">=</span><span class="si">$(</span>gcloud info <span class="nt">--format</span><span class="o">=</span><span class="s1">'value(config.project)'</span><span class="si">)</span>
+gsutil mb gs://<span class="k">${</span><span class="nv">PROJECT_ID</span><span class="k">}</span>
+gsutil <span class="nb">cp</span> ~/wordpress.sql gs://<span class="k">${</span><span class="nv">PROJECT_ID</span><span class="k">}</span>
+</code></pre></div></div>
+
+<p>In the web console, navigate to <strong><em>Storage</em></strong> to confirm the uploaded file.
+<img src="/images/posts/qwiklabs/qwiklabs-GSP306-step5-dump-file-in-cloud-storage.png" alt="uploaded wordpress.sql file in cloud storage" /></p>
+
+<h2 id="import-to-cloud-sql">Import to Cloud SQL</h2>
+
+<p>Go back to the web console, navigate to <strong><em>SQL</em></strong> to check whether the cloud SQL instance is ready. Once the instance is online, click the instance name to view the details.</p>
+
+<p>Choose <strong>DATABASES</strong> tab, and click <strong>Create database</strong>.</p>
+
+<p>In the dialog, enter <code class="highlighter-rouge">wordpress</code> as the name and select <code class="highlighter-rouge">utf8mb4</code> as the character set.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step6-create-databases-in-cloud-sql.png" alt="Add wordpress database to Cloud SQL" /></p>
+
+<p>Now you prepared an empty database called <code class="highlighter-rouge">wordpress</code> in the Cloud SQL. Click <strong>IMPORT</strong> button at the top of the page.</p>
+
+<p>In the dialog, click <strong>Browse</strong> to select the dump file in the Cloud Storage, and select <code class="highlighter-rouge">wordpress</code> in the Database field.
+<img src="/images/posts/qwiklabs/qwiklabs-GSP306-step7-import-database-to-cloud-sql.png" alt="" /></p>
+
+<p>Click <strong>Import</strong> to start the process.</p>
+
+<h2 id="authorized-blog-instance-to-access-cloud-sql">Authorized Blog Instance to Access Cloud SQL</h2>
+
+<p>While the database is importing to the cloud SQL, choose <strong>USERS</strong> tab and click <strong>Create user account</strong>.</p>
+
+<p>In the dialog, enter <code class="highlighter-rouge">blogadmin</code> as the user name and <code class="highlighter-rouge">Password1*</code> as the password.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step8-create-user-in-cloud-sql.png" alt="Add blogadmin to " /></p>
+
+<p>Choose <strong>CONNECTIONS</strong> tab, under the Public IP click <strong>Add network</strong>.</p>
+
+<p>Copy the IP of the Demo Blog site to the Network field, and format the number in form of a CIDR notation <code class="highlighter-rouge">X.X.X.0/24</code>.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step9-athorized-networks.png" alt="" /></p>
+
+<p>Click <strong>Done</strong> and <strong>Save</strong> to authorize the VM instance <code class="highlighter-rouge">blog</code> to access the Cloud SQL.</p>
+
+<h2 id="reconfigure-wordpress-to-connect-the-cloud-sql-instance">Reconfigure WordPress to connect the Cloud SQL instance</h2>
+
+<p>For this lab, the WordPress site configuration file is located in the <code class="highlighter-rouge">/var/www/html/wordpress/</code> directory. Use the following commands to change the current directory and list the files,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /var/www/html/wordpress/
+<span class="nb">ls</span>
+</code></pre></div></div>
+<p>You should find a file called <code class="highlighter-rouge">wp-config.php</code>.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step11-locate-wordpress-config-file.png" alt="" /></p>
+
+<p>(<em>Optional</em>)  Before changing the WordPress configuration, I recommend you stop the local MySQL server using the following commands in the SSH session:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>service mysql stop
+<span class="nb">sudo </span>service mysql status
+</code></pre></div></div>
+<p>Refresh the Demo Blog Site, the website becomes fail to render.
+<img src="/images/posts/qwiklabs/qwiklabs-GSP306-step10-stop-local-mysql-server.png" alt="" /></p>
+
+<p>Now you edit the WordPress configuration, such that it points to the Cloud SQL instance.</p>
+
+<p>Open the <code class="highlighter-rouge">wp-config.php</code>, such as using nano editor”</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>nano wp-config.php
+</code></pre></div></div>
+<p>The file looks like below,</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step12-edit-wp-config-php-file.png" alt="" /></p>
+
+<p>Find the following lines in the file,</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cd">/** MySQL hostname */</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'DB_HOST'</span><span class="p">,</span> <span class="s1">'localhost'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Replace <code class="highlighter-rouge">localhost</code> with the Public IP of the Cloud SQL instance, e.g,</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cd">/** MySQL hostname */</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'DB_HOST'</span><span class="p">,</span> <span class="s1">'35.226.248.101'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Press <strong>Ctrl + x</strong> and type <strong>Y</strong> to save and exit the file.</p>
+
+<p>If you refresh the website in your web browser, it should be restored. That means the WordPress site is connected to the Cloud SQL. Otherwise, use the following command to restart the webserver,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>service apache2 restart
+<span class="nb">sudo </span>service apache2 status
+</code></pre></div></div>
+
+<p>(Optional) Test the website to check if any issues after migration.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklabs-GSP306-step2-Blog-Demo-wordpress-site.png" alt="Screenshot of the Blog-Demo Website" /></p>
+
+<p>Congratulations! You should accomplish the lab if you follow the above steps. Also, you earned a badge if you completed the quest <em>“<a href="https://www.qwiklabs.com/quests/47">Challenge: GCP Architecture</a>“</em>. You become a cloud expert now!</p>
+
+<p>This post has also been published to Medium. If you like to read and take notes in Medium, please visit <a href="https://medium.com/@chriskyfung/qwiklab-logbook-migrate-a-mysql-database-to-google-cloud-sql-7c129ba586c9">Medium (@chriskyfung)</a>.</p>
+
+<hr />
+
+<p>Next time, I will try to write a review about different quests in Qwiklabs. I hope you will visit my site again. See you soon!</p>
+
+<p><strong>Related:</strong> <a href="/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform">Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips</a></p>
+:ET

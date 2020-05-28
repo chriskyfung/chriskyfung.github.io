@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "QLogbook: Kubernetes in Google Cloud: Challenge Lab"
-author: Chris KY Fing
+author: chris
 date: 2020-05-04
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP318 "Kubernetes in Google Cloud &#58; Challenge Lab". It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
-header: 
-   teaser: /images/posts/qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png
+image: images/posts/qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png
+featured: true
 ---
 
 In this article, we will go through the lab **GSP318** _[Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is labeled as an expert-level exercise. You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Chris KY Fung, Launches Site with GitHub Pages"
-author: Chris KY Fung
+author: chris
 date: 2017-02-26
 category: Announcement
 tags: [changelog]

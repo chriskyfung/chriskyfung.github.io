@@ -1,0 +1,11 @@
+I"'<table>
+  <tbody>
+    <tr>
+      <td>Hints for qwiklab GSP313 “Google Cloud Essential : Challenge Lab”</td>
+      <td>1. Create a project jumphost instance</td>
+      <td>2. Create a Kubernetes service cluster</td>
+      <td>3. Setup an HTTP load balancer</td>
+    </tr>
+  </tbody>
+</table>
+:ET

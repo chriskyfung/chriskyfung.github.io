@@ -2,14 +2,14 @@
 layout: post
 title: "Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips (2020)"
 date: 2020-2-22 22:10
-author: Chris KY Fung
+author: chris
 category: Cloud
 tags: [Qwiklabs, Google Cloud, user tips, learning map]
 permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
-header: 
-   teaser: /images/posts/tumblr/qwiklabs-quests-map.png
+image: images/posts/qwiklabs/qwiklabs-badges.jpg
+featured: true
 ---
 
 <!--more-->

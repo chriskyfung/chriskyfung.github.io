@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "QLogbook: Migrate a MySQL Database to Google Cloud SQL"
-author: Chris KY Fung
+author: chris
 date: 2019-09-30
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, WordPress, MySQL]
@@ -9,8 +9,7 @@ permalink: /blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
 redirect_from:
  - /blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
 excerpt: A lab summary of qwiklab GSP306 "Migrate a MySQL Database to Google Cloud SQL" | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
-header: 
-   teaser: /images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png
+image: images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png
 ---
 
 <!--more-->
