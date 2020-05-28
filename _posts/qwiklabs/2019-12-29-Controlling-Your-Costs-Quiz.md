@@ -2,7 +2,7 @@
 layout: post
 title: "QLogbook: Controlling Your Costs [Quiz]"
 date: 2019-11-26 11:56
-author: Chris KY Fung
+author: chris
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Controlling-Your-Costs-Quiz

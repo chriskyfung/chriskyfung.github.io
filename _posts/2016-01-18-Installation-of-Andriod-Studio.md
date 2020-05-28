@@ -3,10 +3,9 @@ layout: post
 title: Installation of Android Studio and SDK Tools
 date: 2016-01-18 21:36
 category: Android Development
-author: Chris KY Fung
+author: chris
 tags: [Android Studio]
-header:
-  showteaser: false
+hideimage: true
 ---
 
 ![Andriod Studio Setup dialog](/images/posts/android/Android_Studio_setup.png)

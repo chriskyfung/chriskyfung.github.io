@@ -1,0 +1,288 @@
+I"�I<p><img src="/images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png" alt="Tips, Tricks, and Tools for Tumblr Bloggers" /></p>
+
+<p><strong>Tumblr</strong>  is a popular micro-blogging and social media platform, which is lightweight and highly-customizable with HTML, CSS and JavaScript. It is completely free without storage and bandwidth limits, like Facebook, Twitter, Blogger and Medium, but you can tailor-made your theme and use your custom domain name. It also allows monetizing with Google Adsense. Tumblr is a good alternative of WordPress and GitHub Page for hosting blog websites because no complex PHP or Jekyll knowledge is required. But the shortage of Tumblr includes slow page speed and limited SEO settings. On the whole, Tumblr is a great blogging platform for beginners. You can make use of the following plugins, tools, tips-and-tricks to enrich your Tumblr sites.</p>
+
+<!--more-->
+<p><br /></p>
+
+<h2 id="personalize-your-tumblr-site">Personalize Your Tumblr Site:</h2>
+
+<p>If you prefer to present your Tumblr like a normal website, you definitely want to erase the Tumblr controls, buttons and toolbars from your pages. You can follow the <strong>two</strong> instructions below to kill them from
+screens.</p>
+
+<h3 id="remove-the-follow-unfollow-and-join-tumblr-buttons">Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons</h3>
+
+<p>You can follow the procedures below to disable the Tumblr buttons for non-Tumblr users:</p>
+
+<ol>
+  <li>In the Tumblr Dashboard, click on the <em>Account</em> → <strong>Edit Appearance</strong></li>
+  <li>Click on <strong>Edit Theme</strong> button (same <strong>Customize</strong>)</li>
+  <li>
+    <p>Scroll to the button and click <strong>Advanced Settings</strong> <br />
+<img src="/images/posts/tumblr/uncheck-promote-tumblr-in-tumblr-theme-advanced-options.png" alt="" />
+<br /></p>
+  </li>
+  <li>Uncheck <strong>Promote Tumblr!</strong></li>
+  <li>Click <strong>Save</strong></li>
+</ol>
+
+<h3 id="hide-the-open--install-the-app-from-mobile-pages">Hide the “Open / Install the App” from mobile pages</h3>
+
+<p>When a Tumblr site is opened with a mobile device, buttons asking users to open/install the native Tumblr app will be rendered by default (as shown in the image below).</p>
+
+<p><img src="/images/posts/tumblr/get-n-open-tumblr-app-in-tumblr-mobile-page-300.png" alt="" /></p>
+
+<ol>
+  <li>
+    <p>Copy the following CSS codes to clipboard</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">tumblr_controls</span><span class="o">,</span> <span class="nc">.tmblr-iframe</span> <span class="p">{</span>
+     <span class="nl">visibility</span><span class="p">:</span><span class="nb">hidden</span><span class="p">;</span>
+     <span class="nl">padding-top</span><span class="p">:</span> <span class="m">0</span> <span class="cp">!important</span><span class="p">;</span>
+     <span class="c">/* Hide the tumblr-iframe objects*/</span>
+ <span class="p">}</span>
+ <span class="nt">tumblr_controls</span><span class="o">,</span> <span class="nc">.iframe-controls--desktop</span> <span class="p">{</span>
+     <span class="nl">visibility</span><span class="p">:</span><span class="nb">visible</span><span class="p">;</span>
+     <span class="c">/* Keep showing Tumblr control bottons for logged-in users*/</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Navigate to <strong>Edit Appearance</strong> &gt; <strong>Edit Theme</strong> &gt; <strong>Advanced Settings</strong> from your Tumblr dashboard, paste the code below <strong>ADD CUSTOM CSS</strong></li>
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<p><br /></p>
+
+<h3 id="recover-custom-themes">Recover Custom Themes</h3>
+
+<p>Tumblr automatically backups your custom theme when you make and save any changes, and you can revert to previous versions. I think many Tumblr bloggers may not know this important feature because it isn’t written clearly in the Tumblr Help Center. <em>Weird</em>!</p>
+
+<p>In the <strong><a href="https://www.tumblr.com/themes/recover">Recover Custom Theme</a></strong> page, choose the blog that you want to recover, and click <strong>View backups</strong>. You will obtain a list of the old versions. You can click <strong>Show changes</strong> to inspect the code changes and click <strong>Revert</strong> to restore back the theme.</p>
+
+<p><img src="/images/posts/tumblr/RecoverCustomTheme.png" alt="Screenshot of Recover Tumblr Custom Themes" /></p>
+
+<hr />
+
+<h2 id="plugins-for-tumblr-sites">Plugins for Tumblr Sites:</h2>
+
+<h3 id="amazon-associates-ads-loader-for-tumblr">Amazon Associates Ads Loader for Tumblr</h3>
+
+<p><img src="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr/raw/master/images/amzn_assoc_loader_for_tumblr.png" alt="Amazon Associates Ads Loader for Tumblr" /></p>
+
+<p>Tumblr blocks executing Javascript snippets directly embedded in a post body. For that reason, Amazon Ads cannot display if we just copy an Ads code to a Tumblr post. To workaround, I created a converter to format the Ads code to HTML data, and a plugin to insert the Ads back to the post body by interpreting the HTML elements in the DOM File. Visit a <a href="https://releasemind.com/post/172027040926/6-benefits-of-networking-for-your-success">Demo</a> page!</p>
+
+<p>For more detail, please visit the repository in GitHub (<a href="https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr">https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr</a>).</p>
+
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "cfky05-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "My Amazon Picks";
+amzn_assoc_linkid = "bfc0f57bf0ff0a864c81efdd3904066e";
+amzn_assoc_asins = "1118335953,1119950155,B082RSGN62,B00GOMDPRI";
+</script>
+
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+<h3 id="tumblr-featured-posts-pluginby-bandit-design-">Tumblr Featured Posts Plugin<br /><small><em>by <a href="https://blog.bandit.co.nz/post/87511743/tumblr-featured-posts-javascript-plugin">BANDIT DESIGN</a></em> </small></h3>
+
+<p>This plugin outputs a link to render posts tagged with “featured”. Click <a href="https://test-featured-plugin.tumblr.com/">Demo</a> to visit the sample site I made.</p>
+
+<p>To implement the plugin, copy the following codes within your HTML <code class="highlighter-rouge">&lt;head&gt;</code>,</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"</span> <span class="na">language=</span><span class="s">"javascript"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>  
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://lab.bandit.co.nz/sites/tumblr/bandit-tumblr-featured.js"</span> <span class="na">language=</span><span class="s">"javascript"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Add the following html tag to your custom theme,</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"featured"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>A link named with “Featured” will be shown at where you place the <code class="highlighter-rouge">&lt;ui&gt;</code> tag. When you click this link, the plugin will send an API request, <code class="highlighter-rouge">https://&lt;blog-name&gt;.tumblr.com/api/read/json?num=50&amp;tagged=featured</code> to get the data of the first 50 posts tagged with “featured”. Thus, the posts found can be shown at the top or somewhere on the top separately from the main post feed.</p>
+
+<p><img src="/images/posts/tumblr/tumblr-featured-post-plugin.png" alt="sample screenshot of Tumblr Featured Posts Plugin by BANDIT DESIGN" /></p>
+
+<hr />
+
+<h2 id="3rd-party-applications">3rd-Party Applications:</h2>
+
+<h3 id="hashtag-tools">Hashtag Tools</h3>
+
+<p>Hashtags are useful to categorize posts and help audiences to search your contents. You can edit the tags by using the official <strong>Mass Post Editor</strong> under the Tumblr dashboard. But it looks pretty crummy, especially fails to show non-English characters. Alternatively, I adopt the following 3rd-party applications to oversee and manipulate the tags of my Tumblr blogs.</p>
+
+<h4 id="tumblr-tag-list-generator-drunkonschadenfreudecom">Tumblr Tag List Generator <small>(drunkonschadenfreude.com)</small></h4>
+
+<p><img src="/images/posts/tumblr/TumblrTagListGenerator-drunkonschadenfreude.com.png" alt="Screenshot of Tumblr Tag List Generator by drunkonschadenfreude.com" /></p>
+
+<p>You can get a dynamically updated tag list of your Tumblr blog by using this tag list generator. Just enter your Tumblr blog name to it and click <strong>Generate</strong>, it will return the code for you to copy into your theme or a custom page.</p>
+
+<p>There are several parameters for you to define the appearance of the tag list or word cloud. The generator provides a preview for the resulted code. The image below demonstrates three different samples that I had made.</p>
+
+<p><img src="/images/posts/tumblr/TumblrTagListGenerator-drunkonschadenfreude.com-demos.png" alt="Sample Demos of Tumblr Tag List Generator by drunkonschadenfreude.com" /></p>
+
+<h4 id="find-untagged-tumblr-posts-finduntaggedtumblrpostscom">Find Untagged Tumblr Posts <small>(finduntaggedtumblrposts.com)</small></h4>
+
+<p><img src="/images/posts/tumblr/FindUntaggedTumblrPosts-finduntaggedtumblrposts.com.png" alt="Screenshot of Find Untagged Tumblr Posts (finduntaggedtumblrposts.com)" /></p>
+
+<p>This application is a crawler that scans through a Tumblr site and reports the untagged posts that have been found. So, you can verify if every post in your site has been tagged.</p>
+
+<h4 id="tag-replacer-tagscircumfluous">Tag Replacer <small>(tags.circumfluo.us)</small></h4>
+
+<p><img src="/images/posts/tumblr/tagreplacer-tags.circumfluo.us.png" alt="Tag Replacer ([tags.circumfluo.us](https://tags.circumfluo.us))" /></p>
+
+<p>Tag Replacer is a great tool that speedups tag editing. It can search the posts with a specific tag from your Tumblr blog and perform a <strong>bulk tag replace/delete</strong> process. <em>Quick &amp; Easy</em>!</p>
+
+<p>Since the application edits your data, you have to grant it <em>access</em>, <em>read</em> and <em>write</em> permissions for the first time use. Click <strong>Connect to tumblr</strong>, then it will be redirected to the authorization page.
+<img src="/images/posts/tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr.png" alt="Connect to tumblr - Tag Replacer (tags.circumfluo.us)" /></p>
+
+<p><img src="/images/posts/tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr-authorize.png" alt="Authorize Tag Replacer (tags.circumfluo.us)" /></p>
+
+<p>If you worry about the security, you can revoke the app after tag editing. In your Tumblr dashboard, navigate to <strong>Settings</strong> &gt; <strong>Apps</strong>, and click the “<strong>x</strong>” button to remove the app.</p>
+
+<p><img src="/images/posts/tumblr/tagreplacer-tags.circumfluo.us-remove-app.png" alt="Remove Tag Replacer (tags.circumfluo.us)from Tumblr App page" /></p>
+
+<p>The Tag Replacer is an open-source project under Peer Production License.  You can find and download the source code from this GitHub repository (<a href="https://github.com/cubeghost/tagreplacer">https://github.com/cubeghost/tagreplacer</a>).</p>
+
+<p><br /></p>
+
+<h3 id="download--backup-tools">Download &amp; Backup Tools</h3>
+
+<h4 id="tumblrtree">TumblrTree</h4>
+
+<p><img src="/images/posts/tumblr/TumblThree.png" alt="TumblThree demo screenshot" /></p>
+
+<p><strong><a href="https://www.jzab.de/content/tumblthree">TumblThree</a></strong> is a <em>free and open-source</em> Tumblr Blog Backup Application for Windows. You can download both its source codes and executable files from <a href="https://github.com/TumblThreeApp/TumblThree/releases">this GitHub repository</a> (<a href="https://github.com/TumblThreeApp/TumblThree/releases">https://github.com/TumblThreeApp/TumblThree/releases</a>).</p>
+
+<p>To use the application, unzip the downloaded <em>TumblThree-vx.x.x.x-Application.zip</em> file, and run <strong>TumblThree.exe</strong>.</p>
+
+<ol>
+  <li>Enter a URL, e.g. <code class="highlighter-rouge">&lt;blog-name&gt;.tumblr.com</code>, to the textbox at the bottom-left corner, and then click the <strong>Add Blog</strong> button in the toolbar.</li>
+  <li>Edit the variables in the <strong>Detail</strong> tab of the sidebar menu.</li>
+  <li>Select the blog(s) in the list, and click <strong>Add to Queue</strong> button.</li>
+  <li>Confirm the queues by switching the sidebar to the <strong>Queue</strong> tab.</li>
+  <li>Click <strong>Crawl</strong> button in the toolbar.</li>
+</ol>
+
+<p>By default, the files will be downloaded to separate folders with the name of the blogs under the same directory of the application.</p>
+
+<p><img src="/images/posts/tumblr/TumblThree-resulted-folders.png" alt="TumblThree demo screenshot" /></p>
+
+<p>The screenshot below shows the files been downloaded from Google Design’s Tumblr blog.</p>
+
+<p><img src="/images/posts/tumblr/TumblThree-resulted-google-design-files.png" alt="TumblThree demo screenshot" /></p>
+
+<hr />
+
+<h2 id="api-tools">API Tools:</h2>
+
+<h3 id="pytumblrtools">pytumblrtools</h3>
+
+<p>A set of python scripts for manipulating Tumblr blogs
+(<a href="https://github.com/chriskyfung/pytumblrtools">https://github.com/chriskyfung/pytumblrtools</a>)</p>
+
+<ul>
+  <li>Transfer Tumblr posts to a new account</li>
+  <li>List the URLs of all blog posts and export as a CSV file to local storage</li>
+  <li>List all tags with counts, and export as a CSV file to local storage (Can use <code class="highlighter-rouge">SPECTAG</code> to specify the only lookup the posts contain this given tag.)</li>
+  <li>Replace a string in the body and caption of all text and photo</li>
+</ul>
+
+<hr />
+
+<h2 id="suggested-reading-get-tips-feed-">Suggested Reading: <span style="font-size:small">(Get Tips Feed <a href="https://www.diigo.com/rss/user/chriskyfung?query=%23tumblr&amp;sort=updated" target="_blank"><i class="fas fa-rss" style="color:orange;"></i></a>)</span></h2>
+
+<ul>
+  <li>
+    <p><a href="/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog">How to add a custom Open Graph image tag to your tumblr blog</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.lifewire.com/tumblr-features-for-bloggers-3476404">A Guide to the Best Tumblr Features for Bloggers</a></p>
+  </li>
+  <li>
+    <p><a href="https://elite-strategies.com/tumblr-seo/">Tumblr SEO: An Internet Marketers Guide to Owning Tumblr
+</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.pitiya.com/tumblr-seo.html">The Complete Guide to Tumblr Search Engine Optimization (SEO)
+</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.bloggerspice.com/2016/01/how-to-Add-adsense-ads-on-tumblr-blog.html">Is it possible to Monetize tumblr Blog by AdSense?</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.hongkiat.com/blog/tumblr-tips-tricks-tools/">30+ Tumblr Tips Tricks, and Tools (2019) - Hongkiat</a></p>
+  </li>
+</ul>
+
+<ul style="margin-left:30px;">
+<li><u>Tips &amp; Tricks</u></li>
+    <ul>
+        <li><del>Avoid Reblogging Long Posts As Links</del></li>
+        <li>Use Keyboard Shortcuts On The Dashboard</li>
+        <li><del>Allow Users To Reply To Your Posts From The Dashboard</del></li>
+        <li>Customize Follow &amp; Share Buttons</li>
+        <li>Send Asks To Other Users From The Dashboard</li>
+        <li><strong>Recover Old Themes</strong></li>
+        <li>Mass Edit Posts And Tags</li>
+        <li>Queue Your Posts</li>
+        <li>Delay Your Reply To Asks</li>
+        <li>Play Around With Tumblr’s Logo</li>
+        <li>View Search The Old Fashioned Way</li>
+        <li><strong>Share A Preview Of A Draft</strong></li>
+        <li>Rearrange Queued Posts</li>
+        <li><del>Find Out What Your Friends Like</del></li>
+        <li>Search For Posts On Blogs Without Search Bar</li>
+        <li>View Tagged Posts From Earliest To Latest</li>
+        <li>Search For Posts On A Specific Date</li>
+        <li>View Archives</li>
+        <li>Find All Your Tags</li>
+        <li>Display Individual Author’s Avatar</li>
+    </ul>
+<li><u>Extensions &amp; Tools</u></li>
+    <ul>
+        <li><span class="discontinued">Missing E</span></li>
+        <li><span class="discontinued"><del>Add A View Count</del></span></li>
+        <li>Add A Music Player</li>
+        <li>Get A Dashboard Theme</li>
+        <li><span class="discontinued"><del>Endless Scrolling</del></span></li>
+        <li><del>Share Content Via Bookmarklet</del></li>
+        <li><span class="discontinued"><del>Customize Your Mouse Cursor</del></span></li>
+        <li><span class="discontinued"><del>Customize your Scroll Bar</del></span></li>
+        <li>Tumblr Savior</li>
+        <li>#Wrap</li>
+        <li>Google Analytics</li>
+        <li>Disqus</li>
+        <li>Check Your Post Limit</li>
+    </ul>
+</ul>
+
+<h2 id="references">References:</h2>
+<ul>
+  <li><a href="https://buildthemes.tumblr.com/ch3/customization">Customization with META - Build Themes</a></li>
+  <li><a href="https://www.reddit.com/r/web_design/comments/3vtb1z/removing_openinstall_the_app_header_toolbar_from/">Removing “Open”/”Install the App” header toolbar from mobile Tumblr page : web_design</a></li>
+  <li><a href="https://nerdramblings.tumblr.com/post/4388960162/how-to-increase-you-tumblr-seo">How to increase you Tumblr SEO. - How to increase you Tumblr SEO. - Nerd Ramblings</a></li>
+  <li><a href="https://www.lifewire.com/tumblr-vs-medium-comparing-popular-blogging-platforms-3485755">Tumblr Vs. Medium: Comparing Popular Blogging Platforms</a></li>
+</ul>
+
+<p>This post has also been published to Medium. If you like to read and take notes in Medium, please visit <a href="https://medium.com/@chriskyfung/featured-tips-tricks-and-tools-for-tumblr-bloggers-2019-25c51fad73ee">Medium (@chriskyfung)</a>.</p>
+
+<style>
+    .discontinued {
+        position: relative;
+        color: lightgrey;
+    }
+    .discontinued::after {
+        font-family: "Font Awesome 5 Free";
+        content: " \f057 Discontinued";
+        color: red;
+        font-size: smaller;
+        vertical-align: super;
+    }
+</style>
+
+:ET

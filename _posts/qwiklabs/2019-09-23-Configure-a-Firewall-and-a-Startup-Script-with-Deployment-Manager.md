@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "QLogbook: Configure a Firewall and a Startup Script with Deployment Manager"
-author: Chris KY Fing
+author: chris
 date: 2019-09-23
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
@@ -9,8 +9,7 @@ permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deploym
 redirect_from:
  - /blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
 excerpt: A lab summary of qwiklab GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
-header: 
-   teaser: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
+image: images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
 ---
 
 _Last update: 2020-03-26_

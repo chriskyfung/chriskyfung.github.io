@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Highlighting words in PDF using the JavaScript console in PDF-Xchange Viewer"
-author: Chris KY Fung
+author: chris
 date: 2015-04-09
 category: Productivity
 tags: [PDF Viewer, shorthand, user tips]

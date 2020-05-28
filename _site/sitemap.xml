@@ -1,734 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/wordpress/simple-php-commands-for-wordpress-administrator</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/matlab/expand-twitter-short-url</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Cloud-Architecture-Challenge-Lab</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/windows/find-windows10-store-app-path-for-default-program</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Controlling-Your-Costs-Quiz</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/10/22/Follow-Me-on-Medium</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2017/02/26/new-site-is-opened</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2016/01/18/Installation-of-Andriod-Studio</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2015/11/27/template-OVITO-python-modifier</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2015/11/27/OVITO-The-Open-Visualization-Tool-Version-261-has-been-released</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2015/04/09/Highlighting-words-in-PDF-using-the-JavaScript-console-in-PDFXchange-Viewer</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/matlab/Working-MATLAB-with-MS-Excel</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/linux/Useful-Ubuntu-Commands</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2014/10/05/An-Inspiring-TED-video-talking-about-how-we-should-rethink-about-the-unknown-in-the-postgraduate-or-research-study</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2014/09/12/My-trip-of-AEPA-2014-conference</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2014/08/22/My-new-conference-paper-is-now-available-online</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2014/07/04/Creating-an-array-of-SJR-widget-for-visual-comparison-of-journal-ranks</loc>
-    </url>
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email</loc>
-    </url>
-    
-
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Android%20Studio</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Custom%20Theme</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Docker</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Google%20Cloud</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/KDE</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Kubernetes</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Logbook</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/MATLAB</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/MS%20Excel</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/MS%20Office</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Medium</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Meta%20Tags</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/MySQL</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/OVITO</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Open%20Graph</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Ovito%20custom%20function</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/PDF%20Viewer</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/PHP</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Python</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Qwiklabs</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/TED</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Terraform</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Tumblr</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Twitter</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Ubuntu</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Windows%2010</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/Windows%20server</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/WordPress</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/about</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/categories</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/changelog</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/command-line</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/conference%20paper</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/conference</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/email</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/gcloud</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/how%20to%20research</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/journal%20ranks</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/lammps</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/learning%20map</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/linux</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/molecular%20dynamics</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/remote%20desktop</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/shorthand</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/single%20crystal%20diamond</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/tags</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/taiwan</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/user%20tips</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/tag/userscript</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2014/10/08/Useful-Ubuntu-Commands</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2015/03/10/Working-MATLAB-with-MS-Excel</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/20/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/25/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/10/30/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/12/29/Controlling-Your-Costs-Quiz</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2020/02/22/find-windows10-store-app-path-for-default-program</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/page2/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/page3/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>https://chriskyfung.github.io/blog/page4/</loc>
-    </url>
-    
-    
-    
-    
-    
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email</loc>
+<lastmod>2014-06-13T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2014/07/04/Creating-an-array-of-SJR-widget-for-visual-comparison-of-journal-ranks</loc>
+<lastmod>2014-07-04T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables</loc>
+<lastmod>2014-07-12T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2014/08/22/My-new-conference-paper-is-now-available-online</loc>
+<lastmod>2014-08-22T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2014/09/12/My-trip-of-AEPA-2014-conference</loc>
+<lastmod>2014-09-12T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2014/10/05/An-Inspiring-TED-video-talking-about-how-we-should-rethink-about-the-unknown-in-the-postgraduate-or-research-study</loc>
+<lastmod>2014-10-05T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/linux/Useful-Ubuntu-Commands</loc>
+<lastmod>2017-03-01T17:59:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/matlab/Working-MATLAB-with-MS-Excel</loc>
+<lastmod>2015-03-10T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2015/04/09/Highlighting-words-in-PDF-using-the-JavaScript-console-in-PDFXchange-Viewer</loc>
+<lastmod>2015-04-09T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2015/11/27/OVITO-The-Open-Visualization-Tool-Version-261-has-been-released</loc>
+<lastmod>2015-11-27T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2015/11/27/template-OVITO-python-modifier</loc>
+<lastmod>2015-11-27T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2016/01/18/Installation-of-Andriod-Studio</loc>
+<lastmod>2016-01-18T21:36:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2017/02/26/new-site-is-opened</loc>
+<lastmod>2017-02-26T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu</loc>
+<lastmod>2019-04-04T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs</loc>
+<lastmod>2019-09-01T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP</loc>
+<lastmod>2019-09-07T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab</loc>
+<lastmod>2019-09-18T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script</loc>
+<lastmod>2019-09-20T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager</loc>
+<lastmod>2019-09-23T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster</loc>
+<lastmod>2019-09-25T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster</loc>
+<lastmod>2019-09-27T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL</loc>
+<lastmod>2019-09-30T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2019/10/22/Follow-Me-on-Medium</loc>
+<lastmod>2019-10-22T18:15:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog</loc>
+<lastmod>2019-10-30T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet</loc>
+<lastmod>2019-11-06T13:12:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers</loc>
+<lastmod>2019-11-23T20:09:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Controlling-Your-Costs-Quiz</loc>
+<lastmod>2019-11-26T11:56:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation</loc>
+<lastmod>2020-01-15T15:21:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/windows/find-windows10-store-app-path-for-default-program</loc>
+<lastmod>2020-02-22T11:32:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform</loc>
+<lastmod>2020-02-22T22:10:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab</loc>
+<lastmod>2020-04-22T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Cloud-Architecture-Challenge-Lab</loc>
+<lastmod>2020-04-24T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab</loc>
+<lastmod>2020-05-02T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab</loc>
+<lastmod>2020-05-04T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/matlab/expand-twitter-short-url</loc>
+<lastmod>2020-05-15T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/wordpress/simple-php-commands-for-wordpress-administrator</loc>
+<lastmod>2020-05-22T10:40:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about</loc>
+</url>
+<url>
+<loc>http://localhost:4000/contact</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/lammps/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/email/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/command-line/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/journal-ranks/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/linux/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/conference-paper/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/molecular-dynamics/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/single-crystal-diamond/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/conference/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/taiwan/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/ted/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/how-to-research/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/ubuntu/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/matlab/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/ms-excel/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/pdf-viewer/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/shorthand/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/user-tips/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/ovito/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/python/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/ovito-custom-function/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/android-studio/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/changelog/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/kde/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/remote-desktop/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/qwiklabs/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/userscript/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/windows-server/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/google-cloud/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/terraform/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/logbook/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/docker/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/kubernetes/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/wordpress/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/mysql/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/medium/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/tumblr/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/custom-theme/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/open-graph/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/meta-tags/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/gcloud/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/ms-office/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/windows-10/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/learning-map/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/twitter/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/php/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/atomistic/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/research/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/linux/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/data-science/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/productivity/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/android-development/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/announcement/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/hack/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/cloud/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/web-development/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/windows/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/wordpress/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/page2/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/page3/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/google0274dbf4a33f8f07.html</loc>
+<lastmod>2019-05-17T11:54:43+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/yandex_3e10a2d0cfd334f2.html</loc>
+<lastmod>2019-11-04T02:19:40+00:00</lastmod>
+</url>
 </urlset>

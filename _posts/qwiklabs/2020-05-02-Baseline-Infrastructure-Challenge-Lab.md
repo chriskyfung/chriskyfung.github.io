@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  "QLogbook: Baseline Infrastructure: Challenge Lab"
-author: Chris KY Fing
+author: chris
 date: 2020-05-02
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP315 "Baseline-Infrastructure-Challenge-Lab &#58; Challenge Lab".
-header: 
-   teaser: /images/posts/qwiklabs/map.jpg
+image: images/posts/qwiklabs/map.jpg
 ---
 
 <!--more-->

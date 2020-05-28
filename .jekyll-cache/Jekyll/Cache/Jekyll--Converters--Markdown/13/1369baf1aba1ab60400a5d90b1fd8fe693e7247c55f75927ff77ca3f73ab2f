@@ -1,0 +1,12 @@
+I"�<table>
+  <tbody>
+    <tr>
+      <td>A lab summary of qwiklab GSP304 “Build and Deploy a Docker Image to a Kubernetes Cluster”</td>
+      <td>1. Create a Kubernetes Cluster</td>
+      <td>2. Build a Docker Image of Sample Application</td>
+      <td>3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)</td>
+      <td>3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)</td>
+    </tr>
+  </tbody>
+</table>
+:ET

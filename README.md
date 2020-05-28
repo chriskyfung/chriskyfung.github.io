@@ -8,6 +8,8 @@ Computer programming is one important ability necessary for scientific research.
 
 I hope all of us can share ideas, codes, tips here, and collaborate to make our programming tasks easier soon.
 
+<a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/chrisfungky"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a>
+
 ## Copyright
 © 2014-2020 Chris KY FUNG. All rights reserved.
 

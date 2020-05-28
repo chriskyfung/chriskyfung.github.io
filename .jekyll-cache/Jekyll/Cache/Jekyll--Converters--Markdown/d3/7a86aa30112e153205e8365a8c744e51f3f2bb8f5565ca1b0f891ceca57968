@@ -1,0 +1,14 @@
+I"�<table>
+  <tbody>
+    <tr>
+      <td>A lab summary of qwiklab GSP306 “Migrate a MySQL Database to Google Cloud SQL”</td>
+      <td>1. Check Existing WordPress Resources</td>
+      <td>2. Create Cloud SQL Instance</td>
+      <td>3. Export SQL Database</td>
+      <td>4. Import to Cloud SQL</td>
+      <td>5. Authorized Blog Instance to Access Cloud SQL</td>
+      <td>6. Reconfigure WordPress to connect the Cloud SQL instance</td>
+    </tr>
+  </tbody>
+</table>
+:ET

@@ -1,0 +1,62 @@
+I"L<p>In a molecular dynamics study, simulation is often repeated with different sets of parameters, e.g. dimensions, velocity, initial pressure and temperature. If the parameters are defined as variables in the LAMMPS input script, we can change the value of the variables using the command line/terminal. So, we don’t need to modify the script each time.</p>
+
+<p>I like storing each set of the simulation results to a well-labelled folder. This way makes systematic file management for finding the data in the future. For a long time, I did filing manually. It was gloomy and time consuming for creating and naming a new folder as well as moving the files. Recently, I found that the shell command can help to reduce the workload in the filing process.  The shell command has been introduced in my last post about how to send an email in the simulation process.</p>
+
+<p>It is very useful as it allows to call the system commands and other programs.</p>
+
+<p><img src="/images/posts/lammps/new_3folder_80x80.png" alt="image: New folder with LAMMPS scripts" /></p>
+
+<!--more-->
+
+<h3 id="methods">Methods</h3>
+
+<p>I use the mkdir and cp commands this time.</p>
+
+<p><code class="highlighter-rouge">shell mkdir FOLDERNAME</code>  make a new directory named to be FOLDERNAME</p>
+
+<p><code class="highlighter-rouge">shell cp FILENAME  DESTINATION</code>   copy the file to another directory</p>
+
+<h3 id="example-input-script">Example input script</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Input variables</span>
+<span class="c"># -potential (choose the version of Tersoff potential used, options=y1990/y1994)`</span>
+<span class="c"># -vx  (velocity = vx  * 100 m s^-1 in x-direction, units = metal )</span>
+
+<span class="c"># Define a string for the folder name (* Don't use spaces in the string, use '_ ' instead)</span>
+variable respath string <span class="k">${</span><span class="nv">vx</span><span class="k">}</span>x100_m_s-1_Tersoff_<span class="k">${</span><span class="nv">potential</span><span class="k">}</span>
+print <span class="s2">"</span><span class="k">${</span><span class="nv">respath</span><span class="k">}</span><span class="s2">"</span>
+
+<span class="c"># Make the new folders</span>
+shell <span class="nb">mkdir</span> <span class="k">${</span><span class="nv">respath</span><span class="k">}</span>
+shell <span class="nb">mkdir</span> <span class="k">${</span><span class="nv">respath</span><span class="k">}</span>/log_files
+shell <span class="nb">mkdir</span> <span class="k">${</span><span class="nv">respath</span><span class="k">}</span>/restart_files
+
+<span class="c"># Copy the log file to the defined folder</span>
+shell <span class="nb">cp </span>log.lammps <span class="k">${</span><span class="nv">respath</span><span class="k">}</span>/log_files/
+
+<span class="c"># Use if…then...elif ..else and variable  to select the potential style</span>
+<span class="k">if</span> <span class="s2">"</span><span class="k">${</span><span class="nv">potential</span><span class="k">}</span><span class="s2"> == 1990"</span>  <span class="k">then</span> <span class="s2">"pair_coeff * * SiC_1990.tersoff C Si C"</span> &amp;
+<span class="k">elif</span> <span class="s2">"</span><span class="k">${</span><span class="nv">potential</span><span class="k">}</span><span class="s2"> == y1994"</span>  <span class="s2">"pair_coeff        * * SiC_1994.tersoff C Si C"</span> &amp;
+<span class="k">else</span> <span class="s2">"print 'choose the variable -potential to be y1990 or y1994'"</span> &amp; quit
+
+<span class="c"># Set a variable velocity</span>
+fix 1 groupID move linear -<span class="nv">$vx</span> 0 0 units box
+
+<span class="c"># set the output paths of restart and dump files</span>
+restart     10000 <span class="k">${</span><span class="nv">respath</span><span class="k">}</span>/restart_files/<span class="k">*</span>.restart
+dump         1 all xyz  500 <span class="k">${</span><span class="nv">respath</span><span class="k">}</span>/dump.<span class="k">*</span>.lammpstrj
+</code></pre></div></div>
+
+<h3 id="example-command-line">Example command line</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>lammps_linux  <span class="nt">-v</span> potential  y1990 <span class="nt">-v</span> vx  1.0 &lt; <span class="k">in</span>.script
+</code></pre></div></div>
+
+<h3 id="results">Results</h3>
+
+<p>As a result, the LAMMPS will create a folder <strong>“1.0x100_m_s-1_Tersoff_y1990”</strong> in the current directory. All the log, restart and dump files for this set of variables will be contained under this folder.</p>
+
+<hr />
+
+<p>Related post: <em><a href="/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email">How to Send a Notification from a LAMMPS Simulation to Your Email</a></em></p>
+:ET

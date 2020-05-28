@@ -1,25 +1,49 @@
-theme: jekyll-theme-architect
-title: Chris KY FUNG's GitHub Page
-description: Feel free to bookmark this to keep an eye on my project updates
-timezone: Asia/Hong_Kong
-google_analytics: UA-72575541-9
-disqus: chriskyfung
-permalink: /blog/:year/:month/:day/:title
-paginate: 10
+# Site
+name: "Chris KY FUNG's Page"
+title: "Feel free to bookmark this to keep an eye on my project updates"
+description: "Chris KY FUNG's Blog"
+meta_description: "Chris KY FUNG's Blog."
+logo: 'assets/images/logo-plainSVG.svg'
+favicon: 'assets/images/favicon.png'
+paginate: 12
 paginate_path: "/blog/page:num/"
-site_url: https://chriskyfung.github.io/
-excerpt_separator: "<!--more-->"
-plugins:
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jekyll-gist
+permalink: /blog/:year/:month/:day/:title
+timezone: Asia/Hong_Kong
+baseurl: ''
+email: ''
+google_analytics: 'UA-72575541-9'
+disqus: 'chriskyfung'
+sharethis: '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>'
+
+# Authors
+authors:
+  chris:
+    name: Chris KY Fung
+    display_name: Chris F.
+    gravatar: abd876486b2caa54b43bf64a5a86f620
+    email: 
+    web: https://en.gravatar.com/chrisfungky
+    facebook: https://www.facebook.com/chriskyfung/
+    description: "Author of this blog, M.Phil."
+
+# Plugins
+plugins: 
   - jekyll-paginate
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      author: Chris KY Fung
-      header:
-        teaser: /images/posts/write-2160925.svg
-        showteaser: true
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+        
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks: 
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge

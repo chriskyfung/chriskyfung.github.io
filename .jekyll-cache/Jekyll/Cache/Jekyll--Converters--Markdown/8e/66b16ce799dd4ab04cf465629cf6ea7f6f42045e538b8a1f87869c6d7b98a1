@@ -1,0 +1,39 @@
+I"í<p>For a long time, I have used PDF-Xchange Viewer to the PDF files of ebooks, papers, dissertations, etc. I prefer it rather than Adobe Reader. One of the reasons is because Xchange provides a JavaScript console, which can be invoked by hitting Ctrl+J. Thus, we can attempt to automate some annotations; for example, search and highlight words. You can find a source code from the knowledge base of Xchange (https://www.tracker-software.com/knowledgebase/385-How-do-I-Highlight-My-Search-Results). However, the original code can only find words that match exactly. Here, I modified the code in Line 10 and thereby it highlights words that contain the text to be searched.</p>
+
+<!--more-->
+
+<h3 id="modified-js-script">Modified JS script</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">ï»¿</span><span class="kd">function</span> <span class="nx">DoHighlight</span><span class="p">(</span><span class="nx">word</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">nTotal</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">p</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">numPages</span><span class="p">;</span> <span class="nx">p</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">cnt</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPageNumWords</span><span class="p">(</span><span class="nx">p</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">w</span> <span class="o">&lt;</span> <span class="nx">cnt</span><span class="p">;</span> <span class="nx">w</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPageNthWord</span><span class="p">(</span><span class="nx">p</span><span class="p">,</span> <span class="nx">w</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">s</span><span class="p">).</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">word</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">addAnnot</span><span class="p">({</span>
+                    <span class="na">page</span><span class="p">:</span> <span class="nx">p</span><span class="p">,</span>
+                     <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Highlight</span><span class="dl">"</span><span class="p">,</span>
+                    <span class="na">quads</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPageNthWordQuads</span><span class="p">(</span><span class="nx">p</span><span class="p">,</span> <span class="nx">w</span><span class="p">),</span>
+                    <span class="p">});</span>
+                <span class="nx">nTotal</span><span class="o">++</span><span class="p">;</span>
+               <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+     <span class="k">return</span> <span class="nx">nTotal</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">DoHighlight</span><span class="p">(</span><span class="dl">"</span><span class="s2">text to be searched</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">t</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> words were highlighted</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="enhance-productivity-with-text-expanders">Enhance productivity with text expanders</h3>
+
+<p>One little problem is that you have to copy and paste the code to the JavaScript console, when you closed the viewer and open it again. It is inconvenient. One way to streamline it is to use a text expander, such as PhraseExpress, to create a shortcut/autotext to recall the script more easily and quickly. Thus, when I type the autotext (e.g. JS.h), then the all script is loaded to the console automatically.</p>
+
+<hr />
+
+<h3 id="see-also"><em>See also</em></h3>
+<ul>
+  <li><a href="https://www.tracker-software.com/knowledgebase/355-How-do-I-use-JavaScript-in-PDF-XChange-Editor">How do I use JavaScript in PDF XChange Editor?</a></li>
+</ul>
+:ET
