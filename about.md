@@ -10,11 +10,11 @@ comments: false
     </div>
     <div class="col-md-10">
         <a target="_blank" class="link-dark" href="{{ site.authors.chris.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ site.authors.chris.facebook }}" class="btn follow">Follow</a>
-        <span class="author-description">{{ site.authors.chris.description }}</span>						
+        <span class="author-description">{{ site.authors.chris.description }}</span>
     </div>
 </div>
 
-Hi, my name is Chris KY FUNG, an individual researcher in Engineering living in Hong Kong. Well, I am not a proficient programmer, but I frequently code for my engineering research projects. I mainly used MATLAB when I was studying my MPhil in Computational Intelligence. After graduated, I had participated a research on atomistic simulation of material processing with molecular dynamics (MD) for six years. To conduct such huge simulations, I had to deal and play with Linux servers and High-Performance Computing (HPC). My job also included developing models and data analysis with various programming languages.
+Hi, my name is Chris KY FUNG, an individual researcher in Engineering living in Hong Kong. Well, I am not a proficient programmer, but I frequently code for my engineering research projects. I mainly used MATLAB when I was studying my MPhil in Computational Intelligence. After graduated, I had participated research on atomistic simulation of material processing with molecular dynamics (MD) for six years. To conduct such huge simulations, I had to deal and play with Linux servers and High-Performance Computing (HPC). My job also included developing models and data analysis with various programming languages.
 
 Being the exploration of molecular dynamics simulations, I am lucky to touch and use the high-performance computing (HPC) facilities in our university. I believe that HPC will be an essential weapon for various areas, including research, finance, business, etc. Thanks for the efforts of many researchers who developed the codes and tools, which make us more easily analyze and/or simulate the experimental data. I wish I will be able to deliver my research outputs and contribute to the successive development in HPC applications for science too.
 
@@ -28,7 +28,7 @@ The research experience lets me know that programming and computer skills become
 
 * * *
 
-I am also a maker and the founder of a local community, called [Craftweeks](https://www.craftweeks.com). You may also visit www.craftweeks.com and [the YouTube channel](https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A), if you're interested in designing and making things.
+I am also a maker and the founder of a local community, called [Craftweeks](https://craftweeks.com). You may also visit craftweeks.com and [the YouTube channel](https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A), if you're interested in designing and making things.
 
 ## Vision
 
