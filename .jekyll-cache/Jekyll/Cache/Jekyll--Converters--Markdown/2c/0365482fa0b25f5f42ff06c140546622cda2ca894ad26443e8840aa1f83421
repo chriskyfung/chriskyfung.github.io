@@ -1,2 +1,0 @@
-I",<p>Sometimes I use MATLAB scripts to analyze Twitter posts. One issue is that Twitter uses shorten URLs started with <code class="highlighter-rouge">t.co</code> for the links, such as retweets. To get the original URL, we need to determine the final redirected endpoint by using an URL expander.</p>
-:ET
