@@ -1,96 +1,109 @@
-.current {
-  color: green;
-}
-nav {
-  background-color: lightgray;
-  text-align: center;
-}
-nav ul {
-  font-weight: bold;
-  list-style: none;
-  display: inline-flex;
-}
-nav li {
-  padding: 3px 10px;
-}
-footer {
-  background-color: black;
+#toggle-search {
+  margin-left: 15px;
+  margin-top: inherit;
 }
 
-#footer-copyright {
-  text-align: right;
-}
-#footer-powered {
-  text-align: right;
+.invitation-codes.invitation-codes-badge1 {
+  margin-left: 15px;
+  margin-top: inherit;
 }
 
-.post-date { 
-  font-size: small;
-  color: black;
-  white-space: nowrap;
-}
-
-.page-info {
-  margin-bottom: 32pt;
-}
-.date {
-  color: dimgray;
-  font-weight: bold;
-  font-size: small;
-  font-family: cursive;
-}
-.page-tags {
-  margin: 20px;
-}
-iframe {
-  max-width: 100%;
+@media (max-width: 991px) {
+  #toggle-search {
+    margin-left: inherit;
+    margin-top: 15px;
+  }
   
+  .invitation-codes.invitation-codes-badge1 {
+    margin-left: inherit;
+    margin-top: 15px;
+  }
 }
 
-.round {
-  border-radius: 20px;
+#footer-image {
+  background: #e9e4ff;
+  display: block;
+  border-radius: 60% 70% 500% 70%;
 }
 
-.img-caption {
-  font-size: small;
-  text-align: center;
-  margin-top: -1.25em;
+.addthis_inline_share_toolbox {
+  margin-bottom: 15px;
 }
 
-#copyscape-banner {
-  margin: 1.25rem 2.5rem;
+.article-post {
+  h2 {
+    margin-top: 6rem;
+  }
+  h3, h4 {
+    margin-top: 3rem;
+  }
 }
 
-#vig-disclose {
-  margin: 1.25rem 2.5rem;
+ul.tags.rounded-tags {
+  li a {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+  }
 }
 
-#___gcse_0 {
-  display: none;
+.listfeaturedtag {
+  .card-list{
+    height: 150px;
+    width: 100%;
+
+    h2.card-title {
+      font-size: 1rem;
+    }
+    .wrapthumbnail {
+      height: 150px;
+    }
+    
+    .wrapfooter {
+      bottom: 1rem;
+    }
+  }
 }
 
-.tags-expo .tags-expo-list .post-tag::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f02b";
-  margin: 0 2px;
+/* Buy Me A Coffee */
+.bmc-button img {
+	height: 34px !important;
+	width: 35px !important;
+	margin-bottom: 1px !important;
+	box-shadow: none !important;
+	border: none !important;
+	vertical-align: middle !important;
 }
 
-.tags-expo .tags-expo-section h2::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f02b" !important;
+.bmc-button {
+  padding: 7px 15px 7px 10px !important;
+	line-height: 35px !important;
+	height: 51px !important;
+	text-decoration: none !important;
+	display: inline-flex !important;
+	color: #ffffff !important;
+	background-color: #FF813F !important;
+	border-radius: 5px !important;
+	border: 1px solid transparent !important;
+	padding: 7px 15px 7px 10px !important;
+	font-size: 28px !important;
+	letter-spacing: 0.6px !important;
+	box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+	-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+	margin: 0 auto !important;
+	font-family: 'Cookie', cursive !important;
+	-webkit-box-sizing: border-box !important;
+	box-sizing: border-box !important;
 }
 
-.categories-expo .tags-expo-list .post-tag::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f1ea";
-  margin: 0 2px;
+.bmc-button:hover,
+.bmc-button:active,
+.bmc-button:focus {
+	-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+	text-decoration: none !important;
+	box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+	opacity: 0.85 !important;
+	color: #ffffff !important;
 }
 
-.categories-expo .tags-expo-section h2::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f1ea" !important;
-}
+/* END Buy Me A Coffee */

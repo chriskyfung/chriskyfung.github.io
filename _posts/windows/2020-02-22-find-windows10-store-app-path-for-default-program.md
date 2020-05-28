@@ -3,7 +3,7 @@ layout: post
 title: How to find the installation path of Windows store apps for default program settings in Windows 10
 date: 2020-02-22 11:32
 category: Windows
-author: Chris KY Fung
+author: chris
 tags: [Windows 10]
 permalink: /blog/windows/find-windows10-store-app-path-for-default-program
 redirect_from:

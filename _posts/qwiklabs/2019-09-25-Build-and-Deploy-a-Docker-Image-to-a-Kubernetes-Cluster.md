@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "QLogbook: Build and Deploy a Docker Image to a Kubernetes Cluster"
-author: Chris KY Fing
+author: chris
 date: 2019-09-25
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
@@ -9,8 +9,7 @@ permalink: /blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluste
 redirect_from:
  - /blog/2019/09/25/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster
 excerpt: A lab summary of qwiklab GSP304 "Build and Deploy a Docker Image to a Kubernetes Cluster" | 1. Create a Kubernetes Cluster | 2. Build a Docker Image of Sample Application | 3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)  | 3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)
-header: 
-   teaser: /images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png
+image: images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png
 ---
 
 <!--more-->

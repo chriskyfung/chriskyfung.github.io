@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "QLogbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster"
-author: Chris KY Fung
+author: chris
 date: 2019-09-27
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes]
@@ -9,8 +9,7 @@ permalink: /blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-
 redirect_from:
  - /blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
 excerpt: A lab summary of qwiklab GSP305 "Scale Out and Update a Containerized Application on a Kubernetes Cluster" | 1. Build a Docker Image of Sample Application with a `v2` tag | 2. Update the Application to the Kubernetes Cluster Using Web Console | 3. Scale out the application so that the Kubernetes cluster deployment
-header: 
-   teaser: /images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png
+image: images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png
 ---
 
 <!--more-->

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[template] OVITO python modifier"
-author: Chris KY Fung
+author: chris
 date: 2015-11-27
 category: Atomistic
 tags: [OVITO, Python, Ovito custom function]

@@ -1,94 +1,254 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='UTF-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="msvalidate.01" content="9C87A2FE066C755406F5FFCAE1321439" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.favicon }}"/> 
+<title>{{ page.title }} | {{site.name}}</title>
+{% seo %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
     
-    {% if page.noindex %}
-      <meta name="robots" content="noindex"/>
-    {% endif %}
+{{site.sharethis}}
+    
+{% if jekyll.environment == 'production' %}    
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+{% include gtm-head.html %}
+{% endif %}  
+    
 
-    <title>{{ page.title }} | {{ site.title | default: site.github.repository_name }}</title>
-    <meta name="author" content={{ site.github.owner_name }}>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if page.title %}
-      <meta content="{{ page.title }} | {{ site.title | default: site.github.repository_name }}" property="og:title">
-    {% else %}
-      <meta content="{{ site.title }}" property="og:title">
-    {% endif %}
-    {% if page.description %}
-      <meta content="{{ page.description }}" property="og:description">
-    {% else %}
-      <meta content="{{ site.description }}" property="og:description">
-    {% endif %}
-    {% if page.og.image %}
-      <meta content="{{ page.og.image }}" property="og:image">
-    {% elsif page.image %}
-      <meta content="{{ page.image }}" property="og:image">
-    {% elsif page.header.teaser %}
-      <meta content="{{ site.url }}{{ page.header.teaser }}" property="og:image">
-    {% else %}
-      <meta content="{{ site.url }}/images/header-bg.jpg" property="og:image">
-    {% endif %}
+    
+</head>
+    
 
-  </head>
+    
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
+{% include gtm-body.html %}
 
-  <body>
-    <header>
-      <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+<!-- Begin Menu Navigation
+================================================== -->
+<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="https://github.com/chriskyfung" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
-      </div>
-    </header>
-	  
-    {% include navigation.html %}
-    <div id="content-wrapper">
-	<div class="inner clearfix">
-	<section id="main-content">
-	  {{ content }}
-	</section>
-	{% include sidebar.html %}
-	</div>
-    </div>  
+        <!-- End Logo -->
 
-    {% include footer.html %}
-	
-    {% if site.google_analytics %}
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+        <!-- Begin Menu -->
+        <div class="collapse navbar-collapse" id="navbarsWow">
+            
+            <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">                
+                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+                </li>
 
-	  gtag('config', {{ site.google_analytics | prepend: "'"| append: "'" }});
-	</script>
-    {% endif %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="{{ site.baseurl }}/blog/"><i class="far fa-newspaper mr-2"></i>All Stories</a>
+                    <a class="dropdown-item" href="{{ site.baseurl }}/category/"><i class="far fa-list-alt mr-2"></i>Categories</a>
+                    <a class="dropdown-item" href="{{ site.baseurl }}/tag/"><i class="fas fa-tag mr-2"></i>Tags</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">                
+                    <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                </li> 
+                
+                <li class="nav-item">                
+                    <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
+                </li>
+               
+                <li class="nav-item">                
+                    <div class="invitation-codes invitation-codes-badge1" data-type="badge1" data-product=""><a class="nav-link highlight" href="https://invitation.codes/@chriskyfung" data-type="badge1" target="_blank" rel="noopener noreferrer">Use my referral codes</a></div>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" id="toggle-search" class="btn btn-primary" data-toggle="modal" data-target="#searchbar"><i class="fas fa-search"></i></button>
+                </li>
+                
+            </ul>
+            <!-- End Menu -->
+        </div>
+    </div>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="searchbar" role="dialog">
+    <div class="modal-dialog">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Search</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <script async src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
+                <div class="gcse-search"></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
     
-    {% include addthis.html %}
-    {% include viglink.html %}
-	  
-  </body>
-</html>
+<!-- End Menu Navigation
+================================================== -->
+    
+<div class="site-content">
+    
+    <div class="container">
 
+    <!-- Site Title
+    ================================================== -->
+
+    <div class="mainheading" style="display:none;">
+        <h1 class="sitetitle">{{ site.name }}</h1>
+        <p class="lead">
+             {{ site.description }}
+        </p>
+    </div>
+
+
+    <!-- Content
+    ================================================== --> 
+    <div class="main-content">
+        {{ content }}
+    </div>
+
+    </div><!-- /.container --> 
+
+
+
+    <!-- Before Footer
+    ================================================== --> 
+    <div class="beforefooter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h3>Want to talk about a new or existing project?</h3>
+                    <p>Any comments on an article? See anything that can be improved?</p>                        
+                    <p>Feel free to send me a message using the form below. I respond to all comments and will get back to you as soon as possible!</p>
+                    <a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/contact">Contact Me</a>
+                </div>
+                <div class="col-md-4 text-center footersocial"></div>
+                    <div class="mb-4">
+                        <h5>Support Me</h5>
+                        {% include buymeacoffee.html %}
+                    </div>
+                    <div>
+                        <h5>Follow Me on</h5>
+                        <a href="https://www.facebook.com/chriskyfung/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https//www.pinterest.com/chrisfungky" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://github.com/chriskyfung" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://medium.com/@chriskyfung" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Begin Footer
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3">
+                <div class="footer-widget">
+                <a id="footer-image" href="{{site.baseurl}}/contact">
+                <img class="pr-lg-3" src="{{ site.baseurl }}/assets/images/knowledge__flatline.svg">
+                </a>
+                </div>
+                </div>
+
+                <div class="col-sm-3">
+                <div class="footer-widget">
+                <h5 class="title">Resources</h5>
+                <ul>
+                <li><a href="{{ site.baseurl }}/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></li>
+                <li><a href="{{ site.baseurl }}/tag/Tumblr">For Tumblr Developer</a></li>
+                <li><a href="{{ site.baseurl }}/tag/MATLAB">MATLAB Tips</a></li>
+                <li><a href="{{ site.baseurl }}/contact">Partner with Me</a></li>
+                <li><a href="https://invitation.codes/@chriskyfung" data-type="badge1" target="_blank" rel="noopener noreferrer">Use my referral codes</a></li>
+                <li></li>
+                </ul>
+                </div>
+                </div>
+
+                <div class="col-sm-3">
+                <div class="footer-widget">
+                <h5 class="title">Author</h5>
+                <ul>
+                <li><a href="{{ site.baseurl }}/about">About Me</a></li>
+                <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/#projects">My Projects</a></li>
+                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+                </ul>
+                </div>
+                </div>
+
+                <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h5 class="title">Disclosures</h5>
+                    <!-- Copyscape Banner -->
+                    <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+                    <!-- Affiliate Disclouse -->
+                    <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120" style="margin: 5px;"/></a></div>
+                </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p class="pull-left">
+                Copyright © 2014-{{ site.time | date: "%Y" }} {{ site.name }}. All rights reserved.
+                </p>
+                <p class="pull-right">
+                <!-- Please, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/ --> 
+                <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a> - Design & Code by WowThemes.net
+                </p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer
+    ================================================== -->
+
+    
+</div> <!-- /.site-content>
+
+<!-- JavaScript
+================================================== -->
+    
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type='text/javascript' src='{{ site.baseurl }}/assets/js/masonry.pkgd.min.js'></script>
+    
+<script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+
+<script async defer src="//invitation.codes/embed/user/qgcUCyqa/embed.js"></script>
+    
+</body>
+    
+</html>

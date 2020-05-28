@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OVITO - The Open Visualization Tool - Version 2.6.1 - has been released"
-author: Chris KY Fung
+author: chris
 date: 2015-11-27
 category: Atomistic
 tags: [molecular dynamics, OVITO]

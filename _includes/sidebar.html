@@ -1,39 +1,57 @@
-<aside id="sidebar">
-  {% if site.show_downloads %}
-  <a href="{{ site.github.zip_url }}" class="button">
-    <small>Download</small>
-    .zip file
-  </a>
-  <a href="{{ site.github.tar_url }}" class="button">
-    <small>Download</small>
-    .tar.gz file
-  </a>
-  {% endif %}
-  
-  
-  <h2><i class='far fa-newspaper'></i> <a href="/blog/index.html">Blog</a></h2>
-  <h3><a href="/blog/categories.html">Categories</a></h3>
-  <h3><a href="/blog/tags.html">Tags</a></h3>
-  <ul>    
-    <li><h3><a href="/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></h3></li>
-    <li><h3><a href="/tag/Tumblr">For Tumblr Developer</a></h3></li>
-    <li><h3><a href="/tag/MATLAB">MATLAB Tips</a></h3></li>
-  </ul>
-  <h2><i class='fab fa-youtube'></i> <a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg">YouTube Channels</a></h2>
-  <ul><li><h3><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></h3></li>
-    <li><h3><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></h3></li>
-  </ul>
-  
-  <h2>&nbsp;<a href="https://www.paypal.me/chrisfungky/50" target="_blank"><button class="round">Give me a help <i class='fas fa-donate'></i></button></a></h2>
-  
-  <h2><i class='fas fa-gift'></i> <a href="https://invitation.codes/u/qgcUCyqa" target="_blank">Promo Codes</a></h2>
-  
-  <!-- Copyscape Banner -->
-  <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+<div class="sidebar">
 
-  <!-- Google Adsense -->  
-  {% include googleads.html %}
-  
-  <!-- Affiliate Disclouse -->
-  <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="60" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120"/></a></div>
-</aside>
+        {% unless page.url == "/" or page.url == "/blog/" or page.url contains "/blog/page"%}
+            <!-- Featured -->
+            <div class="sidebar-section">
+                <h5><span>Featured</span></h5>
+                
+                <section class="featured-posts">
+
+                    <div class="row listfeaturedtag">
+
+                    {% for post in site.posts %}
+
+                        {% if post.featured == true %}
+
+                            {% include featuredlist.html %}
+
+                        {% endif %}
+
+                    {% endfor %}
+
+                    </div>
+
+                </section>
+            </div>
+        {% endunless %}
+                  
+        <div class="sidebar-section">
+            <h5><span>Useful</span></h5>
+            <ul style="list-none">
+            <li><a href="{{ site.baseurl }}/tag/Qwiklabs">Qwiklabs Tools & Logbooks</a></li>
+            <li><a href="{{ site.baseurl }}/tag/Tumblr">For Tumblr Developer</a></li>
+            <li><a href="{{ site.baseurl }}/tag/MATLAB">MATLAB Tips</a></li>
+            <li><a href="{{ site.baseurl }}/contact">Partner with Me</a></li>
+            <li><a href="https://invitation.codes/@chriskyfung" data-type="badge1" target="_blank" rel="noopener noreferrer">Use my referral codes</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h5><span><i class='fab fa-youtube'></i> My YouTube Channels</span></h5>
+            <ul style="list-none">
+            <li><a href="https://www.youtube.com/channel/UCp0xYv7zaQmAj77GcU-msJg" target="_blank">Chris's Research Channel</a></li>
+            <li><a href='https://www.youtube.com/channel/UCGlT2itihZuRxMckNcfcA3A'>Craftweeks Channel</a></li>
+            </ul>
+        </div>
+            
+        <div class="sidebar-section">
+            <h5><span>Ads</span></h5>
+            {% include sidebar-adsense.html %}
+       </div>
+
+        <div class="sidebar-section">
+            <h5><span>Related Sites</span></h5>
+            <a href="https://craftweeks.com/en/" target="_blank"><img src="{{ site.baseurl }}/assets/images/craftweeks-logo-with-black-title-transparent-bg-200x67.png" alt="Craftweeks logo" title="Craftweeks - Make Modern Crafts with Digital Tools"></a>
+        </div>
+        
+</div>

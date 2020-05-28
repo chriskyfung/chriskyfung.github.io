@@ -1,15 +1,14 @@
 ---
 layout: post
 title: "Userscript for Labelling Completed Qwiklabs"
-author: Chris KY Fung
+author: chris
 date: 2019-09-01
 category: Hack
 permalink: /blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs
 redirect_from:
  - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs
 tags: [Qwiklabs, userscript]
-header:
-  teaser: https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png
+image: images/projects/science-1408800_1280.jpg
 ---
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice.

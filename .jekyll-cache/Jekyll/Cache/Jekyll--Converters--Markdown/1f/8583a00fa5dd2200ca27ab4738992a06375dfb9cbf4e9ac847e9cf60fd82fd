@@ -1,0 +1,37 @@
+I"Ä<p><img src="/images/posts/android/Android_Studio_setup.png" alt="Andriod Studio Setup dialog" /></p>
+
+<!--more-->
+
+<h3 id="preparation">Preparation</h3>
+<p>Beforehand, you have to download the installers of <strong>Android Studio</strong> and <strong>JDK7 or higher</strong> from the following links:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>**Download Android Studio and SDK Tools</td>
+      <td>Android Developers**</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>https://developer.android.com/sdk/index.html</p>
+
+<p><span style="color:red;">The file size of This installer has over 1GB. It may take times to download depending on your network speed.</span></p>
+
+<p><strong>Java SE Development Kit 7u79</strong></p>
+
+<p>https://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</p>
+
+<h3 id="steps-of-installation">Steps of Installation</h3>
+<ol>
+  <li>First, install the JDK7. (It will take 5 to 10 mins)</li>
+  <li>For Windows, add a new system variable <strong>JAVA_HOME</strong> to Environment Variables.
+ i. Select <strong>Start menu</strong> &gt; <strong>Computer</strong> &gt; <strong>System Properties</strong> &gt; <strong>Advanced System Properties</strong>.
+ ii. Then open <strong>Advanced tab</strong> &gt; <strong>Environment Variables</strong>.
+ iii. Add a new system variable <strong>JAVA_HOME</strong> that points to your <em>JDK folder</em>, for example: <code class="highlighter-rouge">C:\Program Files\Java\jdk1.7.0_xx</code></li>
+  <li>After setting up the JDK, run the Android Studio installer (it will take about 10 mins for installation).</li>
+</ol>
+
+<hr />
+<p><small>â€» Updates: You can find the changelog of Android Studio from this page (http://tools.android.com/recent).</small></p>
+:ET

@@ -1,0 +1,251 @@
+I"€0<!--more-->
+
+<p>Did the hints from the <a href="/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab">last article</a> help you to finish the first challenge lab? Are you familiar with the basic knowledge from the <strong>Google Cloud Essentials</strong> quest now?</p>
+
+<p>Itâ€™s important before you move on to the exercise <strong>GSP314</strong> <em><a href="https://www.qwiklabs.com/focuses/10417?parent=catalog">Cloud Architecture: Challenge Lab</a></em>, which will be studied below. This lab is much complicated than the last one. It will test your skills and knowledge for creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker. It requires you well understand and integrate what you learned and experienced from the labs in the Cloud Architecture quest.</p>
+
+<p>In the lab scenario, your client has already established a product development environment with Spinnaker and the application delivery pipeline in the network <strong>kraken-build-vpc</strong>. Those resources will be provisioned while the lab starts. You only need to complete the unfinished part of the architecture (<a href="https://cdn.qwiklabs.com/KQtWhw5izJUfg3%2BL%2B0uLZQ6v44HXVd9BOdAOhhatO3Q%3D">in the red box of the diagram</a>).</p>
+
+<p><strong>The challenge contains 3 requisite tasks:</strong></p>
+
+<ol>
+  <li>Create the Production Environment;</li>
+  <li>Setup the Admin instance;</li>
+  <li>Verify the Spinnaker deployment</li>
+</ol>
+
+<hr />
+
+<h2 id="task-1-create-the-production-environment">Task 1: Create the production environment</h2>
+
+<p>We can further subdivide it to 3 sub-tasks:</p>
+
+<h3 id="11-create-the-kraken-prod-vpc-using-the-given-deployment-manager-configuration">1.1 Create the kraken-prod-vpc using the given Deployment Manager configuration</h3>
+
+<p>First of all, navigate to <strong>Deployment Manager</strong> in the Console to check the deployment status of <strong>kraken-jumphost</strong>.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklab-GSP314-deployment-manager.png" alt="Kraken development environment in Deployment Manager" /></p>
+
+<p>After the jumphost has been created, navigate to <strong>Compute Engine</strong> &gt; <strong>VM instances</strong>.</p>
+
+<ol>
+  <li>
+    <p>Click <strong>SSH</strong> button to access the jumphost instance.</p>
+  </li>
+  <li>
+    <p>In the SSH window, go to the <code class="highlighter-rouge">/work/dm</code> directory.
+<img src="/images/posts/qwiklabs/qwiklab-GSP314-jumphost-ssh.png" alt="SSH console" /></p>
+  </li>
+  <li>
+    <p>Use an editor to open the configuration file <strong>prod-network.yaml</strong>, and replace <code class="highlighter-rouge">SET_REGION</code> to <code class="highlighter-rouge">us-east1</code>.</p>
+  </li>
+  <li>
+    <p>Create the <strong>kraken-prod-vpc</strong> with the YAML file using <code class="highlighter-rouge">gcloud</code> command.<br />
+<em>Hint</em>: Refer and modify the <code class="highlighter-rouge">gcloud deployment-manager</code> command in the lab GSP060 <a href="https://www.qwiklabs.com/focuses/981?parent=catalog#step9">Deployment Manager - Full Production</a>.</p>
+  </li>
+</ol>
+
+<h3 id="12-create-a-kubernetes-cluster-in-the-new-network">1.2 Create a Kubernetes cluster in the new network</h3>
+
+<p>Return to Cloud Console, click on <strong>Navigation menu</strong> &gt; <strong>Kubernetes Engine</strong> &gt; <strong>Cluster</strong>.</p>
+
+<p>Click <strong>Create Cluster</strong>. Make sure you:</p>
+
+<ul>
+  <li>name the cluser <strong>kraken-prod</strong></li>
+  <li>set the number of nodes to <strong>2</strong></li>
+  <li>choose <strong>kraken-prod-vpc</strong> in the network tab</li>
+</ul>
+
+<h3 id="13-create-the-frontend-and-backend-deployments-and-services">1.3 Create the frontend and backend deployments and services</h3>
+
+<p>Hint: Refer and modify the <strong>kubectl create</strong> command in the lab GSP021 <a href="https://www.qwiklabs.com/focuses/557?parent=catalog">Orchestrating the Cloud with Kubernetes</a>.</p>
+
+<p>Return to the SSH window, use the following commands to create the frontend and backend deployments and services:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /work/k8s
+kubectl create <span class="nt">-f</span> deployment-prod-backend.yaml
+kubectl create <span class="nt">-f</span> deployment-prod-frontend.yaml
+kubectl get pods
+kubectl create <span class="nt">-f</span> service-prod-backend.yaml
+kubectl create <span class="nt">-f</span> service-prod-frontend.yaml
+kubectl get services
+</code></pre></div></div>
+
+<p>Click <strong>Check my progress</strong> to verify <strong>Task 1</strong>.</p>
+
+<p><br /></p>
+
+<h2 id="task-2-setup-the-admin-instance">Task 2: Setup the Admin instance</h2>
+
+<h3 id="21-create-a-vm-instance">2.1 Create a VM instance</h3>
+
+<ol>
+  <li>
+    <p>In the Console, click on <strong>Navigation menu</strong> &gt; <strong>Compute Engine</strong> &gt; <strong>VM instances</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Create instance</strong>.</p>
+  </li>
+</ol>
+
+<p>Make sure you:</p>
+
+<ul>
+  <li>name the instance <strong>kraken-admin</strong></li>
+  <li>choose the zone <strong>us-east1-b</strong></li>
+  <li>setup both <strong>kraken-mgmt-subnet</strong> and <strong>kraken-prod-subnet</strong> as the network interfaces in the Networking tab</li>
+</ul>
+
+<p><img src="/images/posts/qwiklabs/qwiklab-GSP314-kraken-admin-network.png" alt="" /></p>
+
+<p>After the instance being created, copy <strong>ID</strong> from its detail page.</p>
+
+<h3 id="22-create-a-monitoring-workspace">2.2 Create a Monitoring workspace</h3>
+
+<ol>
+  <li>
+    <p>Click on <strong>Navigation menu</strong> &gt; <strong>Monitoring</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Alerting</strong> from the left menu, then click <strong>Create Policy</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Add Condition</strong>, and then set up the Metrics with the following parameters:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Fields</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Resource Type</td>
+          <td>GCE VM Instance</td>
+        </tr>
+        <tr>
+          <td>Metric</td>
+          <td>CPU Utilization <code class="highlighter-rouge">compute.googleapis.com/instance/cpu/utilization</code></td>
+        </tr>
+        <tr>
+          <td>Filter</td>
+          <td>Choose <strong>instance id</strong> and paste the value copied from kraken-admin</td>
+        </tr>
+        <tr>
+          <td>Threshold</td>
+          <td>0.5 for 1 minute</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><img src="/images/posts/qwiklabs/qwiklab-GSP314-alerting.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click <strong>ADD</strong>, and then add an email in the Notification setting.</p>
+  </li>
+</ol>
+
+<p>Click <strong>Check my progress</strong> to verify <strong>Task 2</strong>.</p>
+
+<p><br /></p>
+
+<h2 id="task-3-verify-the-spinnaker-deployment">Task 3: Verify the Spinnaker deployment</h2>
+
+<p><em>Hint</em>: Refer to the procedures in the lab GSP114 <a href="https://www.qwiklabs.com/focuses/552?parent=catalog">Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine</a>.</p>
+
+<p>In this lab, several resources have been already provisioned. you <strong>DO NOT</strong> need to implement the following tasks:</p>
+
+<ul>
+  <li>Set up Cloud Pub/Sub to trigger Spinnaker pipelines</li>
+  <li>Deploying Spinnaker using Helm</li>
+  <li>Configure the Cloud Build triggers</li>
+  <li>Configuring the deployment pipelines</li>
+</ul>
+
+<h3 id="31-connect-the-spinnaker-console">3.1 Connect the Spinnaker console</h3>
+
+<p>The lab manual suggests you use Cloud Shell and <code class="highlighter-rouge">kubectl</code> to <strong>port forward</strong> the <strong>spin-deck</strong> pod from port <strong>9000</strong> to <strong>8080</strong>, while I perform to work around with the Cloud Console using the following steps.</p>
+
+<ol>
+  <li>
+    <p>In the Console, click on <strong>Navigation menu</strong> &gt; <strong>Kubernetes Engine</strong> &gt; <strong>ServiceS &amp; Ingress</strong></p>
+  </li>
+  <li>
+    <p>Search <strong>spin-deck</strong>.</p>
+
+    <p><img src="/images/posts/qwiklabs/qwiklab-GSP314-spin-deck.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Port Forward</strong> at the end of the detail page.
+<img src="/images/posts/qwiklabs/qwiklab-GSP314-port-forwarding.png" alt="" /></p>
+  </li>
+  <li>
+    <p>The Cloud Shell will launch automatically with the port forwarding command.</p>
+
+    <p><img src="/images/posts/qwiklabs/qwiklab-GSP314-port-forwarding-cmd.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click the <strong>Web Preview</strong> icon at the top of the Cloud Shell window and select <strong>Preview on port 8080</strong>, to open the Spinnaker user interface.</p>
+
+    <p><img src="/images/posts/qwiklabs/qwiklab-GSP314-spinnaker.png" alt="" /></p>
+  </li>
+</ol>
+
+<h3 id="32-clone-your-source-code-repository">3.2 Clone your source code repository</h3>
+
+<ol>
+  <li>
+    <p>In the Console, click on <strong>Navigation menu</strong> &gt; <strong>Source Repositories</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>sample-app</strong>.</p>
+  </li>
+  <li>
+    <p>Click <strong>Clone</strong> at the top of the repository, and copy the git clone command to the Cloud Shell.</p>
+
+    <p><img src="/images/posts/qwiklabs/qwiklab-GSP314-clone-sample-app.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Run the copied command to download the sample application source code, and then set the username and email address for the Git commits in this repository using run the following codes:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>sample-app
+git config <span class="nt">--global</span> user.email <span class="s2">"</span><span class="si">$(</span>gcloud config get-value core/account<span class="si">)</span><span class="s2">"</span>
+git config <span class="nt">--global</span> user.name <span class="s2">"</span><span class="si">$(</span>gcloud config get-value core/account<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h3 id="33-triggering-your-pipeline-from-code-changes">3.3 Triggering your pipeline from code changes</h3>
+
+<p>From your sample-app directory, change the color of the app from orange to blue:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'s/orange/blue/g'</span> cmd/gke-info/common-service.go
+</code></pre></div></div>
+
+<p>Tag your change and push it to the source code repository:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-a</span> <span class="nt">-m</span> <span class="s2">"Change color to blue"</span>
+git tag v1.0.1
+git push <span class="nt">--tags</span>
+</code></pre></div></div>
+
+<p>In the Console, in <strong>Cloud Build</strong> &gt; <strong>History</strong>, the new build will appear in a minute.</p>
+
+<p>Return to the Spinnaker UI and click <strong>Pipelines</strong> to watch the pipeline start to deploy the image to production.</p>
+
+<p><img src="/images/posts/qwiklabs/qwiklab-GSP314-spinnaker-deploy.png" alt="" /></p>
+
+<p>Once the pipeline completes, the color of the sample application has changed from orange to blue in the canary deployment, click <strong>Check my progress</strong> to verify <strong>Task 3</strong>.</p>
+
+<p><br /></p>
+
+<h2 id="summary">Summary</h2>
+
+<p>This lab is challenging. You might not know what need to do if you cannot spot the similar pieces from the prior training labs. You need to familiar with <code class="highlighter-rouge">kubectl</code> and <code class="highlighter-rouge">git</code> commands as well as VPCs and Kubernetes in the multiple network environment. Since some steps are hard to undo, it is necessary to well-check the options and parameters before attempting create resources and update the pipeline.</p>
+
+<hr />
+
+<p><strong>Related:</strong> <a href="/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform">Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips</a></p>
+:ET

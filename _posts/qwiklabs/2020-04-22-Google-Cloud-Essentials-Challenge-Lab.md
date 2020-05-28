@@ -1,14 +1,13 @@
 ---
 layout: post
 title: "QLogbook: Google Cloud Essentials: Challenge Lab"
-author: Chris KY Fung
+author: chris
 date: 2020-04-22
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
 excerpt: Hints for qwiklab GSP313 "Google Cloud Essential &#58; Challenge Lab" | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
-header: 
-   teaser: /images/posts/qwiklabs/qwiklabs-GSP313-task1.png
+image: images/posts/qwiklabs/qwiklabs-GSP313-task1.png
 ---
 
 <!--more-->

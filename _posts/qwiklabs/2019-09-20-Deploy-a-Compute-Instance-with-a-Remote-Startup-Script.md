@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "QLogbook: Deploy a Compute Instance with a Remote Startup Script"
+author: chris
 date: 2019-09-20
 category: Cloud
 tags: Qwiklabs Google_Cloud Logbook
@@ -11,8 +12,7 @@ redirect_from:
  - /blog/2019/09/20/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
 excerpt: A lab summary of qwiklab GSP301 "Deploy a Compute Instance with a Remote Startup Script" | 1. Download Sample Startup Script | 2. Upload the Startup Script to a Cloud Storage Bucket | 3. Configure Metadata in Creating VM instance | 4. Inspect Instance Correctly Running Startup Script
 description: A step-by-step guilde for deploying a VM instance with automaticlly installing Apache web server package by using a Remote Startup Script on Google Cloud Platform.
-header: 
-   teaser: /images/posts/qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata.png
+image: images/posts/qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata.png
 ---
 
 <!--more-->

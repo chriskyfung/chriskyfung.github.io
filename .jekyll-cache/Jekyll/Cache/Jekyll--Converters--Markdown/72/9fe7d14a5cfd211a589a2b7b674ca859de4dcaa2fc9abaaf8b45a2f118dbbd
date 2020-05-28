@@ -1,0 +1,86 @@
+I"�<p>This post records the correct answers for the Qwiklabs quiz <a href="https://www.qwiklabs.com/quizzes/183">“Knowledge Check: Controlling Your Costs search”</a>, which is a part of the quest <a href="https://www.qwiklabs.com/quests/97"><em>“Optimizing Your GCP Costs”</em></a>.</p>
+
+<p><em>Last update: 2020-04-29</em></p>
+
+<!--more-->
+
+<p><br /></p>
+
+<blockquote>
+  <p>Q: Which of the following best describes the ideal use cases for setting up a budget?</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> To receive an email alert notification for when your costs hit, or are forecasted to hit, a specified amount.</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> To monitor resource consumption at specific intervals before the end of the billing cycle (e.g., at 25%, 50%, etc.)</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Q: A budget can only be set for <strong>__</strong><strong>__</strong><strong>_ and configured to cover the scope of __</strong><strong>__</strong><strong>_ and/or __</strong><strong>__</strong><strong>__</strong>.</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> A single billing account, projects, products</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Q: What is meant by the scope of a budget?</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> Refers to the combination of GCP projects and products that the budget covers.</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Q: Which of the following is not a usage-based credit type that you can filter your billing data by?</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> Tax reductions issued by Google Cloud for using cloud resources.</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Q: When should you set up quotas?</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> When you want to set a limit on the number of concurrent resources in a project or the number of API requests.</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Q: Suppose one of your engineers spun up an expensive compute instance in a Test environment and left it running overnight. You receive an alert notification the next day with a significant spike in your costs. Which of the following could you implement using cost management tools to help prevent this from happening in the future?</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> Set up a quota limit to cap service usage when developing and testing applications.</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> Set up a programmatic budget notification to disable billing for the project specific to the test environment to stop usage when exceeding the budget threshold.</p>
+
+  <p><i class="far fa-times-circle" style="color:red"></i> Disable that individual’s access to all GCP resources until the next billing cycle.</p>
+
+  <p><i class="far fa-times-circle" style="color:red"></i> Use the shared responsibility model to encourage project owners to make cost-effective decisions when consuming GCP resources.</p>
+
+  <p><i class="far fa-times-circle" style="color:red"></i> Change the quota limit for that resource type to unlimited.</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Q: You run a query for the fifth time in BigQuery, and you receive the following error message - ‘Custom quota exceeded: Your usage exceeded the custom quota for QueryUsagePerUserPerDay, which is set by your administrator.’ What does this message mean?</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> You’ve exceeded the limit on the amount of queries that you can run for the day.</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> The limit will be reset the following day.</p>
+
+  <p><i class="far fa-check-circle" style="color:green"></i> Only your project administrator can adjust the quota limit.</p>
+
+  <p><i class="far fa-times-circle" style="color:red"></i> Your access to BigQuery has been revoked indefinitely.</p>
+</blockquote>
+
+<hr />
+
+<p><strong>Related post:</strong></p>
+
+<ul>
+  <li><em><a href="/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform">Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips</a></em></li>
+</ul>
+:ET

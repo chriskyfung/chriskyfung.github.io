@@ -1,0 +1,174 @@
+I"n<!--more-->
+
+<h2 id="my-favorite-terminal-application">My favorite terminal application</h2>
+
+<p><img src="/images/posts/linux/terminator.png" alt="Terminator icon" /></p>
+
+<p><a href="https://launchpad.net/terminator/">Terminator</a> allows you to open multiple terminals in one window, which can boost your productivity by operating two or more shells side by side or in grids.</p>
+
+<p>It can be installed to Ubuntu by running the following code:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>terminator
+</code></pre></div></div>
+
+<p><strong>Shortcut keys:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Shortcut</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Split horizontally</td>
+      <td>Shift+Ctrl+O</td>
+    </tr>
+    <tr>
+      <td>Split Vertically</td>
+      <td>Shift+Ctrl+E</td>
+    </tr>
+    <tr>
+      <td>Focus on above terminal</td>
+      <td>Alt + UP</td>
+    </tr>
+    <tr>
+      <td>Focus on terminal below</td>
+      <td>Alt + Down</td>
+    </tr>
+    <tr>
+      <td>Focus on left terminal</td>
+      <td>Alt + Left</td>
+    </tr>
+    <tr>
+      <td>Focus on right terminal</td>
+      <td>Alt + Right</td>
+    </tr>
+    <tr>
+      <td>Create a new Tab</td>
+      <td>Shift+Ctrl+T</td>
+    </tr>
+    <tr>
+      <td>Switch to previous Tab</td>
+      <td>Ctrl+PageUp</td>
+    </tr>
+    <tr>
+      <td>Switch to next Tab</td>
+      <td>Ctrl+PageDown</td>
+    </tr>
+    <tr>
+      <td>Create a new Window</td>
+      <td>Shift+Ctrl+I</td>
+    </tr>
+    <tr>
+      <td>Focus on next window</td>
+      <td>Alt + TAB</td>
+    </tr>
+    <tr>
+      <td>Close window</td>
+      <td>Shift+Ctrl+Q</td>
+    </tr>
+    <tr>
+      <td>Close terminal</td>
+      <td>Shift+Ctrl+W</td>
+    </tr>
+    <tr>
+      <td>Increase font size</td>
+      <td>Ctrl + <strong>+</strong></td>
+    </tr>
+    <tr>
+      <td>Decrease font size</td>
+      <td>Ctrl + <strong>-</strong></td>
+    </tr>
+    <tr>
+      <td>Restore original font size</td>
+      <td>Ctrl + 0</td>
+    </tr>
+    <tr>
+      <td>Resize termainal</td>
+      <td>Shift+Ctrl+Arrow</td>
+    </tr>
+    <tr>
+      <td>Toggle Full Screen</td>
+      <td>F11</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="useful-commands">Useful commands</h2>
+
+<h3 id="show-running-processes-in-linux">Show running processes in Linux</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">top</code></li>
+  <li><code class="highlighter-rouge">ps -A</code></li>
+</ul>
+
+<p>For more infomation, please find from:</p>
+<ul>
+  <li><a href="https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/">Show All Running Processes in Linux using ps/htop commands - nixCraft</a></li>
+  <li><a href="https://www.howtogeek.com/107217/how-to-manage-processes-from-the-linux-terminal-10-commands-you-need-to-know/">How to Manage Processes from the Linux Terminal: 10 Commands You Need to Know - How-To Geek</a></li>
+</ul>
+
+<h3 id="get-root-permission-for-gui-file-manager">Get root permission for GUI file manager</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">sudo nautilus</code></li>
+</ul>
+
+<h3 id="find-previous-commands">Find previous commands</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">history</code>
+Display a list of previous commands</li>
+  <li><code class="highlighter-rouge">!</code><em><code class="highlighter-rouge">n</code></em>
+ where <em><strong>n</strong></em> is the index of a command displayed by history, e.g. <code class="highlighter-rouge">!4</code></li>
+  <li><code class="highlighter-rouge">Ctrl+R</code> Find the historical commands
+ Suggest a previous command that starts with the chars as you type</li>
+</ul>
+
+<h3 id="execute-a-shell-script">Execute a shell script</h3>
+
+<p>In Ubuntu, a shell script is a .sh file that contains a series of commands in a Unix shell, similar to a batch (.bat) file in Windows. In a .sh file, it is often typed with <code class="highlighter-rouge"><span class="c">#! /bin/bash</span></code> in the first line to indicate that is a <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash script</a>. For example,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
+
+<span class="nb">echo</span> <span class="s2">"System"</span>
+<span class="nb">uname</span> <span class="nt">-o</span>
+<span class="nb">echo</span> <span class="s2">"Memory Usage"</span>
+free <span class="nt">-m</span>
+<span class="nb">echo</span> <span class="s2">"Local Library Path"</span>
+<span class="nb">echo</span> <span class="nv">$LD_LIBRARY_PATH</span>
+</code></pre></div></div>
+
+<p>Save as <code class="highlighter-rouge">test.sh</code>, and then need the file executable, by running the following command in the terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x test.sh
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">chmod</code> is a command to change file permission, <code class="highlighter-rouge">+x</code> is the argument to set execute permission to the file.</p>
+
+<p>After that, you can <code class="highlighter-rouge">./</code> in front of the filename to execute the shell file in the terminal, i.e.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./test.sh
+</code></pre></div></div>
+
+<h3 id="related">Related</h3>
+
+<ul>
+  <li><a href="/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu">Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher</a></li>
+</ul>
+
+<h3 id="read-more">Read More</h3>
+
+<ul>
+  <li><a href="https://linoxide.com/linux-how-to/linux-commands-brief-outline-examples/">Linux Commands - Complete Guide - LinOxide</a></li>
+  <li><a href="https://help.ubuntu.com/community/Beginners/BashScripting">Beginners/BashScripting - Community Help Wiki - Official Ubuntu Documentation</a></li>
+  <li><a href="https://www.makeuseof.com/tag/3-examples-teach-find-files-linux/">How to Find Files on Linux With 3 Easy Commands - MakeUseOf</a></li>
+  <li><a href="https://www.binarytides.com/linux-command-check-memory-usage">5 commands to check memory usage on Linux - BinaryTides</a></li>
+  <li><a href="https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/">10 Useful du (Disk Usage) Commands to Find Disk Usage of Files and Directories - TecMint</a></li>
+</ul>
+:ET

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My new conference paper is now available online"
-author: Chris KY Fung
+author: chris
 date: 2014-08-22
 category: Research
 tags: [conference paper, molecular dynamics, single crystal diamond]
