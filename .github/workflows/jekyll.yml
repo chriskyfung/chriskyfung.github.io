@@ -1,4 +1,4 @@
-name: Testing the GitHub Pages publication
+name: Deploy the GitHub Pages publication
 
 on:
   push
