@@ -1,3 +1,5 @@
+![Deploy the GitHub Pages publication](https://github.com/chriskyfung/chriskyfung.github.io/workflows/Deploy%20the%20GitHub%20Pages%20publication/badge.svg?branch=jekyll)
+
 ## Chris KY FUNG's GitHub Page
 
 This site is a new version of my old site “Blog of a POLIDA post-grad II .” which was hosting in Wix.com. Now it has been moved to the GitHub page. It should deliver a much faster page loading speed and a nicer display of codes. I hope you will better enjoy my content.

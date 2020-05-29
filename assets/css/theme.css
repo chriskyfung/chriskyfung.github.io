@@ -418,7 +418,7 @@ span.post-name a,span.post-read-more a:hover {
 	line-height:1.8;
 	color:rgba(0,0,0,.8);
 }
-.article-post a {color:inherit; box-shadow:inset 0 -2px 0 rgba(255, 229, 31,1), 0 2px 0 rgba(255, 229, 31,1);}
+.article-post a {color:inherit; text-decoration: none; box-shadow:inset 0 -2px 0 rgba(255, 229, 31,1), 0 2px 0 rgba(255, 229, 31,1);}
 .article-post a:hover {box-shadow:inset 0 -30px 0 rgba(255, 229, 31,1), 0 2px 0 rgba(255, 229, 31,1);text-decoration:none;}
 blockquote {
 	border-left:4px solid #6FD350;
@@ -543,7 +543,8 @@ ul.tags li a {
     border-radius: 3px;
     font-weight: 500;
     font-size: 0.93em;
-    text-transform: capitalize;    
+    text-transform: capitalize;
+    text-decoration: none;
     box-shadow: 0 6px 10px 0 rgba(169, 169, 169, 0.1);
 }
 ul.tags li a:hover {

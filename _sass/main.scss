@@ -1,3 +1,4 @@
+/* navigation items */
 #toggle-search {
   margin-left: 15px;
   margin-top: inherit;
@@ -19,13 +20,17 @@
     margin-top: 15px;
   }
 }
+/* END navigation items */
 
+/* footer items */
 #footer-image {
   background: #e9e4ff;
   display: block;
   border-radius: 60% 70% 500% 70%;
 }
+/* END footer items */
 
+/* post layout */
 .addthis_inline_share_toolbox {
   margin-bottom: 15px;
 }
@@ -45,8 +50,14 @@ ul.tags.rounded-tags {
     border: 1px solid;
     border-radius: 20px;
   }
-}
 
+  code a {
+    box-shadow: inherit;
+  }
+}
+/* END post layout */
+
+/* featuredlist.html */
 .listfeaturedtag {
   .card-list{
     height: 150px;
@@ -64,6 +75,7 @@ ul.tags.rounded-tags {
     }
   }
 }
+/* END featuredlist.html */
 
 /* Buy Me A Coffee */
 .bmc-button img {
@@ -105,5 +117,11 @@ ul.tags.rounded-tags {
 	opacity: 0.85 !important;
 	color: #ffffff !important;
 }
-
 /* END Buy Me A Coffee */
+
+/* Viglink */
+a.vglnk {
+  border-bottom:2px dashed gray;
+  box-shadow: unset;
+}
+/* END Viglink */
