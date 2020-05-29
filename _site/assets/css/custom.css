@@ -1,11 +1,18 @@
+/* navigation items */
+.fixed-top { position: sticky; }
+
 #toggle-search { margin-left: 15px; margin-top: inherit; }
 
 .invitation-codes.invitation-codes-badge1 { margin-left: 15px; margin-top: inherit; }
 
 @media (max-width: 991px) { #toggle-search { margin-left: inherit; margin-top: 15px; } .invitation-codes.invitation-codes-badge1 { margin-left: inherit; margin-top: 15px; } }
 
+/* END navigation items */
+/* footer items */
 #footer-image { background: #e9e4ff; display: block; border-radius: 60% 70% 500% 70%; }
 
+/* END footer items */
+/* post layout */
 .addthis_inline_share_toolbox { margin-bottom: 15px; }
 
 .article-post h2 { margin-top: 6rem; }
@@ -14,6 +21,10 @@
 
 ul.tags.rounded-tags li a { background: transparent; border: 1px solid; border-radius: 20px; }
 
+ul.tags.rounded-tags code a { box-shadow: inherit; }
+
+/* END post layout */
+/* featuredlist.html */
 .listfeaturedtag .card-list { height: 150px; width: 100%; }
 
 .listfeaturedtag .card-list h2.card-title { font-size: 1rem; }
@@ -22,6 +33,7 @@ ul.tags.rounded-tags li a { background: transparent; border: 1px solid; border-r
 
 .listfeaturedtag .card-list .wrapfooter { bottom: 1rem; }
 
+/* END featuredlist.html */
 /* Buy Me A Coffee */
 .bmc-button img { height: 34px !important; width: 35px !important; margin-bottom: 1px !important; box-shadow: none !important; border: none !important; vertical-align: middle !important; }
 
@@ -30,10 +42,10 @@ ul.tags.rounded-tags li a { background: transparent; border: 1px solid; border-r
 .bmc-button:hover, .bmc-button:active, .bmc-button:focus { -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important; text-decoration: none !important; box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important; opacity: 0.85 !important; color: #ffffff !important; }
 
 /* END Buy Me A Coffee */
-/* Google Search Bar */
-gsc-results-wrapper-visible { width: max-content; height: max-content; left: -50%; }
+/* Viglink */
+a.vglnk { border-bottom: 2px dashed gray; box-shadow: unset; }
 
-/* END Google Search Bar */
+/* END Viglink */
 .highlight { /* Comment */ /* Error */ /* Generic */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Other */ /* Punctuation */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */ /* Generic.Emph */ /* Generic.Error */ /* Generic.Heading */ /* Generic.Inserted */ /* Generic.Output */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */ /* Generic.Traceback */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Literal.Number.Integer.Long */ }
 
 .highlight pre { background-color: #333; color: #fff; }

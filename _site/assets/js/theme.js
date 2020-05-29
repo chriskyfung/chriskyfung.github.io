@@ -156,4 +156,8 @@ jQuery(document).ready(function($){
     function correctInvitationUrl(){
       document.querySelector(".invitation-codes-badge").href = "https://invitation.codes/@chriskyfung";
     }
+
+    $(".article-post a:not('.vglnk')").each(function(){ 
+      if ($(this).text().length <10) $(this).css('background-color','#ffb')
+    });
 });
