@@ -148,16 +148,4 @@ jQuery(document).ready(function($){
         $('body,html').animate({ scrollTop: $(jumptopageof).offset().top  - 0 }, 800);
     }
 
-    // Correct the URL to invitation.codes
-    let invitationBadge = document.querySelector(".invitation-codes-badge1")
-    invitationBadge.addEventListener( "click", correctInvitationUrl, true);
-    invitationBadge.addEventListener( "mouseover", correctInvitationUrl, true);
-
-    function correctInvitationUrl(){
-      document.querySelector(".invitation-codes-badge").href = "https://invitation.codes/@chriskyfung";
-    }
-
-    $(".article-post a:not('.vglnk')").each(function(){ 
-      if ($(this).text().length <10) $(this).css('background-color','#ffb')
-    });
 });

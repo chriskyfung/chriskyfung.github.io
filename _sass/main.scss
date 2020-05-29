@@ -8,9 +8,39 @@
   margin-top: inherit;
 }
 
-.invitation-codes.invitation-codes-badge1 {
+.navbar-nav .invitation-codes {
   margin-left: 15px;
   margin-top: inherit;
+
+  a {
+    background: linear-gradient(139deg,#ffc92f,#ff185c,#f316d5,#b81ed2);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0 10px;
+    height: 36px;
+    display: inline-block;
+  }
+  svg {
+    float: left;
+    vertical-align: middle;
+    display: inline!important;
+    margin-right: 7px;
+    margin-left: 1px;
+    padding-top: 6px;
+    height: 20px;
+    padding-top: 7px;
+    height: 28px;
+  }
+  span {
+    padding: 0 12px;
+    vertical-align: middle;
+    float: left;
+    line-height: 34px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -19,7 +49,7 @@
     margin-top: 15px;
   }
   
-  .invitation-codes.invitation-codes-badge1 {
+  .navbar-nav .invitation-codes {
     margin-left: inherit;
     margin-top: 15px;
   }
