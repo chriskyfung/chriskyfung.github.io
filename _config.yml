@@ -34,6 +34,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-minifier
+  - jekyll-loading-lazy
         
 # Archives
 jekyll-archives:

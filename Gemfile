@@ -18,5 +18,6 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'jekyll-gist'
     gem 'jekyll-minifier'
+    gem 'jekyll-loading-lazy'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]

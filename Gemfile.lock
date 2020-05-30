@@ -40,6 +40,9 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-loading-lazy (0.1.1)
+      jekyll (>= 3.0, < 5.0)
+      nokogiri (>= 1.10, < 2.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -67,7 +70,10 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_portile2 (2.4.0)
     multipart-post (2.1.1)
+    nokogiri (1.10.9-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
     octokit (4.18.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -103,6 +109,7 @@ DEPENDENCIES
   jekyll-archives
   jekyll-feed
   jekyll-gist
+  jekyll-loading-lazy
   jekyll-minifier
   jekyll-paginate
   jekyll-seo-tag
