@@ -6,7 +6,9 @@ date: 2019-04-04
 category: Linux
 tags: [Ubuntu, KDE, remote desktop]
 excerpt: Chrome Remote Desktop is a free alternative of Teamviewer. It can access PCs in secured networks. If you want to set up it on Linux, you may encounter many troubles. You must correctly install and setup the configurations for the host component on Linux. For Kubuntu 14.04 LTS, which operates with a KDE desktop environment. I believe that many Kubuntu users also face the same problem and feel disappointed. So, I write this article to share my solution.
-image: images/posts/linux/Kubuntu_14.04_LTS.jpg
+image: 
+   path: linux/Kubuntu_14.04_LTS
+   ext: jpg
 
 ---
 
@@ -116,7 +118,9 @@ self.child_env["DISPLAY"] = ":%d" % display
 
 Press `Ctrl+X` and then `Y` to save the file and exit the editor. Finally, start Chrome Remote Desktop with the following command.
 
-`/opt/google/chrome-remote-desktop/chrome-remote-desktop --start`
+```bash
+/opt/google/chrome-remote-desktop/chrome-remote-desktop --start
+```
 
 Now you should able to register your Linux desktop as a computer on your Chrome Remote Desktop. Try to remotely access this desktop from other computers to test the connections.
 
@@ -130,13 +134,13 @@ Although the above method can set up the Chrome Remote Desktop on an Ubuntu with
 
 I hope this article can help you to solve your problem.
 
-### References
+**References**
 
 1. [How to Install Chrome Remote Desktop on Ubuntu 18.04 - Medium](https://medium.com/@vsimon/how-to-install-chrome-remote-desktop-on-ubuntu-18-04-52d99980d83e)
 2. [Access another computer with Chrome Remote Desktop - Computer - Google Chrome Help](https://support.google.com/chrome/answer/1649523)
 3. [Chrome Remote desktop Install for Linux - Everything Linux 101](https://www.everything-linux-101.com/how-to/remote-control/chrome-remote-desktop-install-for-linux/)
 
-### Related
+* * *
 
-- [Useful command lines in Ubuntu that help using terminals
+**Related**: [Useful command lines in Ubuntu that help using terminals
 ](/blog/linux/Useful-Ubuntu-Commands)

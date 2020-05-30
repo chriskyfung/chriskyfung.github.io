@@ -3,16 +3,17 @@ layout: post
 title: "QLogbook: Configure a Firewall and a Startup Script with Deployment Manager"
 author: chris
 date: 2019-09-23
+last_modified_at: 2020-03-26
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
 redirect_from:
  - /blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
 excerpt: A lab summary of qwiklab GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
-image: images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
+image: 
+   path: qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor
+   ext: png
 ---
-
-_Last update: 2020-03-26_
 
 <!--more-->
 
@@ -21,13 +22,11 @@ With the Google Cloud web console, you can easily configure and deploy many diff
 But if you aim to be a professional cloud engineer, you must know and apply some more advanced skills, such as creating and managing cloud resources with simple templates for a repeatable deployment process. The third lab of the challenge quest, **GSP302** _"[Configure a Firewall and a Startup Script with Deployment Manager](https://www.qwiklabs.com/focuses/1736?parent=catalog)"_, is to test your ability to define the resources of a basic apache web server. You need to know how to format and parameterize the resource properties in YAML as a Jinja2 configuration file. It is much harder than the previous labs. I recommend you revise
 the Qwiklabs quest called [Deployment Manager](https://www.qwiklabs.com/quests/30), if you are not familiar with building custom templates.
 
-<br>
-
 ## Brief Introduction of Challenge Scenario
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP302](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP302.png)
+{% include picture.html img="qwiklabs/score_box_of_qwiklabs_GSP302" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP302" class="shadow-none text-center" %}
 
 The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -43,8 +42,6 @@ The screenshot above shows that there are 6 steps required for completing this l
 
 6. The Deployment manager includes startup script and firewall resources.
 
-<br>
-
 ## Download the baseline Deployment Manager template
 
 The lab gives a basic deployment manager template, containing with the `.jinja`, `.yaml` and `.jinja.schema` files as well as the sample startup script. In a cloud shell, use the following commands to download and unpack the files.
@@ -57,15 +54,13 @@ gsutil cp gs://spls/gsp302/* .
 
 You can explore the files by opening a Cloud Shell code editor. The template for you to deploy a virtual machine
 
-![Snapshot of the Deployment Manager template in Cloud Shell code editor](/images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png)
-
-<br>
+{% include picture.html img="qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the Deployment Manager template in Cloud Shell code editor" %}
 
 ## Edit the Jinja Template
 
 Open the `qwiklabs.jinja` file, you should see the following codes:
 
-![Snapshot of the given Jinja template in Cloud Shell code editor](/images/posts/qwiklabs/qwiklabs-GSP302-jinja-in-Cloud-Shell-Code-Editor.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP302-jinja-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the given Jinja template in Cloud Shell code editor" %}
 
 The template already includes the following configurations:
 - Instance name: vm-test
@@ -84,7 +79,7 @@ Next, you need to add two more properties to the instance configuration. If you 
 
 Open the `install-web.sh` file, you should see the following codes:
 
-![Snapshot of the given startup script in Cloud Shell code editor](/images/posts/qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the given startup script in Cloud Shell code editor" %}
 
 Let recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)"_.
 
@@ -145,8 +140,6 @@ _Replace `<YOUR-SERVICE-ACCOUNT-EMAIL>` in Line 31 to the Service Account of you
 
 **Save** the file change.
 
-<br>
-
 ## Apply the Deployment
 
 It's the time to deploy the configuration file and see if the deployment works.
@@ -166,10 +159,10 @@ This post has also been published to Medium. If you like to read and take notes 
 
 If you finished the first three labs of the challenge quest, you are capable of building Linux-based web servers on Google Cloud. How about a Windows server, do you know how to set up an IIS web server on it and allow RDP access through the VPC network? [Next lab](https://chriskyfung.github.io/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP) is a challenge of configuring a secure Windows web server with a Bastion host (or jump box).
 
-**Related posts:**
+**See Also**
 
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
 
-- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
+- [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
 
-- _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)_
+- [Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)

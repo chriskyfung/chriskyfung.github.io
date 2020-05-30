@@ -8,17 +8,15 @@ tags: [Tumblr, user tips, Custom Theme, shorthand]
 permalink: /blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers
 redirect_from:
  - /blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers
-image: images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png
-hideimage: true
+image: 
+   path: tumblr/tips-tricks-and-tools-for-tumblr-bloggers
+   ext: png
 featured: true
 ---
-
-![Tips, Tricks, and Tools for Tumblr Bloggers](/images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png)
 
 **Tumblr**  is a popular micro-blogging and social media platform, which is lightweight and highly-customizable with HTML, CSS and JavaScript. It is completely free without storage and bandwidth limits, like Facebook, Twitter, Blogger and Medium, but you can tailor-made your theme and use your custom domain name. It also allows monetizing with Google Adsense. Tumblr is a good alternative of WordPress and GitHub Page for hosting blog websites because no complex PHP or Jekyll knowledge is required. But the shortage of Tumblr includes slow page speed and limited SEO settings. On the whole, Tumblr is a great blogging platform for beginners. You can make use of the following plugins, tools, tips-and-tricks to enrich your Tumblr sites.
 
 <!--more-->
-<br>
 
 ## Personalize Your Tumblr Site:
 
@@ -32,8 +30,9 @@ You can follow the procedures below to disable the Tumblr buttons for non-Tumblr
 1. In the Tumblr Dashboard, click on the _Account_ → **Edit Appearance**
 2. Click on **Edit Theme** button (same **Customize**)
 3. Scroll to the button and click **Advanced Settings** <br>
-![](/images/posts/tumblr/uncheck-promote-tumblr-in-tumblr-theme-advanced-options.png)
-<br>
+{% include picture.html img="tumblr/uncheck-promote-tumblr-in-tumblr-theme-advanced-options" ext="png" alt="Tumblr Theme Editor Advance Options" class="text-center" %}
+
+{:start="4"}
 
 4. Uncheck **Promote Tumblr!**
 5. Click **Save**
@@ -42,7 +41,7 @@ You can follow the procedures below to disable the Tumblr buttons for non-Tumblr
 
 When a Tumblr site is opened with a mobile device, buttons asking users to open/install the native Tumblr app will be rendered by default (as shown in the image below).
 
-![](/images/posts/tumblr/get-n-open-tumblr-app-in-tumblr-mobile-page-300.png)
+{% include picture.html img="tumblr/get-n-open-tumblr-app-in-tumblr-mobile-page-300" ext="png" alt="" class="text-center" %}
 
 1. Copy the following CSS codes to clipboard
 
@@ -69,7 +68,7 @@ Tumblr automatically backups your custom theme when you make and save any change
 
 In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, choose the blog that you want to recover, and click **View backups**. You will obtain a list of the old versions. You can click **Show changes** to inspect the code changes and click **Revert** to restore back the theme.
 
-![Screenshot of Recover Tumblr Custom Themes](/images/posts/tumblr/RecoverCustomTheme.png)
+{% include picture.html img="tumblr/RecoverCustomTheme" ext="png" alt="Screenshot of Recover Tumblr Custom Themes" %}
 
 * * *
 
@@ -77,7 +76,7 @@ In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, c
 
 ### Amazon Associates Ads Loader for Tumblr
 
-![Amazon Associates Ads Loader for Tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr/raw/master/images/amzn_assoc_loader_for_tumblr.png)
+{% include picture.html img="amzn_assoc_loader_for_tumblr" ext="png" alt="Amazon Associates Ads Loader for Tumblr" source="projects" %}
 
 Tumblr blocks executing Javascript snippets directly embedded in a post body. For that reason, Amazon Ads cannot display if we just copy an Ads code to a Tumblr post. To workaround, I created a converter to format the Ads code to HTML data, and a plugin to insert the Ads back to the post body by interpreting the HTML elements in the DOM File. Visit a [Demo](https://releasemind.com/post/172027040926/6-benefits-of-networking-for-your-success) page!
 
@@ -116,7 +115,7 @@ Add the following html tag to your custom theme,
 
 A link named with "Featured" will be shown at where you place the `<ui>` tag. When you click this link, the plugin will send an API request, `https://<blog-name>.tumblr.com/api/read/json?num=50&tagged=featured` to get the data of the first 50 posts tagged with "featured". Thus, the posts found can be shown at the top or somewhere on the top separately from the main post feed.
 
-![sample screenshot of Tumblr Featured Posts Plugin by BANDIT DESIGN](/images/posts/tumblr/tumblr-featured-post-plugin.png)
+{% include picture.html img="tumblr/tumblr-featured-post-plugin" ext="png" alt="sample screenshot of Tumblr Featured Posts Plugin by BANDIT DESIGN" %}
 
 
 * * *
@@ -129,34 +128,34 @@ Hashtags are useful to categorize posts and help audiences to search your conten
 
 #### Tumblr Tag List Generator <small>(drunkonschadenfreude.com)</small>
 
-![Screenshot of Tumblr Tag List Generator by drunkonschadenfreude.com](/images/posts/tumblr/TumblrTagListGenerator-drunkonschadenfreude.com.png)
+{% include picture.html img="tumblr/TumblrTagListGenerator-drunkonschadenfreude.com" ext="png" alt="Screenshot of Tumblr Tag List Generator by drunkonschadenfreude.com" %}
 
 You can get a dynamically updated tag list of your Tumblr blog by using this tag list generator. Just enter your Tumblr blog name to it and click **Generate**, it will return the code for you to copy into your theme or a custom page.
 
 There are several parameters for you to define the appearance of the tag list or word cloud. The generator provides a preview for the resulted code. The image below demonstrates three different samples that I had made.
 
-![Sample Demos of Tumblr Tag List Generator by drunkonschadenfreude.com](/images/posts/tumblr/TumblrTagListGenerator-drunkonschadenfreude.com-demos.png)
+{% include picture.html img="tumblr/TumblrTagListGenerator-drunkonschadenfreude.com-demos" ext="png" alt="Sample Demos of Tumblr Tag List Generator by drunkonschadenfreude.com" %}
 
 #### Find Untagged Tumblr Posts <small>(finduntaggedtumblrposts.com)</small>
 
-![Screenshot of Find Untagged Tumblr Posts (finduntaggedtumblrposts.com)](/images/posts/tumblr/FindUntaggedTumblrPosts-finduntaggedtumblrposts.com.png)
+{% include picture.html img="tumblr/FindUntaggedTumblrPosts-finduntaggedtumblrposts.com" ext="png" alt="Screenshot of Find Untagged Tumblr Posts (finduntaggedtumblrposts.com)" %}
 
 This application is a crawler that scans through a Tumblr site and reports the untagged posts that have been found. So, you can verify if every post in your site has been tagged.
 
 #### Tag Replacer <small>(tags.circumfluo.us)</small>
 
-![Tag Replacer ([tags.circumfluo.us](https://tags.circumfluo.us))](/images/posts/tumblr/tagreplacer-tags.circumfluo.us.png)
+{% include picture.html img="tumblr/tagreplacer-tags.circumfluo.us" ext="png" alt="Tag Replacer ([tags.circumfluo.us](https://tags.circumfluo.us))" %}
 
 Tag Replacer is a great tool that speedups tag editing. It can search the posts with a specific tag from your Tumblr blog and perform a **bulk tag replace/delete** process. _Quick & Easy_!
 
 Since the application edits your data, you have to grant it _access_, _read_ and _write_ permissions for the first time use. Click **Connect to tumblr**, then it will be redirected to the authorization page.
-![Connect to tumblr - Tag Replacer (tags.circumfluo.us)](/images/posts/tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr.png)
+{% include picture.html img="tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr" ext="png" alt="Connect to tumblr - Tag Replacer (tags.circumfluo.us)" %}
 
-![Authorize Tag Replacer (tags.circumfluo.us)](/images/posts/tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr-authorize.png)
+{% include picture.html img="tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr-authorize" ext="png" alt="Authorize Tag Replacer (tags.circumfluo.us)" %}
 
 If you worry about the security, you can revoke the app after tag editing. In your Tumblr dashboard, navigate to **Settings** > **Apps**, and click the "**x**" button to remove the app.
 
-![Remove Tag Replacer (tags.circumfluo.us)from Tumblr App page](/images/posts/tumblr/tagreplacer-tags.circumfluo.us-remove-app.png)
+{% include picture.html img="tumblr/tagreplacer-tags.circumfluo.us-remove-app" ext="png" alt="Remove Tag Replacer (tags.circumfluo.us)from Tumblr App page" %}
 
 The Tag Replacer is an open-source project under Peer Production License.  You can find and download the source code from this GitHub repository ([https://github.com/cubeghost/tagreplacer](https://github.com/cubeghost/tagreplacer)).
 
@@ -166,7 +165,7 @@ The Tag Replacer is an open-source project under Peer Production License.  You c
 
 #### TumblrTree
 
-![TumblThree demo screenshot](/images/posts/tumblr/TumblThree.png)
+{% include picture.html img="tumblr/TumblThree" ext="png" alt="TumblThree demo screenshot" %}
 
 **[TumblThree](https://www.jzab.de/content/tumblthree)** is a _free and open-source_ Tumblr Blog Backup Application for Windows. You can download both its source codes and executable files from [this GitHub repository](https://github.com/TumblThreeApp/TumblThree/releases) ([https://github.com/TumblThreeApp/TumblThree/releases](https://github.com/TumblThreeApp/TumblThree/releases)).
 
@@ -180,11 +179,11 @@ To use the application, unzip the downloaded _TumblThree-vx.x.x.x-Application.zi
 
 By default, the files will be downloaded to separate folders with the name of the blogs under the same directory of the application.
 
-![TumblThree demo screenshot](/images/posts/tumblr/TumblThree-resulted-folders.png)
+{% include picture.html img="tumblr/TumblThree-resulted-folders" ext="png" alt="TumblThree demo screenshot" %}
 
 The screenshot below shows the files been downloaded from Google Design's Tumblr blog.
 
-![TumblThree demo screenshot](/images/posts/tumblr/TumblThree-resulted-google-design-files.png)
+{% include picture.html img="tumblr/TumblThree-resulted-google-design-files" ext="png" alt="TumblThree demo screenshot" %}
 
 * * *
 

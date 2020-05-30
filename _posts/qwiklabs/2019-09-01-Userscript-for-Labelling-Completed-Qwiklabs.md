@@ -8,7 +8,9 @@ permalink: /blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs
 redirect_from:
  - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs
 tags: [Qwiklabs, userscript]
-image: images/projects/science-1408800_1280.jpg
+image: 
+  path: qwiklabs/science-1408800_1280
+  ext: jpg
 ---
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice.
@@ -28,17 +30,16 @@ The objectives of this project are:
 
 A prototype was developed using Tampermonkey <i class="fa fa-plug"></i> for Google Chrome <i class="fab fa-chrome"></i>. Tampermonkey is a Chrome extension which allows users easily create, edit and execute Javascript-based <i class="fa fa-code"></i> userscripts in the web browser. With the prototyped userscript, you can visually identify the completed catalogue items. A green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) shows at the end of a lab or quest title that is stored within the list of completed records. A demo screenshot is shown below.
 
-![demo image](https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png)
+{% include picture.html img="https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image" ext="png" alt="demo image" source="external" %}
 
 For more information, you can visit my GitHub repository <i class="fab fa-github"></i> ([chriskyfung/qwiklabs-complete-indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator)).
 
-
 * * *
 
-**Related posts:**
+**Related**
 
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
 
-- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
+- [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
 
-- _[Qwiklabs/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)_
+- [Qwiklabs/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)

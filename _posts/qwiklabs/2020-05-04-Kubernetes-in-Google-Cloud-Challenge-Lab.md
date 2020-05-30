@@ -7,7 +7,9 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP318 "Kubernetes in Google Cloud &#58; Challenge Lab". It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
-image: images/posts/qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png
+image: 
+   path: qwiklabs/qwiklab-GSP318-Multibranch_Pipeline
+   ext: png
 featured: true
 ---
 
@@ -63,6 +65,7 @@ _Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to
 
 Before clicking **Check my progress** in the lab page, don't forget to run the following commands to execute the marking script:
 
+{:.ml-3}
 ```bash
 cd ~/marking
 ./step1.sh
@@ -74,6 +77,7 @@ _Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to
 
 The lab instruction requires you to run the docker image built in task 1 and show the running application by **Web Preview** on port 8080. Based on the requirements, the docker command will be:
 
+{:.ml-3}
 ```bash
 docker run -p 8080:8080 --name valkyrie-app valkyrie-app:v0.0.1 &
 ```
@@ -82,10 +86,11 @@ docker run -p 8080:8080 --name valkyrie-app valkyrie-app:v0.0.1 &
 
 2. Click **Web Preview** to see the running app.
 
-   ![](/images/posts/qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1.png)
+   {% include picture.html img="qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1" ext="png" alt="" class="ml-4" %}
 
 After that, open a new Cloud Shell to run the `step2.sh` marking script.
 
+{:.ml-3}
 ```bash
 cd ~/marking
 ./step2.sh
@@ -108,7 +113,7 @@ docker push gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1
 
 After pushing the container, the `valkyrie-app` repository will appear in the Cloud Console as shown in the image below.
 
-![Push the Docker image of valkyrie-app in the Google Container Repository](/images/posts/qwiklabs/qwiklab-GSP318-container-repositories.png)
+{% include picture.html img="qwiklabs/qwiklab-GSP318-container-repositories" ext="png" alt="Push the Docker image of valkyrie-app in the Google Container Repository" %}
 
 ## Task 4: Create and expose a deployment in Kubernetes
 
@@ -182,12 +187,12 @@ In this task, you will need to:
    ```
 
 2. Connect to the Jenkins console using the commands below:
-   
+
    ```
    export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/component=jenkins-master" -l "app.kubernetes.io/instance=cd" -o jsonpath="{.items[0].metadata.name}")
    kubectl port-forward $POD_NAME 8080:8080 >> /dev/null &
    ```
-   
+
    If there is another running container, use the `docker` commands below to kill it:
 
    ```bash
@@ -228,7 +233,7 @@ Create a pipeline job that points to your */master branch on your source code.
 
 7. Your job configuration should look like this:
 
-   ![](/images/posts/qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png)
+   {% include picture.html img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline" ext="png" alt="" class="ml-4" %}
 
 #### 6.4 Modifying the pipeline definition
 
@@ -253,9 +258,9 @@ git push origin master
 
 Finally, manually trigger the build in the Jenkins console
 
-![](/images/posts/qwiklabs/qwiklab-GSP318-jenkins-build-queue.png)
+{% include picture.html img="qwiklabs/qwiklab-GSP318-jenkins-build-queue" ext="png" alt="" %}
 
-![](/images/posts/qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2.png)
+{% include picture.html img="qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2" ext="png" alt="" %}
 
 ## Summary
 
@@ -263,4 +268,4 @@ Do you feel this challenge lab quite difficult? You might if you don't get enoug
 
 * * *
 
-**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)

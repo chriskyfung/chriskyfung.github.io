@@ -1,4 +1,9 @@
-
+<!--
+Template Name:Affiliates
+Copyright:WowThemes.net,https://www.wowthemes.net
+Version:1.0.2
+License: https://www.wowthemes.net/freebies-license/
+-->
 
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
@@ -6,7 +11,14 @@
 <div class="col-md-6 grid-item">
 <div class="card">
     <a href="{{ post.url | absolute_url }}">
-        {% if post.image %} <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+        {% if post.image %} 
+            <picture>
+                {% unless post.image.ext == "svg" %}
+                <source type="image/webp" srcset="/images/posts/{{ post.image.path }}.webp" >
+                {% endunless %}
+                <img class="img-fluid" src="/images/posts/{{ post.image.path }}.{{ post.image.ext }}" alt="{{ post.title }}">
+            </picture>
+         {% endif %}
     </a>
     <div class="card-block">
         <h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>

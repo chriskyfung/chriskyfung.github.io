@@ -1,4 +1,9 @@
-
+<!--
+Template Name:Affiliates
+Copyright:WowThemes.net,https://www.wowthemes.net
+Version:1.0.2
+License: https://www.wowthemes.net/freebies-license/
+-->
 
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
@@ -7,7 +12,7 @@
     <div class="row">
         <div class="col-md-5 wrapthumbnail">
             <a href="{{ post.url | absolute_url }}">
-            <div class="thumbnail" style="background-image:url({{ site.baseurl }}/{{ post.image }});">
+            <div class="thumbnail" style="background-image:url(/images/posts/{{ post.image.path }}.{{ post.image.ext }});">
             </div>
             </a>
         </div>

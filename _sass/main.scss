@@ -76,6 +76,18 @@
   h3, h4 {
     margin-top: 3rem;
   }
+  del {
+    color: #999;
+    text-decoration-color: #f05f70;
+    a {
+      box-shadow: none;
+      border-bottom: 1px solid #ddd;
+      text-decoration: inherit;
+    }
+  }  
+  figure.shadow-none img {
+    box-shadow: none;
+  }
 }
 
 ul.tags.rounded-tags {

@@ -5,13 +5,10 @@ author: chris
 date: 2014-06-13
 category: Atomistic
 tags: [lammps, email, command-line]
-hideimage: true
+image:
+  path: lammps/lammps_send_email_transparent
+  ext: png
 ---
-
-<div style="background-color:#ccc;">
-   <img src="/images/posts/lammps/lammps-send-email.webp" alt="image: send email from Lammps"/>
-</div>
-
 
 Molecular dynamics simulations often take long computational times, from several hours to a few days. It is a boring job to monitor the progress of simulations. Very often, we switch to do other work on another computer, but you may be anxious to see the simulation results. So, how can we better spend our time and focus on our research work? Here is one solution to allow the LAMMPS to send you an email, so you can no longer actively checking the progress of simulations. It is also important to minimize the idle time and maximize the utility of your computer.
 
@@ -27,11 +24,15 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 
 2. Next, we have to add a line at the end of our LAMMPS input script.
 
-   `shell echo “Email Content“ | mail -s "Title" to-this-email-address`
+   ```bash
+   shell echo “Email Content“ | mail -s "Title" to-this-email-address
+   ```
 
-  For examples,
+   For examples,
   
-  `shell echo "Simulation has completed" | mail -s "LAMMPS - simulation done" address@email.com`
+   ```bash
+   shell echo "Simulation has completed" | mail -s "LAMMPS - simulation done" address@email.com
+   ```
   
   You can add this line in various places if you want to know the progress of a multi-stage simulation.
 
@@ -39,6 +40,8 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 
 I have tested this method in Windows. But the same concept should also work in Windows. I found a web page here (https://www.wikihow.com/Send-Email-Using-Telnet), which describes how to use the cmd prompt and telnet command to ping an SMTP server and send an email. You can try this if you like running LAMMPS in Windows.
 
+{% include picture.html img="lammps/messager" ext="png" alt="messager" class="text-center shadow-none" %}
+
 * * *
 
-Related post: _[Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables](/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables)_
+**Related**: [Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables](/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables)

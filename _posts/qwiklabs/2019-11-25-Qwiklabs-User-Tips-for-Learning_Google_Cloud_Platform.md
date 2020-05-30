@@ -2,19 +2,20 @@
 layout: post
 title: "Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips (2020)"
 date: 2020-2-22 22:10
+last_modified_at: 2020-04-25
 author: chris
 category: Cloud
 tags: [Qwiklabs, Google Cloud, user tips, learning map]
 permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
-image: images/posts/qwiklabs/qwiklabs-badges.jpg
+image: 
+   path: qwiklabs/qwiklabs-badges
+   ext: jpg
 featured: true
 ---
 
 <!--more-->
-
-_Last update: 2020-04-25_
 
 ## What is Qwiklabs
 
@@ -33,13 +34,11 @@ After you logged in to Qwiklabs, you can see there are five training categories,
 - Machine Learning
 - Security, Backup & Recovery
 
-![Five default training catagories defined by Qwiklabs](/images/posts/qwiklabs/qwiklabs-default-catagories.png)
+{% include picture.html img="qwiklabs/qwiklabs-default-catagories" ext="png" alt="Five default training catagories defined by Qwiklabs" %}
 
 You can start your training based on your goal and purpose, or find the quests for GCP using the filter function available on the Catalog page. Qwiklabs grouped different kinds of labs into 56 quests for learning GCP, and divided them to 4 levels: Introductory, Fundamental, Advanced, and Expert. You may also look for the resources by search, but the results are sorted by relevance rather than an appropriate order for study or learning. As a result, I tried to organise the Qwiklabs quests to be a learning map to trace the connections among them.
 
-![Using filter to find quests for Google Cloud Platform on Qwiklabs Catalog page](/images/posts/qwiklabs/qwiklabs-catalog-with-quest-filter-for-gcp.png)
-
-<br>
+{% include picture.html img="qwiklabs/qwiklabs-catalog-with-quest-filter-for-gcp" ext="png" alt="Using filter to find quests for Google Cloud Platform on Qwiklabs Catalog page" %}
 
 ## Visual Map of Qwiklabs GCP Quests
 
@@ -48,27 +47,23 @@ I spent about three months to take all the Qwiklabs quests for Google Cloud Plat
 {% include qwiklabs-quests-map-2020-4-25.html %}
 <p class="img-caption">Learning map of GCP quests (keep update)</p>
 
-<br>
-
 ## Custom Tool for Labelling Completed Labs and Quests
 
 As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results (https://www.qwiklabs.com/catalog). I desired to make a straight-forward way to identify the catalogue, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Complete Indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator)".
 
 The prototyped tool can help you visually identify the completed catalogue items with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) showing at the end of a lab or quest title. A demo screenshot is shown below.
 
-![demo image](https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image.png)
+{% include picture.html img="https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image" ext="png" alt="demo image" source="external" %}
 
 For more information, you can read my post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs)"_.
-
-<br>
 
 ## Tips for Preparing a Lab
 
 Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Medium](https://medium.com/@qwiklabs) ([@qwiklabs](https://medium.com/@qwiklabs)). Also, you may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
 
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+</center>
 
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
@@ -138,11 +133,7 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
     </tbody>
 </table>
 
-<br>
-
-* * *
-
-**Related posts:**
+## **See Also**
 
 _Resources:_
 
@@ -167,15 +158,4 @@ _Quizzes Answers:_
 
 - [Qwiklab/Logbook: Controlling Your Costs [Quiz]](/blog/qwiklabs/Controlling-Your-Costs-Quiz)
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
-
-<script>
-$(document).ready( function () {
-    $('#quest-list').DataTable();
-    $('#lab-list').DataTable();
-} );
-</script>
+{% include datatables.html %}

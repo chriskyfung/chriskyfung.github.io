@@ -6,7 +6,10 @@ author: chris
 category: Announcement
 tags: [changelog, Qwiklabs, Medium]
 summary: Follow me on Medium, the Qwiklabs tips are now reissued now to it!
-image: images/posts/qwiklabs/medium_profile_top.png
+image: 
+   path: qwiklabs/medium_profile_top
+   ext: png
+   hide: true
 featured: true
 ---
 
@@ -16,4 +19,4 @@ I will keep my blogs as the primary sources, while I hope you can also enjoy the
 
 <!--more-->
 
-![snapshot of my medium profile page on 2019-10-22](/images/posts/qwiklabs/medium_profile.png)
+{% include picture.html img="qwiklabs/medium_profile" ext="png" alt="snapshot of my medium profile page on 2019-10-22" %}

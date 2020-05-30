@@ -5,7 +5,9 @@ author: chris
 date: 2014-07-04
 category: Research
 tags: [journal ranks]
-image: images/posts/science/sjr_widget_array.png
+image: 
+   path: science/sjr_widget_array
+   ext: png
 ---
 
 Impact factor is very useful for us to rank SCI journals. However, I can't access Journal Citation Report (JCR) outside my campus. The browsed section losses if the session time out or restart the browser. Rather than search the information of a journal on the JCR site every time, I made a list to store the journal names and their impact factors in an excel file.  Although I can find the impact factors of the journals that I commonly read, the table does not help me to remember the ranks easily.
@@ -18,4 +20,6 @@ What I want to introduce today is the SJR widget. I have found that SJR provides
 
 Now I feel more sensitive to remember the journal ranks. How do you think about this method?
 
-![SJR widget array](/images/posts/science/sjr_widget_array.png)
+<hr>
+
+**Related**: [An Inspiring TED video talking about how we should rethink about the unknown in the postgraduate or research study](/blog/2014/10/05/An-Inspiring-TED-video-talking-about-how-we-should-rethink-about-the-unknown-in-the-postgraduate-or-research-study)
