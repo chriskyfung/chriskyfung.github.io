@@ -31,7 +31,7 @@ post_class: post-template
                         {% assign sortedCategories = page.categories | sort %}
                         {% for category in sortedCategories %}
                         <li>
-                         <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>
+                         <a href="/category/{{ category | slugify }}/">{{ category }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -46,7 +46,16 @@ post_class: post-template
             <!-- Post Featured Image -->
             {% if page.hideimage %}
             {% else %}
-                {% if page.image %}<img class="featured-image img-fluid" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+            {% if page.image %}
+            {% unless page.image.hide %}
+            <picture>
+                {% unless page.image.ext == "svg" %}
+                <source type="image/webp" srcset="/images/posts/{{ page.image.path }}.webp" >
+                {% endunless %}
+                <img class="featured-image img-fluid" src="/images/posts/{{ page.image.path }}.{{ page.image.ext }}" alt="{{ page.title }}">
+            </picture>
+            {% endunless %}
+            {% endif %}
             {% endif %}
             <!-- End Featured Image -->
 
