@@ -14,7 +14,7 @@ I like storing each set of the simulation results to a well-labelled folder. Thi
 
 It is very useful as it allows to call the system commands and other programs.
 
-![image: New folder with LAMMPS scripts](/images/posts/lammps/new_3folder_80x80.png)
+{% include picture.html img="lammps/new_3folder_80x80" ext="png" alt="image: New folder with LAMMPS scripts" class="text-center" %}
 
 <!--more-->
 
@@ -66,8 +66,8 @@ $ lammps_linux  -v potential  y1990 -v vx  1.0 < in.script
 
 ### Results
 
-As a result, the LAMMPS will create a folder **"1.0x100_m_s-1_Tersoff_y1990"** in the current directory. All the log, restart and dump files for this set of variables will be contained under this folder.
+As a result, the LAMMPS will create a folder `1.0x100_m_s-1_Tersoff_y1990` in the current directory. All the log, restart and dump files for this set of variables will be contained under this folder.
 
 * * *
 
-Related post: _[How to Send a Notification from a LAMMPS Simulation to Your Email](/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email)_
+**Related**: [How to Send a Notification from a LAMMPS Simulation to Your Email](/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email)

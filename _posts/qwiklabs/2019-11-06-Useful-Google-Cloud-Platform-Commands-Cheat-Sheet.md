@@ -14,21 +14,22 @@ permalink: /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
 
 ## Install gcloud command-line tool
 
-**For Linux**
+#### For Linux
 
-Visit https://cloud.google.com/sdk/docs/#linux to obtain the download link of Google Cloud SDK and download the latest package. Unzip the file, and run these commands:
+Visit [https://cloud.google.com/sdk/docs/#linux](https://cloud.google.com/sdk/docs/#linux) to obtain the download link of Google Cloud SDK and download the latest package. Unzip the file, and run these commands:
 
 ```bash
 ./google-cloud-sdk/install.sh
 ./google-cloud-sdk/bin/gcloud init
 ```
 
-**For Debian / Ubuntu**
+#### For Debian / Ubuntu
 
 Follow the instruction below to install the Cloud SDK:
 
 1. Add the Cloud SDK distribution URI as a package source:
 
+{:ml-5}
 ```bash
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 
@@ -36,9 +37,10 @@ sudo apt-get install apt-transport-https ca-certificates
 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 ```
-
+{:start="2"}
 2. Update and install the Cloud SDK:
 
+{:ml-5}
 ```bash
 sudo apt-get update && sudo apt-get install google-cloud-sdk
 
@@ -49,7 +51,7 @@ gcloud init
 
 ## The `gcloud` Commands Cheat Sheet
 
-### Find the Project ID
+#### Find the Project ID
 
 The most frequently `gcloud` command I used in Google Cloud Shells is to set the project ID as an environment variable with the Linux export command:
 
@@ -71,7 +73,7 @@ gsutil mb gs://${BUCKET}
 
 Every bucket name must be unique across the entire Google Cloud Storage. Using the project ID as prefix or suffix is a good practice for uniqueness and consistency of the bucket names.
 
-### Extract a value from a JSON output of a **gcloud** command
+#### Extract a value from a JSON output of a **gcloud** command
 
 ```bash
 gcloud compute ... --format=json | jq -r '<key>')
@@ -79,7 +81,7 @@ gcloud compute ... --format=json | jq -r '<key>')
 
 `jq` is a lightweight and flexible command-line JSON processor. With the `-r` option, it outputs raw strings, not JSON texts. Use `jq --help` to show the help, or visit [its official site](https://stedolan.github.io/jq/) for more details.
 
-### Find the Service Account for Compute Engine API
+#### Find the Service Account for Compute Engine API
 
 Besides the project ID, a service account email is required for several command-line tools, like creating a VM instance to GCE. You can extract the service account for the Compute Engine API using the following code:
 
@@ -91,7 +93,7 @@ export SERVICE_ACCOUNT=$(gcloud --project=$PROJECT_ID \
 echo $SERVICE_ACCOUNT
 ```
 
-### Find the used IP address
+#### Find the used IP address
 
 ```bash
 export USED_IP_ADDRESS=$(gcloud compute addresses describe $USED_IP \
@@ -100,7 +102,7 @@ export USED_IP_ADDRESS=$(gcloud compute addresses describe $USED_IP \
 echo $USED_IP_ADDRESS
 ```
 
-### Change default zone
+#### Change default zone
 
 To set a default zone to use when working with zonal Compute Engine resources, such as us-west1-b, run:
 
@@ -114,9 +116,9 @@ To list all zones in a project in table form, run:
 gcloud compute zones list
 ```
 
-For more details, please read https://cloud.google.com/sdk/gcloud/reference/compute/zones/list .
+For more details, please read [gcloud compute zones list](https://cloud.google.com/sdk/gcloud/reference/compute/zones/list) in Cloud SDK Documentation.
 
-### SHH into a Compute Engine server
+#### SHH into a Compute Engine server
 
 ```bash
 gcloud compute ssh user@your-server-name-1-vm
@@ -124,7 +126,7 @@ gcloud compute ssh user@your-server-name-1-vm
 
 _Replace `user` and `your-server-name-1-vm` with yours._
 
-### Download a folder from the server through SCP
+#### Download a folder from the server through SCP
 
 ```bash
 gcloud compute scp --recurse user@your-server-name-1-vm:/path/to/the/directory/that/you/want/to/download/to/your/local/machine/ ./
@@ -132,7 +134,7 @@ gcloud compute scp --recurse user@your-server-name-1-vm:/path/to/the/directory/t
 
 _Replace `user`, `your-server-name-1-vm` and `/path/to/the/directory/that/you/want/to/download/to/your/local/machine/` with yours._
 
-### Create a new Kubernetes Cluster
+#### Create a new Kubernetes Cluster
 
 The following command is an example to create a new Kubernetes cluster named `my-cluster` with _two_ nodes (_N1 standard 1_) in the zone **us-central1-f**:
 
@@ -143,7 +145,7 @@ gcloud container clusters create my-cluster \
 --zone us-central1-f
 ```
 
-You will receive warnings in the output that can be safely ignored. For more details, please read https://cloud.google.com/sdk/gcloud/reference/container/clusters/create .
+You will receive warnings in the output that can be safely ignored. For more details, please read [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create) in Cloud SDK Documentation.
 
 * * *
 
@@ -151,19 +153,19 @@ You will receive warnings in the output that can be safely ignored. For more det
 
 **gsutil** is the command-line Google Storage utilities. Equivalent to `aws s3` but for the Google Cloud Platform, it allows you to access Google Cloud Storage from the command line.
 
-### Create a multi-regional bucket
+#### Create a multi-regional bucket
 
 ```bash
 gsutil mb -c multi_regional gs://${BUCKET}
 ```
 
-### Copy local file(s)/directory into a GCS bucket
+#### Copy local file(s)/directory into a GCS bucket
 
 ```bash
 gsutil cp <filename> gs://${BUCKET}
 ```
 
-### List all your buckets
+#### List all your buckets
 
 ```bash
 gsutil ls
@@ -179,7 +181,7 @@ gsutil help
 
 ## Terraform Commands Cheat Sheet
 
-### Switch the version of Terraform with tfswitch
+#### Switch the version of Terraform with tfswitch
 
 Confirm your Terraform version by using:
 
@@ -205,7 +207,7 @@ echo "0.11.14" >> .tfswitchrc
 exit
 ```
 
-### Run Terraform
+#### Run Terraform
 
 ```bash
 terraform init
@@ -231,7 +233,7 @@ The **terraform apply** command is used to apply the changes required to reach t
 
 ## Other useful Linux Commands
 
-### Create a text file with content
+#### Create a text file with content
 
 ```bash
 cat > <your-filename> <<EOF
@@ -245,6 +247,6 @@ _Replace `<your-filename>` and `/*text contents*/` with yours._
 
 * * *
 
-**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+This list will be kept updated. If you need more, please leave me your feedback, questions, comments, suggestions below.
 
-> This list will be kept updated. If you need more, please leave me your feedback, questions, comments, suggestions below.
+**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)

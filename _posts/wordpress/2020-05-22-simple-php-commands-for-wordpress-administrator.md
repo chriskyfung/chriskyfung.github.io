@@ -2,11 +2,13 @@
 layout: post
 title: Simple PHP commands for WordPress administrators
 date: 2020-05-22 10:40
-category: WordPress
+category: [Linux, Web Development]
 author: chris
 tags: [WordPress, PHP]
 permalink: /blog/wordpress/simple-php-commands-for-wordpress-administrator
-image: images/posts/wordpress/wordpress-1863504.svg  
+image: 
+   path: wordpress/wordpress-1863504
+   ext: svg
 ---
 
 <!--more-->

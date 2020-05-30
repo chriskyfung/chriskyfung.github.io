@@ -9,7 +9,9 @@ permalink: /blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab
 redirect_from:
  - /blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab
 excerpt: A lab summary of qwiklab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab" | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
-image: images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png
+image: 
+   path: qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page
+   ext: png
 ---
 
 <!--more-->
@@ -20,13 +22,11 @@ This time is about the easiest lab in the challenge quest -- **GSP101** _"[Googl
 
 **Note**: Please DO NOT confuse the current lab with _GSP313 Google Cloud Essentials: Challenge Lab_. If you're looking for that logbook, please [click on the link here](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab).
 
-<br>
-
 ## Brief Introduction of Challenge Scenario
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP101.png)
+{% include picture.html img="qwiklabs/score_box_of_qwiklabs_GSP101" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101" class="shadow-none text-center" %}
 
 The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -36,8 +36,6 @@ The screenshot above shows that there are 6 steps required for completing this l
 
 3. Test your server that shows a `"Hello World!"` page.
 
-<br>
-
 ## Step 1 - Create a VM instance
 
 To create a Compute Engine instance, the easiest way is through the GCP web console. In the Console, navigate to _Compute Engine_ > _VM instances_. When you create a new VN instance,
@@ -45,15 +43,13 @@ To create a Compute Engine instance, the easiest way is through the GCP web cons
 - Make sure you give the instance a name, called `apache`, and
 - Select `Allow HTTP traffic` under the Firewall section.
 
-![Create a GCP VM instance called apache via GCP web console](/images/posts/qwiklabs/qwiklabs-GSP101-step1-create-GCP-VM-instance.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP101-step1-create-GCP-VM-instance" ext="png" alt="Create a GCP VM instance called apache via GCP web console" %}
 
-![Select allow HTTP traffic in the firewall setting](/images/posts/qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting" ext="png" alt="Select allow HTTP traffic in the firewall setting" %}
 
 You can leave other fields with the default settings, then click **Create**.
 
-![Check your progress: Created Compute Engine instance, called apache](/images/posts/qwiklabs/qwiklabs-GSP101-check-progress1-VM-created.png)
-
-<br>
+{% include picture.html img="qwiklabs/qwiklabs-GSP101-check-progress1-VM-created" ext="png" alt="Check your progress: Created Compute Engine instance, called apache" %}
 
 ## Step 2 - Install Apache and Overwrite Default Web Page
 
@@ -73,10 +69,13 @@ Install the apache2 package:
 sudo apt-get install apache2 -y
 ```
 
-<br> 
+<br>
+
 Copy the External IP of the instance to your web browser. You should see an Apache2 Debian Default Page if the web server is successfully installed.
 
-![Apache2 Debian Default Page](/images/posts/qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance" ext="png" alt="Apache2 Debian Default Page" %}
+
+<br>
 
 Finally, you have to overwrite the default web page to rendering with **"Hello World!"**:
 
@@ -86,7 +85,7 @@ echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee
 
 Refresh the web page in your browser,
 
-![Hello World!](/images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page" ext="png" alt="Hello World!" %}
 
 Congratulations! You should accomplish the lab if you follow all the above steps.
 
@@ -96,6 +95,8 @@ This post has also been published to Medium. If you like to read and take notes 
 
 Creating a Compute Engine instance as a web server using the web console is pretty basic. It is always a good start for you to build anything from scratch, and manually install packages via an SSH terminal. Alternatively, you can initialize identical instances with a startup script automatically, and you can practise it in the next lab, _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)_.
 
-**Related post:**
+* * *
 
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
+**See Also**
+
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)

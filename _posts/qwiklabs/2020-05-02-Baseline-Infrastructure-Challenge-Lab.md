@@ -7,7 +7,9 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP315 "Baseline-Infrastructure-Challenge-Lab &#58; Challenge Lab".
-image: images/posts/qwiklabs/map.jpg
+image: 
+   path: qwiklabs/map
+   ext: jpg
 ---
 
 <!--more-->
@@ -31,17 +33,13 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 2. Click Create a bucket.
 
-<br>
-
 ## Task 2: Create a Pub/Sub topic
 
 1. In the console, click the **Navigation menu** > **Pub/Sub** > **Topics**.
 
 2. Click **Create a topic**.
 
-Make sure you remember the topic name, which will be used in Task 3.
-
-<br>
+\* Make sure you remember the topic name, which will be used in Task 3.
 
 ## Task 3: Create the Cloud Function
 
@@ -51,6 +49,7 @@ Make sure you remember the topic name, which will be used in Task 3.
 
 3. In the Create function dialog, enter the following values:
 
+{:.table}
    | Field               |   Value       |
    |---------------------|---------------|
    | Function to execute | thumbnail     |
@@ -63,9 +62,7 @@ Make sure you remember the topic name, which will be used in Task 3.
 
 5. Upload a JPG or PNG image file to the bucket created in Task 1.
 
-   ![](/images/posts/qwiklabs/map.jpg)
-
-<br>
+   {% include picture.html img="qwiklabs/map" ext="jpg" alt="" class="ml-4" %}
 
 ## Task 4: Remove the previous cloud engineer
 
@@ -75,12 +72,11 @@ Make sure you remember the topic name, which will be used in Task 3.
 
 3. Click the pencil icon, select **Delete**.
 
-<br>
-
 ## Summary
 
-All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Google Cloud Essentials: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab). 9 credits! Is this cheating money?
+All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Google Cloud Essentials: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab).<br>
+**9 credits!** Is this cheating money?
 
 * * *
 
-**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)

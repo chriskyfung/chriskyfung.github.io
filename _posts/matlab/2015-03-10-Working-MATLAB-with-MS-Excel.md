@@ -5,7 +5,9 @@ author: chris
 date: 2015-03-10
 category: Data-Science
 tags: [MATLAB, MS Excel]
-image: images/posts/matlab/excel_addin_menu.png
+image: 
+   path: matlab/excel_addin_menu
+   ext: png
 hideimage: true
 permalink: /blog/matlab/Working-MATLAB-with-MS-Excel
 redirect_from:
@@ -22,23 +24,22 @@ This is a tutorial to show the installation of **Spreadsheet Link EX for use wit
 
 2. Click Open. In the Add-Ins dialog box, the Spreadsheet Link EX for use with MATLAB and Excel checkbox is selected.
 
-![image: MS Excel Add-in Dialog](/images/posts/matlab/excel_addins_available.png)
- 
+{% include picture.html img="matlab/excel_addins_available" ext="png" alt="image: MS Excel Add-in Dialog" class="ml-5 mb-5" %}
 
 The **Spreadsheet Link EX Add-In** loads now and with each subsequent Excel session. The MATLAB group appears on the top right of the Home tab in your Excel worksheet. Open the Menu and click **Start MATLAB**.
 
-![image: Menu of MATLAB Spreadsheet Link EX Add-In in Excel Toolbar](/images/posts/matlab/excel_addin_menu.png)
-
+{% include picture.html img="matlab/excel_addin_menu" ext="png" alt="image: Menu of MATLAB Spreadsheet Link EX Add-In in Excel Toolbar" class="mb-5 text-center" %}
 
 The **MATLAB Command Window** button appears on the Microsoft Windows taskbar. Spreadsheet Link EX is ready for use.
 
-![image: Windows taskbar with MS Excel and MATLAB](/images/posts/matlab/ml_cmd_window_taskbar.excel2010.png)
+{% include picture.html img="matlab/ml_cmd_window_taskbar.excel2010" ext="png" alt="image: Windows taskbar with MS Excel and MATLAB" class="mb-5 text-center" %}
  
-
 Now, you can see a list of the MATLAB options in the context menu when you right-click a cell in Excel.
 
-![image: context menu of MATLAB Spreadsheet Link EX Add-In](/images/posts/matlab/excel_addin_menu_right_click.png)
+{% include picture.html img="matlab/excel_addin_menu_right_click" ext="png" alt="image: context menu of MATLAB Spreadsheet Link EX Add-In" class="mb-5" %}
 
-**Related posts:**
+* * *
+
+**Related**
 - [Matrix Conversion between MATLAB and Microsoft Equation Editor](/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation)
 - [Expand shorten URLs in MATLAB](/blog/matlab/expand-twitter-short-url)

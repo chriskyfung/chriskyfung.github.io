@@ -14,9 +14,9 @@ excerpt: A short note about my favorite terminal application and the commands to
 
 <!--more-->
 
-## My favorite terminal application
+### My favorite terminal application
 
-![Terminator icon](/images/posts/linux/terminator.png)
+{% include picture.html img="linux/terminator" ext="png" alt="Terminator icon" %}
 
 [Terminator](https://launchpad.net/terminator/) allows you to open multiple terminals in one window, which can boost your productivity by operating two or more shells side by side or in grids.
 
@@ -28,6 +28,7 @@ sudo apt-get install terminator
 
 **Shortcut keys:**
 
+{:.table .table-hover}
 |          Action         |   Shortcut   |
 |-------------------------|--------------|
 | Split horizontally      | Shift+Ctrl+O |
@@ -51,9 +52,9 @@ sudo apt-get install terminator
 
 * * *
 
-## Useful commands
+### Useful commands
 
-### Show running processes in Linux
+#### Show running processes in Linux
 
 - `top`
 - `ps -A`
@@ -62,11 +63,11 @@ For more infomation, please find from:
 - [Show All Running Processes in Linux using ps/htop commands - nixCraft](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/)
 - [How to Manage Processes from the Linux Terminal: 10 Commands You Need to Know - How-To Geek](https://www.howtogeek.com/107217/how-to-manage-processes-from-the-linux-terminal-10-commands-you-need-to-know/)
 
-### Get root permission for GUI file manager
+#### Get root permission for GUI file manager
 
 - `sudo nautilus`
 
-### Find previous commands
+#### Find previous commands
 
 - `history`
   Display a list of previous commands
@@ -75,7 +76,7 @@ For more infomation, please find from:
 - `Ctrl+R` Find the historical commands
    Suggest a previous command that starts with the chars as you type
 
-### Execute a shell script
+#### Execute a shell script
 
 In Ubuntu, a shell script is a .sh file that contains a series of commands in a Unix shell, similar to a batch (.bat) file in Windows. In a .sh file, it is often typed with `#! /bin/bash` in the first line to indicate that is a [bash script](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). For example,
 
@@ -104,14 +105,16 @@ After that, you can `./` in front of the filename to execute the shell file in t
 ./test.sh
 ```
 
-### Related
+* * *
 
-- [Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher](/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu)
-
-### Read More
+**Read More**
 
 - [Linux Commands - Complete Guide - LinOxide](https://linoxide.com/linux-how-to/linux-commands-brief-outline-examples/)
 - [Beginners/BashScripting - Community Help Wiki - Official Ubuntu Documentation](https://help.ubuntu.com/community/Beginners/BashScripting)
 - [How to Find Files on Linux With 3 Easy Commands - MakeUseOf](https://www.makeuseof.com/tag/3-examples-teach-find-files-linux/)
 - [5 commands to check memory usage on Linux - BinaryTides](https://www.binarytides.com/linux-command-check-memory-usage)
 - [10 Useful du (Disk Usage) Commands to Find Disk Usage of Files and Directories - TecMint](https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/)
+
+**See Also**
+
+- [Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher](/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu)

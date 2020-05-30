@@ -7,7 +7,9 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
 excerpt: Hints for qwiklab GSP313 "Google Cloud Essential &#58; Challenge Lab" | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
-image: images/posts/qwiklabs/qwiklabs-GSP313-task1.png
+image: 
+   path: qwiklabs/qwiklabs-GSP313-task1
+   ext: png
 ---
 
 <!--more-->
@@ -36,18 +38,18 @@ This task is simple. Make sure you create the VM instance with:
 - Zone: **us-east1-b**
 - Machine Type: **f1-micro**
 
-![Create a project VM instance, called nucleus-jumphost in Google Cloud Platform](/images/posts/qwiklabs/qwiklabs-GSP313-task1.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP313-task1" ext="png" alt="Create a project VM instance, called nucleus-jumphost in Google Cloud Platform" %}
 
 ## Task 2: Create a Kubernetes service cluster
 
-_Hint_: Refer and modify the procedures in the lab GSP100[Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog).
+_Hint_: Refer and modify the procedures in the lab GSP100 [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog).
 
 Make sure you:
 
 - create the cluster to the zone **us-east1-b** by setting your default compute zone correctly;
 - deploy the Docker container **hello-app:2.0**, instead of _hello-app:1.0_.
 
-![hello-app deployed on a GCP Kubernetes cluster](/images/posts/qwiklabs/qwiklabs-GSP313-task2.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP313-task2" ext="png" alt="hello-app deployed on a GCP Kubernetes cluster" %}
 
 ## Task 3: Setup an HTTP load balancer
 
@@ -60,7 +62,7 @@ Make sure you:
 
 The deployed nginx web servers:
 
-![Nginx web servers deployed on Google Cloud Platform](/images/posts/qwiklabs/qwiklabs-GSP313-task3.png)
+{% include picture.html img="qwiklabs/qwiklabs-GSP313-task3" ext="png" alt="Nginx web servers deployed on Google Cloud Platform" %}
 
 ### Summary
 
@@ -70,4 +72,4 @@ If you still have questions, you can leave a comment below.
 
 * * *
 
-**Related:** [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)

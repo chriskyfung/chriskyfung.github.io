@@ -8,7 +8,9 @@ permalink: /blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 redirect_from:
  - /blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook]
-image: images/posts/qwiklabs/qwiklabs-GSP303-diagram.png
+image: 
+   path: qwiklabs/qwiklabs-GSP303-diagram
+   ext: png
 ---
 
 The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challenging lab that I took in Qwiklabs (here is the [link to the lab](https://www.qwiklabs.com/catalog?keywords=GSP303)). It was a tricky one that I failed and did it a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
@@ -21,7 +23,7 @@ The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challe
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-![Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP303](/images/posts/qwiklabs/score_box_of_qwiklabs_GSP303.png)
+{% include picture.html img="qwiklabs/score_box_of_qwiklabs_GSP303" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP303" class="shadow-none text-center" %}
 
 The screenshot above shows that there are six steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -37,21 +39,15 @@ The screenshot above shows that there are six steps required for completing this
 
 6. The `vm-securehost` is running Microsoft IIS web server software.
 
-
-<div>
-
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nyimrSBKpr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><small>Configure Secure RDP using a Windows Bastion Host - YouTube</small>
-
-</div>
+</center>
 
 <br>
 
 You can manually create and configure the cloud resources using the GCP console, but [Terraform](https://www.terraform.io/) is a more robust approach to deploy the solution automatically with appropriate declarative configuration files.
 
-![Schematic Diagram of the Secure RDP Windows Network](/images/posts/qwiklabs/qwiklabs-GSP303-diagram.png)
-<br><small>Schematic Diagram of the Secure RDP Windows Network</small>
-
-<br>
+{% include picture.html img="qwiklabs/qwiklabs-GSP303-diagram" ext="png" alt="Schematic Diagram of the Secure RDP Windows Network" caption="Fig. Schematic Diagram of the Secure RDP Windows Network" %}
 
 ## Deploy the infrastructure on GCP with Terraform
 
@@ -261,8 +257,8 @@ This post has also been published to Medium. If you like to read and take notes 
 
 [Next lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you will be examined the skils for building and deploying a containerized application with Docker and Google Kubernetes Engine.
 
-**Related posts:**
+* * *
 
-- _[Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)_
-
-- _[Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)_
+**See Also**
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+- [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
