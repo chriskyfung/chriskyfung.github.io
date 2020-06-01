@@ -31,6 +31,27 @@ License: https://www.wowthemes.net/freebies-license/
                 </section>
             </div>
         {% endunless %}
+
+        {% unless page.url == "/blog/" or page.url contains "/blog/page"%}
+            <!-- Recent Posts -->
+            <div class="sidebar-section">
+                <h5><span>Recent Posts</span></h5>
+                
+                <section class="recent-posts">
+
+                    <div class="row listfeaturedtag">
+
+                    {% for post in site.posts limit:4 %}
+
+                            {% include featuredlist.html %}
+
+                    {% endfor %}
+
+                    </div>
+
+                </section>
+            </div>
+        {% endunless %}
                   
         <div class="sidebar-section">
             <h5><span>Useful</span></h5>

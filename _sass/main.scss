@@ -105,9 +105,22 @@ ul.tags.rounded-tags {
 
 /* featuredlist.html */
 .listfeaturedtag {
+  .card{
+    .thumbnail img {
+      width: 500px;
+      height: 258px;
+      object-fit: cover;
+    }
+  }
   .card-list{
     height: 150px;
     width: 100%;
+
+    .thumbnail img {
+      width: 500px;
+      height: 150px;
+      object-fit: cover;
+    }
 
     h2.card-title {
       font-size: 1rem;
