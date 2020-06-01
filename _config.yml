@@ -36,6 +36,7 @@ plugins:
   - jekyll-loading-lazy
   - jekyll-webp
   - jekyll-gzip
+  - jekyll-redirect-from
         
 # Archives
 jekyll-archives:
