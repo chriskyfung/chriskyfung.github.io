@@ -64,10 +64,12 @@ License: https://www.wowthemes.net/freebies-license/
             </ul>
         </div>
 
+        {% unless page.url == "/" or page.url == "/blog/" or page.url contains "/blog/page"%}
         <div class="sidebar-section">
             <h5><span>Recommended for You</span></h5>
             <div class="addthis_relatedposts_inline"></div>
         </div>
+        {% endunless %}
 
         <div class="sidebar-section">
             <h5><span><i class='fab fa-youtube'></i> My YouTube Channels</span></h5>
