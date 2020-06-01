@@ -13,7 +13,7 @@ baseurl: ''
 email: ''
 google_analytics: 'UA-72575541-9'
 disqus: 'chriskyfung'
-sharethis: '<script async defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>'
+sharethis: '<script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>'
 
 # Authors
 authors:
@@ -35,6 +35,7 @@ plugins:
   - jekyll-archives
   - jekyll-loading-lazy
   - jekyll-webp
+  - jekyll-gzip
         
 # Archives
 jekyll-archives:
@@ -49,6 +50,8 @@ jekyll-archives:
 # Other
 markdown: kramdown
 highlighter: rouge
+environment: production
+
 jekyll-minifier:
   exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
 

@@ -5,17 +5,14 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.6)
-    cssminify2 (2.0.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7-x64-mingw32)
-    execjs (2.7.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.12.2-x64-mingw32)
     forwardable-extended (2.6.0)
-    htmlcompressor (0.4.0)
     http_parser.rb (0.6.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
@@ -40,15 +37,11 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-gzip (2.4.2)
+      jekyll (>= 3.0, < 5.0)
     jekyll-loading-lazy (0.1.1)
       jekyll (>= 3.0, < 5.0)
       nokogiri (>= 1.10, < 2.0)
-    jekyll-minifier (0.1.10)
-      cssminify2 (~> 2.0)
-      htmlcompressor (~> 0.4)
-      jekyll (>= 3.5)
-      json-minify (~> 0.0.3)
-      uglifier (~> 4.1)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
@@ -59,9 +52,6 @@ GEM
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jekyll-webp (1.0.0)
-    json (2.3.0)
-    json-minify (0.0.3)
-      json (> 0)
     kramdown (2.2.1)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -98,8 +88,6 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2020.1)
       tzinfo (>= 1.0.0)
-    uglifier (4.2.0)
-      execjs (>= 0.3.0, < 3)
     unicode-display_width (1.7.0)
     wdm (0.1.1)
 
@@ -110,8 +98,8 @@ DEPENDENCIES
   jekyll-archives
   jekyll-feed
   jekyll-gist
+  jekyll-gzip
   jekyll-loading-lazy
-  jekyll-minifier
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap

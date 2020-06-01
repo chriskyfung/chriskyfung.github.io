@@ -19,5 +19,6 @@ group :jekyll_plugins do
     gem 'jekyll-gist'
     gem 'jekyll-loading-lazy'
     gem 'jekyll-webp'
+    gem 'jekyll-gzip'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
