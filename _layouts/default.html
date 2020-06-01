@@ -18,11 +18,25 @@ License: https://www.wowthemes.net/freebies-license/
 {% seo %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
-    
+
+<link rel="preload" href="https://pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="https://adservice.google.com.hk">
+<link rel="preload" href="https://tpc.googlesyndication.com">
+<link rel="preload" href="https://adservice.google.com">
+<link rel="preload" href="https://www.googletagservices.com">
+<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+<link rel="dns-prefetch" href="https://partner.googleadservices.com">
+<link rel="dns-prefetch" href="https://z.moatads.com">
+<link rel="dns-prefetch" href="https://www.google.comttp://tpc.googlesyndication.com">
+<link rel="dns-prefetch" href="http://cse.google.com">
+<link rel="dns-prefetch" href="http://clients1.google.com">
+<link rel="dns-prefetch" href="https://v1.addthisedge.com">
+<link rel="dns-prefetch" href="https://www.google.com">
+
+
 {{site.sharethis}}
     
 {% if jekyll.environment == 'production' %}    
@@ -50,7 +64,7 @@ License: https://www.wowthemes.net/freebies-license/
 
         <!-- Begin Logo -->
         <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy">
         </a>
         <!-- End Logo -->
 
@@ -181,7 +195,7 @@ License: https://www.wowthemes.net/freebies-license/
                 <div class="col-sm-3">
                 <div class="footer-widget">
                 <a id="footer-image" href="{{site.baseurl}}/contact">
-                <img class="pr-lg-3" src="{{ site.baseurl }}/assets/images/knowledge__flatline.svg">
+                <img class="pr-lg-3" src="{{ site.baseurl }}/assets/images/knowledge__flatline.svg" loading="lazy">
                 </a>
                 </div>
                 </div>
@@ -216,9 +230,9 @@ License: https://www.wowthemes.net/freebies-license/
                 <div class="footer-widget">
                     <h5 class="title">Disclosures</h5>
                     <!-- Copyscape Banner -->
-                    <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a></div>
+                    <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." loading="lazy" /></a></div>
                     <!-- Affiliate Disclouse -->
-                    <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120" style="margin: 5px;"/></a></div>
+                    <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120" style="margin: 5px;" loading="lazy" /></a></div>
                 </div>
                 </div>
             </div>
@@ -247,15 +261,15 @@ License: https://www.wowthemes.net/freebies-license/
     
 <script async src="/assets/js/jquery.min.js"></script>
     
-<script async defer src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     
-<script async defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script>
     
-<script async defer src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script async src="/assets/js/ie10-viewport-bug-workaround.js"></script>
     
-<script async defer type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script>
+<script defer type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script>
     
-<script async defer src="/assets/js/theme.js"></script>
+<script defer src="/assets/js/theme.js"></script>
     
 </body>
     
