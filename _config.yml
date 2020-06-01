@@ -8,7 +8,7 @@ favicon: 'assets/images/favicon.png'
 paginate: 12
 paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title
-timezone: Asia/Hong_Kong
+timezone: 'Asia/Hong_Kong'
 baseurl: ''
 email: ''
 google_analytics: 'UA-72575541-9'

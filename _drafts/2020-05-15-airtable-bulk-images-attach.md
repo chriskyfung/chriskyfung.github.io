@@ -3,7 +3,7 @@ layout: post
 title: Bulk import images to Airtable using scripting block
 date: 2020-05-15 14:38
 category: Productivity
-author: Chris KY Fing
+author: chris
 tags: [Airtable, user tips]
 summary: 
 ---
