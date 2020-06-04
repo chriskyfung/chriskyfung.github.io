@@ -39,7 +39,8 @@ Before the following steps, please read [Google's help document](https://support
 Run the following commands to download and install the Chrome Browser,
 
 ```bash
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.
+
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
@@ -49,7 +50,9 @@ Run the following commands to download and install the host component of Chrome 
 
 ```bash
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+
 sudo dpkg -i chrome-remote-desktop_current_amd64.deb
+
 sudo apt-get install -f
 ```
 
@@ -59,6 +62,7 @@ Use the commands below to add your `<username>` to the chrome-remote-desktop gro
 
 ```bash
 sudo usermod -a -G chrome-remote-desktop <username>
+
 sudo reboot
 ```
 
