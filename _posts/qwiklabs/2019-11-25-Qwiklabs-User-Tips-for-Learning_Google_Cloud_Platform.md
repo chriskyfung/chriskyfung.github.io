@@ -44,18 +44,48 @@ You can start your training based on your goal and purpose, or find the quests f
 
 I spent about three months to take all the Qwiklabs quests for Google Cloud Platform. In the end, I think that there is a need to create a visual map to indicate and understand the relationships between the quests, thereby an easier way for any beginner to seek their desired learning paths. I illustrated the following map by connecting the blocks based on the quest descriptions. You can navigate in the map and click on the boxes to open the corresponding quest webpages.
 
+<div id="quests-map" style="box-shadow: 1px 2px 15px #675bff;">
 {% include qwiklabs-quests-map-2020-4-25.html %}
-<p class="img-caption">Learning map of GCP quests (keep update)</p>
+
+<p class="text-center">Learning map for Qwiklabs GCP Quests (keep update)</p>
+</div>
+
+<!-- Button trigger modal -->
+<p class="text-center">
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#LargeMapModal">
+  Enlarge Diagram <i class='fas fa-search-plus'></i>
+</button>
+</p>
+
+<!-- Modal -->
+<div class="modal fade" id="LargeMapModal" tabindex="-1" role="dialog" aria-labelledby="LargeMapLabel" aria-hidden="true">
+  <div class="modal-dialog" style="max-width:1280px;"  role="document">>
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-title" id="myModalLabel">Qwiklabs GCP Quests</span>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+            {% include qwiklabs-quests-map-2020-4-25.html %}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Custom Tool for Labelling Completed Labs and Quests
 
-As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results (https://www.qwiklabs.com/catalog). I desired to make a straight-forward way to identify the catalogue, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Complete Indicator](https://github.com/chriskyfung/qwiklabs-complete-indicator)".
+As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results (https://www.qwiklabs.com/catalog). I desired to make a straight-forward way to identify the catalog, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Completed Labs Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)".
 
 The prototyped tool can help you visually identify the completed catalogue items with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) showing at the end of a lab or quest title. A demo screenshot is shown below.
 
-{% include picture.html img="https://github.com/chriskyfung/qwiklabs-complete-indicator/raw/master/demo-image" ext="png" alt="demo image" source="external" %}
+{% include picture.html img="qwiklabs-complete-indicator-quest-page-demo" ext="png" alt="Green Check Marks and Highlights to the completed lab items on a Qwiklabs Quest Page" caption="Fig. Effects on the completed labs on a Quest page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
-For more information, you can read my post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs)"_.
+{% include picture.html img="qwiklabs-complete-indicator-lab-page-demo" ext="png" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" caption="Fig. Effects on a completed lab page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+
+For more information, you can read the post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs)"_.
 
 ## Tips for Preparing a Lab
 
