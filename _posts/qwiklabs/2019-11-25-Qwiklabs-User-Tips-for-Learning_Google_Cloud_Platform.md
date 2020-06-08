@@ -5,7 +5,7 @@ date: 2020-2-22 22:10
 last_modified_at: 2020-04-25
 author: chris
 category: Cloud
-tags: [Qwiklabs, Google Cloud, user tips, learning map]
+tags: [Qwiklabs, Google Cloud, User tips, Learning map]
 permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform

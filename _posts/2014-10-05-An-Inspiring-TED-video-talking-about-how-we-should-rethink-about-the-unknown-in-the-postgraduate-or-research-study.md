@@ -4,7 +4,7 @@ title: "An Inspiring TED video talking about how we should rethink about the unk
 author: chris
 date: 2014-10-05
 category: Research
-tags: [TED, how to research]
+tags: [TED, How to research]
 image: 
    path: others/Uri_Alon_-_Why_truly_innovative_science_demands_a_leap_into_the_unknown
    ext: jpg

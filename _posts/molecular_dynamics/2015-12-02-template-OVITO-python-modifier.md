@@ -4,7 +4,7 @@ title: "[template] OVITO python modifier"
 author: chris
 date: 2015-11-27
 category: Atomistic
-tags: [OVITO, Python, Ovito custom function]
+tags: [OVITO, Python]
 ---
 
 OVITO 2.6.0 allows users to program their own modifier in Python. Here provides a template including the common headers and a for-loop for per-particle assignmeet.

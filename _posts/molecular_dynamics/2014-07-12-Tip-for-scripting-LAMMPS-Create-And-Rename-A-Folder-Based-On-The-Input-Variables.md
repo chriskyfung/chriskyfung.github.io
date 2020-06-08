@@ -4,7 +4,7 @@ title: "Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input 
 author: chris
 date: 2014-07-12
 category: Atomistic
-tags: [lammps, linux, command-line]
+tags: [LAMMPX, Linux, Command-line]
 hideimage: true
 ---
 

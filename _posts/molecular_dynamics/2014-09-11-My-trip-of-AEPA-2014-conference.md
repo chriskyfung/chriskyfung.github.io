@@ -4,7 +4,7 @@ title: "My trip of AEPA 2014 conference"
 author: chris
 date: 2014-09-12
 category: Research
-tags: [conference, taiwan]
+tags: [Conference, Taiwan]
 image: 
    path: events/20140912_AEPA
    ext: jpg

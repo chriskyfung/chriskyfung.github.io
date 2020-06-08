@@ -4,7 +4,7 @@ title: "Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or high
 author: chris
 date: 2019-04-04
 category: Linux
-tags: [Ubuntu, KDE, remote desktop]
+tags: [Ubuntu, KDE, Remote desktop]
 excerpt: Chrome Remote Desktop is a free alternative of Teamviewer. It can access PCs in secured networks. If you want to set up it on Linux, you may encounter many troubles. You must correctly install and setup the configurations for the host component on Linux. For Kubuntu 14.04 LTS, which operates with a KDE desktop environment. I believe that many Kubuntu users also face the same problem and feel disappointed. So, I write this article to share my solution.
 image: 
    path: linux/Kubuntu_14.04_LTS

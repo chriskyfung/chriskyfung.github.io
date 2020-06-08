@@ -4,7 +4,7 @@ title: Featured Tips, Tricks, and Tools for Tumblr Bloggers (2019)
 date: 2019-11-23 20:09
 category: Web Development
 author: chris
-tags: [Tumblr, user tips, Custom Theme, shorthand]
+tags: [Tumblr, User tips, Custom Theme, Shorthand]
 permalink: /blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers
 redirect_from:
  - /blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers

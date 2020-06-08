@@ -4,7 +4,7 @@ title: "Creating an array of SJR widget for visual comparison of journal ranks"
 author: chris
 date: 2014-07-04
 category: Research
-tags: [journal ranks]
+tags: [Journal ranks]
 image: 
    path: science/sjr_widget_array
    ext: png

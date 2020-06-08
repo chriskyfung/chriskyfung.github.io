@@ -4,7 +4,7 @@ title: Follow Me on Medium !
 date: 2019-10-22 18:15
 author: chris
 category: Announcement
-tags: [changelog, Qwiklabs, Medium]
+tags: [Changelog, Qwiklabs, Medium]
 summary: Follow me on Medium, the Qwiklabs tips are now reissued now to it!
 image: 
    path: qwiklabs/medium_profile_top
