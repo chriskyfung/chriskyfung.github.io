@@ -71,4 +71,4 @@ Does it help? I hope you can leave your comments below.
 
 1. [Evernote Tips ─ Custom shortcut key for Evernote Text Highlighting](/blog/evernote/custom-evernote-text-highlight-shortcut-key)
 
-2. [Evernote Tips ─ Create a Quick Search Hotkey with PhraseExpress](/blog/evernote/quick-search-evernote-with-phaseexpress)
+2. [Evernote Tips ─ Create a Quick Search Hotkey with PhraseExpress](/blog/evernote/quick-search-evernote-with-phraseexpress)

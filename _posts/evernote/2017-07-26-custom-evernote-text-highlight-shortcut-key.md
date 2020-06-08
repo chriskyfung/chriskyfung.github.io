@@ -5,7 +5,7 @@ date: 2017-06-09 15:36:40 +0800
 author: chris
 category: Productivity
 tags: [Evernote, PhraseExpress, User tips, Shorthand]
-permalink: /blog/evernote/add-table-and-formatting-in-evernote-with-
+permalink: /blog/evernote/custom-evernote-text-highlight-shortcut-key
 image:
   path: evernote/evernote-tips-productivity-shortcut-customization
   ext: png
@@ -58,6 +58,6 @@ If you like the Evernote tips in this article, please share to anybody who also 
 
 **Keep on reading**:
 
-1. [Evernote Tips ─ Create a Quick Search Hotkey with PhraseExpress](/blog/evernote/quick-search-evernote-with-phaseexpress)
+1. [Evernote Tips ─ Create a Quick Search Hotkey with PhraseExpress](/blog/evernote/quick-search-evernote-with-phraseexpress)
 
 2. [Evernote Tips ─ Create shortcuts for inserting tables and formatting texts with PhraseExpress](/blog/evernote/add-table-and-formatting-in-evernote-with-phraseexpress)
