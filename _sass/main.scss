@@ -69,6 +69,10 @@
   margin-bottom: 15px;
 }
 
+.featured-image.shadow-none {
+  box-shadow: none;
+}
+
 .article-post {
   h2 {
     margin-top: 6rem;
@@ -113,7 +117,7 @@ ul.tags.rounded-tags {
     }
   }
   .card-list{
-    height: 150px;
+    height: auto;
     width: 100%;
 
     .thumbnail img {

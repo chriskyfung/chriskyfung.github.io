@@ -52,7 +52,11 @@ post_class: post-template
                 {% unless page.image.ext == "svg" %}
                 <source type="image/webp" srcset="/images/posts/{{ page.image.path }}.webp" >
                 {% endunless %}
+                {% if page.image.class%} 
+                <img class="featured-image img-fluid {{ page.image.class }}" src="/images/posts/{{ page.image.path }}.{{ page.image.ext }}" alt="{{ page.title }}">
+                {% else %}
                 <img class="featured-image img-fluid" src="/images/posts/{{ page.image.path }}.{{ page.image.ext }}" alt="{{ page.title }}">
+                {% endif %}
             </picture>
             {% endunless %}
             {% endif %}
