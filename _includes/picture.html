@@ -17,7 +17,11 @@
             {% unless include.ext == "svg" %}
             <source type="image/webp" srcset="/images/posts/{{ img }}.webp" >
             {% endunless %}
+            {% if include.link %}
+            <a href="{{ include.link }}"><img src="/images/posts/{{ img }}.{{ include.ext }}" alt="{{ include.alt }}" /></a>
+            {% else %}    
             <img src="/images/posts/{{ img }}.{{ include.ext }}" alt="{{ include.alt }}" />
+            {% endif %}
         {% endif %}
     </picture>
     {% if include.caption %}
