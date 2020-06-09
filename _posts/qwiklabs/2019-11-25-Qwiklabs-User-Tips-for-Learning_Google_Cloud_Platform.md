@@ -21,9 +21,7 @@ featured: true
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice. If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
 
-<center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cyp7soKLOYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+{% include youtube.html src="https://www.youtube.com/embed/cyp7soKLOYI" %}
 
 <br>
 
@@ -91,9 +89,7 @@ For more information, you can read the post _"[Userscript for Labelling Complete
 
 Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Medium](https://medium.com/@qwiklabs) ([@qwiklabs](https://medium.com/@qwiklabs)). Also, you may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+{% include youtube.html src="https://www.youtube.com/embed/videoseries?list=PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" %}
 
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
@@ -170,6 +166,9 @@ _Resources:_
 - [Useful Google Cloud Platform Commands Cheat Sheet](/blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet)
 
 _The Cookbooks of Challenge Quest Series:_
+
+{% include picture.html img="qwiklabs/qwiklabs-change-badge-for-Challenge-GCP-Architecture-quest" ext="png" alt="Badges for Challenge-GCP-Architecture: Before and After" class="text-center" caption="Badge Change in 2020" link="/blog/qwiklabs/where-does-my-bear-badge-go" %}
+
 - [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
 - [Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)
 - [Qwiklab/Logbook: Configure a Firewall and a Startup Script with Deployment Manager](/blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager)

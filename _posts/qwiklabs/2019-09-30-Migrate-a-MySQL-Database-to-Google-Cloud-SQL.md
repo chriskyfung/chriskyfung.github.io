@@ -198,7 +198,7 @@ sudo service apache2 status
 
 {% include picture.html img="qwiklabs/qwiklabs-GSP306-step2-Blog-Demo-wordpress-site" ext="png" alt="Screenshot of the Blog-Demo Website" %}
 
-Congratulations! You should accomplish the lab if you follow the above steps. Also, you earned a badge if you completed the quest _"[Challenge: GCP Architecture](https://www.qwiklabs.com/quests/47)"_. You become a cloud expert now!
+Congratulations! You should accomplish the lab if you follow the above steps. Also, you earned a badge if you completed the quest _"[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)"_. You become a cloud expert now!
 
 This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-migrate-a-mysql-database-to-google-cloud-sql-7c129ba586c9).
 

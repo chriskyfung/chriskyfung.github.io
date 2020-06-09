@@ -39,9 +39,7 @@ The screenshot above shows that there are six steps required for completing this
 
 6. The `vm-securehost` is running Microsoft IIS web server software.
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nyimrSBKpr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><small>Configure Secure RDP using a Windows Bastion Host - YouTube</small>
-</center>
+{% include youtube.html src="https://www.youtube.com/embed/nyimrSBKpr8" %}
 
 <br>
 
