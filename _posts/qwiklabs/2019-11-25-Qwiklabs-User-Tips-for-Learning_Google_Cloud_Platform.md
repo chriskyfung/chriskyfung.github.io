@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips (2020)"
-date: 2020-2-22 22:10
-last_modified_at: 2020-04-25
+date: 2020-02-22 22:10 +0800
+last_modified_at: 2020-06-20 23:36 +0800
 author: chris
 category: Cloud
 tags: [Qwiklabs, Google Cloud, User tips, Learning map]
@@ -43,7 +43,7 @@ You can start your training based on your goal and purpose, or find the quests f
 I spent about three months to take all the Qwiklabs quests for Google Cloud Platform. In the end, I think that there is a need to create a visual map to indicate and understand the relationships between the quests, thereby an easier way for any beginner to seek their desired learning paths. I illustrated the following map by connecting the blocks based on the quest descriptions. You can navigate in the map and click on the boxes to open the corresponding quest webpages.
 
 <div id="quests-map" style="box-shadow: 1px 2px 15px #675bff;">
-{% include qwiklabs-quests-map-2020-4-25.html %}
+{% include qwiklabs-quests-map.html %}
 
 <p class="text-center">Learning map for Qwiklabs GCP Quests (keep update)</p>
 </div>
@@ -64,7 +64,7 @@ I spent about three months to take all the Qwiklabs quests for Google Cloud Plat
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body text-center">
-            {% include qwiklabs-quests-map-2020-4-25.html %}
+            {% include qwiklabs-quests-map.html %}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -105,7 +105,7 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
-## List of Quests
+## List of Quests (Updated: Jun 20, 2020)
 
 <table id="quest-list" class="display">
     <thead>
@@ -113,7 +113,6 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
         <th>ID</th>
         <th>Name</th>
         <th>Level</th>
-        <th>Duration</th>
         <th>Costs</th>
         <th>Env</th>
         </tr>
@@ -124,7 +123,6 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
             <td>{{ quest.id }}</td>
             <td><a href="https://www.qwiklabs.com/quests/{{ quest.id }}" target="_blank">{{ quest.name }}</a></td>
             <td>{{ quest.level }}</td>
-            <td>{{ quest.duration }}</td>
             <td>{{ quest.costs }}</td>
             <td>{{ quest.env }}</td>
         </tr>
@@ -132,7 +130,7 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
     </tbody>
 </table>
 
-## List of Labs
+## List of Labs (Updated: Jun 20, 2020)
 
 <table id="lab-list" class="display">
     <thead>
@@ -140,7 +138,6 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
         <th>ID</th>
         <th>Name</th>
         <th>Level</th>
-        <th>Duration</th>
         <th>Costs</th>
         <th>Env</th>
         </tr>
@@ -151,7 +148,6 @@ amzn_assoc_asins = "1119564417,1491974567,1491962291,B07P5JZCXV";
             <td>{{ lab.id }}</td>
             <td><a href="https://www.qwiklabs.com/focuses/{{ lab.id }}?parent=catalog" target="_blank">{{ lab.name }}</a></td>
             <td>{{ lab.level }}</td>
-            <td>{{ lab.duration }}</td>
             <td>{{ lab.costs }}</td>
             <td>{{ lab.env }}</td>
         </tr>

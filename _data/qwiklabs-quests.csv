@@ -1,82 +1,99 @@
-name,id,duration,level,costs,type,env
-Websites & Web Apps,3,6 hours,,27 Credits,quests,AWS
-Big Data on AWS,5,4 hours,,26 Credits,quests,AWS
-Compute & Networking,6,4 hours,,12 Credits,quests,AWS
-Digital Media,7,3 hours,,38 Credits,quests,AWS
-Deployment & Management,8,2 hours,,16 Credits,quests,AWS
-Storage & CDN,9,5 hours,,46 Credits,quests,AWS
-Solutions Architect - Associate,10,3 hours,,12 Credits,quests,AWS
-Solutions Architect - Professional,11,3 hours,,28 Credits,quests,AWS
-Corporate Apps on AWS for Windows,12,2 hours,,1 Credit,quests,AWS
-Databases on AWS for Windows,13,2 hours,,2 Credits,quests,AWS
-SysAdmin on AWS for Windows,14,2 hours,,15 Credits,quests,AWS
-Programming Windows on AWS,15,8 hours,,49 Credits,quests,AWS
-SysOps Administrator - Associate,16,7 hours,,46 Credits,quests,AWS
-Serverless Design with AWS Lambda,17,4 hours,,24 Credits,quests,AWS
-Advanced Operations Using Amazon Redshift,18,2 hours,,18 Credits,quests,AWS
-Alexa Skills Development,19,4 hours,,30 Credits,quests,AWS
-Serverless Web Apps using Amazon DynamoDB,21,4 hours,,3 Credits,quests,AWS
-Security on AWS,22,27 minutes,,Free,quests,AWS
-Google Cloud Essentials,23,5 hours,Introductory,13 Credits,quests,GCP
-Cloud Architecture,24,1 day,Fundamental,50 Credits,quests,GCP
-Data Engineering,25,5 hours,Advanced,35 Credits,quests,GCP
-Deploying Applications,26,5 hours,Introductory,26 Credits,quests,GCP
-Windows on GCP,27,1 day,Expert,65 Credits,quests,GCP
-Scientific Data Processing,28,6 hours,Advanced,30 Credits,quests,GCP
-Kubernetes in Google Cloud,29,6 hours,Advanced,34 Credits,quests,GCP
-Deployment Manager,30,1 day,Advanced,57 Credits,quests,GCP
-Networking in the Google Cloud,31,6 hours,Fundamental,33 Credits,quests,GCP
-Machine Learning APIs,32,1 day,Advanced,53 Credits,quests,GCP
-Baseline: Infrastructure,33,4 hours,Introductory,13 Credits,quests,GCP
-"Baseline: Data, ML, AI",34,5 hours,Introductory,10 Credits,quests,GCP
-Google Cloud's Operations Suite,35,8 hours,Fundamental,42 Credits,quests,GCP
-Google Cloud Solutions I: Scaling Your Infrastructure,36,1 day,Expert,67 Credits,quests,GCP
-Baseline: Deploy & Develop,37,6 hours,Introductory,9 Credits,quests,GCP
-Google Cloud Solutions II: Data and Machine Learning,38,5 hours,Expert,29 Credits,quests,GCP
-Websites and Web Applications,39,5 hours,Fundamental,35 Credits,quests,GCP
-Security & Identity Fundamentals,40,6 hours,Fundamental,35 Credits,quests,GCP
-Application Development - Python,41,6 hours,Advanced,40 Credits,quests,GCP
-Application Development - Java,42,7 hours,Advanced,45 Credits,quests,GCP
-Data Science on Google Cloud,43,1 day,Advanced,60 Credits,quests,GCP
-Managing Cloud Infrastructure with Terraform,44,6 hours,Advanced,42 Credits,quests,GCP
-Kubernetes Solutions,45,8 hours,Expert,56 Credits,quests,GCP
-Network Performance and Optimization,46,7 hours,Advanced,53 Credits,quests,GCP
-Challenge: GCP Architecture,47,8 hours,Advanced,49 Credits,quests,GCP
-Developing Data and Machine Learning Apps with C#,48,8 hours,Advanced,45 Credits,quests,GCP
-IoT in the Google Cloud,49,8 hours,Advanced,48 Credits,quests,GCP
-Data Science on Google Cloud: Machine Learning,50,8 hours,Advanced,42 Credits,quests,GCP
-G Suite: Integrations,51,8 hours,Advanced,33 Credits,quests,GCP
-Cloud SQL,52,5 hours,Fundamental,26 Credits,quests,GCP
-Exploring APIs,54,7 hours,Advanced,32 Credits,quests,GCP
-BigQuery For Data Analysis,55,1 day,Fundamental,35 Credits,quests,GCP
-NCAA? March Madness?: Bracketology with Google Cloud,58,3 hours,Fundamental,11 Credits,quests,GCP
-OK Google: Build Interactive Apps with Google Assistant,61,4 hours,Fundamental,24 Credits,quests,GCP
-Public Cloud Security by Palo Alto Networks,62,6 hours,Advanced,33 Credits,quests,GCP
-Google Kubernetes Engine Best Practices,63,5 hours,Advanced,33 Credits,quests,GCP
-Google Kubernetes Engine Best Practices: Security,64,6 hours,Advanced,37 Credits,quests,GCP
-G Suite Essentials,65,2 hours,Introductory,35 Credits,quests,GCP
-Cloud Engineering,66,8 hours,Fundamental,35 Credits,quests,GCP
-Cloud Development,67,1 day,Fundamental,46 Credits,quests,GCP
-BigQuery for Data Warehousing,68,5 hours,Fundamental,20 Credits,quests,GCP
-BigQuery Basics for Data Analysts,69,4 hours,Fundamental,2 Credits,quests,GCP
-BigQuery for Marketing Analysts,70,5 hours,Fundamental,15 Credits,quests,GCP
-BigQuery for Machine Learning,71,5 hours,Fundamental,25 Credits,quests,GCP
-Cloud Logging,81,5 hours,Fundamental,23 Credits,quests,GCP
-Intro to ML: Language Processing,82,4 hours,Introductory,13 Credits,quests,GCP
-Intermediate ML: TensorFlow on GCP,83,5 hours,Fundamental,25 Credits,quests,GCP
-Advanced ML: ML Infrastructure,84,5 hours,Advanced,26 Credits,quests,GCP
-Intro to ML: Image Processing,85,6 hours,Introductory,25 Credits,quests,GCP
-Google Developer Essentials,86,5 hours,Introductory,20 Credits,quests,GCP
-VM Migration,87,4 hours,Advanced,24 Credits,quests,GCP
-Cloud Healthcare API,88,6 hours,Fundamental,29 Credits,quests,GCP
-Understanding Your Google Cloud Costs,90,4 hours,Fundamental,3 Credits,quests,GCP
-Using the Cloud SDK Command Line,95,5 hours,,16 Credits,quests,GCP
-DevOps Essentials,96,6 hours,Fundamental,31 Credits,quests,GCP
-Optimizing Your GCP Costs,97,7 hours,Advanced,30 Credits,quests,GCP
-Google Cloud Run Serverless Workshop,98,5 hours,Advanced,31 Credits,quests,GCP
-Asylo - Practical Confidential Computing with Enclaves,99,5 hours,Advanced,33 Credits,quests,GCP
-Anthos: Service Mesh,100,6 hours,Advanced,35 Credits,quests,GCP
-Applied Data: Blockchain,101,5 hours,Advanced,25 Credits,quests,GCP
-Creating with Google Maps,103,5 hours,Advanced,31 Credits,quests,GCP
-Apigee Basic,105,6 hours,Fundamental,25 Credits,quests,GCP
-Apigee Advanced,106,6 hours,Advanced,42 Credits,quests,GCP
+type,id,name,duration,level,costs,env
+quests,23,"Google Cloud Essentials",4 hours,Introductory,8 Credits,GCP
+quests,120,"Getting Started: Create and Manage Cloud Resources",5 hours,Introductory,13 Credits,GCP
+quests,33,"Baseline: Infrastructure",3 hours,Introductory,4 Credits,GCP
+quests,118,"Perform Foundational Infrastructure Tasks in Google Cloud",4 hours,Introductory,13 Credits,GCP
+quests,34,"Baseline: Data, ML, AI",5 hours,Introductory,10 Credits,GCP
+quests,117,"Perform Foundational Data, ML, and AI Tasks in Google Cloud",6 hours,Introductory,19 Credits,GCP
+quests,24,"Cloud Architecture",7 hours,Fundamental,41 Credits,GCP
+quests,121,"Deploy and Manage Cloud Environments with Google Cloud",1 day,Fundamental,50 Credits,GCP
+quests,127,"Automate Interactions with Contact Center AI",8 hours,Expert,33 Credits,GCP
+quests,124,"Cloud Architecture: Design, Implement, and Manage",8 hours,Advanced,49 Credits,GCP
+quests,29,"Kubernetes in Google Cloud",5 hours,Advanced,25 Credits,GCP
+quests,116,"Deploy to Kubernetes in Google Cloud",6 hours,Advanced,34 Credits,GCP
+quests,66,"Cloud Engineering",7 hours,Fundamental,26 Credits,GCP
+quests,119,"Setup and Configure a Cloud Environment in Google Cloud",8 hours,Fundamental,35 Credits,GCP
+quests,69,"BigQuery Basics for Data Analysts",4 hours,Fundamental,2 Credits,GCP
+quests,123,"Insights from Data with BigQuery",5 hours,Fundamental,11 Credits,GCP
+quests,31,"Networking in the Google Cloud",6 hours,Fundamental,33 Credits,GCP
+quests,128,"Build and Secure Networks in Google Cloud",7 hours,Fundamental,42 Credits,GCP
+quests,115,"Build a Website on Google Cloud",6 hours,Fundamental,29 Credits,GCP
+quests,25,"Data Engineering",7 hours,Advanced,42 Credits,GCP
+quests,132,"Engineer Data in Google Cloud",8 hours,Advanced,51 Credits,GCP
+quests,61,"OK Google: Build Interactive Apps with Google Assistant",4 hours,Fundamental,24 Credits,GCP
+quests,122,"Build Interactive Apps with Google Assistant",5 hours,Fundamental,33 Credits,GCP
+quests,32,"Machine Learning APIs",5 hours,Advanced,36 Credits,GCP
+quests,126,"Explore Machine Learning Models with Explainable AI",7 hours,Fundamental,23 Credits,GCP
+quests,105,"Apigee Basic",6 hours,Fundamental,25 Credits,GCP
+quests,106,"Apigee Advanced",5 hours,Advanced,35 Credits,GCP
+quests,35,"Google Cloud's Operations Suite",8 hours,Fundamental,42 Credits,GCP
+quests,55,"BigQuery For Data Analysis",1 day,Fundamental,35 Credits,GCP
+quests,96,"DevOps Essentials",6 hours,Fundamental,31 Credits,GCP
+quests,87,"VM Migration",4 hours,Advanced,24 Credits,GCP
+quests,100,"Anthos: Service Mesh",7 hours,Advanced,35 Credits,GCP
+quests,90,"Manage Google Cloud Costs",4 hours,Fundamental,3 Credits,GCP
+quests,98,"Google Cloud Run Serverless Workshop",4 hours,Advanced,24 Credits,GCP
+quests,97,"Optimizing Your GCP Costs",7 hours,Advanced,30 Credits,GCP
+quests,101,"Applied Data: Blockchain",5 hours,Advanced,25 Credits,GCP
+quests,88,"Cloud Healthcare API",6 hours,Fundamental,29 Credits,GCP
+quests,63,"Google Kubernetes Engine Best Practices",5 hours,Advanced,33 Credits,GCP
+quests,64,"Google Kubernetes Engine Best Practices: Security",7 hours,Advanced,46 Credits,GCP
+quests,86,"Google Developer Essentials",5 hours,Introductory,20 Credits,GCP
+quests,67,"Cloud Development",1 day,Fundamental,46 Credits,GCP
+quests,65,"G Suite Essentials",2 hours,Introductory,35 Credits,GCP
+quests,68,"BigQuery for Data Warehousing",7 hours,Fundamental,31 Credits,GCP
+quests,103,"Creating with Google Maps",5 hours,Advanced,31 Credits,GCP
+quests,70,"BigQuery for Marketing Analysts",7 hours,Fundamental,26 Credits,GCP
+quests,51,"G Suite: Integrations",6 hours,Advanced,21 Credits,GCP
+quests,71,"BigQuery for Machine Learning",5 hours,Fundamental,25 Credits,GCP
+quests,58,"NCAA® March Madness®: Bracketology with Google Cloud",3 hours,Fundamental,11 Credits,GCP
+quests,81,"Cloud Logging",5 hours,Fundamental,23 Credits,GCP
+quests,54,"Exploring APIs",7 hours,Advanced,32 Credits,GCP
+quests,43,"Data Science on Google Cloud",1 day,Advanced,60 Credits,GCP
+quests,50,"Data Science on Google Cloud: Machine Learning",8 hours,Advanced,42 Credits,GCP
+quests,82,"Intro to ML: Language Processing",4 hours,Introductory,13 Credits,GCP
+quests,95,"Using the Cloud SDK Command Line",5 hours,,16 Credits,GCP
+quests,85,"Intro to ML: Image Processing",6 hours,Introductory,25 Credits,GCP
+quests,83,"Intermediate ML: TensorFlow on GCP",6 hours,Fundamental,25 Credits,GCP
+quests,84,"Advanced ML: ML Infrastructure",5 hours,Advanced,26 Credits,GCP
+quests,49,"IoT in the Google Cloud",8 hours,Advanced,48 Credits,GCP
+quests,45,"Kubernetes Solutions",8 hours,Expert,56 Credits,GCP
+quests,48,"Developing Data and Machine Learning Apps with C#",8 hours,Advanced,45 Credits,GCP
+quests,62,"Public Cloud Security by Palo Alto Networks",6 hours,Advanced,33 Credits,GCP
+quests,40,"Security & Identity Fundamentals",6 hours,Fundamental,35 Credits,GCP
+quests,37,"Baseline: Deploy & Develop",6 hours,Introductory,9 Credits,GCP
+quests,44,"Managing Cloud Infrastructure with Terraform",6 hours,Advanced,42 Credits,GCP
+quests,36,"Google Cloud Solutions I: Scaling Your Infrastructure",1 day,Expert,67 Credits,GCP
+quests,38,"Google Cloud Solutions II: Data and Machine Learning",5 hours,Expert,29 Credits,GCP
+quests,52,"Cloud SQL",6 hours,Fundamental,33 Credits,GCP
+quests,41,"Application Development - Python",6 hours,Advanced,40 Credits,GCP
+quests,42,"Application Development - Java",7 hours,Advanced,45 Credits,GCP
+quests,27,"Windows on GCP",1 day,Expert,65 Credits,GCP
+quests,46,"Network Performance and Optimization",7 hours,Advanced,53 Credits,GCP
+quests,28,"Scientific Data Processing",6 hours,Advanced,30 Credits,GCP
+quests,39,"Websites and Web Applications",5 hours,Fundamental,35 Credits,GCP
+quests,99,"Asylo - Practical Confidential Computing with Enclaves",5 hours,Advanced,33 Credits,GCP
+quests,30,"Deployment Manager",1 day,Advanced,57 Credits,GCP
+quests,26,"Deploying Applications",5 hours,Introductory,26 Credits,GCP
+quests,125,"Website on Google Cloud",5 hours,Fundamental,22 Credits,GCP
+quests,129,"Getting Started with Go on Google Cloud",4 hours,Introductory,16 Credits,GCP
+quests,130,"Building Codeless Pipelines on Cloud Data Fusion",6 hours,Fundamental,20 Credits,GCP
+quests,131,"Building Advanced Codeless Pipelines on Cloud Data Fusion",6 hours,Advanced,28 Credits,GCP
+quests,22,"Security on AWS",28 minutes,,Free,AWS
+quests,21,"Serverless Web Apps using Amazon DynamoDB",5 hours,,3 Credits,AWS
+quests,19,"Alexa Skills Development",4 hours,,30 Credits,AWS
+quests,17,"Serverless Design with AWS Lambda",4 hours,,24 Credits,AWS
+quests,18,"Advanced Operations Using Amazon Redshift",4 hours,,18 Credits,AWS
+quests,6,"Compute & Networking",5 hours,,12 Credits,AWS
+quests,8,"Deployment & Management",2 hours,,16 Credits,AWS
+quests,9,"Storage & CDN",5 hours,,46 Credits,AWS
+quests,3,"Websites & Web Apps",6 hours,,27 Credits,AWS
+quests,5,"Big Data on AWS",5 hours,,26 Credits,AWS
+quests,7,"Digital Media",3 hours,,38 Credits,AWS
+quests,16,"SysOps Administrator - Associate",7 hours,,46 Credits,AWS
+quests,10,"Solutions Architect - Associate",4 hours,,12 Credits,AWS
+quests,11,"Solutions Architect - Professional",3 hours,,28 Credits,AWS
+quests,15,"Programming Windows on AWS",8 hours,,49 Credits,AWS
+quests,12,"Corporate Apps on AWS for Windows",2 hours,,1 Credit,AWS
+quests,13,"Databases on AWS for Windows",2 hours,,2 Credits,AWS
+quests,14,"SysAdmin on AWS for Windows",2 hours,,15 Credits,AWS

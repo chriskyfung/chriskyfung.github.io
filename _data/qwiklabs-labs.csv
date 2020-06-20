@@ -1,497 +1,558 @@
-id,name,duration,level,costs,env
-279,Introduction to Amazon Virtual Private Cloud (VPC),40 minutes,Introductory,1 Credit,AWS
-390,Introduction to Elastic Load Balancing,50 minutes,Introductory,1 Credit,AWS
-401,Using Tableau Desktop with Amazon Redshift,1 hour 10 minutes,Fundamental,8 Credits,AWS
-551,Cloud IAM: Qwik Start,45 minutes,Introductory,1 Credit,GCP
-552,Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine,1 hour 30 minutes,Expert,9 Credits,GCP
-557,Orchestrating the Cloud with Kubernetes,1 hour 15 minutes,Expert,9 Credits,GCP
-558,Set Up Network and HTTP Load Balancers,40 minutes,Fundamental,5 Credits,GCP
-560,Compute Engine: Qwik Start - Windows,40 minutes,Introductory,1 Credit,GCP
-563,Getting Started with Cloud Shell & gcloud,45 minutes,Introductory,1 Credit,GCP
-564,Hello Node Kubernetes,1 hour 5 minutes,Advanced,7 Credits,GCP
-565,Provision Services with GCP Marketplace,30 minutes,Introductory,1 Credit,GCP
-569,Cloud Storage: Qwik Start - CLI/SDK,30 minutes,Introductory,1 Credit,GCP
-577,BigQuery: Qwik Start - Command Line,30 minutes,Introductory,Free,GCP
-579,Bigtable: Qwik Start - Command Line,30 minutes,Introductory,1 Credit,GCP
-580,Bigtable: Qwik Start - Hbase Shell,30 minutes,Introductory,1 Credit,GCP
-581,AI Platform: Qwik Start,1 hour,Introductory,1 Credit,GCP
-582,Cloud Natural Language API: Qwik Start,40 minutes,Introductory,1 Credit,GCP
-584,Dataprep: Qwik Start,1 hour,Introductory,1 Credit,GCP
-585,Dataproc: Qwik Start - Command Line,30 minutes,Introductory,1 Credit,GCP
-586,Dataproc: Qwik Start - Console,30 minutes,Introductory,1 Credit,GCP
-588,Google Cloud Speech API: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-589,Google Genomics: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-599,Data Loss Prevention: Qwik Start - Command Line,30 minutes,Introductory,Free,GCP
-600,Data Loss Prevention: Qwik Start - JSON,30 minutes,Introductory,1 Credit,GCP
-603,Video Intelligence: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-604,Analyzing Natality Data Using AI Platform and BigQuery,30 minutes,Advanced,7 Credits,GCP
-605,Building an IoT Analytics Pipeline on Google Cloud Platform,1 hour 10 minutes,Advanced,7 Credits,GCP
-607,Predict Baby Weight with TensorFlow on AI Platform,1 hour 30 minutes,Expert,9 Credits,GCP
-608,Run a Big Data Text Processing Pipeline in Cloud Dataflow,40 minutes,Advanced,7 Credits,GCP
-609,Weather Data in BigQuery,45 minutes,Fundamental,5 Credits,GCP
-610,Working with Google Cloud Dataprep,1 hour,Fundamental,5 Credits,GCP
-611,Autoscaling an Instance Group with Custom Cloud Monitoring Metrics,1 hour,Advanced,7 Credits,GCP
-612,Building High Availability and High Bandwidth NAT Gateways,1 hour 30 minutes,Advanced,7 Credits,GCP
-615,Deploying Memcached on Kubernetes Engine,1 hour 30 minutes,Advanced,7 Credits,GCP
-616,Hello Istio with Kubernetes Engine,45 minutes,Advanced,7 Credits,GCP
-617,Running Dedicated Game Servers in Google Kubernetes Engine,1 hour 30 minutes,Expert,9 Credits,GCP
-619,Creating and Alerting on Logs-based Metrics,1 hour 30 minutes,Advanced,7 Credits,GCP
-621,Monitoring Multiple Projects with Cloud Monitoring,1 hour,Fundamental,5 Credits,GCP
-624,Exploring NCAA Data with BigQuery,45 minutes,Fundamental,5 Credits,GCP
-629,Using OpenTSDB to Monitor Time-Series Data on Cloud Platform,1 hour 15 minutes,Advanced,7 Credits,GCP
-634,Implementing an AI Chatbot with Dialogflow,1 hour,Expert,9 Credits,GCP
-639,Managing Deployments Using Kubernetes Engine,1 hour,Advanced,7 Credits,GCP
-640,Running a MongoDB Database in Kubernetes with StatefulSets,1 hour,Advanced,7 Credits,GCP
-641,Building a High-throughput VPN,1 hour,Expert,9 Credits,GCP
-642,Creating Cross-region Load Balancing,45 minutes,Advanced,7 Credits,GCP
-647,Create a Cloud SQL Instance Using Deployment Manager,30 minutes,Fundamental,5 Credits,GCP
-659,Firebase SDK for Cloud Functions,1 hour,Advanced,7 Credits,GCP
-660,Firebase Web,1 hour 15 minutes,Expert,Free,GCP
-662,Configuring and Deploying Windows SQL Server on GCP,1 hour 30 minutes,Expert,9 Credits,GCP
-663,Deploy ASP.NET Core App to Kubernetes Engine,50 minutes,Expert,9 Credits,GCP
-666,Install and Use Cloud Tools for PowerShell,1 hour 10 minutes,Advanced,7 Credits,GCP
-672,Introduction to Cloud Dataproc: Hadoop and Spark on Google Cloud Platform,30 minutes,Fundamental,5 Credits,GCP
-673,Mapping the NYC Subway,1 hour,Expert,9 Credits,GCP
-674,Running a Spark Application with OpenCV on Cloud Dataproc,50 minutes,Advanced,7 Credits,GCP
-676,Speaking with a Webpage - Streaming Speech Transcripts,50 minutes,Fundamental,5 Credits,GCP
-680,Using the Natural Language API from Google Docs,45 minutes,Advanced,7 Credits,GCP
-681,Using the Natural Language API with Ruby,40 minutes,Advanced,7 Credits,GCP
-690,Customize Network Topology with Subnetworks,1 hour,Expert,9 Credits,GCP
-697,Translate Text with the Cloud Translation API,30 minutes,Fundamental,5 Credits,GCP
-698,Create a Basic Deployment Manager Template,30 minutes,Introductory,1 Credit,GCP
-699,HTTP Load Balancer,1 hour,Advanced,7 Credits,GCP
-767,Cloud Endpoints: Qwik Start,1 hour,Introductory,1 Credit,GCP
-798,Using Apigee for API Management,1 hour 15 minutes,Advanced,7 Credits,GCP
-850,Introduction to git and GitHub,45 minutes,Fundamental,1 Credit,GCP
-863,Deployment Manager: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-867,Setting up a Private Kubernetes Cluster,1 hour 30 minutes,Advanced,7 Credits,GCP
-870,Creating an Instance with Multiple Network Interfaces,1 hour 30 minutes,Fundamental,5 Credits,GCP
-872,NGINX Ingress Controller on Google Kubernetes Engine,1 hour,Advanced,7 Credits,GCP
-878,Kubernetes Engine: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-916,Cloud Functions: Qwik Start - Command Line,30 minutes,Introductory,1 Credit,GCP
-925,Google Cloud Pub/Sub: Qwik Start - Command Line,40 minutes,Introductory,Free,GCP
-936,Cloud SQL for MySQL: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-937,Cloud SQL for PostgreSQL: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-941,Datastore: Qwik Start,30 minutes,Introductory,Free,GCP
-951,App Engine: Qwik Start - Java,30 minutes,Introductory,1 Credit,GCP
-954,App Engine: Qwik Start - Ruby,20 minutes,Introductory,1 Credit,GCP
-964,VPC Network Peering,1 hour,Advanced,7 Credits,GCP
-967,Distributed Load Testing Using Kubernetes,1 hour,Fundamental,5 Credits,GCP
-981,Deployment Manager - Full Production,1 hour 30 minutes,Expert,9 Credits,GCP
-986,Google Cloud SDK: Qwik Start - Redhat/Centos,30 minutes,Introductory,1 Credit,GCP
-999,Google Cloud Datalab: Qwik Start,45 minutes,Introductory,1 Credit,GCP
-1002,Cloud Source Repositories: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-1005,Data Studio: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-1014,App Engine: Qwik Start - Python,20 minutes,Introductory,1 Credit,GCP
-1029,Introduction to Docker,1 hour,Introductory,1 Credit,GCP
-1035,IAM Custom Roles,1 hour,Fundamental,5 Credits,GCP
-1038,Service Accounts and Roles: Fundamentals,1 hour 15 minutes,Fundamental,5 Credits,GCP
-1044,Helm Package Manager,1 hour,Advanced,7 Credits,GCP
-1050,Using Kubernetes Engine to Deploy Apps with Regional Persistent Disks,1 hour,Advanced,7 Credits,GCP
-1059,App Dev-Adding User Authentication to your Application-Java,50 minutes,Advanced,7 Credits,GCP
-1060,App Dev - Deploying the Application into App Engine Flexible Environment - Java,1 hour,Fundamental,5 Credits,GCP
-1061,App Dev - Deploying the Application into Kubernetes Engine - Java,50 minutes,Fundamental,5 Credits,GCP
-1062,App Dev: Setting up a Development Environment - Java,50 minutes,Fundamental,5 Credits,GCP
-1063,App Dev - Storing Application Data in Cloud Datastore - Java,1 hour,Advanced,7 Credits,GCP
-1071,App Dev: Adding User Authentication to your Application - Python,1 hour,Advanced,7 Credits,GCP
-1073,App Dev: Deploying the Application into Kubernetes Engine - Python,50 minutes,Fundamental,5 Credits,GCP
-1074,App Dev: Setting up a Development Environment - Python,50 minutes,Fundamental,5 Credits,GCP
-1075,App Dev: Storing Image and Video Files in Cloud Storage - Python,1 hour,Advanced,7 Credits,GCP
-1076,App Dev: Storing Application Data in Cloud Datastore - Python,50 minutes,Advanced,7 Credits,GCP
-1095,TensorFlow for Poets,1 hour,Fundamental,5 Credits,GCP
-1100,Dataflow: Qwik Start - Python,45 minutes,Introductory,1 Credit,GCP
-1101,Dataflow: Qwik Start - Templates,45 minutes,Introductory,1 Credit,GCP
-1104,Continuous Delivery with Jenkins in Kubernetes Engine,1 hour 15 minutes,Advanced,7 Credits,GCP
-1107,App Dev: Developing a Backend Service - Python,1 hour 20 minutes,Expert,9 Credits,GCP
-1128,App Dev: Developing a Backend Service - Java,1 hour 20 minutes,Expert,9 Credits,GCP
-1141,App Dev-Storing Image and Video Files in Cloud Storage-Java,1 hour,Advanced,7 Credits,GCP
-1145,BigQuery: Qwik Start - Console,30 minutes,Introductory,1 Credit,GCP
-1155,Ingesting Data Into The Cloud,1 hour,Fundamental,5 Credits,GCP
-1157,Loading Data into Google Cloud SQL,1 hour,Advanced,7 Credits,GCP
-1158,Visualizing Data with Google Data Studio,1 hour 30 minutes,Advanced,7 Credits,GCP
-1159,Processing Data with Google Cloud Dataflow,1 hour 15 minutes,Advanced,7 Credits,GCP
-1160,Visualize Real Time Geospatial Data with Google Data Studio,1 hour 15 minutes,Advanced,7 Credits,GCP
-1161,Loading Data into Google BigQuery for Exploratory Data Analysis,1 hour 15 minutes,Advanced,7 Credits,GCP
-1162,Exploratory Data Analysis Using AI Platform,1 hour 30 minutes,Advanced,7 Credits,GCP
-1163,Evaluating a Data Model,45 minutes,Advanced,7 Credits,GCP
-1204,Custom Providers with Terraform,1 hour 15 minutes,Expert,9 Credits,GCP
-1205,Deploy Kubernetes Load Balancer Service with Terraform,1 hour,Advanced,7 Credits,GCP
-1206,HTTPS Content-Based Load Balancer with Terraform,1 hour,Advanced,7 Credits,GCP
-1207,Modular Load Balancing with Terraform - Regional Load Balancer,1 hour,Advanced,7 Credits,GCP
-1208,Terraform Fundamentals,35 minutes,Fundamental,5 Credits,GCP
-1209,Using a NAT Gateway with Kubernetes Engine,45 minutes,Fundamental,5 Credits,GCP
-1210,Using Vault on Compute Engine for Secret Management,1 hour,Expert,9 Credits,GCP
-1215,Cloud SQL with Terraform,1 hour,Advanced,7 Credits,GCP
-1219,Deploy Refinery CMS to App Engine Flexible Environment,1 hour 25 minutes,Advanced,7 Credits,GCP
-1229,VPC Networking Fundamentals,1 hour,Fundamental,5 Credits,GCP
-1230,Multiple VPC Networks,1 hour 10 minutes,Advanced,7 Credits,GCP
-1231,VPC Networks - Controlling Access,1 hour,Advanced,7 Credits,GCP
-1232,HTTP Load Balancer with Cloud Armor,1 hour,Advanced,7 Credits,GCP
-1233,Dynamic VPN Gateways - Cloud Routers,1 hour 10 minutes,Advanced,7 Credits,GCP
-1234,Network Tiers - Optimizing Network Spend,30 minutes,Fundamental,5 Credits,GCP
-1235,Deployment Manager - Automating Network Deployment,1 hour 20 minutes,Expert,9 Credits,GCP
-1236,VPC Flow Logs - Analyzing Network Traffic,1 hour,Advanced,7 Credits,GCP
-1241,Awwvision: Cloud Vision API from a Kubernetes Cluster,45 minutes,Advanced,7 Credits,GCP
-1249,Using VPC Network Peering,40 minutes,Advanced,7 Credits,GCP
-1250,Create an Internal Load Balancer,50 minutes,Advanced,7 Credits,GCP
-1251,Cloud CDN,40 minutes,Advanced,7 Credits,GCP
-1259,Reporting Application Metrics into Cloud Monitoring,1 hour 30 minutes,Fundamental,5 Credits,GCP
-1282,Network Performance Testing,1 hour 15 minutes,Expert,9 Credits,GCP
-1287,Improving Network Performance II,1 hour 30 minutes,Expert,9 Credits,GCP
-1290,It Speaks! Create Synthetic Speech Using Cloud Text-to-Speech,1 hour,Fundamental,5 Credits,GCP
-1713,Getting Started with Cloud KMS,45 minutes,Fundamental,5 Credits,GCP
-1715,Cloud Security Scanner: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-1721,Cloud Profiler: Qwik Start,45 minutes,Introductory,Free,GCP
-1724,G Suite Admin Getting Started - Personalization,40 minutes,Fundamental,5 Credits,GCP
-1726,Integrating Machine Learning APIs,1 hour,Advanced,7 Credits,GCP
-1734,Google Cloud Essential Skills: Challenge Lab,45 minutes,Fundamental,5 Credits,GCP
-1735,Deploy a Compute Instance with a Remote Startup Script,1 hour 30 minutes,Advanced,7 Credits,GCP
-1736,Configure a Firewall and a Startup Script with Deployment Manager,1 hour 30 minutes,Advanced,7 Credits,GCP
-1737,Configure Secure RDP using a Windows Bastion Host,1 hour,Advanced,7 Credits,GCP
-1738,Build and Deploy a Docker Image to a Kubernetes Cluster,1 hour 30 minutes,Advanced,7 Credits,GCP
-1739,Scale Out and Update a Containerized Application on a Kubernetes Cluster,1 hour,Advanced,7 Credits,GCP
-1740,Migrate a MySQL Database to Google Cloud SQL,1 hour 15 minutes,Expert,9 Credits,GCP
-1743,Networking 101,1 hour 15 minutes,Fundamental,5 Credits,GCP
-1749,Classify Text into Categories with the Natural Language API,1 hour,Advanced,7 Credits,GCP
-1753,Creating a Persistent Disk,30 minutes,Introductory,1 Credit,GCP
-1758,Google Sheets as a Reporting Tool: Sheets API,1 hour 30 minutes,Introductory,Free,GCP
-1760,Cloud Storage: Qwik Start - Cloud Console,30 minutes,Introductory,1 Credit,GCP
-1763,Cloud Functions: Qwik Start - Console,15 minutes,Introductory,1 Credit,GCP
-1765,Kubernetes Monitoring,1 hour 15 minutes,Fundamental,5 Credits,GCP
-1768,Container Registry: Qwik Start,40 minutes,Introductory,1 Credit,GCP
-1771,Internet of Things: Qwik Start,40 minutes,Introductory,1 Credit,GCP
-1774,Cloud Spanner: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-1776,Setting up Jenkins on Kubernetes Engine,1 hour 30 minutes,Advanced,7 Credits,GCP
-1784,The Apps Script CLI - clasp,30 minutes,Introductory,Free,GCP
-1789,Scikit-learn Model Serving with Online Prediction Using AI Platform,1 hour 20 minutes,Fundamental,5 Credits,GCP
-1791,Securing Your GKE Deployments with Binary Authorization,1 hour 15 minutes,Expert,9 Credits,GCP
-1794,Predict Visitor Purchases with a Classification Model in BQML,1 hour 15 minutes,Advanced,7 Credits,GCP
-1797,Predict Taxi Fare with a BigQuery ML Forecasting Model,1 hour,Advanced,7 Credits,GCP
-1800,A Tour of Cloud IoT Core,1 hour 15 minutes,Advanced,7 Credits,GCP
-1802,Cloud Filestore: Qwik Start,45 minutes,Introductory,1 Credit,GCP
-1815,Cloud Spanner: Create a Gaming Leaderboard with C#,1 hour,Expert,9 Credits,GCP
-1817,Deploying a Fault-Tolerant Microsoft Active Directory Environment,1 hour 30 minutes,Expert,9 Credits,GCP
-1820,Creating Custom Interactive Dashboards with Bokeh and BigQuery,1 hour 10 minutes,Expert,9 Credits,GCP
-1823,Creating an Object Detection Application Using TensorFlow,45 minutes,Fundamental,5 Credits,GCP
-1826,Running Distributed TensorFlow on Compute Engine,1 hour 15 minutes,Advanced,7 Credits,GCP
-1831,Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs,1 hour 30 minutes,Advanced,7 Credits,GCP
-1833,Monitoring and Logging for Cloud Functions,45 minutes,Fundamental,5 Credits,GCP
-1836,"Extract, Analyze, and Translate Text from Images with the Cloud ML APIs",50 minutes,Expert,9 Credits,GCP
-1841,"Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API",45 minutes,Advanced,7 Credits,GCP
-1843,Entity and Sentiment Analysis with the Natural Language API,40 minutes,Fundamental,5 Credits,GCP
-1846,Rent-a-VM to Process Earthquake Data,40 minutes,Introductory,1 Credit,GCP
-1852,Setting up a Minecraft Server on Google Compute Engine,1 hour,Fundamental,5 Credits,GCP
-1854,Using Ruby on Rails with Cloud SQL for PostgreSQL,1 hour 20 minutes,Advanced,7 Credits,GCP
-1858,Google Maps Web Services Proxy for Mobile Applications,45 minutes,Advanced,7 Credits,GCP
-1860,Configuring Deployment Manager Templates,45 minutes,Fundamental,5 Credits,GCP
-1863,Deployment Manager for Appserver,50 minutes,Advanced,7 Credits,GCP
-1910,Internal Load Balancer,45 minutes,Fundamental,5 Credits,GCP
-2157,Getting Started with BQML,45 minutes,Introductory,1 Credit,GCP
-2163,Google Slides API as a Custom Presentation Tool,1 hour,Advanced,7 Credits,GCP
-2165,Hangouts Chat bot - Apps Script,40 minutes,Advanced,7 Credits,GCP
-2167,App Maker - Build a Database Web App,45 minutes,Fundamental,5 Credits,GCP
-2175,Using BigQuery with C#,1 hour,Fundamental,5 Credits,GCP
-2176,Using the Natural Language API with C#,45 minutes,Fundamental,5 Credits,GCP
-2177,Using the Speech-to-Text API with C#,45 minutes,Fundamental,5 Credits,GCP
-2178,Using the Text-to-Speech API with C#,45 minutes,Fundamental,5 Credits,GCP
-2179,Using the Translation API with C#,45 minutes,Fundamental,5 Credits,GCP
-2180,Using the Video Intelligence API with C#,45 minutes,Fundamental,5 Credits,GCP
-2181,Using the Vision API with C#,45 minutes,Fundamental,5 Credits,GCP
-2187,Speech to Text Transcription with the Cloud Speech API,30 minutes,Fundamental,5 Credits,GCP
-2189,Querying Cloud Spanner With a Java Client,1 hour,Fundamental,5 Credits,GCP
-2196,Google Assistant: Qwik Start - Dialogflow,30 minutes,Introductory,Free,GCP
-2197,Google Assistant: Qwik Start - Templates,30 minutes,Introductory,Free,GCP
-2200,Write Apps That Access G Suite APIs,45 minutes,Fundamental,5 Credits,GCP
-2205,Getting Started - App Maker,1 hour 30 minutes,Introductory,5 Credits,GCP
-2456,Cloud Composer: Qwik Start - Console,1 hour,Introductory,1 Credit,GCP
-2457,APIs Explorer: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-2754,App Engine: Qwik Start - Go,20 minutes,Introductory,1 Credit,GCP
-2755,App Engine: Qwik Start - PHP,20 minutes,Introductory,1 Credit,GCP
-2764,Streaming IoT Core Data to Dataprep,1 hour 30 minutes,Fundamental,5 Credits,GCP
-2765,Streaming IoT Data to Google Cloud Storage,1 hour,Fundamental,5 Credits,GCP
-2766,Streaming IoT Kafka to Google Cloud Pub/Sub,1 hour 30 minutes,Expert,9 Credits,GCP
-2767,Using Firestore with Cloud IoT Core for Device Configuration,1 hour,Advanced,7 Credits,GCP
-2768,Using Stackdriver Logging with IoT Core Devices,1 hour 30 minutes,Advanced,7 Credits,GCP
-2771,Deploy a Web App on GKE with HTTPS Redirect using Lets Encrypt,1 hour,Advanced,7 Credits,GCP
-2775,Google Cloud Pub/Sub: Qwik Start - Python,30 minutes,Introductory,1 Credit,GCP
-2789,Deploy a Ruby on Rails App to App Engine Flexible Environment,45 minutes,Advanced,7 Credits,GCP
-2792,Using Agones to Easily Create Scalable Game Servers,45 minutes,Fundamental,5 Credits,GCP
-2794,A Tour of Qwiklabs and the Google Cloud Platform,45 minutes,Introductory,Free,GCP
-2802,Introduction to SQL for BigQuery and Cloud SQL,1 hour 15 minutes,Introductory,1 Credit,GCP
-3332,APIs Explorer: Create and Update a Cluster,1 hour,Fundamental,5 Credits,GCP
-3339,Deploying a Python Flask Web Application to App Engine Flexible,45 minutes,Fundamental,5 Credits,GCP
-3340,Deploy Node.js Express Application in App Engine,55 minutes,Fundamental,5 Credits,GCP
-3341,Build and Launch an ASP.NET Core App from Google Cloud Shell,40 minutes,Fundamental,5 Credits,GCP
-3342,Deploy an ASP.NET Core App to App Engine,45 minutes,Advanced,7 Credits,GCP
-3347,Deploy Microsoft SQL Server to Compute Engine,45 minutes,Fundamental,5 Credits,GCP
-3348,Running Windows Containers on Compute Engine,1 hour,Fundamental,5 Credits,GCP
-3349,Deploy Windows Server with ASP.NET Framework to Compute Engine,45 minutes,Advanced,7 Credits,GCP
-3389,Distributed Machine Learning with Google Cloud ML,1 hour 30 minutes,Advanced,7 Credits,GCP
-3390,Machine Learning with Spark on Google Cloud Dataproc,1 hour 30 minutes,Advanced,7 Credits,GCP
-3391,Machine Learning with TensorFlow,1 hour,Advanced,7 Credits,GCP
-3392,Processing Time Windowed Data with Apache Beam and Cloud Dataflow (Java),1 hour 30 minutes,Advanced,7 Credits,GCP
-3393,Real Time Machine Learning with Google Cloud ML,3 hours 20 minutes,Advanced,7 Credits,GCP
-3398,Provisioning and Using a Managed Hadoop/Spark Cluster with Cloud Dataproc (Command Line),40 minutes,Fundamental,5 Credits,GCP
-3414,Container-Optimized OS: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-3460,ETL Processing on GCP Using Dataflow and BigQuery,1 hour,Advanced,7 Credits,GCP
-3473,Introduction to APIs in Google,1 hour,Introductory,1 Credit,GCP
-3481,APIs Explorer: PubSub and IoT,1 hour,Advanced,7 Credits,GCP
-3483,Google Cloud Storage - Bucket Lock,40 minutes,Fundamental,5 Credits,GCP
-3497,Query BigQuery with Python Using Ibis,45 minutes,Advanced,7 Credits,GCP
-3523,APIs Explorer: Compute Engine,45 minutes,Fundamental,3 Credits,GCP
-3526,Google Assistant: Customizing Templates,1 hour,Fundamental,5 Credits,GCP
-3528,Cloud Composer: Copying BigQuery Tables Across Different Locations,1 hour,Fundamental,5 Credits,GCP
-3554,Building and Deploying Containers Using Amazon Elastic Container Service,1 hour 30 minutes,Introductory,1 Credit,AWS
-3556,Cloud Scheduler: Qwik Start,30 minutes,Introductory,1 Credit,GCP
-3563,Creating a Virtual Machine,40 minutes,Introductory,1 Credit,GCP
-3565,Big Data Analysis to a Slide Presentation,1 hour,Advanced,Free,GCP
-3570,Video on Demand with AWS Elemental MediaConvert,1 hour 50 minutes,Introductory,10 Credits,AWS
-3614,Explore and Create Reports with Data Studio,40 minutes,Introductory,Free,GCP
-3616,Using BigQuery in the GCP Console,40 minutes,Introductory,Free,GCP
-3618,Exploring Your Ecommerce Dataset with SQL in Google BigQuery,30 minutes,Fundamental,Free,GCP
-3632,APIs Explorer: Cloud Storage,45 minutes,Fundamental,5 Credits,GCP
-3638,Troubleshooting and Solving Data Join Pitfalls,1 hour,Fundamental,5 Credits,GCP
-3640,Creating a Data Warehouse Through Joins and Unions,1 hour,Fundamental,5 Credits,GCP
-3642,Troubleshooting Common SQL Errors with BigQuery,50 minutes,Fundamental,Free,GCP
-3644,Predict Housing Prices with Tensorflow and AI Platform,1 hour,Advanced,7 Credits,GCP
-3662,APIs Explorer: App Engine,45 minutes,Fundamental,5 Credits,GCP
-3676,Deployment Manager - Adding Load Balancing,1 hour 15 minutes,Advanced,7 Credits,GCP
-3678,Create a Network Load-Balanced Logbook Application,1 hour,Advanced,7 Credits,GCP
-3685,APIs Explorer: Cloud SQL,1 hour,Fundamental,5 Credits,GCP
-3688,"Google Apps Script: Access Google Sheets, Maps & Gmail in 4 Lines of Code",30 minutes,Introductory,1 Credit,GCP
-3690,Creating Permanent Tables and Access-Controlled Views in BigQuery,1 hour,Fundamental,5 Credits,GCP
-3692,Ingesting New Datasets into BigQuery,1 hour,Fundamental,3 Credits,GCP
-3694,Creating Date-Partitioned Tables in BigQuery,1 hour,Fundamental,5 Credits,GCP
-3696,"Working with JSON, Arrays, and Structs in BigQuery",1 hour 15 minutes,Fundamental,5 Credits,GCP
-3719,Google Cloud Pub/Sub: Qwik Start - Console,30 minutes,Introductory,Free,GCP
-3744,Getting Started with Blockchain on GCP using Hyperledger Fabric and Composer,45 minutes,Introductory,1 Credit,GCP
-4047,Deployment Manager - Package and Deploy,1 hour 10 minutes,Advanced,7 Credits,GCP
-4049,Creating a Gmail Add-on,30 minutes,Fundamental,5 Credits,GCP
-4051,G Suite Certification: Practice Lab,40 minutes,Introductory,Free,GCP
-4100,"Asylo - an Open, Flexible Framework for Enclave Applications",1 hour,Advanced,7 Credits,GCP
-4101,Running a gRPC Server Inside an Asylo Enclave,1 hour,Advanced,7 Credits,GCP
-4102,Using Asylo to Protect Secret Data from an Attacker with Root Privileges,30 minutes,Advanced,7 Credits,GCP
-4167,Creating Custom Base Images for Compute Engine with Jenkins and Packer,1 hour 30 minutes,Advanced,7 Credits,GCP
-4186,Site Reliability Troubleshooting with Cloud Monitoring APM,1 hour 30 minutes,Advanced,7 Credits,GCP
-4188,Data Pipeline: Process Stream Data and Visualize Real Time Geospatial Data,40 minutes,Advanced,7 Credits,GCP
-4337,Bracketology with Google Machine Learning,1 hour 15 minutes,Fundamental,5 Credits,GCP
-4360,Deploy ASP.NET Core App to Google Kubernetes Engine with Istio,1 hour 30 minutes,Expert,9 Credits,GCP
-4362,Configuring Private Google Access and Cloud NAT,1 hour 15 minutes,Advanced,7 Credits,GCP
-4375,Automating the Deployment of Networks with Terraform,1 hour,Advanced,7 Credits,GCP
-4413,Creating a Chatbot for Hangouts Using Google Apps Script,30 minutes,Introductory,1 Credit,GCP
-4414,Implement a Helpdesk Chatbot with Dialogflow & BigQuery ML,1 hour,Fundamental,5 Credits,GCP
-4415,Creating a Data Transformation Pipeline with Cloud Dataprep,1 hour 15 minutes,Advanced,7 Credits,GCP
-4815,Introduction to GitLab on GKE,1 hour 15 minutes,Advanced,7 Credits,GCP
-4817,Palo Alto Networks VM-Series Firewall: Automating Deployment with Terraform,1 hour,Advanced,7 Credits,GCP
-4823,Build a Nearby Business Search Service with Google Maps Platform,1 hour,Advanced,7 Credits,GCP
-5147,Cloud Run for Anthos,1 hour 15 minutes,Advanced,7 Credits,GCP
-5154,Google Kubernetes Engine Security: Binary Authorization,1 hour 30 minutes,Advanced,7 Credits,GCP
-5155,GKE Migrating to Containers,1 hour 15 minutes,Expert,9 Credits,GCP
-5156,Using Role-based Access Control in Kubernetes Engine,1 hour,Advanced,7 Credits,GCP
-5157,Monitoring with Stackdriver on Kubernetes Engine,1 hour,Fundamental,5 Credits,GCP
-5158,Hardening Default GKE Cluster Configurations,1 hour 30 minutes,Expert,9 Credits,GCP
-5159,Tracing with Stackdriver on Kubernetes Engine,1 hour,Advanced,7 Credits,GCP
-5162,Hello Cloud Run,45 minutes,Fundamental,5 Credits,GCP
-5166,Empower Your Gmail Inbox with Google Cloud Functions,1 hour,Fundamental,5 Credits,GCP
-5171,HTTP Google Cloud Functions in Go,45 minutes,Fundamental,5 Credits,GCP
-5538,How to Build a BI Dashboard Using Google Data Studio and BigQuery,1 hour,Advanced,7 Credits,GCP
-5539,Logging with Stackdriver on Kubernetes Engine,1 hour,Fundamental,5 Credits,GCP
-5540,Kubernetes Engine Communication Through VPC Peering,1 hour,Expert,9 Credits,GCP
-5541,Securing Applications on Kubernetes Engine - Three Examples,1 hour,Advanced,9 Credits,GCP
-5562,User Authentication: Identity-Aware Proxy,1 hour,Fundamental,5 Credits,GCP
-5568,"Visualize the 10,000 Bitcoin Pizza Transaction Using BigQuery and AI Notebooks",1 hour,Fundamental,5 Credits,GCP
-5570,Tracking Cryptocurrency Exchange Trades with Google Cloud Platform in Real-Time,1 hour,Expert,9 Credits,GCP
-5572,How to Use a Network Policy on Google Kubernetes Engine,1 hour,Fundamental,5 Credits,GCP
-5576,Google Cloud IoT Core Commands,1 hour 15 minutes,Fundamental,5 Credits,GCP
-5625,Connect to Cloud SQL from an Application in Kubernetes Engine,1 hour 15 minutes,Advanced,7 Credits,GCP
-5681,Creating a Serverless Video Conversion Watchfolder Workflow for MediaConvert,2 hours 30 minutes,Introductory,8 Credits,AWS
-5682,"Building a Live Video Channel with MediaLive, MediaStore and CloudFront",1 hour 30 minutes,Introductory,8 Credits,AWS
-5683,Monetizing a Live Video Stream with AWS Elemental MediaTailor,1 hour 30 minutes,Introductory,8 Credits,AWS
-5686,Deploy and Manage an Elastifile Cloud File System with Terraform,1 hour 20 minutes,Advanced,7 Credits,GCP
-5825,Gmail: Getting Started,1 hour,Fundamental,5 Credits,GCP
-5826,Google Calendar: Getting Started,1 hour,Fundamental,5 Credits,GCP
-5827,Google Drive: Getting Started,1 hour,Fundamental,5 Credits,GCP
-5828,Google Sheets: Getting Started,1 hour,Fundamental,5 Credits,GCP
-5829,Shared Drives: Getting Started,1 hour,Fundamental,5 Credits,GCP
-5830,Google Sites: Getting Started,1 hour,Fundamental,5 Credits,GCP
-5831,Google Hangouts Meet: Getting Started,1 hour,Fundamental,5 Credits,GCP
-5834,Distributed Image Processing in Cloud Dataproc,1 hour,Advanced,7 Credits,GCP
-5982,Running a Node.js Container on Google Kubernetes Engine,40 minutes,Fundamental,5 Credits,GCP
-6034,Cloud Composer: Qwik Start - Command Line,1 hour,Introductory,1 Credit,GCP
-6074,Fundamentals of Stackdriver Logging,1 hour 15 minutes,Fundamental,5 Credits,GCP
-6100,Using BigQuery and Cloud Logging to Analyze BigQuery Usage,45 minutes,Introductory,1 Credit,GCP
-6104,Ingesting FHIR Data with the Healthcare API,1 hour,Fundamental,5 Credits,GCP
-6129,Machine Learning Predictions with FHIR and Healthcare API,1 hour 15 minutes,Advanced,7 Credits,GCP
-6132,Ingesting DICOM Data with the Healthcare API,1 hour 15 minutes,Fundamental,5 Credits,GCP
-6268,Understanding and Analyzing your Costs with Google Cloud Billing Reports,45 minutes,Introductory,Free,GCP
-6270,VPC Networking: Cloud HA-VPN,1 hour 15 minutes,Advanced,7 Credits,GCP
-6374,Using OAuth Authenticated SQLPad to Query SAP HANA Express,1 hour 30 minutes,Advanced,7 Credits,GCP
-6376,Pipeline Graphs with Cloud Data Fusion,1 hour 30 minutes,Fundamental,5 Credits,GCP
-6430,Create a Custom Network Using Deployment Manager,1 hour 15 minutes,Advanced,7 Credits,GCP
-6896,VM Migration: Assessment,1 hour,Fundamental,5 Credits,AWS
-6898,VM Migration: Modernize an Application Stack with GKE and MySQL,1 hour,Advanced,7 Credits,GCP
-6899,VM Migration: Planning,1 hour,Advanced,7 Credits,GCP
-6916,Examining BigQuery Billing Data in Google Sheets,1 hour,Introductory,1 Credit,GCP
-6920,De-identifying DICOM Data with the Healthcare API,1 hour 15 minutes,Advanced,7 Credits,GCP
-7015,Ingesting HL7v2 Data with the Healthcare API,1 hour,Fundamental,5 Credits,GCP
-7114,Analyzing Billing Data with BigQuery,40 minutes,Introductory,1 Credit,GCP
-7115,Visualizing Billing Data with Data Studio,40 minutes,Introductory,1 Credit,GCP
-7140,Configuring Networks via gcloud,1 hour,Fundamental,5 Credits,GCP
-7530,Using gsutil to Perform Operations on Buckets and Objects,45 minutes,Fundamental,5 Credits,GCP
-7637,Building Redis with Asylo,50 minutes,Advanced,7 Credits,GCP
-7638,Building SQLite with Asylo,45 minutes,Fundamental,5 Credits,GCP
-7639,Learning TensorFlow: the Hello World of Machine Learning,40 minutes,Introductory,1 Credit,GCP
-7678,Configuring IAM Permissions with gcloud,1 hour 30 minutes,Fundamental,5 Credits,GCP
-7685,Collecting and Analyzing Logs with Amazon CloudWatch Logs Insights,1 hour 30 minutes,Intermediate,5 Credits,AWS
-7797,Clean up Unused and Orphaned Persistent Disks,1 hour,Advanced,7 Credits,GCP
-7830,Optimizing cost with Google Cloud Storage,1 hour,Advanced,7 Credits,GCP
-7841,Clean up unused IP addresses,1 hour,Advanced,7 Credits,GCP
-7842,Introduction to Amazon Elastic Container Registry,57 minutes,Introductory,1 Credit,AWS
-7847,Setting up Cost Control with Quota,1 hour,Advanced,7 Credits,GCP
-7927,Amazon Elastic File System (EFS) Performance,2 hours,Expert,15 Credits,AWS
-7932,Introduction to Amazon EC2 Auto Scaling,40 minutes,Introductory,1 Credit,AWS
-7937,Creating Models with Amazon SageMaker,2 hours,Introductory,15 Credits,AWS
-8367,Palo Alto Networks VM-Series Firewall: Securing the GKE Perimeter,1 hour,Advanced,7 Credits,GCP
-8389,"Build a Resilient, Asynchronous System with Cloud Run and Pub/Sub",1 hour,Advanced,7 Credits,GCP
-8390,Build a Serverless App with Cloud Run that Creates PDF Files,1 hour,Advanced,7 Credits,GCP
-8391,Build a Serverless Web App with Firebase,1 hour,Fundamental,5 Credits,GCP
-8392,Importing Data to a Firestore Database,45 minutes,Fundamental,5 Credits,GCP
-8393,Share Data Securely via a REST API Using Cloud Run,1 hour,Advanced,7 Credits,GCP
-8406,Classify Images of Clouds in the Cloud with AutoML Vision,2 hours,Advanced,7 Credits,GCP
-8416,Programming AWS Security Token Service (STS) with .NET,1 hour 40 minutes,,10 Credits,AWS
-8428,OpenTelemetry,1 hour 15 minutes,Advanced,7 Credits,GCP
-8459,Installing Open Source Istio on Kubernetes Engine,1 hour,Advanced,7 Credits,GCP
-8460,Installing the Istio on GKE Add-On with Kubernetes Engine,1 hour,Advanced,7 Credits,GCP
-8461,Managing Policies and Security with Istio and Citadel,1 hour 15 minutes,Advanced,7 Credits,GCP
-8462,Managing Traffic Routing with Istio and Envoy,1 hour 15 minutes,Advanced,7 Credits,GCP
-8463,"Observing Services using Prometheus, Grafana, Jaeger, and Kiali",1 hour,Advanced,7 Credits,GCP
-8486,Exploring the Public Cryptocurrency Datasets Available in BigQuery,50 minutes,Expert,9 Credits,GCP
-8496,Using IAM and Bucket Policies with Amazon S3,1 hour 30 minutes,Fundamental,8 Credits,AWS
-8498,Serverless Compute: Microservices with Cloud Functions,1 hour,Advanced,7 Credits,GCP
-8500,Responding to Stackdriver Messages with Cloud Functions,45 minutes,Introductory,3 Credits,GCP
-8530,Live Video Workflow with Captions,2 hours,,8 Credits,AWS
-8532,Image Insertion and Input Switching with AWS Elemental MediaLive,1 hour 30 minutes,Fundamental,Free,AWS
-8533,AWS Tools for Windows PowerShell: Getting Started,1 hour,Fundamental,8 Credits,AWS
-8534,Programming AWS Lambda for Windows,1 hour 40 minutes,,10 Credits,AWS
-8539,Working with Amazon Elastic Container Service,55 minutes,Fundamental,8 Credits,AWS
-8556,Introduction to Amazon Elastic Container Service,50 minutes,Introductory,1 Credit,AWS
-8557,Introduction to Amazon Relational Database Service (RDS) (Windows),50 minutes,Introductory,1 Credit,AWS
-8558,Use Google Maps API to Visualize BigQuery Geospatial Data,1 hour 30 minutes,Advanced,7 Credits,GCP
-8567,Challenge Lab,1 hour,Introductory,1 Credit,AWS
-8568,Media services: Use AWS AI services to automate captioning & subtitling,2 hours,intermediate,8 Credits,AWS
-8578,Optimize slow databases with Amazon Aurora,2 hours,Introductory,5 Credits,AWS
-8584,Working with AWS CodeCommit on Windows,1 hour 30 minutes,Fundamental,8 Credits,AWS
-8587,Game Hosting with Amazon GameLift,2 hours 55 minutes,,5 Credits,AWS
-8612,IoT Edge Computing: AWS IoT Greengrass,1 hour 30 minutes,Advanced,10 Credits,AWS
-8642,Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation,1 hour,Fundamental,1 Credit,AWS
-8661,Building Your First Amazon Virtual Private Cloud (VPC),1 hour 25 minutes,Fundamental,8 Credits,AWS
-8706,Managing IoT Sensor Data with Amazon ElastiCache for Redis,1 hour 30 minutes,Advanced,10 Credits,AWS
-8712,Working with Elastic Load Balancing,55 minutes,,8 Credits,AWS
-8715,Automating AWS Services with Scripting and the AWS CLI,1 hour 15 minutes,,10 Credits,AWS
-10183,Centralized Log Processing with Amazon Elasticsearch Service,2 hours,Advanced,8 Credits,AWS
-10210,Cloud Life Sciences: Variant Transforms Tool,1 hour 30 minutes,Expert,9 Credits,GCP
-10213,Serverless Web Apps using Amazon DynamoDB - Part 2,1 hour,Fundamental,1 Credit,AWS
-10227,Serverless Architectures using Amazon CloudWatch Events and Scheduled Events with AWS Lambda,1 hour 15 minutes,Fundamental,8 Credits,AWS
-10236,Deploy an End-to-End IoT Application,1 hour 30 minutes,Fundamental,8 Credits,AWS
-10237,Introduction to Amazon Elastic Block Store (EBS),45 minutes,Introductory,1 Credit,AWS
-10244,Troubleshooting Cloud Service Mesh,1 hour 15 minutes,Advanced,9 Credits,GCP
-10258,Google Cloud Essentials: Challenge Lab,1 hour,Fundamental,5 Credits,GCP
-10268,VM Migration: Qwik Start,1 hour,Fundamental,5 Credits,GCP
-10278,AWS Database Migration Service: Oracle to Aurora,2 hours 20 minutes,,1 Credit,AWS
-10285,Reinforcement Learning: Qwik Start,1 hour,Fundamental,5 Credits,GCP
-10286,Launching and Managing a Web Application with AWS CloudFormation,1 hour 50 minutes,Expert,15 Credits,AWS
-10301,Working with AWS CodeCommit,1 hour,Fundamental,8 Credits,AWS
-10308,Caching Static Files with Amazon CloudFront,1 hour 55 minutes,Advanced,10 Credits,AWS
-10371,Serverless Architectures with Amazon DynamoDB and Amazon Kinesis Streams with AWS Lambda,1 hour,Advanced,10 Credits,AWS
-10377,Introduction to AWS Device Farm,40 minutes,Introductory,Free,AWS
-10378,Streaming Dynamic Content using Amazon CloudFront,1 hour 55 minutes,,10 Credits,AWS
-10379,Baseline Infrastructure: Challenge Lab,1 hour,Expert,9 Credits,GCP
-10383,Introduction to Amazon API Gateway,55 minutes,Introductory,Free,AWS
-10385,Introduction to Amazon Relational Database Service (RDS) (Linux),50 minutes,Introductory,1 Credit,AWS
-10386,Introduction to AWS CloudFormation Designer,40 minutes,Introductory,1 Credit,AWS
-10387,Introduction to AWS CloudFormation,45 minutes,Introductory,1 Credit,AWS
-10388,Introduction to AWS Key Management Service,50 minutes,Introductory,Free,AWS
-10390,Deploy an Auto-Scaling HPC Cluster with Slurm,1 hour,Advanced,7 Credits,GCP
-10403,Introduction to Amazon Kinesis Firehose,1 hour,,1 Credit,AWS
-10404,Introduction to Amazon ElastiCache,50 minutes,,1 Credit,AWS
-10407,Introduction to Amazon DynamoDB,40 minutes,Introductory,Free,AWS
-10408,Introduction to AWS Identity and Access Management (IAM),45 minutes,Introductory,Free,AWS
-10415,Using AWS Lambda with Amazon CloudWatch and SNS to Implement a Slack Chat Bot,55 minutes,Fundamental,8 Credits,AWS
-10417,Cloud Architecture: Challenge Lab,1 hour,Expert,9 Credits,GCP
-10420,Using Amazon RDS for Applications,1 hour 10 minutes,Advanced,10 Credits,AWS
-10432,Monitoring Security Groups with AWS Config,1 hour,,10 Credits,AWS
-10433,Working with Alexa: Build a Trivia Skill,55 minutes,,10 Credits,AWS
-10436,Build a Dynamic Conversational Bot - Part 1,1 hour,,8 Credits,AWS
-10437,Securing Google Cloud with CFT Scorecard,40 minutes,Fundamental,5 Credits,GCP
-10439,Build a Dynamic Conversational Bot - Part 2,1 hour 30 minutes,,8 Credits,AWS
-10443,Introduction to Amazon Relational Database Service (RDS) - SQL Server,1 hour 10 minutes,Introductory,1 Credit,AWS
-10445,Deploy Your Website on Cloud Run,1 hour,Fundamental,5 Credits,GCP
-10448,Auditing Your Security with AWS Trusted Advisor,57 minutes,Advanced,10 Credits,AWS
-10450,Maintaining High Availability with Auto Scaling (for Linux),1 hour 55 minutes,Advanced,10 Credits,AWS
-10457,Kubernetes in Google Cloud: Challenge Lab,1 hour,Expert,9 Credits,GCP
-10467,Securing VPC Resources with Security Groups,1 hour,Fundamental,1 Credit,AWS
-10468,Programming Amazon S3 with .NET,1 hour 40 minutes,,8 Credits,AWS
-10470,"Deploy, Scale, and Update Your Website on Google Kubernetes Engine",1 hour 30 minutes,Fundamental,5 Credits,GCP
-10471,Working with Alexa: Build a Decision Tree Skill,57 minutes,Advanced,10 Credits,AWS
-10477,Working with Alexa: Build a Flashcard Skill,55 minutes,,10 Credits,AWS
-10478,Working with Alexa: Build a How-To Skill,57 minutes,,8 Credits,AWS
-10479,Automated Video Editing with YOU as the Star!,45 minutes,,8 Credits,AWS
-10486,Hosting WordPress Using Amazon S3,50 minutes,Fundamental,8 Credits,AWS
-10487,Using Open Data with Amazon S3,40 minutes,Fundamental,8 Credits,AWS
-10488,Introduction to Amazon Simple Storage Service (S3),1 hour,Introductory,Free,AWS
-10490,S3: Multi-region Storage Backup with Cross-Region Replication,1 hour,Introductory,Free,AWS
-10491,Storage Gateway: File Gateway Network Configuration,2 hours,,8 Credits,AWS
-10493,Build a Serverless Text-to-Speech Application with Amazon Polly,1 hour 30 minutes,Advanced,8 Credits,AWS
-10496,Introduction to AWS CodeDeploy,1 hour 20 minutes,,1 Credit,AWS
-10497,Hybrid Storage and Data Migration with AWS Storage Gateway File Gateway,1 hour,,8 Credits,AWS
-10498,Building a Media Sharing Website - Part 1: Media Upload,55 minutes,Advanced,10 Credits,AWS
-10499,Migrating On-Premises NFS Using AWS DataSync and Amazon File Gateway,1 hour 15 minutes,,10 Credits,AWS
-10501,Monitoring Security Groups with Amazon CloudWatch Events,57 minutes,Advanced,10 Credits,AWS
-10505,Spin Up A Blockchain Node with BlockApps STRATO in 3 minutes,30 minutes,Fundamental,5 Credits,GCP
-10506,Working with Amazon Redshift,1 hour 55 minutes,Advanced,10 Credits,AWS
-10512,Monitoring a Live Streaming Workflow with Amazon CloudWatch,1 hour 30 minutes,,8 Credits,AWS
-10518,Introducing API Management on Top of a Legacy Platform,1 hour 30 minutes,Fundamental,5 Credits,GCP
-10519,Connect to Stackdriver Logging Using Apigee,1 hour 30 minutes,Fundamental,5 Credits,GCP
-10520,Establish a Data Lake from Stackdriver Logging to BigQuery with Apigee,1 hour 30 minutes,Fundamental,5 Credits,GCP
-10521,Leverage Apigee to Modernize Exposure & Secure Access,1 hour 30 minutes,Fundamental,5 Credits,GCP
-10522,Self Service API Discovery & Sign Up Experience,1 hour 30 minutes,Fundamental,5 Credits,GCP
-10523,Content Aggregation via Apigee - Bring in Google Hosted API Content,1 hour 30 minutes,Advanced,7 Credits,GCP
-10524,Security Mediation with IAM Service Accounts and OAuth,1 hour 30 minutes,Advanced,7 Credits,GCP
-10525,Conditional Routing of APIs Based on Feature Flag,1 hour 30 minutes,Advanced,7 Credits,GCP
-10526,Controlling API Traffic Using the Istio Mixer Adapter for Apigee Edge,1 hour 30 minutes,Advanced,7 Credits,GCP
-10527,Embedding Apigee into a CI/CD Lifecycle,1 hour 30 minutes,Advanced,7 Credits,GCP
-10528,Enforcing API Management with Istio Service Mesh,1 hour 30 minutes,Advanced,7 Credits,GCP
-10531,Use Go Code to Work with Google Cloud Data Sources,1 hour 10 minutes,Fundamental,5 Credits,GCP
-10532,Deploy Go Apps on Google Cloud Serverless Platforms,1 hour 10 minutes,Fundamental,5 Credits,GCP
-10537,Deploy DataStax Enterprise from the GCP Marketplace,1 hour,Introductory,1 Credit,GCP
-10538,Deploying an Open Source Cassandra??Database using the GCP Marketplace,30 minutes,Introductory,1 Credit,GCP
-10539,Migrating an application and data from Apache Cassandra??to DataStax Enterprise,1 hour,Fundamental,5 Credits,GCP
-10541,Introduction to AWS Lambda,45 minutes,Introductory,Free,AWS
-10594,4 In A Row Game Development with Google Cloud + Unity,1 hour,Fundamental,5 Credits,GCP
-10599,Cloud Monitoring: Qwik Start,50 minutes,Introductory,1 Credit,GCP
-10601,Exploring Google Ngrams with Amazon EMR,1 hour 10 minutes,Expert,15 Credits,AWS
-10603,Cloud Engineering: Challenge Lab,1 hour,Expert,9 Credits,GCP
-10605,Compare Cloud AI Platform models using the What-If Tool to Identify Potential Bias,1 hour 30 minutes,Introductory,1 Credit,GCP
-10769,Introduction to AWS OpsWorks,55 minutes,Introductory,1 Credit,AWS
-10778,Programming Amazon SQS and Amazon SNS with .NET,1 hour 40 minutes,,10 Credits,AWS
-10779,Online Data Migration to Cloud Spanner using Striim,1 hour,Advanced,7 Credits,GCP
-10876,Palo Alto Networks: VM-Series AutoScale in Google Cloud,1 hour 15 minutes,Advanced,7 Credits,GCP
-10888,Prisma Cloud Compute:  Securing GKE Run Time,1 hour 30 minutes,Fundamental,5 Credits,GCP
-10890,Build a Cloud Run application for SAP HANA,1 hour 30 minutes,Fundamental,5 Credits,GCP
-10895,Introduction to Amazon EC2,1 hour,Introductory,1 Credit,AWS
-10899,"Bayes Classification with Cloud Datalab, Spark, and Pig on Google Cloud Dataproc",1 hour 30 minutes,Advanced,7 Credits,GCP
-10903,Identifying Bias in Mortgage Data using Cloud AI Platform and the What-if Tool,1 hour,Introductory,1 Credit,GCP
-10904,Using the What-If Tool with Image Recognition Models,1 hour,Introductory,1 Credit,GCP
-10906,Analyze Big Data with Hadoop,1 hour,,1 Credit,AWS
-10908,Introduction to Amazon Elastic File System (EFS),1 hour 20 minutes,,1 Credit,AWS
-10910,Cloud Logging on Kubernetes Engine,1 hour,Fundamental,5 Credits,GCP
-10911,Fundamentals of Cloud Logging,1 hour 15 minutes,Fundamental,5 Credits,GCP
-10915,Applied Machine Learning: Building Models for an Amazon Use Case,4 hours,Fundamental,8 Credits,AWS
-10916,Serverless Web Apps using Amazon DynamoDB - Part 1,55 minutes,,1 Credit,AWS
-10917,Update Security Groups Automatically Using AWS Lambda,1 hour,Advanced,10 Credits,AWS
-10919,Verily Pathfinder Virtual Agent for COVID-19 Chat App,1 hour,Advanced,7 Credits,GCP
-10920,IoT Command and Control,1 hour 30 minutes,Fundamental,8 Credits,AWS
-10921,"Building a Live Video Channel with MediaLive, MediaPackage and CloudFront",1 hour 30 minutes,,1 Credit,AWS
-10927,Introduction to Amazon CloudFront,55 minutes,,Free,AWS
-10928,Programming Amazon DynamoDB with .NET,1 hour 40 minutes,Advanced,10 Credits,AWS
-10933,Ingesting Data Into The Cloud Using Google App Engine,1 hour 15 minutes,Fundamental,5 Credits,GCP
+id,name,duration,level,costs,type,env
+2794,"A Tour of Qwiklabs and Google Cloud",30 minutes,Introductory,Free,labs,GCP
+10505,"Spin Up A Blockchain Node with BlockApps STRATO in 3 minutes",30 minutes,Fundamental,5 Credits,labs,GCP
+11953,"Migrating a Monolithic Website to Microservices on Google Kubernetes Engine",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+5158,"Hardening Default GKE Cluster Configurations",1 hour 30 minutes,Expert,9 Credits,labs,GCP
+12363,"Building Batch Pipelines in Cloud Data Fusion",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+10528,"Enforcing API Management with Istio Service Mesh",1 hour,Advanced,7 Credits,labs,GCP
+7639,"Learning TensorFlow: the Hello World of Machine Learning",40 minutes,Introductory,1 Credit,labs,GCP
+12371,"Building Dynamic Pipelines in Cloud Data Fusion Using Macros",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+10532,"Deploy Go Apps on Google Cloud Serverless Platforms",1 hour 10 minutes,Fundamental,5 Credits,labs,GCP
+7140,"Configuring Networks via gcloud",1 hour,Fundamental,5 Credits,labs,GCP
+8459,"Installing Anthos Service Mesh on Google Kubernetes Engine",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+10445,"Deploy Your Website on Cloud Run",45 minutes,Fundamental,5 Credits,labs,GCP
+7847,"Setting Up Cost Control with Quota",1 hour,Advanced,7 Credits,labs,GCP
+10911,"Fundamentals of Cloud Logging",1 hour,Fundamental,5 Credits,labs,GCP
+7530,"Using gsutil to Perform Operations on Buckets and Objects",45 minutes,Fundamental,5 Credits,labs,GCP
+1290,"It Speaks! Create Synthetic Speech Using Cloud Text-to-Speech",1 hour,Fundamental,5 Credits,labs,GCP
+4785,"Google Assistant: Build a Youtube Entertainment App",1 hour,Advanced,7 Credits,labs,GCP
+1002,"Cloud Source Repositories: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+1763,"Cloud Functions: Qwik Start - Console",15 minutes,Introductory,1 Credit,labs,GCP
+3719,"Google Cloud Pub/Sub: Qwik Start - Console",30 minutes,Introductory,Free,labs,GCP
+5171,"HTTP Google Cloud Functions in Go",30 minutes,Fundamental,5 Credits,labs,GCP
+2176,"Using the Natural Language API with C#",45 minutes,Fundamental,5 Credits,labs,GCP
+1797,"Predict Taxi Fare with a BigQuery ML Forecasting Model",1 hour,Advanced,7 Credits,labs,GCP
+1789,"Scikit-learn Model Serving with Online Prediction Using AI Platform",1 hour,Fundamental,5 Credits,labs,GCP
+2157,"Getting Started with BQML",45 minutes,Introductory,1 Credit,labs,GCP
+10527,"Embedding Apigee into a CI/CD Lifecycle",1 hour,Advanced,7 Credits,labs,GCP
+3688,"Google Apps Script: Access Google Sheets, Maps & Gmail in 4 Lines of Code",20 minutes,Introductory,1 Credit,labs,GCP
+1074,"App Dev: Setting up a Development Environment - Python",50 minutes,Fundamental,5 Credits,labs,GCP
+10594,"4 In A Row Game Development with Google Cloud + Unity",1 hour,Fundamental,5 Credits,labs,GCP
+7797,"Clean Up Unused and Orphaned Persistent Disks",1 hour,Advanced,7 Credits,labs,GCP
+1841,"Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API",45 minutes,Advanced,7 Credits,labs,GCP
+2178,"Using the Text-to-Speech API with C#",45 minutes,Fundamental,5 Credits,labs,GCP
+569,"Cloud Storage: Qwik Start - CLI/SDK",30 minutes,Introductory,1 Credit,labs,GCP
+5538,"How to Build a BI Dashboard Using Google Data Studio and BigQuery",1 hour,Advanced,7 Credits,labs,GCP
+6100,"Using BigQuery and Cloud Logging to Analyze BigQuery Usage",45 minutes,Introductory,1 Credit,labs,GCP
+624,"Exploring NCAA Data with BigQuery",45 minutes,Fundamental,5 Credits,labs,GCP
+1062,"App Dev: Setting up a Development Environment - Java",50 minutes,Fundamental,5 Credits,labs,GCP
+964,"VPC Network Peering",45 minutes,Advanced,7 Credits,labs,GCP
+1230,"Multiple VPC Networks",1 hour 10 minutes,Advanced,7 Credits,labs,GCP
+3694,"Creating Date-Partitioned Tables in BigQuery",1 hour,Fundamental,5 Credits,labs,GCP
+5162,"Hello Cloud Run",45 minutes,Fundamental,5 Credits,labs,GCP
+3632,"APIs Explorer: Cloud Storage",45 minutes,Fundamental,5 Credits,labs,GCP
+5830,"Google Sites: Getting Started",10 minutes,Fundamental,5 Credits,labs,GCP
+936,"Cloud SQL for MySQL: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+878,"Kubernetes Engine: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+1208,"Terraform Fundamentals",35 minutes,Fundamental,5 Credits,labs,GCP
+4337,"Bracketology with Google Machine Learning",1 hour,Fundamental,5 Credits,labs,GCP
+1760,"Cloud Storage: Qwik Start - Cloud Console",30 minutes,Introductory,1 Credit,labs,GCP
+2180,"Using the Video Intelligence API with C#",45 minutes,Fundamental,5 Credits,labs,GCP
+1250,"Create an Internal Load Balancer",50 minutes,Advanced,7 Credits,labs,GCP
+1734,"Google Cloud Essential Skills: Challenge Lab",45 minutes,Fundamental,5 Credits,labs,GCP
+3692,"Ingesting New Datasets into BigQuery",1 hour,Fundamental,3 Credits,labs,GCP
+616,"Hello Istio with Kubernetes Engine",45 minutes,Advanced,7 Credits,labs,GCP
+872,"NGINX Ingress Controller on Google Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+10599,"Cloud Monitoring: Qwik Start",50 minutes,Introductory,1 Credit,labs,GCP
+1836,"Extract, Analyze, and Translate Text from Images with the Cloud ML APIs",50 minutes,Expert,9 Credits,labs,GCP
+8462,"Managing Traffic Routing with Istio and Envoy",1 hour,Advanced,7 Credits,labs,GCP
+3556,"Cloud Scheduler: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+6270,"VPC Networking: Cloud HA-VPN",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+1231,"VPC Networks - Controlling Access",1 hour,Advanced,7 Credits,labs,GCP
+2457,"APIs Explorer: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+7830,"Optimizing Cost with Google Cloud Storage",1 hour,Advanced,7 Credits,labs,GCP
+3634,"Google Assistant: Build an Application with Dialogflow and Cloud Functions",45 minutes,Fundamental,5 Credits,labs,GCP
+10521,"Leverage Apigee to Modernize Exposure & Secure Access",1 hour,Fundamental,5 Credits,labs,GCP
+2181,"Using the Vision API with C#",45 minutes,Fundamental,5 Credits,labs,GCP
+8390,"Build a Serverless App with Cloud Run that Creates PDF Files",45 minutes,Advanced,7 Credits,labs,GCP
+5828,"Google Sheets: Getting Started",10 minutes,Fundamental,5 Credits,labs,GCP
+1234,"Network Tiers - Optimizing Network Spend",30 minutes,Fundamental,5 Credits,labs,GCP
+1241,"Awwvision: Cloud Vision API from a Kubernetes Cluster",45 minutes,Advanced,7 Credits,labs,GCP
+2179,"Using the Translation API with C#",45 minutes,Fundamental,5 Credits,labs,GCP
+3565,"Big Data Analysis to a Slide Presentation",1 hour,Advanced,Free,labs,GCP
+7841,"Clean Up Unused IP Addresses",1 hour,Advanced,7 Credits,labs,GCP
+11765,"Build a Website on Google Cloud: Challenge Lab",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+10244,"Troubleshooting Cloud Service Mesh",1 hour,Advanced,9 Credits,labs,GCP
+1235,"Deployment Manager - Automating Network Deployment",1 hour 20 minutes,Expert,9 Credits,labs,GCP
+577,"BigQuery: Qwik Start - Command Line",30 minutes,Introductory,Free,labs,GCP
+1282,"Network Performance Testing",1 hour,Expert,9 Credits,labs,GCP
+10531,"Use Go Code to Work with Google Cloud Data Sources",1 hour 10 minutes,Fundamental,5 Credits,labs,GCP
+1287,"Improving Network Performance II",1 hour 15 minutes,Expert,9 Credits,labs,GCP
+2802,"Introduction to SQL for BigQuery and Cloud SQL",1 hour,Introductory,1 Credit,labs,GCP
+5825,"Gmail: Getting Started",10 minutes,Fundamental,5 Credits,labs,GCP
+4100,"Asylo - an Open, Flexible Framework for Enclave Applications",1 hour,Advanced,7 Credits,labs,GCP
+680,"Using the Natural Language API from Google Docs",45 minutes,Advanced,7 Credits,labs,GCP
+1229,"VPC Networking Fundamentals",1 hour,Fundamental,5 Credits,labs,GCP
+6268,"Understanding and Analyzing Your Costs with Google Cloud Billing Reports",45 minutes,Introductory,Free,labs,GCP
+2175,"Using BigQuery with C#",1 hour,Fundamental,5 Credits,labs,GCP
+1860,"Configuring Deployment Manager Templates",45 minutes,Fundamental,5 Credits,labs,GCP
+4784,"Google Assistant: Build a Restaurant Locator with the Places API",1 hour,Advanced,7 Credits,labs,GCP
+5827,"Google Drive: Getting Started",10 minutes,Fundamental,5 Credits,labs,GCP
+5829,"Shared Drives: Getting Started",10 minutes,Fundamental,5 Credits,labs,GCP
+560,"Compute Engine: Qwik Start - Windows",40 minutes,Introductory,1 Credit,labs,GCP
+3638,"Troubleshooting and Solving Data Join Pitfalls",1 hour,Fundamental,5 Credits,labs,GCP
+967,"Distributed Load Testing Using Kubernetes",1 hour,Fundamental,5 Credits,labs,GCP
+3414,"Container-Optimized OS: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+925,"Google Cloud Pub/Sub: Qwik Start - Command Line",30 minutes,Introductory,Free,labs,GCP
+557,"Orchestrating the Cloud with Kubernetes",1 hour 15 minutes,Expert,9 Credits,labs,GCP
+1286,"Improving Network Performance I",45 minutes,Advanced,7 Credits,labs,GCP
+3618,"Exploring Your Ecommerce Dataset with SQL in Google BigQuery",30 minutes,Fundamental,Free,labs,GCP
+551,"Cloud IAM: Qwik Start",45 minutes,Introductory,1 Credit,labs,GCP
+612,"Building High Availability and High Bandwidth NAT Gateways",1 hour,Advanced,7 Credits,labs,GCP
+4414,"Implement a Helpdesk Chatbot with Dialogflow & BigQuery ML",1 hour,Fundamental,5 Credits,labs,GCP
+1236,"VPC Flow Logs - Analyzing Network Traffic",1 hour,Advanced,7 Credits,labs,GCP
+5831,"Google Meet: Getting Started",30 minutes,Fundamental,5 Credits,labs,GCP
+1060,"App Dev - Deploying the Application into App Engine Flexible Environment - Java",50 minutes,Fundamental,5 Credits,labs,GCP
+673,"Mapping the NYC Subway",1 hour,Expert,9 Credits,labs,GCP
+3696,"Working with JSON, Arrays, and Structs in BigQuery",1 hour,Fundamental,5 Credits,labs,GCP
+1061,"App Dev - Deploying the Application into Kubernetes Engine - Java",50 minutes,Fundamental,5 Credits,labs,GCP
+1776,"Setting up Jenkins on Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+3678,"Create a Network Load-Balanced Logbook Application",1 hour,Advanced,7 Credits,labs,GCP
+3483,"Google Cloud Storage - Bucket Lock",30 minutes,Fundamental,5 Credits,labs,GCP
+4362,"Configuring Private Google Access and Cloud NAT",1 hour,Advanced,7 Credits,labs,GCP
+5826,"Google Calendar: Getting Started",10 minutes,Fundamental,5 Credits,labs,GCP
+6916,"Examining BigQuery Billing Data in Google Sheets",1 hour,Introductory,1 Credit,labs,GCP
+3662,"APIs Explorer: App Engine",45 minutes,Fundamental,5 Credits,labs,GCP
+1095,"TensorFlow for Poets",1 hour,Fundamental,5 Credits,labs,GCP
+1843,"Entity and Sentiment Analysis with the Natural Language API",40 minutes,Fundamental,5 Credits,labs,GCP
+585,"Dataproc: Qwik Start - Command Line",30 minutes,Introductory,1 Credit,labs,GCP
+2177,"Using the Speech-to-Text API with C#",45 minutes,Fundamental,5 Credits,labs,GCP
+611,"Autoscaling an Instance Group with Custom Cloud Monitoring Metrics",45 minutes,Advanced,7 Credits,labs,GCP
+1205,"Deploy Kubernetes Load Balancer Service with Terraform",1 hour,Advanced,7 Credits,labs,GCP
+615,"Deploying Memcached on Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+3473,"Introduction to APIs in Google",45 minutes,Introductory,1 Credit,labs,GCP
+3563,"Creating a Virtual Machine",40 minutes,Introductory,1 Credit,labs,GCP
+6920,"De-identifying DICOM Data with the Healthcare API",1 hour,Advanced,7 Credits,labs,GCP
+3640,"Creating a Data Warehouse Through Joins and Unions",1 hour,Fundamental,5 Credits,labs,GCP
+629,"Using OpenTSDB to Monitor Time-Series Data on Cloud Platform",1 hour,Advanced,7 Credits,labs,GCP
+2775,"Google Cloud Pub/Sub: Qwik Start - Python",30 minutes,Introductory,1 Credit,labs,GCP
+3744,"Getting Started with Blockchain on GCP using Hyperledger Fabric and Composer",45 minutes,Introductory,1 Credit,labs,GCP
+10285,"Reinforcement Learning: Qwik Start",45 minutes,Fundamental,5 Credits,labs,GCP
+1823,"Creating an Object Detection Application Using TensorFlow",45 minutes,Fundamental,5 Credits,labs,GCP
+8460,"Installing the Istio on GKE Add-On with Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+586,"Dataproc: Qwik Start - Console",30 minutes,Introductory,1 Credit,labs,GCP
+8498,"Serverless Compute: Microservices with Cloud Functions",1 hour,Advanced,7 Credits,labs,GCP
+7114,"Analyzing Billing Data with BigQuery",35 minutes,Introductory,1 Credit,labs,GCP
+639,"Managing Deployments Using Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+1715,"Cloud Security Scanner: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+11944,"Managing Policies in Kubernetes Engine using Anthos Config Management",1 hour 45 minutes,Advanced,7 Credits,labs,GCP
+563,"Getting Started with Cloud Shell & gcloud",45 minutes,Introductory,1 Credit,labs,GCP
+1831,"Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs",1 hour,Advanced,7 Credits,labs,GCP
+1014,"App Engine: Qwik Start - Python",20 minutes,Introductory,1 Credit,labs,GCP
+3685,"APIs Explorer: Cloud SQL",45 minutes,Fundamental,5 Credits,labs,GCP
+8389,"Build a Resilient, Asynchronous System with Cloud Run and Pub/Sub",45 minutes,Advanced,7 Credits,labs,GCP
+1059,"App Dev-Adding User Authentication to your Application-Java",50 minutes,Advanced,7 Credits,labs,GCP
+1794,"Predict Visitor Purchases with a Classification Model in BQML",1 hour,Advanced,7 Credits,labs,GCP
+6074,"Fundamentals of Stackdriver Logging",1 hour,Fundamental,5 Credits,labs,GCP
+1029,"Introduction to Docker",45 minutes,Introductory,1 Credit,labs,GCP
+1157,"Loading Data into Google Cloud SQL",45 minutes,Advanced,7 Credits,labs,GCP
+1249,"Using VPC Network Peering",40 minutes,Advanced,7 Credits,labs,GCP
+3332,"APIs Explorer: Create and Update a Cluster",1 hour,Fundamental,5 Credits,labs,GCP
+641,"Building a High-throughput VPN",1 hour,Expert,9 Credits,labs,GCP
+2771,"Deploy a Web App on GKE with HTTPS Redirect using Lets Encrypt",45 minutes,Advanced,7 Credits,labs,GCP
+3690,"Creating Permanent Tables and Access-Controlled Views in BigQuery",1 hour,Fundamental,5 Credits,labs,GCP
+1161,"Loading Data into Google BigQuery for Exploratory Data Analysis",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+10890,"Build a Cloud Run application for SAP HANA",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+1858,"Google Maps Web Services Proxy for Mobile Applications",45 minutes,Advanced,7 Credits,labs,GCP
+10379,"Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+5834,"Distributed Image Processing in Cloud Dataproc",1 hour,Advanced,7 Credits,labs,GCP
+2187,"Speech to Text Transcription with the Cloud Speech API",30 minutes,Fundamental,5 Credits,labs,GCP
+3616,"Using BigQuery in the GCP Console",40 minutes,Introductory,Free,labs,GCP
+1071,"App Dev: Adding User Authentication to your Application - Python",1 hour,Advanced,7 Credits,labs,GCP
+1232,"HTTP Load Balancer with Cloud Armor",1 hour,Advanced,7 Credits,labs,GCP
+1215,"Cloud SQL with Terraform",1 hour,Advanced,7 Credits,labs,GCP
+1035,"IAM Custom Roles",1 hour,Fundamental,5 Credits,labs,GCP
+8463,"Observing Services using Prometheus, Grafana, Jaeger, and Kiali",1 hour,Advanced,7 Credits,labs,GCP
+986,"Google Cloud SDK: Qwik Start - Redhat/Centos",30 minutes,Introductory,1 Credit,labs,GCP
+10919,"Verily Pathfinder Virtual Agent for COVID-19 Chat App",1 hour,Advanced,7 Credits,labs,GCP
+3642,"Troubleshooting Common SQL Errors with BigQuery",50 minutes,Fundamental,Free,labs,GCP
+2754,"App Engine: Qwik Start - Go",20 minutes,Introductory,1 Credit,labs,GCP
+8391,"Build a Serverless Web App with Firebase",1 hour,Fundamental,5 Credits,labs,GCP
+10525,"Conditional Routing of APIs Based on Feature Flag",1 hour,Advanced,7 Credits,labs,GCP
+1128,"App Dev: Developing a Backend Service - Java",1 hour 20 minutes,Expert,9 Credits,labs,GCP
+1107,"App Dev: Developing a Backend Service - Python",1 hour 20 minutes,Expert,9 Credits,labs,GCP
+10437,"Securing Google Cloud with CFT Scorecard",25 minutes,Fundamental,5 Credits,labs,GCP
+3523,"APIs Explorer: Compute Engine",45 minutes,Fundamental,3 Credits,labs,GCP
+798,"Using Apigee for API Management",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+941,"Datastore: Qwik Start",30 minutes,Introductory,Free,labs,GCP
+697,"Translate Text with the Cloud Translation API",30 minutes,Fundamental,5 Credits,labs,GCP
+937,"Cloud SQL for PostgreSQL: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+2768,"Using Stackdriver Logging with IoT Core Devices",1 hour,Advanced,7 Credits,labs,GCP
+6132,"Ingesting DICOM Data with the Healthcare API",1 hour 15 minutes,Fundamental,5 Credits,labs,GCP
+3614,"Explore and Create Reports with Data Studio",40 minutes,Introductory,Free,labs,GCP
+1155,"Ingesting Data Into The Cloud",45 minutes,Fundamental,5 Credits,labs,GCP
+1063,"App Dev - Storing Application Data in Cloud Datastore - Java",1 hour,Advanced,7 Credits,labs,GCP
+1833,"Monitoring and Logging for Cloud Functions",45 minutes,Fundamental,5 Credits,labs,GCP
+7015,"Ingesting HL7v2 Data with the Healthcare API",1 hour,Fundamental,5 Credits,labs,GCP
+1073,"App Dev: Deploying the Application into Kubernetes Engine - Python",50 minutes,Fundamental,5 Credits,labs,GCP
+981,"Deployment Manager - Full Production",1 hour 30 minutes,Expert,9 Credits,labs,GCP
+1721,"Cloud Profiler: Qwik Start",30 minutes,Introductory,Free,labs,GCP
+1162,"Exploratory Data Analysis Using AI Platform",1 hour,Advanced,7 Credits,labs,GCP
+12007,"Set Up Network and HTTP Load Balancers",40 minutes,Fundamental,5 Credits,labs,GCP
+1743,"Networking 101",1 hour 15 minutes,Fundamental,5 Credits,labs,GCP
+870,"Creating an Instance with Multiple Network Interfaces",1 hour,Fundamental,5 Credits,labs,GCP
+10390,"Deploy an Auto-Scaling HPC Cluster with Slurm",45 minutes,Advanced,7 Credits,labs,GCP
+582,"Cloud Natural Language API: Qwik Start",40 minutes,Introductory,1 Credit,labs,GCP
+863,"Deployment Manager: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+2755,"App Engine: Qwik Start - PHP",30 minutes,Introductory,1 Credit,labs,GCP
+605,"Building an IoT Analytics Pipeline on Google Cloud",50 minutes,Advanced,7 Credits,labs,GCP
+1101,"Dataflow: Qwik Start - Templates",30 minutes,Introductory,1 Credit,labs,GCP
+5568,"Visualize the 10,000 Bitcoin Pizza Transaction Using BigQuery and AI Notebooks",45 minutes,Fundamental,5 Credits,labs,GCP
+8428,"OpenTelemetry",1 hour,Advanced,7 Credits,labs,GCP
+1713,"Getting Started with Cloud KMS",30 minutes,Fundamental,5 Credits,labs,GCP
+5562,"User Authentication: Identity-Aware Proxy",1 hour,Fundamental,5 Credits,labs,GCP
+1163,"Evaluating a Data Model",45 minutes,Advanced,7 Credits,labs,GCP
+1038,"Service Accounts and Roles: Fundamentals",1 hour,Fundamental,5 Credits,labs,GCP
+3339,"Deploying a Python Flask Web Application to App Engine Flexible",45 minutes,Fundamental,5 Credits,labs,GCP
+1104,"Continuous Delivery with Jenkins in Kubernetes Engine",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+1749,"Classify Text into Categories with the Natural Language API",1 hour,Advanced,7 Credits,labs,GCP
+3347,"Deploy Microsoft SQL Server to Compute Engine",45 minutes,Fundamental,5 Credits,labs,GCP
+10605,"Compare Cloud AI Platform Models using the What-If Tool to Identify Potential Bias",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+640,"Running a MongoDB Database in Kubernetes with StatefulSets",45 minutes,Advanced,7 Credits,labs,GCP
+676,"Speaking with a Webpage - Streaming Speech Transcripts",50 minutes,Fundamental,5 Credits,labs,GCP
+1784,"The Apps Script CLI - clasp",30 minutes,Introductory,Free,labs,GCP
+634,"Implementing an AI Chatbot with Dialogflow",50 minutes,Expert,9 Credits,labs,GCP
+619,"Creating and Alerting on Logs-based Metrics",45 minutes,Advanced,7 Credits,labs,GCP
+599,"Data Loss Prevention: Qwik Start - Command Line",30 minutes,Introductory,Free,labs,GCP
+1846,"Rent-a-VM to Process Earthquake Data",40 minutes,Introductory,1 Credit,labs,GCP
+3393,"Real Time Machine Learning with Google Cloud ML",45 minutes,Advanced,7 Credits,labs,GCP
+3340,"Deploy Node.js Express Application in App Engine",55 minutes,Fundamental,5 Credits,labs,GCP
+951,"App Engine: Qwik Start - Java",30 minutes,Introductory,1 Credit,labs,GCP
+2189,"Querying Cloud Spanner With a Java Client",1 hour,Fundamental,5 Credits,labs,GCP
+1251,"Cloud CDN",40 minutes,Advanced,7 Credits,labs,GCP
+916,"Cloud Functions: Qwik Start - Command Line",30 minutes,Introductory,1 Credit,labs,GCP
+10524,"Security Mediation with IAM Service Accounts and OAuth",1 hour,Advanced,7 Credits,labs,GCP
+552,"Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine",1 hour 30 minutes,Expert,9 Credits,labs,GCP
+2165,"Hangouts Chat bot - Apps Script",40 minutes,Advanced,7 Credits,labs,GCP
+1863,"Deployment Manager for Appserver",50 minutes,Advanced,7 Credits,labs,GCP
+1145,"BigQuery: Qwik Start - Console",30 minutes,Introductory,1 Credit,labs,GCP
+1075,"App Dev: Storing Image and Video Files in Cloud Storage - Python",1 hour,Advanced,7 Credits,labs,GCP
+5154,"Google Kubernetes Engine Security: Binary Authorization",1 hour,Advanced,7 Credits,labs,GCP
+7115,"Visualizing Billing Data with Google Data Studio",30 minutes,Introductory,1 Credit,labs,GCP
+5159,"Using Cloud Trace on Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+1738,"Build and Deploy a Docker Image to a Kubernetes Cluster",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+10904,"Using the What-If Tool with Image Recognition Models",1 hour,Fundamental,5 Credits,labs,GCP
+10888,"Prisma Cloud Compute: Securing GKE Run Time",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+1735,"Deploy a Compute Instance with a Remote Startup Script",1 hour,Advanced,7 Credits,labs,GCP
+1076,"App Dev: Storing Application Data in Cloud Datastore - Python",50 minutes,Advanced,7 Credits,labs,GCP
+4817,"Palo Alto Networks VM-Series Firewall: Automating Deployment with Terraform",1 hour,Advanced,7 Credits,labs,GCP
+1774,"Cloud Spanner: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+1753,"Creating a Persistent Disk",30 minutes,Introductory,1 Credit,labs,GCP
+10933,"Ingesting Data Into The Cloud Using Google App Engine",1 hour,Fundamental,5 Credits,labs,GCP
+10268,"VM Migration: Qwik Start",45 minutes,Fundamental,5 Credits,labs,GCP
+1100,"Dataflow: Qwik Start - Python",30 minutes,Introductory,1 Credit,labs,GCP
+4415,"Creating a Data Transformation Pipeline with Cloud Dataprep",1 hour,Advanced,7 Credits,labs,GCP
+4188,"Data Pipeline: Process Stream Data and Visualize Real Time Geospatial Data",40 minutes,Advanced,7 Credits,labs,GCP
+10910,"Cloud Logging on Kubernetes Engine",45 minutes,Fundamental,5 Credits,labs,GCP
+4102,"Using Asylo to Protect Secret Data from an Attacker with Root Privileges",30 minutes,Advanced,7 Credits,labs,GCP
+608,"Run a Big Data Text Processing Pipeline in Cloud Dataflow",40 minutes,Advanced,7 Credits,labs,GCP
+660,"Firebase Web",1 hour,Expert,Free,labs,GCP
+565,"Provision Services with Google Cloud Marketplace",30 minutes,Introductory,1 Credit,labs,GCP
+2196,"Google Assistant: Qwik Start - Dialogflow",30 minutes,Introductory,Free,labs,GCP
+8500,"Responding to Stackdriver Messages with Cloud Functions",45 minutes,Introductory,3 Credits,labs,GCP
+2197,"Google Assistant: Qwik Start - Templates",30 minutes,Introductory,Free,labs,GCP
+609,"Weather Data in BigQuery",35 minutes,Fundamental,5 Credits,labs,GCP
+699,"HTTP Load Balancer",45 minutes,Advanced,7 Credits,labs,GCP
+1050,"Using Kubernetes Engine to Deploy Apps with Regional Persistent Disks",45 minutes,Advanced,7 Credits,labs,GCP
+767,"Cloud Endpoints: Qwik Start",50 minutes,Introductory,1 Credit,labs,GCP
+1739,"Scale Out and Update a Containerized Application on a Kubernetes Cluster",1 hour,Advanced,7 Credits,labs,GCP
+10903,"Identifying Bias in Mortgage Data using Cloud AI Platform and the What-if Tool",1 hour,Fundamental,5 Credits,labs,GCP
+1141,"App Dev-Storing Image and Video Files in Cloud Storage-Java",1 hour,Advanced,7 Credits,labs,GCP
+4375,"Automating the Deployment of Networks with Terraform",1 hour,Advanced,7 Credits,labs,GCP
+3342,"Deploy an ASP.NET Core App to App Engine",45 minutes,Advanced,7 Credits,labs,GCP
+2765,"Streaming IoT Data to Google Cloud Storage",45 minutes,Fundamental,5 Credits,labs,GCP
+647,"Create a Cloud SQL Instance Using Deployment Manager",30 minutes,Fundamental,5 Credits,labs,GCP
+4047,"Deployment Manager - Package and Deploy",1 hour 10 minutes,Advanced,7 Credits,labs,GCP
+1044,"Helm Package Manager",50 minutes,Advanced,7 Credits,labs,GCP
+12068,"Build and Secure Networks in Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+867,"Setting up a Private Kubernetes Cluster",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+10518,"Introducing API Management on Top of a Legacy Platform",1 hour,Fundamental,5 Credits,labs,GCP
+3349,"Deploy Windows Server with ASP.NET Framework to Compute Engine",45 minutes,Advanced,7 Credits,labs,GCP
+11037,"Data Catalog: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+3392,"Processing Time Windowed Data with Apache Beam and Cloud Dataflow (Java)",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+3481,"APIs Explorer: PubSub and IoT",1 hour,Advanced,7 Credits,labs,GCP
+4101,"Running a gRPC Server Inside an Asylo Enclave",1 hour,Advanced,7 Credits,labs,GCP
+8461,"Managing Policies and Security with Istio and Citadel",1 hour,Advanced,7 Credits,labs,GCP
+1160,"Visualize Real Time Geospatial Data with Google Data Studio",1 hour,Advanced,7 Credits,labs,GCP
+564,"Hello Node Kubernetes",1 hour,Advanced,7 Credits,labs,GCP
+3341,"Build and Launch an ASP.NET Core App from Google Cloud Shell",40 minutes,Fundamental,5 Credits,labs,GCP
+1771,"Internet of Things: Qwik Start",40 minutes,Introductory,1 Credit,labs,GCP
+1791,"Securing Your GKE Deployments with Binary Authorization",1 hour 15 minutes,Expert,9 Credits,labs,GCP
+3526,"Google Assistant: Customizing Templates",45 minutes,Fundamental,5 Credits,labs,GCP
+4413,"Creating a Chatbot for Hangouts Using Google Apps Script",30 minutes,Introductory,1 Credit,labs,GCP
+1233,"Dynamic VPN Gateways - Cloud Routers",1 hour 10 minutes,Advanced,7 Credits,labs,GCP
+672,"Introduction to Cloud Dataproc: Hadoop and Spark on Google Cloud Platform",30 minutes,Fundamental,5 Credits,labs,GCP
+1910,"Internal Load Balancer",45 minutes,Fundamental,5 Credits,labs,GCP
+3644,"Predict Housing Prices with Tensorflow and AI Platform",2 hours,Advanced,7 Credits,labs,GCP
+584,"Dataprep: Qwik Start",1 hour,Introductory,1 Credit,labs,GCP
+3460,"ETL Processing on Google Cloud Using Dataflow and BigQuery",1 hour,Advanced,7 Credits,labs,GCP
+6129,"Machine Learning Predictions with FHIR and Healthcare API",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+6376,"Pipeline Graphs with Cloud Data Fusion",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+1765,"Kubernetes Monitoring",1 hour,Fundamental,5 Credits,labs,GCP
+3389,"Distributed Machine Learning with Google Cloud ML",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+1005,"Data Studio: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+6104,"Ingesting FHIR Data with the Healthcare API",1 hour,Fundamental,5 Credits,labs,GCP
+6899,"VM Migration: Planning",1 hour,Advanced,7 Credits,labs,GCP
+617,"Running Dedicated Game Servers in Google Kubernetes Engine",1 hour,Expert,9 Credits,labs,GCP
+581,"AI Platform: Qwik Start",1 hour,Introductory,1 Credit,labs,GCP
+3348,"Running Windows Containers on Compute Engine",1 hour,Fundamental,5 Credits,labs,GCP
+10779,"Online Data Migration to Cloud Spanner using Striim",1 hour,Advanced,7 Credits,labs,GCP
+1158,"Visualizing Data with Google Data Studio",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+6898,"VM Migration: Modernize an Application Stack with GKE and MySQL",1 hour,Advanced,7 Credits,labs,GCP
+2766,"Streaming IoT Kafka to Google Cloud Pub/Sub",1 hour 30 minutes,Expert,9 Credits,labs,GCP
+10538,"Deploying an Open Source Cassandra™ Database using the GCP Marketplace",30 minutes,Introductory,1 Credit,labs,GCP
+4049,"Creating a Gmail Add-on",30 minutes,Fundamental,5 Credits,labs,GCP
+1815,"Cloud Spanner: Create a Gaming Leaderboard with C#",1 hour,Expert,9 Credits,labs,GCP
+5147,"Cloud Run for Anthos",1 hour,Advanced,7 Credits,labs,GCP
+10522,"Self Service API Discovery & Sign Up Experience",1 hour,Fundamental,5 Credits,labs,GCP
+11777,"Confluent: Running Apache Kafka on GKE",45 minutes,Fundamental,5 Credits,labs,GCP
+642,"Creating Cross-region Load Balancing",45 minutes,Advanced,7 Credits,labs,GCP
+5625,"Connect to Cloud SQL from an Application in Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+1768,"Container Registry: Qwik Start",40 minutes,Introductory,1 Credit,labs,GCP
+7637,"Building Redis with Asylo",50 minutes,Advanced,7 Credits,labs,GCP
+588,"Google Cloud Speech API: Qwik Start",15 minutes,Introductory,1 Credit,labs,GCP
+5572,"How to Use a Network Policy on Google Kubernetes Engine",1 hour,Fundamental,5 Credits,labs,GCP
+604,"Analyzing Natality Data Using AI Platform and BigQuery",30 minutes,Advanced,7 Credits,labs,GCP
+1740,"Migrate a MySQL Database to Google Cloud SQL",1 hour 15 minutes,Expert,9 Credits,labs,GCP
+10899,"Bayes Classification with Cloud Datalab, Spark, and Pig on Google Cloud Dataproc",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+1259,"Reporting Application Metrics into Cloud Monitoring",1 hour,Fundamental,5 Credits,labs,GCP
+607,"Predict Baby Weight with TensorFlow on AI Platform",1 hour 30 minutes,Expert,9 Credits,labs,GCP
+8406,"Classify Images of Clouds in the Cloud with AutoML Vision",2 hours,Advanced,7 Credits,labs,GCP
+11881,"Build Interactive Apps with Google Assistant: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+1204,"Custom Providers with Terraform",1 hour 15 minutes,Expert,9 Credits,labs,GCP
+603,"Video Intelligence: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+663,"Deploy ASP.NET Core App to Kubernetes Engine",50 minutes,Expert,9 Credits,labs,GCP
+7638,"Building SQLite with Asylo",40 minutes,Fundamental,5 Credits,labs,GCP
+10470,"Deploy, Scale, and Update Your Website on Google Kubernetes Engine",45 minutes,Fundamental,5 Credits,labs,GCP
+2789,"Deploy a Ruby on Rails App to App Engine Flexible Environment",45 minutes,Advanced,7 Credits,labs,GCP
+1802,"Cloud Filestore: Qwik Start",45 minutes,Introductory,1 Credit,labs,GCP
+610,"Working with Google Cloud Dataprep",1 hour,Fundamental,5 Credits,labs,GCP
+1206,"HTTPS Content-Based Load Balancer with Terraform",1 hour,Advanced,7 Credits,labs,GCP
+621,"Monitoring Multiple Projects with Cloud Monitoring",45 minutes,Fundamental,5 Credits,labs,GCP
+1800,"A Tour of Cloud IoT Core",45 minutes,Advanced,7 Credits,labs,GCP
+954,"App Engine: Qwik Start - Ruby",20 minutes,Introductory,1 Credit,labs,GCP
+681,"Using the Natural Language API with Ruby",40 minutes,Advanced,7 Credits,labs,GCP
+1758,"Google Sheets as a Reporting Tool: Sheets API",1 hour 15 minutes,Introductory,Free,labs,GCP
+1854,"Using Ruby on Rails with Cloud SQL for PostgreSQL",1 hour,Advanced,7 Credits,labs,GCP
+10876,"Palo Alto Networks: VM-Series AutoScale in Google Cloud",1 hour,Advanced,7 Credits,labs,GCP
+5570,"Tracking Cryptocurrency Exchange Trades with Google Cloud Platform in Real-Time",1 hour,Expert,9 Credits,labs,GCP
+8392,"Importing Data to a Firestore Database",45 minutes,Fundamental,5 Credits,labs,GCP
+600,"Data Loss Prevention: Qwik Start - JSON",30 minutes,Introductory,1 Credit,labs,GCP
+659,"Firebase SDK for Cloud Functions",1 hour,Advanced,7 Credits,labs,GCP
+6430,"Create a Custom Network Using Deployment Manager",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+662,"Configuring and Deploying Windows SQL Server on GCP",1 hour 30 minutes,Expert,9 Credits,labs,GCP
+4360,"Deploy ASP.NET Core App to Google Kubernetes Engine with Istio",1 hour 30 minutes,Expert,9 Credits,labs,GCP
+2767,"Using Firestore with Cloud IoT Core for Device Configuration",1 hour,Advanced,7 Credits,labs,GCP
+6034,"Cloud Composer: Qwik Start - Command Line",1 hour,Introductory,1 Credit,labs,GCP
+579,"Bigtable: Qwik Start - Command Line",30 minutes,Introductory,1 Credit,labs,GCP
+2764,"Streaming IoT Core Data to Dataprep",1 hour 15 minutes,Fundamental,5 Credits,labs,GCP
+1852,"Setting up a Minecraft Server on Google Compute Engine",1 hour,Fundamental,5 Credits,labs,GCP
+580,"Bigtable: Qwik Start - Hbase Shell",30 minutes,Introductory,1 Credit,labs,GCP
+5155,"GKE Migrating to Containers",1 hour 15 minutes,Expert,9 Credits,labs,GCP
+1207,"Modular Load Balancing with Terraform - Regional Load Balancer",1 hour,Advanced,7 Credits,labs,GCP
+1826,"Running Distributed TensorFlow on Compute Engine",1 hour,Advanced,7 Credits,labs,GCP
+4815,"Introduction to GitLab on GKE",1 hour,Advanced,7 Credits,labs,GCP
+11809,"Creating a Streaming Data Pipeline With Apache Kafka",45 minutes,Fundamental,5 Credits,labs,GCP
+1817,"Deploying a Fault-Tolerant Microsoft Active Directory Environment",1 hour,Expert,9 Credits,labs,GCP
+8367,"Palo Alto Networks VM-Series Firewall: Securing the GKE Perimeter",1 hour,Advanced,7 Credits,labs,GCP
+698,"Create a Basic Deployment Manager Template",30 minutes,Introductory,1 Credit,labs,GCP
+1726,"Integrating Machine Learning APIs",1 hour,Advanced,7 Credits,labs,GCP
+666,"Install and Use Cloud Tools for PowerShell",1 hour 10 minutes,Advanced,7 Credits,labs,GCP
+999,"Google Cloud Datalab: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+4051,"G Suite Certification: Practice Lab",40 minutes,Introductory,Free,labs,GCP
+4186,"Site Reliability Troubleshooting with Cloud Monitoring APM",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+4823,"Build a Nearby Business Search Service with Google Maps Platform",1 hour,Advanced,7 Credits,labs,GCP
+3398,"Provisioning and Using a Managed Hadoop/Spark Cluster with Cloud Dataproc (Command Line)",40 minutes,Fundamental,5 Credits,labs,GCP
+2792,"Using Agones to Easily Create Scalable Game Servers",45 minutes,Fundamental,5 Credits,labs,GCP
+12358,"Getting Started with Cloud Data Fusion",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+10946,"Palo Alto Networks: VM-Series Advanced Deployment",1 hour,Advanced,7 Credits,labs,GCP
+8486,"Exploring the Public Cryptocurrency Datasets Available in BigQuery",35 minutes,Expert,9 Credits,labs,GCP
+2456,"Cloud Composer: Qwik Start - Console",1 hour,Introductory,1 Credit,labs,GCP
+1159,"Processing Data with Google Cloud Dataflow",1 hour,Advanced,7 Credits,labs,GCP
+3676,"Deployment Manager - Adding Load Balancing",50 minutes,Advanced,7 Credits,labs,GCP
+10417,"Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+5157,"Monitoring with Stackdriver on Kubernetes Engine",45 minutes,Fundamental,5 Credits,labs,GCP
+3391,"Machine Learning with TensorFlow",1 hour,Advanced,7 Credits,labs,GCP
+10258,"Getting Started: Create and Manage Cloud Resources: Challenge Lab",1 hour,Fundamental,5 Credits,labs,GCP
+12347,"Design Conversational Flows for your Agent",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+3528,"Cloud Composer: Copying BigQuery Tables Across Different Locations",1 hour,Advanced,7 Credits,labs,GCP
+1820,"Creating Custom Interactive Dashboards with Bokeh and BigQuery",1 hour 10 minutes,Expert,9 Credits,labs,GCP
+690,"Customize Network Topology with Subnetworks",1 hour,Expert,9 Credits,labs,GCP
+589,"Google Genomics: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+5541,"Securing Applications on Kubernetes Engine - Three Examples",1 hour,Advanced,9 Credits,labs,GCP
+5156,"Using Role-based Access Control in Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+10948,"Kubeflow Pipelines with AI Platform",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+8558,"Use Google Maps API to Visualize BigQuery Geospatial Data",1 hour,Advanced,7 Credits,labs,GCP
+850,"Introduction to git and GitHub",30 minutes,Fundamental,1 Credit,labs,GCP
+1209,"Using a NAT Gateway with Kubernetes Engine",45 minutes,Fundamental,5 Credits,labs,GCP
+10523,"Content Aggregation via Apigee - Bring in Google Hosted API Content",1 hour,Advanced,7 Credits,labs,GCP
+6374,"Using OAuth Authenticated SQLPad to Query SAP HANA Express",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+11943,"Managing Hybrid Clusters using Kubernetes Engine",1 hour,Advanced,7 Credits,labs,GCP
+11999,"Build and Execute MySQL, PostgreSQL, and SQLServer to Data Catalog Connectors",45 minutes,Fundamental,5 Credits,labs,GCP
+10539,"Migrating an application and data from Apache Cassandra™ to DataStax Enterprise",1 hour,Fundamental,5 Credits,labs,GCP
+3390,"Machine Learning with Spark on Google Cloud Dataproc",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+1737,"Configure Secure RDP using a Windows Bastion Host",1 hour,Advanced,7 Credits,labs,GCP
+1736,"Configure a Firewall and a Startup Script with Deployment Manager",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+1724,"G Suite Admin Getting Started - Personalization",40 minutes,Fundamental,5 Credits,labs,GCP
+5576,"Google Cloud IoT Core Commands",1 hour 15 minutes,Fundamental,5 Credits,labs,GCP
+5686,"Deploy and Manage an Elastifile Cloud File System with Terraform",1 hour 20 minutes,Advanced,7 Credits,labs,GCP
+12379,"Engineer Data in Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+1210,"Using Vault on Compute Engine for Secret Management",1 hour,Expert,9 Credits,labs,GCP
+674,"Running a Spark Application with OpenCV on Cloud Dataproc",50 minutes,Advanced,7 Credits,labs,GCP
+3497,"Query BigQuery with Python Using Ibis",45 minutes,Advanced,7 Credits,labs,GCP
+5982,"Running a Node.js Container on Google Kubernetes Engine",40 minutes,Fundamental,5 Credits,labs,GCP
+10519,"Connect to Cloud Logging Using Apigee",1 hour,Fundamental,5 Credits,labs,GCP
+3357,"Launching Dataproc Jobs with Cloud Composer",1 hour,Advanced,7 Credits,labs,GCP
+10520,"Establish a Data Lake from Cloud Logging to BigQuery with Apigee",1 hour 15 minutes,Fundamental,5 Credits,labs,GCP
+10939,"Automating DevOps Workflows with GitLab and Terraform",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+12372,"Creating Reusable Pipelines in Cloud Data Fusion",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+10603,"Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+10267,"VM Migration: Introduction to StratoZone Assessments",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+10210,"Cloud Life Sciences: Variant Transforms Tool",1 hour 15 minutes,Expert,9 Credits,labs,GCP
+7678,"Configuring IAM Permissions with gcloud",1 hour,Fundamental,5 Credits,labs,GCP
+12011,"Explore Machine Learning Models with Explainable AI: Challenge Lab",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+11952,"Hosting a Web App on Google Cloud Using Compute Engine",45 minutes,Fundamental,5 Credits,labs,GCP
+10457,"Deploy to Kubernetes in Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+5166,"Empower Your Gmail Inbox with Google Cloud Functions",1 hour,Fundamental,5 Credits,labs,GCP
+1219,"Deploy Refinery CMS to App Engine Flexible Environment",1 hour 25 minutes,Advanced,7 Credits,labs,GCP
+12365,"Building Realtime Pipelines in Cloud Data Fusion",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+12039,"Building Virtual Agent Fulfillment",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+11988,"Insights from Data with BigQuery: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+4167,"Creating Custom Base Images for Compute Engine with Jenkins and Packer",1 hour 15 minutes,Advanced,7 Credits,labs,GCP
+11044,"Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+12008,"Automate Interactions with Contact Center AI: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP
+12038,"Adding a Phone Gateway to a Virtual Agent",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+12364,"Building Transformations and Preparing Data with Wrangler in Cloud Data Fusion",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP
+10537,"Deploy DataStax Enterprise from the GCP Marketplace",1 hour,Introductory,1 Credit,labs,GCP
+12412,"Service Directory: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP
+12366,"Dialogflow Logging and Monitoring in Operations Suite",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+12374,"Exploring the Lineage of Data with Cloud Data Fusion",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+12373,"Redacting Confidential Data within your Pipelines in Cloud Data Fusion",1 hour 30 minutes,Advanced,7 Credits,labs,GCP
+22,"Security on AWS",28 minutes,,Free,quests,AWS
+21,"Serverless Web Apps using Amazon DynamoDB",5 hours,,3 Credits,quests,AWS
+19,"Alexa Skills Development",4 hours,,30 Credits,quests,AWS
+17,"Serverless Design with AWS Lambda",4 hours,,24 Credits,quests,AWS
+18,"Advanced Operations Using Amazon Redshift",4 hours,,18 Credits,quests,AWS
+6,"Compute & Networking",5 hours,,12 Credits,quests,AWS
+8,"Deployment & Management",2 hours,,16 Credits,quests,AWS
+9,"Storage & CDN",5 hours,,46 Credits,quests,AWS
+3,"Websites & Web Apps",6 hours,,27 Credits,quests,AWS
+5,"Big Data on AWS",5 hours,,26 Credits,quests,AWS
+7,"Digital Media",3 hours,,38 Credits,quests,AWS
+16,"SysOps Administrator - Associate",7 hours,,46 Credits,quests,AWS
+10,"Solutions Architect - Associate",4 hours,,12 Credits,quests,AWS
+11,"Solutions Architect - Professional",3 hours,,28 Credits,quests,AWS
+15,"Programming Windows on AWS",8 hours,,49 Credits,quests,AWS
+12,"Corporate Apps on AWS for Windows",2 hours,,1 Credit,quests,AWS
+13,"Databases on AWS for Windows",2 hours,,2 Credits,quests,AWS
+14,"SysAdmin on AWS for Windows",2 hours,,15 Credits,quests,AWS
+10512,"Monitoring a Live Streaming Workflow with Amazon CloudWatch",1 hour 30 minutes,,8 Credits,labs,AWS
+12425,"Introduction to Amazon Relational Database Service (RDS) (Linux)",50 minutes,,1 Credit,labs,AWS
+11775,"Monetizing a Live Video Stream with AWS Elemental MediaTailor",1 hour 30 minutes,,8 Credits,labs,AWS
+10439,"Build a Dynamic Conversational Bot - Part 2",1 hour 30 minutes,,8 Credits,labs,AWS
+12370,"Building a Media Sharing Website - Part 1: Media Upload",55 minutes,Advanced,10 Credits,labs,AWS
+10479,"Automated Video Editing with YOU as the Star!",45 minutes,,8 Credits,labs,AWS
+10477,"Working with Alexa: Build a Flashcard Skill",55 minutes,,10 Credits,labs,AWS
+10407,"Introduction to Amazon DynamoDB",40 minutes,Introductory,Free,labs,AWS
+12010,"Programming Amazon DynamoDB with .NET",1 hour 40 minutes,,10 Credits,labs,AWS
+10408,"Introduction to AWS Identity and Access Management (IAM)",25 minutes,Introductory,Free,labs,AWS
+3570,"Video on Demand with AWS Elemental MediaConvert",50 minutes,Introductory,10 Credits,labs,AWS
+10490,"S3: Multi-region Storage Backup with Cross-Region Replication",1 hour,Introductory,Free,labs,AWS
+10227,"Serverless Architectures using Amazon CloudWatch Events and Scheduled Events with AWS Lambda",45 minutes,Fundamental,8 Credits,labs,AWS
+11776,"Introduction to Amazon Simple Storage Service (S3)",1 hour,Introductory,Free,labs,AWS
+12344,"Building Your First Amazon Virtual Private Cloud (VPC)",1 hour 25 minutes,Fundamental,8 Credits,labs,AWS
+10478,"Working with Alexa: Build a How-To Skill",57 minutes,,8 Credits,labs,AWS
+5682,"Building a Live Video Channel with MediaLive, MediaStore and CloudFront",1 hour,Introductory,8 Credits,labs,AWS
+11046,"Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation",1 hour,Fundamental,1 Credit,labs,AWS
+8534,"Programming AWS Lambda for Windows",1 hour 5 minutes,,10 Credits,labs,AWS
+11808,"Introduction to Amazon Elastic Block Store (EBS)",45 minutes,,1 Credit,labs,AWS
+8530,"Live Video Workflow with Captions",2 hours,,8 Credits,labs,AWS
+10980,"Introduction to Elastic Load Balancing",50 minutes,Introductory,1 Credit,labs,AWS
+10286,"Launching and Managing a Web Application with AWS CloudFormation",50 minutes,Expert,15 Credits,labs,AWS
+11013,"Introduction to Amazon EC2",1 hour,Introductory,1 Credit,labs,AWS
+11012,"Working with AWS CodeCommit on Windows",1 hour 10 minutes,,8 Credits,labs,AWS
+7932,"Introduction to Amazon EC2 Auto Scaling",30 minutes,Introductory,1 Credit,labs,AWS
+5681,"Creating a Serverless Video Conversion Watchfolder Workflow for MediaConvert",1 hour,Introductory,8 Credits,labs,AWS
+10471,"Working with Alexa: Build a Decision Tree Skill",57 minutes,Advanced,10 Credits,labs,AWS
+10487,"Using Open Data with Amazon S3",40 minutes,Fundamental,8 Credits,labs,AWS
+10378,"Streaming Dynamic Content using Amazon CloudFront",50 minutes,,10 Credits,labs,AWS
+10940,"Introduction to AWS CloudFormation Designer",40 minutes,,1 Credit,labs,AWS
+10496,"Introduction to AWS CodeDeploy",1 hour 20 minutes,,1 Credit,labs,AWS
+8533,"AWS Tools for Windows PowerShell: Getting Started",50 minutes,Fundamental,8 Credits,labs,AWS
+10958,"Troubleshooting Serverless Applications",1 hour 30 minutes,Advanced,10 Credits,labs,AWS
+11045,"Serverless Web Apps using Amazon DynamoDB - Part 3",55 minutes,Fundamental,1 Credit,labs,AWS
+10377,"Introduction to AWS Device Farm",30 minutes,Introductory,Free,labs,AWS
+10769,"Introduction to AWS OpsWorks",55 minutes,Introductory,1 Credit,labs,AWS
+8712,"Working with Elastic Load Balancing",30 minutes,,8 Credits,labs,AWS
+10955,"AWS Federated Authentication with AD FS",1 hour 20 minutes,Expert,15 Credits,labs,AWS
+11794,"Working with Amazon Redshift",1 hour 55 minutes,Advanced,10 Credits,labs,AWS
+10383,"Introduction to Amazon API Gateway",55 minutes,Introductory,Free,labs,AWS
+10467,"Securing VPC Resources with Security Groups",1 hour,Fundamental,1 Credit,labs,AWS
+10499,"Migrating On-Premises NFS Using AWS DataSync and Amazon File Gateway",1 hour 15 minutes,,10 Credits,labs,AWS
+10436,"Build a Dynamic Conversational Bot - Part 1",1 hour,,8 Credits,labs,AWS
+8568,"Media services: Use AWS AI services to automate captioning & subtitling",2 hours,intermediate,8 Credits,labs,AWS
+10927,"Introduction to Amazon CloudFront",55 minutes,,Free,labs,AWS
+10213,"Serverless Web Apps using Amazon DynamoDB - Part 2",35 minutes,Fundamental,1 Credit,labs,AWS
+10916,"Serverless Web Apps using Amazon DynamoDB - Part 1",55 minutes,,1 Credit,labs,AWS
+10493,"Build a Serverless Text-to-Speech Application with Amazon Polly",45 minutes,Advanced,8 Credits,labs,AWS
+10433,"Working with Alexa: Build a Trivia Skill",55 minutes,,10 Credits,labs,AWS
+10541,"Introduction to AWS Lambda",45 minutes,Introductory,Free,labs,AWS
+11804,"Using Tableau Desktop with Amazon Redshift",1 hour 10 minutes,Fundamental,8 Credits,labs,AWS
+11811,"EMR File System Client-side Encryption Using AWS KMS-managed Keys",1 hour,,10 Credits,labs,AWS
+8557,"Introduction to Amazon Relational Database Service (RDS) (Windows)",25 minutes,Introductory,1 Credit,labs,AWS
+8532,"Image Insertion and Input Switching with AWS Elemental MediaLive",1 hour 30 minutes,Fundamental,Free,labs,AWS
+10308,"Caching Static Files with Amazon CloudFront",30 minutes,Advanced,10 Credits,labs,AWS
+10388,"Introduction to AWS Key Management Service",50 minutes,Introductory,Free,labs,AWS
+12004,"Programming Amazon SQS and Amazon SNS with .NET",1 hour 40 minutes,,10 Credits,labs,AWS
+10420,"Using Amazon RDS for Applications",1 hour 10 minutes,Advanced,10 Credits,labs,AWS
+10450,"Maintaining High Availability with Auto Scaling (for Linux)",1 hour 55 minutes,Advanced,10 Credits,labs,AWS
+11758,"Amazon Elastic File System (EFS) Performance",2 hours,Expert,15 Credits,labs,AWS
+11839,"Performing a Basic Audit of your AWS Environment",55 minutes,,8 Credits,labs,AWS
+10908,"Introduction to Amazon Elastic File System (EFS)",1 hour 20 minutes,,1 Credit,labs,AWS
+10371,"Serverless Architectures with Amazon DynamoDB and Amazon Kinesis Streams with AWS Lambda",45 minutes,Advanced,10 Credits,labs,AWS
+12345,"Introduction to Amazon Virtual Private Cloud (VPC)",40 minutes,Introductory,1 Credit,labs,AWS
+12415,"Automating AWS Services with Scripting and the AWS CLI",1 hour 15 minutes,,10 Credits,labs,AWS
+8416,"Programming AWS Security Token Service (STS) with .NET",55 minutes,,10 Credits,labs,AWS
+7685,"Collecting and Analyzing Logs with Amazon CloudWatch Logs Insights",1 hour,Intermediate,5 Credits,labs,AWS
+11807,"Building Scalable Web Applications with AWS Elastic Beanstalk",1 hour 55 minutes,,15 Credits,labs,AWS
+11757,"Building and Deploying Containers Using Amazon Elastic Container Service",1 hour 30 minutes,,1 Credit,labs,AWS
+10415,"Using AWS Lambda with Amazon CloudWatch and SNS to Implement a Slack Chat Bot",55 minutes,Fundamental,8 Credits,labs,AWS
+10301,"Working with AWS CodeCommit",40 minutes,Fundamental,8 Credits,labs,AWS
+10387,"Introduction to AWS CloudFormation",45 minutes,Introductory,1 Credit,labs,AWS
+10468,"Programming Amazon S3 with .NET",1 hour 10 minutes,,8 Credits,labs,AWS
+10501,"Monitoring Security Groups with Amazon CloudWatch Events",57 minutes,Advanced,10 Credits,labs,AWS
+8578,"Optimize slow databases with Amazon Aurora",1 hour 45 minutes,Introductory,5 Credits,labs,AWS
+11791,"Introduction to Amazon Aurora",1 hour,Introductory,1 Credit,labs,AWS
+6896,"VM Migration: Assessment",1 hour,Fundamental,5 Credits,labs,AWS
+10906,"Analyze Big Data with Hadoop",1 hour,,1 Credit,labs,AWS
+7842,"Introduction to Amazon Elastic Container Registry",40 minutes,Introductory,1 Credit,labs,AWS
+10921,"Building a Live Video Channel with MediaLive, MediaPackage and CloudFront",1 hour 30 minutes,Introductory,1 Credit,labs,AWS
+12030,"Building Search into your Applications with Amazon CloudSearch",1 hour 55 minutes,,10 Credits,labs,AWS
+10957,"Deploy an End-to-End IoT Application",1 hour 30 minutes,Fundamental,8 Credits,labs,AWS
+11761,"Hybrid Storage and Data Migration with AWS Storage Gateway File Gateway",1 hour,,8 Credits,labs,AWS
+11203,"Introduction to Amazon ElastiCache",50 minutes,Introductory,1 Credit,labs,AWS
+11874,"Introduction to AWS Internet of Things (IoT)",1 hour 30 minutes,,1 Credit,labs,AWS
+10403,"Introduction to Amazon Kinesis Firehose",1 hour,,1 Credit,labs,AWS
+7845,"Building VPC, S3, EC2, and RDS Products with AWS Service Catalog",2 hours,,1 Credit,labs,AWS
+10432,"Monitoring Security Groups with AWS Config",1 hour,,10 Credits,labs,AWS
+12002,"Introduction to Amazon Elastic Container Service",50 minutes,,1 Credit,labs,AWS
+10959,"Building Serverless Applications with an Event-Driven Architecture",1 hour 30 minutes,Intermediate,10 Credits,labs,AWS
+11759,"Auditing Your Security with AWS Trusted Advisor",1 hour 25 minutes,Advanced,10 Credits,labs,AWS
+11760,"Hosting WordPress Using Amazon S3",50 minutes,Fundamental,8 Credits,labs,AWS
+11191,"Storage Gateway: File Gateway Network Configuration",2 hours,Fundamental,8 Credits,labs,AWS
+12028,"Centralized Log Processing with Amazon Elasticsearch Service",1 hour 30 minutes,,8 Credits,labs,AWS
+7937,"Creating Models with Amazon SageMaker",1 hour,Introductory,15 Credits,labs,AWS
+11763,"Working with Amazon Elastic Container Service",55 minutes,Fundamental,8 Credits,labs,AWS
+8496,"Using IAM and Bucket Policies with Amazon S3",1 hour 30 minutes,Fundamental,8 Credits,labs,AWS
+10920,"IoT Command and Control",1 hour 30 minutes,Fundamental,8 Credits,labs,AWS
+10601,"Exploring Google Ngrams with Amazon EMR",1 hour 10 minutes,Expert,15 Credits,labs,AWS
+10988,"IoT Edge Computing: AWS IoT Greengrass",1 hour 30 minutes,Advanced,10 Credits,labs,AWS
+11990,"Visualizing Security Groups with Amazon Elasticsearch Service",1 hour,,10 Credits,labs,AWS
+10962,"Managing IoT Sensor Data with Amazon ElastiCache for Redis",1 hour 30 minutes,Advanced,10 Credits,labs,AWS
+8567,"Challenge Lab",45 minutes,Introductory,1 Credit,labs,AWS
+11033,"Introduction to Amazon ElastiCache with Windows Server",45 minutes,Introductory,1 Credit,labs,AWS
+12065,"Blue/Green Deployment Pattern with AWS Elastic Beanstalk",1 hour 45 minutes,,15 Credits,labs,AWS
+12381,"Deploying a LAMP application with Amazon Lightsail",2 hours 30 minutes,,1 Credit,labs,AWS
+12001,"Serverless Web Apps using Amazon DynamoDB - Part 2",1 hour,,1 Credit,labs,AWS
+12477,"Working with Amazon CloudFront for Dynamic Content Acceleration",1 hour 20 minutes,,10 Credits,labs,AWS
+12473,"Game Hosting with Amazon GameLift",2 hours 55 minutes,Introductory,5 Credits,labs,AWS
