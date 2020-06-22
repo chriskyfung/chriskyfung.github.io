@@ -2,8 +2,8 @@
 layout: post
 title: "QLogbook: Configure a Firewall and a Startup Script with Deployment Manager"
 author: chris
-date: 2019-09-23
-last_modified_at: 2020-03-26
+date: 2019-09-23 +0800
+last_modified_at: 2020-03-26 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
@@ -83,7 +83,8 @@ Open the `install-web.sh` file, you should see the following codes:
 
 Let recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)"_.
 
-This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)"_. You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). ~~For more information, read [Setting Metadata and Using Startup Scripts](https://cloud.google.com/deployment-manager/docs/step-by-step-guide/setting-metadata-and-startup-scripts) in the Cloud Deployment Manager documentation~~.
+This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)"_. You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). For more information, read [Running startup scripts
+](https://cloud.google.com/compute/docs/startupscript) in the Cloud Deployment Manager documentation.
 
 Add the following properties to the instance configuration:
 

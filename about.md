@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+image: /assets/images/head.svg
 comments: false
 ---
 
