@@ -12,6 +12,7 @@ redirect_from:
 image: 
    path: qwiklabs/qwiklabs-badges
    ext: jpg
+excerpt: Over 400 hands-on labs and quests available on Qwiklabs for learning GCP. Therefore, we made a visual map for you to more easily seek a desired learning path.
 featured: true
 ---
 
@@ -174,10 +175,10 @@ _The Cookbooks of Challenge Quest Series:_
 - [Qwiklab/Logbook: Migrate a MySQL Database to Google Cloud SQL](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL)
 
 _The Hints for Challenge Labs 2020:_
-- [Qwiklab/Logbook: Google Cloud Essentials: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab)
-- [Qwiklab/Logbook: Cloud Architecture: Challenge Lab](/blog/qwiklabs/Cloud-Architecture-Challenge-Lab)
-- [Qwiklab/Logbook: Baseline Infrastructure: Challenge Lab](/blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab)
-- [QLogbook: Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab)
+- [Qwiklab/Logbook: Getting Started: Create and Manage Cloud Resources: Challenge Lab](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab)
+- [Qwiklab/Logbook: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab)
+- [Qwiklab/Logbook: Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](/blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab)
+- [QLogbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
 
 _Quizzes Answers:_
 

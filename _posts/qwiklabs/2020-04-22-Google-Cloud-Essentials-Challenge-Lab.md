@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "QLogbook: Google Cloud Essentials: Challenge Lab"
+title: "QLogbook: Getting Started: Create and Manage Cloud Resources: Challenge Lab"
 author: chris
-date: 2020-04-22
+date: 2020-04-22 +0800
+last_modified_at: 2020-06-22 09:45:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
-permalink: /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
-excerpt: Hints for qwiklab GSP313 "Google Cloud Essential &#58; Challenge Lab" | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
+permalink: /blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab
+redirect_from: /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
+excerpt: Hints for qwiklab GSP313 "Getting Started&#58; Create and Manage Cloud Resources&#58; Challenge Lab" | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
 image: 
    path: qwiklabs/qwiklabs-GSP313-task1
    ext: png
+featured: true
 ---
 
 <!--more-->
@@ -18,11 +21,11 @@ Qwiklabs implemented a big change to the format of its quests in 2020. Multiple 
 
 In the last few months, I received a few comments that ask for help in those challenge labs. I am going to publish a series of logbooks to provide hints and instructions for those difficult labs.
 
-In this article, we will go through the lab **GSP313** _[Google Cloud Essentials: Challenge Lab](https://www.qwiklabs.com/focuses/10258?parent=catalog)_. This exercise is in the introductory-level Quest called “Google Cloud Essentials”, which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.
+In this article, we will go through the lab **GSP313** _[Getting Started: Create and Manage Cloud Resources: Challenge Lab](https://www.qwiklabs.com/focuses/10258?parent=catalog)_ (formerly known as _Google Cloud Essentials: Challenge Lab_). This exercise is an extension of the introductory-level Quest called "[Google Cloud Essentials](https://www.qwiklabs.com/quests/23)", which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.
 
 **The challenge contains 3 compulsory tasks:**
 
-1. Create a project jumphost instance;
+1. Create a project jumphost instance (zone: us-east1-b);
 2. Create a Kubernetes service cluster;
 3. Setup an HTTP load balancer to create the web server frontend.
 

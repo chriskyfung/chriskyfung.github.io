@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "QLogbook: Baseline Infrastructure: Challenge Lab"
+title:  "QLogbook: Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab"
 author: chris
-date: 2020-05-02
+date: 2020-05-02 +0800
+last_modified_at: 2020-06-22 10:08:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
-permalink: /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
-excerpt: A brief procedure for qwiklab GSP315 "Baseline-Infrastructure-Challenge-Lab &#58; Challenge Lab".
+permalink: /blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab
+redirect_from: /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
+excerpt: A brief procedure for qwiklab GSP315 "Perform Foundational Infrastructure Tasks in Google Cloud&#58; Challenge Lab".
 image: 
    path: qwiklabs/map
    ext: jpg
@@ -14,7 +16,7 @@ image:
 
 <!--more-->
 
-Did the hints from the [last article](/blog/qwiklabs/Cloud-Architecture-Challenge-Lab) help you to finish the Cloud Architecture: Challenge lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** _[Baseline Infrastructure: Challenge Lab](https://www.qwiklabs.com/focuses/10379?parent=catalog)_ are listed below.
+Did the hints from the [last article](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab) help you to finish the Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** _[Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10379?parent=catalog)_ (formerly known as _Baseline Infrastructure: Challenge Lab_) is listed below.
 
 **The challenge contains 4 required tasks:**
 
@@ -74,7 +76,7 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 ## Summary
 
-All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Google Cloud Essentials: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab).<br>
+All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Getting Started: Create and Manage Cloud Resources: Challenge Lab](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab).<br>
 **9 credits!** Is this cheating money?
 
 * * *

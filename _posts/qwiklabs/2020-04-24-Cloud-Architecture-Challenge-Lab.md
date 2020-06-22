@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "QLogbook: Cloud Architecture: Challenge Lab"
+title:  "QLogbook: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab"
 author: chris
-date: 2020-04-24
+date: 2020-04-24 +0800
+last_modified_at: 2020-06-22 10:05:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
-permalink: /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
-excerpt: Hints for qwiklab GSP314 "Cloud Architecture &#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
+permalink: /blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab
+redirect_from: /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
+excerpt: Hints for qwiklab GSP314 "Deploy and Manage Cloud Environments with Google Cloud&#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
 image: 
    path: qwiklabs/qwiklab-GSP314-spinaker-production
    ext: png
@@ -14,9 +16,9 @@ image:
 
 <!--more-->
 
-Did the hints from the [last article](/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab) help you to finish the first challenge lab? Are you familiar with the basic knowledge from the **Google Cloud Essentials** quest now?
+Did the hints from the [last article](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab) help you to finish the first challenge lab? Are you familiar with the basic knowledge from the **Google Cloud Essentials** quest now?
 
-It's important before you move on to the exercise **GSP314** _[Cloud Architecture: Challenge Lab](https://www.qwiklabs.com/focuses/10417?parent=catalog)_, which will be studied below. This lab is much complicated than the last one. It will test your skills and knowledge for creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker. It requires you well understand and integrate what you learned and experienced from the labs in the Cloud Architecture quest.
+It's important before you move on to the exercise **GSP314** _[Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10417?parent=catalog)_, formerly known as _Cloud Architecture: Challenge Lab_, which will be studied below. This lab is much complicated than the last one. It will test your skills and knowledge for creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker. It requires you well understand and integrate what you learned and experienced from the labs in the Cloud Architecture quest.
 
 In the lab scenario, your client has already established a product development environment with Spinnaker and the application delivery pipeline in the network **kraken-build-vpc**. Those resources will be provisioned while the lab starts. You only need to complete the unfinished part of the architecture ([in the red box of the diagram](https://cdn.qwiklabs.com/KQtWhw5izJUfg3%2BL%2B0uLZQ6v44HXVd9BOdAOhhatO3Q%3D)).
 
