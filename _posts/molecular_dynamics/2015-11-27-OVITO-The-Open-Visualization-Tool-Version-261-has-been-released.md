@@ -3,8 +3,8 @@ layout: post
 title: "OVITO - The Open Visualization Tool - Version 2.6.1 - has been released"
 author: chris
 date: 2015-11-27
-category: Atomistic
-tags: [Molecular dynamics, OVITO]
+category: Academic
+tags: [OVITO, Molecular dynamics]
 ---
 
 I do like using OVITO for analysis and visualization of my LAMMP results.
