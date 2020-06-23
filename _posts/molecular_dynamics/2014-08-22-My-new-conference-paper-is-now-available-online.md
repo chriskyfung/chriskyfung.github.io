@@ -9,7 +9,7 @@ excerpt: K.Y. Fung, C.Y. Tang, Chi Fai Cheung, W.C. Law (2014). Molecular Dyn
 
 ---
 
-### Molecular Dynamics Simulation of Plastic Deformation of Diamondat an Elevated Temperature
+### Molecular Dynamics Simulation of Plastic Deformation of Diamond at an Elevated Temperature
 
 K.Y. Fung * , C.Y. Tang, Chi Fai Cheung, W.C. Law
 
@@ -24,5 +24,5 @@ Single point diamond tools are commonly used for ultraprecision machining. At hi
 </small>
 
 * * *
-Fung et al. (2014). Molecular Dynamics Simulation of Plastic Deformation of Diamond at an Elevated Temperature. _Key Engineering Materials_, 626, 329. <br>
+Fung et al. (2014). Molecular Dynamics Simulation of Plastic Deformation of Diamond at an Elevated Temperature. _Key Engineering Materials_, 626, 329.<br>
 **DOI**: [10.4028/www.scientific.net/KEM.626.329](https://www.scientific.net/KEM.626.329)

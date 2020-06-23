@@ -51,10 +51,10 @@ You can manually create and configure the cloud resources using the GCP console,
 
 If you are not familiar with Terraform, I recommend you learn or practise the Quest _"[Managing Cloud Infrastructure with Terraform](https://google.qwiklabs.com/quests/44)"_ before getting started.
 
-
 ### Verifying Terraform Installation
 
 In your GCP project, launch a Cloud Shell to run the following scripts to download and set up Terraform.
+
 ``` bash
 # Check the current Terraform version
 terraform --version
@@ -87,7 +87,7 @@ cd tfnet
 
 Create a new file called `provider.tf` and copy the code below into the file,
 
-```
+```terraform
 provider "google" {}
 ```
 
@@ -95,7 +95,7 @@ provider "google" {}
 
 Create a new file called `securenetwork.tf` and copy the following into the file,
 
-```
+```terraform
 # Create the securenetwork network
 resource "google_compute_network" "securenetwork" {
 name = "securenetwork"
@@ -122,7 +122,7 @@ network = "${google_compute_network.securenetwork.self_link}"
 target_tags = ["bastion"]
 allow {
     protocol = "tcp"
-    ports    = ["3389"] 
+    ports    = ["3389"]
 	}
 }
 
@@ -132,7 +132,7 @@ network = "${google_compute_network.securenetwork.self_link}"
 source_ranges = "10.130.0.0/20"
 allow {
     protocol = "tcp"
-    ports    = ["3389"] 
+    ports    = ["3389"]
 	}
 }
 
@@ -156,10 +156,11 @@ module "vm-bastionhost" {
 ```
 
 #### Configurations for the instance `vm-securehost`
+
 - Make a new directory called `securehost`.
 - Create a new file called `main.tf` inside the `securehost` directory, and copy the following into the file,
 
-```
+```terraform
 # Code inside securehost/main.tf
 variable "instance_name" {
   }
@@ -197,7 +198,7 @@ resource "google_compute_instance" "vm_instance" {
 - Make a new directory called `bastionhost`.
 - Create a new file called `main.tf` inside the `bastionhost` directory, and copy the following into the file,
 
-```
+```terraform
 # Code inside bastionhost/main.tf
 variable "instance_name" {
   }
@@ -233,11 +234,12 @@ resource "google_compute_instance" "vm_instance" {
   }
 }
 ```
+
 ### Deploy the Terraform Configuration
 
 Use the following codes to initialize and apply the Terraform to build the infrastructures,
 
-```
+```bash
 terraform fmt
 terraform init
 terraform plan
@@ -247,7 +249,7 @@ terraform apply
 
 After the cloud infrastructure are deployed to your GCP project, you need to install IIS in Windows 2016 Server inside the instance `vm-securehost` to finish the lab. You can follow this [installation guide](https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/) (https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/).
 
-Congratulations! You should accomplish the lab if you follow all above steps.
+Congratulations! You should accomplish the lab if you follow all the above steps.
 
 This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-configure-secure-rdp-using-a-windows-bastion-host-with-terraform-on-gcp-26d2311a35b3).
 
@@ -257,6 +259,6 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-**See Also**
+**See Also**:
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
 - [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)

@@ -7,12 +7,12 @@ category: Atomistic
 tags: [OVITO, Python]
 ---
 
-OVITO 2.6.0 allows users to program their own modifier in Python. Here provides a template including the common headers and a for-loop for per-particle assignmeet.
+OVITO 2.6.0 allows users to program their own modifier in Python. Here provides a template including the common headers and a for-loop for per-particle assignment.
 
 <!--more-->
 
 ```python
-# Import OVITO modules. 
+# Import OVITO modules.
 
 from ovito.io import *
 from ovito.modifiers import *

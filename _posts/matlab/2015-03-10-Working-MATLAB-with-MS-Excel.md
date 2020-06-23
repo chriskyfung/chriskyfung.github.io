@@ -8,7 +8,6 @@ tags: [MATLAB, MS Excel]
 image: 
    path: matlab/excel_addin_menu
    ext: png
-hideimage: true
 permalink: /blog/matlab/Working-MATLAB-with-MS-Excel
 redirect_from:
  - /blog/2015/03/10/Working-MATLAB-with-MS-Excel
@@ -40,6 +39,6 @@ Now, you can see a list of the MATLAB options in the context menu when you right
 
 * * *
 
-**Related**
+**Keep on reading**:
 - [Matrix Conversion between MATLAB and Microsoft Equation Editor](/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation)
 - [Expand shorten URLs in MATLAB](/blog/matlab/expand-twitter-short-url)
