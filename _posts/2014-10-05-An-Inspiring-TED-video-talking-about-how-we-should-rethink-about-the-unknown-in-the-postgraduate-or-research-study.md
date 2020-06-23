@@ -3,7 +3,7 @@ layout: post
 title: "An Inspiring TED video talking about how we should rethink about the unknown in the postgraduate or research study"
 author: chris
 date: 2014-10-05
-category: Research
+category: Academic
 tags: [TED, How to research]
 image: 
    path: others/Uri_Alon_-_Why_truly_innovative_science_demands_a_leap_into_the_unknown

@@ -3,8 +3,8 @@ layout: post
 title: "Expand shorten URLs in MATLAB"
 author: chris
 date: 2020-05-15
-category: Data-Science
-tags: [MATLAB, Twitter]
+category: Academic
+tags: [MATLAB, Twitter, Data-Science]
 permalink: /blog/matlab/expand-twitter-short-url
 ---
 

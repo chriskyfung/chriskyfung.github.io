@@ -3,8 +3,8 @@ layout: post
 title: "Creating an array of SJR widget for visual comparison of journal ranks"
 author: chris
 date: 2014-07-04
-category: Research
-tags: [Journal ranks]
+category: Academic
+tags: [Journal ranks, Research tool]
 image: 
    path: science/sjr_widget_array
    ext: png

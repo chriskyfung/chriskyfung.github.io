@@ -2,9 +2,9 @@
 layout: post
 title: "Matrix Conversion between MATLAB and Microsoft Equation Editor"
 date: 2020-01-15 15:21
-category: Data-Science
+category: Academic
 author: chris
-tags: [MATLAB, MS Office]
+tags: [MATLAB, MS Office, Data-Science]
 permalink: /blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation
 redirect_from:
  - /blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation

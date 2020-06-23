@@ -3,8 +3,8 @@ layout: post
 title: "Working MATLAB with MS Excel"
 author: chris
 date: 2015-03-10
-category: Data-Science
-tags: [MATLAB, MS Excel]
+category: Academic
+tags: [MATLAB, MS Excel, Data-Science]
 image: 
    path: matlab/excel_addin_menu
    ext: png

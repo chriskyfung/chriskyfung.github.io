@@ -3,8 +3,8 @@ layout: post
 title: "How to Send a Notification from a LAMMPS Simulation to Your Email"
 author: chris
 date: 2014-06-13
-category: Atomistic
-tags: [LAMMPS, Email, Command-line]
+category: Academic
+tags: [LAMMPS, Email, Command-line, Molecular dynamics]
 image:
   path: lammps/lammps_send_email_transparent
   ext: png

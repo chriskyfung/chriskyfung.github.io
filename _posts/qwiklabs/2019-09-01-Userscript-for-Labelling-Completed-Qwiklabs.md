@@ -4,7 +4,7 @@ title: "Userscript for Labelling Completed Qwiklabs"
 author: chris
 date: 2019-09-01
 last_modified_at: 2020-06-04 18:10:00 +0800
-category: Hack
+category: Projects
 permalink: /blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs
 redirect_from:
  - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs
