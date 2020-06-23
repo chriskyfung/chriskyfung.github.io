@@ -20,15 +20,15 @@ To enable the WSL2, your operating system must be Windows 10, Version 2004, Buil
 
 {% include picture.html img="windows/find-windows-10-build-number-in-winver" ext="png" alt="Find Windows 10 Build Number in winver" class="text-center" %}
 
-It will show the **About Windows** dialog. For example, the above screenshot has a Windows 10, Version 1903, Build 18362. This means an update to Windows 10 May 2020 Update is required. I recommend you to watch the video below, whic h introduces how to get the update by Windows engineer Savitha Quadros.
+It will show the **About Windows** dialog. For example, the above screenshot has a Windows 10, Version 1903, Build 18362. This means an update to Windows 10 May 2020 Update is required. I recommend you to watch the video below, which introduces how to get the update by Windows engineer Savitha Quadros.
 
 {% include youtube.html src="https://www.youtube.com/embed/YtqNzdrtrmw" %}
 
-Open the **Windows Update** from the Control panel. If you see "Download and install" as the first screenshot below, your device is ready for the update. You can click on it to run the process in the background. The updater will ask you to reboot your device when it finishes the job. 🥳👏
+Open the **Windows Update** from the Control panel. If you see "Download and install" as the screenshot below, your device is ready for the update. You can click on it to run the process in the background. The updater will ask you to reboot your device when it finishes the job. 🥳👏
 
 {% include picture.html img="windows/windows-10-feature-update-2004" ext="png" alt="Windows Update - Feature update to Windows 10, version 2004" class="text-center" caption="Device is ready for update" %}
 
-However, you may see the warning sign as shown in the second screenshot below. This indicates that it will have issues during updating or starting. Click on the "[Learn more](https://docs.microsoft.com/en-us/windows/release-information/status-windows-10-2004)" button in the Windows Update settings. One of my PCs associates with that. I tried to work around by downloading the ISO image file and manually update the Windows from a USB drive. _BOOM!..._ I crash my operation system. Thus, I don't recommend you force update your Windows 10 to the new build.
+However, you may see the warning sign as shown in the screenshot below. This indicates that it will have issues during updating or starting. Click on the "[Learn more](https://docs.microsoft.com/en-us/windows/release-information/status-windows-10-2004)" button in the Windows Update settings. One of my PCs associates with that. I tried to work around by downloading the ISO image file and manually update the Windows from a USB drive. _BOOM!..._ I crash my operation system. Thus, I don't recommend you force update your Windows 10 to the new build.
 
 {% include picture.html img="windows/windows-10-feature-update-2004-but-your-device-is-not-quite-ready" ext="png" alt="Windows Update - Feature update to Windows 10, version 2004. The Windows 10 May 2020 Update is on its way. We’re offering this update to compatible devices, but your device isn’t quite ready for it. Once your device is ready, you’ll see the update available on this page. There’s nothing you need to do at this time." class="text-center" caption="Device isn’t quite ready for update" %}
 
@@ -36,22 +36,22 @@ When the update fails, the boot loader will try to restore your previous version
 
 {% include picture.html img="windows/restoring-your-previous-version-of-windows-10" ext="png" alt="Restoring your previous version of Windows... Windlows 10" %}
 
-Many search results relate to this issue, if you google it. However, I found most of them did not work for my computers. Eventually, I troubleshot the problem by repairing the boot configuration data (BCD) in the EFI partition for Windows 10. To do that, you need a Windows 10 repair disc or a Windows 10 installation USB drive. If you don't have on one, use another computer to visit [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) on the Microsoft website. Then, download and run the Media Creation Tool to create a bootable USB or DVD. After preparing the repair media, move it to the fault machine and boot up to the Windows Startup Repair mode.
+Many search results relate to this issue, if you google it. However, I found most of them did not work for my computer. Eventually, I troubleshot the problem by repairing the boot configuration data (BCD) in the EFI partition for Windows 10. To do that, you need a Windows 10 repair disc or a Windows 10 installation USB drive. If you don't have on one, use another computer to visit [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) on the Microsoft website. Then, download and run the Media Creation Tool to create a bootable USB or DVD. After preparing the repair media, move it to the fault machine and boot up to the Windows Startup Repair mode.
 
 {% include picture.html img="windows/win10_safe_mode" ext="png" alt="Windows 10 Safe mode" %}
 
 In the Advanced options, select the **Command Prompt** option. Use the following commands to identify the partitions:
- 
-1. X:\> `diskpart` 
-2. DISKPART> `list disk`
-3. DISKPART> `select disk 0` (the number for the boot disk that has the EFI partition)
-4. DISKPART> `list partition`
-5. DISKPART> `select partition 1` (or the number for the EFI partition, which usually is only a few hundred MB in size)
-6. DISKPART> `assign letter=S`
-7. DISKPART> `exit`
-8. X:\> `S:`
-9. S:\> `bcdboot D:\Windows /s S: /f UEFI` (replace D: with the letter for the partition that has the Windows system)
-10. S:\> `exit`
+
+1. <small>X:\></small> `diskpart`
+2. <small>DISKPART></small> `list disk`
+3. <small>DISKPART></small> `select disk 0` (the number for the boot disk that has the EFI partition)
+4. <small>DISKPART></small> `list partition`
+5. <small>DISKPART></small> `select partition 1` (or the number for the EFI partition, which usually is only a few hundred MB in size)
+6. <small>DISKPART></small> `assign letter=S`
+7. <small>DISKPART></small> `exit`
+8. <small>X:\></small> `S:`
+9. <small>S:\></small> `bcdboot D:\Windows /s S: /f UEFI` (replace D: with the letter for the partition that has the Windows system)
+10. <small>S:\></small> `exit`
 
 Reboot your computer, the Windows 10 will start normally if the fix works.
 
