@@ -5,7 +5,8 @@ date: 2020-06-23 23:18:00 +0800
 category: Windows
 author: chris
 tags: [Windows 10, WSL2]
-permalink: /blog/windows/find-windows10-boot-loop-after-fail-upgrade
+permalink: /blog/windows/fix-windows10-boot-loop-after-fail-upgrade
+redirect_from: /blog/windows/find-windows10-boot-loop-after-fail-upgrade
 image:
   path: windows/restoring-your-previous-version-of-windows-10
   ext: png
@@ -36,7 +37,7 @@ When the update fails, the boot loader will try to restore your previous version
 
 {% include picture.html img="windows/restoring-your-previous-version-of-windows-10" ext="png" alt="Restoring your previous version of Windows... Windlows 10" %}
 
-Many search results relate to this issue, if you google it. However, I found most of them did not work for my computer. Eventually, I troubleshot the problem by repairing the boot configuration data (BCD) in the EFI partition for Windows 10. To do that, you need a Windows 10 repair disc or a Windows 10 installation USB drive. If you don't have on one, use another computer to visit [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) on the Microsoft website. Then, download and run the Media Creation Tool to create a bootable USB or DVD. After preparing the repair media, move it to the fault machine and boot up to the Windows Startup Repair mode.
+Many search results relate to this issue, if you google it. However, I found most of them did not work for my computer. Eventually, I troubleshot the problem by repairing the boot configuration data (BCD) in the EFI partition for Windows 10. To do that, you need a Windows 10 repair disc or a Windows 10 installation USB drive. If you don't have one, use another computer to visit [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) on the Microsoft website. Then, download and run the Media Creation Tool to create a bootable USB or DVD. After preparing the repair media, move it to the fault machine and boot up to the Windows Startup Repair mode.
 
 {% include picture.html img="windows/win10_safe_mode" ext="png" alt="Windows 10 Safe mode" %}
 
@@ -49,8 +50,11 @@ In the Advanced options, select the **Command Prompt** option. Use the following
 5. <small>DISKPART></small> `select partition 1` (or the number for the EFI partition, which usually is only a few hundred MB in size)
 6. <small>DISKPART></small> `assign letter=S`
 7. <small>DISKPART></small> `exit`
+
+Next, change the current path to the partition and use the `bcdboot` command to repair the damaged boot files:
+{:start="8"}
 8. <small>X:\></small> `S:`
-9. <small>S:\></small> `bcdboot D:\Windows /s S: /f UEFI` (replace D: with the letter for the partition that has the Windows system)
+9. <small>S:\></small> `bcdboot D:\Windows /s S: /f UEFI` (replace `D:` with the letter for the partition that has the Windows system)
 10. <small>S:\></small> `exit`
 
 Reboot your computer, the Windows 10 will start normally if the fix works.
