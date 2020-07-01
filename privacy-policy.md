@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-right-sidebar
 title: Privacy Policy
 image: /images/header-bg.jpg
 comments: false
