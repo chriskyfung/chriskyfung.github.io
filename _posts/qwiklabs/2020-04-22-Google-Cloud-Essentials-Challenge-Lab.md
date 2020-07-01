@@ -5,7 +5,7 @@ author: chris
 date: 2020-04-22 +0800
 last_modified_at: 2020-06-22 09:45:00 +0800
 category: Cloud
-tags: [Qwiklabs, Google Cloud, Logbook]
+tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab
 redirect_from: /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
 excerpt: Hints for qwiklab GSP313 "Getting Started&#58; Create and Manage Cloud Resources&#58; Challenge Lab" | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer

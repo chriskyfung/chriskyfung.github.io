@@ -179,6 +179,7 @@ _The Hints for Challenge Labs 2020:_
 - [Qwiklab/Logbook: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab)
 - [Qwiklab/Logbook: Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](/blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab)
 - [QLogbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
+- [QLogbook: Build a Website on Google Cloud: Challenge Lab](/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab)
 
 _Quizzes Answers:_
 

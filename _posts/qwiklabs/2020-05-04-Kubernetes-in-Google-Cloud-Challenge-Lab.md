@@ -5,13 +5,14 @@ author: chris
 date: 2020-05-04 +0800
 last_modified_at: 2020-06-22 10:15:00 +0800
 category: Cloud
-tags: [Qwiklabs, Google Cloud, Logbook]
+tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
 redirect_from: /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP318 "Deploy to Kubernetes in Google Cloud&#58; Challenge Lab". It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
 image: 
    path: qwiklabs/qwiklab-GSP318-Multibranch_Pipeline
    ext: png
+featured: true
 ---
 
 In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is labeled as an expert-level exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_). You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.
