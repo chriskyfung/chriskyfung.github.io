@@ -47,3 +47,5 @@ I have tested this method in Windows. But the same concept should also work in W
 * * *
 
 **Keep on reading**: [Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables](/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables)
+
+*[LAMMPS]: Large-scale Atomic/Molecular Massively Parallel Simulator

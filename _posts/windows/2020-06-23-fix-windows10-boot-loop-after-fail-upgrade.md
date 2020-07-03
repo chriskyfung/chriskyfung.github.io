@@ -13,7 +13,10 @@ image:
   hide: true
 ---
 
-Microsoft released the Windows 10 May 2020 update. The most compelling feature is the [Windows Subsystem for Linux version 2 (WSL2)](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10), which uses the latest and greatest in virtualization technology to run a Linux kernel inside of a lightweight utility virtual machine (VM). It has a faster File IO performance and 100% system call compatibility, compared to the WSL1. Program Manager Craig Loewen at Microsoft demonstrated the WSL2 is about 5-6 times faster than the WSL1. He also performed running an app from inside a container using [Docker Desktop for Windows](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2) and [debug it using VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). It's great news for developers.
+Microsoft released the Windows 10 May 2020 update. The most compelling feature is the [Windows Subsystem for Linux version 2 (WSL2)](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10), which uses the latest and greatest in virtualization technology to run a Linux kernel inside of a lightweight utility virtual machine (VM). It has a faster File IO performance and 100% system call compatibility, compared to the WSL1 [^vs]. Program Manager Craig Loewen [^Craig] at Microsoft demonstrated the WSL2 is about 5-6 times faster than the WSL1. He also performed running an app from inside a container using [Docker Desktop for Windows](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2) and [debug it using VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). It's great news for developers.
+
+[^vs]: [Comparing WSL 2 and WSL 1 \| Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/compare-versions?WT.mc_id=windows-c9-niner)
+[^Craig]: [WSL2: Code faster on the Windows Subsystem for Linux! \| Microsoft Developer - YouTube](https://youtu.be/MrZolfGm8Zk)
 
 To enable the WSL2, your operating system must be Windows 10, Version 2004, Build 19041 or higher. You can find your build number by pressing the **Start** <i class='fab fa-windows'></i> button or **Win + R** keys, and then type in [`winver`](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running) and hit the **Enter** key.
 
@@ -59,9 +62,12 @@ Next, change the current path to the partition and use the `bcdboot` command to 
 
 Reboot your computer, the Windows 10 will start normally if the fix works.
 
+* * *
+
 **Useful External Links**:
 
 - [How to Install Windows 10’s May 2020 Update](https://www.howtogeek.com/675118/how-to-install-windows-10s-may-2020-update/)
+
 - [Windows 10 - Repair EFI Partition \| Windows Ninja - YouTube](https://youtu.be/l_I4K2-Rr_Y)
-- [WSL2: Code faster on the Windows Subsystem for Linux! \| Microsoft Developer - YouTube](https://youtu.be/MrZolfGm8Zk)
-- [Comparing WSL 2 and WSL 1 \| Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/compare-versions?WT.mc_id=windows-c9-niner)
+
+**Footnotes**:

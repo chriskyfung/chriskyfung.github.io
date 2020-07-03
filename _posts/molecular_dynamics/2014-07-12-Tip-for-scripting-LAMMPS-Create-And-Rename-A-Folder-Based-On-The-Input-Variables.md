@@ -71,3 +71,5 @@ As a result, the LAMMPS will create a folder `1.0x100_m_s-1_Tersoff_y1990` in th
 * * *
 
 **Related**: [How to Send a Notification from a LAMMPS Simulation to Your Email](/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email)
+
+*[LAMMPS]: Large-scale Atomic/Molecular Massively Parallel Simulator
