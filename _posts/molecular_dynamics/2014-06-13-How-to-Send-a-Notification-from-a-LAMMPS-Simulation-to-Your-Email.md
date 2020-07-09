@@ -8,7 +8,11 @@ tags: [LAMMPS, Email, Command-line, Molecular dynamics]
 image:
   path: lammps/lammps_send_email_transparent
   ext: png
+  width: 620
+  height: 158
   class: shadow-none
+css:
+  syntax: true
 ---
 
 Molecular dynamics simulations often take long computational times, from several hours to a few days. It is a boring job to monitor the progress of simulations. Very often, we switch to do other work on another computer, but you may be anxious to see the simulation results. So, how can we better spend our time and focus on our research work? Here is one solution to allow the LAMMPS to send you an email, so you can no longer actively checking the progress of simulations. It is also important to minimize the idle time and maximize the utility of your computer.
@@ -42,7 +46,8 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 
 I have tested this method in Windows. But the same concept should also work in Windows. I found a web page here (https://www.wikihow.com/Send-Email-Using-Telnet), which describes how to use the cmd prompt and telnet command to ping an SMTP server and send an email. You can try this if you like running LAMMPS in Windows.
 
-{% include picture.html img="lammps/messager" ext="png" alt="messager" class="text-center shadow-none" %}
+{% include picture.html width="116" height="123"
+img="lammps/messager" ext="png" alt="messager" class="text-center shadow-none" %}
 
 * * *
 

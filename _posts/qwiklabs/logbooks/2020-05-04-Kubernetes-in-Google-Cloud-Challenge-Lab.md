@@ -12,6 +12,9 @@ excerpt: A brief procedure for qwiklab GSP318 "Deploy to Kubernetes in Google Cl
 image: 
    path: qwiklabs/qwiklab-GSP318-Multibranch_Pipeline
    ext: png
+   height: 741
+css:
+   syntax: true
 featured: true
 ---
 
@@ -88,7 +91,7 @@ docker run -p 8080:8080 --name valkyrie-app valkyrie-app:v0.0.1 &
 
 2. Click **Web Preview** to see the running app.
 
-   {% include picture.html img="qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1" ext="png" alt="" class="ml-4" %}
+   {% include picture.html width="706" height="724" img="qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1" ext="png" alt="" class="ml-4" %}
 
 After that, open a new Cloud Shell to run the `step2.sh` marking script.
 
@@ -115,7 +118,7 @@ docker push gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1
 
 After pushing the container, the `valkyrie-app` repository will appear in the Cloud Console as shown in the image below.
 
-{% include picture.html img="qwiklabs/qwiklab-GSP318-container-repositories" ext="png" alt="Push the Docker image of valkyrie-app in the Google Container Repository" %}
+{% include picture.html height="297" img="qwiklabs/qwiklab-GSP318-container-repositories" ext="png" alt="Push the Docker image of valkyrie-app in the Google Container Repository" %}
 
 ## Task 4: Create and expose a deployment in Kubernetes
 
@@ -235,7 +238,7 @@ Create a pipeline job that points to your */master branch on your source code.
 
 7. Your job configuration should look like this:
 
-   {% include picture.html img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline" ext="png" alt="" class="ml-4" %}
+   {% include picture.html width="706" height="717" img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline" ext="png" alt="" class="ml-4" %}
 
 #### 6.4 Modifying the pipeline definition
 
@@ -260,9 +263,9 @@ git push origin master
 
 Finally, manually trigger the build in the Jenkins console
 
-{% include picture.html img="qwiklabs/qwiklab-GSP318-jenkins-build-queue" ext="png" alt="" %}
+{% include picture.html height="342" img="qwiklabs/qwiklab-GSP318-jenkins-build-queue" ext="png" alt="" %}
 
-{% include picture.html img="qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2" ext="png" alt="" %}
+{% include picture.html height="748" img="qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2" ext="png" alt="" %}
 
 ## Summary
 

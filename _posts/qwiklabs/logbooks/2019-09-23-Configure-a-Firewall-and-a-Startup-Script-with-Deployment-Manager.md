@@ -13,9 +13,12 @@ excerpt: A lab summary of qwiklab GSP302 "Configure a Firewall and a Startup Scr
 image: 
    path: qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor
    ext: png
+   height: 447
+amp:
+  gist: true
+css:
+  syntax: true
 ---
-
-<!--more-->
 
 With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". The web console assists quick access of the GCP resources for testing and building small projects. If you are an amateur or hobbyist developer, just make use of the web console is pretty enough.
 
@@ -26,7 +29,8 @@ the Qwiklabs quest called [Deployment Manager](https://www.qwiklabs.com/quests/3
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-{% include picture.html img="qwiklabs/score_box_of_qwiklabs_GSP302" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP302" class="shadow-none text-center" %}
+{% include picture.html width="603" height="785"
+img="qwiklabs/score_box_of_qwiklabs_GSP302" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP302" class="shadow-none text-center" %}
 
 The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -54,13 +58,15 @@ gsutil cp gs://spls/gsp302/* .
 
 You can explore the files by opening a Cloud Shell code editor. The template for you to deploy a virtual machine
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the Deployment Manager template in Cloud Shell code editor" %}
+{% include picture.html height="447"
+img="qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the Deployment Manager template in Cloud Shell code editor" %}
 
 ## Edit the Jinja Template
 
 Open the `qwiklabs.jinja` file, you should see the following codes:
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP302-jinja-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the given Jinja template in Cloud Shell code editor" %}
+{% include picture.html height="347"
+img="qwiklabs/qwiklabs-GSP302-jinja-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the given Jinja template in Cloud Shell code editor" %}
 
 The template already includes the following configurations:
 - Instance name: vm-test
@@ -79,7 +85,8 @@ Next, you need to add two more properties to the instance configuration. If you 
 
 Open the `install-web.sh` file, you should see the following codes:
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the given startup script in Cloud Shell code editor" %}
+{% include picture.html height="296"
+img="qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor" ext="png" alt="Snapshot of the given startup script in Cloud Shell code editor" %}
 
 Let recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)"_.
 
@@ -135,8 +142,9 @@ Format the REST profile using a JSON to YAML converter, such as https://www.json
 
 Copy the above firewall configuration to the .jinja file. The final `qwiklabs.jinja` file should become:
 
-{% gist 245e0eb142df08d97f42717ea188be72 qwiklabs.jinja %}
+<amp-gist data-gistid="245e0eb142df08d97f42717ea188be72" data-file="qwiklabs.jinja" layout="fixed-height" height="1196"></amp-gist>
 
+<br>
 _Replace `<YOUR-SERVICE-ACCOUNT-EMAIL>` in Line 31 to the Service Account of your GCP project, if you copy the codes from this snippet._
 
 **Save** the file change.

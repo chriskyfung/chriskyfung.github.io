@@ -12,6 +12,7 @@ excerpt: A brief procedure for qwiklab GSP315 "Perform Foundational Infrastructu
 image: 
    path: qwiklabs/map
    ext: jpg
+   height: 565
 ---
 
 <!--more-->
@@ -64,7 +65,7 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 5. Upload a JPG or PNG image file to the bucket created in Task 1.
 
-   {% include picture.html img="qwiklabs/map" ext="jpg" alt="" class="ml-4" %}
+   {% include picture.html width="706" height="547" img="qwiklabs/map" ext="jpg" alt="" class="ml-4" %}
 
 ## Task 4: Remove the previous cloud engineer
 

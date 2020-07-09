@@ -9,7 +9,9 @@ excerpt: Chrome Remote Desktop is a free alternative of Teamviewer. It can acces
 image: 
    path: linux/Kubuntu_14.04_LTS
    ext: jpg
-
+   height: 480
+css:
+   syntax: true
 ---
 
 Teamviewer is the primary choice of cross-platform remote desktop software for Windows, Mac, and Linux systems. It is quite often that universities and institutes have a secured network, therefore traditional VNC connect fails to receive incoming packets via listening ports. The Teamviewer allows PC connections beyond private networks, that are blocked by firewalls or router settings. It is also easy to set up, as it installs its host and client at one time. It is wonderful to remotely access your desktop at any time and anywhere. Teamviewer is awesome and free for personal, non-commercial use.

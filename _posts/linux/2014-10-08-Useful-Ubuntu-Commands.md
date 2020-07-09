@@ -10,13 +10,16 @@ permalink: /blog/linux/Useful-Ubuntu-Commands
 redirect_from:
  - /blog/2014/10/08/Useful-Ubuntu-Commands
 excerpt: A short note about my favorite terminal application and the commands to show running processes, get root permission for GUI file manager, find previous commands and execute a shell script.
+css:
+   syntax: true
 ---
 
 <!--more-->
 
 ### My favorite terminal application
 
-{% include picture.html img="linux/terminator" ext="png" alt="Terminator icon" %}
+{% include picture.html width="37" height="35"
+img="linux/terminator" ext="png" alt="Terminator icon" %}
 
 [Terminator](https://launchpad.net/terminator/) allows you to open multiple terminals in one window, which can boost your productivity by operating two or more shells side by side or in grids.
 
@@ -107,7 +110,7 @@ After that, you can `./` in front of the filename to execute the shell file in t
 
 * * *
 
-**Read More**
+**Read More**:
 
 - [Linux Commands - Complete Guide - LinOxide](https://linoxide.com/linux-how-to/linux-commands-brief-outline-examples/)
 - [Beginners/BashScripting - Community Help Wiki - Official Ubuntu Documentation](https://help.ubuntu.com/community/Beginners/BashScripting)
@@ -115,6 +118,6 @@ After that, you can `./` in front of the filename to execute the shell file in t
 - [5 commands to check memory usage on Linux - BinaryTides](https://www.binarytides.com/linux-command-check-memory-usage)
 - [10 Useful du (Disk Usage) Commands to Find Disk Usage of Files and Directories - TecMint](https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/)
 
-**See Also**
+**See Also**:
 
 - [Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher](/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu)

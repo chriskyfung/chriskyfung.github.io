@@ -2,7 +2,7 @@
 layout: post
 title: "QLogbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster"
 author: chris
-date: 2019-09-27
+date: 2019-09-27 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes]
 permalink: /blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
@@ -10,11 +10,13 @@ redirect_from:
  - /blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
 excerpt: A lab summary of qwiklab GSP305 "Scale Out and Update a Containerized Application on a Kubernetes Cluster" | 1. Build a Docker Image of Sample Application with a `v2` tag | 2. Update the Application to the Kubernetes Cluster Using Web Console | 3. Scale out the application so that the Kubernetes cluster deployment
 image: 
-   path: qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application
-   ext: png
+  path: qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application
+  ext: png
+  width: 524
+  height: 440
+css:
+  syntax: true
 ---
-
-<!--more-->
 
 In the [last lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you built a docker image and created a Kubernetes cluster for a containerized application, called `echo-app`. Considering your developer team delivers a new version of the application to you, so you need to update the running application on the cluster to the new version. You may also need to scale the cluster size to optimize the usage and performance. You will do this in the lab **GSP305** _"[Scale Out and Update a Containerized Application on a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1739?parent=catalog)"_. This lab will perform provisioning of the application `echo-app:v1` as the same in the previous lab. You will continue practising with the `echo-app` application in the `echo-web` deployment, and update its version from v1 to v2.
 
@@ -22,7 +24,7 @@ In the [last lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-{% include picture.html img="qwiklabs/score_box_of_qwiklabs_GSP305" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP305" class="shadow-none text-center" %}
+{% include picture.html width="602" height="490" img="qwiklabs/score_box_of_qwiklabs_GSP305" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP305" class="shadow-none text-center" %}
 
 The screenshot above shows that there are 4 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -72,18 +74,18 @@ docker push gcr.io/${PROJECT_ID}/echo-app:v2
 
 In the web console, navigate to _**Container Registry > Images**_ to confirm the docker image tagged `v2` has been pushed to the cloud repositories.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP305-step1-new-container-image-tagged-v2-in-container-registry" ext="png" alt="Confirm your docker image tagged v2 existing in Google Container Registry" %}
+{% include picture.html height="277" img="qwiklabs/qwiklabs-GSP305-step1-new-container-image-tagged-v2-in-container-registry" ext="png" alt="Confirm your docker image tagged v2 existing in Google Container Registry" %}
 
 Next, you need to update the application to the Kubernetes Cluster.
 
 ## Update the Application to the Kubernetes Cluster Using Web Console
 
 Navigate to _**Kubernetes Engine > Workloads**_, click the name `echo-web` to show the Deployment details. Press the <i class='fas fa-list-ul'></i> icon to expand the menu and select **Rolling Update**.<br>
-{% include picture.html img="qwiklabs/qwiklabs-GSP305-step2-expand-menu-in-Kubernetes-Engine-page" ext="png" alt="Autoscale, Expose, Rolling Update, Scale - menu items on Deployment details page" %}
+{% include picture.html height="363" img="qwiklabs/qwiklabs-GSP305-step2-expand-menu-in-Kubernetes-Engine-page" ext="png" alt="Autoscale, Expose, Rolling Update, Scale - menu items on Deployment details page" %}
 
 In the Rolling Update dialog, modify the end of the image field from `v1` to `v2`.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application" ext="png" alt="Rolling update dialog" class="text-center" %}
+{% include picture.html width="524" height="440" img="qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application" ext="png" alt="Rolling update dialog" class="text-center" %}
 
 Click **UPDATE**.
 
@@ -93,16 +95,16 @@ In this article, I will show you the method of using the GCP web console. If you
 
 Navigate to _**Kubernetes Engine > Workloads**_, click the name `echo-web` to show the Deployment details. Press the <i class='fas fa-list-ul'></i> icon to expand the menu and select **Scale**.<br>
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP305-step4-select-scale-from-expanded-menu-in-Kubernetes-Engine-page" ext="png" alt="Select Scale from menu items on Deployment details page" class="text-center" %}
+{% include picture.html width="257" height="232" img="qwiklabs/qwiklabs-GSP305-step4-select-scale-from-expanded-menu-in-Kubernetes-Engine-page" ext="png" alt="Select Scale from menu items on Deployment details page" class="text-center" %}
 
 In the Scale dialog, type 2 to the field **Replicas**,
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP305-step5-scale-to-2-replicas" ext="png" alt="Scale a workload to a new size" class="text-center" %}
+{% include picture.html width="533" height="241" img="qwiklabs/qwiklabs-GSP305-step5-scale-to-2-replicas" ext="png" alt="Scale a workload to a new size" class="text-center" %}
 
 Click **SCALE**, then waits for creating/deleting instances until 2 replicas exist in the Kubernetes cluster.
 
 Open the IP address of the external endpoint, you should see a similiar web response:<br>
-{% include picture.html img="qwiklabs/qwiklabs-GSP305-step6-updated-echo-app-application" ext="png" alt="Resulted web page" class="text-center" %}
+{% include picture.html width="362" height="119" img="qwiklabs/qwiklabs-GSP305-step6-updated-echo-app-application" ext="png" alt="Resulted web page" class="text-center" %}
 
 Congratulations! You should accomplish the lab if you follow the above steps.
 

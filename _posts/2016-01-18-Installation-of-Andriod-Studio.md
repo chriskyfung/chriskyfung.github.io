@@ -8,6 +8,8 @@ tags: [Android Studio]
 image:
   path: android/Android_Studio_setup
   ext: png
+  width: 513
+  height: 400
 ---
 
 <!--more-->

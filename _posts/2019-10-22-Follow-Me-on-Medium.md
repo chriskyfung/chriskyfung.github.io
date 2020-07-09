@@ -18,4 +18,4 @@ I will keep my blogs as the primary sources, while I hope you can also enjoy the
 
 <!--more-->
 
-{% include picture.html img="qwiklabs/medium_profile" ext="png" alt="snapshot of my medium profile page on 2019-10-22" %}
+{% include picture.html height="1635" img="qwiklabs/medium_profile" ext="png" alt="snapshot of my medium profile page on 2019-10-22" %}

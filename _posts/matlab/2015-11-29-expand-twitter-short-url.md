@@ -6,6 +6,10 @@ date: 2020-05-15
 category: Academic
 tags: [MATLAB, Twitter, Data-Science]
 permalink: /blog/matlab/expand-twitter-short-url
+image:
+    hide: true
+css:
+    syntax: true
 ---
 
 Sometimes I use MATLAB scripts to analyze Twitter posts. One issue is that Twitter uses shorten URLs started with `t.co` for the links, such as retweets. To get the original URL, we need to determine the final redirected endpoint by using an URL expander.
@@ -90,7 +94,7 @@ redirectUrl = substr{2};
 
 * * *
 
-**Related:**
+**Keep on reading**:
 
 - [Working MATLAB with MS Excel](/blog/matlab/Working-MATLAB-with-MS-Excel)
 

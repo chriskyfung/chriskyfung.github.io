@@ -8,15 +8,19 @@ tags: [Research, Conference, Taiwan]
 image: 
    path: events/20140912_AEPA
    ext: jpg
+   width: 549
+   height: 748
 ---
 
 At the beginning of September, I participated in a conference in Kaohsiung, which is a city located in the south part of Taiwan. The conference was called the 12th Asia-Pacific Conference on Engineering Plasticity and Its Applications (AEPA 2014). The picture below is the cover of the proceeding, which printed with a beautiful sunset taken at the harbor next to the campus of National Sun Yat-Sen University. The sea view was really beautiful. Here is a photo that I took at the shore. The city was quite good except the weather was too hot every day. There were yummy seafood and fruits, such as pineapple and watermelon.
 
 <!--more-->
 
-{% include picture.html img="events/20140902_181800_seaview" ext="jpg" alt="Sunset at the harbor next to the campus of National Sun Yat-Sen University" %}
+{% include picture.html height="411"
+img="events/20140902_181800_seaview" ext="jpg" alt="Sunset at the harbor next to the campus of National Sun Yat-Sen University" %}
 
-{% include picture.html img="events/2014_APEA_team_photo" ext="jpg" alt="Team Photo" %}
+{% include picture.html height="411"
+img="events/2014_APEA_team_photo" ext="jpg" alt="Team Photo" %}
 
 * * *
 

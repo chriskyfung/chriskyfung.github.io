@@ -12,6 +12,7 @@ excerpt: Hints for qwiklab GSP313 "Getting Started&#58; Create and Manage Cloud 
 image: 
    path: qwiklabs/qwiklabs-GSP313-task1
    ext: png
+   height: 386
 featured: true
 ---
 
@@ -41,7 +42,7 @@ This task is simple. Make sure you create the VM instance with:
 - Zone: **us-east1-b**
 - Machine Type: **f1-micro**
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP313-task1" ext="png" alt="Create a project VM instance, called nucleus-jumphost in Google Cloud Platform" %}
+{% include picture.html height="386" img="qwiklabs/qwiklabs-GSP313-task1" ext="png" alt="Create a project VM instance, called nucleus-jumphost in Google Cloud Platform" %}
 
 ## Task 2: Create a Kubernetes service cluster
 
@@ -52,7 +53,7 @@ Make sure you:
 - create the cluster to the zone **us-east1-b** by setting your default compute zone correctly;
 - deploy the Docker container **hello-app:2.0**, instead of _hello-app:1.0_.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP313-task2" ext="png" alt="hello-app deployed on a GCP Kubernetes cluster" %}
+{% include picture.html height="366" img="qwiklabs/qwiklabs-GSP313-task2" ext="png" alt="hello-app deployed on a GCP Kubernetes cluster" %}
 
 ## Task 3: Setup an HTTP load balancer
 
@@ -65,7 +66,7 @@ Make sure you:
 
 The deployed nginx web servers:
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP313-task3" ext="png" alt="Nginx web servers deployed on Google Cloud Platform" %}
+{% include picture.html width="566" height="312" img="qwiklabs/qwiklabs-GSP313-task3" ext="png" alt="Nginx web servers deployed on Google Cloud Platform" %}
 
 ### Summary
 

@@ -9,6 +9,8 @@ permalink: /blog/wordpress/simple-php-commands-for-wordpress-administrator
 image: 
    path: wordpress/wordpress-1863504
    ext: svg
+css:
+   syntax: true
 ---
 
 <!--more-->
@@ -145,7 +147,7 @@ echo `ls -i ./filepath`;
 The command `find -inum` returns the filepath of a specific inode in the file system
 
 ```php
-echo `find ./filepath -inum 55340444  `; 
+echo `find ./filepath -inum 55340444  `;
 ```
 
 With the parameter and the placeholder `-exec {}`, the command apply the second part to rename the specific inode file

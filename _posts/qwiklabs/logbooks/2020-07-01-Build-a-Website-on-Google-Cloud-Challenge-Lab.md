@@ -10,6 +10,10 @@ image:
    path: qwiklabs/qwiklab-GSP319-fancy-store
    ext: jpg
 excerpt: A brief procedure for the qwiklab practice GSP319, which tests your skills to deploy containerized microservices for website frontend and backend to Kubernetes.
+amp:
+   youtube: true
+css:
+   syntax: true
 ---
 
 In this article, we will go through the lab **GSP319** _[Build a Website on Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11765?parent=catalog)_, which is labeled as an advanced-level exercise. You will practice the skills and knowledge for website architectures available to be scalable with microservices on Google Kubernetes Engine.
@@ -116,14 +120,14 @@ gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/products:1.0.0 .
 
 Run the following commands to deploy the **Orders Microservice**:
 
-```
+```bash
 kubectl create deployment orders --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/orders:1.0.0
 kubectl expose deployment orders --type=LoadBalancer --port 80 --target-port 8081
 ```
 
 Run the following commands to deploy the **Products Microservice**:
 
-```
+```bash
 kubectl create deployment products --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/products:1.0.0
 kubectl expose deployment products --type=LoadBalancer --port 80 --target-port 8082
 ```
@@ -141,14 +145,14 @@ nano .env
 
 Replace `<ORDERS_IP_ADDRESS>` and `<PRODUCTS_IP_ADDRESS>` with the Orders and Product microservice IP addresses, respectively.
 
-```env
+```bash
 REACT_APP_ORDERS_URL=http://<ORDERS_IP_ADDRESS>/api/orders
 REACT_APP_PRODUCTS_URL=http://<PRODUCTS_IP_ADDRESS>/api/products
 ```
 
 Save the file and rebuild the frontend app before containerizing it:
 
-```
+```bash
 npm run build
 ```
 
@@ -178,7 +182,7 @@ kubectl expose deployment frontend --type=LoadBalancer --port 80 --target-port 8
 
 Most steps in the exercise are identical to those in the lab **Migrating a Monolithic Website to Microservices on Google Kubernetes Engine**. To complete this challenge, make sure you carefully replace the cluster and deployment names to the specified ones. If you still have questions, you can leave a comment below.
 
-{% include youtube.html src="https://www.youtube.com/embed/8jumRGDgxiY" %}
+{% include youtube.html id="8jumRGDgxiY" %}
 
 * * *
 

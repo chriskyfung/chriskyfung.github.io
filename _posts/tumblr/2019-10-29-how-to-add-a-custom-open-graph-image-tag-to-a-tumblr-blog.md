@@ -8,18 +8,23 @@ tags: [Tumblr, Custom Theme, Open Graph, Meta Tags]
 permalink: /blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
 redirect_from:
  - /blog/2019/10/30/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
+amp:
+    gist: true
+css:
+    syntax: true
 ---
 
 Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups to your blogs without a clear mechanism. I found that some of my Tumblr blog posts including the markups, but some of them not. Indeed, we have a lack of control over what kind of information to be auto-tagged. The Tumblr crawler may also pick up incorrect contents, especially og:type and og:image. You can use [Facebook Sharing Debugger tool](https://developers.facebook.com/tools/debug/) to inspect the tags of your posts.
 
 <!--more-->
 
-{% include picture.html img="tumblr/Tumblr-Facebook-OpenGraph-Tags-Block" ext="png" alt="Example Facebook Open Graph tags auto-generated in the Tumblr blog" caption="Fig. Sample of Facebook Open Graph tags auto-generated in the Tumblr blog" class="text-center" %}
+{% include picture.html width="548" height="288" img="tumblr/Tumblr-Facebook-OpenGraph-Tags-Block" ext="png" alt="Example Facebook Open Graph tags auto-generated in the Tumblr blog" caption="Sample of Facebook Open Graph tags auto-generated in the Tumblr blog" class="text-center" %}
 
 You may want to fix the tags, so you explicitly define your own in your Custom Theme. Tumblr will stop auto-generate the entire markup, once you add an Open Graph meta tags. Therefore, you need to reengineer those by your own codes. Here is an example found on GitHub gists:
 
-{% gist 1603502 %}
+<amp-gist data-gistid="1603502" layout="fixed-height" height="1200"></amp-gist>
 
+{:.mt-4}
 You can refer the documentation ["Creating a custom Tumblr HTML theme"](https://www.tumblr.com/docs/hk/custom_themes) for more details and study the custom theme variables. One big challenge is how to set an og:image tag, since only some types of posts, such as Photo and Audio, possesses a variable tag for obtaining the URL of the post images. Most other post types do not have a way to access the image resources contained within the post objects. For example, only `{Title}` and `{Body}` variables are available for describing Text posts. This causes a big problem to me because I use Text posts as the primary type of my blog articles.
 
 To workaround, I figured out a way to map between each post and an external image source. Each Tumblr post has a unique identifier called `{PostID}`, so I used this variable to look up the corresponding file located in my own cloud storage.
@@ -43,13 +48,13 @@ In the **Settings** tab of the new repository, go to **GitHub Pages** section an
  - Custom domain: _(Optional) recommends using a subdomain, e.g. `res.example.com`_
  - Enforce HTTPS: _(Optional)_
 
-{% include picture.html img="tumblr/GitHub-Page-Settings" ext="png" alt="Example GitHub Pages configuration" caption="Fig. Example GitHub Pages configuration"%}
+{% include picture.html height="618" img="tumblr/GitHub-Page-Settings" ext="png" alt="Example GitHub Pages configuration" caption="Example GitHub Pages configuration"%}
 
 If you use a subdomain as the custom domain, add a CNAME record to your DNS server and point it to `<your-github-username>.github.io`. Otherwise, the Project Site URL will under the domain `github.io`, in the form of `http(s)://<your-github-username>.github.io/<repository-name>/`.
 
 Go back to the **Code** tab of the repository, I suggest creating a folder, called `og-images` and store all post cover images to it. You can also upload and host your CSS and JavaScript files in the same way.
 
-{% include picture.html img="tumblr/GitHub-Page-Files" ext="png" alt="" caption="Fig. Example file structure for the GitHub Page" %}
+{% include picture.html width="472" height="128" img="tumblr/GitHub-Page-Files" ext="png" alt="" caption="Example file structure for the GitHub Page" %}
 
 ## Add og tags to your Custom Theme
 
@@ -126,7 +131,7 @@ To correctly link between each post and its Open Graph image, you must store eac
 
 4. Finally, use [Facebook's Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/) to inspect whether the og:image tag is properly crawled.
 
-{% include picture.html img="tumblr/GitHub-Page-og-images" ext="png" alt="" caption="Fig. An <code>og-images</code> repository uploaded with cover images for Tumblr posts" %}
+{% include picture.html width="0" height="0" img="tumblr/GitHub-Page-og-images" ext="png" alt="" caption="An <code>og-images</code> repository uploaded with cover images for Tumblr posts" %}
 
 I hope you think this trick is helpful, and share with other Tumblr bloggers. If you have any questions, please feel free to leave a comment below. Also, if you know any better solution, I wish you can share with me.
 

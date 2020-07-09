@@ -5,16 +5,18 @@ author: chris
 date: 2014-07-12
 category: Academic
 tags: [LAMMPS, Linux, Command-line, Molecular dynamics]
-hideimage: true
+css:
+    syntax: true
 ---
 
 In a molecular dynamics study, simulation is often repeated with different sets of parameters, e.g. dimensions, velocity, initial pressure and temperature. If the parameters are defined as variables in the LAMMPS input script, we can change the value of the variables using the command line/terminal. So, we don't need to modify the script each time.
 
-I like storing each set of the simulation results to a well-labelled folder. This way makes systematic file management for finding the data in the future. For a long time, I did filing manually. It was gloomy and time consuming for creating and naming a new folder as well as moving the files. Recently, I found that the shell command can help to reduce the workload in the filing process.  The shell command has been introduced in my last post about how to send an email in the simulation process.
+I like storing each set of the simulation results to a well-labeled folder. This way makes systematic file management for finding the data in the future. For a long time, I did filing manually. It was gloomy and time consuming for creating and naming a new folder as well as moving the files. Recently, I found that the shell command can help to reduce the workload in the filing process.  The shell command has been introduced in my last post about how to send an email in the simulation process.
 
 It is very useful as it allows to call the system commands and other programs.
 
-{% include picture.html img="lammps/new_3folder_80x80" ext="png" alt="image: New folder with LAMMPS scripts" class="text-center" %}
+{% include picture.html width="350" height="83"
+img="lammps/new_3folder_80x80" ext="png" alt="image: New folder with LAMMPS scripts" class="text-center" %}
 
 <!--more-->
 

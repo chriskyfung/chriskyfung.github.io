@@ -15,9 +15,9 @@ description: A step-by-step guilde for deploying a VM instance with automaticlly
 image: 
    path: qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata
    ext: png
+   width: 454
+   height: 174
 ---
-
-<!--more-->
 
 If you read my [last post](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab), you should know how to manually create a VM instance and configure it as an Apache2 web server with the web console in Google Cloud Platform (GCP). The steps are easy but you can automate and scale your web server installation process by adopting a **Startup Script**. Loading the startup script remotely from a cloud storage bucket is one method. The second lab of the challenge quest, **GSP301** _"[Deploy a Compute Instance with a Remote Startup Script](https://www.qwiklabs.com/focuses/1735?parent=catalog)"_, is to test if you can deploy an Apache server to a VM instance with a remote startup script. You must know how to create a bucket and upload files to Google Cloud Storage, and configure the metadata in the dialog of creating an instance.
 
@@ -25,7 +25,8 @@ If you read my [last post](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challeng
 
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
-{% include picture.html img="qwiklabs/score_box_of_qwiklabs_GSP301" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP301" caption="Fig. Screenshot of Qwiklabs hands-on-lab GSP301 scorebox" class="shadow-none text-center" %}
+{% include picture.html width="603" height="582"
+img="qwiklabs/score_box_of_qwiklabs_GSP301" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP301" caption="Screenshot of Qwiklabs hands-on-lab GSP301 scorebox" class="shadow-none text-center" %}
 
 The screenshot above shows that there are 4 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -37,13 +38,15 @@ The screenshot above shows that there are 4 steps required for completing this l
 
 4. Confirm the web server can be connected using HTTP and get a non-error response.
 
-{% include picture.html img="qwiklabs/qwiklab-GSP301-schematic" ext="png" alt="Schematic diagram of Qwiklabs GSP301: Deploy a Compute Instance with a Remote Startup Script" caption="Fig. Schematic diagram of GSP301: Deploy a Compute Instance with a Remote Startup Script" class="shadow-none" %}
+{% include picture.html width="724" height="382"
+img="qwiklabs/qwiklab-GSP301-schematic" ext="png" alt="Schematic diagram of Qwiklabs GSP301: Deploy a Compute Instance with a Remote Startup Script" caption="Schematic diagram of GSP301: Deploy a Compute Instance with a Remote Startup Script" class="shadow-none" %}
 
 ## Download Sample Startup Script
 
 First of all, find **Sample Startup Script** below the Start button and the timer of the lab. Then, download the startup script file to your computer. This lab requires a minute for provisioning lab resources. You may make use of this interval to download the file or take a drink.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-download-startup-script-file" ext="png" alt="download sample startup script below the qwiklabs start button and lab timer" caption="Fig. Download sample startup script below the Qwiklabs start button and lab timer" class="shadow-none"%}
+{% include picture.html width="339" height="318"
+img="qwiklabs/qwiklabs-GSP301-download-startup-script-file" ext="png" alt="download sample startup script below the qwiklabs start button and lab timer" caption="Download sample startup script below the Qwiklabs start button and lab timer" class="shadow-none"%}
 
 ## Upload the Startup Script to a Cloud Storage Bucket
 
@@ -52,28 +55,33 @@ First of all, find **Sample Startup Script** below the Start button and the time
 3. Upload the `install-web.sh` file to the bucket.
 4. Make the file publicly accessible (This ensures the file can be access by the VM instance deployed soon).
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-edit-file-permission-in-GCP-storage-bucket" ext="png" alt="Edit the file permissions in Cloud Storage using GCP web console" class="ml-5" %}
+{% include picture.html width="397" height="306"
+img="qwiklabs/qwiklabs-GSP301-edit-file-permission-in-GCP-storage-bucket" ext="png" alt="Edit the file permissions in Cloud Storage using GCP web console" class="ml-5" %}
 
 {:.ml-5}
 Click the three dots (<i class='fas fa-ellipsis-v'></i>) icon at the right end of the filename. Choose **_Edit permissions_** in the dropdown menu.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-add-allusers-read-permission-to-install-web-sh" ext="png" alt="Add allUsers and Reader access to the file" class="ml-5" %}
+{% include picture.html width="527" height="441"
+img="qwiklabs/qwiklabs-GSP301-add-allusers-read-permission-to-install-web-sh" ext="png" alt="Add allUsers and Reader access to the file" class="ml-5" %}
 
 {:.ml-5}
 Add a new **User**, type `allUsers` to the name field, and choose **Reader**.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-make-install-web-sh-publicly-accessible" ext="png" alt="Confirm the install-web.sh file become pubilcly accessible" class="ml-5" %}
+{% include picture.html width="632" height="244"
+img="qwiklabs/qwiklabs-GSP301-make-install-web-sh-publicly-accessible" ext="png" alt="Confirm the install-web.sh file become pubilcly accessible" class="ml-5" %}
 
 {:start="5"}
 
-5. Click the filename and copy the URL, i.e. `gs://.../install-web.sh` for later use.<br>{% include picture.html img="qwiklabs/qwiklabs-GSP301-obtain-gs-url-startup-script-file" ext="png" alt="Object details in Cloud Storage" caption="Fig. Confirm the startup script file become pubilcly accessible" class="ml-5" %}
+5. Click the filename and copy the URL, i.e. `gs://.../install-web.sh` for later use.<br>{% include picture.html width="682" height="299"
+img="qwiklabs/qwiklabs-GSP301-obtain-gs-url-startup-script-file" ext="png" alt="Object details in Cloud Storage" caption="Confirm the startup script file become pubilcly accessible" class="ml-5" %}
 
 ## Configure Metadata in Creating VM instance
 
 1. Go to **_Compute Engine_**, create a new VM instance.
 
 2. Select `Allow HTTP traffic` under the Firewall section.
-{% include picture.html img="qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting" ext="png" alt="Firewall rule setting for creating a VM instance" class="ml-5" %}
+{% include picture.html width="464" height="248"
+img="qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting" ext="png" alt="Firewall rule setting for creating a VM instance" class="ml-5" %}
 
 {:start="3"}
 
@@ -81,7 +89,8 @@ Add a new **User**, type `allUsers` to the name field, and choose **Reader**.
 
 4. In the Metadata section, add `startup-script-url` and paste the URL of the script file as the key value.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata" ext="png" alt="Configure a remote startup script url to the metadata in Crate a VM instance page" class="ml-5" %}
+{% include picture.html width="454" height="174"
+img="qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata" ext="png" alt="Configure a remote startup script url to the metadata in Crate a VM instance page" class="ml-5" %}
 
 {:.ml-5}
 If you want to learn more, please refer [Running Startup Scripts](https://cloud.google.com/compute/docs/startupscript) in Compute Engine Documentation.
@@ -89,7 +98,8 @@ If you want to learn more, please refer [Running Startup Scripts](https://cloud.
 {:start="5"}
 
 5. Click **Create** to create the instance.
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-check-progress-created-instance-1" ext="png" alt="Successfully created instance-1" caption="Fig. The new Compute Engine, `instance-1`" class="ml-5"%}
+{% include picture.html width="682" height="174"
+img="qwiklabs/qwiklabs-GSP301-check-progress-created-instance-1" ext="png" alt="Successfully created instance-1" caption="The new Compute Engine, `instance-1`" class="ml-5"%}
 
 ## Inspect Instance Correctly Running Startup Script
 
@@ -97,21 +107,25 @@ If you want to learn more, please refer [Running Startup Scripts](https://cloud.
 
 2. Click the instance name to open its Details tab. Then, expand the Logs and click **Serial port 1 (console)**.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-view-serial-port-of-created-vm-instance" ext="png" alt="Serial port logs showing in the Details tab of instance-1" class="ml-5" %}
+{% include picture.html width="674" height="380"
+img="qwiklabs/qwiklabs-GSP301-view-serial-port-of-created-vm-instance" ext="png" alt="Serial port logs showing in the Details tab of instance-1" class="ml-5" %}
 
 {:start="3"}
 
 3. The startup script automatically installs the Apache web server software while creating the VM instance. You should able to find the log events about downloading the startup script and installing the apache packages.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-logs-of-serial-port-1" ext="png" alt="Serial Log: downloading startup script" class="ml-5" %}
+{% include picture.html width="682" height="343"
+img="qwiklabs/qwiklabs-GSP301-logs-of-serial-port-1" ext="png" alt="Serial Log: downloading startup script" class="ml-5" %}
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP301-apache-installation-in-logs-of-serial-port-1" ext="png" alt="Serial Logs: installing Apache with startup script" class="ml-5" caption="Fig. Logs that shows the execution of the startup script" class="ml-5" %}
+{% include picture.html width="682" height="165"
+img="qwiklabs/qwiklabs-GSP301-apache-installation-in-logs-of-serial-port-1" ext="png" alt="Serial Logs: installing Apache with startup script" class="ml-5" caption="Logs that shows the execution of the startup script" class="ml-5" %}
 
 {:start="4"}
 
 4. Open the external IP in your web browser. You should view the Apache default page, if the startup script has been successfully executed.
 
-{% include picture.html img="qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance" ext="png" alt="Apache2 Debian Default Page" caption="Fig. The Apache web server installed by the startup script" class="ml-5" %}
+{% include picture.html width="682" height="441"
+img="qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance" ext="png" alt="Apache2 Debian Default Page" caption="The Apache web server installed by the startup script" class="ml-5" %}
 
 Congratulations! You should accomplish the lab if you follow all the above steps.
 

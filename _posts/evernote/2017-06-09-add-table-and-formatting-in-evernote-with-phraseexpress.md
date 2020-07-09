@@ -6,6 +6,8 @@ author: chris
 category: Productivity
 tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/add-table-and-formatting-in-evernote-with-phraseexpress
+amp:
+    youtube: true
 ---
 
 Last time, I introduced [How to create a shorthand for quick searching your](/blog/evernote/quick-search-evernote-with-phraseexpress). This time I’ll introduce two more productivity tips for Evernote users. Let’s create shorthands with PhraseExpress.
@@ -22,7 +24,7 @@ Many people just type plain text in their notebook. If you do so, you may not in
 
 I summarized the three ways of inserting a table given in Evernote Desktop, and demonstrated my shorthand in the following video.
 
-{% include youtube.html src="https://www.youtube.com/embed/I7mAzCR8oHU?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" %}
+{% include youtube.html id="I7mAzCR8oHU" %}
 
 Which are the most convenient, the last one that I proposed?
 
@@ -33,11 +35,13 @@ Which are the most convenient, the last one that I proposed?
 
 With setting a shorthand with PhraseExpress, you add a table seamlessly as you are typing your text content. You don’t need to move your hand between mouse and keyboard. You also don’t know to find where are the button in the toolbar or the main menu. All you need to do is just type in your custom Autotext, e.g. “add t…”, the option prompts in the auto-expand menu. This should reduce your brain load and avoid confusion with the layout of other programs.
 
-{% include picture.html img="evernote/Add-Table-to-Evernote-using-PhraseExpress" ext="png" alt="Add Table to Evernote using PhraseExpress" caption="Fig. 1 - Add Table to Evernote using PhraseExpress" class="text-center" %}
+{% include picture.html width="481" height="299"
+img="evernote/Add-Table-to-Evernote-using-PhraseExpress" ext="png" alt="Add Table to Evernote using PhraseExpress" caption="1 - Add Table to Evernote using PhraseExpress" class="text-center" %}
 
 Here is my PhraseExpress setup.
 
-{% include picture.html img="evernote/PhraseExpress-macro-for-add-table-to-evernote" ext="png" alt="PhraseExpress macro for add table to Evernote" caption="PhraseExpress macro for add table to Evernote" class="text-center" %}
+{% include picture.html width="481" height="529"
+img="evernote/PhraseExpress-macro-for-add-table-to-evernote" ext="png" alt="PhraseExpress macro for add table to Evernote" caption="PhraseExpress macro for add table to Evernote" class="text-center" %}
 
 **How to configure:**
 
@@ -51,7 +55,8 @@ Here is my PhraseExpress setup.
 
 5.  Enable **Execute only in specific programs**, and restrict to this shorthand to only execute in Evernote.
 
-    {% include picture.html img="evernote/Restrict-PhraseExpress-to-Evernote" ext="png" alt="Advance configuration - Restrict PhraseExpress to Evernote" class="text-center" %}
+    {% include picture.html width="680" height="441"
+img="evernote/Restrict-PhraseExpress-to-Evernote" ext="png" alt="Advance configuration - Restrict PhraseExpress to Evernote" class="text-center" %}
 
 * * *
 
@@ -61,7 +66,7 @@ Evernote doesn’t have Heading Formatting, such kind of advance styling functio
 
 Manual operations sometimes generate the inconsistencies to formatting and style. I create the following method to format texts to heading with PhraseExpress.
 
-{% include youtube.html src="https://www.youtube.com/embed/4YNrVFuEUSo?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" %}
+{% include youtube.html id="4YNrVFuEUSo" %}
 
 Does it help? I hope you can leave your comments below.
 
