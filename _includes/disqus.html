@@ -6,8 +6,10 @@ License: https://www.wowthemes.net/freebies-license/
 -->
 
 <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
+    <amp-script width="730" height="50" layout="responsive" script="disques-comments">
+        <div id="disqus_thread"></div>
+    </amp-script>        
+    <script id="disques-comments" type="text/plain" target="amp-script">>
         var disqus_shortname = '{{site.disqus}}'; 
         var disqus_developer = 0;
         (function() {

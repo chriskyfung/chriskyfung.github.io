@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 
 <!--
 Template Name:Affiliates
@@ -12,15 +10,38 @@ License: https://www.wowthemes.net/freebies-license/
 
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.favicon }}"/> 
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+{% if layout.amp.script or page.amp.script %}
+<script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+{% endif %}
+<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+{% if layout.amp.addthis or page.amp.addthis %}
+<script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
+{% endif %}
+{% if page.amp.youtube %}
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+{% endif %}
+{% if page.amp.gist %}
+<script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
+{% endif %}
+{% if page.amp.iframe %}
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+{% endif %}
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
 <title>{{ page.title }} | {{site.name}}</title>
+<link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.favicon }}">
 {% seo %}
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
-<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
 
 <link rel="preload" href="https://pagead2.googlesyndication.com">
 <link rel="preload" href="https://fonts.gstatic.com">
@@ -38,16 +59,25 @@ License: https://www.wowthemes.net/freebies-license/
 <link rel="dns-prefetch" href="https://v1.addthisedge.com">
 <link rel="dns-prefetch" href="https://www.google.com">
 <link rel="dnc-prefetch" href="https://www.gstatic.com">
-   
+
 {% if jekyll.environment == 'production' %}    
 
 {% include gtm-head.html %}
 {% endif %}  
-     
-</head>
-    
 
-    
+<style amp-custom>
+{% include amp-theme.css %}
+{% include amp-custom.css %}
+{% if page.css.syntax == true %}
+{% include amp-syntax-highlight.css %}
+{% endif %}
+{% if page.css.custom %}
+{{ page.css.custom }}
+{% endif %}
+</style>
+
+</head>
+
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
 {% include gtm-body.html %}
@@ -62,7 +92,7 @@ License: https://www.wowthemes.net/freebies-license/
     
         <!-- Begin Logo -->
         <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" loading="lazy">
+        <amp-img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" height="36" width="140"></amp-img>
         </a>
         <!-- End Logo -->
         
@@ -102,33 +132,33 @@ License: https://www.wowthemes.net/freebies-license/
                 </li>
                 
                 <li class="nav-item">
-                    <button type="button" id="toggle-search" class="btn btn-primary" data-toggle="modal" data-target="#searchbar"><i class="fas fa-search"></i></button>
+                    <button type="button" on="tap:amp-searchbar" id="toggle-search" class="btn btn-primary" data-toggle="modal" data-target="#searchbar"><i class="fas fa-search"></i></button>
                 </li>
-                
             </ul>
             <!-- End Menu -->
         </div>
     </div>
 </header>
-
-<!-- Modal -->
-<div class="modal fade" id="searchbar" role="dialog">
+<amp-lightbox scrollable id="amp-searchbar" layout="nodisplay" animate-in="fade-in">
     <div class="modal-dialog modal-lg">
         
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Search</h5>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" on="tap:amp-searchbar.close" tabindex="-1" class="close">&times;</button>
             </div>
             <div class="modal-body">
-                <script deter src="https://cse.google.com/cse.js?cx=011006674894885990812:tjln7k0nyjx"></script>
-                <div class="gcse-search"></div>
+                <div class="search_form">
+                    <form method="GET" action="/search" target="_top"><input class="form-control" id="searchbox" name="q" type="search" placeholder="Search" />
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
         
     </div>
-</div>
+</amp-lightbox>
 
 <!-- End Menu Navigation
 ================================================== -->
@@ -186,14 +216,13 @@ License: https://www.wowthemes.net/freebies-license/
     <!-- Begin Footer
     ================================================== -->
     <footer class="footer">
-
         <div class="container">
 
             <div class="row">
                 <div class="col-sm-3">
                 <div class="footer-widget">
                 <a id="footer-image" href="{{site.baseurl}}/contact">
-                <img class="pr-lg-3" src="{{ site.baseurl }}/assets/images/knowledge__flatline.svg" loading="lazy">
+                <amp-img class="pr-lg-3" src="{{ site.baseurl }}/assets/images/knowledge__flatline.svg" height="179" width="255" layout="responsive"></amp-img>
                 </a>
                 </div>
                 </div>
@@ -227,9 +256,9 @@ License: https://www.wowthemes.net/freebies-license/
                 <div class="footer-widget">
                     <h5 class="title">Disclosures</h5>
                     <!-- Copyscape Banner -->
-                    <div id="copyscape-banner"><a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." loading="lazy" /></a></div>
+                    <div id="copyscape-banner"><a href="http://www.copyscape.com/"><amp-img src="//banners.copyscape.com/img/copyscape-banner-white-130x46.png" width="130" height="46" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page."></amp-img></a></div>
                     <!-- Affiliate Disclouse -->
-                    <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120" style="margin: 5px;" loading="lazy" /></a></div>
+                    <div id="vig-disclose"><a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><amp-img alt="VigLink badge" src="https://www.viglink.com/images/badges/120x60.png" title="Links monetized by VigLink" width="120" height="60" style="margin: 5px;"></amp-img></a></div>
                 </div>
                 </div>
             </div>
@@ -268,8 +297,9 @@ License: https://www.wowthemes.net/freebies-license/
     
 <script defer src="/assets/js/theme.js"></script>
 
-{{site.sharethis}}
-    
+<amp-image-lightbox id="lightbox1" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-4819282024314540"></amp-auto-ads>
+
 </body>
     
 </html>

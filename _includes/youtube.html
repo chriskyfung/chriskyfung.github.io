@@ -1,4 +1,5 @@
-{% assign src = include.src %}
-<div class="embed-responsive embed-responsive-16by9 mb-5">
-    <iframe class="embed-responsive-item" width="540" height="304" id="youtube_iframe" src="{{ include.src }}" frameborder="0" allowfullscreen=""></iframe>
-</div>
+{% if include.playlist %}
+<amp-youtube data-videoid="{{ include.id }}" layout="responsive" width="480" height="270" data-param-listType="playlist" data-param-list="{{ include.playlist }}"></amp-youtube>
+{% else %}
+<amp-youtube data-videoid="{{ include.id }}" layout="responsive" width="480" height="270"></amp-youtube>
+{% endif %}

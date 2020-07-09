@@ -12,6 +12,9 @@ layout: default
 disqus: false
 archive: false
 post_class: post-template
+amp:
+    script: true
+    addthis: true
 ---
 
 <!-- Begin Article
@@ -22,7 +25,7 @@ post_class: post-template
 		<!-- Post -->        
         {% assign author = site.authors[page.author] %}
         
-		<div class="col-md-8 col-lg-8">
+		<div id="post" class="col-md-8 col-lg-8">
 			<div class="mainheading">              
                 
                 <!-- Post Categories -->
@@ -31,7 +34,7 @@ post_class: post-template
                         {% assign sortedCategories = page.categories | sort %}
                         {% for category in sortedCategories %}
                         <li>
-                         <a href="/category/{{ category | slugify }}/">{{ category }}</a>
+                            <a href="/category/{{ category | slugify }}/">{{ category }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -44,22 +47,16 @@ post_class: post-template
 			</div>
 
             <!-- Post Featured Image -->
-            {% if page.hideimage %}
-            {% else %}
             {% if page.image %}
             {% unless page.image.hide %}
-            <picture>
-                {% unless page.image.ext == "svg" %}
-                <source type="image/webp" srcset="/images/posts/{{ page.image.path }}.webp" >
-                {% endunless %}
-                {% if page.image.class%} 
-                <img class="featured-image img-fluid {{ page.image.class }}" src="/images/posts/{{ page.image.path }}.{{ page.image.ext }}" alt="{{ page.title }}">
+                {% if page.image.ext == "svg" %}
+                    <amp-img class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" src="/images/posts/{{ page.image.path }}.svg" alt="{{ page.title }}"></amp-img>
                 {% else %}
-                <img class="featured-image img-fluid" src="/images/posts/{{ page.image.path }}.{{ page.image.ext }}" alt="{{ page.title }}">
+                    <amp-img class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" src="/images/posts/{{ page.image.path }}.webp" alt="{{ page.title }}">
+                        <amp-img fallback class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" src="/images/posts/{{ page.image.path }}.{{ page.image.ext }}" alt="{{ page.title }}"></amp-img>
+                    </amp-img>
                 {% endif %}
-            </picture>
             {% endunless %}
-            {% endif %}
             {% endif %}
             <!-- End Featured Image -->
 
@@ -74,7 +71,7 @@ post_class: post-template
             </p>
             
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="addthis_inline_share_toolbox"></div>
+            <amp-addthis width="320" height="55"  data-pub-id="ra-5d01c83d522ad580" data-widget-id="7kfz" data-widget-type="inline" style="margin-left:-10px;"></amp-addthis>
 
 			<!-- Post Content -->
 			<div class="article-post">
@@ -88,7 +85,7 @@ post_class: post-template
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                     <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}/">{{ tag }}</a>
+                        <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}/">{{ tag }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -97,25 +94,25 @@ post_class: post-template
             
             <!-- Prev/Next -->
             <div class="row PageNavigation mt-4 prevnextlinks">
-              {% if page.previous.url %}
+            {% if page.previous.url %}
                 <div class="col-md-6 rightborder pl-0">
                     <a class="thepostlink" href="{{page.previous.url | absolute_url}}">&laquo; {{page.previous.title}}</a>
                 </div>
-              {% endif %}
-              {% if page.next.url %}
+            {% endif %}
+            {% if page.next.url %}
                 <div class="col-md-6 text-right pr-0">
                     <a class="thepostlink" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
                 </div>
-              {% endif %}
+            {% endif %}
             </div>
             <!-- End Prev/Next -->
             
             
-             <!-- Author Box -->
+            <!-- Author Box -->
                 {% if page.author %}				
 				<div class="row post-top-meta">
 					<div class="col-md-2">
-						<img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+						<amp-img class="author-thumb" width="72" height="72" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}"></amp-img>
 					</div>
 					<div class="col-md-10">
 						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.facebook }}" class="btn follow">Follow</a>
@@ -140,9 +137,9 @@ post_class: post-template
         
         <!-- Right Sidebar -->
         <div class="col-md-4 col-lg-4">
-        <div class="sidebar-right">
-        {% include sidebar.html %}
-        </div>
+            <div class="sidebar-right">
+            {% include sidebar.html %}
+            </div>
         </div>
 
 	</div>

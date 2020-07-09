@@ -13,7 +13,7 @@ baseurl: ''
 email: ''
 google_analytics: 'UA-72575541-9'
 disqus: 'chriskyfung'
-sharethis: '<script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d01c83d522ad580"></script>'
+addthis: ra-5d01c83d522ad580
 
 # Authors
 authors:
