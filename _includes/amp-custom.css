@@ -1,5 +1,5 @@
 .fixed-top {
-    position: sticky
+    overflow: hidden;
 }
 
 #toggle-search {

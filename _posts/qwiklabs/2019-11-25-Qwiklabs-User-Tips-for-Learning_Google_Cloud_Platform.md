@@ -66,7 +66,9 @@ I spent about three months to take all the Qwiklabs quests for Google Cloud Plat
 <amp-lightbox scrollable id="amp-largemap" layout="nodisplay" animate-in="fade-in">  
   <div class="iframe-bg-white">
     <button type="button" class="close" tabindex="-1" on="tap:amp-largemap.close">&times;</button>
-    <amp-iframe width="1493" height="2259" layout="intrinsic" frameborder="0" sandbox="allow-scripts" src="/images/projects/qwiklabs-quests-map.svg"></amp-iframe>
+    <amp-iframe width="1493" height="2259" layout="intrinsic" frameborder="0" sandbox="allow-scripts" src="/images/projects/qwiklabs-quests-map.svg">
+      <span placeholder class="text-center">Loading...</span>
+    </amp-iframe>
   </div>
 </amp-lightbox>
 

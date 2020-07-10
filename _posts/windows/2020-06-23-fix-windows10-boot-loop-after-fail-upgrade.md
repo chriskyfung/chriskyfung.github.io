@@ -10,6 +10,8 @@ redirect_from: /blog/windows/find-windows10-boot-loop-after-fail-upgrade
 image:
   path: windows/restoring-your-previous-version-of-windows-10
   ext: png
+  width: 693
+  height: 302
   hide: true
 amp:
   youtube: true

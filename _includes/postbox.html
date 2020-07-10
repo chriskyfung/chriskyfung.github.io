@@ -1,3 +1,14 @@
+{% if post.image.width %}
+    {% assign imgwidth = post.image.width %}
+{% else %}
+    {% assign imgwidth =  "730" %}
+{% endif %}
+{% if post.image.height %}
+    {% assign imgheight = post.image.height %}
+{% else %}
+    {% assign imgheight =  "411" %}
+{% endif %}
+
 <!--
 Template Name:Affiliates
 Copyright:WowThemes.net,https://www.wowthemes.net
@@ -12,7 +23,7 @@ License: https://www.wowthemes.net/freebies-license/
 <div class="card">
     <a href="{{ post.url | absolute_url }}">
         {% if post.image.path %}
-            {% include picture.html img=post.image.path ext=post.image.ext width="auto" height="197" layout="fixed-height" lightbox=false %}
+            {% include picture.html img=post.image.path ext=post.image.ext width=imgwidth height=imgheight layout="intrinsic" lightbox=false %}
         {% else %}
             {% include picture.html img="write-2160925" ext="svg" source="assets" width="auto" height="197" layout="fixed-height" lightbox=false %}
         {% endif %}

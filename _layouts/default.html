@@ -14,11 +14,14 @@ License: https://www.wowthemes.net/freebies-license/
 {% if layout.amp.script or page.amp.script %}
 <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
 {% endif %}
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
 <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+<script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
 {% if layout.amp.addthis or page.amp.addthis %}
 <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
 {% endif %}
@@ -32,6 +35,7 @@ License: https://www.wowthemes.net/freebies-license/
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 {% endif %}
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-autocomplete" src="https://cdn.ampproject.org/v0/amp-autocomplete-0.1.js"></script>
 
 
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
@@ -40,8 +44,8 @@ License: https://www.wowthemes.net/freebies-license/
 {% seo %}
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous">
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" /-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" crossorigin="anonymous">
 
 <link rel="preload" href="https://pagead2.googlesyndication.com">
 <link rel="preload" href="https://fonts.gstatic.com">
@@ -62,7 +66,6 @@ License: https://www.wowthemes.net/freebies-license/
 
 {% if jekyll.environment == 'production' %}    
 
-{% include gtm-head.html %}
 {% endif %}  
 
 <style amp-custom>
@@ -80,14 +83,18 @@ License: https://www.wowthemes.net/freebies-license/
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
-{% include gtm-body.html %}
+
+<!-- Google Tag Manager -->
+<!--amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-WQMQK3X&gtm.url=SOURCE_URL" data-credentials="include"></!--amp-analytics-->
+
 
 <!-- Begin Menu Navigation
 ================================================== -->
-<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+<header amp-fx="float-in-top" class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" on="tap:navbarsWow.toggleClass(class='show')" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="container">
     
         <!-- Begin Logo -->
@@ -106,8 +113,8 @@ License: https://www.wowthemes.net/freebies-license/
                 <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
                 </li>
                 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                <li class="nav-item dropdown" id="dropdown01">
+                    <a class="nav-link dropdown-toggle" on="tap:dropdown01.toggleClass(class='show')" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="{{ site.baseurl }}/blog/"><i class="far fa-newspaper mr-2"></i>All Stories</a>
                     <a class="dropdown-item" href="{{ site.baseurl }}/category/"><i class="far fa-list-alt mr-2"></i>Categories</a>
@@ -139,18 +146,29 @@ License: https://www.wowthemes.net/freebies-license/
         </div>
     </div>
 </header>
+
+
+
+    <nav class="ap-o-burger-menu" [class]="mainmenuopen ? 'ap-o-burger-menu mainmenuopen' : 'ap-o-burger-menu'">
+
+    </nav>
+
 <amp-lightbox scrollable id="amp-searchbar" layout="nodisplay" animate-in="fade-in">
     <div class="modal-dialog modal-lg">
         
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Search</h5>
+                <h5 class="modal-title">Search for</h5>
                 <button type="button" on="tap:amp-searchbar.close" tabindex="-1" class="close">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="search_form">
-                    <form method="GET" action="/search" target="_top"><input class="form-control" id="searchbox" name="q" type="search" placeholder="Search" />
+                    <form method="GET" action="/search" target="_top">
+                        <amp-autocomplete id="searchbox" filter="substring" src="/assets/data/autocomplete.json">
+                            <input class="form-control" name="q" type="search" placeholder="Search" required />
+                        </amp-autocomplete>
+                        <input hidden name="sitesearch" value="chriskyfung.github.io"/>
                         <button class="btn btn-primary" type="submit">Search</button>
                     </form>
                 </div>
@@ -280,25 +298,27 @@ License: https://www.wowthemes.net/freebies-license/
     ================================================== -->
 
     
-</div> <!-- /.site-content>
+</div> <!-- /.site-content -->
+
+<amp-image-lightbox id="lightbox1" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-4819282024314540"></amp-auto-ads>
 
 <!-- JavaScript
 ================================================== -->
     
-<script src="/assets/js/jquery.min.js"></script>
+<!--script src="/assets/js/jquery.min.js"></script-->
     
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<!--script defer src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script-->
     
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script>
+<!--script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script-->
     
-<script async src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<!--script async src="/assets/js/ie10-viewport-bug-workaround.js"></script-->
     
-<script defer type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script>
+<!--script defer type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script-->
     
-<script defer src="/assets/js/theme.js"></script>
+<!--script defer src="/assets/js/theme.js"></script-->
 
-<amp-image-lightbox id="lightbox1" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
-<amp-auto-ads type="adsense" data-ad-client="ca-pub-4819282024314540"></amp-auto-ads>
+
 
 </body>
     
