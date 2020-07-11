@@ -69,6 +69,7 @@ License: https://www.wowthemes.net/freebies-license/
 {% endif %}  
 
 <style amp-custom>
+{% include amp-bs4.css %}
 {% include amp-theme.css %}
 {% include amp-custom.css %}
 {% if page.css.syntax == true %}
@@ -197,7 +198,7 @@ License: https://www.wowthemes.net/freebies-license/
         
         <!-- Content
         ================================================== --> 
-        <div class="main-content">
+        <div class="main-content" style="margin-top: 88px;">
             {{ content }}
         </div>
     
