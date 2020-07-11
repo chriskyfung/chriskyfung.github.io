@@ -3,6 +3,7 @@ name: "Chris KY FUNG's Page"
 title: "Feel free to bookmark this to keep an eye on my project updates"
 description: "Chris KY FUNG's Blog"
 meta_description: "Chris KY FUNG's Blog."
+url: https://chriskyfung.github.io
 logo: 'assets/images/logo-plainSVG.svg'
 favicon: 'assets/images/favicon.png'
 paginate: 12

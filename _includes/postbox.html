@@ -9,13 +9,6 @@
     {% assign imgheight =  "411" %}
 {% endif %}
 
-<!--
-Template Name:Affiliates
-Copyright:WowThemes.net,https://www.wowthemes.net
-Version:1.0.2
-License: https://www.wowthemes.net/freebies-license/
--->
-
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 
@@ -28,6 +21,15 @@ License: https://www.wowthemes.net/freebies-license/
             {% include picture.html img="write-2160925" ext="svg" source="assets" width="auto" height="197" layout="fixed-height" lightbox=false %}
         {% endif %}
     </a>
+
+    <!--
+    Template Name:Affiliates
+    Copyright:WowThemes.net,https://www.wowthemes.net
+    Version:1.0.2
+    License: https://www.wowthemes.net/freebies-license/
+    -->
+
+
     <div class="card-block">
         <h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
         <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
