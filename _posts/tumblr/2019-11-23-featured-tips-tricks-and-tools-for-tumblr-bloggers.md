@@ -16,9 +16,16 @@ featured: true
 css:
     syntax: true
     custom: >-
+        .article-post h3 {
+            background: #675bff;
+            color: #fff
+        }
+        .article-post h4 {
+            color: #675bff
+        }
         .discontinued {
-        position: relative;
-        color: lightgrey;
+            position: relative;
+            color: lightgray
         }
         .discontinued::after {
             font-family: "Font Awesome 5 Free";
@@ -38,7 +45,7 @@ css:
 If you prefer to present your Tumblr like a normal website, you definitely want to erase the Tumblr controls, buttons and toolbars from your pages. You can follow the **two** instructions below to kill them from
 screens.
 
-### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
+#### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
 
 You can follow the procedures below to disable the Tumblr buttons for non-Tumblr users:
 
@@ -51,7 +58,7 @@ You can follow the procedures below to disable the Tumblr buttons for non-Tumblr
 4. Uncheck **Promote Tumblr!**
 5. Click **Save**
 
-### Hide the "Open / Install the App" from mobile pages
+#### Hide the "Open / Install the App" from mobile pages
 
 When a Tumblr site is opened with a mobile device, buttons asking users to open/install the native Tumblr app will be rendered by default (as shown in the image below).
 
@@ -76,7 +83,7 @@ When a Tumblr site is opened with a mobile device, buttons asking users to open/
 
 <br>
 
-### Recover Custom Themes
+#### Recover Custom Themes
 
 Tumblr automatically backups your custom theme when you make and save any changes, and you can revert to previous versions. I think many Tumblr bloggers may not know this important feature because it isn't written clearly in the Tumblr Help Center. _Weird_!
 
@@ -84,11 +91,9 @@ In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, c
 
 {% include picture.html height="500" img="tumblr/RecoverCustomTheme" ext="png" alt="Screenshot of Recover Tumblr Custom Themes" %}
 
-* * *
-
 ## Plugins for Tumblr Sites
 
-### Amazon Associates Ads Loader for Tumblr
+#### Amazon Associates Ads Loader for Tumblr
 
 {% include picture.html height="287" img="amzn_assoc_loader_for_tumblr" ext="png" alt="Amazon Associates Ads Loader for Tumblr" source="projects" %}
 
@@ -97,7 +102,7 @@ Tumblr blocks executing Javascript snippets directly embedded in a post body. Fo
 For more detail, please visit the repository in GitHub ([https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr](https://github.com/chriskyfung/amzn_assoc_loader_for_tumblr)).
 
 <amp-ad
-  width="730"
+  width="auto"
   height="325"
   type="a9"
   data-amzn_assoc_placement = "adunit0"
@@ -110,10 +115,11 @@ For more detail, please visit the repository in GitHub ([https://github.com/chri
   data-amzn_assoc_title = "My Amazon Picks"
   data-amzn_assoc_linkid = "bfc0f57bf0ff0a864c81efdd3904066e"
   data-amzn_assoc_asins = "1118335953,1119950155,B082RSGN62,B00GOMDPRI"
+  layout="fixed-height"
 >
 </amp-ad>
 
-### Tumblr Featured Posts Plugin<br><small>_by [BANDIT DESIGN](https://blog.bandit.co.nz/post/87511743/tumblr-featured-posts-javascript-plugin)_ </small>
+#### Tumblr Featured Posts Plugin<br><small>_by [BANDIT DESIGN](https://blog.bandit.co.nz/post/87511743/tumblr-featured-posts-javascript-plugin)_ </small>
 
 This plugin outputs a link to render posts tagged with "featured". Click [Demo](https://test-featured-plugin.tumblr.com/) to visit the sample site I made.
 
@@ -133,8 +139,6 @@ Add the following HTML tag to your custom theme,
 A link named with "Featured" will be shown at where you place the `<ui>` tag. When you click this link, the plugin will send an API request, `https://<blog-name>.tumblr.com/api/read/json?num=50&tagged=featured` to get the data of the first 50 posts tagged with "featured". Thus, the posts found can be shown at the top or somewhere on the top separately from the main post feed.
 
 {% include picture.html height="1070" img="tumblr/tumblr-featured-post-plugin" ext="png" alt="sample screenshot of Tumblr Featured Posts Plugin by BANDIT DESIGN" %}
-
-* * *
 
 ## 3rd-Party Applications
 
@@ -201,11 +205,9 @@ The screenshot below shows the files been downloaded from Google Design's Tumblr
 
 {% include picture.html height="345" img="tumblr/TumblThree-resulted-google-design-files" ext="png" alt="TumblThree demo screenshot" %}
 
-* * *
-
 ## API Tools
 
-### pytumblrtools
+#### pytumblrtools
 
 A set of python scripts for manipulating Tumblr blogs
 ([https://github.com/chriskyfung/pytumblrtools](https://github.com/chriskyfung/pytumblrtools))
@@ -217,7 +219,7 @@ A set of python scripts for manipulating Tumblr blogs
 
 * * *
 
-## Suggested Reading: <span style='font-size:small'>(Get Tips Feed <a href="https://www.diigo.com/rss/user/chriskyfung?query=%23tumblr&sort=updated" target="_blank"><i class='fas fa-rss' style="color:orange;"></i></a>)</span>
+## Suggested Reading <span style='font-size:small'>(Get Tips Feed <a href="https://www.diigo.com/rss/user/chriskyfung?query=%23tumblr&sort=updated" target="_blank"><i class='fas fa-rss' style="color:orange;"></i></a>)</span>
 
 - [How to add a custom Open Graph image tag to your tumblr blog](/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog)
 
@@ -275,7 +277,8 @@ A set of python scripts for manipulating Tumblr blogs
     </ul>
 </ul>
 
-## References:
+## References
+
 - [Customization with META - Build Themes](https://buildthemes.tumblr.com/ch3/customization)
 - [Removing "Open"/"Install the App" header toolbar from mobile Tumblr page : web_design](https://www.reddit.com/r/web_design/comments/3vtb1z/removing_openinstall_the_app_header_toolbar_from/)
 - [How to increase you Tumblr SEO. - How to increase you Tumblr SEO. - Nerd Ramblings](https://nerdramblings.tumblr.com/post/4388960162/how-to-increase-you-tumblr-seo)

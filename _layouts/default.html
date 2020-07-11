@@ -72,6 +72,9 @@ License: https://www.wowthemes.net/freebies-license/
 {% include amp-bs4.css %}
 {% include amp-theme.css %}
 {% include amp-custom.css %}
+{% if page.css.badge == true %}
+{% include amp-bs4-badge.css %}
+{% endif %}
 {% if page.css.syntax == true %}
 {% include amp-syntax-highlight.css %}
 {% endif %}
@@ -91,7 +94,7 @@ License: https://www.wowthemes.net/freebies-license/
 
 <!-- Begin Menu Navigation
 ================================================== -->
-<header amp-fx="float-in-top" class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+<header amp-fx="float-in-top" id="navbar" class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
     <button class="navbar-toggler navbar-toggler-right" on="tap:navbarsWow.toggleClass(class='show')" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -115,7 +118,7 @@ License: https://www.wowthemes.net/freebies-license/
                 </li>
                 
                 <li class="nav-item dropdown" id="dropdown01">
-                    <a class="nav-link dropdown-toggle" on="tap:dropdown01.toggleClass(class='show')" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <a class="nav-link dropdown-toggle" on="tap:dropdown01.toggleClass(class='show'),navbar.toggleClass(class='show')" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="{{ site.baseurl }}/blog/"><i class="far fa-newspaper mr-2"></i>All Stories</a>
                     <a class="dropdown-item" href="{{ site.baseurl }}/category/"><i class="far fa-list-alt mr-2"></i>Categories</a>
@@ -126,10 +129,6 @@ License: https://www.wowthemes.net/freebies-license/
                 <li class="nav-item">                
                     <a class="nav-link" href="{{ site.baseurl }}/category/cloud/">Cloud</a>
                 </li> 
-                
-                <li class="nav-item">                
-                    <a class="nav-link" href="{{ site.baseurl }}/category//web-development/">Web</a>
-                </li>
                 
                 <li class="nav-item">                
                     <a class="nav-link" href="{{ site.baseurl }}/category/academic/">Academic</a>

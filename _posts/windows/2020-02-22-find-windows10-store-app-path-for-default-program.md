@@ -9,6 +9,14 @@ permalink: /blog/windows/find-windows10-store-app-path-for-default-program
 redirect_from:
  - /blog/2020/02/22/find-windows10-store-app-path-for-default-program
 excerpt: Do you want to change a Windows store app as the default program for opening files? Are you looking for the root folder of the Windows Store app for File Association? Here is a procedure of locating the path from the Windows Registry and setting it for a specific file type. In this article, I used the draw.io application as a demonstration.
+css:
+    custom: >-
+        .ml-4 {
+            margin-left: 1.5rem!important;
+        }
+        .ml-5 {
+            margin-left: 3rem;
+        }
 ---
 
 Recently, I faced a problem to choose a Windows Store app as the default app for a specific file type. The app was not found by using neither [Windows 10's Settings page or the "Open With" option from the right-click menu of the files](https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/). So I need to go for the "Look for another app on this PC" and locate where is the program (.exe) file.

@@ -53,7 +53,7 @@ img="evernote/evernote-search-results-returned-by-cli-shorthand" ext="png" alt="
 
 * * *
 
-**Reference**:
+**References**:
 
 1. [Control Evernote from the Windows command line - Evernote Developers](https://dev.evernote.com/doc/articles/enscript.php)
 

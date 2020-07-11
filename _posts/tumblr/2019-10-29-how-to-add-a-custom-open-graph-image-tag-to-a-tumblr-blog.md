@@ -24,8 +24,7 @@ You may want to fix the tags, so you explicitly define your own in your Custom T
 
 <amp-gist data-gistid="1603502" layout="fixed-height" height="1200"></amp-gist>
 
-{:.mt-4}
-You can refer the documentation ["Creating a custom Tumblr HTML theme"](https://www.tumblr.com/docs/hk/custom_themes) for more details and study the custom theme variables. One big challenge is how to set an og:image tag, since only some types of posts, such as Photo and Audio, possesses a variable tag for obtaining the URL of the post images. Most other post types do not have a way to access the image resources contained within the post objects. For example, only `{Title}` and `{Body}` variables are available for describing Text posts. This causes a big problem to me because I use Text posts as the primary type of my blog articles.
+<br>You can refer the documentation ["Creating a custom Tumblr HTML theme"](https://www.tumblr.com/docs/hk/custom_themes) for more details and study the custom theme variables. One big challenge is how to set an og:image tag, since only some types of posts, such as Photo and Audio, possesses a variable tag for obtaining the URL of the post images. Most other post types do not have a way to access the image resources contained within the post objects. For example, only `{Title}` and `{Body}` variables are available for describing Text posts. This causes a big problem to me because I use Text posts as the primary type of my blog articles.
 
 To workaround, I figured out a way to map between each post and an external image source. Each Tumblr post has a unique identifier called `{PostID}`, so I used this variable to look up the corresponding file located in my own cloud storage.
 

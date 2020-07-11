@@ -188,7 +188,6 @@ table {
     background-color: transparent
 }
 
-
 caption {
     padding-top: .75rem;
     padding-bottom: .75rem;
@@ -647,6 +646,23 @@ pre code {
     }
 }
 
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem
+}
+
+.table td,.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #eceeef
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -711,6 +727,10 @@ pre code {
 select.form-control:focus::-ms-value {
     color: #464a4c;
     background-color: #fff
+}
+
+.form-group {
+    margin-bottom: 1rem
 }
 
 .btn {
@@ -876,6 +896,12 @@ a.btn.disabled,fieldset[disabled] a.btn {
     color: #1d1e1f;
     text-decoration: none;
     background-color: #f7f7f9
+}
+
+.dropdown-item.active,.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0275d8
 }
 
 .show>.dropdown-menu {
@@ -1285,8 +1311,20 @@ button.close {
     margin-right: .5rem
 }
 
+.mb-3 {
+    margin-bottom: 1rem
+}
+
 .mb-4 {
     margin-bottom: 1.5rem
+}
+
+.p-0 {
+    padding: 0 0
+}
+
+.pt-3 {
+    padding-top: 1rem
 }
 
 .ml-auto {

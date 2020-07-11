@@ -10,7 +10,7 @@ amp:
     youtube: true
 ---
 
-Last time, I introduced [How to create a shorthand for quick searching your](/blog/evernote/quick-search-evernote-with-phraseexpress). This time I’ll introduce two more productivity tips for Evernote users. Let’s create shorthands with PhraseExpress.
+Last time, I introduced [How to create a shorthand for quick searching your Evernote](/blog/evernote/quick-search-evernote-with-phraseexpress). This time I’ll introduce two more productivity tips for Evernote users. Let’s create shorthands with PhraseExpress.
 
 (1) [insert a table via a custom Autotext](#1-insert-a-table-via-a-custom-autotext)
 

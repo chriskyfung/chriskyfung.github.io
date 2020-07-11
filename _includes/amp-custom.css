@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.fixed-top.show {
+    overflow: visible;
+}
+
 #toggle-search {
     margin-left: 15px;
     margin-top: inherit

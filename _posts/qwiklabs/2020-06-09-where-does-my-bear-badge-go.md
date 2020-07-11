@@ -9,6 +9,9 @@ permalink: /blog/qwiklabs/where-does-my-bear-badge-go
 image: 
    path: qwiklabs/wanted-bear-badge
    ext: png
+css:
+   custom: >-
+      .text-danger { color: #d9534f }
 ---
 
 Recently, I noticed that the Quest "Challenge: GCP Architecture" was no longer found from the Qwiklabs Catalog. In addition, its badge, the lovely bear, disappeared from the profile. This made me felt upset.

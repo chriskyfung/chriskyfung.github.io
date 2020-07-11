@@ -17,6 +17,11 @@ image:
    ext: png
    width: 454
    height: 174
+css:
+   custom: >-
+      .ml-5 {
+         margin-left: 3rem!important;
+      }
 ---
 
 If you read my [last post](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab), you should know how to manually create a VM instance and configure it as an Apache2 web server with the web console in Google Cloud Platform (GCP). The steps are easy but you can automate and scale your web server installation process by adopting a **Startup Script**. Loading the startup script remotely from a cloud storage bucket is one method. The second lab of the challenge quest, **GSP301** _"[Deploy a Compute Instance with a Remote Startup Script](https://www.qwiklabs.com/focuses/1735?parent=catalog)"_, is to test if you can deploy an Apache server to a VM instance with a remote startup script. You must know how to create a bucket and upload files to Google Cloud Storage, and configure the metadata in the dialog of creating an instance.
