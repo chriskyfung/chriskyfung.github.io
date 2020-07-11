@@ -3,10 +3,6 @@
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
-{% if layout.amp.script or page.amp.script %}
-<script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-<meta name="amp-script-src" content="sha384-fC4jOW70gWU377dxP82AbYtpKV30dzeWs7clGssu72LFfy4u7XZidAPuxQECrxZq" />
-{% endif %}
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
 <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
@@ -18,14 +14,18 @@
 {% if layout.amp.addthis or page.amp.addthis %}
 <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
 {% endif %}
+{% if layout.amp.iframe or page.amp.iframe %}
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+{% endif %}
+{% if layout.amp.script or page.amp.script %}
+<script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+<meta name="amp-script-src" content="sha384-Twyzx51iMyRqHMIuZe7DKDuD1m8EscC9wZwNlMaJrFjWk9Z90EBFKBwvG-IhGlv-" />
+{% endif %}
 {% if page.amp.youtube %}
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 {% endif %}
 {% if page.amp.gist %}
 <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
-{% endif %}
-{% if page.amp.iframe %}
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 {% endif %}
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <script async custom-element="amp-autocomplete" src="https://cdn.ampproject.org/v0/amp-autocomplete-0.1.js"></script>
