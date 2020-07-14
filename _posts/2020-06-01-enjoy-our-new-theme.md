@@ -2,6 +2,7 @@
 layout: post
 title: Launch new theme
 date: 2020-06-01 23:59:00 +0800
+last_modified_at: 2020-07-14 16:00 +0800
 category: Announcement
 author: chris
 tags: [Changelog, Jekyll]
@@ -47,6 +48,8 @@ The new homepage is still mainly for listing my projects. Nevertheless, you can 
         {% include picture.html width="223" height="343" img="jekyll/sidebar-recent-posts" ext="jpg" alt="Sidebar Recent Post List" caption="Recent Post list on sidebar" class="text-center" %}
     </div>
 </div>
+
+In addition, [the website is AMP now](/blog/amp-now) that further enhance the page loading performance.
 
 * * *
 
