@@ -20,7 +20,7 @@ image:
 css:
    custom: >-
       .ml-5 {
-         margin-left: 3rem!important;
+         margin-left: 3rem;
       }
 ---
 

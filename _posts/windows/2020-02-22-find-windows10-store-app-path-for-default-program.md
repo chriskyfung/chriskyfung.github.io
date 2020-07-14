@@ -12,7 +12,7 @@ excerpt: Do you want to change a Windows store app as the default program for op
 css:
     custom: >-
         .ml-4 {
-            margin-left: 1.5rem!important;
+            margin-left: 1.5rem;
         }
         .ml-5 {
             margin-left: 3rem;
