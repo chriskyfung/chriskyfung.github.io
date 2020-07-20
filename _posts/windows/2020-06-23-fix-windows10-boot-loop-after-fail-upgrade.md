@@ -30,7 +30,7 @@ To enable the WSL2, your operating system must be Windows 10, Version 2004, Buil
 
 It will show the **About Windows** dialog. For example, the above screenshot has a Windows 10, Version 1903, Build 18362. This means an update to Windows 10 May 2020 Update is required. I recommend you to watch the video below, which introduces how to get the update by Windows engineer Savitha Quadros.
 
-{% include youtube.html id="YtqNzdrtrmw" %}
+{% include youtube.html id="YtqNzdrtrmw" title="How to get the Windows 10 May 2020 Update" %}
 
 Open the **Windows Update** from the Control panel. If you see "Download and install" as the screenshot below, your device is ready for the update. You can click on it to run the process in the background. The updater will ask you to reboot your device when it finishes the job. 🥳👏
 

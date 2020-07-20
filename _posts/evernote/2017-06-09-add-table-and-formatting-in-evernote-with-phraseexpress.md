@@ -24,7 +24,7 @@ Many people just type plain text in their notebook. If you do so, you may not in
 
 I summarized the three ways of inserting a table given in Evernote Desktop, and demonstrated my shorthand in the following video.
 
-{% include youtube.html id="I7mAzCR8oHU" %}
+{% include youtube.html id="I7mAzCR8oHU" title="Shorthand to insert a table in Evernote with PhraseExpress" %}
 
 Which are the most convenient, the last one that I proposed?
 
@@ -66,7 +66,7 @@ Evernote doesn’t have Heading Formatting, such kind of advance styling functio
 
 Manual operations sometimes generate the inconsistencies to formatting and style. I create the following method to format texts to heading with PhraseExpress.
 
-{% include youtube.html id="4YNrVFuEUSo" %}
+{% include youtube.html id="4YNrVFuEUSo" title="Shortcut for formating texts to heading styles in Evernote with PhraseExpres" %}
 
 Does it help? I hope you can leave your comments below.
 

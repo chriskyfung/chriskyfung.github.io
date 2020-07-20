@@ -182,7 +182,7 @@ kubectl expose deployment frontend --type=LoadBalancer --port 80 --target-port 8
 
 Most steps in the exercise are identical to those in the lab **Migrating a Monolithic Website to Microservices on Google Kubernetes Engine**. To complete this challenge, make sure you carefully replace the cluster and deployment names to the specified ones. If you still have questions, you can leave a comment below.
 
-{% include youtube.html id="8jumRGDgxiY" %}
+{% include youtube.html id="8jumRGDgxiY" title="GSP319 Build a Website on Google Cloud: Challenge Lab" %}
 
 * * *
 

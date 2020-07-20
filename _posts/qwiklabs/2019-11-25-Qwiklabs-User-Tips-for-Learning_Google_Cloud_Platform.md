@@ -27,7 +27,7 @@ css:
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice. If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
 
-{% include youtube.html id="cyp7soKLOYI" %}
+{% include youtube.html id="cyp7soKLOYI" title="Using Qwiklabs for Hands-on Practice with Google Cloud | Google Cloud Labs" %}
 
 <br>
 
@@ -88,7 +88,7 @@ For more information, you can read the post _"[Userscript for Labelling Complete
 
 Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Medium](https://medium.com/@qwiklabs) ([@qwiklabs](https://medium.com/@qwiklabs)). Also, you may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
 
-{% include youtube.html id="ew-r46FmzSM" playlist="PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" %}
+{% include youtube.html id="ew-r46FmzSM" playlist="PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" title="Qwiklabs Quests Previews | Google Cloud Labs" %}
 
 <amp-ad
   width="auto"
