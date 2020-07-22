@@ -180,8 +180,9 @@ _The Hints for Challenge Labs 2020:_
 - [Qwiklab/Logbook: Getting Started: Create and Manage Cloud Resources: Challenge Lab](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab)
 - [Qwiklab/Logbook: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab)
 - [Qwiklab/Logbook: Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](/blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab)
-- [QLogbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
-- [QLogbook: Build a Website on Google Cloud: Challenge Lab](/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab)
+- [Qwiklab/Logbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
+- [Qwiklab/Logbook: Build a Website on Google Cloud: Challenge Lab](/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab)
+- [Qwiklab/Logbook: Automate Interactions with Contact Center AI: Challenge Lab](/blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab)
 
 _Quizzes Answers:_
 
