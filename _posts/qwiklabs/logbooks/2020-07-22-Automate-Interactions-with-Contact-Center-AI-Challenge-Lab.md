@@ -148,7 +148,7 @@ Congratulations!!
 
 ## Summary
 
-Tasks 1 to 5 were pretty straightforward. If you prefer using the command line to create the resources, please refer the [README](https://github.com/GoogleCloudPlatform/dataflow-contact-center-speech-analysis) of the Speech Analysis Framework in the GitHub repository. You can also find the commands for deploy the `saflongrunjobdataflow.py` Python script in Task 6 and the SQL query for getting the answer in Task 7.
+Tasks 1 to 5 were pretty straightforward. If you prefer using the command line to create the resources, please refer the [README file](https://github.com/GoogleCloudPlatform/dataflow-contact-center-speech-analysis) of the Speech Analysis Framework in the GitHub repository. You can also find the commands for deploy the `saflongrunjobdataflow.py` Python script in Task 6 and the SQL query for getting the answer in Task 7.
 
 Only Task 7 was little tricky. You will get stuck if you try to make a copy of the table using the **COPY TABLE** button in the BigQuery console. It can copy the table structure but cannot copy the data in the table. Once you know how to correctly clone the table, the task is just a piece of cake.
 
