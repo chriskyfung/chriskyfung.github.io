@@ -35,32 +35,16 @@
         <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         <div class="metafooter">
             <div class="wrapfooter">
-                <!-- Post Tags -->
-                <div class="after-post-tags">
-                    <ul class="tags rounded-tags">
-                        {% assign sortedTags = post.tags | sort %}
-                        {% for tag in sortedTags %}
-                        <li>
-                            <small><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}/">{{ tag }}</a></small>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <!-- End Tags -->
-                <span class="post-date">{{ post.date | date_to_string }}</span>
-                <span class="post-read-more"><a href="{{ post.url | absolute_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
-                {% if page.url == "/blog/" or page.url contains "/blog/page"%}
-                <div class="post-meta">
-                    <ul class="tags">
-                        {% assign sortedCategories = post.categories | sort %}
-                        {% for category in sortedCategories %}
-                        <li>
-                            <small><a href="/category/{{ category | slugify }}/">{{ category }}</a></small>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+                {% if post.author %}
+                <span class="meta-footer-thumb">
+                <amp-img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" width="40" height="40" alt="{{ author.display_name }}"></amp-img>
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
                 {% endif %}
+                <span class="post-date">{{ post.date | date_to_string }}</span>
+                </span>
+                <span class="post-read-more"><a href="{{ post.url | absolute_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>

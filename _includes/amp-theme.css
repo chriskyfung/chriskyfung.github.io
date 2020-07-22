@@ -245,7 +245,6 @@ section.recent-posts {
 
 .listfeaturedtag .wrapfooter {
     position: absolute;
-    bottom: 20px;
     font-size: 12px;
     display: block;
     width: 85%
@@ -700,34 +699,6 @@ blockquote {
     border-top-left-radius: 4px
 }
 
-ul.tags {
-    list-style: none;
-    padding-left: 0;
-    margin: 0 0 1.5rem 0
-}
-
-ul.tags li {
-    display: inline-block;
-    font-size: .9rem
-}
-
-ul.tags li a {
-    background: #fff100;
-    color: #333;
-    padding: 3px 10px;
-    border-radius: 3px;
-    font-weight: 500;
-    font-size: .93em;
-    text-transform: capitalize;
-    text-decoration: none;
-    box-shadow: 0 6px 10px 0 rgba(169, 169, 169, .1)
-}
-
-ul.tags li a:hover {
-    background: rgba(0, 0, 0, .07);
-    text-decoration: none
-}
-
 .margtop3rem {
     margin-top: 3rem
 }
@@ -1005,6 +976,34 @@ a.btn {
 
 .sidebar #mc_embed_signup .mc-field-group {
     width: 100%;
+}
+
+ul.tags {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1.5rem 0
+}
+
+ul.tags li {
+    display: inline-block;
+    font-size: .9rem
+}
+
+ul.tags li a {
+    background: #fff100;
+    color: #333;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: .93em;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-shadow: 0 6px 10px 0 rgba(169, 169, 169, .1)
+}
+
+ul.tags li a:hover {
+    background: rgba(0, 0, 0, .07);
+    text-decoration: none
 }
 
 #mc_embed_signup .mc-field-group input {
