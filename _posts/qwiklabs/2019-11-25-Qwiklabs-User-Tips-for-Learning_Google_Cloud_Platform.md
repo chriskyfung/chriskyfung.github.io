@@ -183,6 +183,7 @@ _The Hints for Challenge Labs 2020:_
 - [Qwiklab/Logbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
 - [Qwiklab/Logbook: Build a Website on Google Cloud: Challenge Lab](/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab)
 - [Qwiklab/Logbook: Automate Interactions with Contact Center AI: Challenge Lab](/blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab)
+- [Qwiklabs/Logbook: Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
 
 _Quizzes Answers:_
 

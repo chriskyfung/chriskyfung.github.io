@@ -184,8 +184,22 @@ Most steps in the exercise are identical to those in the lab **Migrating a Monol
 
 {% include youtube.html id="8jumRGDgxiY" title="GSP319 Build a Website on Google Cloud: Challenge Lab" %}
 
+```ts
+00:00 Lab Start: Overview
+01:00 Task 1: Download the monolith code and build your container
+03:03 Task 2a: Create a kubernetes cluster 
+07:20 Task 2b: Deploy the application
+12:12 Tasks 3a & 4a: Create and deploy a containerized version of Orders Microservice
+15:00 Tasks 3b & 4b: Create and deploy a containerized version of Products Microservice
+15:52 Task 5: Configure the Frontend microservice
+17:40 Task 6: Create a containerized version of the Frontend microservice
+18:24 Task 7: Deploy the Frontend microservice
+```
+
 * * *
 
 **Keep on reading**:
+
+- [QLogbook: Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
 - [QLogbook: Build and Deploy a Docker Image to a Kubernetes Cluster](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster)
 - [QLogbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
