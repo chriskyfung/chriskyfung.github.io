@@ -204,3 +204,7 @@ a.vglnk {
     border-bottom: 2px dashed gray;
     box-shadow: unset
 }
+
+.card .row {
+    height: 100%;
+}

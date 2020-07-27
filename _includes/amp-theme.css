@@ -247,7 +247,8 @@ section.recent-posts {
     position: absolute;
     font-size: 12px;
     display: block;
-    width: 85%
+    width: 85%;
+    bottom: -15px
 }
 
 .listrecent .wrapfooter {
@@ -649,12 +650,11 @@ blockquote {
     }
 
     .listfeaturedtag .wrapfooter {
-        position: relative;
-        margin-top: 30px
+        width: calc(100% - 65px);
     }
 
     .listfeaturedtag .card-block {
-        padding: 20px
+        padding: 20px 20px 50px 20px;
     }
 }
 
