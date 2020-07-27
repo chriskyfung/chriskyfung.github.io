@@ -15,7 +15,6 @@ image:
    height: 741
 css:
    syntax: true
-featured: true
 ---
 
 In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is labeled as an expert-level exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_). You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.

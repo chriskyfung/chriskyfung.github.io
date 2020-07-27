@@ -14,13 +14,13 @@ image:
   ext: jpg
   height: 410
 excerpt: Over 400 hands-on labs and quests available on Qwiklabs for learning GCP. Therefore, we made a visual map for you to more easily seek a desired learning path.
-featured: true
 amp:
   youtube: true
   iframe: true
 css:
   custom: >-
     .iframe-bg-white{margin-left:auto;margin-right:auto;max-width:1493px;width:100%;z-index:1050;background:#fff;}
+featured: true
 ---
 
 ## What is Qwiklabs

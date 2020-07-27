@@ -15,6 +15,7 @@ image:
   hide: true
 amp:
   youtube: true
+featured: true
 ---
 
 Microsoft released the Windows 10 May 2020 update. The most compelling feature is the [Windows Subsystem for Linux version 2 (WSL2)](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10), which uses the latest and greatest in virtualization technology to run a Linux kernel inside of a lightweight utility virtual machine (VM). It has a faster File IO performance and 100% system call compatibility, compared to the WSL1 [^vs]. Program Manager Craig Loewen [^Craig] at Microsoft demonstrated the WSL2 is about 5-6 times faster than the WSL1. He also performed running an app from inside a container using [Docker Desktop for Windows](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2) and [debug it using VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). It's great news for developers.

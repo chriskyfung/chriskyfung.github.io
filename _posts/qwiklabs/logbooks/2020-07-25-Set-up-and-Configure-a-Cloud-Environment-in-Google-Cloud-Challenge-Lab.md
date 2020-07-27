@@ -145,7 +145,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    | Zone:      | `us-east1-b` |
    | Root password: | e.g. `12345678` |
 
-   **Note**: In read practice, you must set a strong password.
+   **Note**: In real practice, you must set a strong password.
 
 5. Click **Create**.
 6. Click the `griffin-dev-db` in the SQL pane after it has created.
@@ -158,6 +158,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
 
 9. Enter the Root password generated in Step 4.
 10. In the SQL console, run the following query to create the wordpress database:
+
    ```sql
    CREATE DATABASE wordpress;
    GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
@@ -183,7 +184,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 6. Go back to **NODE POOLS** > **default-pool**, set
 
-   Number of node: `2`
+   Number of nodes: `2`
 
 7. go to the **Network** tab, set
 

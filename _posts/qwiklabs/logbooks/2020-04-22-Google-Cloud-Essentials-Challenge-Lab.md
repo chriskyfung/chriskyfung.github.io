@@ -13,7 +13,6 @@ image:
    path: qwiklabs/qwiklabs-GSP313-task1
    ext: png
    height: 386
-featured: true
 ---
 
 <!--more-->

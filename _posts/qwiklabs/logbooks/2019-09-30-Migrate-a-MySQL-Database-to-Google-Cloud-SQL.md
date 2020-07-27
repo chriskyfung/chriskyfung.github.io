@@ -78,7 +78,7 @@ In a production environment, you may consider the automated workflow to take its
 
 In the web console, navigate to **_Compute Engine > VM instances_** and click the **SSH** button of the instance called `blog`.
 
-Both the WordPress and its MySQL database are running in this VM instance. The existing MySQL database is called `wordpress` and the user called `blogadmin` with password `Password1*`.
+Both WordPress and its MySQL database are running in this VM instance. The existing MySQL database is called `wordpress` and the user called `blogadmin` with password `Password1*`.
 
 In the SSH session, use `mysqldump` to export the MySQL database to a dump file with the following flags:
 
@@ -150,21 +150,25 @@ For this lab, the WordPress site configuration file is located in the `/var/www/
 cd /var/www/html/wordpress/
 ls
 ```
+
 You should find a file called `wp-config.php`.
 
 {% include picture.html height="114" img="qwiklabs/qwiklabs-GSP306-step11-locate-wordpress-config-file" ext="png" alt="" %}
 
 (_Optional_)  Before changing the WordPress configuration, I recommend you stop the local MySQL server using the following commands in the SSH session:
+
 ```bash
 sudo service mysql stop
 sudo service mysql status
 ```
+
 Refresh the Demo Blog Site, the website becomes fail to render.
 {% include picture.html width="670" height="190" img="qwiklabs/qwiklabs-GSP306-step10-stop-local-mysql-server" ext="png" alt="" %}
 
 Now you edit the WordPress configuration, such that it points to the Cloud SQL instance.
 
 Open the `wp-config.php`, such as using nano editor"
+
 ```bash
 sudo nano wp-config.php
 ```
