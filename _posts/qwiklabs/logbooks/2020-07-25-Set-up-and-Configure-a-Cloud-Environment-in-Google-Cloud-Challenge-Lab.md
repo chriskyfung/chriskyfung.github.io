@@ -99,7 +99,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
 
 4. Expand the **Management, security, disks, networking, sole tenancy** section.
 5. In the **Networking** tab, add `bastion` to the Network tags.
-6. click **Add network interface**, make sure that you set up two Network interfaces,
+6. Click **Add network interface**, make sure that you set up two Network interfaces,
 
    - `griffin-dev-mgmt`
    - `griffin-prod-mgmt`
@@ -113,7 +113,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
     | ---       |  ---       |
     | Name:      | `allow-bastion-dev-ssh` |
     | Network:   | `griffin-dev-vpc` |
-    | Targets:   | `baston` |
+    | Targets:   | `bastion` |
     | Source IP ranges: | `192.168.32.0/20` |
     | Protocols and ports: | tcp: `22` |
 
@@ -125,7 +125,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
     | ---       |  ---       |
     | Name:      | `allow-bastion-prod-ssh` |
     | Network:   | `griffin-prod-vpc` |
-    | Targets:   | `baston` |
+    | Targets:   | `bastion` |
     | Source IP ranges: | `192.168.48.0/20` |
     | Protocols and ports: | tcp: `22` |
 
@@ -156,7 +156,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    gcloud sql connect griffin-dev-db --user=root --quiet
    ```
 
-9. Enter the Root password generated in Step 4.
+9. Enter the **Root password** generated in Step 4.
 10. In the SQL console, run the following query to create the wordpress database:
 
    ```sql
@@ -169,13 +169,13 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
 
 ## Task 5: Create Kubernetes cluster
 
-Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-dev-wp` subnet, and in zone `us-east1-b`.
+Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-dev-wp` subnet, and in the zone `us-east1-b`.
 
 1. In the Cloud Console, navigate to **Kubernetes Engine** > **Clusters**.
 2. Click **Create cluster**.
 3. In the Cluster basics tab, configure:
 
-   Name: `griffin-dev`
+   Name: `griffin-dev`  
    Zone: `us-east1-b`
 
 4. In the left pane, go to **NODE POOLS** > **default-pool** > **Nodes** and set
@@ -186,9 +186,9 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
    Number of nodes: `2`
 
-7. go to the **Network** tab, set
+7. Go to the **Network** tab, set
 
-   Network: `griffin-dev-vpc`
+   Network: `griffin-dev-vpc`  
    Node subnet: `griffin-dev-wp`
 
    {% include picture.html img="qwiklabs/qwiklab-gsp321-k8s-vpc-networking" ext="png" width="913" height="947" alt="Networking settings for new Kubernetes cluster griffin-dev" %}
@@ -204,7 +204,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
    gsutil cp -r gs://cloud-training/gsp321/wp-k8s ~/
    ```
 
-2. Open `wp-k8s/wp-env.yaml` with the Cloud Shell Editor
+2. Open `wp-k8s/wp-env.yaml` with the Cloud Shell Editor.
 
    ```bash
    cd ~/wp-k8s
@@ -250,7 +250,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 {% include picture.html img="qwiklabs/qwiklab-gsp321-sql-conf-yaml" ext="jpg" width="673" height="155" class="ml-li text-center" %}
 
 3. Save the file change.
-4. Go back to the Cloud Shell, run:
+4. Go back to the Cloud Shell, run the following commands:
 
    ```bash
    kubectl create -f wp-deployment.yaml
@@ -263,7 +263,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 ## Task 8: Enable monitoring
 
-1. In the Cloud Console, navigate to **Monitoring**.
+1. Go back to the Cloud Console, and navigate to **Monitoring**.
 2. In the Monitoring console, click **Uptime checks** in the left pane.
 3. Click **CREATE UPTIME CHECK**.
 4. Configure using the following parameters:
