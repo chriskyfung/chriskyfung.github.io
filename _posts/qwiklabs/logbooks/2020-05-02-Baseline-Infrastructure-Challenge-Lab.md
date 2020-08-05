@@ -3,9 +3,9 @@ layout: post
 title:  "QLogbook: Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab"
 author: chris
 date: 2020-05-02 +0800
-last_modified_at: 2020-06-22 10:08:00 +0800
+last_modified_at: 2020-08-04 10:08:00 +0800
 category: Cloud
-tags: [Qwiklabs, Google Cloud, Logbook]
+tags: [Qwiklabs, Google Cloud, Logbook, Cloud Function]
 permalink: /blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab
 redirect_from: /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP315 "Perform Foundational Infrastructure Tasks in Google Cloud&#58; Challenge Lab".
@@ -13,6 +13,9 @@ image:
    path: qwiklabs/map
    ext: jpg
    height: 565
+amp:
+   youtube: true
+featured: true
 ---
 
 <!--more-->
@@ -77,8 +80,19 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 ## Summary
 
-All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Getting Started: Create and Manage Cloud Resources: Challenge Lab](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab).<br>
-**9 credits!** Is this cheating money?
+All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Getting Started: Create and Manage Cloud Resources: Challenge Lab](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab).
+
+{% include youtube.html id="5UrQ9D-epG8" title="GSP315 Perform Foundational Infrastructure Tasks in Google Cloud= Challenge Lab" %}
+
+```ts
+0:00 Start Lab 🔬
+0:35 Task 1: Create a bucket
+0:57 Task 2: Create a Pub/Sub topic
+1:15 Task 3: Create the Cloud Function
+4:10 Task 4: Remove the previous cloud engineer
+```
+
+**9 credits!** Is this cheating money? I hope this beginner's guide to Qwiklabs will help you to get started. If you have any additional questions, feel free to ask me in the comments section below.
 
 * * *
 
