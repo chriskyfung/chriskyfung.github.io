@@ -178,13 +178,14 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
    Name: `griffin-dev`  
    Zone: `us-east1-b`
 
-4. In the left pane, go to **NODE POOLS** > **default-pool** > **Nodes** and set
-
-   Machine type: `n1-standard-4`
-
-6. Go back to **NODE POOLS** > **default-pool**, set
+5. In the left pane, click **default-pool** under **NODE POOLS** and set
 
    Number of nodes: `2`
+
+
+6. Click **Nodes** Under **default-pool**, and set
+
+   Machine type: `n1-standard-4`
 
 7. Go to the **Network** tab, set
 

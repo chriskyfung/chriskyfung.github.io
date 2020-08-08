@@ -12,7 +12,6 @@ image:
     path: tumblr/tips-tricks-and-tools-for-tumblr-bloggers
     ext: png
     height: 222
-featured: true
 css:
     syntax: true
     custom: >-

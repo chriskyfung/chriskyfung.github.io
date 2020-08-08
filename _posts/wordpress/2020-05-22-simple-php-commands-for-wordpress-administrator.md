@@ -11,6 +11,7 @@ image:
    ext: svg
 css:
    syntax: true
+redirect_to: https://craftweeks.com/en/simple-php-commands-for-wordpress-administrators/
 ---
 
 <!--more-->

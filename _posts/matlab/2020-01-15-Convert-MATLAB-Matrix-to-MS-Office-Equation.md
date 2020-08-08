@@ -14,6 +14,7 @@ image:
    height: 417
 css:
    syntax: true
+featured: true
 ---
 
 When I was studying my MPhil and PhD degrees, one bothering job was to rewrite the programmed formulas and computational results that were coded with numerical analysis software, MATLAB to my papers and my theses. At that time, I used Microsoft Word as my primary word processing software. Manually typing and formatting the data (in the MS Equation Editor) consume time and easily generate human mistakes. Thus, I developed a couple of functions to convert matrix data between MATLAB and MS Office Equation formats. The MATLAB codes are available in my GitHub repository.
