@@ -215,3 +215,7 @@ Next time, I will try to write a review about different quests in Qwiklabs. I ho
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
 - [QLogbook: Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
+
+**Useful external link**:
+
+- [VM Migration: Modernize an Application Stack with GKE and MySQL | Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)

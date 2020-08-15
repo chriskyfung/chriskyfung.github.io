@@ -7,7 +7,7 @@ category: Cloud
 permalink: /blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 redirect_from:
  - /blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
-tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook]
+tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook, Secure VPC]
 image: 
    path: qwiklabs/qwiklabs-GSP303-diagram
    ext: png
@@ -269,3 +269,4 @@ This post has also been published to Medium. If you like to read and take notes 
 **See Also**:
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
 - [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
+- [Qwiklabs/Logbook: Build and Secure Networks in Google Cloud: Challenge Lab](/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab)

@@ -76,4 +76,8 @@ Reboot your computer, the Windows 10 will start normally if the fix works.
 
 - [Windows 10 - Repair EFI Partition \| Windows Ninja - YouTube](https://youtu.be/l_I4K2-Rr_Y)
 
+We you want to learn more the roadmap of WSL2, I also suggest you to read the following materials:
+
+- [The Windows Subsystem for Linux BUILD 2020 Summary \| Windows Command Line](https://devblogs.microsoft.com/commandline/the-windows-subsystem-for-linux-build-2020-summary/)
+
 **Footnotes**:

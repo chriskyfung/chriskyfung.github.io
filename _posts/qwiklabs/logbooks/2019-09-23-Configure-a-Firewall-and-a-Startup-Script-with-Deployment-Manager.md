@@ -175,3 +175,5 @@ If you finished the first three labs of the challenge quest, you are capable of 
 - [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
 
 - [Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)
+
+- [Qwiklabs/Logbook: Build and Secure Networks in Google Cloud: Challenge Lab](/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab)

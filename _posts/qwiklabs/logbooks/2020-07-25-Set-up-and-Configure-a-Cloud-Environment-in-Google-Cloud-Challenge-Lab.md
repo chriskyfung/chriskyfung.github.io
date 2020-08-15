@@ -4,7 +4,7 @@ title: "QLogbook: Set up and Configure a Cloud Environment in Google Cloud: Chal
 date: 2020-07-25 16:00 +0800
 category: Cloud
 author: chris
-tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress]
+tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab
 image: 
    path: qwiklabs/qwiklab-gsp321-title
@@ -316,6 +316,11 @@ Congratulations! You completed this challenge lab.
 
 **Keep on reading**:
 
+- [Qwiklabs/Logbook: Build and Secure Networks in Google Cloud: Challenge Lab](/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab)
 - [Qwiklab/Logbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
 - [Qwiklab/Logbook: Build a Website on Google Cloud: Challenge Lab](/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab)
 - [Qwiklab/Logbook: Migrate a MySQL Database to Google Cloud SQL](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL)
+
+**Useful external link**:
+
+- [VM Migration: Modernize an Application Stack with GKE and MySQL | Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)
