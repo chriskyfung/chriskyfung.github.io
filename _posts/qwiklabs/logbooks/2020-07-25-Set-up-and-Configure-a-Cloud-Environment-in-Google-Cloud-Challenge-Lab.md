@@ -323,4 +323,4 @@ Congratulations! You completed this challenge lab.
 
 **Useful external link**:
 
-- [VM Migration: Modernize an Application Stack with GKE and MySQL | Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)
+- [VM Migration: Modernize an Application Stack with GKE and MySQL \| Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)

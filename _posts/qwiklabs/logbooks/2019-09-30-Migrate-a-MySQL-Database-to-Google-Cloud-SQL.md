@@ -218,4 +218,4 @@ Next time, I will try to write a review about different quests in Qwiklabs. I ho
 
 **Useful external link**:
 
-- [VM Migration: Modernize an Application Stack with GKE and MySQL | Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)
+- [VM Migration: Modernize an Application Stack with GKE and MySQL \| Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)
