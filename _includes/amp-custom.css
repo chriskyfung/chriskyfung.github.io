@@ -209,6 +209,6 @@ a.vglnk {
     height: 100%;
 }
 
-amp-ad[type=adsense][style*='width'] {
+amp-ad[type=adsense][style*=width]:not([style*='width: 100%']) {
     display:none
 }
