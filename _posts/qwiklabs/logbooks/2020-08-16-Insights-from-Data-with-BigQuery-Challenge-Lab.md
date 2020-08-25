@@ -2,7 +2,7 @@
 layout: post
 title: "QLogbook: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
 date: 2020-08-16 06:48 +0800
-last_modified_at: 2020-08-25 10:45 +8000
+last_modified_at: 2020-08-25 10:45 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
@@ -103,15 +103,9 @@ Due to Qwiklabs' poor design, you have to format **GROUP BY**, **HAVING** and **
 Copy the following code to the Query editor and then click **Run**.
 
 ```sql
-SELECT
-    SUM(cumulative_confirmed) AS total_confirmed_cases,
-    SUM(cumulative_deceased) AS total_deaths,
-    (SUM(cumulative_deceased)/SUM(cumulative_confirmed))*100 AS case_fatality_ratio
-FROM
-   `bigquery-public-data.covid19_open_data.covid19_open_data`
-WHERE
-    country_name="Italy"
-    AND date = "2020-04-30"
+SELECT SUM(cumulative_confirmed) AS total_confirmed_cases, SUM(cumulative_deceased) AS total_deaths, (SUM(cumulative_deceased)/SUM(cumulative_confirmed))*100 AS case_fatality_ratio
+FROM `bigquery-public-data.covid19_open_data.covid19_open_data`
+WHERE country_name="Italy" AND date BETWEEN "2020-04-01" AND "2020-04-30"
 ```
 
 Originally, it should be `date='2020-04-30'`. I don't know why Qwiklabs replaced it with a date range.
