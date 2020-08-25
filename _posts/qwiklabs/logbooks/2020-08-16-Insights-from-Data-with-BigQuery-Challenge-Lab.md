@@ -2,6 +2,7 @@
 layout: post
 title: "QLogbook: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
 date: 2020-08-16 06:48 +0800
+last_modified_at: 2020-08-25 10:45 +8000
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
@@ -64,6 +65,7 @@ FROM
 WHERE
   country_name="United States of America"
   AND date='2020-04-10'
+  AND subregion1_name IS NOT NULL
 GROUP BY
   subregion1_name
 )
@@ -83,10 +85,10 @@ SELECT
     subregion1_name AS state,
     SUM(cumulative_confirmed) AS total_confirmed_cases
 FROM
-    `bigquery-public-data.covid19_jhu_csse_eu.summary`
+    `bigquery-public-data.covid19_open_data.covid19_open_data`
 WHERE
     country_name="United States of America"
-    date = "2020-04-10"
+    AND date = "2020-04-10"
 GROUP BY subregion1_name
 HAVING total_confirmed_cases > 1000
 ORDER BY total_confirmed_cases DESC
@@ -101,9 +103,15 @@ Due to Qwiklabs' poor design, you have to format **GROUP BY**, **HAVING** and **
 Copy the following code to the Query editor and then click **Run**.
 
 ```sql
-SELECT SUM(cumulative_confirmed) AS total_confirmed_cases, SUM(cumulative_deceased) AS total_deaths, (SUM(cumulative_deceased)/SUM(cumulative_confirmed))*100 AS case_fatality_ratio
-FROM `bigquery-public-data.covid19_open_data.covid19_open_data`
-WHERE country_name="Italy" AND date BETWEEN "2020-04-01" AND "2020-04-30"
+SELECT
+    SUM(cumulative_confirmed) AS total_confirmed_cases,
+    SUM(cumulative_deceased) AS total_deaths,
+    (SUM(cumulative_deceased)/SUM(cumulative_confirmed))*100 AS case_fatality_ratio
+FROM
+   `bigquery-public-data.covid19_open_data.covid19_open_data`
+WHERE
+    country_name="Italy"
+    AND date = "2020-04-30"
 ```
 
 Originally, it should be `date='2020-04-30'`. I don't know why Qwiklabs replaced it with a date range.
@@ -158,7 +166,6 @@ WITH india_cases_by_date AS (
   cases - LAG(cases) OVER(ORDER BY date) AS net_new_cases
 FROM india_cases_by_date
 )
-
 SELECT
   COUNT(date)
 FROM
@@ -177,7 +184,7 @@ Copy the following code to the Query editor and then click **Run**.
 WITH us_cases_by_date AS (
   SELECT
     date,
-    SUM(confirmed) AS cases
+    SUM( cumulative_confirmed ) AS cases
   FROM
     `bigquery-public-data.covid19_open_data.covid19_open_data`
   WHERE
@@ -290,14 +297,14 @@ from summary
 
    ```sql
    SELECT
-     date, SUM(cumulative_comfirmed) AS country_cases,
-     SUM(cumulative_deceased) AS country_deaths
+     date, SUM( cumulative_confirmed ) AS    country_cases,
+     SUM(cumulative_deceased) AS    country_deaths
    FROM
-     `bigquery-public-data.covid19_open_data.covid19_open_data`
+     `bigquery-public-data.covid19_open_data.   covid19_open_data`
    WHERE
      date BETWEEN '2020-03-15'
      AND '2020-04-30'
-     AND country_name='United States of America'
+     AND country_name='United States of    America'
    GROUP BY date
    ```
 
