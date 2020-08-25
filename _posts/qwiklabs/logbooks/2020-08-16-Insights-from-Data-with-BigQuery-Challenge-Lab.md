@@ -2,7 +2,7 @@
 layout: post
 title: "QLogbook: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
 date: 2020-08-16 06:48 +0800
-last_modified_at: 2020-08-25 10:45 +0800
+last_modified_at: 2020-08-25 11:05 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
@@ -291,14 +291,14 @@ from summary
 
    ```sql
    SELECT
-     date, SUM( cumulative_confirmed ) AS    country_cases,
-     SUM(cumulative_deceased) AS    country_deaths
+     date, SUM(cumulative_confirmed) AS country_cases,
+     SUM(cumulative_deceased) AS country_deaths
    FROM
-     `bigquery-public-data.covid19_open_data.   covid19_open_data`
+     `bigquery-public-data.covid19_open_data.covid19_open_data`
    WHERE
      date BETWEEN '2020-03-15'
      AND '2020-04-30'
-     AND country_name='United States of    America'
+     AND country_name='United States of America'
    GROUP BY date
    ```
 
