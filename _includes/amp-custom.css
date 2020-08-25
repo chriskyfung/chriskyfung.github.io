@@ -210,7 +210,7 @@ a.vglnk {
 }
 
 @media (min-width:488px) {
-    #post amp-ad[height=0][type=adsense][style*=width]:not([style*='width: 100%']) {
+    #post amp-ad[height='0'][type=adsense][style*='width']:not([style*='width: 100%']) {
         display:none
     }
 }
