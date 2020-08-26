@@ -30,7 +30,7 @@ In this task, you need to make a copy of `historical_taxi_rides_raw` to `taxi_tr
 
 {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-taxirides-dataset" ext="png" width="287" height="157" class="text-center" %}
 
-_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/12379?parent=catalog) on Qwiklabs_
+_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/1797?parent=catalog) on Qwiklabs_
 
 Make sure that:
 
@@ -94,7 +94,7 @@ In this task, you need to:
 - Create a model called `taxirides.fare_model`
 - Train the model with an RMSE < 10
 
-_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/12379?parent=catalog) on Qwiklabs_
+_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/1797?parent=catalog) on Qwiklabs_
 
 #### Create a model
 
