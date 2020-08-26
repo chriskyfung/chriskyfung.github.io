@@ -205,7 +205,7 @@ At the end of the lab, your BigQuery dataset should contains the following table
 00:00 Start Lab
 00:50 Task 1: Clean your training data
 11:28 Task 2: Create a BQML model called `taxirides.fare_model`
-19:24         Improve model performance by training with ST_distance() and ST_GeogPoint() functions
+19:24 Bouns - Improve model performance by training with ST_distance() and ST_GeogPoint() functions
 23:06 Task 3: Perform a batch prediction on new data
 ```
 
@@ -213,4 +213,4 @@ At the end of the lab, your BigQuery dataset should contains the following table
 
 **Keep on reading**:
 
-- [Qwiklabs/Logbook: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)](/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab)
+- [QLogbook: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)](/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab)

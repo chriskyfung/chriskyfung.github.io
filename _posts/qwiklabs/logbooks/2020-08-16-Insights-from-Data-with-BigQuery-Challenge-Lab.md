@@ -340,4 +340,4 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 **Keep on reading**:
 
-- [Qwiklabs/Logbook: Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
+- [QLogbook: Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
