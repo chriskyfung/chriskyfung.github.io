@@ -332,8 +332,12 @@ If you fail to get the score of this task, remove all data and reports from the 
 25:32 Create a Datastudio report
 ```
 
-* * *
-
 **References**:
 
 - [Watch - Hands-on Lab: Insights into Data with BigQuery - Challenge Lab](https://cloudonair.withgoogle.com/events/next20-studyjam/watch?talk=w5-talk-3)
+
+* * *
+
+**Keep on reading**:
+
+- [Qwiklabs/Logbook: Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
