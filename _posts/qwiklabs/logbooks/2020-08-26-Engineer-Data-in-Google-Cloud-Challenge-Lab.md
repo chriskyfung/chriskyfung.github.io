@@ -7,7 +7,7 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning]
 permalink: /blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab
 image: 
-   path: qwiklabs/qwiklab-gsp787-00
+   path: qwiklabs/taxirides
    ext: jpg
 excerpt: A brief procedure for the qwiklab practice GSP327.  You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
 amp:
@@ -205,6 +205,7 @@ At the end of the lab, your BigQuery dataset should contains the following table
 00:00 Start Lab
 00:50 Task 1: Clean your training data
 11:28 Task 2: Create a BQML model called `taxirides.fare_model`
+19:24         Improve model performance by training with ST_distance() and ST_GeogPoint() functions
 23:06 Task 3: Perform a batch prediction on new data
 ```
 
