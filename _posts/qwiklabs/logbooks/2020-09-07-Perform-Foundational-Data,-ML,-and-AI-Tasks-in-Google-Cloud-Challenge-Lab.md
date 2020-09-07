@@ -272,9 +272,9 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    
    ```bash
    curl -s -H 'Content-Type: application/json' \
-       -H 'Authorization: Bearer '$TOKEN \
-       'https://videointelligence.googleapis.com/v1/operations/videos:annotate' \
-       -d @gvi-request.json > task4-gvi.result
+      -H 'Authorization: Bearer '$(gcloud auth print-access-token)'' \
+      'https://videointelligence.googleapis.com/v1/videos:annotate' \
+      -d @gvi-request.json > task4-gvi.result
    ```
 
 5. Upload the resulted file to Cloud Storage by running:
