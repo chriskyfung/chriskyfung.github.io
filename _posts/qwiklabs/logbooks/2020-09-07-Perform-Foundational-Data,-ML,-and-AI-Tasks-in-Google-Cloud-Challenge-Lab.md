@@ -236,10 +236,10 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 1. In the Cloud Shell, run the following commands to create a new service account.
 
    ```bash
-   gcloud iam service-accounts create my-natlang-sa \
+   gcloud iam service-accounts create quickstart \
      --display-name "my natural language service account"
    gcloud iam service-accounts keys create ~/key.json \
-     --iam-account my-natlang-sa@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
+     --iam-account quickstart@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
    export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
    ```
 
@@ -277,6 +277,11 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    gcloud iam service-accounts create quickstart
    gcloud iam service-accounts keys create key.json --iam-account quickstart@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
    gcloud auth activate-service-account --key-file key.json
+   ```
+
+   If you have already created a service account above, please run the following only.
+   
+   ```
    export TOKEN=$(gcloud auth print-access-token)
    ```
 
@@ -286,7 +291,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    curl -s -H 'Content-Type: application/json' \
        -H 'Authorization: Bearer '$TOKEN \
        'https://videointelligence.googleapis.com/v1/operations/videos:annotate' \
-       -d @gvi-request.json @request.json > task4-gvi.result
+       -d @gvi-request.json > task4-gvi.result
    ```
 
 5. Upload the resulted file to Cloud Storage by running:
