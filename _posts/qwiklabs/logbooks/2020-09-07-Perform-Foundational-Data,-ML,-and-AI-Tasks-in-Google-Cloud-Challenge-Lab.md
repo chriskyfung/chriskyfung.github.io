@@ -233,17 +233,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 #### Use the Cloud Natural Language API to analyze the sentence
 
-1. In the Cloud Shell, run the following commands to create a new service account.
-
-   ```bash
-   gcloud iam service-accounts create quickstart \
-     --display-name "my natural language service account"
-   gcloud iam service-accounts keys create ~/key.json \
-     --iam-account quickstart@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
-   export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
-   ```
-
-2. Run the following command to use the Cloud Natural Language API to analyze the given sentence.
+1. In the Cloud Shell, run the following command to use the Cloud Natural Language API to analyze the given sentence.
 
    ```bash
    gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > task4-cnl.result
@@ -271,17 +261,10 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    }
    ```
 
-3. Run the following commands to create a new service account.
+3. Run the following commands to create a token.
 
-   ```bash
-   gcloud iam service-accounts create quickstart
-   gcloud iam service-accounts keys create key.json --iam-account quickstart@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
+   ```
    gcloud auth activate-service-account --key-file key.json
-   ```
-
-   If you have already created a service account above, please run the following only.
-   
-   ```
    export TOKEN=$(gcloud auth print-access-token)
    ```
 
