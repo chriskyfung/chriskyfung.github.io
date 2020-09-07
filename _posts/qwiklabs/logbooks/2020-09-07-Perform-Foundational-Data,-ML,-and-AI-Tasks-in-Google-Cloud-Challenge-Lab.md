@@ -1,0 +1,309 @@
+---
+layout: post
+title: "QLogbook: Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab"
+date: 2020-09-08 00:30 +0800
+category: Cloud
+author: chris
+tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
+permalink: /blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab
+image: 
+   path: qwiklabs/qwiklab-gsp323-cloud-dataprep
+   ext: png
+excerpt: A brief procedure for the qwiklab practice GSP323.  You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
+amp:
+   youtube: true
+css:
+   syntax: true
+   custom: >
+      table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
+      .ml-li { margin-left: 2rem }
+---
+
+In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is labeled as an expert-level exercise. You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
+
+**The challenge contains 4 required tasks:**
+
+Task 1: Run a simple Dataflow job
+Task 2: Run a simple Dataproc job
+Task 3: Run a simple Dataprep job
+Task 4: AI
+
+## Task 1: Run a simple Dataflow job
+
+In this task, you have to transfer the data in a CSV file to BigQuery using Dataflow via Pub/Sub. First of all, you need to create a BigQuery dataset called `lab` and a Cloud Storage bucket called with your project ID.
+
+#### 1.1 Created a BigQuery dataset called `lab`
+
+1. In the Cloud Console, click on **Navigation Menu** > **BigQuery**.
+2. Select your project in the left pane.
+3. Click **CREATE DATASET**.
+4. Enter `lab` in the Dataset ID, then click **Create dataset**.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-create-bigquery-dataset" ext="png" width="487" height="377" class="ml-li text-center" %}
+
+##### Optional
+
+{:start="5"}
+5. Run `gsutil cp gs://cloud-training/gsp323/lab.schema .` in the Cloud Shell to download the schema file.
+6. View the schema by running `cat lab.schema`.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task-1-bigquery-table-schema" ext="png" width="374" height="212" class="ml-li text-center" %}
+
+{:start="7"}
+7. Go back to the Cloud Console, select the new dataset **lab** and click **Create Table**.
+8. In the Create table dialog, select **Google Cloud Storage** from the dropdown in the Source section.
+9. Copy `gs://cloud-training/gsp323/lab.csv` to **Select file from GCS bucket**.
+10. Enter `customers` to "Table name" in the Destination section.
+11. Enable **Edit as text** and copy the JSON data from the `lab.schema` file to the textarea in the Schema section.
+12. Click **Create table**.
+
+{% include picture.html img="qwiklabs/qwiklab-gsp323-task-1-bigquery-creat-table-from-csv" ext="png" width="673" height="886" class="ml-li text-center" %}
+
+#### 1.2 Create a Cloud Storage bucket
+
+1. In the Cloud Console, click on **Navigation Menu** > **Storage**.
+2. Click **CREATE BUCKET**.
+3. Copy your GCP Project ID to Name your bucket.
+4. Click **CREATE**.
+
+#### 1.3 Create a Dataflow job
+
+1. In the Cloud Console, click on **Navigation Menu** > **Dataflow**.
+2. Click **CREATE JOB FROM TEMPLATE**.
+3. In Create job from template, give an arbitrary job name.
+4. From the dropdown under Dataflow template, select **Text Files on Cloud Storage Pub/Sub** under "Process Data in Bulk (batch)". (**DO NOT** select the item under "Process Data Continuously (stream)").
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-dataflow-create-job-from-template" ext="png" width="610" height="562" class="ml-li text-center" %}
+
+{:start="5"}
+5. Under the Required parameters, enter the following values:
+
+   | Field          |   Value               |
+   | ---            | ---                   |
+   | JavaScript UDF path in Cloud Storage | `gs://cloud-training/gsp323/lab.js` |
+   | JSON path	| `gs://cloud-training/gsp323/lab.schema` |
+   | JavaScript UDF name	| `transform` |
+   | BigQuery output table	| `YOUR_PROJECT:lab.customers` |
+   | Cloud Storage input path | `gs://cloud-training/gsp323/lab.csv` |
+   | Temporary BigQuery directory | `gs://YOUR_PROJECT/bigquery_temp` |
+   | Temporary location | `gs://YOUR_PROJECT/temp` |
+
+   **Replace** `YOUR_PROJECT` with your project ID.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-data-flow-required-parameter" ext="png" width="928" height="840" class="ml-li" %}
+
+{:start="6"}
+6. Click **RUN JOB**.
+
+## Task 2: Run a simple Dataproc job
+
+### Create a Dataproc cluster
+
+1. In the Cloud Console, click on **Navigation Menu** > **Dataproc** > **Clusters**.
+2. Click **CREATE CLUSTER**.
+3. Make sure the cluster is going to create in the region **us-central1**.
+4. Click **Create**.
+5. After the cluster has been created, clik the **SSH** button in the row of the master instance.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataproc-ssh" ext="png" width="1269" height="501" class="ml-li" %}
+
+6. In the SSH console, run the following command:
+
+   ```bash
+   hdfs dfs -cp gs://cloud-training/gsp323/data.txt /data.txt
+   ```
+
+7. Close the SSH window and go back to the Cloud Console.
+8. Click **SUBMIT JOB** in the cluster details page.
+9. Select **Spark** from the dropdown of "Job type".
+10. Copy `org.apache.spark.examples.SparkPageRank` to "Main class or jar".
+11. Copy `file:///usr/lib/spark/examples/jars/spark-examples.jar` to "Jar files".
+12. Enter `/data.txt` to "Arguments".
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataprop-submit-a-job" ext="png" width="542" height="811" class="ml-li text-center" %}
+
+{:start="13"}
+13. Click **CREATE**.
+
+## Task 3: Run a simple Dataprep job
+
+### Import runs.csv to Dataprep
+
+1. In the Cloud Console, click on **Navigation menu** > **Dataprep**.
+2. After enter the home page of Cloud Dataprep, click the **Import Data** button.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-home" ext="png" width="1248" height="589" class="ml-li" %}
+
+{:start="3"}
+3. In the Import Data page, select **GCS** in the left pane.
+4. Click on the pencil icon under Choose a file or folder.
+5. Copy `gs://cloud-training/gsp323/runs.csv` to the textbox, and click the **Go** button next to it.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-import-from-gcs" ext="png" width="824" height="269" class="ml-li" %}
+
+{:start="6"}
+6. After showing the preview of runs.csv in the right pane, click on the **Import & Wrangle** button.
+
+### Transform data in Dataprep
+
+1. After launching the Dataperop Transformer, scroll right to the end and select **column10**.
+2. In the Details pane, click **FAILURE** under Unique Values to show context menu.
+3. Select **Delete rows with selected values** to Remove all rows with the state of "FAILURE".
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-remove-rows-with-status-failure" ext="png" width="710" height="499" class="ml-li text-center" %}
+
+{:start="4"}
+4. Click the downward arrow next to **column9**, choose **Filter rows** > **On column value** > **Contains**.
+5. In the Filter rows pane, enter the regex pattern `/(^0$|^0\.0$)/` to "Pattern to match".
+6. Select **Delete matching rows** under the Action section, then click the **Add** button.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-filter-column9" ext="png" width="940" height="476" class="ml-li" %}
+
+{:start="7"}
+7. Rename the columns to be:
+
+   {:start="2"}
+   2. runid
+   3. userid
+   4. labid
+   5. lab_title
+   6. start
+   7. end
+   8. time
+   9. score
+   10. state
+
+{:start="8"}
+8. Confirm the recipe. It should like the sceenshot below.
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-final-recipe" ext="png" width="378" height="615" class="ml-li text-center" %}
+
+{:start="9"}
+9. Click **Run Job**.
+
+{% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-run-job-on-dataflow" ext="png" width="1268" height="613" class="ml-li" %}
+
+## Task 4: AI
+
+#### Use Google Cloud Speech API to analyze the audio file
+
+1. In the Cloud Console, click on **Navigation menu** > **APIs & Services** > **Credentials**.
+2. In the Credentials page, click on **+ CREATE CREDENTIALS** > **API key**.
+3. Copy the API key to clipboard, then click **RESTRICT KEY**.
+4. Open the Cloud Shell, store the API key as an environment variable by running the following command:
+
+   ```bash
+   export API_KEY=<YOUR-API-KEY>
+   ```
+   
+   **Replace** `<YOUR-API-KEY>` with the copied key value.
+
+5. In the Cloud Shell, create a JSON file called `gsc-request.json`.
+6. Save the following codes to the file.
+
+   ```json
+   {
+     "config": {
+         "encoding":"FLAC",
+         "languageCode": "en-US"
+     },
+     "audio": {
+         "uri":"gs://cloud-training/gsp323/task4.flac"
+     }
+   }
+   ```
+
+7. Use the following `curl` command to submit the request to Google Cloud Speech API and store the response to a file called `task4-gcs.result`.
+
+   ```bash
+   curl -s -X POST -H "Content-Type: application/json" --data-binary @gsc-request.json \
+   "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}" > task4-gcs.result
+   ```
+
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task4-ai-gcs-result" ext="png" width="1186" height="249" class="ml-li" %}
+
+{:start="8"}
+8. Upload the resulted file to Cloud Storage by running:
+
+   ```bash
+   gsutil cp task4-gcs.result gs://<YOUR-PROJECT_ID>-marking/task4-gcs.result
+   ```
+
+   **Replace** `<YOUR-PROJECT_ID>` with your project ID.
+
+#### Use the Cloud Natural Language API to analyze the sentence
+
+1. In the Cloud Shell, run the following commands to create a new service account.
+
+   ```bash
+   gcloud iam service-accounts create my-natlang-sa \
+     --display-name "my natural language service account"
+   gcloud iam service-accounts keys create ~/key.json \
+     --iam-account my-natlang-sa@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
+   export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
+   ```
+
+2. Run the following command to use the Cloud Natural Language API to analyze the given sentence.
+
+   ```bach
+   gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > task4-cnl.result
+   ```
+
+3. Upload the resulted file to Cloud Storage by running:
+
+   ```bash
+   gsutil cp task4-cnl.result gs://<YOUR-PROJECT_ID>-marking/task4-cnl.result
+   ```
+
+   **Replace** `<YOUR-PROJECT_ID>` with your project ID.
+
+#### Use Google Video Intelligence and detect all text on the video
+
+1. In the Cloud Shell, create a JSON file called `gvi-request.json`.
+2. Save the following codes to the file.
+
+   ```json
+   {
+      "inputUri":"gs://spls/gsp154/video/train.mp4",
+      "features": [
+          "LABEL_DETECTION"
+      ]
+   }
+   ```
+
+3. Run the following commands to create a new service account.
+
+   ```bash
+   gcloud iam service-accounts create quickstart
+   gcloud iam service-accounts keys create key.json --iam-account quickstart@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
+   gcloud auth activate-service-account --key-file key.json
+   export TOKEN=$(gcloud auth print-access-token)
+   ```
+
+4. Run the following command to use theGoogle Video Intelligence and detect all text on the video.
+   
+   ```bash
+   curl -s -H 'Content-Type: application/json' \
+       -H 'Authorization: Bearer '$TOKEN \
+       'https://videointelligence.googleapis.com/v1/operations/videos:annotate' > task4-gvi.result
+   ```
+
+5. Upload the resulted file to Cloud Storage by running:
+
+   ```bash
+   gsutil cp task4-gvi.result gs://<YOUR-PROJECT_ID>-marking/task4-gvi.result
+   ```
+
+   **Replace** `<YOUR-PROJECT_ID>` with your project ID.
+
+## Summary
+
+{% include youtube.html id="iAGiLYAx7z8" title="GSP323 Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab" %}
+
+```ts
+00:00 Start Lab
+00:38 Task 1: Run a simple Dataflow job
+08:34 Task 2: Run a simple Dataproc job
+09:24 Task 3: Run a simple Dataprep job
+15:22 Task 4: AI
+```

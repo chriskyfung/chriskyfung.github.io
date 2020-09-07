@@ -20,9 +20,9 @@ In this article, we will go through the lab **GSP327** _[Engineer Data in Google
 
 **The challenge contains 6 required tasks:**
 
-1. Clean your training data
-1. Create a BQML model called taxirides.fare_model
-1. Perform a batch prediction on new data
+1. [Clean your training data](#task-1-clean-your-training-data)
+1. [Create a BQML model called taxirides.fare_model](#task-2-create-a-bqml-model-called-taxiridesfare_model)
+1. [Perform a batch prediction on new data](#task-3-perform-a-batch-prediction-on-new-data)
 
 ## Task 1: Clean your training data
 
@@ -98,7 +98,7 @@ _**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Fo
 
 #### Create a model
 
-Compose a new query with the given ST_distance() and ST_GeogPoint() functions in the Query Editor.
+Compose a new query with the given `ST_distance()` and `ST_GeogPoint()` functions in the Query Editor.
 
 Make sure that:
 - set `fare_amount` as the label
