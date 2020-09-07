@@ -245,7 +245,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 2. Run the following command to use the Cloud Natural Language API to analyze the given sentence.
 
-   ```bach
+   ```bash
    gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > task4-cnl.result
    ```
 
@@ -285,7 +285,8 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    ```bash
    curl -s -H 'Content-Type: application/json' \
        -H 'Authorization: Bearer '$TOKEN \
-       'https://videointelligence.googleapis.com/v1/operations/videos:annotate' > task4-gvi.result
+       'https://videointelligence.googleapis.com/v1/operations/videos:annotate' \
+       -d @gvi-request.json @request.json > task4-gvi.result
    ```
 
 5. Upload the resulted file to Cloud Storage by running:
