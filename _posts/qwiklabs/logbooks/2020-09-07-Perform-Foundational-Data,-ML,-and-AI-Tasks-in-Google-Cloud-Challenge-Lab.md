@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "QLogbook: Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab"
-date: 2020-09-08 00:30 +0800
+date: 2020-09-08 05:30 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
@@ -23,10 +23,7 @@ In this article, we will go through the lab **GSP323** _[Perform Foundational Da
 
 **The challenge contains 4 required tasks:**
 
-Task 1: Run a simple Dataflow job
-Task 2: Run a simple Dataproc job
-Task 3: Run a simple Dataprep job
-Task 4: AI
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-checkpoints" ext="png" width="599" height="246" class="ml-li" alt="Task 1: Run a simple Dataflow job. Task 2: Run a simple Dataproc job. Task 3: Run a simple Dataprep job. Task 4: AI." %}
 
 ## Task 1: Run a simple Dataflow job
 
