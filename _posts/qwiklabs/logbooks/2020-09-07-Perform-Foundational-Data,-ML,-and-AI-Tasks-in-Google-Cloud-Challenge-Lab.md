@@ -261,14 +261,20 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    }
    ```
 
-3. Run the following commands to create a token.
+3. Go back to the Cloud Console, click on **Navigation menu** > **APIs & Services** > **Credentials**.
+4. Click the service account named with "Qwiklabs User Service Account" to view the details.
+5. Click **ADD KEY** > **Create new key**.
+6. Choose **JSON** and click **CREATE** to download the Private key file to your computer.
+7. Upload the file to the Cloud Shell environment.
+8. Rename the uploaded file to `key.json`.
+9. Run the following commands to create a token.
 
    ```
    gcloud auth activate-service-account --key-file key.json
    export TOKEN=$(gcloud auth print-access-token)
    ```
 
-4. Run the following command to use theGoogle Video Intelligence and detect all text on the video.
+10. Run the following command to use theGoogle Video Intelligence and detect all text on the video.
    
    ```bash
    curl -s -H 'Content-Type: application/json' \
@@ -277,7 +283,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
       -d @gvi-request.json > task4-gvi.result
    ```
 
-5. Upload the resulted file to Cloud Storage by running:
+11. Upload the resulted file to Cloud Storage by running:
 
    ```bash
    gsutil cp task4-gvi.result gs://<YOUR-PROJECT_ID>-marking/task4-gvi.result
