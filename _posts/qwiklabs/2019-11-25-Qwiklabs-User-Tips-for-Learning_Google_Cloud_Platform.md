@@ -124,7 +124,7 @@ Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Mediu
         {% for quest in site.data.qwiklabs-quests %}
         <tr>
             <td>{{ quest.id }}</td>
-            <td><a href="https://www.qwiklabs.com/quests/{{ quest.id }}" target="_blank">{{ quest.name }}</a></td>
+            <td><a href="https://www.qwiklabs.com/quests/{{ quest.id }}" title="Open on Qwiklabs" target="_blank">{{ quest.name }}</a></td>
             <td>{{ quest.level }}</td>
             <td>{{ quest.costs }}</td>
             <td>{{ quest.env }}</td>
@@ -149,7 +149,7 @@ Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Mediu
         {% for lab in site.data.qwiklabs-labs %}
         <tr>
             <td>{{ lab.id }}</td>
-            <td><a href="https://www.qwiklabs.com/focuses/{{ lab.id }}?parent=catalog" target="_blank">{{ lab.name }}</a></td>
+            <td><a href="https://www.qwiklabs.com/focuses/{{ lab.id }}?parent=catalog" title="Open on Qwiklabs" target="_blank">{{ lab.name }}</a>{% if lab.youtube %} <a href="https://youtu.be/{{ lab.youtube }}" title="View Demo on YouTube" target="_blank"><i class='fab fa-youtube' style='color:red'></i></a>{% endif %}</td>
             <td>{{ lab.level }}</td>
             <td>{{ lab.costs }}</td>
             <td>{{ lab.env }}</td>
