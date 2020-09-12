@@ -266,7 +266,7 @@ id,name,duration,level,costs,type,env,youtube
 1044,"Helm Package Manager",50 minutes,Advanced,7 Credits,labs,GCP,
 12068,"Build and Secure Networks in Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP,NToEHzJTpgs
 867,"Setting up a Private Kubernetes Cluster",1 hour 30 minutes,Advanced,7 Credits,labs,GCP,
-10518,"Introducing API Management on Top of a Legacy Platform",1 hour,Fundamental,5 Credits,labs,GCP,
+10518,"Introducing API Management on Top of a Legacy Platform",1 hour,Fundamental,5 Credits,labs,GCP,6biSVGy4hss
 3349,"Deploy Windows Server with ASP.NET Framework to Compute Engine",45 minutes,Advanced,7 Credits,labs,GCP,
 11037,"Data Catalog: Qwik Start",30 minutes,Introductory,1 Credit,labs,GCP,
 3392,"Processing Time Windowed Data with Apache Beam and Cloud Dataflow (Java)",1 hour 30 minutes,Advanced,7 Credits,labs,GCP,
