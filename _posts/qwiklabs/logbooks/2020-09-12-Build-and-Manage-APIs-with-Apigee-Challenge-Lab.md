@@ -373,13 +373,13 @@ Go the Cloud Shell, run the commands given in the lab.
 8. Click on **Proxy Endpoints** → **default** → **PreFlow** in the Navigator tab. Replace the **RouteRule** tag with the following code,
 
    ```xml
-    <RouteRule name="default">
-        <TargetEndpoint>cloud</TargetEndpoint>
-    </RouteRule>
-        <RouteRule name="mock">
-        <Condition>request.queryparam.mock = "true"</Condition>
-        <TargetEndpoint>mock</TargetEndpoint>
-    </RouteRule>
+   <RouteRule name="mock">
+      <Condition>request.queryparam.mock = "true"</Condition>
+      <TargetEndpoint>mock</TargetEndpoint>
+   </RouteRule>
+   <RouteRule name="default">
+      <TargetEndpoint>cloud</TargetEndpoint>
+   </RouteRule>
    ```
 
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-proxy-endpoint-preflow-routerules" ext="png" width="607" height="172" class="ml-li text-center" %}
