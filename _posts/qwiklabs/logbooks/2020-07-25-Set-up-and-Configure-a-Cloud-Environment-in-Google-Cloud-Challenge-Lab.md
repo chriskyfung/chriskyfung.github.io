@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab"
+title: "Qlog: Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab"
 date: 2020-07-25 16:00 +0800
 category: Cloud
 author: chris

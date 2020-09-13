@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Configure a Firewall and a Startup Script with Deployment Manager"
+title: "Qlog: Configure a Firewall and a Startup Script with Deployment Manager"
 author: chris
 date: 2019-09-23 +0800
 last_modified_at: 2020-03-26 +0800

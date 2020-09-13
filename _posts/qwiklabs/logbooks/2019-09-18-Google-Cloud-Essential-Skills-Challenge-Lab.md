@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Google Cloud Essential Skills: Challenge Lab"
+title: "Qlog: Google Cloud Essential Skills: Challenge Lab"
 author: chris
 date: 2019-09-18
 category: Cloud

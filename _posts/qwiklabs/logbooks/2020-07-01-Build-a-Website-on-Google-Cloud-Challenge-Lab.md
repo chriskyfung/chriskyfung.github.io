@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Build a Website on Google Cloud: Challenge Lab"
+title: "Qlog: Build a Website on Google Cloud: Challenge Lab"
 date: 2020-07-01 16:30 +0800
 category: Cloud
 author: chris

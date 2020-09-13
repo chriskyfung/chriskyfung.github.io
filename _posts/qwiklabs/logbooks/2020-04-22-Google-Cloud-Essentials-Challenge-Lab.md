@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Getting Started: Create and Manage Cloud Resources: Challenge Lab"
+title: "Qlog: Getting Started: Create and Manage Cloud Resources: Challenge Lab"
 author: chris
 date: 2020-04-22 +0800
 last_modified_at: 2020-06-22 09:45:00 +0800

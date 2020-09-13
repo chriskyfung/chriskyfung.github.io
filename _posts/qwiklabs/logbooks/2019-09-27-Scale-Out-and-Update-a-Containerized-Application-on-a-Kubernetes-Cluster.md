@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster"
+title: "Qlog: Scale Out and Update a Containerized Application on a Kubernetes Cluster"
 author: chris
 date: 2019-09-27 +0800
 category: Cloud

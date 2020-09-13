@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Migrate a MySQL Database to Google Cloud SQL"
+title: "Qlog: Migrate a MySQL Database to Google Cloud SQL"
 author: chris
 date: 2019-09-30
 category: Cloud

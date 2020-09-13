@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Engineer Data in Google Cloud: Challenge Lab"
+title: "Qlog: Engineer Data in Google Cloud: Challenge Lab"
 date: 2020-08-26 15:30 +0800
 category: Cloud
 author: chris

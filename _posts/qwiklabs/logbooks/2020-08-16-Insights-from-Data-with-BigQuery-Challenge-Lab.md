@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
+title: "Qlog: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
 date: 2020-08-16 06:48 +0800
 last_modified_at: 2020-08-25 11:05 +0800
 category: Cloud

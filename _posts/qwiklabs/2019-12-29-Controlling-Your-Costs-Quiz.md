@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Controlling Your Costs [Quiz]"
+title: "QLog: Controlling Your Costs [Quiz]"
 date: 2019-11-26 11:56
 author: chris
 category: Cloud

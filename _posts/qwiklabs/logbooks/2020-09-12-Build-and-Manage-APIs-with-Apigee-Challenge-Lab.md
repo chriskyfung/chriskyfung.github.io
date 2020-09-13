@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "QLogbook: Build and Manage APIs with Apigee: Challenge Lab"
-date: 2020-09-12 18:30 +0800
+title: "Qlog: Build and Manage APIs with Apigee: Challenge Lab"
+date: 2020-09-13 14:25 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Apigee]
@@ -124,7 +124,7 @@ The deployment can be tested using the following curl statement in the Cloud She
 export APIGEE_ORG=<YOUR_APIGEE_ORG_NAME>
 
 curl -X POST \
-  'https://${APIGEE_ORG}-test.apigee.net/verification-api-v1/verifyCard' \
+  https://${APIGEE_ORG}-test.apigee.net/verification-api-v1/verifyCard \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -H 'postman-token: 89236919-eabe-4357-e4c4-079f20ecd798' \
@@ -278,7 +278,7 @@ Replace `<APP_API_KEY>` with the key from the app credentials. Then, run the fol
 export APIKEY=<APP_API_KEY>
 
 curl -X POST \
-  'https://${APIEE_ORG}-test.apigee.net/verification-api-v1/verifyCard?apikey=${APIKEY}' \
+  https://${APIEE_ORG}-test.apigee.net/verification-api-v1/verifyCard?apikey=${APIKEY} \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -H 'postman-token: 89236919-eabe-4357-e4c4-079f20ecd798' \
@@ -393,7 +393,7 @@ Test the real backend routing using the `curl` statement below.
 
 ```bash
 curl -X POST \
-   'https://${APIEE_ORG}-test.apigee.net/verification-api-v1/verifyCard?apikey=${APIKEY}' \
+   https://${APIEE_ORG}-test.apigee.net/verification-api-v1/verifyCard?apikey=${APIKEY} \
    -H 'cache-control: no-cache' \
    -H 'content-type: application/json' \
    -H 'postman-token: 89236919-eabe-4357-e4c4-079f20ecd798' \
@@ -432,3 +432,27 @@ Expected output:
 ```
 
 ## Congratulations!
+
+{% include youtube.html id="Hcs40i_2o0E" title="GSP336 Build and Manage APIs with Apigee: Challenge Lab" %}
+
+```ts
+00:00 Start Lab
+--- Task 1 ---
+00:40 Define a RESTful API in Apigee using an API specification
+02:35 Provision a Mock Response in Apigee (Add Assign Message Policy)
+03:06 Test the deployment for Task 1
+03:58 Upload API Proxy bundle to GCS
+--- Task 2 ---
+05:11 Create a service account with permissions to write logs
+06:28 Create a Google StackdriverLogging extension
+07:54 Create an Extension policy in the PostFlow response path
+09:27 Add API Key verification
+10:03 Create an API Product and An App
+11:12 Test the deployment for Task 2
+--- Task 3 ---
+13:11 Create a Developer Portal for consuming the APIs
+--- Task 4 ---
+14:30 Deploy the real backend on Cloud Function
+15:50 Route traffic from mock response to real backend
+18:31 Test the deployment for Task 4
+```

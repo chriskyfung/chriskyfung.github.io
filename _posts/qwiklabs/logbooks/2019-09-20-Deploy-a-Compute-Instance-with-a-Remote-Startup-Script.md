@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QLogbook: Deploy a Compute Instance with a Remote Startup Script"
+title: "Qlog: Deploy a Compute Instance with a Remote Startup Script"
 author: chris
 date: 2019-09-20
 category: Cloud
