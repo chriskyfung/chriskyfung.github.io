@@ -382,7 +382,7 @@ Go the Cloud Shell, run the commands given in the lab.
    </RouteRule>
    ```
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-proxy-endpoint-preflow-routerules" ext="png" width="607" height="172" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-proxy-endpoint-preflow-routerules" ext="png" width="474" height="153" class="ml-li text-center" %}
 
 {:start="9"}
 9. Click **Save**.
