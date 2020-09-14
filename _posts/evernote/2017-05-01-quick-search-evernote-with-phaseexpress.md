@@ -39,17 +39,17 @@ PhraseExpress is an Autotext or auto-complete typing assistant that monitors you
 _It can apply to non-editable text, e.g. texts on web pages. But **Don’t** use Autotext method in text editors, the text selected will be replaced as you type in the Autotext._
 
 {% include picture.html height="461"
-img="/evernote/phraseexpress-macro-for-everntoe" ext="png" alt="PhraseExpress Macro for finding notes with Evernote CLI on Windows" caption="PhraseExpress Macro for finding notes with Evernote CLI on Windows" class="text-center" %}
+img="/evernote/phraseexpress-macro-for-everntoe.png" alt="PhraseExpress Macro for finding notes with Evernote CLI on Windows" caption="PhraseExpress Macro for finding notes with Evernote CLI on Windows" class="text-center" %}
 
 ### Demonstration
 
 For example, I am writing a Chinese article about PhD. I highlight the text in that I want to search, and then press the Hotkey for my script. The Evernote Desktop will launch in a second with the results of your search queue.
 
 {% include picture.html height="493"
-img="evernote/search-evernote-with-shortcut-key-on-windows" ext="png" alt="Press the Hotkey (e.g. Win + Shift + E)" caption="Press the Hotkey (e.g. Win + Shift + E) to call Evernote CLI for searching notes" class="text-center" %}
+img="evernote/search-evernote-with-shortcut-key-on-windows.png" alt="Press the Hotkey (e.g. Win + Shift + E)" caption="Press the Hotkey (e.g. Win + Shift + E) to call Evernote CLI for searching notes" class="text-center" %}
 
 {% include picture.html height="483"
-img="evernote/evernote-search-results-returned-by-cli-shorthand" ext="png" alt="Search results on the Evernote Desktop app activated by the Evernote CLI" caption="Search results on the Evernote Desktop app activated by the Evernote CLI" class="text-center" %}
+img="evernote/evernote-search-results-returned-by-cli-shorthand.png" alt="Search results on the Evernote Desktop app activated by the Evernote CLI" caption="Search results on the Evernote Desktop app activated by the Evernote CLI" class="text-center" %}
 
 * * *
 

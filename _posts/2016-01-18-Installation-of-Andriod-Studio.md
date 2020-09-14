@@ -5,9 +5,8 @@ date: 2016-01-18 21:36
 category: Developer tools
 author: chris
 tags: [Android Studio]
-image:
-  path: android/Android_Studio_setup
-  ext: png
+image: 
+  path: /images/posts/android/Android_Studio_setup.png
   width: 513
   height: 400
 ---

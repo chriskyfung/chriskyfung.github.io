@@ -8,8 +8,7 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab
 image: 
-   path: qwiklabs/qwiklab-gsp787-00
-   ext: jpg
+   path: /images/posts/qwiklabs/qwiklab-gsp787-00.jpg
 excerpt: A brief procedure for the qwiklab practice GSP787. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
 amp:
    youtube: true
@@ -26,13 +25,13 @@ In this article, we will go through the lab **GSP322** _[Insights from Data with
 3. Search `covid19_open_data` and then select **COVID-19 Open Data**
 4. Use Filter to locate the table `covid19_open_data` under the `covid19_open_data` dataset.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-covid-19-open-data" ext="jpg" width="993" height="559" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-covid-19-open-data.jpg" width="993" height="559" alt="BigQuery Results" %}
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-tables" ext="jpg" width="982" height="618" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-tables.jpg" width="982" height="618" alt="BigQuery Results" %}
 
 ## Query 1: Total Confirmed Cases
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-01" ext="jpg" width="1349" height="531" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-01.jpg" width="1349" height="531" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -49,7 +48,7 @@ This query sums up the cumulative confirmed cases of all records on 15 April, 20
 
 ## Query 2: Worst Affected Areas
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-02" ext="jpg" width="1330" height="513" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-02.jpg" width="1330" height="513" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -76,7 +75,7 @@ Make sure that you use `country_name` to filter the US reconds instead of `count
 
 ## Query 3: Identifying Hotspots
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-03" ext="jpg" width="1365" height="843" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-03.jpg" width="1365" height="843" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -98,7 +97,7 @@ Due to Qwiklabs' poor design, you have to format **GROUP BY**, **HAVING** and **
 
 ## Query 4: Fatality Ratio
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-04" ext="jpg" width="1341" height="546" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-04.jpg" width="1341" height="546" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -112,7 +111,7 @@ Originally, it should be `date='2020-04-30'`. I don't know why Qwiklabs replaced
 
 ## Query 5: Identifying specific day
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-05" ext="jpg" width="1449" height="550" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-05.jpg" width="1449" height="550" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -132,7 +131,7 @@ Make sure that you use **ORDER BY** to sort the results by date.
 
 ## Query 6: Finding days with zero net new cases
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-06" ext="jpg" width="1366" height="767" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-06.jpg" width="1366" height="767" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -170,7 +169,7 @@ WHERE
 
 ## Query 7: Doubling rate
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-07" ext="jpg" width="1333" height="855" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-07.jpg" width="1333" height="855" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -212,7 +211,7 @@ WHERE
 
 ## Query 8: Recovery rate
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-08" ext="jpg" width="1292" height="866" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-08.jpg" width="1292" height="866" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -249,7 +248,7 @@ LIMIT 10
 
 ## Query 9: CDGR - Cumulative Daily Growth Rate
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-09" ext="jpg" width="1325" height="777" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-09.jpg" width="1325" height="777" alt="BigQuery Results" %}
 
 Copy the following code to the Query editor and then click **Run**.
 
@@ -285,7 +284,7 @@ from summary
 
 ## Create a Datastudio report
 
-{% include picture.html img="qwiklabs/qwiklab-gsp787-10" ext="jpg" width="858" height="257" alt="BigQuery Results" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp787-10.jpg" width="858" height="257" alt="BigQuery Results" %}
 
 1. Copy the following code to the Query editor and then click **Run**.
 

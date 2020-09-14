@@ -9,8 +9,7 @@ redirect_from:
  - /blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook, Secure VPC]
 image: 
-   path: qwiklabs/qwiklabs-GSP303-diagram
-   ext: png
+   path: /images/posts/qwiklabs/qwiklabs-GSP303-diagram.png
    height: 495
 amp:
   youtube: true
@@ -29,7 +28,7 @@ The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challe
 When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 {% include picture.html width="608" height="823"
-img="qwiklabs/score_box_of_qwiklabs_GSP303" ext="png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP303" class="shadow-none text-center" %}
+img="qwiklabs/score_box_of_qwiklabs_GSP303.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP303" class="shadow-none text-center" %}
 
 The screenshot above shows that there are six steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
@@ -52,7 +51,7 @@ The screenshot above shows that there are six steps required for completing this
 You can manually create and configure the cloud resources using the GCP console, but [Terraform](https://www.terraform.io/) is a more robust approach to deploy the solution automatically with appropriate declarative configuration files.
 
 {% include picture.html height="495"
-img="qwiklabs/qwiklabs-GSP303-diagram" ext="png" alt="Schematic Diagram of the Secure RDP Windows Network" caption="Schematic Diagram of the Secure RDP Windows Network" %}
+img="qwiklabs/qwiklabs-GSP303-diagram.png" alt="Schematic Diagram of the Secure RDP Windows Network" caption="Schematic Diagram of the Secure RDP Windows Network" %}
 
 ## Deploy the infrastructure on GCP with Terraform
 

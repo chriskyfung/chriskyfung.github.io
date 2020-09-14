@@ -7,8 +7,7 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab
 image: 
-   path: qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline
-   ext: png
+   path: /images/posts/qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png
    width: 842
    height: 808
 excerpt: A brief procedure for the qwiklab practice GSP311.
@@ -55,7 +54,7 @@ Make sure you:
 4. In the **Event Type** dropdown, select **Finalize/Create**.
 5. Click on the **BROWSE** button, and choose the bucket created in Task 1.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp311-task2-create-cloud-function" ext="png" width="591" height="639" class="text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp311-task2-create-cloud-function.png" width="591" height="639" class="text-center" %}
 
 {:start="6"}
 6. Select the **Runtime** to be `Node.js 8`
@@ -103,7 +102,7 @@ export TABLE_NAME=transcript
 python3 saflongrunjobdataflow.py --project=$PROJECT_ID --input_topic=projects/$PROJECT_ID/topics/$TOPIC_NAME --runner=DataflowRunner --region=us-central1 --temp_location=gs://$BUCKET_NAME/tmp --output_bigquery=$DATASET_NAME.$TABLE_NAME --requirements_file="requirements.txt"
 ```
 
-{% include picture.html img="qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline" ext="png" width="842" height="808" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png" width="842" height="808" %}
 
 ## Task 7: Upload Sample Audio Files for Processing
 
@@ -120,7 +119,7 @@ gsutil -h x-goog-meta-callid:1234567 -h x-goog-meta-stereo:true -h x-goog-meta-p
 > Q: What is the TOP named entity in the 5 audio files processed by the pipeline?
 > A: pair
 
-{% include picture.html img="qwiklabs/qwiklab-gsp311-task7-bigquery" ext="png" width="914" height="847" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp311-task7-bigquery.png" width="914" height="847" %}
 
 ## Task 8: Run a Data Loss Prevention Job
 
@@ -131,7 +130,7 @@ You must make a copy of your BigQuery table before running a Data Loss Preventio
 3. Click on **More** > **Query settings**.
 4. Assign a Table name, e.g. `copied`, then click **Save**.
 
-{% include picture.html img="/qwiklabs/qwiklab-gsp311-task8-copy-bigqury-table" ext="png" width="317" height="314" class="text-center" %}
+{% include picture.html img="/qwiklabs/qwiklab-gsp311-task8-copy-bigqury-table.png" width="317" height="314" class="text-center" %}
 
 {:start="5"}
 5. Run the following SQL query:

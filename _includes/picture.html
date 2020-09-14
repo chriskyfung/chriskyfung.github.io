@@ -5,7 +5,7 @@
     {% assign path = "/assets/images/" %}
 {% elsif include.source == "projects" %}
     {% assign path = "/images/projects/" %}
-{% elsif include.source == "external" %}
+{% elsif include.source == "raw" %}
     {% assign path = "" %}
 {% else %}
     {% assign path = "/images/posts/" %}
@@ -17,16 +17,19 @@
     {% assign lightbox = 'on="tap:lightbox1" role="button" tabindex="0"' %}
 {% endif %}
 
+{% assign ext = img | split: "." | last %}
+{% assign name = img | remove: ext %}
+
 <figure {% if include.class %}class="{{ include.class }}"{% endif %}>
     {% if include.link %}
         <a href="{{ include.link }}">
         {% assign lightbox = "" %}
     {% endif %}
-    {% if include.ext == "svg" %}
-        <amp-img {{ lightbox }} alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ img }}.svg"></amp-img>
+    {% if ext == "svg" %}
+        <amp-img {{ lightbox }} alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ img }}"></amp-img>
     {% else %}
-        <amp-img {{ lightbox }}  alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ img }}.webp">
-            <amp-img fallback {{ lightbox }} alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ img }}.{{ include.ext }}"></amp-img>
+        <amp-img {{ lightbox }}  alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ name }}webp">
+            <amp-img fallback {{ lightbox }} alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ img }}"></amp-img>
         </amp-img>
     {% endif %}
     {% if include.link %}

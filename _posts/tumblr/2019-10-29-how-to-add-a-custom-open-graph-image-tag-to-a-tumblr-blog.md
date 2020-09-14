@@ -18,7 +18,7 @@ Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups
 
 <!--more-->
 
-{% include picture.html width="548" height="288" img="tumblr/Tumblr-Facebook-OpenGraph-Tags-Block" ext="png" alt="Example Facebook Open Graph tags auto-generated in the Tumblr blog" caption="Sample of Facebook Open Graph tags auto-generated in the Tumblr blog" class="text-center" %}
+{% include picture.html width="548" height="288" img="tumblr/Tumblr-Facebook-OpenGraph-Tags-Block.png" alt="Example Facebook Open Graph tags auto-generated in the Tumblr blog" caption="Sample of Facebook Open Graph tags auto-generated in the Tumblr blog" class="text-center" %}
 
 You may want to fix the tags, so you explicitly define your own in your Custom Theme. Tumblr will stop auto-generate the entire markup, once you add an Open Graph meta tags. Therefore, you need to reengineer those by your own codes. Here is an example found on GitHub gists:
 
@@ -47,13 +47,13 @@ In the **Settings** tab of the new repository, go to **GitHub Pages** section an
  - Custom domain: _(Optional) recommends using a subdomain, e.g. `res.example.com`_
  - Enforce HTTPS: _(Optional)_
 
-{% include picture.html height="618" img="tumblr/GitHub-Page-Settings" ext="png" alt="Example GitHub Pages configuration" caption="Example GitHub Pages configuration"%}
+{% include picture.html height="618" img="tumblr/GitHub-Page-Settings.png" alt="Example GitHub Pages configuration" caption="Example GitHub Pages configuration"%}
 
 If you use a subdomain as the custom domain, add a CNAME record to your DNS server and point it to `<your-github-username>.github.io`. Otherwise, the Project Site URL will under the domain `github.io`, in the form of `http(s)://<your-github-username>.github.io/<repository-name>/`.
 
 Go back to the **Code** tab of the repository, I suggest creating a folder, called `og-images` and store all post cover images to it. You can also upload and host your CSS and JavaScript files in the same way.
 
-{% include picture.html width="472" height="128" img="tumblr/GitHub-Page-Files" ext="png" alt="" caption="Example file structure for the GitHub Page" %}
+{% include picture.html width="472" height="128" img="tumblr/GitHub-Page-Files.png" alt="" caption="Example file structure for the GitHub Page" %}
 
 ## Add og tags to your Custom Theme
 
@@ -130,7 +130,7 @@ To correctly link between each post and its Open Graph image, you must store eac
 
 4. Finally, use [Facebook's Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/) to inspect whether the og:image tag is properly crawled.
 
-{% include picture.html width="0" height="0" img="tumblr/GitHub-Page-og-images" ext="png" alt="" caption="An <code>og-images</code> repository uploaded with cover images for Tumblr posts" %}
+{% include picture.html width="0" height="0" img="tumblr/GitHub-Page-og-images.png" alt="" caption="An <code>og-images</code> repository uploaded with cover images for Tumblr posts" %}
 
 I hope you think this trick is helpful, and share with other Tumblr bloggers. If you have any questions, please feel free to leave a comment below. Also, if you know any better solution, I wish you can share with me.
 

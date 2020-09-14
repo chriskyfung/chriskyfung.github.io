@@ -7,8 +7,7 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning]
 permalink: /blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab
 image: 
-   path: qwiklabs/taxirides
-   ext: jpg
+   path: /images/posts/qwiklabs/taxirides.jpg
 excerpt: A brief procedure for the qwiklab practice GSP327.  You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
 amp:
    youtube: true
@@ -28,7 +27,7 @@ In this article, we will go through the lab **GSP327** _[Engineer Data in Google
 
 In this task, you need to make a copy of `historical_taxi_rides_raw` to `taxi_training_data` in the given `taxirides` dataset in BigQuery.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp327-task1-taxirides-dataset" ext="png" width="287" height="157" class="text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp327-task1-taxirides-dataset.png" width="287" height="157" class="text-center" %}
 
 _**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/1797?parent=catalog) on Qwiklabs_
 
@@ -50,12 +49,12 @@ Procedures:
 1. In the Cloud Console, navigate to **Menu** > **BigQuery**.
 2. Click on **More** > **Query settings** under the Query Editor.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-more-query-settings" ext="png" width="381" height="173" class="text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-more-query-settings.png" width="381" height="173" class="text-center" %}
 
 {:start="3"}
 3. Select **Set a destination table for query results** under Destination; Enter `taxi_training_data` as the Table name
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-query-settings-details" ext="png" width="492" height="492" class="text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-query-settings-details.png" width="492" height="492" class="text-center" %}
 
 {:start="4"}
 4. Click **Save**
@@ -151,8 +150,8 @@ FROM
 
 **Results**
 
-{% include picture.html img="qwiklabs/qwiklab-gsp327-task2-eval-rmse-without-euclidean" ext="png" width="340" height="152" class="text-center" caption="RMSE of a modeal trained without euclidean" %}
-{% include picture.html img="qwiklabs/qwiklab-gsp327-task2-eval-rmse-with-euclidean" ext="png" width="339" height="131" class="text-center" caption="RMSE of a modeal trained with euclidean" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp327-task2-eval-rmse-without-euclidean.png" width="340" height="152" class="text-center" caption="RMSE of a modeal trained without euclidean" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp327-task2-eval-rmse-with-euclidean.png" width="339" height="131" class="text-center" caption="RMSE of a modeal trained with euclidean" %}
 
 ## Task 3: Perform a batch prediction on new data
 
@@ -165,7 +164,7 @@ Procedures:
 
 1. Select **Set a destination table for query results** under Destination; Enter `2015_fare_amount_predictions` as the Table name
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp327-task3-query-settings-details" ext="png" width="460" height="472" class="text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp327-task3-query-settings-details.png" width="460" height="472" class="text-center" %}
 
 {:start="2"}
 2. Click **Save**
@@ -193,7 +192,7 @@ Procedures:
 
 At the end of the lab, your BigQuery dataset should contains the following tables.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp327-task3-resulted-tables" ext="png" width="262" height="217" class="text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp327-task3-resulted-tables.png" width="262" height="217" class="text-center" %}
 
 **Congratulation!**
 

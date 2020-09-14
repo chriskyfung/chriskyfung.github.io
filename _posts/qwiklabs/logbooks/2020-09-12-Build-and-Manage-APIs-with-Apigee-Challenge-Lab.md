@@ -7,8 +7,7 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Apigee]
 permalink: /blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab
 image: 
-   path: qwiklabs/qwiklab-gsp336-task3-apigee-live-portal
-   ext: jpg
+   path: /images/posts/qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg
    width: 962
    height: 639
 excerpt: A brief procedure for the qwiklab practice GSP336.  You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
@@ -31,7 +30,7 @@ In this article, we will go through the lab **GSP336** _[Build and Manage APIs w
 
 **The challenge contains 4 required tasks:**
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-checkpoints" ext="png" width="592" 
+{% include picture.html img="qwiklabs/qwiklab-gsp336-checkpoints.png" width="592" 
 height="277" class="text-center" %}
 
 ## Task 1 - Create API Specification and Generate an API Proxy
@@ -43,7 +42,7 @@ height="277" class="text-center" %}
 3. Click on the **+Proxy** button to create a new proxy.
 4. Create a **Reverse proxy** by clicking "Use OpenAPI Spec" as shown in the picture below.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-create-apigee-proxy" ext="png" width="1158" height="606" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-create-apigee-proxy.png" width="1158" height="606" class="ml-li" %}
 
 {:start="5"}
 5. In the _Use OpenAPI Spec_ dialog, select **Import from URL** and enter the following values:
@@ -51,7 +50,7 @@ height="277" class="text-center" %}
    - **OpenAPI Spec URL**: `https://storage.googleapis.com/apigee-quest/data/ourbank-verification-v1.yaml`
    - **Spec name**: _e.g._ `ourbank-verification-v1`
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-use-openapi-spec-import-from-url-yaml-file" ext="png" width="1158" height="605" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-use-openapi-spec-import-from-url-yaml-file.png" width="1158" height="605" class="ml-li" %}
 
 {:start="6"}
 6. Click **Import**.
@@ -63,27 +62,27 @@ height="277" class="text-center" %}
 
 8. Copy the URL to the field **Target (Existing API)**, then click **Next**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-with-mock-target-api" ext="png" width="1158" height="745" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-with-mock-target-api.png" width="1158" height="745" class="ml-li" %}
 
 {:start="9"}
 9. Check **Add CORS header** to enable CORS headers in Apigee, then click **Next**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-with-CORS-header" ext="png" width="927" height="453" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-with-CORS-header.png" width="927" height="453" class="ml-li" %}
 
 {:start="10"}
 10. Click **Next** to continue.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-condition-flows" ext="png" width="924" height="348" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-condition-flows.png" width="924" height="348" class="ml-li" %}
 
 {:start="11"}
 11. Check the box next to **default**, then click **Next**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-virtual-hosts" ext="png" width="913" height="367" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-virtual-hosts.png" width="913" height="367" class="ml-li" %}
 
 {:start="12"}
 12. Check the box next to **default**, then click **Create and deploy**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-create-apigee-proxy-summary" ext="png" width="889" height="419" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-create-apigee-proxy-summary.png" width="889" height="419" class="ml-li" %}
 
 Apigee now deploys the API proxy into your test environment. Click **Edit proxy** to view the deployed proxy.
 
@@ -92,12 +91,12 @@ Apigee now deploys the API proxy into your test environment. Click **Edit proxy*
 1. In the page of **API Proxies** > **Verification-API-v1**, click the **Develop** tab in the top right.
 2. To add a policy to your proxy, click on **Proxy Endpoints** → **PreFlow** in the Navigator tab, then in the Response pipeline, click **+ Step** to add a step.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-develop-init" ext="png" width="1920" height="1080" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-develop-init.png" width="1920" height="1080" class="ml-li" %}
 
 {:start="3"}
 3. Select **Assign Message** from the left menu, then click **Add**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-add-assign-message" ext="png" width="763" height="546" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-add-assign-message.png" width="763" height="546" class="ml-li" %}
 
 {:start="4"}
 4. Modify Policy Assign Message-1:
@@ -114,7 +113,7 @@ Apigee now deploys the API proxy into your test environment. Click **Edit proxy*
 
 After the above procedure, the **Proxy Endpoints** → **PreFlow** should look like the picture below.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-update-assign-message-policy" ext="png" width="630" height="535" class="ml-li text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-update-assign-message-policy.png" width="630" height="535" class="ml-li text-center" %}
 
 #### Testing
 
@@ -141,7 +140,7 @@ curl -X POST \
 
 1. Go back to Apigee, click on **Project** > **Download Revision** at the top-right of the Deploy tab.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-download-revision" ext="png" width="394" height="358" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-download-revision.png" width="394" height="358" class="ml-li text-center" %}
 
 {:start="2"}
 2. Extract the downloaded zip file to your local storage.
@@ -150,9 +149,6 @@ curl -X POST \
 5. Upload the `apiproxy` folder to the bucket.
 
 ## Task 2 - Add Policies to the API Proxy
-
-
-{% include picture.html img="qwiklabs/" ext="png" width="" height="" class="ml-li" %}
 
 #### Create a service account with permissions to write logs
 
@@ -181,7 +177,7 @@ curl -X POST \
 6. Click **Save**.
 7. Once the configuration is saved, click on the **Deploy** button for the Test environment.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-create-apigee-stackdriver-logging-extension" ext="png" width="1158" height="650" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-create-apigee-stackdriver-logging-extension.png" width="1158" height="650" class="ml-li" %}
 
 #### Create an Extension policy in the PostFlow response path
 
@@ -190,12 +186,12 @@ curl -X POST \
 3. Click the **Develop** tab in the top right.
 4. To add a policy to your proxy, click on **Proxy Endpoints** → **PostFlow** in the Navigator tab, then in the *Response* pipeline, click **+ Step** to add a step.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-policy-to-postflow-response-pipeline" ext="png" width="717" height="464" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-policy-to-postflow-response-pipeline.png" width="717" height="464" class="ml-li" %}
 
 {:start="5"}
 5. In the left menu scroll down to the end, then select **Extension Callout**. Select your extension name from the **Extension** dropdown menu. Select **Log** from the Actions dropdown. Click **Add**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-extension-callout-for-stackdriver-logging" ext="png" width="766" height="549" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-extension-callout-for-stackdriver-logging.png" width="766" height="549" class="ml-li" %}
 
 {:start="6"}
 6. Modify Policy Extension Callout-1:
@@ -219,22 +215,22 @@ curl -X POST \
 
 After the above procedure, the **Proxy Endpoints** → **PostFlow** should look like the picture below.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-update-extension-callout-policy" ext="png" width="772" height="625" class="ml-li" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-update-extension-callout-policy.png" width="772" height="625" class="ml-li" %}
 
 #### Add API Key verification
 
 1. To add a policy to your proxy, click on **Proxy Endpoints** → **PreFlow** in the Navigator tab, then in the *Response* pipeline, click **+ Step** to add a step.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-api-key-verification-policy-to-preflow-request-pipeline" ext="png" width="859" height="428" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-api-key-verification-policy-to-preflow-request-pipeline.png" width="859" height="428" class="ml-li" %}
 
 {:start="2"}
 2. Select **Verify API Key** from the left menu, then click **Add**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-api-key-verification-policy" ext="png" width="754" height="536" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-add-api-key-verification-policy.png" width="754" height="536" class="ml-li" %}
 
 After the above procedure, the **Proxy Endpoints** → **PreFlow** should look like the picture below.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-preflow-with-api-key-verification-policy" ext="png" width="866" height="449" class="ml-li" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-preflow-with-api-key-verification-policy.png" width="866" height="449" class="ml-li" %}
 
 #### Create an API Product and an App
 
@@ -249,7 +245,7 @@ After the above procedure, the **Proxy Endpoints** → **PreFlow** should look l
 
    The settings should look as follows:
    
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-create-apigee-api-product" ext="png" width="1152" height="899" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-create-apigee-api-product.png" width="1152" height="899" class="ml-li" %}
 
 {:start="3"}
 3. Click **Save** to create the new API product.
@@ -265,7 +261,7 @@ After the above procedure, the **Proxy Endpoints** → **PreFlow** should look l
 7. Select **ourBank API** from the list and click **Add (1)**.
 8. Review that the configuration looks as below, and click **Create**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-create-apigee-app" ext="png" width="1152" height="899" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-create-apigee-app.png" width="1152" height="899" class="ml-li" %}
 
 {:start="9"}
 9. Once the app is created, the page displays details about the app credentials. Click **Show** on the Key row then copy the API key.
@@ -306,20 +302,20 @@ Error response message:
 1. In Apigee, navigate to **Publish** > **Portals** from the left menu. Then Click **+ Portal**.
 2. Enter a name, _e.g._ `ourBank Develop`
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-create-portal" ext="png" width="618" height="390" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-create-portal.png" width="618" height="390" class="ml-li text-center" %}
 
 {:start="3"}
 3. Select **APIs** from the dropdown menu at the top.
 4. In the "Publish an API product" page, click on **Get started**.
 5. Select the API Product (_ourBank API_) and click **Next**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-add-api-product-to-portal" ext="png" width="812" height="381" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-add-api-product-to-portal.png" width="812" height="381" class="ml-li" %}
 
 {:start="6"}
 6. Click **Next** > **Next** > **Finish**.
 7. Click **Live Portal** at the top-right corner to test the new developer portal.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-live-portal" ext="jpg" width="962" height="639" class="ml-li" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg" width="962" height="639" class="ml-li" %}
 
 ## Task 4 - Route traffic from mock response to real backend
 
@@ -347,12 +343,12 @@ Go the Cloud Shell, run the commands given in the lab.
 1. Go back to Apigee, navigate to **API Proxies** > **Verification-API-v1**, click the **Develop** tab in the top right.
 2. To rename the mock API endpoint, click on **Target Endpoints** → **default** in the Navigator tab. Replace `<TargetEndpoint name="default">` to <TargetEndpoint name="mock">.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-rename-mock-target-endpoint" ext="png" width="477" height="261" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-rename-mock-target-endpoint.png" width="477" height="261" class="ml-li text-center" %}
 
 {:start="3"}
 3. To add a new target endpoint, click on the plus sign (**+**) next to **Target Endpoints** in the Navigator tab.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-add-new-target-endpoint" ext="png" width="281" height="119" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-add-new-target-endpoint.png" width="281" height="119" class="ml-li text-center" %}
 
 {:start="4"}
 4. Enter the following:
@@ -360,13 +356,13 @@ Go the Cloud Shell, run the commands given in the lab.
    - **Target Endpoint Name**: _e.g._ `cloud`
    - **HTTP Target**: _The Cloud Function Endpoint (e.g. https://<REGION>-<PROJECT-ID>.cloudfunctions.net)_
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-add-new-target-endpoint-cloud" ext="png" width="698" height="457" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-add-new-target-endpoint-cloud.png" width="698" height="457" class="ml-li text-center" %}
 
 {:start="5"}
 5. Click on **Proxy Endpoints** → **default** in the Navigator tab. Remove the **Assign Message-1** from the Response pipeline.
 6. Click on **Target Endpoints** → **mock** → **PreFlow** in the Navigator tab. Remove the **Assign Message-1** from the Response pipeline. Drag the **Assign Message-1** from **Policies** in the Navigator tab to the Response pipeline.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-mock-target-endpoint-preflow" ext="png" width="865" height="482" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-mock-target-endpoint-preflow.png" width="865" height="482" class="ml-li" %}
 
 {:start="7"}
 7. Click on **Target Endpoints** → **cloud** → **PreFlow** in the Navigator tab. Drag the **Add CORS** from **Policies** in the Navigator tab to the Response pipeline.
@@ -382,7 +378,7 @@ Go the Cloud Shell, run the commands given in the lab.
    </RouteRule>
    ```
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-proxy-endpoint-preflow-routerules" ext="png" width="474" height="153" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-proxy-endpoint-preflow-routerules.png" width="474" height="153" class="ml-li text-center" %}
 
 {:start="9"}
 9. Click **Save**.

@@ -10,8 +10,7 @@ permalink: /blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud
 redirect_from: /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
 excerpt: Hints for qwiklab GSP314 "Deploy and Manage Cloud Environments with Google Cloud&#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
 image: 
-   path: qwiklabs/qwiklab-GSP314-spinaker-production
-   ext: png
+   path: /images/posts/qwiklabs/qwiklab-GSP314-spinaker-production.png
    height: 530
 css:
    syntax: true
@@ -41,14 +40,14 @@ We can further subdivide it to 3 sub-tasks:
 
 First of all, navigate to **Deployment Manager** in the Console to check the deployment status of **kraken-jumphost**.
 
-{% include picture.html height="548" img="qwiklabs/qwiklab-GSP314-deployment-manager" ext="png" alt="Kraken development environment in Deployment Manager" %}
+{% include picture.html height="548" img="qwiklabs/qwiklab-GSP314-deployment-manager.png" alt="Kraken development environment in Deployment Manager" %}
 
 After the jumphost has been created, navigate to **Compute Engine** > **VM instances**.
 
 1. Click **SSH** button to access the jumphost instance.
 
 2. In the SSH window, go to the `/work/dm` directory.
-{% include picture.html width="706" height="556" img="qwiklabs/qwiklab-GSP314-jumphost-ssh" ext="png" alt="SSH console" class="ml-4" %}
+{% include picture.html width="706" height="556" img="qwiklabs/qwiklab-GSP314-jumphost-ssh.png" alt="SSH console" class="ml-4" %}
 
 {:start="3"}
 
@@ -99,7 +98,7 @@ Make sure you:
 - choose the zone **us-east1-b**
 - setup both **kraken-mgmt-subnet** and **kraken-prod-subnet** as the network interfaces in the Networking tab
 
-{% include picture.html width="584" height="567" img="qwiklabs/qwiklab-GSP314-kraken-admin-network" ext="png" class="ml-5" %}
+{% include picture.html width="584" height="567" img="qwiklabs/qwiklab-GSP314-kraken-admin-network.png" class="ml-5" %}
 
 {:.ml-5}
 After the instance being created, copy **ID** from its detail page.
@@ -119,7 +118,7 @@ After the instance being created, copy **ID** from its detail page.
    | Filter        | Choose **instance id** and paste the value copied from kraken-admin |
    | Threshold  | 0.5 for 1 minute   |
 
-   {% include picture.html width="706" height="718" img="qwiklabs/qwiklab-GSP314-alerting" ext="png" class="ml-4" %}
+   {% include picture.html width="706" height="718" img="qwiklabs/qwiklab-GSP314-alerting.png" class="ml-4" %}
 
 {:start="4"}
 
@@ -147,24 +146,24 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
 
 2. Search **spin-deck**.
 
-   {% include picture.html width="706" height="332" img="qwiklabs/qwiklab-GSP314-spin-deck" ext="png" lass="ml-4" %}
+   {% include picture.html width="706" height="332" img="qwiklabs/qwiklab-GSP314-spin-deck.png" lass="ml-4" %}
 
 {:start="3"}
 
 3. Click **Port Forward** at the end of the detail page.
-   {% include picture.html width="611" height="223" img="qwiklabs/qwiklab-GSP314-port-forwarding" ext="png" class="ml-4" %}
+   {% include picture.html width="611" height="223" img="qwiklabs/qwiklab-GSP314-port-forwarding.png" class="ml-4" %}
 
 {:start="4"}
 
 4. The Cloud Shell will launch automatically with the port forwarding command.
 
-   {% include picture.html width="706" height="174" img="qwiklabs/qwiklab-GSP314-port-forwarding-cmd" ext="png" class="ml-4" %}
+   {% include picture.html width="706" height="174" img="qwiklabs/qwiklab-GSP314-port-forwarding-cmd.png" class="ml-4" %}
 
 {:start="5"}
 
 5. Click the **Web Preview** icon at the top of the Cloud Shell window and select **Preview on port 8080**, to open the Spinnaker user interface.
    
-   {% include picture.html width="706" height="355" img="qwiklabs/qwiklab-GSP314-spinnaker" ext="png" class="ml-4" %}
+   {% include picture.html width="706" height="355" img="qwiklabs/qwiklab-GSP314-spinnaker.png" class="ml-4" %}
 
 ### 3.2 Clone your source code repository
 
@@ -174,7 +173,7 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
 
 3. Click **Clone** at the top of the repository, and copy the git clone command to the Cloud Shell.
 
-   {% include picture.html width="706" height="500" img="qwiklabs/qwiklab-GSP314-clone-sample-app" ext="png" class="ml-4" %}
+   {% include picture.html width="706" height="500" img="qwiklabs/qwiklab-GSP314-clone-sample-app.png" class="ml-4" %}
 
 {:start="4"}
 
@@ -207,7 +206,7 @@ In the Console, in **Cloud Build** > **History**, the new build will appear in a
 
 Return to the Spinnaker UI and click **Pipelines** to watch the pipeline start to deploy the image to production.
 
-{% include picture.html height="741" img="qwiklabs/qwiklab-GSP314-spinnaker-deploy" ext="png"%}
+{% include picture.html height="741" img="qwiklabs/qwiklab-GSP314-spinnaker-deploy.png"%}
 
 Once the pipeline completes, the color of the sample application has changed from orange to blue in the canary deployment, click **Check my progress** to verify **Task 3**.
 

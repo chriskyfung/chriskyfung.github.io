@@ -9,8 +9,7 @@ redirect_from:
  - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs
 tags: [Qwiklabs, Userscript]
 image: 
-  path: qwiklabs/science-1408800_1280
-  ext: jpg
+  path: /images/posts/qwiklabs/science-1408800_1280.jpg
 excerpt: A tool developed for assisting you tracking unenrolled quests and incompleted labs on the online self-paced learning platform, Qwiklabs. Enabling you to have a more joyful experience in exploring the training exercises right for you.
 ---
 
@@ -35,39 +34,39 @@ A prototype was developed using Tampermonkey <i class="fa fa-plug"></i> for Goog
 
 If the corresponding record marked with `finished`, A green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) will append to the end of a lab or quest title. Those items will also be highlighted in light green. From **v0.4.8**, any labs and quests unregister to the JSON data will be highlighted in yellow and labeled with a **NEW** badge. The tracking also applies to a Qwiklabs quest page. When you click on a lab, the annotation adds to the heading of the individual lab page. The demo screenshots are shown below.
 
-{% include picture.html height="478" img="qwiklabs-complete-indicator-catalog-page-demo" ext="png" alt="Green Check Marks and Highlights on a Qwiklabs Catalog Page" caption="Effects on the Qwiklabs catalog page (For version >= 0.4.8)" source="projects" class="text-center mb-4" %}
+{% include picture.html height="478" img="qwiklabs-complete-indicator-catalog-page-demo.png" alt="Green Check Marks and Highlights on a Qwiklabs Catalog Page" caption="Effects on the Qwiklabs catalog page (For version >= 0.4.8)" source="projects" class="text-center mb-4" %}
 
 {:.text-center}
 <i class='fas fa-angle-down' style='font-size:48px;'></i>
 
-{% include picture.html height="482" img="qwiklabs-complete-indicator-quest-page-demo" ext="png" alt="Green Check Marks and Highlights to the completed lab items on a Qwiklabs Quest Page" caption="Effects on the completed labs on a Quest page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+{% include picture.html height="482" img="qwiklabs-complete-indicator-quest-page-demo.png" alt="Green Check Marks and Highlights to the completed lab items on a Qwiklabs Quest Page" caption="Effects on the completed labs on a Quest page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
 {:.text-center}
 <i class='fas fa-angle-down' style='font-size:48px;'></i>
 
-{% include picture.html width="510" height="345" img="qwiklabs-complete-indicator-lab-page-demo" ext="png" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" caption="Effects on a completed lab page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+{% include picture.html width="510" height="345" img="qwiklabs-complete-indicator-lab-page-demo.png" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" caption="Effects on a completed lab page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
 ### Effects on Home and My Learning pages
 
 From **version 0.4.8**, marker annotations support the "_Your Favorites_", "_Featured Learning_", and "_What's Hots_" sections on the **Home** page as well as the **My Learning** page.
 
-{% include picture.html height="342" img="qwiklabs-complete-indicator-home-favorites" ext="png" alt="Markers on Your Favorites" source="projects" class="text-center mb-0" %}
+{% include picture.html height="342" img="qwiklabs-complete-indicator-home-favorites.png" alt="Markers on Your Favorites" source="projects" class="text-center mb-0" %}
 
-{% include picture.html height="349" img="qwiklabs-complete-indicator-home-featured" ext="png" alt="Markers on Featured Learning" source="projects" class="text-center mb-0" %}
+{% include picture.html height="349" img="qwiklabs-complete-indicator-home-featured.png" alt="Markers on Featured Learning" source="projects" class="text-center mb-0" %}
 
-{% include picture.html height="334" img="qwiklabs-complete-indicator-home-hots" ext="png" alt="Markers on What's Hot" source="projects" class="text-center mb-5" %}
+{% include picture.html height="334" img="qwiklabs-complete-indicator-home-hots.png" alt="Markers on What's Hot" source="projects" class="text-center mb-5" %}
 
 ### How to save records to the database
 
 To fetch all your records to the database, please navigate to the [**Completed Courses**](https://www.qwiklabs.com/my_learning/courses) and [**Completed Labs**](https://www.qwiklabs.com/my_learning/labs) pages to click the *sync* <i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i> button next to the page header, respectively.
 
-{% include picture.html height="290" img="qwiklab-complete-indicator-update-all-button" ext="png" alt="Markers and Highlights on Completed Courses" source="projects" class="text-center mb-4" %}
+{% include picture.html height="290" img="qwiklab-complete-indicator-update-all-button.png" alt="Markers and Highlights on Completed Courses" source="projects" class="text-center mb-4" %}
 
 ### Update records from My Learning page
 
 You can also update the latest records by clicking on the *sync* <i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i> icon next to the table title on the [**My Learning**](https://www.qwiklabs.com/my_learning/) page.
 
-{% include picture.html height="280" img="qwiklab-complete-indicator-group-update-button" ext="png" alt="Markers and Highlights on Completed Courses" source="projects" class="text-center mb-4" %}
+{% include picture.html height="280" img="qwiklab-complete-indicator-group-update-button.png" alt="Markers and Highlights on Completed Courses" source="projects" class="text-center mb-4" %}
 
 ### Changelog
 

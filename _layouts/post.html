@@ -48,12 +48,14 @@ amp:
 
             <!-- Post Featured Image -->
             {% if page.image %}
+            {% assign imgext = page.image.path | split: "." | last %}
+            {% assign imgpath = page.image.path | remove: imgext %}
             {% unless page.image.hide %}
-                {% if page.image.ext == "svg" %}
-                    <amp-img class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" layout="responsive" src="/images/posts/{{ page.image.path }}.svg" alt="{{ page.title }}"></amp-img>
+                {% if imgext == "svg" %}
+                    <amp-img class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" layout="responsive" src="{{ page.image.path }}" alt="{{ page.title }}"></amp-img>
                 {% else %}
-                    <amp-img class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" layout="responsive" src="/images/posts/{{ page.image.path }}.webp" alt="{{ page.title }}">
-                        <amp-img fallback class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" layout="responsive" src="/images/posts/{{ page.image.path }}.{{ page.image.ext }}" alt="{{ page.title }}"></amp-img>
+                    <amp-img class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" layout="responsive" src="{{ imgpath }}webp" alt="{{ page.title }}">
+                        <amp-img fallback class="featured-image {{ page.image.class }}" width="{{ page.image.width | default: 730 }}" height="{{ page.image.height | default: 411 }}" layout="responsive" src="{{ page.image.path }}" alt="{{ page.title }}"></amp-img>
                     </amp-img>
                 {% endif %}
             {% endunless %}

@@ -7,8 +7,7 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/where-does-my-bear-badge-go
 image: 
-   path: qwiklabs/wanted-bear-badge
-   ext: png
+   path: /images/posts/qwiklabs/wanted-bear-badge.png
 css:
    custom: >-
       .text-danger { color: #d9534f }
@@ -16,14 +15,14 @@ css:
 
 Recently, I noticed that the Quest "Challenge: GCP Architecture" was no longer found from the Qwiklabs Catalog. In addition, its badge, the lovely bear, disappeared from the profile. This made me felt upset.
 
-{% include picture.html height="287" img="qwiklabs/where-does-my-bear-badge-go" ext="png" alt="An archived screenshot of Challenge: GCP Architecture badge" caption="Screenshot: The <i>Challenge: GCP Architecture</i> badge from my archive" %}
+{% include picture.html height="287" img="qwiklabs/where-does-my-bear-badge-go.png" alt="An archived screenshot of Challenge: GCP Architecture badge" caption="Screenshot: The <i>Challenge: GCP Architecture</i> badge from my archive" %}
 
 {:.text-danger}
 ## Where does the bear badge go?
 
 In a nullshell, the quest (ID: 47) **Challenge: GCP Architecture** has been renamed to [Cloud Architecture - Design, Implement, and Manage](https://google.qwiklabs.com/quests/124). The URL also changed `/quests/124`. Therefore, it seems to be off-shelf. Indeed, All the labs in the quest remains unchanged. You record is still there but it is replaced with the new quest title and the new badge.
 
-{% include picture.html height="312" img="qwiklabs/where-the-Challenge-GCP-Architecture-badge-goes" ext="png" alt="screenshot of the new badge for Challenge: GCP Architecture" caption="Became <i>Cloud Architecture - Design, Implement, and Manage</i> at the same position" %}
+{% include picture.html height="312" img="qwiklabs/where-the-Challenge-GCP-Architecture-badge-goes.png" alt="screenshot of the new badge for Challenge: GCP Architecture" caption="Became <i>Cloud Architecture - Design, Implement, and Manage</i> at the same position" %}
 
 **The Cookbooks of the Cloud Architecture Series**:
 

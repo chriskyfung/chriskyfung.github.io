@@ -7,8 +7,7 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab
 image: 
-   path: qwiklabs/qwiklab-GSP319-fancy-store
-   ext: jpg
+   path: /images/posts/qwiklabs/qwiklab-GSP319-fancy-store.jpg
 excerpt: A brief procedure for the qwiklab practice GSP319, which tests your skills to deploy containerized microservices for website frontend and backend to Kubernetes.
 amp:
    youtube: true

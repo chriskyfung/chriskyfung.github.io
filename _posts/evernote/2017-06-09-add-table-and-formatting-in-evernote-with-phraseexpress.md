@@ -36,12 +36,12 @@ Which are the most convenient, the last one that I proposed?
 With setting a shorthand with PhraseExpress, you add a table seamlessly as you are typing your text content. You don’t need to move your hand between mouse and keyboard. You also don’t know to find where are the button in the toolbar or the main menu. All you need to do is just type in your custom Autotext, e.g. “add t…”, the option prompts in the auto-expand menu. This should reduce your brain load and avoid confusion with the layout of other programs.
 
 {% include picture.html width="481" height="299"
-img="evernote/Add-Table-to-Evernote-using-PhraseExpress" ext="png" alt="Add Table to Evernote using PhraseExpress" caption="1 - Add Table to Evernote using PhraseExpress" class="text-center" %}
+img="evernote/Add-Table-to-Evernote-using-PhraseExpress.png" alt="Add Table to Evernote using PhraseExpress" caption="1 - Add Table to Evernote using PhraseExpress" class="text-center" %}
 
 Here is my PhraseExpress setup.
 
 {% include picture.html width="481" height="529"
-img="evernote/PhraseExpress-macro-for-add-table-to-evernote" ext="png" alt="PhraseExpress macro for add table to Evernote" caption="PhraseExpress macro for add table to Evernote" class="text-center" %}
+img="evernote/PhraseExpress-macro-for-add-table-to-evernote.png" alt="PhraseExpress macro for add table to Evernote" caption="PhraseExpress macro for add table to Evernote" class="text-center" %}
 
 **How to configure:**
 
@@ -56,7 +56,7 @@ img="evernote/PhraseExpress-macro-for-add-table-to-evernote" ext="png" alt="Phra
 5.  Enable **Execute only in specific programs**, and restrict to this shorthand to only execute in Evernote.
 
     {% include picture.html width="680" height="441"
-img="evernote/Restrict-PhraseExpress-to-Evernote" ext="png" alt="Advance configuration - Restrict PhraseExpress to Evernote" class="text-center" %}
+img="evernote/Restrict-PhraseExpress-to-Evernote.png" alt="Advance configuration - Restrict PhraseExpress to Evernote" class="text-center" %}
 
 * * *
 

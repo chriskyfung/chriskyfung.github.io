@@ -7,8 +7,7 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Secure VPC]
 permalink: /blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab
 image: 
-   path: qwiklabs/qwiklab-gsp322-title
-   ext: jpg
+   path: /images/posts/qwiklabs/qwiklab-gsp322-title.jpg
 excerpt: A brief procedure for the qwiklab practice GSP322.
 amp:
    youtube: true
@@ -39,7 +38,7 @@ This task is very simple. You only need to the open-access firewall rules.
 2. Check the box next to the rule named `open-access`.
 3. Click on **DELETE** to remove it.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp322-task1-delete-open-access" ext="jpg" width="1024" height="576" alt="Remove open-access firewall rules on Google Cloud Platform" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp322-task1-delete-open-access.jpg" width="1024" height="576" alt="Remove open-access firewall rules on Google Cloud Platform" %}
 
 ## 2. Start the bastion host instance
 
@@ -60,7 +59,7 @@ This task is very simple. You only need to the open-access firewall rules.
 
 Read [**Using IAP for TCP forwarding**](https://cloud.google.com/iap/docs/using-tcp-forwarding#create-firewall-rule) in the Google Cloud Documentation before you create the firewall rule.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp322-iap-ip" ext="jpg" width="916" height="469" alt="create a firewall rule to allow IAP to connect to your VM instances in Google Cloud Console" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp322-iap-ip.jpg" width="916" height="469" alt="create a firewall rule to allow IAP to connect to your VM instances in Google Cloud Console" %}
 
 1. Go back to the Firewall Rules page, and click **Create firewall rule**.
 2. Configure the following settings:
@@ -74,7 +73,7 @@ Read [**Using IAP for TCP forwarding**](https://cloud.google.com/iap/docs/using-
    | Source IP ranges | `35.235.240.0/20` |
    | Protocols and ports | Select **TCP** and enter `22` to allow SSH |
 
-{% include picture.html img="qwiklabs/qwiklab-gsp322-iap-firewall-rule-settings" ext="jpg" width="552" height="887" alt="Firewall rule settings for the secure remote ssh access via IAP-enabled bastion" class="text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp322-iap-firewall-rule-settings.jpg" width="552" height="887" alt="Firewall rule settings for the secure remote ssh access via IAP-enabled bastion" class="text-center" %}
 
 ## 4. Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add network tag on juice-shop
 
@@ -92,7 +91,7 @@ Read [**Using IAP for TCP forwarding**](https://cloud.google.com/iap/docs/using-
    | Source IP ranges | `0.0.0.0/0` |
    | Protocols and ports | Select **TCP** and enter `80` to allow HTTP |
 
-{% include picture.html img="qwiklabs/qwiklab-gsp322-firewall-rule-settings-for-juice-shop" ext="jpg" width="548" height="902" alt="Firewall rule settings for the juice-shop VM instance" class="text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp322-firewall-rule-settings-for-juice-shop.jpg" width="548" height="902" alt="Firewall rule settings for the juice-shop VM instance" class="text-center" %}
 
 ### Add network tag on juice-shop
 
@@ -117,7 +116,7 @@ Read [**Using IAP for TCP forwarding**](https://cloud.google.com/iap/docs/using-
    | Source IP ranges | _IP address range of your aceme-mgmt-subnet_ |
    | Protocols and ports | Select **TCP** and enter `22` to allow SSH |
 
-{% include picture.html img="qwiklabs/qwiklab-gsp322-firewall-rule-settings-for-ssh-from-acme-mgmt-subnet" ext="jpg" width="562" height="887" alt="Firewall rule settings for the SSH traffic from acme-mgmt-subnet" class="text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp322-firewall-rule-settings-for-ssh-from-acme-mgmt-subnet.jpg" width="562" height="887" alt="Firewall rule settings for the SSH traffic from acme-mgmt-subnet" class="text-center" %}
 
 ## 6. SSH to bastion host via IAP and juice-shop via bastion
 

@@ -19,7 +19,7 @@ css:
 ### My favorite terminal application
 
 {% include picture.html width="37" height="35"
-img="linux/terminator" ext="png" alt="Terminator icon" %}
+img="linux/terminator.png" alt="Terminator icon" %}
 
 [Terminator](https://launchpad.net/terminator/) allows you to open multiple terminals in one window, which can boost your productivity by operating two or more shells side by side or in grids.
 

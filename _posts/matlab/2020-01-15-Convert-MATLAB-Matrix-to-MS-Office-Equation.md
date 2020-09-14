@@ -9,8 +9,7 @@ permalink: /blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation
 redirect_from:
  - /blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation
 image: 
-   path: matlab/convert-matrix-between-matlab-and-ms-equation
-   ext: jpg
+   path: /images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg
    height: 417
 css:
    syntax: true
@@ -43,14 +42,14 @@ s = mat2mseq(martixA, '%g');
 
 Copy the text output to an equation object in Microsoft Word, OneNote or PowerPoint.
 
-You will obtain {% include picture.html width="120" height="105" img="matlab/matrixA" ext="png" alt="matrixA" class="shadow-none text-center" %} in the MS Equation Editor.
+You will obtain {% include picture.html width="120" height="105" img="matlab/matrixA.png" alt="matrixA" class="shadow-none text-center" %} in the MS Equation Editor.
 
 ## Convert from MS Office Equation to MATLAB
 
 The file `mseq2mat.m` contains the function to convert an MS Equation matrix to numerical data in MATLAB. The function requires the following argument:
 - \<string\> a matrix in the MS office equation (in plain-text format)
 
-For example, when you copy {% include picture.html width="120" height="105" img="matlab/matrixA" ext="png" alt="matrixA" class="shadow-none text-center" %} from MS Word and paste it to MATLAB. The matrix will be displayed in the plain-text format of MS Equation, like `■(1&0&0@0&1&0@0&0&1)` in the command line. Convert it to numerical data by evaluating the text with the function, as the example below:
+For example, when you copy {% include picture.html width="120" height="105" img="matlab/matrixA.png" alt="matrixA" class="shadow-none text-center" %} from MS Word and paste it to MATLAB. The matrix will be displayed in the plain-text format of MS Equation, like `■(1&0&0@0&1&0@0&0&1)` in the command line. Convert it to numerical data by evaluating the text with the function, as the example below:
 
 ```matlab
 A = mseq2mat('■(1&0&0@0&1&0@0&0&1)')

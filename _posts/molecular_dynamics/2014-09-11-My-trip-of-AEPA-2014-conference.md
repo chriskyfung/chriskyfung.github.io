@@ -6,8 +6,7 @@ date: 2014-09-12
 category: Academic
 tags: [Research, Conference, Taiwan]
 image: 
-   path: events/20140912_AEPA
-   ext: jpg
+   path: /images/posts/events/20140912_AEPA.jpg
    width: 549
    height: 748
 ---
@@ -17,10 +16,10 @@ At the beginning of September, I participated in a conference in Kaohsiung, whic
 <!--more-->
 
 {% include picture.html height="411"
-img="events/20140902_181800_seaview" ext="jpg" alt="Sunset at the harbor next to the campus of National Sun Yat-Sen University" %}
+img="events/20140902_181800_seaview.jpg" alt="Sunset at the harbor next to the campus of National Sun Yat-Sen University" %}
 
 {% include picture.html height="411"
-img="events/2014_APEA_team_photo" ext="jpg" alt="Team Photo" %}
+img="events/2014_APEA_team_photo.jpg" alt="Team Photo" %}
 
 * * *
 

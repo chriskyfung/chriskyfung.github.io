@@ -10,8 +10,7 @@ permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 image: 
-  path: qwiklabs/qwiklabs-badges
-  ext: jpg
+  path: /images/posts/qwiklabs/qwiklabs-badges.jpg
   height: 410
 excerpt: Over 400 hands-on labs and quests available on Qwiklabs for learning GCP. Therefore, we made a visual map for you to more easily seek a desired learning path.
 amp:
@@ -38,11 +37,11 @@ After you logged in to Qwiklabs, you can see there are five training categories,
 - Machine Learning
 - Security, Backup & Recovery
 
-{% include picture.html height="468" img="qwiklabs/qwiklabs-default-catagories" ext="png" alt="Five default training catagories defined by Qwiklabs" %}
+{% include picture.html height="468" img="qwiklabs/qwiklabs-default-catagories.png" alt="Five default training catagories defined by Qwiklabs" %}
 
 You can start your training based on your goal and purpose, or find the quests for GCP using the filter function available on the Catalog page. Qwiklabs grouped different kinds of labs into 56 quests for learning GCP, and divided them to 4 levels: Introductory, Fundamental, Advanced, and Expert. You may also look for the resources by search, but the results are sorted by relevance rather than an appropriate order for study or learning. As a result, I tried to organise the Qwiklabs quests to be a learning map to trace the connections among them.
 
-{% include picture.html height="621" img="qwiklabs/qwiklabs-catalog-with-quest-filter-for-gcp" ext="png" alt="Using filter to find quests for Google Cloud Platform on Qwiklabs Catalog page" %}
+{% include picture.html height="621" img="qwiklabs/qwiklabs-catalog-with-quest-filter-for-gcp.png" alt="Using filter to find quests for Google Cloud Platform on Qwiklabs Catalog page" %}
 
 ## Visual Map of Qwiklabs GCP Quests
 
@@ -78,9 +77,9 @@ As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or 
 
 The prototyped tool can help you visually identify the completed catalogue items with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) showing at the end of a lab or quest title. A demo screenshot is shown below.
 
-{% include picture.html height="482" img="qwiklabs-complete-indicator-quest-page-demo" ext="png" alt="Green Check Marks and Highlights to the completed lab items on a Qwiklabs Quest Page" caption="Fig. Effects on the completed labs on a Quest page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+{% include picture.html height="482" img="qwiklabs-complete-indicator-quest-page-demo.png" alt="Green Check Marks and Highlights to the completed lab items on a Qwiklabs Quest Page" caption="Fig. Effects on the completed labs on a Quest page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
-{% include picture.html width="510" height="345" img="qwiklabs-complete-indicator-lab-page-demo" ext="png" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" caption="Fig. Effects on a completed lab page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+{% include picture.html width="510" height="345" img="qwiklabs-complete-indicator-lab-page-demo.png" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" caption="Fig. Effects on a completed lab page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
 For more information, you can read the post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs)"_.
 
@@ -166,7 +165,7 @@ _Resources:_
 
 _The Cookbooks of Challenge Quest Series:_
 
-{% include picture.html width="473" height="188" img="qwiklabs/qwiklabs-change-badge-for-Challenge-GCP-Architecture-quest" ext="png" alt="Badges for Challenge-GCP-Architecture: Before and After" class="text-center" caption="Badge Change in 2020" link="/blog/qwiklabs/where-does-my-bear-badge-go" %}
+{% include picture.html width="473" height="188" img="qwiklabs/qwiklabs-change-badge-for-Challenge-GCP-Architecture-quest.png" alt="Badges for Challenge-GCP-Architecture: Before and After" class="text-center" caption="Badge Change in 2020" link="/blog/qwiklabs/where-does-my-bear-badge-go" %}
 
 - [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
 - [Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)

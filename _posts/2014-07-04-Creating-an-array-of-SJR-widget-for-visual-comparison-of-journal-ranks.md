@@ -6,8 +6,7 @@ date: 2014-07-04
 category: Academic
 tags: [Journal ranks, Research tool]
 image: 
-   path: science/sjr_widget_array
-   ext: png
+   path: /images/posts/science/sjr_widget_array.png
    height: 792
 ---
 

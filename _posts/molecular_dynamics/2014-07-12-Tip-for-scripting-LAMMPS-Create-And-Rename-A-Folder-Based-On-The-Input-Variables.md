@@ -16,7 +16,7 @@ I like storing each set of the simulation results to a well-labeled folder. This
 It is very useful as it allows to call the system commands and other programs.
 
 {% include picture.html width="350" height="83"
-img="lammps/new_3folder_80x80" ext="png" alt="image: New folder with LAMMPS scripts" class="text-center" %}
+img="lammps/new_3folder_80x80.png" alt="image: New folder with LAMMPS scripts" class="text-center" %}
 
 <!--more-->
 

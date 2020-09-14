@@ -8,8 +8,7 @@ category: Projects
 permalink: /blog/qwiklabs/qwiklab-completion-tracker-versions
 tags: [Qwiklabs, Userscript, Changelog]
 image: 
-  path: qwiklabs/science-1408800_1280
-  ext: jpg
+  path: /images/posts/qwiklabs/science-1408800_1280.jpg
   height: 411
 excerpt: The changelog, the feature highlights and the screenshots of the previous versions of the "Qwiklabs Completed Labs Tracker".
 ---
@@ -37,7 +36,7 @@ excerpt: The changelog, the feature highlights and the screenshots of the previo
 - Label the completed labs and quests with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) at the end of their titles.
 
 {% include picture.html height="576"
-img="qwiklabs-complete-indicator-catalog-page-old" ext="png" alt="Green Check Mark and Highlight displays on Qwiklabs Catalog Page" caption="Effects on the Qwiklabs catalog page (For version < 0.4.5)" source="projects" class="text-center" %}
+img="qwiklabs-complete-indicator-catalog-page-old.png" alt="Green Check Mark and Highlight displays on Qwiklabs Catalog Page" caption="Effects on the Qwiklabs catalog page (For version < 0.4.5)" source="projects" class="text-center" %}
 
 ##### v0.4.8
 
@@ -55,9 +54,9 @@ img="qwiklabs-complete-indicator-catalog-page-old" ext="png" alt="Green Check Ma
 The **version 0.4.5** start covering the "*Completed Courses*" and "*Completed Labs*" pages under the **My Learning** section. Since the quests mix with speedrun games in the list of completed courses, each row of the game records highlights in purple color for distinguishing them.
 
 {% include picture.html height="339"
-img="qwiklabs-complete-indicator-courses-table" ext="png" alt="Markers and Highlights on Completed Courses" caption="Effects on the <i>Completed Courses</i> page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+img="qwiklabs-complete-indicator-courses-table.png" alt="Markers and Highlights on Completed Courses" caption="Effects on the <i>Completed Courses</i> page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
 {% include picture.html height="337"
-img="qwiklabs-complete-indicator-labs-table" ext="png" alt="Markers and Highlights on Completed Labs pages" caption="Effects on the <i>Completed Labs</i> page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+img="qwiklabs-complete-indicator-labs-table.png" alt="Markers and Highlights on Completed Labs pages" caption="Effects on the <i>Completed Labs</i> page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
 * * *
