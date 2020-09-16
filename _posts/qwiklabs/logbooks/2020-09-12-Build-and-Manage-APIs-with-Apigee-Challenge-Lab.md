@@ -37,7 +37,7 @@ height="277" class="text-center" %}
 
 #### Define a RESTful API in Apigee using an API specification
 
-1. Login to your Apigee account (https://login.apigee.com/login)
+1. Login to your Apigee account ([https://login.apigee.com/login](https://login.apigee.com/login))
 2. In the Apigee console, select **Develop** > **API Proxies** from the left pane.
 3. Click on the **+Proxy** button to create a new proxy.
 4. Create a **Reverse proxy** by clicking "Use OpenAPI Spec" as shown in the picture below.

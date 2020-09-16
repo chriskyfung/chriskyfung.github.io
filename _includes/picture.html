@@ -19,6 +19,7 @@
 
 {% assign ext = img | split: "." | last %}
 {% assign name = img | remove: ext %}
+{% assign suffix = include.suffix %}
 
 <figure {% if include.class %}class="{{ include.class }}"{% endif %}>
     {% if include.link %}
@@ -28,8 +29,8 @@
     {% if ext == "svg" %}
         <amp-img {{ lightbox }} alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ img }}"></amp-img>
     {% else %}
-        <amp-img {{ lightbox }}  alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ name }}webp">
-            <amp-img fallback {{ lightbox }} alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ img }}"></amp-img>
+        <amp-img {{ lightbox }}  alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ name }}{{ suffix }}webp">
+            <amp-img fallback {{ lightbox }} alt="{{ include.alt }}" width="{{ include.width | default: 730 }}" height="{{ include.height }}" layout="{{ layout | default: "intrinsic" }}" src="{{ path }}{{ name }}{{ suffix }}{{ ext }}"></amp-img>
         </amp-img>
     {% endif %}
     {% if include.link %}
