@@ -113,6 +113,10 @@ amp-lightbox {
     box-shadow: 1px 2px 15px #675bff;
 }
 
+.article-post figcaption {
+    font-size: smaller;
+}
+
 .article-post a>code {
     padding: .2rem .4rem;
     color: #bd4147;

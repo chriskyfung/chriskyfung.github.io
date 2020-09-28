@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning
 permalink: /blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/taxirides.jpg
-excerpt: A brief procedure for the qwiklab practice GSP327.  You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
+excerpt: A brief procedure for the qwiklab practice GSP327. You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
 amp:
    youtube: true
 css:

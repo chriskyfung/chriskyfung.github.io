@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp323-cloud-dataprep.png
-excerpt: A brief procedure for the qwiklab practice GSP323.  You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
+excerpt: A brief procedure for the qwiklab practice GSP323. You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
 amp:
    youtube: true
 css:

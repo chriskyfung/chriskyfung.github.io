@@ -10,7 +10,7 @@ image:
    path: /images/posts/qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg
    width: 962
    height: 639
-excerpt: A brief procedure for the qwiklab practice GSP336.  You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
+excerpt: A brief procedure for the qwiklab practice GSP336. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
 amp:
    youtube: true
 css:
