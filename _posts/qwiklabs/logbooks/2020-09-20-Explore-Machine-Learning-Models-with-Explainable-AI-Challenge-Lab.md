@@ -18,7 +18,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/13360?parent=catalog)_, which is labeled as an advanced-level exercise. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models.
+In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/12011 ?parent=catalog)_, which is labeled as an advanced-level exercise. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models.
 
 
 **Topics tested**:
@@ -161,7 +161,7 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
 
 ### Troubleshooting runtime version issue
 
-The lab had a serious bug when I was carrying it out on Jun 12, 2020. I couldn't pass the third checkpoint if set up the AI Platform models according to the lab instruction. The issue seems to be caused by the inconsistencies between the GCP training material and the Qwiklabs marking scheme. While the notebook guides to create the models with runtime version 2.1 and Python 3.7, runtime version 1.14 was specified in the checkpoint requirements as shown in the below picture.
+The lab had a serious bug when I was carrying it out on Jun 12, 2020. I couldn't pass the third checkpoint if set up the AI Platform models according to the lab instruction. The issue seems to be caused by the inconsistencies between the GCP training material and the Qwiklabs marking scheme. While the notebook guided to create the models with runtime version 2.1 and Python 3.7, the checkpoint message specified the required runtime version = 1.14 as shown in the below picture.
 
 {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-error.png" width="452" height="208" class="text-center" caption="Checkpoint requirement for creating your AI Platform models" %}
 
