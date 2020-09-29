@@ -38,6 +38,7 @@ plugins:
   - jekyll-webp
   - jekyll-gzip
   - jekyll-redirect-from
+  - jekyll-extlinks
         
 # Archives
 jekyll-archives:
@@ -48,7 +49,11 @@ jekyll-archives:
   permalinks: 
     category: '/category/:name/'
     tag: '/tag/:name/'
-    
+
+# Jekyll ExtLinks
+extlinks:
+  attributes: {rel: noopener noreferrer, target: _blank}
+
 # Other
 markdown: kramdown
 highlighter: rouge
