@@ -222,9 +222,9 @@ License: https://www.wowthemes.net/freebies-license/
             <div class="row">
                 <div class="col-sm-3">
                 <div class="footer-widget">
-                <a id="footer-image" href="{{site.baseurl}}/contact">
-                <amp-img class="pr-lg-3" src="{{ site.baseurl }}/assets/images/knowledge__flatline.svg" height="179" width="255" layout="responsive"></amp-img>
-                </a>
+                    <a id="footer-image" href="{{site.baseurl}}">
+                        <amp-img class="pr-lg-3" src="{{ site.baseurl }}/assets/images/knowledge__flatline.svg" height="179" width="255" layout="responsive"></amp-img>
+                    </a>
                 </div>
                 </div>
 
@@ -264,13 +264,12 @@ License: https://www.wowthemes.net/freebies-license/
                 </div>
             </div>
 
-            <div class="copyright">
+            <div aria-label="copyright" class="copyright">
                 <p class="float-lg-left">
-                Copyright © 2014-{{ site.time | date: "%Y" }} <a href="/">{{ site.name }}</a>. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a>
+                    Copyright © 2014-{{ site.time | date: "%Y" }} <a href="/">{{ site.name }}</a>. All rights reserved.
                 </p>
                 <p class="float-lg-right">
-                <!-- Please, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/ --> 
-                Customized based on<a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a> - Design & Code by WowThemes.net
+                    <a aria-label="privacy policy" href="/privacy-policy">Privacy Policy</a>
                 </p>
                 <div class="clearfix"></div>
             </div>
@@ -280,7 +279,6 @@ License: https://www.wowthemes.net/freebies-license/
     <!-- End Footer
     ================================================== -->
 
-    
 </div> <!-- /.site-content -->
 
 <amp-image-lightbox id="lightbox1" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
