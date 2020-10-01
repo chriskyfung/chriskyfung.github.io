@@ -35,9 +35,6 @@ GEM
       terminal-table (~> 1.8)
     jekyll-archives (2.2.1)
       jekyll (>= 3.6, < 5.0)
-    jekyll-extlinks (0.0.5)
-      jekyll (~> 4.0)
-      nokogiri (~> 1.10.4)
     jekyll-feed (0.15.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
@@ -109,7 +106,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-archives
-  jekyll-extlinks
   jekyll-feed
   jekyll-gist
   jekyll-gzip
