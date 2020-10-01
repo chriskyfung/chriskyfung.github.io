@@ -4,7 +4,7 @@ title: "Qlog: Explore Machine Learning Models with Explainable AI: Challenge Lab
 date: 2020-09-28 1:25 +0800
 category: Cloud
 author: chris
-tags: [Qwiklabs, Google Cloud, Logbook]
+tags: [Qwiklabs, Google Cloud, Logbook, TensorFlow, Data Science, Machine Learning]
 permalink: /blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab
 image: 
    path: /images/posts/tenserflow-notebook.png
@@ -18,8 +18,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/12011 ?parent=catalog)_, which is labeled as an advanced-level exercise. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models.
-
+In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/12011?parent=catalog)_, which is labeled as an advanced-level exercise. TensorFlow is the dominant AI framework in the industry. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models for machine learning the dataset of Home Mortgage Disclosure Act (HMDA) in New York.
 
 **Topics tested**:
 
@@ -124,7 +123,7 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    ```
 
    ```python
-   !gcloud ai-platform version create $VERSION_NAME \
+   !gcloud ai-platform versions create $VERSION_NAME \
    --model=$MODEL_NAME \
    --framework='TensorFlow' \
    --runtime-version=2.1 \
@@ -133,6 +132,9 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    --python-version=3.7 \
    --project=$GCP_PROJECT
    ```
+
+   {:style="background-color:gold; font-size: smaller"}
+   **Remark**: The gcloud ai-platform command group should be `versions` rather than `version`.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v2.1.jpg" width="715" height="390" class="ml-li text-center" caption="Create your first AI Platform model: complete_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
 
@@ -147,7 +149,7 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    ```
 
    ```python
-   !gcloud ai-platform version create $VERSION_NAME \
+   !gcloud ai-platform versions create $VERSION_NAME \
    --model=$LIM_MODEL_NAME \
    --framework='TensorFlow' \
    --runtime-version=2.1 \
@@ -156,6 +158,9 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    --python-version=3.7 \
    --project=$GCP_PROJECT
    ```
+
+   {:style="background-color:gold; font-size: smaller"}
+   **Remark**: The gcloud ai-platform command group should be `versions` rather than `version`.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v2.1.png" width="712" height="388" class="ml-li text-center" caption="Create your second AI Platform model: limited_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
 
@@ -200,3 +205,15 @@ Run the last cell in the notebook to activate What-If Tool. Explore the differen
 37:09 Use the What-If Tool to explore biases
 47:18 Deploy the models to AI Platform (✔️Troubleshooting runtime version issue)
 ```
+
+**Keep on reading**:
+
+- [QLogbook: Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
+
+**Useful links**:
+
+- [what-if-tool-challenge.ipynb at mGoogleCloudPlatform/training-data-analyst](https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/quests/dei/what-if-tool-challenge.ipynb)
+- [tf.keras.Sequential - TensorFlow Core v2](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential)
+- [tf.keras.layers.Dense - TensorFlow Core v2](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense)
+- [gcloud ai-platform - Google Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/ai-platform)
+- [What-If Tool](https://pair-code.github.io/what-if-tool/)

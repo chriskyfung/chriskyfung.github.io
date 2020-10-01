@@ -213,3 +213,4 @@ At the end of the lab, your BigQuery dataset should contains the following table
 **Keep on reading**:
 
 - [QLogbook: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)](/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab)
+- [QLogbook: Explore Machine Learning Models with Explainable AI: Challenge Lab](/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab)
