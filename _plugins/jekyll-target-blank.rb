@@ -1,3 +1,6 @@
+# This file is a fork of https://raw.githubusercontent.com/keithmifsud/jekyll-target-blank/master/lib/jekyll-target-blank.rb by keithmifsud
+# MIT License
+
 # frozen_string_literal: true
 
 require "jekyll"
