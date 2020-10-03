@@ -6,6 +6,7 @@ meta_description: "Chris KY FUNG's Blog."
 url: https://chriskyfung.github.io
 logo: 'assets/images/logo-plainSVG.svg'
 favicon: 'assets/images/favicon.png'
+remote_theme: chriskyfung/amp-affiliately-jekyll-theme
 paginate: 12
 paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title
@@ -38,6 +39,7 @@ plugins:
   - jekyll-webp
   - jekyll-gzip
   - jekyll-redirect-from
+  - jekyll-remote-theme
         
 # Archives
 jekyll-archives:

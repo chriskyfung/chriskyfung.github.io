@@ -21,5 +21,6 @@ group :jekyll_plugins do
     gem 'jekyll-webp'
     gem 'jekyll-gzip'
     gem 'jekyll-redirect-from'
+    gem 'jekyll-remote-theme'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
