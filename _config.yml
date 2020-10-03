@@ -13,9 +13,14 @@ permalink: /blog/:year/:month/:day/:title
 timezone: 'Asia/Hong_Kong'
 baseurl: ''
 email: ''
-google_analytics: 'UA-72575541-9'
-disqus: 'chriskyfung'
+google_analytics: 'UA-72575541-9' # Google Analytics Tracking ID
+gtm: 'GTM-WQMQK3X' # Google Tag Manager ID
+cse_id: 011006674894885990812:tjln7k0nyjx # Google Custom Search Engine ID
+adsense: 'ca-pub-4819282024314540' # Google Adsense ID
+disqus: 'chriskyfung' # Disqus shortname
+disqus_amp_baseurl: 'https://chriskyfung.gitlab.io/disqus-amp/q.html' #baseurl of your AMP disqus iframe element
 addthis: ra-5d01c83d522ad580
+buyme: chriskyfung
 
 # Authors
 authors:
