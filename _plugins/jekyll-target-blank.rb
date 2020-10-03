@@ -188,7 +188,7 @@ module Jekyll
       #
       # link = Nokogiri node.             
       def add_data_vars_event_label_attributes(link)
-         link["data-vars-event-label"] = link["href"]
+        link["data-vars-event-label"] = link["href"]
       end
 
       # Private: Checks if the link is a mailto url.
