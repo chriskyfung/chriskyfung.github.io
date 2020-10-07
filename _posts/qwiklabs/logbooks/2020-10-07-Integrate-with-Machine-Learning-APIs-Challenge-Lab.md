@@ -60,13 +60,13 @@ export GOOGLE_APPLICATION_CREDENTIALS=key.json
 
 In the Cloud Console, navigate to **IAM & Admin** > **Service Accounts** to confirm the status of the service account (`my-account`).
 
-{% include picture.html img="qwiklabs\gsp329-task2-confirm-new-service-account.png" width="959" height="606" %}
+{% include picture.html img="qwiklabs/gsp329-task2-confirm-new-service-account.png" width="959" height="606" %}
 
 ## Task 3: Modify the Python script to extract text from image files
 
 Navigate to **Storage** in the Cloud Console, then click on the bucket name to explore the image files and the Python script that have been provided for you.
 
-{% include picture.html img="qwiklabs\gsp329-task3-analyze.py-in-cloud-storage-bucket.png" width="1254" height="945" %}
+{% include picture.html img="qwiklabs/gsp329-task3-analyze.py-in-cloud-storage-bucket.png" width="1254" height="945" %}
 
 Run the following **gsutil** command to copy the file `analyze-images.py` from the Cloud Storage bucket into the Cloud Shell.
 
@@ -76,13 +76,13 @@ gsutil cp gs://$PROJECT/analyze-images.py .
 
 Open the Cloud Shell Editor to review and edit the script file.
 
-{% include picture.html img="qwiklabs\gsp329-task3-analyze-image-py-file.png" width="1259" height="934" %}
+{% include picture.html img="qwiklabs/gsp329-task3-analyze-image-py-file.png" width="1259" height="934" %}
 
 There are three unfinished parts in the script that you must complete to make the correct Machine Learning API calls. All of them are preceded with a comment using the label `# TBD:`. You will need to make use of the Vision API, the Translation API, and the BigQuery API. The import of the Google Cloud Library modules for the required APIs have been done in line 7 of the script file. Note down the name of their API clients that have also been declared from lines 25 to 32.
 
 In Task 3, you need to add your codes to the following part of the script file.
 
-{% include picture.html img="qwiklabs\gsp329-task3-python-code-init.png" width="730" height="531" %}
+{% include picture.html img="qwiklabs/gsp329-task3-python-code-init.png" width="730" height="531" %}
 
 > Tip 3. You can find details about the Vision API Client `document_text_detection` API call in the [Python API Documentation reference page for the Vision API Client](https://googleapis.dev/python/vision/latest/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClientdocument_text_detection) and the details of the Vision API annotation response object in the [Python API Documentation reference page for the Vision API Objects](https://googleapis.dev/python/vision/latest/gapic/v1/types.html#google.cloud.vision_v1.types.AnnotateImageResponse)
 
@@ -113,7 +113,7 @@ This line uses the Cloud Vision API to extract text data from each image inside 
 
 In Task 4, you need to add your codes to the following part of the script file.
 
-{% include picture.html img="qwiklabs\gsp329-task4-python-code-init.png" width="730" height="416" %}
+{% include picture.html img="qwiklabs/gsp329-task4-python-code-init.png" width="730" height="416" %}
 
 > Tip 4. For details about the Translation API Client translate API call, see the [Python API Documentation for the Translation V2 API Client](https://googleapis.dev/python/translation/2.0.1/client.html#google.cloud.translate_v2.client.Client.translate)
 
@@ -134,7 +134,7 @@ This line uses the Translation API to translate the non-English text into Englis
 
 In Task 5, you need to remove the comment characters to enable the line of code in the following part of the script.
 
-{% include picture.html img="qwiklabs\gsp329-task5-python-code-init.png" width="730" height="167" %}
+{% include picture.html img="qwiklabs/gsp329-task5-python-code-init.png" width="730" height="167" %}
 
 ### Process the image files using the updated Python
 
@@ -147,7 +147,7 @@ python analyze-images.py $PROJECT $BUCKET
 
 You should see an output like that:
 
-{% include picture.html img="qwiklabs\gsp329-task3-to-5-python-results.png" width="1256" height="1191" %}
+{% include picture.html img="qwiklabs/gsp329-task3-to-5-python-results.png" width="1256" height="1191" %}
 
 ### Confirm that image data has been successfully uploaded to BigQuery
 
@@ -155,7 +155,7 @@ Go back to the Cloud Console, navigate to **BigQuery**.
 
 Preview the table `image_text_detail` in the dataset called `image_classification_dataset` in your project.
 
-{% include picture.html img="qwiklabs\gsp329-task5-biquery-table-preview.png" width="1215" height="506" %}
+{% include picture.html img="qwiklabs/gsp329-task5-biquery-table-preview.png" width="1215" height="506" %}
 
 Confirm that image data has been successfully processed by running the following Query in BigQuery:
 
@@ -165,7 +165,7 @@ SELECT locale,COUNT(locale) as lcount FROM image_classification_dataset.image_te
 
 The query results should look like:
 
-{% include picture.html img="qwiklabs\gsp329-task5-query-results.png" width="653" height="356" %}
+{% include picture.html img="qwiklabs/gsp329-task5-query-results.png" width="653" height="356" %}
 
 <br/>
 
@@ -197,7 +197,7 @@ The query results should look like:
 
 📌 Hints for Tasks 3 - 5  
   [Integrating Machine Learning APIs - Google Codelabs](https://codelabs.developers.google.com/codelabs/cloud-ml-apis/index.html)
-{% include picture.html img="qwiklabs\gsp329-codelabs-reference.png" width="965" height="603" class="ml-li" %}
+{% include picture.html img="qwiklabs/gsp329-codelabs-reference.png" width="965" height="603" class="ml-li" %}
 
 **Keep on reading**:
 

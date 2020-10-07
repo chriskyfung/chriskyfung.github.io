@@ -265,6 +265,10 @@ Finally, manually trigger the build in the Jenkins console
 
 {% include picture.html height="748" img="qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2.png" alt="" %}
 
+<br/>
+
+**Congratulations! You completed this challenge lab.**
+
 ## Summary
 
 Do you feel this challenge lab quite difficult? You might if you don't get enough practice on Kubernetes Engines. Other than that, you might be disturbed if you don't know how to use `docker` command to kill a container and `git config` command before committing the changes. Despite this, most tasks reproduce based on the contents from the labs in the Kubernetes in Google Cloud quest. There is nothing to be afraid of.
