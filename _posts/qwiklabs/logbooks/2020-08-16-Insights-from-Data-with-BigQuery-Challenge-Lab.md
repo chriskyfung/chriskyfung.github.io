@@ -9,11 +9,13 @@ tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp787-00.jpg
+   fit: right
 excerpt: A brief procedure for the qwiklab practice GSP787. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
 amp:
    youtube: true
 css:
    syntax: true
+featured: true
 ---
 
 In this article, we will go through the lab **GSP322** _[Insights from Data with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/11988?parent=catalog)_, which is labeled as an expert-level exercise. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
@@ -310,9 +312,11 @@ from summary
 
 If you fail to get the score of this task, remove all data and reports from the Datastudio console before retry.
 
-**Congratulation!**
+<br/>
 
-## Summary
+**Congratulations! You completed this challenge lab.**
+
+## Demonstration Video
 
 {% include youtube.html id="3zxclCMoQeM" title="GSP787 Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)" %}
 

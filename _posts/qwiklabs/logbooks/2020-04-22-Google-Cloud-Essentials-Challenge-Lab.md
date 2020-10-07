@@ -66,6 +66,10 @@ The deployed nginx web servers:
 
 {% include picture.html width="566" height="312" img="qwiklabs/qwiklabs-GSP313-task3.png" alt="Nginx web servers deployed on Google Cloud Platform" %}
 
+<br/>
+
+**Congratulations! You completed this challenge lab.**
+
 ### Summary
 
 In a nutshell, this challenge lab is basic and simple that only requires directly reuse the steps and Cloud Shell commands from the labs in the Google Cloud Essentials quest. I recommend you open the labs that listed in the above hints in new tabs when you are carrying out this challenge lab. You can find all instructions from those references, and try your best to finish the challenge lab by yourself.

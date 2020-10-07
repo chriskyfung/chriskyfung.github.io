@@ -290,9 +290,11 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 4. In the Role dropdown, select **Project** > **Editor**.
 5. Click **SAVE**.
 
-Congratulations! You completed this challenge lab.
+<br/>
 
-## Summary
+**Congratulations! You completed this challenge lab.**
+
+## Demonstration Video
 
 {% include youtube.html id="p3jUogiOQqk" title="GSP321 Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab (Revised Ed.)" %}
 

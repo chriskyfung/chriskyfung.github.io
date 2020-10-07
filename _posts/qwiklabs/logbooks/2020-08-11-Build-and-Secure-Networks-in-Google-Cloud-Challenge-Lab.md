@@ -133,7 +133,11 @@ After configuring the firewall rules, try to verify the environment via the bast
 
    (Remember to REPLACE `<internal-IP-of-juice-shop>` with the copied IP address)
 
-## Summary
+<br/>
+
+**Congratulations! You completed this challenge lab.**
+
+## Demonstration Video
 
 {% include youtube.html id="NToEHzJTpgs" title="GSP322 Build and Secure Networks in Google Cloud: Challenge Lab" %}
 

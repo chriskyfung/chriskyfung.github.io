@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog:  Deploy to Kubernetes in Google Cloud: Challenge Lab"
+title: "Qlog: Deploy to Kubernetes in Google Cloud: Challenge Lab"
 author: chris
 date: 2020-05-04 +0800
 last_modified_at: 2020-06-22 10:15:00 +0800

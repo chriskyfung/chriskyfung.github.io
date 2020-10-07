@@ -143,13 +143,17 @@ You must make a copy of your BigQuery table before running a Data Loss Preventio
 7. In the _Create job or job trigger_ pane, assign a Job ID and then click **CREATE**.
 8. Click **CONFIRM CREATE**.
 
-Congratulations!!
+<br/>
+
+**Congratulations! You completed this challenge lab.**
 
 ## Summary
 
 Tasks 1 to 5 were pretty straightforward. If you prefer using the command line to create the resources, please refer to the [README file](https://github.com/GoogleCloudPlatform/dataflow-contact-center-speech-analysis) of the Speech Analysis Framework in the GitHub repository. You can also find the commands to deploy the `saflongrunjobdataflow.py` Python script in Task 6 and the SQL query for getting the answer in Task 7.
 
 Only Task 7 was a little tricky. You will get stuck if you try to make a copy of the table using the **COPY TABLE** button in the BigQuery console. It can copy the table structure but cannot copy the data in the table. Once you know how to correctly clone the table, the task is just a piece of cake.
+
+## Demonstration Video
 
 {% include youtube.html id="uiKc2_i8IOM" title="GSP311 Automate Interactions with Contact Center AI: Challenge Lab" %}
 
@@ -165,4 +169,8 @@ Only Task 7 was a little tricky. You will get stuck if you try to make a copy of
 17:05 Task 8: Run a Data Loss Prevention Job
 ```
 
-<br>
+* * *
+
+**Keep on reading**:
+
+- [Qwiklabs/Logbook: Integrate with Machine Learning APIs: Challenge Lab](/blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab)

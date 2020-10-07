@@ -427,7 +427,11 @@ Expected output:
 {"valid":true,"message":"mock response"}
 ```
 
-## Congratulations!
+<br/>
+
+**Congratulations! You completed this challenge lab.**
+
+## Demonstration Video
 
 {% include youtube.html id="Hcs40i_2o0E" title="GSP336 Build and Manage APIs with Apigee: Challenge Lab" %}
 

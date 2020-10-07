@@ -14,7 +14,6 @@ amp:
 css:
    syntax: true
    custom: >
-      table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
       .ml-li { margin-left: 2rem }
 ---
 
@@ -192,7 +191,11 @@ Run the last cell in the notebook to activate What-If Tool. Explore the differen
 
 {% include picture.html img="qwiklabs/qwiklab-gsp324-task5-what-if-ttol-3.png" width="397" height="56" class="ml-li" alt="The thresholds have to be wildly different for the limited model" %}
 
-## Summary
+<br/>
+
+**Congratulations! You completed this challenge lab.**
+
+## Demonstration Video
 
 {% include youtube.html id="UzP2pX1qayA" title="GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab" %}
 

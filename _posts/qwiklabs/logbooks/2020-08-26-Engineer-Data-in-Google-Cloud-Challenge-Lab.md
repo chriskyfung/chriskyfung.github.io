@@ -194,9 +194,11 @@ At the end of the lab, your BigQuery dataset should contains the following table
 
 {% include picture.html img="qwiklabs/qwiklab-gsp327-task3-resulted-tables.png" width="262" height="217" class="text-center" %}
 
-**Congratulation!**
+<br/>
 
-## Summary
+**Congratulations! You completed this challenge lab.**
+
+## Demonstration Video
 
 {% include youtube.html id="myYCfRS15fM" title="GSP327 Engineer Data in Google Cloud: Challenge Lab" %}
 

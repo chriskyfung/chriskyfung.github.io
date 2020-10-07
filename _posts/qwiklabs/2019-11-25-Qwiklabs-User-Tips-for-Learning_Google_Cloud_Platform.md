@@ -189,6 +189,7 @@ _The Hints for Challenge Labs 2020:_
 - [Qwiklabs/Logbook: Build and Manage APIs with Apigee: Challenge Lab](/blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab)
 - [Qwiklabs/Logbook: Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
 - [Qwiklabs/Logbook: Explore Machine Learning Models with Explainable AI: Challenge Lab](/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab)
+- [Qwiklabs/Logbook: Integrate with Machine Learning APIs: Challenge Lab](/blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab)
 
 _Quizzes Answers:_
 

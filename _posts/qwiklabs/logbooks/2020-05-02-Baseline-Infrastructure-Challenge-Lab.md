@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog:  Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab"
+title: "Qlog: Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab"
 author: chris
 date: 2020-05-02 +0800
 last_modified_at: 2020-08-04 10:08:00 +0800
@@ -14,7 +14,6 @@ image:
    height: 565
 amp:
    youtube: true
-featured: true
 ---
 
 <!--more-->
@@ -77,9 +76,17 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 3. Click the pencil icon, select **Delete**.
 
+<br/>
+
+**Congratulations! You completed this challenge lab.**
+
 ## Summary
 
 All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Getting Started: Create and Manage Cloud Resources: Challenge Lab](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab).
+
+**9 credits!** Is this cheating money? I hope this beginner's guide to Qwiklabs will help you to get started. If you have any additional questions, feel free to ask me in the comments section below.
+
+## Demonstration Video
 
 {% include youtube.html id="5UrQ9D-epG8" title="GSP315 Perform Foundational Infrastructure Tasks in Google Cloud= Challenge Lab" %}
 
@@ -90,8 +97,6 @@ All tasks can be done with the Cloud Console. There should be no difficulty for 
 1:15 Task 3: Create the Cloud Function
 4:10 Task 4: Remove the previous cloud engineer
 ```
-
-**9 credits!** Is this cheating money? I hope this beginner's guide to Qwiklabs will help you to get started. If you have any additional questions, feel free to ask me in the comments section below.
 
 * * *
 

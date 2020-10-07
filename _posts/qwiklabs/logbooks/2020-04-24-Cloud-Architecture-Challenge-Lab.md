@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog:  Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab"
+title: "Qlog: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab"
 author: chris
 date: 2020-04-24 +0800
 last_modified_at: 2020-06-22 10:05:00 +0800
@@ -209,6 +209,10 @@ Return to the Spinnaker UI and click **Pipelines** to watch the pipeline start t
 {% include picture.html height="741" img="qwiklabs/qwiklab-GSP314-spinnaker-deploy.png"%}
 
 Once the pipeline completes, the color of the sample application has changed from orange to blue in the canary deployment, click **Check my progress** to verify **Task 3**.
+
+<br/>
+
+**Congratulations! You completed this challenge lab.**
 
 ## Summary
 
