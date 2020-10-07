@@ -12,7 +12,7 @@ redirect_from:
 image: 
   path: /images/posts/qwiklabs/qwiklabs-badges.jpg
   height: 410
-excerpt: Over 400 hands-on labs and quests available on Qwiklabs for learning GCP. Therefore, we made a visual map for you to more easily seek a desired learning path.
+excerpt: Over 400 hands-on labs and quests available on Qwiklabs for learning GCP. Therefore, we made a visual map for you to more easily seek your desired learning path.
 amp:
   youtube: true
   iframe: true

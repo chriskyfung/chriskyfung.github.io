@@ -2,7 +2,7 @@
 layout: post
 title: "Qlog: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
 date: 2020-08-16 06:48 +0800
-last_modified_at: 2020-08-25 11:05 +0800
+last_modified_at: 2020-10-08 03:56 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
@@ -15,7 +15,17 @@ amp:
    youtube: true
 css:
    syntax: true
+   custom: >-
+      amp-accordion section[expanded] .show-more {
+        display: none;
+      }
+
+      amp-accordion section:not([expanded]) .show-less {
+        display: none;
+      }
 featured: true
+custom_head: >-
+   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 ---
 
 In this article, we will go through the lab **GSP322** _[Insights from Data with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/11988?parent=catalog)_, which is labeled as an expert-level exercise. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
@@ -81,7 +91,37 @@ Make sure that you use `country_name` to filter the US reconds instead of `count
 
 Copy the following code to the Query editor and then click **Run**.
 
+{:style="margin-bottom:0"}
 ```sql
+SELECT
+  *
+FROM (
+SELECT 
+  subregion1_name as state, 
+  sum(cumulative_confirmed) as total_confirmed_cases
+FROM
+  `bigquery-public-data.covid19_open_data.covid19_open_data`
+WHERE
+  country_code="US"
+  AND date='2020-04-10'
+  AND subregion1_name is NOT NULL
+GROUP BY
+  subregion1_name
+ORDER BY
+  total_confirmed_cases DESC
+)
+WHERE
+  total_confirmed_cases > 1000
+```
+
+{:style="margin-top:-20px;padding:0px 5px;font-size:small"}
+💬 Thanks [Random32543654e474362](https://chriskyfung.gitlab.io/disqus-amp/q.html?url=https://chriskyfung.github.io/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab&title=%27Qlog:%20Insights%20from%20Data%20with%20BigQuery:%20Challenge%20Lab%20(COVID-19%20Open%20Data)%27#comment-5100690845) for providing the update of Query 3.
+
+<amp-accordion disable-session-states animate>
+  <section>
+    <header><span class="show-more">&nbsp;<i class='fas fa-caret-down'></i> Show previous solution</span> <span class="show-less">&nbsp;<i class='fas fa-caret-up'></i> Hide previous solution</span></header>
+    <div style="background-color:#efefef;padding:10px">
+{% highlight sql %}
 SELECT
     subregion1_name AS state,
     SUM(cumulative_confirmed) AS total_confirmed_cases
@@ -93,9 +133,11 @@ WHERE
 GROUP BY subregion1_name
 HAVING total_confirmed_cases > 1000
 ORDER BY total_confirmed_cases DESC
-```
-
-Due to Qwiklabs' poor design, you have to format **GROUP BY**, **HAVING** and **ORDER BY** to single-line statements, respectively.
+{% endhighlight %}
+Due to Qwiklabs' poor design, you have to format <b>GROUP BY</b>, <b>HAVING</b> and <b>ORDER BY</b> to single-line statements, respectively.
+</div>
+  </section>
+</amp-accordion>
 
 ## Query 4: Fatality Ratio
 

@@ -15,7 +15,6 @@ amp:
 css:
    syntax: true
    custom: >
-      table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
       .ml-li { margin-left: 2rem }
 ---
 
@@ -198,6 +197,8 @@ The query results should look like:
 📌 Hints for Tasks 3 - 5  
   [Integrating Machine Learning APIs - Google Codelabs](https://codelabs.developers.google.com/codelabs/cloud-ml-apis/index.html)
 {% include picture.html img="qwiklabs/gsp329-codelabs-reference.png" width="965" height="603" class="ml-li" %}
+
+* * *
 
 **Keep on reading**:
 
