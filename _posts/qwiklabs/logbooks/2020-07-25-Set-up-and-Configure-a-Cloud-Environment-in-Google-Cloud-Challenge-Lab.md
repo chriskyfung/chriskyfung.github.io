@@ -2,6 +2,7 @@
 layout: post
 title: "Qlog: Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab"
 date: 2020-07-25 16:00 +0800
+last_modified_at: 2020-10-08 4:25 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
@@ -66,7 +67,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    gsutil cp -r gs://cloud-training/gsp321/dm ~/
    ```
 
-2. Edit `prod-netork.yaml` configuration file
+2. Edit `prod-network.yaml` configuration file
 
    ```bash
    cd dm
@@ -211,7 +212,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
    edit wp-env.yaml
    ```
 
-3. Replace `username_goes_here` and `password_goes_here` to `wp-user` and `stormwind_rules`, respectively.
+3. Replace `username_goes_here` and `password_goes_here` to `wp_user` and `stormwind_rules`, respectively.
 4. Save the file change.
 5. After the Kubernetes cluster has created, click on the **Connect** button.
 6. Run the following command to connect the cluster:
