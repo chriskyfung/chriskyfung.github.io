@@ -3,17 +3,20 @@ layout: post
 title: "Qlog: Deploy to Kubernetes in Google Cloud: Challenge Lab"
 author: chris
 date: 2020-05-04 +0800
-last_modified_at: 2020-10-18 8:00:00 +0800
+last_modified_at: 2020-10-18 11:57:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
 redirect_from: /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP318 "Deploy to Kubernetes in Google Cloud&#58; Challenge Lab". It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
 image: 
-   path: /images/posts/qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png
-   height: 741
+   path: /images/posts/qwiklabs/qwiklab-GSP318-cover.png
+   fit: left
+amp:
+   youtube: true
 css:
    syntax: true
+featured: true
 ---
 
 In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is labeled as an expert-level exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_). You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.
@@ -40,11 +43,11 @@ _Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to
 
    It installs the marking scripts, which use to check your progress.
 
-2. Then, run the commands below to clone the valkyrie-app source code repository to the Cloud Shell. (_Remember to **replace**_ `YOUR_PROJECT` _with your Project ID_)
+2. Then, run the commands below to clone the valkyrie-app source code repository to the Cloud Shell. (_Remember to **replace**_ `YOUR_PROJECT_ID` _with your Project ID_)
 
    ```bash
-   export YOUR_PROJECT=$DEV_PROJECT_ID
-   gcloud source repos clone valkyrie-app --project=$YOUR_PROJECT
+   export PROJECT=$YOUR_PROJECT_ID
+   gcloud source repos clone valkyrie-app --project=$PROJECT
    ```
 
 3. Create a `Dockerfile` under the `valkyrie-app` directory and add the configuration to the file. Copy the given codes from the lab page to the following snippet, and then run the commands in the Cloud Shell.
@@ -104,16 +107,14 @@ cd ~/marking
 
 _Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step8)
 
-In this task, you will push the Docker image valkyrie-app:v0.0.1 into the Container Registry with a tag `gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1`.
+In this task, you will push the Docker image valkyrie-app:v0.0.1 into the Container Registry with a tag `gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.1`.
 
 Thus, you should format the docker commands as below.
-(_Remember to **replace**_ `YOUR_PROJECT` _with your Project ID_)
 
 ```bash
-export YOUR_PROJECT=$DEV_PROJECT_ID
-docker tag valkyrie-app:v0.0.1 gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.1
+docker tag valkyrie-app:v0.0.1 gcr.io/$PROJECT/valkyrie-app:v0.0.1
 docker images
-docker push gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.1
+docker push gcr.io/$PROJECT/valkyrie-app:v0.0.1
 ```
 
 After pushing the container, the `valkyrie-app` repository will appear in the Cloud Console as shown in the image below.
@@ -132,7 +133,7 @@ _Hint_: Refer procedures in the labs GSP100 [Kubernetes Engine: Qwik Start](http
    gcloud container clusters get-credentials valkyrie-dev --region us-east
    ```
 
-3. Use a text editor to modify `deployment.yaml` and replace `IMAGE_HERE` with `gcr.io/YOUR-PROJECT-ID/valkyrie-app:v0.0.1`
+3. Use a text editor to modify `deployment.yaml` and replace `IMAGE_HERE` with `gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.1`
 
 4. Use `kubectl create -f` command to deploy **deployment.yaml** and **service.yaml**
 
@@ -153,13 +154,12 @@ _Hint_: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes En
    ```
 
 3. Build and push the new version with tagged v0.0.2:
-(_Remember to **replace**_ `YOUR_PROJECT` _with your Project ID_)
 
    ```bash
    docker build -t valkyrie-app:v0.0.2 .
-   docker tag valkyrie-app:v0.0.2 gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.2
+   docker tag valkyrie-app:v0.0.2 gcr.io/$PROJECT/valkyrie-app:v0.0.2
    docker images
-   docker push gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.2
+   docker push gcr.io/$PROJECT/valkyrie-app:v0.0.2
    ```
 
 4. Trigger a rolling update by running the following command:
@@ -230,7 +230,7 @@ Create a pipeline job that points to your */master branch on your source code.
 
 3. On the next page, in the Branch Sources section, click **Add Source** and select **git**.
 
-4. Paste the HTTPS clone URL of your sample-app repo in Cloud Source Repositories `https://source.developers.google.com/p/YOUR_PROJECT/r/valkyrie-app` into the Project Repository field. Remember to replace **YOUR_PROJECT** with your GCP Project ID.
+4. Paste the HTTPS clone URL of your sample-app repo in Cloud Source Repositories `https://source.developers.google.com/p/YOUR_PROJECT_ID/r/valkyrie-app` into the Project Repository field. Remember to replace **YOUR_PROJECT_ID** with your GCP Project ID.
 
 5. From the **Credentials** drop-down, select the name of the credentials you created when adding your service account in the previous steps.
 
@@ -253,10 +253,10 @@ Open `source/html.go` file in a text editor, and change the color of headings fr
 Commit and push the changes:
 
 ```bash
-git config --global user.email $YOUR_PROJECT
-git config --global user.name $YOUR_PROJECT
+git config --global user.email $PROJECT
+git config --global user.name $PROJECT
 
-git add Dockerfile Jenkinsfile source/html.go
+git add *
 git commit -m 'green to orange'
 git push origin master
 ```
@@ -270,6 +270,20 @@ Finally, manually trigger the build in the Jenkins console
 <br/>
 
 **Congratulations! You completed this challenge lab.**
+
+## Demonstration Video
+
+{% include youtube.html id="jtHZ_aSlI-4" title="GSP318 Deploy to Kubernetes in Google Cloud: Challenge Lab" %}
+
+```ts
+0:00 Start Lab & Overview
+1:18 Task 1: Create a Docker image and store the Dockerfile
+3:29 Task 2: Test the created Docker image
+4:01 Task 3: Push the Docker image in the Container Repository
+4:54 Task 4: Create and expose a deployment in Kubernetes
+6:55 Task 5: Update the deployment with a new version of valkyrie-app
+9:20 Task 6: Create a pipeline in Jenkins to deploy your app
+```
 
 ## Summary
 
