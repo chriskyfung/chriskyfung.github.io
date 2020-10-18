@@ -3,7 +3,7 @@ layout: post
 title: "Qlog: Deploy to Kubernetes in Google Cloud: Challenge Lab"
 author: chris
 date: 2020-05-04 +0800
-last_modified_at: 2020-06-22 10:15:00 +0800
+last_modified_at: 2020-10-18 8:00:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
@@ -43,7 +43,8 @@ _Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to
 2. Then, run the commands below to clone the valkyrie-app source code repository to the Cloud Shell. (_Remember to **replace**_ `YOUR_PROJECT` _with your Project ID_)
 
    ```bash
-   gcloud source repos clone valkyrie-app --project=YOUR_PROJECT
+   export YOUR_PROJECT=$DEV_PROJECT_ID
+   gcloud source repos clone valkyrie-app --project=$YOUR_PROJECT
    ```
 
 3. Create a `Dockerfile` under the `valkyrie-app` directory and add the configuration to the file. Copy the given codes from the lab page to the following snippet, and then run the commands in the Cloud Shell.
@@ -89,7 +90,7 @@ docker run -p 8080:8080 --name valkyrie-app valkyrie-app:v0.0.1 &
 
 2. Click **Web Preview** to see the running app.
 
-   {% include picture.html width="706" height="724" img="qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1.png" alt="" class="ml-4" %}
+   {% include picture.html width="706" height="724" img="qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1.png" class="ml-4" %}
 
 After that, open a new Cloud Shell to run the `step2.sh` marking script.
 
@@ -109,9 +110,10 @@ Thus, you should format the docker commands as below.
 (_Remember to **replace**_ `YOUR_PROJECT` _with your Project ID_)
 
 ```bash
-docker tag valkyrie-app:v0.0.1 gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1
+export YOUR_PROJECT=$DEV_PROJECT_ID
+docker tag valkyrie-app:v0.0.1 gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.1
 docker images
-docker push gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.1
+docker push gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.1
 ```
 
 After pushing the container, the `valkyrie-app` repository will appear in the Cloud Console as shown in the image below.
@@ -127,7 +129,7 @@ _Hint_: Refer procedures in the labs GSP100 [Kubernetes Engine: Qwik Start](http
 2. Get authentication credentials for the cluster
 
    ```bash
-   gcloud container clusters get-credentials valkyrie-dev
+   gcloud container clusters get-credentials valkyrie-dev --region us-east
    ```
 
 3. Use a text editor to modify `deployment.yaml` and replace `IMAGE_HERE` with `gcr.io/YOUR-PROJECT-ID/valkyrie-app:v0.0.1`
@@ -155,15 +157,15 @@ _Hint_: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes En
 
    ```bash
    docker build -t valkyrie-app:v0.0.2 .
-   docker tag valkyrie-app:v0.0.2 gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.2
+   docker tag valkyrie-app:v0.0.2 gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.2
    docker images
-   docker push gcr.io/YOUR_PROJECT/valkyrie-app:v0.0.2
+   docker push gcr.io/$YOUR_PROJECT/valkyrie-app:v0.0.2
    ```
 
 4. Trigger a rolling update by running the following command:
 
    ```bash
-   kubectl edit deployment valkyrie-app
+   kubectl edit deployment valkyrie-dev
    ```
 
    Change the image tag from `v0.0.1` to `v0.0.2`. then save and exit.
@@ -236,7 +238,7 @@ Create a pipeline job that points to your */master branch on your source code.
 
 7. Your job configuration should look like this:
 
-   {% include picture.html width="706" height="717" img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png" alt="" class="ml-4" %}
+   {% include picture.html width="706" height="717" img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png" class="ml-4" %}
 
 #### 6.4 Modifying the pipeline definition
 
@@ -251,19 +253,19 @@ Open `source/html.go` file in a text editor, and change the color of headings fr
 Commit and push the changes:
 
 ```bash
-git config --global user.email YOUR_PROJECT
-git config --global user.name YOUR_PROJECT
+git config --global user.email $YOUR_PROJECT
+git config --global user.name $YOUR_PROJECT
 
-git add Jenkinsfile source/html.go
+git add Dockerfile Jenkinsfile source/html.go
 git commit -m 'green to orange'
 git push origin master
 ```
 
 Finally, manually trigger the build in the Jenkins console
 
-{% include picture.html height="342" img="qwiklabs/qwiklab-GSP318-jenkins-build-queue.png" alt="" %}
+{% include picture.html height="342" img="qwiklabs/qwiklab-GSP318-jenkins-build-queue.png" %}
 
-{% include picture.html height="748" img="qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2.png" alt="" %}
+{% include picture.html height="748" img="qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2.png" %}
 
 <br/>
 
