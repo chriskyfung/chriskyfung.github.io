@@ -28,7 +28,7 @@ custom_head: >-
    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 ---
 
-In this article, we will go through the lab **GSP322** _[Insights from Data with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/11988?parent=catalog)_, which is labeled as an expert-level exercise. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
+In this article, we will go through the lab **GSP322** _[Insights from Data with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/11988?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/123) exercise. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
 
 ## Open Public Dataset
 

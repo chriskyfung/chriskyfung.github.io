@@ -20,7 +20,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP336** _[Build and Manage APIs with Apigee: Challenge Lab](https://www.qwiklabs.com/focuses/13360?parent=catalog)_, which is labeled as an expert-level exercise. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
+In this article, we will go through the lab **GSP336** _[Build and Manage APIs with Apigee: Challenge Lab](https://www.qwiklabs.com/focuses/13360?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/137) exercise. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
 
 **Topics tested:**
 

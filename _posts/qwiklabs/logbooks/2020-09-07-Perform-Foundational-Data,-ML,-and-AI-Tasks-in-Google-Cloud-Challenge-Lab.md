@@ -18,7 +18,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is labeled as an expert-level exercise. You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
+In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/117) exercise. You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
 
 **The challenge contains 4 required tasks:**
 

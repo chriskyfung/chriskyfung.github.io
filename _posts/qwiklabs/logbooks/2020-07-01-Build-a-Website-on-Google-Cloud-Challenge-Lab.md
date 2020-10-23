@@ -15,7 +15,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP319** _[Build a Website on Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11765?parent=catalog)_, which is labeled as an advanced-level exercise. You will practice the skills and knowledge for website architectures available to be scalable with microservices on Google Kubernetes Engine.
+In this article, we will go through the lab **GSP319** _[Build a Website on Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11765?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/115) exercise. You will practice the skills and knowledge for website architectures available to be scalable with microservices on Google Kubernetes Engine.
 
 **The challenge contains 6 required tasks:**
 1. Download the monolith code and build your container
@@ -27,7 +27,7 @@ In this article, we will go through the lab **GSP319** _[Build a Website on Goog
 
 ## Task 1: Download the monolith code and build your container
 
-_Hint_: Refer and modify the procedures in the first two sections of the lab [Deploy Your Website on Cloud Run](https://www.qwiklabs.com/focuses/10445?parent=catalog)
+**Hint**: Refer and modify the procedures in the first two sections of the lab [Deploy Your Website on Cloud Run](https://www.qwiklabs.com/focuses/10445?parent=catalog)
 
 First of all, you need to clone the [project repository](https://github.com/googlecodelabs/monolith-to-microservices.git) from GitHub to your Cloud Shell environment.
 
@@ -60,7 +60,7 @@ In the Cloud Console, navigate to **Cloud Run** and wait for the successful buil
 
 ## Task 2: Create a kubernetes cluster and deploy the application
 
-_Hint_: Refer to in the lab [Deploy, Scale, and Update Your Website on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/10470?parent=catalog)
+**Hint**: Refer to in the lab [Deploy, Scale, and Update Your Website on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/10470?parent=catalog)
 
 **Make sure that you:**
 
@@ -89,7 +89,7 @@ kubectl expose deployment fancytest --type=LoadBalancer --port 80 --target-port 
 
 ## Task 3: Create a containerized version of your Microservices
 
-_Hint_: Refer to the lab [Migrating a Monolithic Website to Microservices on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/11953?parent=catalog)
+**Hint**: Refer to the lab [Migrating a Monolithic Website to Microservices on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/11953?parent=catalog)
 
 **Make sure that you:**
 

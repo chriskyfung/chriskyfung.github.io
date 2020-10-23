@@ -15,7 +15,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP327** _[Engineer Data in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12379?parent=catalog)_, which is labeled as an expert-level exercise. You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
+In this article, we will go through the lab **GSP327** _[Engineer Data in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12379?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/132) exercise. You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
 
 **The challenge contains 6 required tasks:**
 

@@ -17,7 +17,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP311** _[Automate Interactions with Contact Center AI: Challenge Lab](https://www.qwiklabs.com/focuses/12008?parent=catalog)_, which is labeled as an expert-level exercise. You will practice the skills and knowledge for deploy Cloud Dataflow Pipeline to transcript audio files and store the data to BigQuery. You will also need to implement Data Loss Prevention API for redacting the sensitive data from the audio transcriptions (such as name, email, phone number, and SSN).
+In this article, we will go through the lab **GSP311** _[Automate Interactions with Contact Center AI: Challenge Lab](https://www.qwiklabs.com/focuses/12008?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/127) exercise. You will practice the skills and knowledge for deploy Cloud Dataflow Pipeline to transcript audio files and store the data to BigQuery. You will also need to implement Data Loss Prevention API for redacting the sensitive data from the audio transcriptions (such as name, email, phone number, and SSN).
 
 **The challenge contains 8 required tasks:**
 

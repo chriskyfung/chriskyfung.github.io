@@ -54,7 +54,7 @@ After the jumphost has been created, navigate to **Compute Engine** > **VM insta
 3. Use an editor to open the configuration file **prod-network.yaml**, and replace `SET_REGION` to `us-east1`.
 
 4. Create the **kraken-prod-vpc** with the YAML file using `gcloud` command.<br>
-_Hint_: Refer and modify the `gcloud deployment-manager` command in the lab GSP060 [Deployment Manager - Full Production](https://www.qwiklabs.com/focuses/981?parent=catalog#step9).
+**Hint**: Refer and modify the `gcloud deployment-manager` command in the lab GSP060 [Deployment Manager - Full Production](https://www.qwiklabs.com/focuses/981?parent=catalog#step9).
 
 ### 1.2 Create a Kubernetes cluster in the new network
 
@@ -129,7 +129,7 @@ Click **Check my progress** to verify **Task 2**.
 
 ## Task 3: Verify the Spinnaker deployment
 
-_Hint_: Refer to the procedures in the lab GSP114 [Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine](https://www.qwiklabs.com/focuses/552?parent=catalog).
+**Hint**: Refer to the procedures in the lab GSP114 [Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine](https://www.qwiklabs.com/focuses/552?parent=catalog).
 
 In this lab, several resources have been already provisioned. you **DO NOT** need to implement the following tasks:
 

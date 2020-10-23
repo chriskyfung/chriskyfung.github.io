@@ -19,7 +19,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is labeled as an expert-level exercise. You will practice the skills and knowledge for deploy VPCs for development and production, a Kubernetes cluster and a Cloud SQL instance for a WordPress site.
+In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/119) exercise. You will practice the skills and knowledge for deploy VPCs for development and production, a Kubernetes cluster and a Cloud SQL instance for a WordPress site.
 
 **The challenge contains 9 required tasks:**
 
@@ -71,7 +71,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
 
    ```bash
    cd dm
-   edit prod-netork.yaml
+   edit prod-network.yaml
    ```
 
 3. Replace `SET_REGION` to `us-east1` in the editor, and then save the change.
@@ -79,7 +79,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
 4. Go back to the Cloud Shell, use the following command to create the production VPC network with the configuration files:
 
    ```bash
-   gcloud deployment-manager deployments create griffin-prod --config prod-netork.yaml
+   gcloud deployment-manager deployments create griffin-prod --config prod-network.yaml
    ````
 
 5. Go back to the Cloud Console, navigate to **Deployment Manager** to confirm the deployment.

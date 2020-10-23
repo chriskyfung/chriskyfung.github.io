@@ -3,7 +3,7 @@ layout: post
 title: "Qlog: Deploy to Kubernetes in Google Cloud: Challenge Lab"
 author: chris
 date: 2020-05-04 +0800
-last_modified_at: 2020-10-18 11:57:00 +0800
+last_modified_at: 2020-10-19 09:25:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
@@ -19,7 +19,7 @@ css:
 featured: true
 ---
 
-In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is labeled as an expert-level exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_). You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.
+In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/116) exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_). You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.
 
 **The challenge contains 4 required tasks:**
 
@@ -33,7 +33,7 @@ In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in
 
 ## Task 1: Create a Docker image and store the Dockerfile
 
-_Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step5)
+**Hint**: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step5)
 
 1. First of all, you have to run the following command in Cloud Shell.
 
@@ -80,7 +80,7 @@ cd ~/marking
 
 ## Task 2: Test the created Docker image
 
-_Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step6)
+**Hint**: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step6)
 
 The lab instruction requires you to run the docker image built in task 1 and show the running application by **Web Preview** on port 8080. Based on the requirements, the docker command will be:
 
@@ -105,7 +105,7 @@ cd ~/marking
 
 ## Task 3: Push the Docker image in the Container Repository
 
-_Hint_: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step8)
+**Hint**: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step8)
 
 In this task, you will push the Docker image valkyrie-app:v0.0.1 into the Container Registry with a tag `gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.1`.
 
@@ -123,7 +123,7 @@ After pushing the container, the `valkyrie-app` repository will appear in the Cl
 
 ## Task 4: Create and expose a deployment in Kubernetes
 
-_Hint_: Refer procedures in the labs GSP100 [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) and GSP021 [Orchestrating the Cloud with Kubernetes](https://google.qwiklabs.com/focuses/557?parent=catalog) for steps 1-2 and steps 3-4, respectively.
+**Hint**: Refer procedures in the labs GSP100 [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) and GSP021 [Orchestrating the Cloud with Kubernetes](https://google.qwiklabs.com/focuses/557?parent=catalog) for steps 1-2 and steps 3-4, respectively.
 
 1. In the Cloud Shell, go to the `valkyrie-app/k8s` subdirectory.
 
@@ -135,11 +135,11 @@ _Hint_: Refer procedures in the labs GSP100 [Kubernetes Engine: Qwik Start](http
 
 3. Use a text editor to modify `deployment.yaml` and replace `IMAGE_HERE` with `gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.1`
 
-4. Use `kubectl create -f` command to deploy **deployment.yaml** and **service.yaml**
+4. Use `kubectl create -f <filename>` command to deploy **deployment.yaml** and **service.yaml**
 
 ## Task 5: Update the deployment with a new version of valkyrie-app
 
-_Hint_: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) or my previous article [Qwiklabs/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster)
+**Hint**: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) or my previous article [Qwiklabs/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster)
 
 **Step 5-1** Increase the replicas from 1 to 3
 
@@ -170,9 +170,12 @@ _Hint_: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes En
 
    Change the image tag from `v0.0.1` to `v0.0.2`. then save and exit.
 
+   {:style="background:palegoldenrod;padding:5px 15px;"}
+   **Tips**: If you change the text mode editor from Vim to Nano by [`KUBE_EDITOR="nano"`](https://kubectl.docs.kubernetes.io/pages/imperative_porcelain/editing_workloads.html) before the **kubectl edit** command.
+
 ## Task 6: Create a pipeline in Jenkins to deploy your app
 
-_Hint_: Refer procedures in the labs GSP051 [Continuous Delivery with Jenkins in Kubernetes Engine](https://google.qwiklabs.com/focuses/1104?parent=catalog)
+**Hint**: Refer procedures in the labs GSP051 [Continuous Delivery with Jenkins in Kubernetes Engine](https://google.qwiklabs.com/focuses/1104?parent=catalog)
 
 In this task, you will need to:
 
