@@ -2,6 +2,7 @@
 layout: post
 title: "Qlog: Explore Machine Learning Models with Explainable AI: Challenge Lab"
 date: 2020-09-28 1:25 +0800
+last_modified_at: 2020-10-29 16:20 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, TensorFlow, Data Science, Machine Learning]
@@ -59,7 +60,7 @@ In this article, we will go through the lab **GSP324** _[Explore Machine Learnin
 
 {:start="3"}
 3. Go to the enclosing folder: `training-data-analyst/quests/dei`
-4. Open the notebook file `what-if-tool-challenge.ipynb`.
+4. Open the notebook file [`what-if-tool-challenge.ipynb`](https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/quests/dei/what-if-tool-challenge.ipynb).
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-2.png" width="973" height="690" class="ml-li" %}
 
@@ -100,8 +101,8 @@ In this article, we will go through the lab **GSP324** _[Explore Machine Learnin
 
 Moving on to the **Deploy your models to the AI Platform** section in the notebook.
 
-1. Replace the values of `GCP_PROJECT` and `MODEL_BUCKET` with your project ID and an unique bucket name.
-2. Change the `REGION` to `us-west1`.
+1. Replace the values of `GCP_PROJECT` and `MODEL_BUCKET` with your project ID and a unique bucket name.
+2. Change the `REGION` to `us-west1` (Use the same region of the Notebook instance).
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1.jpg" width="865" height="508" class="ml-li" %}
 
