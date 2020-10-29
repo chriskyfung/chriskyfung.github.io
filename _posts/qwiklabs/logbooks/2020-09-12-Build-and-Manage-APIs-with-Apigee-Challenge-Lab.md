@@ -341,7 +341,7 @@ Go the Cloud Shell, run the commands given in the lab.
 #### Route traffic to these backends based on the incoming requests
 
 1. Go back to Apigee, navigate to **API Proxies** > **Verification-API-v1**, click the **Develop** tab in the top right.
-2. To rename the mock API endpoint, click on **Target Endpoints** → **default** in the Navigator tab. Replace `<TargetEndpoint name="default">` to <TargetEndpoint name="mock">.
+2. To rename the mock API endpoint, click on **Target Endpoints** → **default** in the Navigator tab. Replace `<TargetEndpoint name="default">` to `<TargetEndpoint name="mock">`.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-rename-mock-target-endpoint.png" width="477" height="261" class="ml-li text-center" %}
 
