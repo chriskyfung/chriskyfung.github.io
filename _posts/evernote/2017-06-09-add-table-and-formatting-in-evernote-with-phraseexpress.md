@@ -62,7 +62,7 @@ img="evernote/Restrict-PhraseExpress-to-Evernote.png" alt="Advance configuration
 
 ## 2. Format texts to heading styles via custom hotkeys
 
-Evernote doesn’t have Heading Formatting, such kind of advance styling functions as in MS Word or OneNote. Although many Evernote users have requested for this feature in the Evernote Forum ([link to the post](https://discussion.evernote.com/topic/23474-heading-1-2-and-3-in-evernote/)), Evernote Corp. intents to keep it as a distraction-free text editor. You can only manually bold texts and enlarge the font size to visually distinguish a line as a heading.
+Evernote doesn’t have Heading Formatting, such kind of advance styling functions as in MS Word or OneNote. Although many Evernote users have requested for this feature in the Evernote Forum ([link to the post](https://discussion.evernote.com/forums/topic/23474-heading-1-2-and-3-in-evernote/)), Evernote Corp. intents to keep it as a distraction-free text editor. You can only manually bold texts and enlarge the font size to visually distinguish a line as a heading.
 
 Manual operations sometimes generate the inconsistencies to formatting and style. I create the following method to format texts to heading with PhraseExpress.
 

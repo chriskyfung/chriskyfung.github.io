@@ -34,7 +34,7 @@ The following cloud services are some possible choices for static web hosting:
 - Amazon S3
 - GitHub Page
 
-The traffic of my Tumblr blogs is subtle. So, I chose to host on a GitHub Page, as it is entirely free with 1GB storage and a _soft_ bandwidth limit of 100GB per month. This is more than enough for hosting the cover images of all my blog posts. For more details about GitHub Page, please read ["About GitHub Pages"](https://help.github.com/en/github/working-with-github-pages/about-github-pages) in GitHub Help.
+The traffic of my Tumblr blogs is subtle. So, I chose to host on a GitHub Page, as it is entirely free with 1GB storage and a _soft_ bandwidth limit of 100GB per month. This is more than enough for hosting the cover images of all my blog posts. For more details about GitHub Page, please read ["About GitHub Pages"](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages) in GitHub Help.
 
 ## Create a GitHub Page for hosting your images
 
@@ -110,7 +110,7 @@ Log in your Tumblr account and go to edit the HTML code of your theme. Next, add
     {/block:IfOGTags}
 ```
 
-Please replace the `og:locale` tags with your languages, you can find the choices from [Yoast SEO's Knowledge Base](https://kb.yoast.com/kb/changing-the-og-locale-output/)
+Please replace the `og:locale` tags with your languages, you can find the choices from [Yoast SEO's Knowledge Base](https://developer.yoast.com/features/opengraph/api/changing-og-locale-output/)
 
 The above code specifies the `og:image` of all Text posts to point at **`https://<your-github-page-url>/og-images/{PostID}.png`**. For example:
 - `https://res.example.com/og-images/1234.png` _(with a custom domain)_, or
@@ -128,7 +128,7 @@ To correctly link between each post and its Open Graph image, you must store eac
 
 3. Use a Git tool to commit and push the files to the GitHub repository.
 
-4. Finally, use [Facebook's Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/) to inspect whether the og:image tag is properly crawled.
+4. Finally, use [Facebook's Sharing Debugger](https://developers.facebook.com/tools/debug/) to inspect whether the og:image tag is properly crawled.
 
 {% include picture.html width="0" height="0" img="tumblr/GitHub-Page-og-images.png" alt="" caption="An <code>og-images</code> repository uploaded with cover images for Tumblr posts" %}
 

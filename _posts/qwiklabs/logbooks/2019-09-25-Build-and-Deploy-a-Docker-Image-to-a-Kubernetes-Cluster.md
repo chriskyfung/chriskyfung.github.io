@@ -49,7 +49,7 @@ I recommend starting from preparing the hardware because the process takes time.
 
 If you do not remember how to build a docker image on GCP, I recommend you revise the lab _"[Introduction to Docker](https://www.qwiklabs.com/focuses/1029?parent=catalog)"_ before you start.
 
-1. (_Optional_)  While the provisioning of lab resources, you may click the [link](https://www.qwiklabs.com/instructions/162200/download) below the timer to download the given archive called `echo-web.tar.gz`. You may spend some time to study the contained files in your local storage.
+1. (_Optional_)  While the provisioning of lab resources, you may click the link below the timer to download the given archive called `echo-web.tar.gz`. You may spend some time to study the contained files in your local storage.
 
 {% include picture.html width="350" height="347"
 img="qwiklabs/qwiklabs-GSP304-step1-Download-Sample-Application-Files.png" alt="Download Sample Application with Docker Configuration" class="shadow-none text-center" %}

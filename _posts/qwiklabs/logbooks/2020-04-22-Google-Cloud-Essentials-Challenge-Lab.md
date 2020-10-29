@@ -55,7 +55,7 @@ Make sure you:
 
 ## Task 3: Setup an HTTP load balancer
 
-**Hint**: Refer and modify the procedures in the lab GSP007 [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/558?parent=catalog).
+**Hint**: Refer and modify the procedures in the lab GSP007 [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/12007?parent=catalog).
 
 Make sure you:
 

@@ -115,7 +115,7 @@ After that, you can `./` in front of the filename to execute the shell file in t
 - [Linux Commands - Complete Guide - LinOxide](https://linoxide.com/linux-how-to/linux-commands-brief-outline-examples/)
 - [Beginners/BashScripting - Community Help Wiki - Official Ubuntu Documentation](https://help.ubuntu.com/community/Beginners/BashScripting)
 - [How to Find Files on Linux With 3 Easy Commands - MakeUseOf](https://www.makeuseof.com/tag/3-examples-teach-find-files-linux/)
-- [5 commands to check memory usage on Linux - BinaryTides](https://www.binarytides.com/linux-command-check-memory-usage)
+- [5 commands to check memory usage on Linux - BinaryTides](https://www.binarytides.com/linux-command-check-memory-usage/)
 - [10 Useful du (Disk Usage) Commands to Find Disk Usage of Files and Directories - TecMint](https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/)
 
 **See Also**:

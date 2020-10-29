@@ -88,7 +88,7 @@ chriskyfung.github.io holds no responsibility for the technologies, tools, or pr
 
 Any advertisements served by Google Inc. (Google Adsense Program) and affiliated companies may be using cookies. These cookies allow Google to display ads based on your visits to this site and other sites that use Google advertising services. Learn how to [opt-out of Google's cookie usage](https://www.google.com/policies/technologies/ads/). Any tracking done by Google through cookies and other mechanisms is subject to Google's own privacy policies.
 
-Google, as a third-party vendor, uses cookies to serve ads on your site. Google's use of the DART cookie enables it to serve ads to your users based on their visit to your sites and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the [Google ad and content network privacy policy](https://www.google.com/privacy_ads.html).
+Google, as a third-party vendor, uses cookies to serve ads on your site. Google's use of the DART cookie enables it to serve ads to your users based on their visit to your sites and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the [Google ad and content network privacy policy](https://policies.google.com/technologies/ads).
 
 ## About analytics services
 

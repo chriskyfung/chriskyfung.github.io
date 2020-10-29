@@ -16,11 +16,11 @@ image:
 ### Preparation
 Beforehand, you have to download the installers of **Android Studio** and **JDK7 or higher** from the following links:
 
-<i class='fas fa-download'></i> [**Download Android Studio and SDK Tools \| Android Developers**](https://developer.android.com/sdk/index.html)
+<i class='fas fa-download'></i> [**Download Android Studio and SDK Tools \| Android Developers**](https://developer.android.com/studio)
 
 <span style="color:red;">The file size of This installer has over 1GB. It may take times to download depending on your network speed.</span>
 
-<i class='fas fa-download'></i> [**Java SE Development Kit 7u79**](https://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+<i class='fas fa-download'></i> [**Java SE Development Kit 7u79**](https://www.oracle.com/java/technologies/javase-downloads.html)
 
 ### Steps of Installation
 1. First, install the JDK7. (It will take 5 to 10 mins)

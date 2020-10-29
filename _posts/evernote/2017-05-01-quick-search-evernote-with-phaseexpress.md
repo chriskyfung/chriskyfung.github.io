@@ -57,7 +57,7 @@ img="evernote/evernote-search-results-returned-by-cli-shorthand.png" alt="Search
 
 1. [Control Evernote from the Windows command line - Evernote Developers](https://dev.evernote.com/doc/articles/enscript.php)
 
-2. [Command line arguments in Evernote-ENScript - Windows Desktop Help - Evernote User Forum](https://discussion.evernote.com/topic/80570-command-line-arguments-in-evernoteenscript/)
+2. [Command line arguments in Evernote-ENScript - Windows Desktop Help - Evernote User Forum](https://discussion.evernote.com/forums/topic/80570-command-line-arguments-in-evernoteenscript/)
 
 Does it help? I hope you can leave your comments below.
 
