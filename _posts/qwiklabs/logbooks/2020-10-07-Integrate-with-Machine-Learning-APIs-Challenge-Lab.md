@@ -195,7 +195,7 @@ The query results should look like:
   [Classify Text into Categories with the Natural Language API - Qwiklabs](https://www.qwiklabs.com/focuses/1749?parent=catalog)
 
 📌 Hints for Tasks 3 - 5  
-  [Integrating Machine Learning APIs - Google Codelabs](https://codelabs.developers.google.com/codelabs/cloud-ml-apis/index.html)
+  [Integrating Machine Learning APIs - Google Codelabs](https://developers.google.com/codelabs/cloud-ml-apis)
 {% include picture.html img="qwiklabs/gsp329-codelabs-reference.png" width="965" height="603" class="ml-li" %}
 
 * * *
@@ -208,5 +208,5 @@ The query results should look like:
 **Useful links**:
 
 - [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs - Qwiklabs](https://www.qwiklabs.com/focuses/1836?parent=catalog)
-- [Integrate with Machine Learning APIs: Challenge Lab Tutorial - by Ajil - Sep, 2020 - Medium](https://medium.com/@ajiltu5467/integrate-with-machine-learning-apis-challenge-lab-tutorial-4ed8c5cb983e)
+- [Integrate with Machine Learning APIs: Challenge Lab Tutorial - by Ajil - Sep, 2020 - Medium](https://medium.com/@ajiltu/integrate-with-machine-learning-apis-challenge-lab-tutorial-4ed8c5cb983e)
 
