@@ -354,7 +354,7 @@ Go the Cloud Shell, run the commands given in the lab.
 4. Enter the following:
 
    - **Target Endpoint Name**: _e.g._ `cloud`
-   - **HTTP Target**: _The Cloud Function Endpoint (e.g. https://<REGION>-<PROJECT-ID>.cloudfunctions.net)_
+   - **HTTP Target**: _The Cloud Function Endpoint_ (_e.g._ `https://<REGION>-<PROJECT-ID>.cloudfunctions.net`)
 
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task4-apigee-add-new-target-endpoint-cloud.png" width="698" height="457" class="ml-li text-center" %}
 
