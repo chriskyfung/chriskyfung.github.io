@@ -60,7 +60,7 @@ A = mseq2mat('■(1&0&0@0&1&0@0&0&1)')
 ```
 
 ## For Developers
-To develop your MATH translator, you can read the documentation _"[UTN #28: Nearly Plain-Text Encoding of Mathematics](https://www.unicode.org/notes/tn28/)"_ to explore how Microsoft uses Unicodes in encoding mathematical expressions. If you want to learn about the shortcut commands of MS Equation Editor, this [PDF Note](http://www.iun.edu/~mathiho/useful/Equation%20Editor%20Shortcut%20Commands.pdf) from _Indiana University Northwest_ should be helpful.
+To develop your MATH translator, you can read the documentation _"[UTN #28: Nearly Plain-Text Encoding of Mathematics](https://www.unicode.org/notes/tn28/)"_ to explore how Microsoft uses Unicodes in encoding mathematical expressions. If you want to learn about the shortcut commands of MS Equation Editor, this [PDF Note](https://pages.mtu.edu/~tbco/cm416/EquationEditor_main.pdf) from _Michigan Technological University_ should be helpful.
 
 Do you use any great tools when writing your reports and essays? Have a question or suggestion? Let us know in the comments below.
 

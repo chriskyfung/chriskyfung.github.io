@@ -23,7 +23,7 @@ img="evernote/ctrl-shirt-h-shortcut-keys.jpg" class="text-center shadow-none" %}
 
 Besides it is confusing, the key combination is really difficult to press with just one hand. The Ctrl and Shift keys are in the most lateral, while the **H** key locates at the middle of a keyboard. It is hard to drag and select text with your mouse, and press the default shortcut key simultaneously. Setting a custom hotkey is one way to cope with this problem, but Evernote has no such preference. To bypass this limitation, I recommend you to solve with PhraseExpress.
 
-[PhraseExpress](http://www.phraseexpress.com/freeware.htm) is **free-of-charge** to **personal users** (but you should purchase a license for commercial or professional use). So, I highly recommend you to download and install PhraseExpress on your desktops.  
+[PhraseExpress](https://www.phraseexpress.com/shop/freeware/) is **free-of-charge** to **personal users** (but you should purchase a license for commercial or professional use). So, I highly recommend you to download and install PhraseExpress on your desktops.  
 
 I will suggest you to custom your hotkey to a comfortable position with minimum finger movements. Thus, you don’t need to stretch your hands like a pianist. This simple method also helps you to focus on reading rather than a distracted mouse or keyboard motions. I wish my tips will boost your productivity and memory of note contents when using Evernote. You can follow my instruction below to setup your custom hotkey.  
 

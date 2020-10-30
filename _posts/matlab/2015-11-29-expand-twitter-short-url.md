@@ -76,7 +76,7 @@ response = urlread(fullURL);
 
 ### Receiving data from the API response
 
-For MATLAB/Octave, you can download [JSONlab: a toolbox to encode/decode JSON files](https://www.mathworks.com/matlabcentral/fileexchange/33381-jsonlab-a-toolbox-to-encode-decode-json-files) by [Qianqian Fang](https://www.mathworks.com/matlabcentral/profile/authors/1583198-qianqian-fang) from the **File Exchange** in **MATLAB Central**. The function to convert a JSON String to a MATLAB Struct is called `loadjson`. We can run the following script to get the expanded URL,
+For MATLAB/Octave, you can download [JSONlab: a toolbox to encode/decode JSON files](https://www.mathworks.com/matlabcentral/fileexchange/33381-jsonlab-a-toolbox-to-encode-decode-json-files) by [Qianqian Fang](https://www.mathworks.com/matlabcentral/profile/authors/1583198) from the **File Exchange** in **MATLAB Central**. The function to convert a JSON String to a MATLAB Struct is called `loadjson`. We can run the following script to get the expanded URL,
 
 ```matlab
 json = loadjson(response);

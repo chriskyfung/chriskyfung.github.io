@@ -8,7 +8,7 @@ tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/quick-search-evernote-with-phraseexpress
 ---
 
-The common way to search the contents in Evernote on your desktop or using the search bar in the desktop application. Another way may be just perform a normal Google search and the related articles in your Evernote account will be displayed if you have installed Evernote Web Clipper in your browser. But the second way does not always work. You may copy a keyword, switch to the Evernote window and paste the text in the search bar. I have searched the contents in Evernote in this way for more than six years. That is an annoying and stupid task repeating many times day by day. I always think about how to get rid of this [hamster wheel](http://www.urbandictionary.com/define.php?term=hamster%20wheel) and remove such inconvenience. Today, I want to introduce a method that I recently created to improve my productivity without difficult coding using python or other programming languages.
+The common way to search the contents in Evernote on your desktop or using the search bar in the desktop application. Another way may be just perform a normal Google search and the related articles in your Evernote account will be displayed if you have installed Evernote Web Clipper in your browser. But the second way does not always work. You may copy a keyword, switch to the Evernote window and paste the text in the search bar. I have searched the contents in Evernote in this way for more than six years. That is an annoying and stupid task repeating many times day by day. I always think about how to get rid of this [hamster wheel](https://www.urbandictionary.com/define.php?term=hamster%20wheel) and remove such inconvenience. Today, I want to introduce a method that I recently created to improve my productivity without difficult coding using python or other programming languages.
 
 <!--more-->
 
@@ -20,7 +20,7 @@ To boost your productivity in using Evernote on your desktop, what will you need
 
 ### What is PhraseExpress
 
-PhraseExpress is an Autotext or auto-complete typing assistant that monitors your keyboard to boost your productivity in typing with auto text expansion. You can create and store your frequently used texts as templates with PhraseExpress, therefore you can quickly recall them later on. You can also assign hotkeys for your favorite programs. I find PhraseExpress increases my productivity and streamlines my flow. PhraseExpress is **free-of-charge** to _personal users_ (but you should purchase a license for commercial or professional use). So, I highly recommend you to download and install PhraseExpress on your desktops. Visit [PhraseExpress’s website](http://www.phraseexpress.com/freeware.htm).
+PhraseExpress is an Autotext or auto-complete typing assistant that monitors your keyboard to boost your productivity in typing with auto text expansion. You can create and store your frequently used texts as templates with PhraseExpress, therefore you can quickly recall them later on. You can also assign hotkeys for your favorite programs. I find PhraseExpress increases my productivity and streamlines my flow. PhraseExpress is **free-of-charge** to _personal users_ (but you should purchase a license for commercial or professional use). So, I highly recommend you to download and install PhraseExpress on your desktops. Visit [PhraseExpress’s website](https://www.phraseexpress.com/shop/freeware/).
 
 ### How to configure
 

@@ -85,7 +85,7 @@ For more information, you can read the post _"[Userscript for Labelling Complete
 
 ## Tips for Preparing a Lab
 
-Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Medium](https://medium.com/@qwiklabs) ([@qwiklabs](https://medium.com/@qwiklabs)). Also, you may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
+Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Medium](https://qwiklabs.medium.com/) ([@qwiklabs](https://qwiklabs.medium.com/)). Also, you may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
 
 {% include youtube.html id="ew-r46FmzSM" playlist="PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" title="Qwiklabs Quests Previews | Google Cloud Labs" %}
 

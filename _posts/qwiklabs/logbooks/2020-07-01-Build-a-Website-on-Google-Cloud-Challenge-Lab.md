@@ -29,7 +29,7 @@ In this article, we will go through the lab **GSP319** _[Build a Website on Goog
 
 **Hint**: Refer and modify the procedures in the first two sections of the lab [Deploy Your Website on Cloud Run](https://www.qwiklabs.com/focuses/10445?parent=catalog)
 
-First of all, you need to clone the [project repository](https://github.com/googlecodelabs/monolith-to-microservices.git) from GitHub to your Cloud Shell environment.
+First of all, you need to clone the [project repository](https://github.com/googlecodelabs/monolith-to-microservices) from GitHub to your Cloud Shell environment.
 
 ```bash
 git clone https://github.com/googlecodelabs/monolith-to-microservices.git
