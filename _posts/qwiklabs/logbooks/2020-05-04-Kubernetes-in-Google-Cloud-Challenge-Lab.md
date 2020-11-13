@@ -294,4 +294,6 @@ Do you feel this challenge lab quite difficult? You might if you don't get enoug
 
 * * *
 
-**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**:
+- [Qwiklab/Logbook: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab)
+- [Qwiklabs/Logbook: Implement DevOps in Google Cloud: Challenge Lab"](/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab)

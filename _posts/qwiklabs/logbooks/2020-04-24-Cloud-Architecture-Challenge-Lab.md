@@ -220,4 +220,6 @@ This lab is challenging. You might not know what need to do if you cannot spot t
 
 * * *
 
-**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**:
+- [Qwiklab/Logbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
+- [Qwiklabs/Logbook: Implement DevOps in Google Cloud: Challenge Lab"](/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab)

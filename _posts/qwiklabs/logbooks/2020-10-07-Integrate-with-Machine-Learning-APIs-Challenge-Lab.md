@@ -18,7 +18,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP329** _[Integrate with Machine Learning APIs: Challenge Lab](https://www.qwiklabs.com/focuses/12704?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/136) exercise. You will practice the skills and knowledge for getting a service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
+In this article, we will go through the lab **GSP329** _[Integrate with Machine Learning APIs: Challenge Lab](https://www.qwiklabs.com/focuses/12704?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/136) exercise. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
 
 **Topics tested**:
 
