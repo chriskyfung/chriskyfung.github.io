@@ -5,7 +5,7 @@ description: "Feel free to bookmark this to keep an eye on my project updates"
 meta_description: "Chris KY FUNG's Blog."
 url: https://chriskyfung.github.io
 logo: 'assets/images/logo-plainSVG.svg'
-favicon: 'assets/images/favicon.png'
+favicon: 'assets/images/favicon_96x96.png'
 remote_theme: chriskyfung/amp-affiliately-jekyll-theme
 paginate: 12
 paginate_path: "/blog/page:num/"
