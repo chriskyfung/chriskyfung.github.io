@@ -20,7 +20,7 @@ Beforehand, you have to download the installers of **Android Studio** and **JDK7
 
 <span style="color:red;">The file size of This installer has over 1GB. It may take times to download depending on your network speed.</span>
 
-<i class='fas fa-download'></i> [**Java SE Development Kit 7u79**](https://www.oracle.com/java/technologies/javase-downloads.html)
+<i class='fas fa-download'></i> [**Java SE Development Kit 7u79**](https://www.oracle.com/java/technologies/javase-downloads.html#JDK8)
 
 ### Steps of Installation
 1. First, install the JDK7. (It will take 5 to 10 mins)

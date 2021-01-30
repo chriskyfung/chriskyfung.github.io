@@ -171,7 +171,7 @@ After pushing the container, the `valkyrie-app` repository will appear in the Cl
    Change the image tag from `v0.0.1` to `v0.0.2`. then save and exit.
 
    {:style="background:palegoldenrod;padding:5px 15px;"}
-   **Tips**: If you change the text mode editor from Vim to Nano by [`KUBE_EDITOR="nano"`](https://kubectl.docs.kubernetes.io/pages/imperative_porcelain/editing_workloads.html) before the **kubectl edit** command.
+   **Tips**: If you change the text mode editor from Vim to Nano by [`KUBE_EDITOR="nano"`](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#editing-resources) before the **kubectl edit** command.
 
 ## Task 6: Create a pipeline in Jenkins to deploy your app
 
