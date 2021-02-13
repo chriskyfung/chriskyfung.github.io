@@ -14,6 +14,8 @@ image: /images/header-bg.jpg
 comments: false
 amp:
     form: true
+custom_head: >-
+    <script async custom-element="amp-recaptcha-input" src="https://cdn.ampproject.org/v0/amp-recaptcha-input-0.1.js"></script>
 ---
 
 <p>Got a suggestion or some feedback to improve this website or want to inquire about something ?</p>
@@ -42,4 +44,6 @@ amp:
     
     <input class="btn btn-primary" type="submit" value="Send">
 
+    <amp-recaptcha-input layout="nodisplay" name="reCAPTCHA_contact_form" data-sitekey="6LcmAlcaAAAAAAAwjzVIk7dYGsWZF3M19XAgsy_f" data-action="reCAPTCHA_contact_form_submit">
+    </amp-recaptcha-input>
 </form>
