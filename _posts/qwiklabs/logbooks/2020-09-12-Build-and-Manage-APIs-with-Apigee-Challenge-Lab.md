@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "&#9729; Build and Manage APIs with Apigee: Challenge Lab"
+title: "☁ Build and Manage APIs with Apigee: Challenge Lab"
 date: 2020-09-13 14:25 +0800
 category: Cloud
 author: chris

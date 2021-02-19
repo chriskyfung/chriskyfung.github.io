@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "&#9729; Build a Website on Google Cloud: Challenge Lab"
+title: "☁ Build a Website on Google Cloud: Challenge Lab"
 date: 2020-07-01 16:30 +0800
 category: Cloud
 author: chris
@@ -205,6 +205,6 @@ Most steps in the exercise are identical to those in the lab **Migrating a Monol
 
 **Keep on reading**:
 
-- [&#9729; Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
-- [&#9729; Build and Deploy a Docker Image to a Kubernetes Cluster](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster)
-- [&#9729; Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
+- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
+- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster)
+- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)

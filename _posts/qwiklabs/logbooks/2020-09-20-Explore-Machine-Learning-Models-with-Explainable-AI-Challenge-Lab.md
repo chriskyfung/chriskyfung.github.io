@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "&#9729; Explore Machine Learning Models with Explainable AI: Challenge Lab"
+title: "☁ Explore Machine Learning Models with Explainable AI: Challenge Lab"
 date: 2020-09-28 1:25 +0800
 last_modified_at: 2020-10-29 16:20 +0800
 category: Cloud
@@ -212,7 +212,7 @@ Run the last cell in the notebook to activate What-If Tool. Explore the differen
 
 **Keep on reading**:
 
-- [&#9729; Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
+- [☁ Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
 
 **Useful links**:
 

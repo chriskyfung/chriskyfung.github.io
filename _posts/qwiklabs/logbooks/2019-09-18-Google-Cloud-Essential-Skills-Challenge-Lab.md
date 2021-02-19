@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "&#9729; Google Cloud Essential Skills: Challenge Lab"
+title: "☁ Google Cloud Essential Skills: Challenge Lab"
 author: chris
 date: 2019-09-18
 category: Cloud

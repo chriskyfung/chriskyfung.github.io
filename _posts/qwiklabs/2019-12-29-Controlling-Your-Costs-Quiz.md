@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "&#9729; Controlling Your Costs [Quiz]"
+title: "☁ Controlling Your Costs [Quiz]"
 date: 2019-11-26 11:56
 author: chris
 category: Cloud

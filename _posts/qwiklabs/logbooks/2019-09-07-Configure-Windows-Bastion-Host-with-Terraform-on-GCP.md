@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "&#9729; Configure Secure RDP using a Windows Bastion Host with Terraform on GCP"
+title: "☁ Configure Secure RDP using a Windows Bastion Host with Terraform on GCP"
 author: chris
 date: 2019-09-07
 category: Cloud

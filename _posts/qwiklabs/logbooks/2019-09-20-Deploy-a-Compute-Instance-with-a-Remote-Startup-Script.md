@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "&#9729; Deploy a Compute Instance with a Remote Startup Script"
+title: "☁ Deploy a Compute Instance with a Remote Startup Script"
 author: chris
 date: 2019-09-20
 category: Cloud
