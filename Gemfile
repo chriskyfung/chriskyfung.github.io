@@ -22,5 +22,7 @@ group :jekyll_plugins do
     gem 'jekyll-gzip'
     gem 'jekyll-redirect-from'
     gem 'jekyll-remote-theme'
+    gem 'jekyll-relative-links'
+    gem 'jemoji'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]

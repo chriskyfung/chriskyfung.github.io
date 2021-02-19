@@ -33,6 +33,8 @@ authors:
     facebook: https://www.facebook.com/chriskyfung/
     description: "Author of this blog, M.Phil."
 
+exclude: [sync.ffs_db]
+
 # Plugins
 plugins: 
   - jekyll-paginate
@@ -45,7 +47,9 @@ plugins:
   - jekyll-gzip
   - jekyll-redirect-from
   - jekyll-remote-theme
-        
+  - jekyll-relative-links
+  - jemoji
+
 # Archives
 jekyll-archives:
   enabled:
@@ -69,7 +73,7 @@ jekyll-minifier:
 # Site configuration for the WebP Generator Plugin
 # The values here represent the defaults if nothing is set
 webp:
-  enabled: true
+  enabled: false
   
   # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
   quality: 75
