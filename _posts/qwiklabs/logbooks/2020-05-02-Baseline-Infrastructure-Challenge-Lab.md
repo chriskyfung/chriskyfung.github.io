@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog: Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab"
+title: "&#9729; Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab"
 author: chris
 date: 2020-05-02 +0800
 last_modified_at: 2020-08-04 10:08:00 +0800

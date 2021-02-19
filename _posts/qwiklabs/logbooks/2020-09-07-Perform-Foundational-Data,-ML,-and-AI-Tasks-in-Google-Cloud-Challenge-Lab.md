@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog: Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab"
+title: "&#9729; Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab"
 date: 2020-09-08 05:30 +0800
 category: Cloud
 author: chris

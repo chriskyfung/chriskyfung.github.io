@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog: Build and Secure Networks in Google Cloud: Challenge Lab"
+title: "&#9729; Build and Secure Networks in Google Cloud: Challenge Lab"
 date: 2020-08-15 12:00 +0800
 category: Cloud
 author: chris

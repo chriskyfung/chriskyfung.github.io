@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog: Implement DevOps in Google Cloud: Challenge Lab"
+title: "&#9729; Implement DevOps in Google Cloud: Challenge Lab"
 date: 2020-11-13 16:22 +0800
 category: Cloud
 author: chris

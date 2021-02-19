@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog: Build and Deploy a Docker Image to a Kubernetes Cluster"
+title: "&#9729; Build and Deploy a Docker Image to a Kubernetes Cluster"
 author: chris
 date: 2019-09-25 +0800
 category: Cloud

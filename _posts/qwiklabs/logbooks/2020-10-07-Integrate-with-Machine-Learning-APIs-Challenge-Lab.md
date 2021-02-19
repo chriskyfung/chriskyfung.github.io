@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog: Integrate with Machine Learning APIs: Challenge Lab"
+title: "&#9729; Integrate with Machine Learning APIs: Challenge Lab"
 date: 2020-10-7 17:30 +0800
 category: Cloud
 author: chris

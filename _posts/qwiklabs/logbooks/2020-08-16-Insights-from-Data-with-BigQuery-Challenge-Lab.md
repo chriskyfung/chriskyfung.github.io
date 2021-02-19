@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qlog: Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
+title: "&#9729; Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
 date: 2020-08-16 06:48 +0800
 last_modified_at: 2020-10-08 03:56 +0800
 category: Cloud
@@ -115,7 +115,7 @@ WHERE
 ```
 
 {:style="margin-top:-20px;padding:0px 5px;font-size:small"}
-💬 Thanks [Random32543654e474362](https://chriskyfung.gitlab.io/disqus-amp/q.html?url=https://chriskyfung.github.io/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab&title=%27Qlog:%20Insights%20from%20Data%20with%20BigQuery:%20Challenge%20Lab%20(COVID-19%20Open%20Data)%27#comment-5100690845) for providing the update of Query 3.
+💬 Thanks [Random32543654e474362](https://chriskyfung.gitlab.io/disqus-amp/q.html?url=https://chriskyfung.github.io/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab#comment-5100690845) for providing the update of Query 3.
 
 <amp-accordion disable-session-states animate>
   <section>
@@ -385,4 +385,4 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 **Keep on reading**:
 
-- [QLogbook: Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
+- [&#9729; Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
