@@ -4,7 +4,7 @@ title: "Expand shorten URLs in MATLAB"
 author: chris
 date: 2020-05-15
 category: Academic
-tags: [MATLAB, Twitter, Data-Science]
+tags: [MATLAB, Twitter, Data Science]
 permalink: /blog/matlab/expand-twitter-short-url
 image:
     hide: true
@@ -96,6 +96,6 @@ redirectUrl = substr{2};
 
 **Keep on reading**:
 
-- [Working MATLAB with MS Excel](/blog/matlab/Working-MATLAB-with-MS-Excel)
+- [Working MATLAB with MS Excel]{% post_url matlab/2015-03-10-Working-MATLAB-with-MS-Excel %}
 
-- [Matrix Conversion between MATLAB and Microsoft Equation Editor](/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation)
+- [Matrix Conversion between MATLAB and Microsoft Equation Editor]{% post_url matlab/2020-01-15-Convert-MATLAB-Matrix-to-MS-Office-Equation %}

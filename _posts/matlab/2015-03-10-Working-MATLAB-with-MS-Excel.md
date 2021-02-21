@@ -4,7 +4,7 @@ title: "Working MATLAB with MS Excel"
 author: chris
 date: 2015-03-10
 category: Academic
-tags: [MATLAB, MS Excel, Data-Science]
+tags: [MATLAB, MS Excel, Data Science]
 image: 
    path: /images/posts/matlab/excel_addin_menu.png
    width: 251
@@ -45,5 +45,5 @@ img="matlab/excel_addin_menu_right_click.png" alt="image: context menu of MATLAB
 * * *
 
 **Keep on reading**:
-- [Matrix Conversion between MATLAB and Microsoft Equation Editor](/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation)
-- [Expand shorten URLs in MATLAB](/blog/matlab/expand-twitter-short-url)
+- [Matrix Conversion between MATLAB and Microsoft Equation Editor]{% post_url matlab/2020-01-15-Convert-MATLAB-Matrix-to-MS-Office-Equation %}
+- [Expand shorten URLs in MATLAB]({% post_url matlab/2015-11-29-expand-twitter-short-url %})
