@@ -1,27 +1,65 @@
 # Site
+remote_theme: chriskyfung/amp-affiliately-jekyll-theme
+
 name: "Chris KY FUNG's Page"
 title: "Chris KY FUNG's Blog"
 description: "Feel free to bookmark this to keep an eye on my project updates"
 meta_description: "Chris KY FUNG's Blog."
-url: https://chriskyfung.github.io
-logo: 'assets/images/logo-plainSVG.svg'
-favicon: 'assets/images/favicon_96x96.png'
-remote_theme: chriskyfung/amp-affiliately-jekyll-theme
-paginate: 12
-paginate_path: "/blog/page:num/"
-permalink: /blog/:year/:month/:day/:title
-timezone: 'Asia/Hong_Kong'
 baseurl: ''
-email: ''
+url: https://chriskyfung.github.io
+favicon: 'assets/images/favicon_96x96.png'
+logo: 'assets/images/logo-plainSVG.svg'
+timezone: 'Asia/Hong_Kong'
+
+permalink: /blog/:year/:month/:day/:title
+paginate_path: "/blog/page:num/"
+paginate: 12
+
+repository: chriskyfung/AutoFetcher-IG-Stories-to-GDrive
+
+sidebar:
+  featured: false
+  recent_posts: false
+
+# AddThis Inline Share Buttons
+addthis: 
+  pid: ra-5d01c83d522ad580 # Addthis profile id
+  wid: 7kfz # Addthis widget id
+
+# Disqus Comments
+amp_disqus: 
+  shortname: 'chriskyfung' # Disqus shortname
+  url: 'https://chriskyfung.gitlab.io/disqus-amp/' #baseurl of your AMP disqus iframe element
+  height: 580
+
+# Google Custom Search Engine ID
+cse_id: 011006674894885990812:tjln7k0nyjx 
+
+# Analytics
 google_analytics: 'UA-72575541-9' # Google Analytics Tracking ID
 gtm: 'GTM-WQMQK3X' # Google Tag Manager ID
-cse_id: 011006674894885990812:tjln7k0nyjx # Google Custom Search Engine ID
-adsense: 'ca-pub-4819282024314540' # Google Adsense ID
-disqus: 'chriskyfung' # Disqus shortname
-amp_disqus_url: 'https://chriskyfung.gitlab.io/disqus-amp/' #baseurl of your AMP disqus iframe element
-amp_disqus_height: 580
-addthis: ra-5d01c83d522ad580
-buyme: chriskyfung
+
+# Google Ads
+adsense: 
+  client_id: 'ca-pub-4819282024314540' # Google Adsense client ID
+  ad_slot:
+    before_content: 2454411055 # Ad Slot that places before content
+    sidebar: 1391498756 # Ad Slot that places to sidebar
+
+# Soical Buttons
+facebook_id: chriskyfung
+pinterest_id: chriskyfung
+github_id : chriskyfung
+medium_id: chriskyfung
+
+# Buy Me a Coffee
+buymeacoffee: chriskyfung
+
+# Copyright Start Year
+copyright: 
+  prefix: 2014-
+  ownership: Chris KY FUNG
+  link: https://chriskyfung.github.io/
 
 # Authors
 authors:
@@ -33,8 +71,6 @@ authors:
     web: https://en.gravatar.com/chrisfungky
     facebook: https://www.facebook.com/chriskyfung/
     description: "Author of this blog, M.Phil."
-
-exclude: [sync.ffs_db]
 
 # Plugins
 plugins: 
@@ -71,40 +107,5 @@ relative_links:
   enabled: true
   collections: true
 
-############################################################
-# Site configuration for the WebP Generator Plugin
-# The values here represent the defaults if nothing is set
-webp:
-  enabled: false
-  
-  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
-  quality: 75
-
-  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
-  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
-  img_dir: ["/images/", "/assets/images"]
-
-  # Whether to search in nested directories or not
-  nested: true
-
-  # add ".gif" to the format list to generate webp for animated gifs as well
-  formats: [".jpeg", ".jpg", ".png", ".tiff"]
-
-  # File extensions for animated gif files 
-  gifs: [".gif"]
-
-  # Set to true to always regenerate existing webp files
-  regenerate: false
-
-  # Local path to the WebP utilities to use (relative or absolute)
-  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
-  webp_path: nil
-
-  # List of files or directories to excludes
-  # e.g. custom or hand generated webp conversion files
-  exclude: []
-
-  # append '.webp' to filename after original extension rather than replacing it.
-  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
-  append_ext: false
-############################################################
+# Directories and/or files from the conversion
+exclude: [sync.ffs_db]

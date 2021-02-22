@@ -37,7 +37,7 @@ comments: false
         
         {% for post in site.posts limit:4 %}
         
-        {% include featuredbox.html %}
+        {% include blocks/featured-box.html %}
         
         {% endfor %}
         
@@ -48,7 +48,7 @@ comments: false
 <section class="recent-posts row">
 
     <div class="col-sm-4">
-        {% include sidebar.html %}
+        {% include sidebar/sidebar.html %}
     </div>
 
     <div class="col-sm-8">
