@@ -6,9 +6,10 @@ last_modified_at: 2020-06-20 23:36 +0800
 author: chris
 category: Cloud
 tags: [Qwiklabs, Google Cloud, User tips, Learning map]
-permalink: /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
+permalink: /blog/qwiklabs/qwiklabs-user-tips-for-learning-google-cloud-platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
+ - /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 image: 
   path: /images/posts/qwiklabs/qwiklabs-badges.jpg
   height: 410

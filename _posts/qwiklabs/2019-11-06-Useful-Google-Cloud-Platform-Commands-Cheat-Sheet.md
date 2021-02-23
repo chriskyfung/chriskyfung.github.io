@@ -5,7 +5,9 @@ date: 2019-11-06 13:12 +0800
 category: Cloud
 author: chris
 tags: [Google Cloud, User tips, GCLOUD, Terraform, Qwiklabs, Shorthand]
-permalink: /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
+permalink: /blog/qwiklabs/useful-google-cloud-platform-commands-cheat-sheet
+redirect_from:
+ - /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
 css:
     syntax: true
 ---

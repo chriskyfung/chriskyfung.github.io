@@ -6,8 +6,10 @@ date: 2020-04-24 +0800
 last_modified_at: 2020-06-22 10:05:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
-permalink: /blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab
-redirect_from: /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
+permalink: /blog/qwiklabs/deploy-and-manage-cloud-environments-with-google-cloud-challenge-lab
+redirect_from:
+ - /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
+ - /blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab
 excerpt: Hints for qwiklab GSP314 "Deploy and Manage Cloud Environments with Google Cloud&#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
 image: 
    path: /images/posts/qwiklabs/qwiklab-GSP314-spinaker-production.png

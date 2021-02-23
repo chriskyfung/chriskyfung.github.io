@@ -5,9 +5,10 @@ date: 2019-11-26 11:56
 author: chris
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
-permalink: /blog/qwiklabs/Controlling-Your-Costs-Quiz
+permalink: /blog/qwiklabs/controlling-your-costs-quiz
 redirect_from:
  - /blog/2019/12/29/Controlling-Your-Costs-Quiz
+ - /blog/qwiklabs/Controlling-Your-Costs-Quiz
 ---
 
 This post records the correct answers for the Qwiklabs quiz ["Knowledge Check: Controlling Your Costs search"](https://www.qwiklabs.com/quizzes/183), which is a part of the quest [_"Optimizing Your GCP Costs"_](https://www.qwiklabs.com/quests/97).

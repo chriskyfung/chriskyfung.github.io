@@ -5,7 +5,9 @@ date: 2020-09-13 14:25 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Apigee]
-permalink: /blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab
+permalink: /blog/qwiklabs/build-and-manage-apis-with-apigee-challenge-lab
+redirect_from: 
+ - /blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg
    width: 962
