@@ -202,12 +202,13 @@ At the end of the lab, your BigQuery dataset should contains the following table
 
 {% include youtube.html id="myYCfRS15fM" title="GSP327 Engineer Data in Google Cloud: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Start Lab
-00:50 Task 1: Clean your training data
-11:28 Task 2: Create a BQML model called `taxirides.fare_model`
+00:50 Task1: Clean your training data
+11:28 Task2: Create a BQML model called `taxirides.fare_model`
 19:24 Bouns - Improve model performance by training with ST_distance() and ST_GeogPoint() functions
-23:06 Task 3: Perform a batch prediction on new data
+23:06 Task3: Perform a batch prediction on new data
 ```
 
 * * *

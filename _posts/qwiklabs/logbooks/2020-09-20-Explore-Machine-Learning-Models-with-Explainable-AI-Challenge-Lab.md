@@ -200,7 +200,8 @@ Run the last cell in the notebook to activate What-If Tool. Explore the differen
 
 {% include youtube.html id="UzP2pX1qayA" title="GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Start Lab
 00:35 Start a JupyterLab Notebook instance
 03:43 Download the Challenge Notebook

@@ -295,10 +295,11 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 {% include youtube.html id="iAGiLYAx7z8" title="GSP323 Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Start Lab
-00:38 Task 1: Run a simple Dataflow job
-08:34 Task 2: Run a simple Dataproc job
-09:24 Task 3: Run a simple Dataprep job
-15:22 Task 4: AI
+00:38 Task1: Run a simple Dataflow job
+08:34 Task2: Run a simple Dataproc job
+09:24 Task3: Run a simple Dataprep job
+15:22 Task4: AI
 ```

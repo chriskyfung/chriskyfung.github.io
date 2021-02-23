@@ -141,7 +141,8 @@ After configuring the firewall rules, try to verify the environment via the bast
 
 {% include youtube.html id="NToEHzJTpgs" title="GSP322 Build and Secure Networks in Google Cloud: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 0:00 Start Lab and Provisioning
 2:18 Remove the overly permissive rules
 3:00 Start the bastion host instance

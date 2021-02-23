@@ -299,7 +299,8 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 {% include youtube.html id="p3jUogiOQqk" title="GSP321 Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab (Revised Ed.)" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Lab start and provisioning
 01:06 Create development VPC manually
 02:50 Create production VPC using Deployment Manager

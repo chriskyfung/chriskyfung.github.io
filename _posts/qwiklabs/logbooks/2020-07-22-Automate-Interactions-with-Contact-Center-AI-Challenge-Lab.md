@@ -157,16 +157,17 @@ Only Task 7 was a little tricky. You will get stuck if you try to make a copy of
 
 {% include youtube.html id="uiKc2_i8IOM" title="GSP311 Automate Interactions with Contact Center AI: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Lab start
-00:59 Task 1: Create a Cloud Storage Bucket
-01:58 Task 2: Create a Cloud Function
-04:07 Task 3: Create a BigQuery Dataset
-05:00 Task 4: Create Cloud Pub/Sub Topic
-05:52 Task 5: Create a Cloud Storage Bucket for Staging Contents
-06:21 Task 6: Deploy a Cloud Dataflow Pipeline
-13:36 Task 7: Upload Sample Audio Files for Processing
-17:05 Task 8: Run a Data Loss Prevention Job
+00:59 Task1: Create a Cloud Storage Bucket
+01:58 Task2: Create a Cloud Function
+04:07 Task3: Create a BigQuery Dataset
+05:00 Task4: Create Cloud Pub/Sub Topic
+05:52 Task5: Create a Cloud Storage Bucket for Staging Contents
+06:21 Task6: Deploy a Cloud Dataflow Pipeline
+13:36 Task7: Upload Sample Audio Files for Processing
+17:05 Task8: Run a Data Loss Prevention Job
 ```
 
 * * *

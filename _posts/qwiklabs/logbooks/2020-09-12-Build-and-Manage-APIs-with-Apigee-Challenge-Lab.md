@@ -437,7 +437,8 @@ Expected output:
 
 {% include youtube.html id="Hcs40i_2o0E" title="GSP336 Build and Manage APIs with Apigee: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Start Lab
 --- Task 1 ---
 00:40 Define a RESTful API in Apigee using an API specification

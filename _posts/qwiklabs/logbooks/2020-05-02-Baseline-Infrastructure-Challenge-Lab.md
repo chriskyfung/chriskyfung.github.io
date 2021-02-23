@@ -90,7 +90,8 @@ All tasks can be done with the Cloud Console. There should be no difficulty for 
 
 {% include youtube.html id="5UrQ9D-epG8" title="GSP315 Perform Foundational Infrastructure Tasks in Google Cloud= Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 0:00 Start Lab 🔬
 0:35 Task 1: Create a bucket
 0:57 Task 2: Create a Pub/Sub topic

@@ -362,7 +362,8 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 {% include youtube.html id="3zxclCMoQeM" title="GSP787 Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Start Lab
 00:30 Open "COVID-19 Open data" public dataset
 01:34 Query 1: Total Confirmed Cases

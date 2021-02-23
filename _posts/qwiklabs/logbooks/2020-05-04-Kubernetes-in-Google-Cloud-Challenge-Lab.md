@@ -278,7 +278,8 @@ Finally, manually trigger the build in the Jenkins console
 
 {% include youtube.html id="jtHZ_aSlI-4" title="GSP318 Deploy to Kubernetes in Google Cloud: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 0:00 Start Lab & Overview
 1:18 Task 1: Create a Docker image and store the Dockerfile
 3:29 Task 2: Test the created Docker image

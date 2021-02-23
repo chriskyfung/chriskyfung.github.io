@@ -174,15 +174,16 @@ The query results should look like:
 
 {% include youtube.html id="kEEqbeqR6og" title="GSP329 Integrate with Machine Learning APIs: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Lab Overview
 01:56 Start Lab
 03:21 Confirm Cloud Vision, AutoML Translation, and BigQuery APIs are enabled
-04:55 Task 1: Configure a service account to access the Machine Learning APIs, BigQuery, and Cloud Storage
-06:54 Task 2: Create and download a credential file for your Service Account
-08:05 Task 3: Modify the Python script to extract text from image files
-12:50 Task 4: Modify the Python script to translate the text using the Translation API
-14:05 Task 5: Identify the most common non-English language used in the signs in the data set
+04:55 Task1: Configure a service account to access the Machine Learning APIs, BigQuery, and Cloud Storage
+06:54 Task2: Create and download a credential file for your Service Account
+08:05 Task3: Modify the Python script to extract text from image files
+12:50 Task4: Modify the Python script to translate the text using the Translation API
+14:05 Task5: Identify the most common non-English language used in the signs in the data set
 14:35 Process the image files using the updated Python
 17:21 Confirm that image data has been successfully uploaded to BigQuery
 ```

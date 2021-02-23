@@ -306,11 +306,12 @@ This process takes about five minutes to complete.
 
 {% include youtube.html id="pSSA6vlRgtA" title="GSP330 Implement DevOps in Google Cloud: Challenge Lab" %}
 
-```ts
+```conf
+⏱Timestamps:
 00:00 Lab Overview
 00:48 Review previous Lab Exercise GSP051
 02:15 Inspect the provisioned lab resources
-03:26 Task 1: Configure a Jenkins pipeline for continuous deployment to Kubernetes Engine
+03:26 Task1: Configure a Jenkins pipeline for continuous deployment to Kubernetes Engine
 04:52 Configure and Install Helm
 08:16 Retrieve and decode the Jenkins Admin password
 09:05 Configure kubectl proxy to access the Jenkins UI
@@ -319,9 +320,9 @@ This process takes about five minutes to complete.
 12:00 Add your service account credentials to Jenkins
 12:59 Configure the multibranch Jenkins pipeline job
 17:24 Examine the console output from the Jenkins pipeline
-22:42 Task 2: Push an update to the application to a development branch
-27:45 Task 3: Push a Canary deployment to the production namespace
-30:30 Task 4: Promote the Canary Deployment to production
+22:42 Task2: Push an update to the application to a development branch
+27:45 Task3: Push a Canary deployment to the production namespace
+30:30 Task4: Promote the Canary Deployment to production
 ```
 
 * * *
