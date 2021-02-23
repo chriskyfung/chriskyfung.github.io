@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Automate Interactions with Contact Center AI: Challenge Lab"
+title: "☁ Automate Interactions with Contact Center AI: Challenge Lab | logbook"
 date: 2020-07-22 12:32 +0800
 category: Cloud
 author: chris

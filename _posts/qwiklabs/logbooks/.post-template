@@ -1,0 +1,18 @@
+---
+layout: post
+title: "☁"
+date: YYYY-MM-DD HH:MM +0800
+category: Cloud
+author: chris
+tags: [Qwiklabs, Google Cloud, Logbook]
+permalink: /blog/qwiklabs/
+image: 
+   path: /images/posts/.png
+excerpt: 
+amp:
+   youtube: true
+css:
+   syntax: true
+   custom: >
+      .ml-li { margin-left: 2rem }
+---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Deploy to Kubernetes in Google Cloud: Challenge Lab"
+title: "☁ Deploy to Kubernetes in Google Cloud: Challenge Lab | logbook"
 author: chris
 date: 2020-05-04 +0800
 last_modified_at: 2020-10-19 09:25:00 +0800

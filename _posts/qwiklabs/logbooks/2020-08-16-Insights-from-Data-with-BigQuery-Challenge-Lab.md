@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)"
+title: "☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) | logbook"
 date: 2020-08-16 06:48 +0800
 last_modified_at: 2020-10-08 03:56 +0800
 category: Cloud
@@ -385,4 +385,4 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 **Keep on reading**:
 
-- [☁ Engineer Data in Google Cloud: Challenge Lab](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
+- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)

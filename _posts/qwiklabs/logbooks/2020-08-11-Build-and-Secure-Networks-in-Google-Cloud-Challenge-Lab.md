@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Build and Secure Networks in Google Cloud: Challenge Lab"
+title: "☁ Build and Secure Networks in Google Cloud: Challenge Lab | logbook"
 date: 2020-08-15 12:00 +0800
 category: Cloud
 author: chris

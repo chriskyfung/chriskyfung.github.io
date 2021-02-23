@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Configure a Firewall and a Startup Script with Deployment Manager"
+title: "☁ Configure a Firewall and a Startup Script with Deployment Manager | logbook"
 author: chris
 date: 2019-09-23 +0800
 last_modified_at: 2020-03-26 +0800

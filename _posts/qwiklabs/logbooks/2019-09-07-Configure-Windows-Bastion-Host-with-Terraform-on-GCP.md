@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Configure Secure RDP using a Windows Bastion Host with Terraform on GCP"
+title: "☁ Configure Secure RDP using a Windows Bastion Host with Terraform on GCP | logbook"
 author: chris
 date: 2019-09-07
 category: Cloud
@@ -261,7 +261,7 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-[Next lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you will be examined the skils for building and deploying a containerized application with Docker and Google Kubernetes Engine.
+[Next lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you will be examined the skills for building and deploying a containerized application with Docker and Google Kubernetes Engine.
 
 * * *
 

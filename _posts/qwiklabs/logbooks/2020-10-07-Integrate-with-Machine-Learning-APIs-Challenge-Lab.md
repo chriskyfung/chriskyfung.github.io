@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Integrate with Machine Learning APIs: Challenge Lab"
+title: "☁ Integrate with Machine Learning APIs: Challenge Lab | logbook"
 date: 2020-10-7 17:30 +0800
 category: Cloud
 author: chris

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab"
+title: "☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab | logbook"
 author: chris
 date: 2020-04-24 +0800
 last_modified_at: 2020-06-22 10:05:00 +0800

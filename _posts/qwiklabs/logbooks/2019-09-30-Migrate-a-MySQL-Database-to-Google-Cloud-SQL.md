@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Migrate a MySQL Database to Google Cloud SQL"
+title: "☁ Migrate a MySQL Database to Google Cloud SQL | logbook"
 author: chris
 date: 2019-09-30
 category: Cloud
@@ -213,7 +213,7 @@ Next time, I will try to write a review about different quests in Qwiklabs. I ho
 **Keep on reading**:
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
-- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
+- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
 
 **Useful external link**:
 

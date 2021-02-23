@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster"
+title: "☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster | logbook"
 author: chris
 date: 2019-09-27 +0800
 category: Cloud

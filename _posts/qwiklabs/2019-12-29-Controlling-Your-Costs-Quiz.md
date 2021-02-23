@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Controlling Your Costs [Quiz]"
+title: "☁ Controlling Your Costs [Quiz] | logbook"
 date: 2019-11-26 11:56
 author: chris
 category: Cloud

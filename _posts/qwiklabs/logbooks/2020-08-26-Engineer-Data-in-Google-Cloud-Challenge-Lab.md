@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Engineer Data in Google Cloud: Challenge Lab"
+title: "☁ Engineer Data in Google Cloud: Challenge Lab | logbook"
 date: 2020-08-26 15:30 +0800
 category: Cloud
 author: chris
@@ -214,5 +214,5 @@ At the end of the lab, your BigQuery dataset should contains the following table
 
 **Keep on reading**:
 
-- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)](/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab)
-- [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab](/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab)
+- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook](/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab)
+- [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook](/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab)
