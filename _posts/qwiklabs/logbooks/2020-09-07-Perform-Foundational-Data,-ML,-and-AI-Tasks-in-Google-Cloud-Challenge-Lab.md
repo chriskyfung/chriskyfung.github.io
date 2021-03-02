@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp323-cloud-dataprep.png
-excerpt: A brief procedure for the qwiklab practice GSP323. You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
+excerpt:  A brief procedure for the Google self-paced lab GSP323 on Qwiklabs. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
 amp:
    youtube: true
 css:
@@ -18,7 +18,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/117) exercise. You will practice the skills and knowledge for running Dataflow, Dataproc and Dataprep as well as Google Cloud Speedch API.
+In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/117) exercise. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
 
 **The challenge contains 4 required tasks:**
 
@@ -99,7 +99,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 2. Click **CREATE CLUSTER**.
 3. Make sure the cluster is going to create in the region **us-central1**.
 4. Click **Create**.
-5. After the cluster has been created, clik the **SSH** button in the row of the master instance.
+5. After the cluster has been created, click the **SSH** button in the row of the master instance.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataproc-ssh.png" width="1269" height="501" class="ml-li" %}
 
@@ -110,7 +110,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    ```
 
 7. Close the SSH window and go back to the Cloud Console.
-8. Click **SUBMIT JOB** in the cluster details page.
+8. Click **SUBMIT JOB** on the cluster details page.
 9. Select **Spark** from the dropdown of "Job type".
 10. Copy `org.apache.spark.examples.SparkPageRank` to "Main class or jar".
 11. Copy `file:///usr/lib/spark/examples/jars/spark-examples.jar` to "Jar files".
@@ -126,7 +126,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 ### Import runs.csv to Dataprep
 
 1. In the Cloud Console, click on **Navigation menu** > **Dataprep**.
-2. After enter the home page of Cloud Dataprep, click the **Import Data** button.
+2. After entering the home page of Cloud Dataprep, click the **Import Data** button.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-home.png" width="1248" height="589" class="ml-li" %}
 
@@ -143,7 +143,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 ### Transform data in Dataprep
 
 1. After launching the Dataperop Transformer, scroll right to the end and select **column10**.
-2. In the Details pane, click **FAILURE** under Unique Values to show context menu.
+2. In the Details pane, click **FAILURE** under Unique Values to show the context menu.
 3. Select **Delete rows with selected values** to Remove all rows with the state of "FAILURE".
 
    {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-remove-rows-with-status-failure.png" width="710" height="499" class="ml-li text-center" %}
@@ -170,7 +170,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    10. state
 
 {:start="8"}
-8. Confirm the recipe. It should like the sceenshot below.
+8. Confirm the recipe. It should like the screenshot below.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-final-recipe.png" width="378" height="615" class="ml-li text-center" %}
 
@@ -185,7 +185,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 1. In the Cloud Console, click on **Navigation menu** > **APIs & Services** > **Credentials**.
 2. In the Credentials page, click on **+ CREATE CREDENTIALS** > **API key**.
-3. Copy the API key to clipboard, then click **RESTRICT KEY**.
+3. Copy the API key to the clipboard, then click **RESTRICT KEY**.
 4. Open the Cloud Shell, store the API key as an environment variable by running the following command:
 
    ```bash

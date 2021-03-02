@@ -12,7 +12,7 @@ image:
    path: /images/posts/qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg
    width: 962
    height: 639
-excerpt: A brief procedure for the qwiklab practice GSP336. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
+excerpt: A brief procedure for the Google self-paced lab GSP336 on Qwiklabs. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
 amp:
    youtube: true
 css:
@@ -90,7 +90,7 @@ Apigee now deploys the API proxy into your test environment. Click **Edit proxy*
 
 #### Provision a Mock Response in Apigee
 
-1. In the page of **API Proxies** > **Verification-API-v1**, click the **Develop** tab in the top right.
+1. On the page of **API Proxies** > **Verification-API-v1**, click the **Develop** tab in the top right.
 2. To add a policy to your proxy, click on **Proxy Endpoints** → **PreFlow** in the Navigator tab, then in the Response pipeline, click **+ Step** to add a step.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-develop-init.png" width="1920" height="1080" class="ml-li" %}
@@ -166,13 +166,13 @@ curl -X POST \
 
 #### Create an extension and deploy it to test the environment using this service account
 
-1. Go back to Apigee, naviagte to **Admin** > **Extensions** from the left navigation menu, then **+ Add Extension** to create a new extension.
+1. Go back to Apigee, navigate to **Admin** > **Extensions** from the left navigation menu, then **+ Add Extension** to create a new extension.
 2. On the new Extension Properties page, click on the **Google Stackdriver Logging** extension.
 3. Enter a name (e.g. `stackdriver-logging-extension`) and an optional description for the Extension instance, then click **Create**.
 4. On the Extension detail page, click the arrow (>) for the test environment to configure the instance for the Apigee environment.
 5. In the configuration dialog. enter the following information:
 
-   - Select the latest extension version from the Version drop-down list.
+   - Select the latest extension version from the Version dropdown list.
    - Add your GCP Project ID (which you can get from the Home Console).
    - Open the downloaded JSON file and copy/paste the contents into the Credential field in the Apigee UI.
 
@@ -323,7 +323,7 @@ Error response message:
 
 #### Deploy the real backend on Cloud Function
 
-Go the Cloud Shell, run the commands given in the lab.
+Go to the Cloud Shell, run the commands given in the lab.
 
    ```bash
    # Make subdirectories for the code

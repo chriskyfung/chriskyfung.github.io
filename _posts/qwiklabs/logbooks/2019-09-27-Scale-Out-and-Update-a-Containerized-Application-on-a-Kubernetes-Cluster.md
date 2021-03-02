@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes]
 permalink: /blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
 redirect_from:
  - /blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
-excerpt: A lab summary of qwiklab GSP305 "Scale Out and Update a Containerized Application on a Kubernetes Cluster" | 1. Build a Docker Image of Sample Application with a `v2` tag | 2. Update the Application to the Kubernetes Cluster Using Web Console | 3. Scale out the application so that the Kubernetes cluster deployment
+excerpt: A summary of Google self-paced lab GSP305 "Scale Out and Update a Containerized Application on a Kubernetes Cluster" on Qwiklabs | 1. Build a Docker Image of Sample Application with a `v2` tag | 2. Update the Application to the Kubernetes Cluster Using Web Console | 3. Scale out the application so that the Kubernetes cluster deployment
 image: 
   path: /images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png
   width: 524
@@ -17,7 +17,7 @@ css:
   syntax: true
 ---
 
-In the [last lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you built a docker image and created a Kubernetes cluster for a containerized application, called `echo-app`. Considering your developer team delivers a new version of the application to you, so you need to update the running application on the cluster to the new version. You may also need to scale the cluster size to optimize the usage and performance. You will do this in the lab **GSP305** _"[Scale Out and Update a Containerized Application on a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1739?parent=catalog)"_. This lab will perform provisioning of the application `echo-app:v1` as the same in the previous lab. You will continue practising with the `echo-app` application in the `echo-web` deployment, and update its version from v1 to v2.
+In the [last lab]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %}), you built a docker image and created a Kubernetes cluster for a containerized application, called `echo-app`. Considering your developer team delivers a new version of the application to you, so you need to update the running application on the cluster to the new version. You may also need to scale the cluster size to optimize the usage and performance. You will do this in the lab **GSP305** _"[Scale Out and Update a Containerized Application on a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1739?parent=catalog)"_. This lab will perform provisioning of the application `echo-app:v1` as the same in the previous lab. You will continue practising with the `echo-app` application in the `echo-web` deployment, and update its version from v1 to v2.
 
 ## Brief Introduction of Challenge Scenario
 
@@ -34,7 +34,7 @@ The screenshot above shows that there are 4 steps required for completing this l
 
 ## Build a Docker Image of Sample Application with a `v2` tag
 
-Just similar to the [steps in the last lab](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster), you can start with the pre-uploaded archive that contains the sample application and the docker configuration in the Cloud Storage bucket. Use a `gsutil cp` command to copy the archive from the Cloud Storage to the Cloud Shell environment. Next, use a `tar -xvzf` command to unzip the files. You may use a code editor to compare the change between the v1 and v2 codes. After that, use `docker` commands to build, tag and push the new container image to Google Container Registry (gcr.io). If you do not remember how to build a docker image on GCP, I recommend you revise the lab _"[Introduction to Docker](https://www.qwiklabs.com/focuses/1029?parent=catalog)"_ before you start.
+Just similar to the [steps in the last lab]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %}), you can start with the pre-uploaded archive that contains the sample application and the docker configuration in the Cloud Storage bucket. Use a `gsutil cp` command to copy the archive from the Cloud Storage to the Cloud Shell environment. Next, use a `tar -xvzf` command to unzip the files. You may use a code editor to compare the change between the v1 and v2 codes. After that, use `docker` commands to build, tag and push the new container image to Google Container Registry (gcr.io). If you do not remember how to build a docker image on GCP, I recommend you revise the lab _"[Introduction to Docker](https://www.qwiklabs.com/focuses/1029?parent=catalog)"_ before you start.
 
 Edit the line in the `/manifests/echoweb-deployment.yaml` file defining which image to use:
 ```yaml
@@ -102,7 +102,7 @@ In the Scale dialog, type 2 to the field **Replicas**,
 
 Click **SCALE**, then waits for creating/deleting instances until 2 replicas exist in the Kubernetes cluster.
 
-Open the IP address of the external endpoint, you should see a similiar web response:<br>
+Open the IP address of the external endpoint, you should see a similar web response:<br>
 {% include picture.html width="362" height="119" img="qwiklabs/qwiklabs-GSP305-step6-updated-echo-app-application.png" alt="Resulted web page" class="text-center" %}
 
 Congratulations! You should accomplish the lab if you follow the above steps.
@@ -111,6 +111,6 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-Do you feel this lab difficult for you? [Next lab](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL) will be even more challenging, but do not stop here. That is the final lab of the quest. You can earn a badge very soon!
+Do you feel this lab difficult for you? [Next lab]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %}) will be even more challenging, but do not stop here. That is the final lab of the quest. You can earn a badge very soon!
 
-**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})

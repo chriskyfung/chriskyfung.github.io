@@ -4,12 +4,12 @@ title: "☁ Secure Workloads in Google Kubernetes Engine: Challenge Lab | logboo
 date: 2021-02-23 11:30 +0800
 category: Cloud
 author: chris
-tags: [Qwiklabs, Google Cloud, Logbook]
+tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/secure-workloads-in-google-kubernetes-engine-challenge-lab
 redirect: /blog/qwiklabs/Secure-Workloads-in-Google-Kubernetes-Engine-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/gsp335-cover.png
-excerpt: A brief procedure for the qwiklab practice GSP335. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to setup HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Polices, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups. 
+excerpt: A brief procedure for the Google self-paced lab GSP335 on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
 amp:
    youtube: true
 css:
@@ -19,7 +19,7 @@ css:
       .tips-card { padding: 1rem; background-color: gold; }
 ---
 
-In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/142) exercise. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to setup HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Polices, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
+In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/142) exercise. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
 
 **Topics tested**:
 
@@ -30,7 +30,7 @@ In this article, we will go through the lab **GSP335** _[Secure Workloads in Goo
 
 ## Your challenge
 
-You need to secure a WordPress running on GKE that uses Cloud SQL as it's database.
+You need to secure a WordPress running on GKE that uses Cloud SQL as its database.
 
 ## Task 0: Download the necessary files
 
@@ -78,24 +78,24 @@ Alternatively, you can create the cluster using the Cloud Console.
 
 ## Task 2: Setup WordPress
 
-This task involves the following three substasks:
+This task involves the following three subtasks:
 - a) Setup the Cloud SQL database and database username and password
 - b) Create a service account for access to your WordPress database from your WordPress instances
 - c) Create the WordPress deployment and service
 
-You can perform the first two subtasks simultaneously, while you are creating the cluster in Task 1. It usually takes more time on GCP to create a Cloud SQL instance, compared to a Kubernetes cluster. Both the Cloud SQL and the cluster will be ready, when you are going to conduct the rest of tasks.
+You can perform the first two subtasks simultaneously, while you are creating the cluster in Task 1. It usually takes more time on GCP to create a Cloud SQL instance, compared to a Kubernetes cluster. Both the Cloud SQL and the cluster will be ready when you are going to conduct the rest of the tasks.
 
 ### Setup the Cloud SQL database and database username and password
 
 #### Create a Cloud SQL instance
 
-You can create the Cloud SQL instance using either Cloud Console or Cloud Shell. In production, I will suggest you to go for the Cloud Console because you can better look at all the configuration. But in this lab, you can simply run the following command to create a default MySQL instance in the region **us-central1**:
+You can create the Cloud SQL instance using either Cloud Console or Cloud Shell. In production, I will suggest you go for the Cloud Console because you can better look at all the configurations. But in this lab, you can simply run the following command to create a default MySQL instance in the region **us-central1**:
 
 ```bash
 gcloud sql instances create kraken-cloud-sql --region us-central1
 ```
 
-**Related documentations**:
+**Related documentation**:
 - [Creating a MySQL instance \| Cloud SQL for MySQL](https://cloud.google.com/sql/docs/mysql/create-instance#create-2nd-gen)
 - [gcloud compute instances create \| Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
 
@@ -115,12 +115,12 @@ It usually requires 5 - 10 minutes to process.
 3. Click **ADD USER ACCOUNT*.
 4. Enter `wordpress` as the User name.
 5. Enter a password that you can remember.
-6. Select **Allow any host (%)** for the Host name.
+6. Select **Allow any host (%)** for the name of Host.
 6. Click **Add**.
 
 {% capture tips2 %}
 **Command-line method** \
-You may also try use the following command line to create the database and the user:
+You may also try using the following command line to create the database and the user:
 
 ```bash
 gcloud sql databases create wordpress --instance kraken-cloud-sql --charset utf8 --collation utf8_general_ci
@@ -186,7 +186,7 @@ Save the file changes, and run the following to apply the file to create the Wor
 kubectl apply -f wordpress.yaml
 ```
 
-To verify the deployment, navigate to the Kubernetes Engine page in the Cloud Console. Now you should see `wordpress` in the Workloads tab as weell as the Services tab.
+To verify the deployment, navigate to the Kubernetes Engine page in the Cloud Console. Now you should see `wordpress` in the Workloads tab as well as the Services tab.
 
 ## Task 3: Setup Ingress with TLS
 
@@ -196,7 +196,7 @@ In this this challenge lab, please note that you have to install the same `nginx
 
 ### Set up nginx-ingress environment
 
-The nginx-ingress will be installed using Helm. A recent, stable version of Helm should be pre-installed to your Cloud Shell. Run `helm version` to check which version you are using and also ensure that Helm is installed:
+The nginx-ingress will be installed using Helm. A recent, stable version of Helm should be pre-installed on your Cloud Shell. Run `helm version` to check which version you are using and also ensure that Helm is installed:
 
 ```bash
 helm version
@@ -212,7 +212,7 @@ helm repo update
 {% capture tips-install-helm %}
 **Install Helm**
 
-If your environment has not installed with Helm, you can run the following to [automatically grab the latest version of Helm and install it locally](https://helm.sh/docs/intro/install/#from-script).
+If your environment does not install with Helm, you can run the following to [automatically grab the latest version of Helm and install it locally](https://helm.sh/docs/intro/install/#from-script).
 
 ```bash
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
@@ -223,7 +223,7 @@ chmod 700 get_helm.sh
 
 {% include callout.html content=tips-install-helm %}
 
-Go head and use the following `helm` command to install stable nginx-ingress:
+Go ahead and use the following `helm` command to install stable nginx-ingress:
 
 ```bash
 helm install nginx-ingress stable/nginx-ingress --set rbac.create=true
@@ -237,9 +237,9 @@ kubectl get service nginx-ingress-controller -w
 
 ### Set up your DNS record
 
-Once the service obtained as external IP address, press **Ctrl + C** to stop the previous command. You can now continue to set up your DNS record.
+Once the service obtained an external IP address, press **Ctrl + C** to stop the previous command. You can now continue to set up your DNS record.
 
-A shell script called `add_ip.sh` is provided and you has downloaded to the Cloud Shell at the beginning of the lab. Execute it by running this command:
+A shell script called `add_ip.sh` is provided, and you have downloaded it to the Cloud Shell at the beginning of the lab. Execute it by running this command:
 
 ```bash
 . add_ip.sh
@@ -285,16 +285,16 @@ Save the file changes and run the following:
 kubectl apply -f ingress.yaml
 ```
 
-**Tips:** To learn more about, read the [Securing NGINX-ingress](https://cert-manager.io/docs/tutorials/acme/ingress/) tutorial on the cert-manager website.
+**Tips:** To learn more, read the [Securing NGINX-ingress](https://cert-manager.io/docs/tutorials/acme/ingress/) tutorial on the cert-manager website.
 
-Open the your domain name `https://YOUR_LAB_USERNAME.labdns.xyz` with HTTPS in a new tab. Now the WordPress application should be assessible like this:
+Open your domain name `https://YOUR_LAB_USERNAME.labdns.xyz` with HTTPS in a new tab. Now the WordPress application should be accessible like this:
 
 {% include picture.html img="/qwiklabs/gsp335-task3-success-deployed-wordpress.png" width="1249" height="736" alt="The WordPress deployed on the secured GKE" %}
 
 
 ## Task 4: Set up Network Policy
 
-Open the `network-policy.yaml` in an editor. You should see there are already two network policies. The first one is to deny all ingress from internet and the second one is to allow the traffic from `ngnix-ingress` to `wordpress`.
+Open the `network-policy.yaml` in an editor. You should see there are already two network policies. The first one is to deny all ingress from the internet and the second one is to allow the traffic from `ngnix-ingress` to `wordpress`.
 
 You need to add one more network policy to allow ingress traffic from the internet into `nginx-ingress`. Use the second network policy as a template to compose a new policy. Change values of `name` and `spec` to the configuration like this:
 
@@ -322,7 +322,7 @@ Run the following to apply the configuration file:
 kubectl apply -f network-policy.yaml
 ```
 
-**Related documentations:**
+**Related documentation:**
 - [Creating a cluster network policy \| Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/network-policy#using-gcloud-init)
 - [Network Policies \| Kubernetes](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 - [Declare Network Policy \| Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
@@ -336,11 +336,11 @@ kubectl apply -f network-policy.yaml
 
 1. In the Cloud Console, navigate to **Security** > **Binary Authorization**.
 2. Enable the **Binary Authorization API**.
-3. In the Binary Authorization page, click on **CONFIGURE POLICY**.
-4. Select _Disallow all images_ for **Default rule**.
+3. On the Binary Authorization page, click on **CONFIGURE POLICY**.
+4. Select _Disallow all images_ for the **Default rule**.
 5. Scroll down to Images exempt from this policy, click **ADD IMAGE PATH**.
 6. Paste `docker.io/library/wordpress:latest` to the textbox, and click **DONE**.
-7. Repeat above two steps to add the following image paths:
+7. Repeat the above two steps to add the following image paths:
    - us.gcr.io/k8s-artifacts-prod/ingress-nginx/*
    - gcr.io/cloudsql-docker/*
    - quay.io/jetstack/*
@@ -416,3 +416,8 @@ Task3: Setup Ingress with TLS
 12:40 Task6: Setup Pod Security Policy
 ```
 
+**Keep on reading**:
+- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})

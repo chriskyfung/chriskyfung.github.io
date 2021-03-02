@@ -9,7 +9,7 @@ tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
 redirect_from:
  - /blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
-excerpt: A lab summary of qwiklab GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
+excerpt: A summary of Google self-paced lab GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" on Qwiklabs | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
 image: 
    path: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
    height: 447
@@ -87,9 +87,9 @@ Open the `install-web.sh` file, you should see the following codes:
 {% include picture.html height="296"
 img="qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor.png" alt="Snapshot of the given startup script in Cloud Shell code editor" %}
 
-Let recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)"_.
+Let recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})"_.
 
-This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)"_. You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). For more information, read [Running startup scripts
+This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})"_. You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). For more information, read [Running startup scripts
 ](https://cloud.google.com/compute/docs/startupscript) in the Cloud Deployment Manager documentation.
 
 Add the following properties to the instance configuration:
@@ -169,10 +169,10 @@ If you finished the first three labs of the challenge quest, you are capable of 
 
 **See Also**
 
-- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
 
-- [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
+- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
 
-- [Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)
+- [☁ Deploy a Compute Instance with a Remote Startup Script \| logbook]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
 
-- [Qwiklabs/Logbook: Build and Secure Networks in Google Cloud: Challenge Lab](/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab)
+- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})

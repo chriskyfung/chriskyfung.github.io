@@ -9,7 +9,8 @@ tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp321-title.jpg
-excerpt: A brief procedure for the qwiklab practice GSP321. You will practice the skills and knowledge for deploy VPCs for development and production, a Kubernetes cluster and a Cloud SQL instance for a WordPress site.
+excerpt: A brief procedure for the Google self-paced lab GSP321 on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
+
 amp:
    youtube: true
 css:
@@ -19,7 +20,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/119) exercise. You will practice the skills and knowledge for deploy VPCs for development and production, a Kubernetes cluster and a Cloud SQL instance for a WordPress site.
+In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/119) exercise. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
 
 **The challenge contains 9 required tasks:**
 
@@ -148,7 +149,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    **Note**: In real practice, you must set a strong password.
 
 5. Click **Create**.
-6. Click the `griffin-dev-db` in the SQL pane after it has created.
+6. Click the `griffin-dev-db` in the SQL pane after it has been created.
 7. Under **Connect to this instance**, click on **Connect using Cloud Shell**.
 8. Go back to the Cloud Shell, run:
 
@@ -214,7 +215,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 3. Replace `username_goes_here` and `password_goes_here` to `wp_user` and `stormwind_rules`, respectively.
 4. Save the file change.
-5. After the Kubernetes cluster has created, click on the **Connect** button.
+5. After the Kubernetes cluster has been created, click on the **Connect** button.
 6. Run the following command to connect the cluster:
 
    ```bash
@@ -319,10 +320,11 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 **Keep on reading**:
 
-- [Qwiklabs/Logbook: Build and Secure Networks in Google Cloud: Challenge Lab](/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab)
-- [Qwiklab/Logbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
-- [Qwiklab/Logbook: Build a Website on Google Cloud: Challenge Lab](/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab)
-- [Qwiklab/Logbook: Migrate a MySQL Database to Google Cloud SQL](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL)
+- [☁ Secure Workloads in Google Kubernetes Engine: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-02-23-secure-workloads-in-google-kubernetes-engine-challenge-lab %})
+- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build a Website on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-01-Build-a-Website-on-Google-Cloud-Challenge-Lab %})
+- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
 
 **Useful external link**:
 

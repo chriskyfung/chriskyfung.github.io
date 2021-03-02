@@ -254,4 +254,4 @@ _Replace `<your-filename>` and `/*text contents*/` with yours._
 
 This list will be kept updated. If you need more, please leave me your feedback, questions, comments, suggestions below.
 
-**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})

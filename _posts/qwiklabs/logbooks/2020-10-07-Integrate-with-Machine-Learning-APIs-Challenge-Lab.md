@@ -9,7 +9,7 @@ permalink: /blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/gsp329-cover.png
    fit: left
-excerpt: A brief procedure for the qwiklab practice GSP329. You will practice the skills and knowledge for getting a service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
+excerpt: A brief procedure for the Google self-paced lab GSP329 on Qwiklabs. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
 amp:
    youtube: true
 css:
@@ -37,7 +37,7 @@ export PROJECT=<Your_Project_ID>
 gcloud iam service-accounts create my-account --display-name my-account
 ```
 
-> Tip 1. You do not need to provide any specific permissions to a service account to access most of the Google Machine Learning APIs such as the Google Cloud Vision and Translation APIs. The Python script does need permissions to access BigQuery and to create objects in Cloud Storage. The easiest way to do that is to bind the service account to `roles/bigquery.admin` and `roles/storage.admin`.
+> Tip 1. You do not need to provide any specific permissions to a service account to access most of the Google Machine Learning APIs, such as the Google Cloud Vision and Translation APIs. The Python script does need permissions to access BigQuery and to create objects in Cloud Storage. The easiest way to do that is to bind the service account to `roles/bigquery.admin` and `roles/storage.admin`.
 
 Once you have created the account, bind the BigQuery Admin and Cloud Storage Admin roles to the Service Account to provide the IAM permissions required to process files from Cloud Storage and insert the result data into a BigQuery table.
 
@@ -77,7 +77,7 @@ Open the Cloud Shell Editor to review and edit the script file.
 
 {% include picture.html img="qwiklabs/gsp329-task3-analyze-image-py-file.png" width="1259" height="934" %}
 
-There are three unfinished parts in the script that you must complete to make the correct Machine Learning API calls. All of them are preceded with a comment using the label `# TBD:`. You will need to make use of the Vision API, the Translation API, and the BigQuery API. The import of the Google Cloud Library modules for the required APIs have been done in line 7 of the script file. Note down the name of their API clients that have also been declared from lines 25 to 32.
+There are three unfinished parts in the script that you must complete to make the correct Machine Learning API calls. All of them are preceded with a comment using the label `# TBD:`. You will need to make use of the Vision API, the Translation API, and the BigQuery API. The import of the Google Cloud Library modules for the required APIs has been done in line 7 of the script file. Note down the name of their API clients that have also been declared from lines 25 to 32.
 
 In Task 3, you need to add your codes to the following part of the script file.
 
@@ -203,8 +203,8 @@ The query results should look like:
 
 **Keep on reading**:
 
-- [Qwiklab/Logbook: Automate Interactions with Contact Center AI: Challenge Lab](/blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab)
-- [Qwiklabs/Logbook: Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](/blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab)
+- [☁ Automate Interactions with Contact Center AI: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-22-Automate-Interactions-with-Contact-Center-AI-Challenge-Lab %})
+- [☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-09-07-Perform-Foundational-Data,-ML,-and-AI-Tasks-in-Google-Cloud-Challenge-Lab %})
 
 **Useful links**:
 

@@ -10,7 +10,7 @@ permalink: /blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp787-00.jpg
    fit: right
-excerpt: A brief procedure for the qwiklab practice GSP787. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
+excerpt: A brief procedure for the Google self-paced lab GSP787 on Qwiklabs. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
 amp:
    youtube: true
 css:
@@ -347,7 +347,7 @@ from summary
 
 2. Click on **EXPLORE DATA** > **Explore with Data Studio**.
 3. Authorize Data Studio to access BigQuery.
-4. You may fail to create a report for the first-time logon of Data Studio. Click **+ Blank Report** and accept the Terms of Service. Go back to the BigQuery page and click **Explore with Data Studio** again.
+4. You may fail to create a report for the first-time login of Data Studio. Click **+ Blank Report** and accept the Terms of Service. Go back to the BigQuery page and click **Explore with Data Studio** again.
 5. In the new Data Studio report, select **Add a chart** > **Time series Chart**.
 6. Add `country_cases` and `country_deaths` to the Metric field.
 7. Click **Save** to commit the change.
@@ -386,4 +386,4 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 **Keep on reading**:
 
-- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
+- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})

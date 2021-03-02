@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, WordPress, MySQL]
 permalink: /blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
 redirect_from:
  - /blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
-excerpt: A lab summary of qwiklab GSP306 "Migrate a MySQL Database to Google Cloud SQL" | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
+excerpt: A summary of Google self-paced lab GSP306 "Migrate a MySQL Database to Google Cloud SQL" on Qwiklabs | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
 image: 
    path: /images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png
    height: 317
@@ -18,7 +18,7 @@ css:
 
 This is the last article of the series about the Qwiklabs quest **_"Challenge: GCP Architecture"_**. Compared to the previous labs, this one is more practical and also valuable for non-developers. We will touch a WordPress site in the lab **GSP306** _"[Migrate a MySQL Database to Google Cloud SQL](https://www.qwiklabs.com/focuses/1740?parent=catalog)"_ this time. It is useful if you are going to move or integrate your applications with flexible and scalable Cloud SQL service.
 
-An existing WordPress installation in the Compute Instance called `blog` that is already running in the lab. The blog is connecting with a MySQL database running on the same server. You need to migrate the local database to Google Cloud SQL, and reconfigure the WordPress to access the Cloud database instead.
+An existing WordPress installation in the Compute Instance called `blog`, is already running in the lab. The blog is connecting with a MySQL database running on the same server. You need to migrate the local database to Google Cloud SQL and reconfigure WordPress to access the Cloud database instead.
 
 ## Brief Introduction of Challenge Scenario
 
@@ -166,11 +166,12 @@ Refresh the Demo Blog Site, the website becomes fail to render.
 
 Now you edit the WordPress configuration, such that it points to the Cloud SQL instance.
 
-Open the `wp-config.php`, such as using nano editor"
+Open the `wp-config.php`, such as using `nano` editor"
 
 ```bash
 sudo nano wp-config.php
 ```
+
 The file looks like below,
 
 {% include picture.html height="571" img="qwiklabs/qwiklabs-GSP306-step12-edit-wp-config-php-file.png" alt="" %}
@@ -208,12 +209,12 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-Next time, I will try to write a review about different quests in Qwiklabs. I hope you will visit my site again. See you soon!
+Next time, I will try to write a review about different quests in Qwiklabs. See you soon!
 
 **Keep on reading**:
 
-- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
-- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
+- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
 
 **Useful external link**:
 

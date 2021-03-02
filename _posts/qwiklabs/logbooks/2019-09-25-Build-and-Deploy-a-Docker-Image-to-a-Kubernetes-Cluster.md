@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
 permalink: /blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster
 redirect_from:
  - /blog/2019/09/25/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster
-excerpt: A lab summary of qwiklab GSP304 "Build and Deploy a Docker Image to a Kubernetes Cluster" | 1. Create a Kubernetes Cluster | 2. Build a Docker Image of Sample Application | 3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)  | 3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)
+excerpt: A summary of Google self-paced lab GSP304 "Build and Deploy a Docker Image to a Kubernetes Cluster" on Qwiklabs | 1. Create a Kubernetes Cluster | 2. Build a Docker Image of Sample Application | 3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)  | 3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)
 image: 
    path: /images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png
    width: 569
@@ -186,6 +186,6 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-[Next lab](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster) will continue this exercise and need to update the running `echo-app` application in the `echo-web` deployment from the v1 to the v2.
+[Next lab]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %}) will continue this exercise and need to update the running `echo-app` application in the `echo-web` deployment from the v1 to the v2.
 
-**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+**See Also**: [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})

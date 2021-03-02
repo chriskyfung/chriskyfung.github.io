@@ -9,7 +9,7 @@ permalink: /blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/gsp330-cover.png
    fit: left
-excerpt: A brief procedure for the qwiklab practice GSP330. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
+excerpt: A brief procedure for the Google self-paced lab GSP330 on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
 amp:
    youtube: true
 css:
@@ -23,7 +23,7 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
 **Topics tested**:
 
 - Use Jenkins console logs to resolve application deployment issues.
-- Deploy and a development update to a sample application for Jenkins to deply using a development pipeline.
+- Deploy and a development update to a sample application for Jenkins to deploy using a development pipeline.
 - Deploy and test a Kubernetes Canary deployment for a sample application.
 - Push the Canary application branch to master and confirm this triggers a production pipeline update.
 
@@ -35,7 +35,7 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
 
 2. Navigate to **Source Repositories**, click on `sample-app` and review the **Jenkinsfile** in the root of that repository.
 
-3. Also, review the YAML files for the three types of deployment (production, canary and dev) in the `sample-app/k8s` directory.
+3. Also, review the YAML files for the three types of deployment (production, canary, and dev) in the `sample-app/k8s` directory.
 
 3. Navigate to **Compute Engine** > **VM instances**, click on the **SSH** button of the instance named `kraken-jumphost`.
 
@@ -89,9 +89,9 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
    helm install cd stable/jenkins -f jenkins/values.yaml --version 1.2.2 --wait
    ```
 
-   This command may take a couple minutes to complete.
+   This command may take several minutes to complete.
 
-4. Once that command completes ensure the Jenkins pod goes to the Running state and the container is in the READY state:
+4. Once the command completed, ensure the Jenkins pod goes to the Running state and the container is in the READY state:
 
    ```bash
    kubectl get pods
@@ -169,11 +169,11 @@ Configure your credentials to allow Jenkins to access the code repository. Jenki
 
 #### Configure the Jenkins job
 
-After configure your credentials, follow these steps to configure a Pipeline job.
+After configuring your credentials, follow these steps to configure a Pipeline job.
 
 1. Click **Jenkins** to return the welcome page.
 
-2. Reload the page for a few times until you see a pipeline job named **sample-app** in the Jenkins user interface.
+2. Reload the page a few times until you see a pipeline job named **sample-app** in the Jenkins user interface.
 
    (If you fail to get any job, click **Jenkins** > **New Item** in the left navigation to create the multibranch pipeline.)
 
@@ -189,9 +189,9 @@ After configure your credentials, follow these steps to configure a Pipeline job
    {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.png" width="1024" height="430" class="ml-li" %}
 
 {:start="6"}
-6. In the Branch Sources section, click on **Add source** and choose **Git** from the dropdown.
+6. In the Branch Sources section, click on **Add source** and choose **Git** from the dropdown menu.
 
-7. Copy the Cloud Source URL of the **sample-app** repository to the **Project Repository** field. The URL should look like:
+7. Copy the Cloud Source URL of the **sample-app** repository to the **Project Repository** field. The URL should look like this:
 
    ```url
    https://source.developers.google.com/p/<YOUR-PROJECT-ID>/r/sample-app
@@ -234,7 +234,7 @@ This process takes about five minutes to complete.
    git checkout -b new-feature
    ```
 
-2. Open the **main.go** file with `vi`, `nano` or the Cloud Shell Editor.
+2. Open the **main.go** file with `vi`, `nano`, or the Cloud Shell Editor.
 
 3. Update the version in the following line:
 
@@ -288,7 +288,7 @@ This process takes about five minutes to complete.
 
 ## Task 4: Promote the Canary Deployment to production
 
-1. Go back to the SSH window, run the following commands to merge the canary branch and push it to the Git server.
+1. Go back to the SSH window, run the following commands to merge the canary branch, and push it to the Git server.
 
    ```bash
    git checkout master
@@ -332,5 +332,5 @@ This process takes about five minutes to complete.
 - [Helm \| Installing Helm](https://helm.sh/docs/intro/install/)
 
 **Keep on reading**:
-- [Qwiklab/Logbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
-- [Qwiklab/Logbook: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab)
+- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})

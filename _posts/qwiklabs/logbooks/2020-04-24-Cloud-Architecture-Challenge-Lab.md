@@ -20,7 +20,7 @@ css:
 
 <!--more-->
 
-Did the hints from the [last article](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab) help you to finish the first challenge lab? Are you familiar with the basic knowledge from the **Google Cloud Essentials** quest now?
+Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}) help you to finish the first challenge lab? Are you familiar with the basic knowledge from the **Google Cloud Essentials** quest now?
 
 It's important before you move on to the exercise **GSP314** _[Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10417?parent=catalog)_, formerly known as _Cloud Architecture: Challenge Lab_, which will be studied below. This lab is much complicated than the last one. It will test your skills and knowledge for creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker. It requires you well understand and integrate what you learned and experienced from the labs in the Cloud Architecture quest.
 
@@ -223,5 +223,5 @@ This lab is challenging. You might not know what need to do if you cannot spot t
 * * *
 
 **See Also**:
-- [Qwiklab/Logbook: Deploy to Kubernetes in Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
-- [Qwiklabs/Logbook: Implement DevOps in Google Cloud: Challenge Lab"](/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab)
+- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})

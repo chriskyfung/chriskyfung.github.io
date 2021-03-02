@@ -71,7 +71,7 @@ You can also update the latest records by clicking on the *sync* <i class='fas f
 
 ### Changelog
 
-For more details, please go to the [Version History](/blog/qwiklabs/qwiklab-completion-tracker-versions) page.
+For more details, please go to the [Version History]({% post_url qwiklabs/completion-tracker/2020-07-03-qwiklab-completion-tracker-versions %}) page.
 
 ### Future Plans
 
@@ -81,8 +81,8 @@ For more details, please go to the [Version History](/blog/qwiklabs/qwiklab-comp
 
 **See Also**:
 
-- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
 
-- [Qwiklab/Logbook: Google Cloud Essential Skills: Challenge Lab](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
+- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
 
-- [Qwiklabs/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)
+- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})

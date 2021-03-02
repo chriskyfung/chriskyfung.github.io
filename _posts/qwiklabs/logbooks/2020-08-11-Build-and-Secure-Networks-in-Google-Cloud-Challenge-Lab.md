@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook, Secure VPC]
 permalink: /blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp322-title.jpg
-excerpt: A brief procedure for the qwiklab practice GSP322.
+excerpt: A brief procedure for the Google self-paced lab GSP322 on Qwiklabs.
 amp:
    youtube: true
 css:
@@ -24,10 +24,10 @@ In this article, we will go through the lab **GSP322** _[Build and Secure Networ
 
 1. Remove the overly permissive rules
 2. Start the bastion host instance
-3. Create a firewall rule that allows SSH (tcp/22) from the IAP service and add network tag on bastion
-4. Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add network tag on juice-shop
-5. Create a firewall rule that allows traffic on SSH (tcp/22) from acme-mgmt-subnet network address and add network tag on juice-shop
-6. SSH to bastion host via IAP and juice-shop via bastion
+3. Create a firewall rule that allows SSH (tcp/22) from the IAP service and add a network tag on `bastion`
+4. Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add a network tag on `juice-shop`
+5. Create a firewall rule that allows traffic on SSH (tcp/22) from `acme-mgmt-subnet` network address and add a network tag on `juice-shop`
+6. SSH to bastion host via IAP and `juice-shop` via `bastion`
 
 
 ## 1. Remove the overly permissive rules
@@ -55,7 +55,7 @@ This task is very simple. You only need to the open-access firewall rules.
 3. Add `bastion` to the **Network tags** field.
 4. Scroll to the button of the page and click **Save**.
 
-### Create firewall rule to allow SSH form the IAP service
+### Create firewall rule to allow SSH from the IAP service
 
 Read [**Using IAP for TCP forwarding**](https://cloud.google.com/iap/docs/using-tcp-forwarding#create-firewall-rule) in the Google Cloud Documentation before you create the firewall rule.
 
@@ -146,8 +146,8 @@ After configuring the firewall rules, try to verify the environment via the bast
 0:00 Start Lab and Provisioning
 2:18 Remove the overly permissive rules
 3:00 Start the bastion host instance
-5:37 Create a firewall rule that allows SSH (tcp/22) from the IAP service and add network tag on bastion
-7:30 Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add network tag on juice-shop
+5:37 Create a firewall rule that allows SSH (tcp/22) from the IAP service and add a network tag on bastion
+7:30 Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add a network tag on juice-shop
 9:20 Create a firewall rule that allows traffic on SSH (tcp/22) from acme-mgmt-subnet
 11:18 SSH to bastion host via IAP and juice-shop via bastion
 ```
@@ -156,6 +156,6 @@ After configuring the firewall rules, try to verify the environment via the bast
 
 **Keep on reading**:
 
-- [Qwiklabs/Logbook: Configure a Firewall and a Startup Script with Deployment Manager](/blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager)
-- [Qwiklabs/Logbook: Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
-- [Qwiklabs/Logbook: Configure Secure RDP using a Windows Bastion Host with Terraform on GCP](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)
+- [☁ Configure a Firewall and a Startup Script with Deployment Manager \| logbook]({% post_url qwiklabs/logbooks/2019-09-23-Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager %})
+- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
+- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform on GCP \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})

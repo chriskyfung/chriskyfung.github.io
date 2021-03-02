@@ -10,14 +10,14 @@ image:
    path: /images/posts/qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png
    width: 842
    height: 808
-excerpt: A brief procedure for the qwiklab practice GSP311.
+excerpt: A brief procedure for the Google self-paced lab GSP311 on Qwiklabs.
 amp:
    youtube: true
 css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP311** _[Automate Interactions with Contact Center AI: Challenge Lab](https://www.qwiklabs.com/focuses/12008?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/127) exercise. You will practice the skills and knowledge for deploy Cloud Dataflow Pipeline to transcript audio files and store the data to BigQuery. You will also need to implement Data Loss Prevention API for redacting the sensitive data from the audio transcriptions (such as name, email, phone number, and SSN).
+In this article, we will go through the lab **GSP311** _[Automate Interactions with Contact Center AI: Challenge Lab](https://www.qwiklabs.com/focuses/12008?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/127) exercise. You will practice the skills and knowledge to deploy Cloud Dataflow Pipeline to transcript audio files and store the data to BigQuery. You will also need to implement Data Loss Prevention API for redacting the sensitive data from the audio transcriptions (such as name, email, phone number, and SSN).
 
 **The challenge contains 8 required tasks:**
 
@@ -174,4 +174,4 @@ Only Task 7 was a little tricky. You will get stuck if you try to make a copy of
 
 **Keep on reading**:
 
-- [Qwiklabs/Logbook: Integrate with Machine Learning APIs: Challenge Lab](/blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab)
+- [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})

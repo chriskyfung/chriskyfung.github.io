@@ -82,7 +82,7 @@ The prototyped tool can help you visually identify the completed catalogue items
 
 {% include picture.html width="510" height="345" img="qwiklabs-complete-indicator-lab-page-demo.png" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" caption="Fig. Effects on a completed lab page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
 
-For more information, you can read the post _"[Userscript for Labelling Completed Qwiklabs](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs)"_.
+For more information, you can read the post _"[Userscript for Labelling Completed Qwiklabs]({% post_url qwiklabs/completion-tracker/2019-09-01-Userscript-for-Labelling-Completed-Qwiklabs %})"_.
 
 ## Tips for Preparing a Lab
 
@@ -162,39 +162,39 @@ Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Mediu
 
 _Resources:_
 
-- [Useful Google Cloud Platform Commands Cheat Sheet](/blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet)
+- [Useful Google Cloud Platform Commands Cheat Sheet]({% post_url qwiklabs/2019-11-06-Useful-Google-Cloud-Platform-Commands-Cheat-Sheet %})
 
 _The Cookbooks of Challenge Quest Series:_
 
 {% include picture.html width="473" height="188" img="qwiklabs/qwiklabs-change-badge-for-Challenge-GCP-Architecture-quest.png" alt="Badges for Challenge-GCP-Architecture: Before and After" class="text-center" caption="Badge Change in 2020" link="/blog/qwiklabs/where-does-my-bear-badge-go" %}
 
-- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook ](/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab)
-- [☁ Deploy a Compute Instance with a Remote Startup Script \| logbook ](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)
-- [☁ Configure a Firewall and a Startup Script with Deployment Manager \| logbook ](/blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager)
-- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform \| logbook ](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)
-- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster \| logbook ](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster)
-- [☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster \| logbook ](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster)
-- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook ](/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL)
+- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
+- [☁ Deploy a Compute Instance with a Remote Startup Script \| logbook ]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
+- [☁ Configure a Firewall and a Startup Script with Deployment Manager \| logbook ]({% post_url qwiklabs/logbooks/2019-09-23-Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager %})
+- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform \| logbook ]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})
+- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster \| logbook ]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
+- [☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster \| logbook ]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
+- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook ]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
 
 _The Hints for Challenge Labs 2020:_
-- [☁ Getting Started: Create and Manage Cloud Resources: Challenge Lab \| logbook ](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab)
-- [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab)
-- [☁ Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab)
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
-- [☁ Build a Website on Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab)
-- [☁ Automate Interactions with Contact Center AI: Challenge Lab \| logbook ](/blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab)
-- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
-- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab)
-- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook ](/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab)
-- [☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab)
-- [☁ Build and Manage APIs with Apigee: Challenge Lab \| logbook ](/blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab)
-- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook ](/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab)
-- [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook ](/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab)
-- [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook ](/blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab)
-- [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook ](/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab)
+- [☁ Getting Started: Create and Manage Cloud Resources: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %})
+- [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})
+- [☁ Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-02-Baseline-Infrastructure-Challenge-Lab %})
+- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build a Website on Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-07-01-Build-a-Website-on-Google-Cloud-Challenge-Lab %})
+- [☁ Automate Interactions with Contact Center AI: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-07-22-Automate-Interactions-with-Contact-Center-AI-Challenge-Lab %})
+- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook ]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
+- [☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-07-Perform-Foundational-Data,-ML,-and-AI-Tasks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build and Manage APIs with Apigee: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-12-Build-and-Manage-APIs-with-Apigee-Challenge-Lab %})
+- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})
+- [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-20-Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab %})
+- [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})
+- [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook ]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
 
 _Quizzes Answers:_
 
-- [☁ Controlling Your Costs [Quiz] \| logbook ](/blog/qwiklabs/Controlling-Your-Costs-Quiz)
+- [☁ Controlling Your Costs [Quiz] \| logbook ]({% post_url qwiklabs/2019-12-29-Controlling-Your-Costs-Quiz %})
 
 {% include datatables.html %}

@@ -8,14 +8,14 @@ tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning
 permalink: /blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/taxirides.jpg
-excerpt: A brief procedure for the qwiklab practice GSP327. You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
+excerpt: A brief procedure for the Google self-paced lab GSP327 on Qwiklabs. You will practice the skills and knowledge to build a prediction model of taxi fares using machine learning with BigQuery.
 amp:
    youtube: true
 css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP327** _[Engineer Data in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12379?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/132) exercise. You will practice the skills and knowledge for build a prediction model of taxi fares using machine learning with BigQuery.
+In this article, we will go through the lab **GSP327** _[Engineer Data in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12379?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/132) exercise. You will practice the skills and knowledge to build a prediction model of taxi fares using machine learning with BigQuery.
 
 **The challenge contains 6 required tasks:**
 
@@ -190,7 +190,7 @@ Procedures:
          taxitrips ))
    ```
 
-At the end of the lab, your BigQuery dataset should contains the following tables.
+At the end of the lab, your BigQuery dataset should contain the following tables.
 
 {% include picture.html img="qwiklabs/qwiklab-gsp327-task3-resulted-tables.png" width="262" height="217" class="text-center" %}
 
@@ -215,5 +215,5 @@ At the end of the lab, your BigQuery dataset should contains the following table
 
 **Keep on reading**:
 
-- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook](/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab)
-- [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook](/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab)
+- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
+- [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-09-20-Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab %})

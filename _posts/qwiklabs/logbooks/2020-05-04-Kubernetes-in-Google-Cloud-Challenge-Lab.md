@@ -6,8 +6,10 @@ date: 2020-05-04 +0800
 last_modified_at: 2020-10-19 09:25:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
-permalink: /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
-redirect_from: /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
+permalink: /blog/qwiklabs/deploy-to-kubernetes-in-google-cloud-challenge-lab
+redirect_from:
+   - /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
+   - /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
 excerpt: A brief procedure for qwiklab GSP318 "Deploy to Kubernetes in Google Cloud&#58; Challenge Lab". It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
 image: 
    path: /images/posts/qwiklabs/qwiklab-GSP318-cover.png
@@ -70,7 +72,7 @@ In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in
 
 5. Run `docker images` to look at the images you built.
 
-Before clicking **Check my progress** in the lab page, don't forget to run the following commands to execute the marking script:
+Before clicking **Check my progress** on the lab page, don't forget to run the following commands to execute the marking script:
 
 {:.ml-3}
 ```bash
@@ -82,7 +84,7 @@ cd ~/marking
 
 **Hint**: Refer procedures and modify the codes in the lab GSP055 [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog#step6)
 
-The lab instruction requires you to run the docker image built in task 1 and show the running application by **Web Preview** on port 8080. Based on the requirements, the docker command will be:
+The lab instruction requires you to run the docker image built in Task 1 and show the running application by **Web Preview** on port 8080. Based on the requirements, the docker command will be:
 
 {:.ml-3}
 ```bash
@@ -139,7 +141,7 @@ After pushing the container, the `valkyrie-app` repository will appear in the Cl
 
 ## Task 5: Update the deployment with a new version of valkyrie-app
 
-**Hint**: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) or my previous article [Qwiklabs/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster](/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster)
+**Hint**: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) or my previous article [Qwiklabs/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
 
 **Step 5-1** Increase the replicas from 1 to 3
 
@@ -296,5 +298,5 @@ Do you feel this challenge lab quite difficult? You might if you don't get enoug
 * * *
 
 **See Also**:
-- [Qwiklab/Logbook: Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab)
-- [Qwiklabs/Logbook: Implement DevOps in Google Cloud: Challenge Lab"](/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab)
+- [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})
+- [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})

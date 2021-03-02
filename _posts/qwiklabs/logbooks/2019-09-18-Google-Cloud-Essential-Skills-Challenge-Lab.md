@@ -8,7 +8,7 @@ tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab
 redirect_from:
  - /blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab
-excerpt: A lab summary of qwiklab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab" | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
+excerpt: A summary of Google self-paced lab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab" on Qwiklabs | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
 image: 
    path: /images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png
    width: 348
@@ -19,11 +19,11 @@ css:
 
 <!--more-->
 
-Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using a Windows Bastion Host with Terraform](/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP)"_ within the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". Different from the normal hand-on-labs in Qwiklabs, the challenge labs do not provide step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
+Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using a Windows Bastion Host with Terraform]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})"_ within the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". Different from the normal hand-on-labs in Qwiklabs, the challenge labs do not provide step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
 
 This time is about the easiest lab in the challenge quest -- **GSP101** _"[Google Cloud Essential Skills: Challenge Lab](https://google.qwiklabs.com/focuses/1734?parent=catalog)"_. It just asks you to set up a VM instance with running Apache webserver. **Pretty BASIC!** If you know how to do that, I recommend you to try your best. Do not read the rest of the article unless you really need some more Hints.
 
-**Note**: Please DO NOT confuse the current lab with _GSP313 Getting Started: Create and Manage Cloud Resources: Challenge Lab_. If you're looking for that logbook, please [click on the link here](/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab).
+**Note**: Please DO NOT confuse the current lab with _GSP313 Getting Started: Create and Manage Cloud Resources: Challenge Lab_. If you're looking for that logbook, please [click on the link here]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
 
 ## Brief Introduction of Challenge Scenario
 
@@ -60,9 +60,9 @@ img="qwiklabs/qwiklabs-GSP101-check-progress1-VM-created.png" alt="Check your pr
 
 ## Step 2 - Install Apache and Overwrite Default Web Page
 
-After the VM instance is really, you have to configure it as an Apache webserver. If you do not remember how to install Apache, I advise you look up the **_command lines_** from the lab **GSP212** _"[VPC Flow Logs - Analyzing Network Traffic](https://www.qwiklabs.com/catalog?keywords=GSP212)"_.
+After the VM instance is really, you have to configure it as an Apache webserver. If you do not remember how to install Apache, I advise you to look up the **_command lines_** from the lab **GSP212** _"[VPC Flow Logs - Analyzing Network Traffic](https://www.qwiklabs.com/catalog?keywords=GSP212)"_.
 
-Keep inside the VM instances console, click **SSH** to launch a terminal and connect to the `apache` instance. You will install the packages with the following command-lines.
+Keep inside the VM instances console, click **SSH** to launch a terminal, and connect to the `apache` instance. You will install the packages with the following command-lines.
 
 In the SSH terminal, update the package index:
 
@@ -102,10 +102,10 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-Creating a Compute Engine instance as a web server using the web console is pretty basic. It is always a good start for you to build anything from scratch, and manually install packages via an SSH terminal. Alternatively, you can initialize identical instances with a startup script automatically, and you can practise it in the next lab, _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script](/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script)_.
+Creating a Compute Engine instance as a web server using the web console is pretty basic. It is always a good start for you to build anything from scratch, and manually install packages via an SSH terminal. Alternatively, you can initialize identical instances with a startup script automatically, and you can practise it in the next lab, _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})_.
 
 * * *
 
 **See Also**
 
-- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips](/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform)
+- [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})

@@ -13,7 +13,7 @@ image:
 excerpt: The changelog, the feature highlights and the screenshots of the previous versions of the "Qwiklabs Completed Labs Tracker".
 ---
 
-## <i class='fas fa-chevron-circle-left'></i> [Userscript for Qwiklabs Completion Tracking](/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs)
+## <i class='fas fa-chevron-circle-left'></i> [Userscript for Qwiklabs Completion Tracking]({% post_url qwiklabs/completion-tracker/2019-09-01-Userscript-for-Labelling-Completed-Qwiklabs %})
 
 ### For v0.5.0 or higher
 

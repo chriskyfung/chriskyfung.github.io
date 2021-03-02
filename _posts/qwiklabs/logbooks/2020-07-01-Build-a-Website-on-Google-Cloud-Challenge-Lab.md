@@ -10,7 +10,7 @@ redirct_from:
  - /blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-GSP319-fancy-store.jpg
-excerpt: A brief procedure for the qwiklab practice GSP319, which tests your skills to deploy containerized microservices for website frontend and backend to Kubernetes.
+excerpt: A brief procedure for the Google self-paced lab GSP319 on Qwiklabs, which tests your skills to deploy containerized microservices for website frontend and backend to Kubernetes.
 amp:
    youtube: true
 css:
@@ -208,6 +208,6 @@ Most steps in the exercise are identical to those in the lab **Migrating a Monol
 
 **Keep on reading**:
 
-- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook](/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab)
-- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster \| logbook](/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster)
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook](/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab)
+- [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster \| logbook]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
+- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
