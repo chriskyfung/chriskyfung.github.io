@@ -108,56 +108,6 @@ Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Mediu
 >
 </amp-ad>
 
-## List of Quests (Updated: Jun 20, 2020)
-
-<table id="quest-list" class="display">
-    <thead>
-        <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Level</th>
-        <th>Costs</th>
-        <th>Env</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for quest in site.data.qwiklabs-quests %}
-        <tr>
-            <td>{{ quest.id }}</td>
-            <td><a href="https://www.qwiklabs.com/quests/{{ quest.id }}" title="Open on Qwiklabs" target="_blank">{{ quest.name }}</a></td>
-            <td>{{ quest.level }}</td>
-            <td>{{ quest.costs }}</td>
-            <td>{{ quest.env }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
-## List of Labs (Updated: Jun 20, 2020)
-
-<table id="lab-list" class="display">
-    <thead>
-        <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Level</th>
-        <th>Costs</th>
-        <th>Env</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for lab in site.data.qwiklabs-labs %}
-        <tr>
-            <td>{{ lab.id }}</td>
-            <td><a href="https://www.qwiklabs.com/focuses/{{ lab.id }}?parent=catalog" title="Open on Qwiklabs" target="_blank">{{ lab.name }}</a>{% if lab.youtube %} <a href="https://youtu.be/{{ lab.youtube }}" title="View Demo on YouTube" target="_blank"><i class='fab fa-youtube' style='color:red'></i></a>{% endif %}</td>
-            <td>{{ lab.level }}</td>
-            <td>{{ lab.costs }}</td>
-            <td>{{ lab.env }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
 ## **See Also**
 
 _Resources:_
@@ -192,9 +142,8 @@ _The Hints for Challenge Labs 2020:_
 - [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-20-Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab %})
 - [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})
 - [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook ]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab | logbook]({% post_url qwiklabs/logbooks/2021-03-03-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
 
 _Quizzes Answers:_
 
 - [☁ Controlling Your Costs [Quiz] \| logbook ]({% post_url qwiklabs/2019-12-29-Controlling-Your-Costs-Quiz %})
-
-{% include datatables.html %}
