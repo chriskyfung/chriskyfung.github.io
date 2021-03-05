@@ -20,7 +20,7 @@ css:
 
 # GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab
 
-In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/142) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
+In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
 
 **Topics tested**:
 - Use BigQuery to access public COVID and other demographic datasets.
@@ -157,7 +157,7 @@ SET
     t0.mobility.avg_grocery     = t1.avg_grocery
     t0.mobility.avg_parks       = t1.avg_parks
     t0.mobility.avg_transit     = t1.avg_transit
-    t0.mobility.avg_workplace   = t1.avg_workplac
+    t0.mobility.avg_workplace   = t1.avg_workplace
     t0.mobility.avg_residential = t1.avg_residential
 FROM 
     ( SELECT country_region, date, 
@@ -234,10 +234,3 @@ Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and tabl
 12:39 Task5: Populate the mobility record data
 15:52 Task6: Query missing data in population & country_area columns
 ```
-
-Your first step is to create a new dataset and table. The starting point for the machine learning model will be the oxford_policy_tracker table in the [COVID 19 Government Response public dataset](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=covid19_govt_response&page=dataset) which contains details of different actions
-
-
-References:
-https://newstars.tistory.com/m/502?category=72798
-https://github.com/GirishSharma5956/Build-and-Optimize-Data-Warehouses-with-BigQuery-Challenge-Lab/blob/master/Build%20and%20Optimize.txt#L42
