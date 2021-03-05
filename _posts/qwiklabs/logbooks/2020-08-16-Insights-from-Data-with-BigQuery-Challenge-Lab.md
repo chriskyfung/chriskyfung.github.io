@@ -386,4 +386,5 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 **Keep on reading**:
 
+- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-03-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
 - [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})

@@ -34,13 +34,13 @@ css:
        }
 ---
 
-**Tumblr**  is a popular micro-blogging and social media platform, which is lightweight and highly-customizable with HTML, CSS and JavaScript. It is completely free without storage and bandwidth limits, like Facebook, Twitter, Blogger and Medium, but you can tailor-made your theme and use your custom domain name. It also allows monetizing with Google Adsense. Tumblr is a good alternative of WordPress and GitHub Page for hosting blog websites because no complex PHP or Jekyll knowledge is required. But the shortage of Tumblr includes slow page speed and limited SEO settings. On the whole, Tumblr is a great blogging platform for beginners. You can make use of the following plugins, tools, tips-and-tricks to enrich your Tumblr sites.
+**Tumblr**  is a popular micro-blogging and social media platform, which is lightweight and highly-customizable with HTML, CSS, and JavaScript. It is completely free without storage and bandwidth limits, like Facebook, Twitter, Blogger, and Medium, but you can tailor-made your theme and use your custom domain name. It also allows monetizing with Google Adsense. Tumblr is a good alternative to WordPress and GitHub Page for hosting blog websites because no complex PHP or Jekyll knowledge is required. But the shortage of Tumblr includes slow page speed and limited SEO settings. On the whole, Tumblr is a great blogging platform for beginners. You can make use of the following plugins, tools, tips-and-tricks to enrich your Tumblr sites.
 
 <!--more-->
 
 ## Personalize Your Tumblr Site
 
-If you prefer to present your Tumblr like a normal website, you definitely want to erase the Tumblr controls, buttons and toolbars from your pages. You can follow the **two** instructions below to kill them from
+If you prefer to present your Tumblr like a normal website, you definitely want to erase the Tumblr controls, buttons, and toolbars from your pages. You can follow the **two** instructions below to kill them from
 screens.
 
 #### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
@@ -62,7 +62,7 @@ When a Tumblr site is opened with a mobile device, buttons asking users to open/
 
 {% include picture.html width="300" height="532" img="tumblr/get-n-open-tumblr-app-in-tumblr-mobile-page-300.png" alt="" class="text-center" %}
 
-1. Copy the following CSS codes to clipboard
+1. Copy the following CSS codes to the clipboard
 
     ```css
     tumblr_controls, .tmblr-iframe {
@@ -85,7 +85,7 @@ When a Tumblr site is opened with a mobile device, buttons asking users to open/
 
 Tumblr automatically backups your custom theme when you make and save any changes, and you can revert to previous versions. I think many Tumblr bloggers may not know this important feature because it isn't written clearly in the Tumblr Help Center. _Weird_!
 
-In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, choose the blog that you want to recover, and click **View backups**. You will obtain a list of the old versions. You can click **Show changes** to inspect the code changes and click **Revert** to restore back the theme.
+In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, choose the blog that you want to recover and click **View backups**. You will obtain a list of the old versions. You can click **Show changes** to inspect the code changes and click **Revert** to restore the theme.
 
 {% include picture.html height="500" img="tumblr/RecoverCustomTheme.png" alt="Screenshot of Recover Tumblr Custom Themes" %}
 
@@ -150,7 +150,7 @@ Hashtags are useful to categorize posts and help audiences to search your conten
 
 You can get a dynamically updated tag list of your Tumblr blog by using this tag list generator. Just enter your Tumblr blog name to it and click **Generate**, it will return the code for you to copy into your theme or a custom page.
 
-There are several parameters for you to define the appearance of the tag list or word cloud. The generator provides a preview for the resulted code. The image below demonstrates three different samples that I had made.
+There are several parameters for you to define the appearance of the tag list or word cloud. The generator provides a preview of the resulted code. The image below demonstrates three different samples that I had made.
 
 {% include picture.html height="218" img="tumblr/TumblrTagListGenerator-drunkonschadenfreude.com-demos.png" alt="Sample Demos of Tumblr Tag List Generator by drunkonschadenfreude.com" %}
 
@@ -158,7 +158,7 @@ There are several parameters for you to define the appearance of the tag list or
 
 {% include picture.html height="452" img="tumblr/FindUntaggedTumblrPosts-finduntaggedtumblrposts.com.png" alt="Screenshot of Find Untagged Tumblr Posts (finduntaggedtumblrposts.com)" %}
 
-This application is a crawler that scans through a Tumblr site and reports the untagged posts that have been found. So, you can verify if every post in your site has been tagged.
+This application is a crawler that scans through a Tumblr site and reports the untagged posts that have been found. So, you can verify if every post on your site has been tagged.
 
 #### Tag Replacer <small>(tags.circumfluo.us)</small>
 
@@ -166,12 +166,12 @@ This application is a crawler that scans through a Tumblr site and reports the u
 
 Tag Replacer is a great tool that speedups tag editing. It can search the posts with a specific tag from your Tumblr blog and perform a **bulk tag replace/delete** process. _Quick & Easy_!
 
-Since the application edits your data, you have to grant it _access_, _read_ and _write_ permissions for the first time use. Click **Connect to tumblr**, then it will be redirected to the authorization page.
+Since the application edits your data, you have to grant it _access_, _read_, and _write_ permissions for the first time use. Click **Connect to tumblr**, then it will be redirected to the authorization page.
 {% include picture.html height="237" img="tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr.png" alt="Connect to tumblr - Tag Replacer (tags.circumfluo.us)" %}
 
 {% include picture.html height="368" img="tumblr/tagreplacer-tags.circumfluo.us-connect-to-tumblr-authorize.png" alt="Authorize Tag Replacer (tags.circumfluo.us)" %}
 
-If you worry about the security, you can revoke the app after tag editing. In your Tumblr dashboard, navigate to **Settings** > **Apps**, and click the "**x**" button to remove the app.
+If you worry about security, you can revoke the app after tag editing. In your Tumblr dashboard, navigate to **Settings** > **Apps**, and click the "**x**" button to remove the app.
 
 {% include picture.html height="330" img="tumblr/tagreplacer-tags.circumfluo.us-remove-app.png" alt="Remove Tag Replacer (tags.circumfluo.us)from Tumblr App page" %}
 

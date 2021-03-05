@@ -4,7 +4,7 @@ title: "☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab | lo
 date: 2021-03-03 11:40 +0800
 category: Cloud
 author: chris
-tags: [Qwiklabs, Google Cloud, Logbook, BigQuery]
+tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab
 image: 
    path: /images/posts/qwiklabs/gsp340-cover.png
@@ -42,7 +42,7 @@ In this task, you will need to:
 2. Click your _Project ID_ under the BigQuery Explorer, then click **CREATE DATASET**.
 3. Give the new dataset an ID, and click **Create dataset**.
 4. Add the [COVID 19 Government Response public dataset](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=covid19_govt_response&page=dataset) to the BigQuery Explorer by opening the link in your browser. \
-Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** then search for `oxford covid-19 government response tracker`, click on the item. Then, click **VIEW DATASET** in the detail page.
+Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** then search for `oxford covid-19 government response tracker`, click on the item. Then, click **VIEW DATASET** on the detail page.
 
 {% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" class="ml-li" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
 
@@ -75,11 +75,11 @@ Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** the
 
 **Tips:** To learn more, read the section [_Creating a partitioned table from the result of a query_](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#creating_a_partitioned_table_from_the_result_of_a_query "Using data definition language statements \| BigQuery \| Google Cloud") in the BigQuery documentation.
 
-If you are interested about the OxCGRT dataset, go to [www.bsg.ox.ac.uk/covidtracker](https://www.bsg.ox.ac.uk/covidtracker "COVID-19 Government Response Tracker \| Blavatnik School of Government") to find more information about the research project. You can also visit the [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository on GitHub to get the CSV-formatted data for your personal projects.
+If you are interested in the dataset, go to [www.bsg.ox.ac.uk/covidtracker](https://www.bsg.ox.ac.uk/covidtracker "COVID-19 Government Response Tracker \| Blavatnik School of Government") to find more information about the OxCGRT research project. You can also visit the [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository on GitHub to get the CSV-formatted data for any other projects.
 
 ## Task 2: Add new columns to your table
 
-**Tips:** Read [_Manually adding an empty column_](https://cloud.google.com/bigquery/docs/managing-table-schemas#manually_adding_an_empty_column "Modifying table schemas \| BigQuery"), [_Adding columns_](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#adding_columns "Using data definition language statements \| BigQuery") and [_Adding a `RECORED` column_](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#adding_a_record_column "Using data definition language statements \| BigQuery") in the BigQuery documentation.
+**Tips:** Read [_Manually adding an empty column_](https://cloud.google.com/bigquery/docs/managing-table-schemas#manually_adding_an_empty_column "Modifying table schemas \| BigQuery"), [_Adding columns_](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#adding_columns "Using data definition language statements \| BigQuery"), and [_Adding a `RECORD` column_](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#adding_a_record_column "Using data definition language statements \| BigQuery") in the BigQuery documentation.
 
 The query for adding columns to your table should look like this:
 
@@ -122,7 +122,7 @@ Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME
 
 ## Task 4: Add country area data to the country_area column
 
-Similiar to Task 3, using a join to populate country area data from the table `country_names_area` under the `census_bureau_international` public dataset. 
+Similar to Task 3, using a join to populate country area data from the table `country_names_area` under the `census_bureau_international` public dataset.
 
 The query for the SQL JOIN should look like this:
 
@@ -179,7 +179,7 @@ Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME
 
 You will need to find the countries that are missing the `population` and `country_area`. The result should be a list of the countries ordered by country name. If a country misses both the population and country area, it should appear twice in the list.
 
-**Tips:** The **SQL UNION ALL** operator is recommanded in the **Tips and Tricks** section provided on the Qwiklabs. It combines the result of two queries without removing the overlapping results. Read [this SQLShank article](https://www.sqlshack.com/sql-union-vs-union-all-in-sql-server/ "SQL Union vs Union All in SQL Server \| sqlshack.com"), if you want to understand the difference between the **SQL UNION** and **UNION ALL** operators.
+**Tips:** The **SQL UNION ALL** operator is recommended in the **Tips and Tricks** section provided on the Qwiklabs. It combines the result of two queries without removing the overlapping results. Read [this SQLShank article](https://www.sqlshack.com/sql-union-vs-union-all-in-sql-server/ "SQL Union vs Union All in SQL Server \| sqlshack.com"), if you want to understand the difference between the **SQL UNION** and **UNION ALL** operators.
 
 First, try to run the following to query the countries that do not have the population data.
 
@@ -201,7 +201,7 @@ WHERE WHERE country_area IS NULL
 
 {% include picture.html img="qwiklabs/gsp340-task6-countries-without-country-area-data.png" width="530" height="521" alt="Countries without country area data" %}
 
-The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by removing the select of the `population` and `country_area`. Last, combine the two queries using **UNION ALL** and order by country name. The finall query should becomes like this:
+The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` cloumns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
 
 ```sql
 SELECT DISTINCT country_name
@@ -234,3 +234,6 @@ Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and tabl
 12:39 Task5: Populate the mobility record data
 15:52 Task6: Query missing data in population & country_area columns
 ```
+
+**Keep on reading:**
+- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %)

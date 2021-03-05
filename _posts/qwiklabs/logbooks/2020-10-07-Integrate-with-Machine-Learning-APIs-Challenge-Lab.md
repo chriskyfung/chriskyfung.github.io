@@ -4,7 +4,7 @@ title: "☁ Integrate with Machine Learning APIs: Challenge Lab | logbook"
 date: 2020-10-7 17:30 +0800
 category: Cloud
 author: chris
-tags: [Qwiklabs, Google Cloud, Logbook]
+tags: [Qwiklabs, Google Cloud, Logbook, Cloud AI]
 permalink: /blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/gsp329-cover.png

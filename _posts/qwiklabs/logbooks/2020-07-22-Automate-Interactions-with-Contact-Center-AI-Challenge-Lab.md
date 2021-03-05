@@ -4,7 +4,7 @@ title: "☁ Automate Interactions with Contact Center AI: Challenge Lab | logboo
 date: 2020-07-22 12:32 +0800
 category: Cloud
 author: chris
-tags: [Qwiklabs, Google Cloud, Logbook]
+tags: [Qwiklabs, Google Cloud, Logbook, Cloud AI]
 permalink: /blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab
 image: 
    path: /images/posts/qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png
