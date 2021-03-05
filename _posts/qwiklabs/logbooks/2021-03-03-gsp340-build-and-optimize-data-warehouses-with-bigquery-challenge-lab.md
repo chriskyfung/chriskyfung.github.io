@@ -236,4 +236,4 @@ Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and tabl
 ```
 
 **Keep on reading:**
-- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %)
+- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
