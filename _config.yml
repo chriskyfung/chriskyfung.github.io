@@ -18,8 +18,8 @@ paginate: 12
 repository: chriskyfung/AutoFetcher-IG-Stories-to-GDrive
 
 sidebar:
-  featured: false
-  recent_posts: false
+  featured: true
+  recent_posts: true
 
 # AddThis Inline Share Buttons
 addthis: 
