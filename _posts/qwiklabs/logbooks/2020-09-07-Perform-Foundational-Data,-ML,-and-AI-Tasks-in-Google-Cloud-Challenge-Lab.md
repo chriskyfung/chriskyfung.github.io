@@ -6,7 +6,9 @@ category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning, Cloud AI]
 permalink: /blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab
-image: 
+redirect_from:
+   - /blog/qwiklabs/GSP323
+image:
    path: /images/posts/qwiklabs/qwiklab-gsp323-cloud-dataprep.png
 excerpt:  A brief procedure for the Google self-paced lab GSP323 on Qwiklabs. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
 amp:
@@ -191,7 +193,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    ```bash
    export API_KEY=<YOUR-API-KEY>
    ```
-   
+
    **Replace** `<YOUR-API-KEY>` with the copied key value.
 
 5. In the Cloud Shell, create a JSON file called `gsc-request.json`.
@@ -271,7 +273,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    ```
 
 10. Run the following command to use theGoogle Video Intelligence and detect all text on the video.
-   
+
    ```bash
    curl -s -H 'Content-Type: application/json' \
       -H 'Authorization: Bearer '$(gcloud auth print-access-token)'' \

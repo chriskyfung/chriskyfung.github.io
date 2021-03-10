@@ -6,16 +6,18 @@ category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab
-image: 
-   path: /images/posts/qwiklabs/gsp340-cover.png
+redirect_from:
+  - /blog/qwiklabs/GSP340
+image:
+  path: /images/posts/qwiklabs/gsp340-cover.png
 excerpt: A brief procedure for the Google self-paced lab GSP340 on Qwiklabs. You will practice the skills for creating a day-partitioned table in BigQuery and populating data from different datasets to it for the analysis of the Covid-19 pandemic.
 amp:
-   youtube: true
+  youtube: true
 css:
-   syntax: true
-   custom: >
-      .ml-li { margin-left: 2rem; }
-      .tips-card { padding: 1rem; background-color: gold; }
+  syntax: true
+  custom: >
+    .ml-li { margin-left: 2rem; }
+    .tips-card { padding: 1rem; background-color: gold; }
 ---
 
 # GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab
@@ -23,6 +25,7 @@ css:
 In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
 
 **Topics tested**:
+
 - Use BigQuery to access public COVID and other demographic datasets.
 - Create a new BigQuery dataset which will store your tables.
 - Add a new date partitioned table to your dataset.
@@ -32,6 +35,7 @@ In this article, we will go through the lab **GSP335** _[Secure Workloads in Goo
 ## Task 1: Create a table partitioned by data
 
 In this task, you will need to:
+
 - create a new dataset
 - create a table in that dataset
 - set partition by date with an expiry of 90 days
@@ -61,11 +65,11 @@ Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** the
     partition_expiration_days=90,
     description="oxford_policy_tracker table in the COVID 19 Government Response public dataset with  an expiry time set to 90 days."
     ) AS
-    SELECT 
-        * 
-    FROM 
+    SELECT
+        *
+    FROM
         `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`
-    WHERE 
+    WHERE
         alpha_3_code NOT IN ('GBR', 'USA')
     ```
 
@@ -109,13 +113,13 @@ The query for the **SQL JOIN** should look like this:
 
 ```sql
 UPDATE
-    `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
+  `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
 SET
-    population = t1.population
-FROM 
-    `bigquery-public-data.covid19_ecdc.covid_19_geographic_distribution_worldwide` t1
-WHERE 
-    CONCAT(t0.alpha_3_code, t0.date) = CONCAT(t1.country_territory_code, t1.date);
+  population = t1.population
+FROM
+  `bigquery-public-data.covid19_ecdc.covid_19_geographic_distribution_worldwide` t1
+WHERE
+  CONCAT(t0.alpha_3_code, t0.date) = CONCAT(t1.country_territory_code, t1.date);
 ```
 
 Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, correspondingly.
@@ -128,13 +132,13 @@ The query for the SQL JOIN should look like this:
 
 ```sql
 UPDATE
-    `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
+  `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
 SET
-    t0.country_area = t1.country_area
-FROM 
-    `bigquery-public-data.census_bureau_international.country_names_area` t1
-WHERE 
-    t0.country_name = t1.country_name
+  t0.country_area = t1.country_area
+FROM
+  `bigquery-public-data.census_bureau_international.country_names_area` t1
+WHERE
+  t0.country_name = t1.country_name
 ```
 
 Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, correspondingly.
@@ -151,26 +155,27 @@ The query for updating the mobility record should look like this:
 
 ```sql
 UPDATE
-    `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
+  `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
 SET
-    t0.mobility.avg_retail      = t1.avg_retail
-    t0.mobility.avg_grocery     = t1.avg_grocery
-    t0.mobility.avg_parks       = t1.avg_parks
-    t0.mobility.avg_transit     = t1.avg_transit
-    t0.mobility.avg_workplace   = t1.avg_workplace
-    t0.mobility.avg_residential = t1.avg_residential
-FROM 
-    ( SELECT country_region, date, 
-      AVG(retail_and_recreation_percent_change_from_baseline) as avg_retail,
-      AVG(grocery_and_pharmacy_percent_change_from_baseline)  as avg_grocery,
-      AVG(parks_percent_change_from_baseline) as avg_parks,
-      AVG(transit_stations_percent_change_from_baseline) as avg_transit,
-      AVG(workplaces_percent_change_from_baseline) as avg_workplace,
-      AVG(residential_percent_change_from_baseline)  as avg_residential
-      FROM `bigquery-public-data.covid19_google_mobility.mobility_report`
-      GROUP BY country_region, date) AS t1
-WHERE 
-    CONCAT(t0.country_name, t0.date) = CONCAT(t1.country_region, t1.date)
+  t0.mobility.avg_retail      = t1.avg_retail
+  t0.mobility.avg_grocery     = t1.avg_grocery
+  t0.mobility.avg_parks       = t1.avg_parks
+  t0.mobility.avg_transit     = t1.avg_transit
+  t0.mobility.avg_workplace   = t1.avg_workplace
+  t0.mobility.avg_residential = t1.avg_residential
+FROM
+  ( SELECT country_region, date,
+    AVG(retail_and_recreation_percent_change_from_baseline) as avg_retail,
+    AVG(grocery_and_pharmacy_percent_change_from_baseline)  as avg_grocery,
+    AVG(parks_percent_change_from_baseline) as avg_parks,
+    AVG(transit_stations_percent_change_from_baseline) as avg_transit,
+    AVG(workplaces_percent_change_from_baseline) as avg_workplace,
+    AVG(residential_percent_change_from_baseline)  as avg_residential
+    FROM `bigquery-public-data.covid19_google_mobility.mobility_report`
+    GROUP BY country_region, date
+  ) AS t1
+WHERE
+  CONCAT(t0.country_name, t0.date) = CONCAT(t1.country_region, t1.date)
 ```
 
 Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, correspondingly.
@@ -186,7 +191,7 @@ First, try to run the following to query the countries that do not have the popu
 ```sql
 SELECT country_name, population
 FROM `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>`
-WHERE population is NULL 
+WHERE population is NULL
 ```
 
 {% include picture.html img="qwiklabs/gsp340-task6-countries-without-population-data.png" width="531" height="521" alt="Countries without population data" %}
@@ -196,21 +201,21 @@ Next, try to run the following to query the countries that do not have the count
 ```sql
 SELECT country_name, country_area
 FROM `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>`
-WHERE WHERE country_area IS NULL 
+WHERE WHERE country_area IS NULL
 ```
 
 {% include picture.html img="qwiklabs/gsp340-task6-countries-without-country-area-data.png" width="530" height="521" alt="Countries without country area data" %}
 
-The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` cloumns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
+The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` columns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
 
 ```sql
 SELECT DISTINCT country_name
 FROM `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>`
-WHERE population is NULL 
+WHERE population is NULL
 UNION ALL
 SELECT DISTINCT country_name
 FROM `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>`
-WHERE WHERE country_area IS NULL 
+WHERE WHERE country_area IS NULL
 ORDER BY country_name ASC
 ```
 
@@ -236,4 +241,5 @@ Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and tabl
 ```
 
 **Keep on reading:**
+
 - [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})

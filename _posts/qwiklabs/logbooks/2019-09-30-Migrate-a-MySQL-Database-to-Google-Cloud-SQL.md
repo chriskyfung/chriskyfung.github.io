@@ -7,9 +7,10 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, WordPress, MySQL]
 permalink: /blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
 redirect_from:
- - /blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
+   - /blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
+   - /blog/qwiklabs/GSP306
 excerpt: A summary of Google self-paced lab GSP306 "Migrate a MySQL Database to Google Cloud SQL" on Qwiklabs | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
-image: 
+image:
    path: /images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png
    height: 317
 css:
@@ -69,7 +70,7 @@ You can continue the procedure below without waiting here.
 If you read "[Migration from MySQL to Cloud SQL](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-concept) in the documentation of Google Cloud Solutions. There are two ways to migrate the database, namely, (a) [Export/import approach](https://cloud.google.com/sql/docs/mysql/replication/replication-from-external) or (b) [External replica promotion approach](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-using-automated-migration-workflow-tutorial).
 
 - **Export/import migration**
-This method requires to export the entire source database and import the dump data to replica, typically requires downtime for the database during the entire process to keep data in sync. 
+This method requires to export the entire source database and import the dump data to replica, typically requires downtime for the database during the entire process to keep data in sync.
 - **External replica promotion migration**
 This method process through the automated migration workflow provided by Google Cloud SQL, which aims to minimize the database uptime by promoting the replica database to replace the source after the data is synchronized.
 

@@ -10,8 +10,9 @@ permalink: /blog/qwiklabs/deploy-to-kubernetes-in-google-cloud-challenge-lab
 redirect_from:
    - /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
    - /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
+   - /blog/qwiklabs/GSP318
 excerpt: A brief procedure for qwiklab GSP318 "Deploy to Kubernetes in Google Cloud&#58; Challenge Lab". It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
-image: 
+image:
    path: /images/posts/qwiklabs/qwiklab-GSP318-cover.png
    fit: left
 amp:
@@ -58,9 +59,9 @@ In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in
    cd valkyrie-app
 
    cat > Dockerfile <<EOF
-   
+
    // COPY TO HERE
-   
+
    EOF
    ```
 
@@ -298,5 +299,6 @@ Do you feel this challenge lab quite difficult? You might if you don't get enoug
 * * *
 
 **See Also**:
+
 - [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})
 - [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})

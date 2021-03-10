@@ -7,9 +7,10 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab
 redirect_from:
- - /blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab
+   - /blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab
+   - /blog/qwiklabs/GSP101
 excerpt: A summary of Google self-paced lab GSP101 "Google Cloud Essential Skills&#58; Challenge Lab" on Qwiklabs | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
-image: 
+image:
    path: /images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png
    width: 348
    height: 146

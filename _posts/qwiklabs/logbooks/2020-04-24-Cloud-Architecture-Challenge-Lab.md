@@ -8,10 +8,11 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
 permalink: /blog/qwiklabs/deploy-and-manage-cloud-environments-with-google-cloud-challenge-lab
 redirect_from:
- - /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
- - /blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab
+   - /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
+   - /blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab
+   - /blog/qwiklabs/GSP314
 excerpt: Hints for qwiklab GSP314 "Deploy and Manage Cloud Environments with Google Cloud&#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
-image: 
+image:
    path: /images/posts/qwiklabs/qwiklab-GSP314-spinaker-production.png
    height: 530
 css:
@@ -164,7 +165,7 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
 {:start="5"}
 
 5. Click the **Web Preview** icon at the top of the Cloud Shell window and select **Preview on port 8080**, to open the Spinnaker user interface.
-   
+
    {% include picture.html width="706" height="355" img="qwiklabs/qwiklab-GSP314-spinnaker.png" class="ml-4" %}
 
 ### 3.2 Clone your source code repository
@@ -218,10 +219,11 @@ Once the pipeline completes, the color of the sample application has changed fro
 
 ## Summary
 
-This lab is challenging. You might not know what need to do if you cannot spot the similar pieces from the prior training labs. You need to familiar with `kubectl` and `git` commands as well as VPCs and Kubernetes in the multiple network environment. Since some steps are hard to undo, it is necessary to well-check the options and parameters before attempting create resources and update the pipeline.
+This lab is challenging. You might not know what need to do if you cannot spot similar pieces from the prior training labs. You need to familiar with `kubectl` and `git` commands as well as VPCs and Kubernetes in the multiple network environment. Since some steps are hard to undo, it is necessary to well-check the options and parameters before attempting to create resources and update the pipeline.
 
 * * *
 
 **See Also**:
+
 - [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
 - [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})

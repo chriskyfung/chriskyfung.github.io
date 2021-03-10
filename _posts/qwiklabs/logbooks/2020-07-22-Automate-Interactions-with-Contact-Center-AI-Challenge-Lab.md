@@ -6,7 +6,9 @@ category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Cloud AI]
 permalink: /blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab
-image: 
+redirect_from:
+   - /blog/qwiklabs/GSP311
+image:
    path: /images/posts/qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png
    width: 842
    height: 808

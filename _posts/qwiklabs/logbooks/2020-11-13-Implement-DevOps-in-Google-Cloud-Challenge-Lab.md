@@ -6,7 +6,9 @@ category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Jenkins]
 permalink: /blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab
-image: 
+redirect_from:
+   - /blog/qwiklabs/GSP330
+image:
    path: /images/posts/qwiklabs/gsp330-cover.png
    fit: left
 excerpt: A brief procedure for the Google self-paced lab GSP330 on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
@@ -122,7 +124,7 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
    export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/component=jenkins-master" -l "app.kubernetes.io/instance=cd" -o jsonpath="{.items[0].metadata.name}")
    kubectl port-forward $POD_NAME 8080:8080 >> /dev/null &
    ```
-   
+
    (You don't need to configure the Jenkins service account because it has already been created during provisioning.)
 
 3. To get to the Jenkins user interface, click on the Web Preview button in the cloud shell, then click **Preview on port 8080**.
@@ -198,7 +200,7 @@ After configuring your credentials, follow these steps to configure a Pipeline j
    ```
 
    Select the service account for your GCP project from the **Credentials** dropdown list.
-   
+
    {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.png" width="946" height="524" class="ml-li" %}
 
 {:start="8"}
@@ -328,9 +330,11 @@ This process takes about five minutes to complete.
 * * *
 
 **References**:
+
 - [Continuous Delivery with Jenkins in Kubernetes Engine \| Qwiklabs](https://www.qwiklabs.com/focuses/1104?parent=catalog)
 - [Helm \| Installing Helm](https://helm.sh/docs/intro/install/)
 
 **Keep on reading**:
+
 - [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
 - [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})

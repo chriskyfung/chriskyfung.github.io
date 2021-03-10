@@ -7,7 +7,9 @@ category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab
-image: 
+redirect_from:
+   - /blog/qwiklabs/GSP321
+image:
    path: /images/posts/qwiklabs/qwiklab-gsp321-title.jpg
 excerpt: A brief procedure for the Google self-paced lab GSP321 on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
 
@@ -96,7 +98,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    | Field     | Value      |
    | ---       |  ---       |
    | Name:      | `griffin-dev-db` |
-   | Region:    | `us-east1` |  
+   | Region:    | `us-east1` |
 
 4. Expand the **Management, security, disks, networking, sole tenancy** section.
 5. In the **Networking** tab, add `bastion` to the Network tags.
@@ -176,7 +178,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 2. Click **Create cluster**.
 3. In the Cluster basics tab, configure:
 
-   Name: `griffin-dev`  
+   Name: `griffin-dev`
    Zone: `us-east1-b`
 
 5. In the left pane, click **default-pool** under **NODE POOLS** and set
@@ -190,14 +192,14 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 7. Go to the **Network** tab, set
 
-   Network: `griffin-dev-vpc`  
+   Network: `griffin-dev-vpc`
    Node subnet: `griffin-dev-wp`
 
    {% include picture.html img="qwiklabs/qwiklab-gsp321-k8s-vpc-networking.png" width="913" height="947" alt="Networking settings for new Kubernetes cluster griffin-dev" %}
 
 {:start="8"}
 8. Click **CREATE**.
-  
+
 ## Task 6: Prepare the Kubernetes cluster
 
 1. In the Cloud Shell, use the following command to copy the files for the Kubernetes:

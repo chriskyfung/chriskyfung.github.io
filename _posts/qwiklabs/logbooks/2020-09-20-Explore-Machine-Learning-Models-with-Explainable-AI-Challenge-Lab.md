@@ -7,7 +7,9 @@ category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, TensorFlow, Data Science, Machine Learning]
 permalink: /blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab
-image: 
+redirect_from:
+   - /blog/qwiklabs/GSP324
+image:
    path: /images/posts/tenserflow-notebook.png
 excerpt: A brief procedure for the Google self-paced lab GSP324 on Qwiklabs. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models.
 amp:

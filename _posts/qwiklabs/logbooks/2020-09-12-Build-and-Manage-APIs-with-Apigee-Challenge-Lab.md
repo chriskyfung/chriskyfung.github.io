@@ -8,7 +8,8 @@ tags: [Qwiklabs, Google Cloud, Logbook, Apigee]
 permalink: /blog/qwiklabs/build-and-manage-apis-with-apigee-challenge-lab
 redirect_from:
  - /blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab
-image: 
+ - /blog/qwiklabs/GSP336
+image:
    path: /images/posts/qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg
    width: 962
    height: 639
@@ -32,7 +33,7 @@ In this article, we will go through the lab **GSP336** _[Build and Manage APIs w
 
 **The challenge contains 4 required tasks:**
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-checkpoints.png" width="592" 
+{% include picture.html img="qwiklabs/qwiklab-gsp336-checkpoints.png" width="592"
 height="277" class="text-center" %}
 
 ## Task 1 - Create API Specification and Generate an API Proxy
@@ -246,7 +247,7 @@ After the above procedure, the **Proxy Endpoints** → **PreFlow** should look l
    - In the API resources section, **API proxies** list, click **Add a proxy** and select the **Verification-API-v1** API proxy. Click **Add(1)**.
 
    The settings should look as follows:
-   
+
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-create-apigee-api-product.png" width="1152" height="899" class="ml-li" %}
 
 {:start="3"}

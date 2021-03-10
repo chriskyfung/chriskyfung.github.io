@@ -9,10 +9,11 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
 redirect_from:
- - /blog/2019/09/20/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
+   - /blog/2019/09/20/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script
+   - /blog/qwiklabs/GSP301
 excerpt: A summary of Google self-paced lab GSP301 "Deploy a Compute Instance with a Remote Startup Script" on Qwiklabs | 1. Download Sample Startup Script | 2. Upload the Startup Script to a Cloud Storage Bucket | 3. Configure Metadata in Creating VM instance | 4. Inspect Instance Correctly Running Startup Script
 description: A step-by-step guilde for deploying a VM instance with automaticlly installing Apache web server package by using a Remote Startup Script on Google Cloud Platform.
-image: 
+image:
    path: /images/posts/qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata.png
    width: 454
    height: 174
@@ -57,7 +58,7 @@ img="qwiklabs/qwiklabs-GSP301-download-startup-script-file.png" alt="download sa
 1. In the web console, navigate to **_Storage_**.
 2. Create a bucket with a unique bucket name.
 3. Upload the `install-web.sh` file to the bucket.
-4. Make the file publicly accessible (This ensures the file can be access by the VM instance deployed soon).
+4. Make the file publicly accessible (This ensures the file can be accessed by the VM instance deployed soon).
 
 {% include picture.html width="397" height="306"
 img="qwiklabs/qwiklabs-GSP301-edit-file-permission-in-GCP-storage-bucket.png" alt="Edit the file permissions in Cloud Storage using GCP web console" class="ml-5" %}
@@ -126,7 +127,7 @@ img="qwiklabs/qwiklabs-GSP301-apache-installation-in-logs-of-serial-port-1.png" 
 
 {:start="4"}
 
-4. Open the external IP in your web browser. You should view the Apache default page, if the startup script has been successfully executed.
+4. Open the external IP in your web browser. You should view the Apache default page if the startup script has been successfully executed.
 
 {% include picture.html width="682" height="441"
 img="qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance.png" alt="Apache2 Debian Default Page" caption="The Apache web server installed by the startup script" class="ml-5" %}
@@ -137,7 +138,7 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-With the GCP web console, you can to set up a VM instance as a web server without touch any codes. In this lab, you also automate the installation of web server packages using a startup script. But if you need to repeatedly deploy cloud resources more systematically, you go for Cloud Deployment Manager. [Next lab]({% post_url qwiklabs/logbooks/2019-09-23-Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager %}) tests your proficiency of building a deployment template for creating a VM instance with appropriate firewall rule for HTTP traffic.
+With the GCP web console, you can to set up a VM instance as a web server without touch any codes. In this lab, you also automate the installation of web server packages using a startup script. But if you need to repeatedly deploy cloud resources more systematically, you go for Cloud Deployment Manager. [Next lab]({% post_url qwiklabs/logbooks/2019-09-23-Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager %}) tests your proficiency of building a deployment template for creating a VM instance with the appropriate firewall rule for HTTP traffic.
 
 * * *
 

@@ -6,10 +6,10 @@ category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/secure-workloads-in-google-kubernetes-engine-challenge-lab
-redirect_from: 
+redirect_from:
    - /blog/qwiklabs/Secure-Workloads-in-Google-Kubernetes-Engine-Challenge-Lab
    - /blog/qwiklabs/GSP335
-image: 
+image:
    path: /images/posts/qwiklabs/gsp335-cover.png
 excerpt: A brief procedure for the Google self-paced lab GSP335 on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
 amp:
@@ -402,13 +402,13 @@ Save the changes, and run the `kubectl apply` command again.
 ⏱Timestamps:
 00:00 Task0: Download the necessary files
 00:19 Task1: Setup Cluster
-Task2: Setup WordPress     
+Task2: Setup WordPress
 00:37 - a) Create a Cloud SQL instance
 00:59 - b) Create a service account
 01:54 - c) Create MySQL user and password
 03:14 - d) Create secrets for access to WP
 03:52 - e) Create WP deployment and service
-Task3: Setup Ingress with TLS     
+Task3: Setup Ingress with TLS
 04:58 - a) Set up cert-manager.io
 06:30 - b) Set up cert-manager.io
 07:43 - c) Configure nginx-ingress to use an  encrypted certificate for your site

@@ -8,21 +8,21 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
 redirect_from:
- - /blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
+  - /blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
+  - /blog/qwiklabs/GSP302
 excerpt: A summary of Google self-paced lab GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" on Qwiklabs | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
-image: 
-   path: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
-   height: 447
+image:
+  path: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
+  height: 447
 amp:
   gist: true
 css:
   syntax: true
 ---
 
-With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". The web console assists quick access of the GCP resources for testing and building small projects. If you are an amateur or hobbyist developer, just make use of the web console is pretty enough.
+With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". The web console assists in quick access to the GCP resources for testing and building small projects. If you are an amateur or hobbyist developer, just make use of the web console is pretty enough.
 
-But if you aim to be a professional cloud engineer, you must know and apply some more advanced skills, such as creating and managing cloud resources with simple templates for a repeatable deployment process. The third lab of the challenge quest, **GSP302** _"[Configure a Firewall and a Startup Script with Deployment Manager](https://www.qwiklabs.com/focuses/1736?parent=catalog)"_, is to test your ability to define the resources of a basic apache web server. You need to know how to format and parameterize the resource properties in YAML as a Jinja2 configuration file. It is much harder than the previous labs. I recommend you revise
-the Qwiklabs quest called [Deployment Manager](https://www.qwiklabs.com/quests/30), if you are not familiar with building custom templates.
+But if you aim to be a professional cloud engineer, you must know and apply some more advanced skills, such as creating and managing cloud resources with simple templates for a repeatable deployment process. The third lab of the challenge quest, **GSP302** _"[Configure a Firewall and a Startup Script with Deployment Manager](https://www.qwiklabs.com/focuses/1736?parent=catalog)"_, is to test your ability to define the resources of a basic apache web server. You need to know how to format and parameterize the resource properties in YAML as a Jinja2 configuration file. It is much harder than the previous labs. I recommend you revising the Qwiklabs quest called [Deployment Manager](https://www.qwiklabs.com/quests/30), if you are not familiar with building custom templates.
 
 ## Brief Introduction of Challenge Scenario
 
@@ -31,7 +31,7 @@ When you open the page of this lab in Qwiklabs, you can find the task requiremen
 {% include picture.html width="603" height="785"
 img="qwiklabs/score_box_of_qwiklabs_GSP302.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP302" class="shadow-none text-center" %}
 
-The screenshot above shows that there are 6 steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
+The screenshot above shows that there are six steps required for completing this lab. Combining with the instruction details, they are translated to the following mission statements.
 
 1. Configure a deployment template and apply it to the Deployment Manager.
 
@@ -87,7 +87,7 @@ Open the `install-web.sh` file, you should see the following codes:
 {% include picture.html height="296"
 img="qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor.png" alt="Snapshot of the given startup script in Cloud Shell code editor" %}
 
-Let recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})"_.
+Let's recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})"_.
 
 This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})"_. You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). For more information, read [Running startup scripts
 ](https://cloud.google.com/compute/docs/startupscript) in the Cloud Deployment Manager documentation.
@@ -150,7 +150,7 @@ _Replace `<YOUR-SERVICE-ACCOUNT-EMAIL>` in Line 31 to the Service Account of you
 
 ## Apply the Deployment
 
-It's the time to deploy the configuration file and see if the deployment works.
+It's time to deploy the configuration file and see if the deployment works.
 Run the following `gcloud` command in Cloud Shell.
 
 ```bash

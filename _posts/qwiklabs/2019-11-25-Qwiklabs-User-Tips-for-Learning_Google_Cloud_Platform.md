@@ -10,7 +10,7 @@ permalink: /blog/qwiklabs/qwiklabs-user-tips-for-learning-google-cloud-platform
 redirect_from:
  - /blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
  - /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
-image: 
+image:
   path: /images/posts/qwiklabs/qwiklabs-badges.jpg
   height: 410
 excerpt: Over 400 hands-on labs and quests available on Qwiklabs for learning GCP. Therefore, we made a visual map for you to more easily seek your desired learning path.
@@ -63,7 +63,7 @@ I spent about three months to take all the Qwiklabs quests for Google Cloud Plat
 </button>
 </div>
 
-<amp-lightbox scrollable id="amp-largemap" layout="nodisplay" animate-in="fade-in">  
+<amp-lightbox scrollable id="amp-largemap" layout="nodisplay" animate-in="fade-in">
   <div class="iframe-bg-white">
     <button type="button" class="close" tabindex="-1" on="tap:amp-largemap.close">&times;</button>
     <amp-iframe width="1493" height="2259" layout="intrinsic" frameborder="0" sandbox="allow-scripts" src="/images/projects/qwiklabs-quests-map.svg">
@@ -142,7 +142,8 @@ _The Hints for Challenge Labs 2020:_
 - [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-20-Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab %})
 - [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})
 - [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook ]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
-- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab | logbook]({% post_url qwiklabs/logbooks/2021-03-03-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
+- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-03-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
+- [☁ Ensure Access & Identity in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-10-gsp342-ensure-access-and-identity-in-google-cloud-challenge-lab %})
 
 _Quizzes Answers:_
 

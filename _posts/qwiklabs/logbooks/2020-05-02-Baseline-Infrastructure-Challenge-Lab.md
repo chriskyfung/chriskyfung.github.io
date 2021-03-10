@@ -7,9 +7,11 @@ last_modified_at: 2020-08-04 10:08:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Cloud Function]
 permalink: /blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab
-redirect_from: /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
+redirect_from:
+   - /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
+   - /blog/qwiklabs/GSP315
 excerpt: A brief procedure for qwiklab GSP315 "Perform Foundational Infrastructure Tasks in Google Cloud&#58; Challenge Lab".
-image: 
+image:
    path: /images/posts/qwiklabs/map.jpg
    height: 565
 amp:

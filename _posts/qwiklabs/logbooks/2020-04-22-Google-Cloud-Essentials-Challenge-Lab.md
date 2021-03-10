@@ -7,9 +7,11 @@ last_modified_at: 2020-06-22 09:45:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab
-redirect_from: /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
+redirect_from:
+   - /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
+   - /blog/qwiklabs/GSP313
 excerpt: Hints for qwiklab GSP313 "Getting Started&#58; Create and Manage Cloud Resources&#58; Challenge Lab" | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
-image: 
+image:
    path: /images/posts/qwiklabs/qwiklabs-GSP313-task1.png
    height: 386
 ---
@@ -72,7 +74,7 @@ The deployed nginx web servers:
 
 ### Summary
 
-In a nutshell, this challenge lab is basic and simple that only requires directly reuse the steps and Cloud Shell commands from the labs in the Google Cloud Essentials quest. I recommend you open the labs that listed in the above hints in new tabs when you are carrying out this challenge lab. You can find all instructions from those references, and try your best to finish the challenge lab by yourself.
+In a nutshell, this challenge lab is basic and simple that only requires directly reuse the steps and Cloud Shell commands from the labs in the Google Cloud Essentials quest. I recommend you open the labs listed in the above hints in new tabs when you are carrying out this challenge lab. You can find all instructions from those references, and try your best to finish the challenge lab by yourself.
 
 If you still have questions, you can leave a comment below.
 

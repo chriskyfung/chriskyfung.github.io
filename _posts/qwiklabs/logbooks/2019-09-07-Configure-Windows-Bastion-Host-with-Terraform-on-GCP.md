@@ -6,9 +6,10 @@ date: 2019-09-07
 category: Cloud
 permalink: /blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 redirect_from:
- - /blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
+  - /blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
+  - /blog/qwiklabs/GSP303
 tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook, Secure VPC]
-image: 
+image:
    path: /images/posts/qwiklabs/qwiklabs-GSP303-diagram.png
    height: 495
 amp:
@@ -17,7 +18,7 @@ css:
   syntax: true
 ---
 
-The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challenging lab that I took in Qwiklabs (here is the [link to the lab](https://www.qwiklabs.com/catalog?keywords=GSP303)). It was a tricky one that I failed and did it a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
+The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challenging lab that I took in Qwiklabs (here is the [link to the lab](https://www.qwiklabs.com/catalog?keywords=GSP303)). It was a tricky one that I failed and did a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
 
 <!--more-->
 
@@ -201,6 +202,7 @@ resource "google_compute_instance" "vm_instance" {
 ```
 
 #### Configurations for the instance `vm-bastionhost`
+
 - Make a new directory called `bastionhost`.
 - Create a new file called `main.tf` inside the `bastionhost` directory, and copy the following into the file,
 
@@ -266,6 +268,7 @@ This post has also been published to Medium. If you like to read and take notes 
 * * *
 
 **See Also**:
+
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
 - [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
 - [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})

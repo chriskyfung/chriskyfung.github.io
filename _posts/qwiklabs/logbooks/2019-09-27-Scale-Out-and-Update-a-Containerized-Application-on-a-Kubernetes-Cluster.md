@@ -7,9 +7,10 @@ category: Cloud
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes]
 permalink: /blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
 redirect_from:
- - /blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
+  - /blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
+  - /blog/qwiklabs/GSP305
 excerpt: A summary of Google self-paced lab GSP305 "Scale Out and Update a Containerized Application on a Kubernetes Cluster" on Qwiklabs | 1. Build a Docker Image of Sample Application with a `v2` tag | 2. Update the Application to the Kubernetes Cluster Using Web Console | 3. Scale out the application so that the Kubernetes cluster deployment
-image: 
+image:
   path: /images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png
   width: 524
   height: 440
@@ -100,7 +101,7 @@ In the Scale dialog, type 2 to the field **Replicas**,
 
 {% include picture.html width="533" height="241" img="qwiklabs/qwiklabs-GSP305-step5-scale-to-2-replicas.png" alt="Scale a workload to a new size" class="text-center" %}
 
-Click **SCALE**, then waits for creating/deleting instances until 2 replicas exist in the Kubernetes cluster.
+Click **SCALE**, then wait for creating/deleting instances until **2** replicas exist in the Kubernetes cluster.
 
 Open the IP address of the external endpoint, you should see a similar web response:<br>
 {% include picture.html width="362" height="119" img="qwiklabs/qwiklabs-GSP305-step6-updated-echo-app-application.png" alt="Resulted web page" class="text-center" %}
