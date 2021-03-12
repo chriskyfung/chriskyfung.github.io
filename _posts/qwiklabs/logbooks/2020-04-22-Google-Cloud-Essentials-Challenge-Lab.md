@@ -68,7 +68,7 @@ The deployed nginx web servers:
 
 {% include picture.html width="566" height="312" img="qwiklabs/qwiklabs-GSP313-task3.png" alt="Nginx web servers deployed on Google Cloud Platform" %}
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

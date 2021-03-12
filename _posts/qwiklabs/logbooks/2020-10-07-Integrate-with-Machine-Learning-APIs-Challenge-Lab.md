@@ -168,7 +168,7 @@ The query results should look like:
 
 {% include picture.html img="qwiklabs/gsp329-task5-query-results.png" width="653" height="356" %}
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

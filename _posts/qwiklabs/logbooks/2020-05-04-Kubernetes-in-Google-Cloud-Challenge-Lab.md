@@ -273,7 +273,7 @@ Finally, manually trigger the build in the Jenkins console
 
 {% include picture.html height="748" img="qwiklabs/qwiklab-GSP318-valkyrie-app-dev.2.png" %}
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

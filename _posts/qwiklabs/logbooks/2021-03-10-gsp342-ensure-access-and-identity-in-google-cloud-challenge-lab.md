@@ -142,7 +142,7 @@ The new Kubernetes Engine cluster needs to fulfill the following requirements:
 
 1. Navigate to **Compute Engine** in the Cloud Console, note down the **Internal IP** address of the `orca-jumphost` instance.
 
-  Alternatively, you can use the following command to obtain the IP address:
+   Alternatively, you can use the following command to obtain the IP address:
 
    ```bash
    JUMPHOST_IP=$(gcloud compute instances describe orca-jumphost \
@@ -192,13 +192,14 @@ The last task is to deploy a simple test application `hello-server` to the Kuber
 
 5. Finally, run the following to expose the application using a load balancer service with mapping from port 80 to 8080:
 
-   ```bash  
+   ```bash
    kubectl expose deployment hello-server --name orca-hello-service \
       --type LoadBalancer --port 80 --target-port 8080
    ```
 
    **Useful documentation:** [Using kubectl expose to create a Service \| Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps#using_kubectl_expose_to_create_a_service)
 
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

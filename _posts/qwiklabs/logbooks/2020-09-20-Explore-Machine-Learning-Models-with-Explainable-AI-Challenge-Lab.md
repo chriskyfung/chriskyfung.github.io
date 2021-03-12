@@ -194,7 +194,7 @@ Run the last cell in the notebook to activate What-If Tool. Explore the differen
 
 {% include picture.html img="qwiklabs/qwiklab-gsp324-task5-what-if-ttol-3.png" width="397" height="56" class="ml-li" alt="The thresholds have to be wildly different for the limited model" %}
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

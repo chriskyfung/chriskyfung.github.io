@@ -78,7 +78,7 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 3. Click the pencil icon, select **Delete**.
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

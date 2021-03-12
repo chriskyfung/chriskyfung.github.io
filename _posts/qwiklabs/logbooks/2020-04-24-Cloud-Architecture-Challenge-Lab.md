@@ -213,7 +213,7 @@ Return to the Spinnaker UI and click **Pipelines** to watch the pipeline start t
 
 Once the pipeline completes, the color of the sample application has changed from orange to blue in the canary deployment, click **Check my progress** to verify **Task 3**.
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

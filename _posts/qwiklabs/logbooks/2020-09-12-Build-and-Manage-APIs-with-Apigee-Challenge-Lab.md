@@ -430,7 +430,7 @@ Expected output:
 {"valid":true,"message":"mock response"}
 ```
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

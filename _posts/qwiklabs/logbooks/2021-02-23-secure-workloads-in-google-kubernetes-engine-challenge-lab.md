@@ -45,19 +45,19 @@ gsutil -m cp gs://cloud-training/gsp335/* .
 
 You need to create a Kubernetes cluster with the following values:
 
- - zone: Us-central1-c
- - machine-type: n1-standard-4
- - number of nodes: 2
- - enable network policy
+- zone: Us-central1-c
+- machine-type: n1-standard-4
+- number of nodes: 2
+- enable network policy
 
 Run the following `gcloud` command will create a cluster called **kraken-cluster** with the required specifications:
 
 ```bash
 gcloud container clusters create kraken-cluster \
-  --zone us-central1-c \
-  --machine-type n1-standard-4 \
-  --num-nodes 2 \
-  --enable-network-policy
+   --zone us-central1-c \
+   --machine-type n1-standard-4 \
+   --num-nodes 2 \
+   --enable-network-policy
 ```
 
 **Tips:** To learn more, open this [Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create "gcloud container clusters create - Cloud SDK Documentation") to study the flags for the command line.
@@ -143,8 +143,8 @@ Now you need a service account with binding the role `roles/cloudsql.client` and
 gcloud iam service-accounts create kraken-wordpress-sa
 
 gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID \
-    --member="serviceAccount:kraken-wordpress-sa@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com" \
-    --role="roles/cloudsql.client"
+   --member="serviceAccount:kraken-wordpress-sa@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com" \
+   --role="roles/cloudsql.client"
 
 gcloud iam service-accounts keys create key.json --iam-account=kraken-wordpress-sa@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com
 ```
@@ -161,8 +161,8 @@ Also, the WordPress database username and password as well.
 
 ```bash
 kubectl create secret generic cloudsql-db-credentials \
-    --from-literal username=wordpress \
-    --from-literal password='Passw0rd'
+   --from-literal username=wordpress \
+   --from-literal password='Passw0rd'
 ```
 
 ### Create the WordPress deployment and service
@@ -304,16 +304,16 @@ You need to add one more network policy to allow ingress traffic from the intern
 apiVersion: Networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: allow-world-to-nginx-ingress
-  namespace: default
+   name: allow-world-to-nginx-ingress
+   namespace: default
 spec:
-  podSelector:
-    matchLabels:
+   podSelector:
+      matchLabels:
       app: nginx-ingress
-  policyTypes:
-  - Ingress
-  ingress:
-  - {}
+   policyTypes:
+   - Ingress
+   ingress:
+   - {}
 ```
 
 Append the new policy to the `network-policy.yaml`, and save file.  \
@@ -324,10 +324,10 @@ kubectl apply -f network-policy.yaml
 ```
 
 **Related documentation:**
+
 - [Creating a cluster network policy \| Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/network-policy#using-gcloud-init)
 - [Network Policies \| Kubernetes](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 - [Declare Network Policy \| Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
-
 
 ## Task 5: Setup Binary Authorization
 
@@ -372,6 +372,7 @@ Your cluster will start updating its binary authorization settings. Wait until t
 - [Pod Security Policies \| Kubernetes](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
 
 The challenge lab provides the following Pod Security Policy demo files for you to use:
+
 - `psp-restrictive.yaml`
 - `psp-role.yaml`
 - `pop-use.yaml`
@@ -418,6 +419,7 @@ Task3: Setup Ingress with TLS
 ```
 
 **Keep on reading**:
+
 - [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
 - [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
 - [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})

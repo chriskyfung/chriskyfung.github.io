@@ -145,7 +145,7 @@ You must make a copy of your BigQuery table before running a Data Loss Preventio
 7. In the _Create job or job trigger_ pane, assign a Job ID and then click **CREATE**.
 8. Click **CONFIRM CREATE**.
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

@@ -274,22 +274,22 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 10. Run the following command to use theGoogle Video Intelligence and detect all text on the video.
 
-   ```bash
-   curl -s -H 'Content-Type: application/json' \
-      -H 'Authorization: Bearer '$(gcloud auth print-access-token)'' \
-      'https://videointelligence.googleapis.com/v1/videos:annotate' \
-      -d @gvi-request.json > task4-gvi.result
-   ```
+    ```bash
+    curl -s -H 'Content-Type: application/json' \
+       -H 'Authorization: Bearer '$(gcloud auth print-access-token)'' \
+       'https://videointelligence.googleapis.com/v1/videos:annotate' \
+       -d @gvi-request.json > task4-gvi.result
+    ```
 
 11. Upload the resulted file to Cloud Storage by running:
 
-   ```bash
-   gsutil cp task4-gvi.result gs://<YOUR-PROJECT_ID>-marking/task4-gvi.result
-   ```
+    ```bash
+    gsutil cp task4-gvi.result gs://<YOUR-PROJECT_ID>-marking/task4-gvi.result
+    ```
 
-   **Replace** `<YOUR-PROJECT_ID>` with your project ID.
+    **Replace** `<YOUR-PROJECT_ID>` with your project ID.
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

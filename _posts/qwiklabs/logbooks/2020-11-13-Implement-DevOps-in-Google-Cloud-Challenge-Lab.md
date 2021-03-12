@@ -300,7 +300,7 @@ This process takes about five minutes to complete.
 
 2. Go to the Jenkins user interface, click **Scan Multibranch Pipeline Now** if you want to trigger the build immediately.
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

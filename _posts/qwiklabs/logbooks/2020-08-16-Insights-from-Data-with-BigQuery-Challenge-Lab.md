@@ -356,7 +356,7 @@ from summary
 
 If you fail to get the score of this task, remove all data and reports from the Datastudio console before retry.
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

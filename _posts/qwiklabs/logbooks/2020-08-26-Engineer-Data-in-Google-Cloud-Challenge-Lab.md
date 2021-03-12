@@ -196,7 +196,7 @@ At the end of the lab, your BigQuery dataset should contain the following tables
 
 {% include picture.html img="qwiklabs/qwiklab-gsp327-task3-resulted-tables.png" width="262" height="217" class="text-center" %}
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 

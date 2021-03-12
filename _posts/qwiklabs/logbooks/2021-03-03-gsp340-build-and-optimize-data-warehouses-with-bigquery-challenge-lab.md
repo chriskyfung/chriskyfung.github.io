@@ -7,17 +7,17 @@ author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab
 redirect_from:
-  - /blog/qwiklabs/GSP340
+   - /blog/qwiklabs/GSP340
 image:
-  path: /images/posts/qwiklabs/gsp340-cover.png
+   path: /images/posts/qwiklabs/gsp340-cover.png
 excerpt: A brief procedure for the Google self-paced lab GSP340 on Qwiklabs. You will practice the skills for creating a day-partitioned table in BigQuery and populating data from different datasets to it for the analysis of the Covid-19 pandemic.
 amp:
-  youtube: true
+   youtube: true   
 css:
-  syntax: true
-  custom: >
-    .ml-li { margin-left: 2rem; }
-    .tips-card { padding: 1rem; background-color: gold; }
+   syntax: true
+   custom: >
+      .ml-li { margin-left: 2rem; }
+      .tips-card { padding: 1rem; background-color: gold; }
 ---
 
 # GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab
@@ -58,22 +58,22 @@ Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** the
 {:start="6"}
 6. Click **COMPOSE NEW QUERY**. Copy the following to the query editor,
 
-    ```sql
-    CREATE OR REPLACE TABLE <YOUR_DATASET_ID>.<NEW_TABLE_NAME>
-    PARTITION BY date
-    OPTIONS(
-    partition_expiration_days=90,
-    description="oxford_policy_tracker table in the COVID 19 Government Response public dataset with  an expiry time set to 90 days."
-    ) AS
-    SELECT
-        *
-    FROM
-        `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`
-    WHERE
-        alpha_3_code NOT IN ('GBR', 'USA')
-    ```
+   ```sql
+   CREATE OR REPLACE TABLE <YOUR_DATASET_ID>.<NEW_TABLE_NAME>
+   PARTITION BY date
+   OPTIONS(
+   partition_expiration_days=90,
+   description="oxford_policy_tracker table in the COVID 19 Government Response public dataset with  an expiry time set to 90 days."
+   ) AS
+   SELECT
+      *
+   FROM
+      `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`
+   WHERE
+      alpha_3_code NOT IN ('GBR', 'USA')
+   ```
 
-    Replace `<YOUR_DATASET_ID>` with your dataset ID and `<NEW_TABLE_NAME>` to a table name you desired.
+   Replace `<YOUR_DATASET_ID>` with your dataset ID and `<NEW_TABLE_NAME>` to a table name you desired.
 
 7. Click **RUN** to process the query.
 
@@ -92,13 +92,13 @@ ALTER TABLE <YOUR_DATASET_ID>.<YOUR_TABLE_NAME>
 ADD COLUMN population INT64,
 ADD COLUMN country_area FLOAT64,
 ADD COLUMN mobility STRUCT<
-  avg_retail      FLOAT64,
-  avg_grocery     FLOAT64,
-  avg_parks       FLOAT64,
-  avg_transit     FLOAT64,
-  avg_workplace   FLOAT64,
-  avg_residential FLOAT64
-  >
+   avg_retail      FLOAT64,
+   avg_grocery     FLOAT64,
+   avg_parks       FLOAT64,
+   avg_transit     FLOAT64,
+   avg_workplace   FLOAT64,
+   avg_residential FLOAT64
+   >
 ```
 
 Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, correspondingly.
@@ -113,13 +113,13 @@ The query for the **SQL JOIN** should look like this:
 
 ```sql
 UPDATE
-  `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
+   `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
 SET
-  population = t1.population
+   population = t1.population
 FROM
-  `bigquery-public-data.covid19_ecdc.covid_19_geographic_distribution_worldwide` t1
+   `bigquery-public-data.covid19_ecdc.covid_19_geographic_distribution_worldwide` t1
 WHERE
-  CONCAT(t0.alpha_3_code, t0.date) = CONCAT(t1.country_territory_code, t1.date);
+   CONCAT(t0.alpha_3_code, t0.date) = CONCAT(t1.country_territory_code, t1.date);
 ```
 
 Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, correspondingly.
@@ -132,13 +132,13 @@ The query for the SQL JOIN should look like this:
 
 ```sql
 UPDATE
-  `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
+   `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
 SET
-  t0.country_area = t1.country_area
+   t0.country_area = t1.country_area
 FROM
-  `bigquery-public-data.census_bureau_international.country_names_area` t1
+   `bigquery-public-data.census_bureau_international.country_names_area` t1
 WHERE
-  t0.country_name = t1.country_name
+   t0.country_name = t1.country_name
 ```
 
 Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, correspondingly.
@@ -155,27 +155,27 @@ The query for updating the mobility record should look like this:
 
 ```sql
 UPDATE
-  `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
+   `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>` t0
 SET
-  t0.mobility.avg_retail      = t1.avg_retail
-  t0.mobility.avg_grocery     = t1.avg_grocery
-  t0.mobility.avg_parks       = t1.avg_parks
-  t0.mobility.avg_transit     = t1.avg_transit
-  t0.mobility.avg_workplace   = t1.avg_workplace
-  t0.mobility.avg_residential = t1.avg_residential
+   t0.mobility.avg_retail      = t1.avg_retail
+   t0.mobility.avg_grocery     = t1.avg_grocery
+   t0.mobility.avg_parks       = t1.avg_parks
+   t0.mobility.avg_transit     = t1.avg_transit
+   t0.mobility.avg_workplace   = t1.avg_workplace
+   t0.mobility.avg_residential = t1.avg_residential
 FROM
-  ( SELECT country_region, date,
-    AVG(retail_and_recreation_percent_change_from_baseline) as avg_retail,
-    AVG(grocery_and_pharmacy_percent_change_from_baseline)  as avg_grocery,
-    AVG(parks_percent_change_from_baseline) as avg_parks,
-    AVG(transit_stations_percent_change_from_baseline) as avg_transit,
-    AVG(workplaces_percent_change_from_baseline) as avg_workplace,
-    AVG(residential_percent_change_from_baseline)  as avg_residential
-    FROM `bigquery-public-data.covid19_google_mobility.mobility_report`
-    GROUP BY country_region, date
-  ) AS t1
+   ( SELECT country_region, date,
+      AVG(retail_and_recreation_percent_change_from_baseline) as avg_retail,
+      AVG(grocery_and_pharmacy_percent_change_from_baseline)  as avg_grocery,
+      AVG(parks_percent_change_from_baseline) as avg_parks,
+      AVG(transit_stations_percent_change_from_baseline) as avg_transit,
+      AVG(workplaces_percent_change_from_baseline) as avg_workplace,
+      AVG(residential_percent_change_from_baseline)  as avg_residential
+      FROM `bigquery-public-data.covid19_google_mobility.mobility_report`
+      GROUP BY country_region, date
+   ) AS t1
 WHERE
-  CONCAT(t0.country_name, t0.date) = CONCAT(t1.country_region, t1.date)
+   CONCAT(t0.country_name, t0.date) = CONCAT(t1.country_region, t1.date)
 ```
 
 Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, correspondingly.

@@ -162,11 +162,11 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
 9. Enter the **Root password** generated in Step 4.
 10. In the SQL console, run the following query to create the wordpress database:
 
-   ```sql
-   CREATE DATABASE wordpress;
-   GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
-   FLUSH PRIVILEGES;
-   ```
+    ```sql
+    CREATE DATABASE wordpress;
+    GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
+    FLUSH PRIVILEGES;
+    ```
 
 11. Enter `exit` to quit the SQL shell.
 
@@ -178,27 +178,27 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 2. Click **Create cluster**.
 3. In the Cluster basics tab, configure:
 
-   Name: `griffin-dev`
-   Zone: `us-east1-b`
+   - Name: `griffin-dev`
+   - Zone: `us-east1-b`
 
-5. In the left pane, click **default-pool** under **NODE POOLS** and set
+4. In the left pane, click **default-pool** under **NODE POOLS** and set
 
-   Number of nodes: `2`
+   - Number of nodes: `2`
 
 
 6. Click **Nodes** Under **default-pool**, and set
 
-   Machine type: `n1-standard-4`
+   - Machine type: `n1-standard-4`
 
-7. Go to the **Network** tab, set
+6. Go to the **Network** tab, set
 
-   Network: `griffin-dev-vpc`
-   Node subnet: `griffin-dev-wp`
+   - Network: `griffin-dev-vpc`
+   - Node subnet: `griffin-dev-wp`
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp321-k8s-vpc-networking.png" width="913" height="947" alt="Networking settings for new Kubernetes cluster griffin-dev" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp321-k8s-vpc-networking.png" width="913" height="947" alt="Networking settings for new Kubernetes cluster griffin-dev" class="ml-li" %}
 
-{:start="8"}
-8. Click **CREATE**.
+{:start="7"}
+7. Click **CREATE**.
 
 ## Task 6: Prepare the Kubernetes cluster
 
@@ -253,6 +253,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 {% include picture.html img="qwiklabs/qwiklab-gsp321-sql-conf-yaml.jpg" width="673" height="155" class="ml-li text-center" %}
 
+{:start="3"}
 3. Save the file change.
 4. Go back to the Cloud Shell, run the following commands:
 
@@ -294,7 +295,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 4. In the Role dropdown, select **Project** > **Editor**.
 5. Click **SAVE**.
 
-<br/>
+<br>
 
 **Congratulations! You completed this challenge lab.**
 
