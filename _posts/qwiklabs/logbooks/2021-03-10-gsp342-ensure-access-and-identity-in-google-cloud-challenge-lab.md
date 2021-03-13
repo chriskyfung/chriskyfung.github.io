@@ -10,7 +10,7 @@ redirect_from:
    - /blog/qwiklabs/GSP342
 image:
    path: /images/posts/qwiklabs/gsp342-cover.png
-excerpt: A brief procedure for the Google self-paced lab GSP342 on Qwiklabs. You will practice the skills for
+excerpt: A brief procedure for the Google self-paced lab GSP342 on Qwiklabs. You will practice the skills in binding IAM security roles to a service account and create a private Kubernetes Engine cluster on Google Cloud Platform.
 amp:
    youtube: true
 css:
@@ -94,7 +94,8 @@ gcloud iam service-accounts create orca-private-cluster-sa \
    --display-name "Orca Private Cluster Service Account"
 ```
 
-**Useful documentations:**
+**Useful documentation:**
+
 - [GSP199 Service Accounts and Roles: Fundamentals \| Qwiklabs](https://google.qwiklabs.com/focuses/1038?parent=catalog)
 - [Creating a service account \| Cloud IAM Documentation](https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating)
 - [gcloud iam service-accounts create  \|  Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create)
