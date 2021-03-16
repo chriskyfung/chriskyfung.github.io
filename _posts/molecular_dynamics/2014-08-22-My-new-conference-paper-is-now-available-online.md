@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My new conference paper is now available online"
+title: "My APEA conference paper is now available on Scientific.Net"
 author: chris
 date: 2014-08-22
 category: Academic
