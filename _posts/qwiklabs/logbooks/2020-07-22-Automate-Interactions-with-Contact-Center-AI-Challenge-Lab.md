@@ -8,11 +8,12 @@ tags: [Qwiklabs, Google Cloud, Logbook, Cloud AI]
 permalink: /blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab
 redirect_from:
    - /blog/qwiklabs/GSP311
+   - /blog/qwiklabs/gsp311
 image:
    path: /images/posts/qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png
    width: 842
    height: 808
-excerpt: A brief procedure for the Google self-paced lab GSP311 on Qwiklabs.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP311 on Qwiklabs.
 amp:
    youtube: true
 css:

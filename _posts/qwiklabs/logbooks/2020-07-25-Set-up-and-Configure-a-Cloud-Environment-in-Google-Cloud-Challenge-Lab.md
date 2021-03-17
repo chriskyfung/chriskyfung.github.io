@@ -9,9 +9,10 @@ tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab
 redirect_from:
    - /blog/qwiklabs/GSP321
+   - /blog/qwiklabs/gsp321
 image:
    path: /images/posts/qwiklabs/qwiklab-gsp321-title.jpg
-excerpt: A brief procedure for the Google self-paced lab GSP321 on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP321 on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
 
 amp:
    youtube: true

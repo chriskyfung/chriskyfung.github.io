@@ -9,10 +9,11 @@ tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab
 redirect_from:
    - /blog/qwiklabs/GSP787
+   - /blog/qwiklabs/gsp787
 image:
    path: /images/posts/qwiklabs/qwiklab-gsp787-00.jpg
    fit: right
-excerpt: A brief procedure for the Google self-paced lab GSP787 on Qwiklabs. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP787 on Qwiklabs. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
 amp:
    youtube: true
 css:

@@ -9,9 +9,10 @@ permalink: /blog/qwiklabs/secure-workloads-in-google-kubernetes-engine-challenge
 redirect_from:
    - /blog/qwiklabs/Secure-Workloads-in-Google-Kubernetes-Engine-Challenge-Lab
    - /blog/qwiklabs/GSP335
+   - /blog/qwiklabs/gsp335
 image:
    path: /images/posts/qwiklabs/gsp335-cover.png
-excerpt: A brief procedure for the Google self-paced lab GSP335 on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP335 on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
 amp:
    youtube: true
 css:

@@ -9,7 +9,8 @@ permalink: /blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-
 redirect_from:
   - /blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
   - /blog/qwiklabs/GSP305
-excerpt: A summary of Google self-paced lab GSP305 "Scale Out and Update a Containerized Application on a Kubernetes Cluster" on Qwiklabs | 1. Build a Docker Image of Sample Application with a `v2` tag | 2. Update the Application to the Kubernetes Cluster Using Web Console | 3. Scale out the application so that the Kubernetes cluster deployment
+  - /blog/qwiklabs/gsp305
+excerpt: A summary of Google Cloud self-paced training GSP305 "Scale Out and Update a Containerized Application on a Kubernetes Cluster" on Qwiklabs | 1. Build a Docker Image of Sample Application with a `v2` tag | 2. Update the Application to the Kubernetes Cluster Using Web Console | 3. Scale out the application so that the Kubernetes cluster deployment
 image:
   path: /images/posts/qwiklabs/qwiklabs-GSP305-step3-rolling-update-GKE-application.png
   width: 524

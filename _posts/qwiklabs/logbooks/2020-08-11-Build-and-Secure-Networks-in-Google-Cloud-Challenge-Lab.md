@@ -8,9 +8,10 @@ tags: [Qwiklabs, Google Cloud, Logbook, Secure VPC]
 permalink: /blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab
 redirect_from:
    - /blog/qwiklabs/GSP322
+   - /blog/qwiklabs/gsp322
 image:
    path: /images/posts/qwiklabs/qwiklab-gsp322-title.jpg
-excerpt: A brief procedure for the Google self-paced lab GSP322 on Qwiklabs.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP322 on Qwiklabs.
 amp:
    youtube: true
 css:

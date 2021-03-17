@@ -10,7 +10,8 @@ permalink: /blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deploym
 redirect_from:
   - /blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager
   - /blog/qwiklabs/GSP302
-excerpt: A summary of Google self-paced lab GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" on Qwiklabs | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
+  - /blog/qwiklabs/gsp302
+excerpt: A summary of Google Cloud self-paced training GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" on Qwiklabs | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
 image:
   path: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
   height: 447

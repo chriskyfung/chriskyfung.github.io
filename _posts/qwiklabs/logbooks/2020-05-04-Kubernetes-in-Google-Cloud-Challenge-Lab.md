@@ -11,7 +11,8 @@ redirect_from:
    - /blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab
    - /blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab
    - /blog/qwiklabs/GSP318
-excerpt: A brief procedure for qwiklab GSP318 "Deploy to Kubernetes in Google Cloud&#58; Challenge Lab". It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
+   - /blog/qwiklabs/gsp318
+excerpt: A brief procedure for Google Cloud self-paced training GSP318 "Deploy to Kubernetes in Google Cloud&#58; Challenge Lab" on Qwiklabs. It includes&#58; How to create Docker images, Deploy and update the containers to Kubernetes, and Create a pipeline in Jenkins.
 image:
    path: /images/posts/qwiklabs/qwiklab-GSP318-cover.png
    fit: left

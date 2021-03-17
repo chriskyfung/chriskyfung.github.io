@@ -9,7 +9,8 @@ permalink: /blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluste
 redirect_from:
    - /blog/2019/09/25/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster
    - /blog/qwiklabs/GSP304
-excerpt: A summary of Google self-paced lab GSP304 "Build and Deploy a Docker Image to a Kubernetes Cluster" on Qwiklabs | 1. Create a Kubernetes Cluster | 2. Build a Docker Image of Sample Application | 3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)  | 3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)
+   - /blog/qwiklabs/gsp304
+excerpt: A summary of Google Cloud self-paced training GSP304 "Build and Deploy a Docker Image to a Kubernetes Cluster" on Qwiklabs | 1. Create a Kubernetes Cluster | 2. Build a Docker Image of Sample Application | 3a. Deploy the Application to the Kubernetes Cluster Using Web Console (Method 1)  | 3b. Deploy the Application to the Kubernetes Cluster Using Cloud Shell (Method 2)
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP304-step3-echo-app-image-in-container-registry.png
    width: 569

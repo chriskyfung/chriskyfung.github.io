@@ -8,9 +8,10 @@ tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab
 redirect_from:
    - /blog/qwiklabs/GSP340
+   - /blog/qwiklabs/gsp340
 image:
    path: /images/posts/qwiklabs/gsp340-cover.png
-excerpt: A brief procedure for the Google self-paced lab GSP340 on Qwiklabs. You will practice the skills for creating a day-partitioned table in BigQuery and populating data from different datasets to it for the analysis of the Covid-19 pandemic.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP340 on Qwiklabs. You will practice the skills for creating a day-partitioned table in BigQuery and populating data from different datasets to it for the analysis of the Covid-19 pandemic.
 amp:
    youtube: true   
 css:

@@ -10,7 +10,8 @@ permalink: /blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cl
 redirect_from:
    - /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
    - /blog/qwiklabs/GSP315
-excerpt: A brief procedure for qwiklab GSP315 "Perform Foundational Infrastructure Tasks in Google Cloud&#58; Challenge Lab".
+   - /blog/qwiklabs/gsp315
+excerpt: A brief procedure for the Google Cloud self-paced training GSP315 "Perform Foundational Infrastructure Tasks in Google Cloud&#58; Challenge Lab" on Qwiklabs.
 image:
    path: /images/posts/qwiklabs/map.jpg
    height: 565

@@ -9,7 +9,8 @@ permalink: /blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
 redirect_from:
    - /blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
    - /blog/qwiklabs/GSP306
-excerpt: A summary of Google self-paced lab GSP306 "Migrate a MySQL Database to Google Cloud SQL" on Qwiklabs | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
+   - /blog/qwiklabs/gsp306
+excerpt: A summary of Google Cloud self-paced training GSP306 "Migrate a MySQL Database to Google Cloud SQL" on Qwiklabs | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png
    height: 317

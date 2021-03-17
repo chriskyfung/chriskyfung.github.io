@@ -8,10 +8,11 @@ tags: [Qwiklabs, Google Cloud, Logbook, Jenkins]
 permalink: /blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab
 redirect_from:
    - /blog/qwiklabs/GSP330
+   - /blog/qwiklabs/gsp330
 image:
    path: /images/posts/qwiklabs/gsp330-cover.png
    fit: left
-excerpt: A brief procedure for the Google self-paced lab GSP330 on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP330 on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
 amp:
    youtube: true
 css:

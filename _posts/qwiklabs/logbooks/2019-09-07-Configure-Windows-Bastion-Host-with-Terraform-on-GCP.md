@@ -8,6 +8,7 @@ permalink: /blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
 redirect_from:
   - /blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP
   - /blog/qwiklabs/GSP303
+  - /blog/qwiklabs/gsp303
 tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook, Secure VPC]
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP303-diagram.png

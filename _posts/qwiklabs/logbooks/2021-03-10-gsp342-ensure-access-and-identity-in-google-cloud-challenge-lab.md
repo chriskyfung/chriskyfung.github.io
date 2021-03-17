@@ -8,9 +8,10 @@ tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, Secure VPC]
 permalink: /blog/qwiklabs/ensure-access-and-identity-in-google-cloud-challenge-lab
 redirect_from:
    - /blog/qwiklabs/GSP342
+   - /blog/qwiklabs/gsp342
 image:
    path: /images/posts/qwiklabs/gsp342-cover.png
-excerpt: A brief procedure for the Google self-paced lab GSP342 on Qwiklabs. You will practice the skills in binding IAM security roles to a service account and create a private Kubernetes Engine cluster on Google Cloud Platform.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP342 on Qwiklabs. You will practice the skills in binding IAM security roles to a service account and create a private Kubernetes Engine cluster on Google Cloud Platform.
 amp:
    youtube: true
 css:

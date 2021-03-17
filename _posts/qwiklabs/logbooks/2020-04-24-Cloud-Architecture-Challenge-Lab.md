@@ -11,7 +11,8 @@ redirect_from:
    - /blog/qwiklabs/Cloud-Architecture-Challenge-Lab
    - /blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab
    - /blog/qwiklabs/GSP314
-excerpt: Hints for qwiklab GSP314 "Deploy and Manage Cloud Environments with Google Cloud&#58; Challenge Lab", including how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
+   - /blog/qwiklabs/gsp314
+excerpt: Hints for the Google Cloud self-paced training GSP314 "Deploy and Manage Cloud Environments with Google Cloud&#58; Challenge Lab" on Qwiklabs. You will practice how to creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker.
 image:
    path: /images/posts/qwiklabs/qwiklab-GSP314-spinaker-production.png
    height: 530

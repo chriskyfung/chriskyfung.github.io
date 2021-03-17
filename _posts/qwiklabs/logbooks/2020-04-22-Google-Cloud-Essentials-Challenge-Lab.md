@@ -10,7 +10,8 @@ permalink: /blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Chal
 redirect_from:
    - /blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab
    - /blog/qwiklabs/GSP313
-excerpt: Hints for qwiklab GSP313 "Getting Started&#58; Create and Manage Cloud Resources&#58; Challenge Lab" | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
+   - /blog/qwiklabs/gsp313
+excerpt: Hints for the Google Cloud self-paced training GSP313 "Getting Started&#58; Create and Manage Cloud Resources&#58; Challenge Lab" on Qwiklabs | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP313-task1.png
    height: 386

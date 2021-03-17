@@ -9,11 +9,12 @@ permalink: /blog/qwiklabs/build-and-manage-apis-with-apigee-challenge-lab
 redirect_from:
  - /blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab
  - /blog/qwiklabs/GSP336
+ - /blog/qwiklabs/gsp336
 image:
    path: /images/posts/qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg
    width: 962
    height: 639
-excerpt: A brief procedure for the Google self-paced lab GSP336 on Qwiklabs. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP336 on Qwiklabs. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
 amp:
    youtube: true
 css:

@@ -8,10 +8,11 @@ tags: [Qwiklabs, Google Cloud, Logbook, Cloud AI]
 permalink: /blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab
 redirect_from:
    - /blog/qwiklabs/GSP329
+   - /blog/qwiklabs/gsp329
 image:
    path: /images/posts/qwiklabs/gsp329-cover.png
    fit: left
-excerpt: A brief procedure for the Google self-paced lab GSP329 on Qwiklabs. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
+excerpt: A brief procedure for the Google Cloud self-paced training GSP329 on Qwiklabs. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
 amp:
    youtube: true
 css:
