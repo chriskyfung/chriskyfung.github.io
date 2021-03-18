@@ -18,7 +18,6 @@ css:
    syntax: true
    custom: >
       .ml-li { margin-left: 2rem; }
-      .tips-card { padding: 1rem; background-color: gold; }
 ---
 
 # GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab

@@ -18,18 +18,15 @@ css:
    syntax: true
    custom: >
       .ml-li { margin-left: 2rem; }
-      .tips-card { padding: 1rem; background-color: gold; }
 ---
 
-In this article, we will go through the lab **GSP342** _[Ensure Access & Identity in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/14572)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/150) exercise. You will practice
-
-**Topics tested**:
+In this article, we will go through the lab **GSP342** _[Ensure Access & Identity in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/14572?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/150) exercise on Qwiklabs. You will practice the following topics:
 
 - Create a custom security role.
 - Create a service account.
 - Bind IAM security roles to a service account.
 - Create a private Kubernetes Engine cluster in a custom subnet.
-- Deploy an application to a private Kubernetes Engine cluster
+- Deploy an application to a private Kubernetes Engine cluster.
 
 ## Task 0: Prep
 
@@ -50,13 +47,13 @@ In the example video, the lab provision created the subnet to the region `us-eas
 gcloud config set compute/zone us-east1-b
 ```
 
-**Useful documentation**: [Set default region and zone in your local client  \|  Compute Engine Documentation](https://cloud.google.com/compute/docs/gcloud-compute#set_default_zone_and_region_in_your_local_client)
+**Useful documentation**: [_Set default region and zone in your local client_  \|  Compute Engine Documentation](https://cloud.google.com/compute/docs/gcloud-compute#set_default_zone_and_region_in_your_local_client)
 
 ## Task 1: Create a custom security role
 
 You will create a new custom IAM security role called `orca_storage_update` in this task. The custom role needs to include the permissions necessary to add and update objects in Google Cloud Storage buckets.
 
-**Hints:** Review the lab [GSP190 IAM Custom Roles](https://www.qwiklabs.com/focuses/1035?parent=catalog) on Qwiklabs. You can also read [Creating a custom role](https://cloud.google.com/iam/docs/creating-custom-roles#creating_a_custom_role) in the Cloud IAM Documentation.
+**Hints:** Review the lab **GSP190** [_IAM Custom Roles_](https://www.qwiklabs.com/focuses/1035?parent=catalog) on Qwiklabs. You can also read [_Creating a custom role_](https://cloud.google.com/iam/docs/creating-custom-roles#creating_a_custom_role) in the Cloud IAM Documentation.
 
 The following steps show how to create a custom role using a YAML file:
 
@@ -97,13 +94,13 @@ gcloud iam service-accounts create orca-private-cluster-sa \
 
 **Useful documentation:**
 
-- [GSP199 Service Accounts and Roles: Fundamentals \| Qwiklabs](https://google.qwiklabs.com/focuses/1038?parent=catalog)
-- [Creating a service account \| Cloud IAM Documentation](https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating)
-- [gcloud iam service-accounts create  \|  Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create)
+- [_GSP199 Service Accounts and Roles: Fundamentals_ \| Qwiklabs](https://google.qwiklabs.com/focuses/1038?parent=catalog)
+- [_Creating a service account_ \| Cloud IAM Documentation](https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating)
+- [`gcloud iam service-accounts create` \| Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create)
 
 ## Task 3: Bind a custom security role to a service account
 
-**Tips:** Read [gcloud projects add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding) in the Cloud SDK Documentation.
+**Tips:** Read about [`gcloud projects add-iam-policy-binding`](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding) in the Cloud SDK Documentation.
 
 The lab requires you to bind these three built-in roles to the service account:
 
@@ -199,7 +196,7 @@ The last task is to deploy a simple test application `hello-server` to the Kuber
       --type LoadBalancer --port 80 --target-port 8080
    ```
 
-   **Useful documentation:** [Using kubectl expose to create a Service \| Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps#using_kubectl_expose_to_create_a_service)
+   **Useful documentation:** [_Using kubectl expose to create a Service_ \| Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps#using_kubectl_expose_to_create_a_service)
 
 <br>
 

@@ -1,0 +1,24 @@
+{
+  "grammarly.overrides": [
+    {
+      "files": [
+        "**/_posts/qwiklabs/logbooks/2021-03-18-gsp343-optimize-costs-for-google-kubernetes-engine-challenge-lab.md"
+      ],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "technical",
+        "emotions": [
+          "neutral",
+          "confident",
+          "analytical"
+        ],
+        "goals": [
+          "inform",
+          "describe",
+          "tellStory"
+        ]
+      }
+    }
+  ]
+}
