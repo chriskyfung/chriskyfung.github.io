@@ -15,8 +15,6 @@ permalink: /blog/:year/:month/:day/:title
 paginate_path: "/blog/page:num/"
 paginate: 12
 
-repository: chriskyfung/AutoFetcher-IG-Stories-to-GDrive
-
 sidebar:
   featured: true
   recent_posts: true
