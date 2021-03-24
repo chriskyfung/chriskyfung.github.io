@@ -20,9 +20,7 @@ css:
       .ml-li { margin-left: 2rem; }
 ---
 
-# GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab
-
-In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
+In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
 
 **Topics tested**:
 
