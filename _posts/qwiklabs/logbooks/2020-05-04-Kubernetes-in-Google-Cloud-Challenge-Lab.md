@@ -74,13 +74,12 @@ In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in
 
 5. Run `docker images` to look at the images you built.
 
-Before clicking **Check my progress** on the lab page, don't forget to run the following commands to execute the marking script:
+   Before clicking **Check my progress** on the lab page, don't forget to run the following commands to execute the marking script:
 
-{:.ml-3}
-```bash
-cd ~/marking
-./step1.sh
-```
+   ```bash
+   cd ~/marking
+   ./step1.sh
+   ```
 
 ## Task 2: Test the created Docker image
 
@@ -88,24 +87,22 @@ cd ~/marking
 
 The lab instruction requires you to run the docker image built in Task 1 and show the running application by **Web Preview** on port 8080. Based on the requirements, the docker command will be:
 
-{:.ml-3}
-```bash
-docker run -p 8080:8080 --name valkyrie-app valkyrie-app:v0.0.1 &
-```
+   ```bash
+   docker run -p 8080:8080 --name valkyrie-app valkyrie-app:v0.0.1 &
+   ```
 
 1. In the Cloud Shell, go back to the `valkyrie-app` directory, and run the above command.
 
 2. Click **Web Preview** to see the running app.
 
-   {% include picture.html width="706" height="724" img="qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1.png" class="ml-4" %}
+   {% include picture.html width="706" height="724" img="qwiklabs/qwiklab-GSP318-valkyrie-app-v0.0.1.png" %}
 
-After that, open a new Cloud Shell to run the `step2.sh` marking script.
+3. After that, open a new Cloud Shell to run the `step2.sh` marking script.
 
-{:.ml-3}
-```bash
-cd ~/marking
-./step2.sh
-```
+   ```bash
+   cd ~/marking
+   ./step2.sh
+   ```
 
 ## Task 3: Push the Docker image in the Container Repository
 
@@ -245,7 +242,7 @@ Create a pipeline job that points to your */master branch on your source code.
 
 7. Your job configuration should look like this:
 
-   {% include picture.html width="706" height="717" img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png" class="ml-4" %}
+   {% include picture.html width="706" height="717" img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png" %}
 
 #### 6.4 Modifying the pipeline definition
 

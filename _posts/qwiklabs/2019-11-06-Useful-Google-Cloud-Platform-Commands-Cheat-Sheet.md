@@ -33,24 +33,21 @@ Follow the instruction below to install the Cloud SDK:
 
 1. Add the Cloud SDK distribution URI as a package source:
 
-{:ml-5}
-```bash
-echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+    ```bash
+    echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 
-sudo apt-get install apt-transport-https ca-certificates
+    sudo apt-get install apt-transport-https ca-certificates
 
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-```
+    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+    ```
 
-{:start="2"}
 2. Update and install the Cloud SDK:
 
-{:ml-5}
-```bash
-sudo apt-get update && sudo apt-get install google-cloud-sdk
+    ```bash
+    sudo apt-get update && sudo apt-get install google-cloud-sdk
 
-gcloud init
-```
+    gcloud init
+    ```
 
 * * *
 

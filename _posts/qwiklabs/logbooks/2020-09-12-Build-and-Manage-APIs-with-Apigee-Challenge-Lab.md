@@ -21,7 +21,7 @@ css:
    syntax: true
    custom: >
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
-      .ml-li { margin-left: 2rem }
+      .ml-li { margin-left: auto }
 ---
 
 In this article, we will go through the lab **GSP336** _[Build and Manage APIs with Apigee: Challenge Lab](https://www.qwiklabs.com/focuses/13360?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/137) exercise. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
@@ -34,8 +34,7 @@ In this article, we will go through the lab **GSP336** _[Build and Manage APIs w
 
 **The challenge contains 4 required tasks:**
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-checkpoints.png" width="592"
-height="277" class="text-center" %}
+{% include picture.html img="qwiklabs/qwiklab-gsp336-checkpoints.png" width="592" height="277" class="text-center" %}
 
 ## Task 1 - Create API Specification and Generate an API Proxy
 
@@ -76,17 +75,17 @@ height="277" class="text-center" %}
 {:start="10"}
 10. Click **Next** to continue.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-condition-flows.png" width="924" height="348" class="ml-li" %}
+    {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-condition-flows.png" width="924" height="348" class="ml-li" %}
 
 {:start="11"}
 11. Check the box next to **default**, then click **Next**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-virtual-hosts.png" width="913" height="367" class="ml-li" %}
+    {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-create-proxy-virtual-hosts.png" width="913" height="367" class="ml-li" %}
 
 {:start="12"}
 12. Check the box next to **default**, then click **Create and deploy**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-create-apigee-proxy-summary.png" width="889" height="419" class="ml-li" %}
+    {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-create-apigee-proxy-summary.png" width="889" height="419" class="ml-li" %}
 
 Apigee now deploys the API proxy into your test environment. Click **Edit proxy** to view the deployed proxy.
 
@@ -105,15 +104,15 @@ Apigee now deploys the API proxy into your test environment. Click **Edit proxy*
 {:start="4"}
 4. Modify Policy Assign Message-1:
 
-   - Replace the **Set** element in the policy with the below.
+   Replace the **Set** element in the policy with the below.
 
-      ```xml
-      <Set>
-         <Payload contentType="application/json">
-            {"valid":true,"message":"mock response"}
-         </Payload>
-      </Set>
-      ```
+   ```xml
+   <Set>
+      <Payload contentType="application/json">
+         {"valid":true,"message":"mock response"}
+      </Payload>
+   </Set>
+   ```
 
 After the above procedure, the **Proxy Endpoints** → **PreFlow** should look like the picture below.
 
@@ -203,19 +202,19 @@ curl -X POST \
    - Replace the **Input** element in the policy with the below (make sure indentation is correct)
    - Replace `PROJECT_ID_HERE` with GCP Project ID for this lab.
 
-      ```xml
-      <Input><![CDATA[
-         {  "logName": "example-log",
-            "resource": {
-                "type": "global",
-                "labels": {
-                    "project_id": "PROJECT_ID_HERE"
-                }
-            },
-             "message": {"Action":"{request.verb}","ClientIP": "{client.ip}", "developerApp": "{developer.app.name}", "apiKeyParam":"{request.queryparam.apikey}","responsePayload": {response.content}}
-        }
-      ]]></Input>
-      ```
+   ```xml
+   <Input><![CDATA[
+      {  "logName": "example-log",
+         "resource": {
+               "type": "global",
+               "labels": {
+                  "project_id": "PROJECT_ID_HERE"
+               }
+         },
+            "message": {"Action":"{request.verb}","ClientIP": "{client.ip}", "developerApp": "{developer.app.name}", "apiKeyParam":"{request.queryparam.apikey}","responsePayload": {response.content}}
+      }
+   ]]></Input>
+   ```
 
 After the above procedure, the **Proxy Endpoints** → **PostFlow** should look like the picture below.
 
@@ -234,7 +233,7 @@ After the above procedure, the **Proxy Endpoints** → **PostFlow** should look 
 
 After the above procedure, the **Proxy Endpoints** → **PreFlow** should look like the picture below.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-preflow-with-api-key-verification-policy.png" width="866" height="449" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task2-apigee-proxy-preflow-with-api-key-verification-policy.png" width="866" height="449" class="ml-li" %}
 
 #### Create an API Product and an App
 
@@ -319,7 +318,7 @@ Error response message:
 6. Click **Next** > **Next** > **Finish**.
 7. Click **Live Portal** at the top-right corner to test the new developer portal.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg" width="962" height="639" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp336-task3-apigee-live-portal.jpg" width="962" height="639" class="ml-li" %}
 
 ## Task 4 - Route traffic from mock response to real backend
 

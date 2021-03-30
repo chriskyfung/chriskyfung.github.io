@@ -51,7 +51,8 @@ After the jumphost has been created, navigate to **Compute Engine** > **VM insta
 1. Click **SSH** button to access the jumphost instance.
 
 2. In the SSH window, go to the `/work/dm` directory.
-{% include picture.html width="706" height="556" img="qwiklabs/qwiklab-GSP314-jumphost-ssh.png" alt="SSH console" class="ml-4" %}
+
+   {% include picture.html width="706" height="556" img="qwiklabs/qwiklab-GSP314-jumphost-ssh.png" alt="SSH console" %}
 
 {:start="3"}
 
@@ -102,10 +103,9 @@ Make sure you:
 - choose the zone **us-east1-b**
 - setup both **kraken-mgmt-subnet** and **kraken-prod-subnet** as the network interfaces in the Networking tab
 
-{% include picture.html width="584" height="567" img="qwiklabs/qwiklab-GSP314-kraken-admin-network.png" class="ml-5" %}
+   {% include picture.html width="584" height="567" img="qwiklabs/qwiklab-GSP314-kraken-admin-network.png" %}
 
-{:.ml-5}
-After the instance being created, copy **ID** from its detail page.
+   After the instance being created, copy **ID** from its detail page.
 
 ### 2.2 Create a Monitoring workspace
 
@@ -122,14 +122,12 @@ After the instance being created, copy **ID** from its detail page.
    | Filter        | Choose **instance id** and paste the value copied from kraken-admin |
    | Threshold  | 0.5 for 1 minute   |
 
-   {% include picture.html width="706" height="718" img="qwiklabs/qwiklab-GSP314-alerting.png" class="ml-4" %}
+   {% include picture.html width="706" height="718" img="qwiklabs/qwiklab-GSP314-alerting.png" %}
 
 {:start="4"}
-
 4. Click **ADD**, and then add an email in the Notification setting.
 
-{:.ml-5}
-Click **Check my progress** to verify **Task 2**.
+   Click **Check my progress** to verify **Task 2**.
 
 ## Task 3: Verify the Spinnaker deployment
 
@@ -150,24 +148,25 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
 
 2. Search **spin-deck**.
 
-   {% include picture.html width="706" height="332" img="qwiklabs/qwiklab-GSP314-spin-deck.png" lass="ml-4" %}
+   {% include picture.html width="706" height="332" img="qwiklabs/qwiklab-GSP314-spin-deck.png" %}
 
 {:start="3"}
 
 3. Click **Port Forward** at the end of the detail page.
-   {% include picture.html width="611" height="223" img="qwiklabs/qwiklab-GSP314-port-forwarding.png" class="ml-4" %}
+
+   {% include picture.html width="611" height="223" img="qwiklabs/qwiklab-GSP314-port-forwarding.png" %}
 
 {:start="4"}
 
 4. The Cloud Shell will launch automatically with the port forwarding command.
 
-   {% include picture.html width="706" height="174" img="qwiklabs/qwiklab-GSP314-port-forwarding-cmd.png" class="ml-4" %}
+   {% include picture.html width="706" height="174" img="qwiklabs/qwiklab-GSP314-port-forwarding-cmd.png" %}
 
 {:start="5"}
 
 5. Click the **Web Preview** icon at the top of the Cloud Shell window and select **Preview on port 8080**, to open the Spinnaker user interface.
 
-   {% include picture.html width="706" height="355" img="qwiklabs/qwiklab-GSP314-spinnaker.png" class="ml-4" %}
+   {% include picture.html width="706" height="355" img="qwiklabs/qwiklab-GSP314-spinnaker.png" %}
 
 ### 3.2 Clone your source code repository
 
@@ -177,18 +176,16 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
 
 3. Click **Clone** at the top of the repository, and copy the git clone command to the Cloud Shell.
 
-   {% include picture.html width="706" height="500" img="qwiklabs/qwiklab-GSP314-clone-sample-app.png" class="ml-4" %}
+   {% include picture.html width="706" height="500" img="qwiklabs/qwiklab-GSP314-clone-sample-app.png" %}
 
 {:start="4"}
-
 4. Run the copied command to download the sample application source code, and then set the username and email address for the Git commits in this repository using run the following codes:
 
-{:.ml-5}
-```bash
-cd sample-app
-git config --global user.email "$(gcloud config get-value core/account)"
-git config --global user.name "$(gcloud config get-value core/account)"
-```
+   ```bash
+   cd sample-app
+   git config --global user.email "$(gcloud config get-value core/account)"
+   git config --global user.name "$(gcloud config get-value core/account)"
+   ```
 
 ### 3.3 Triggering your pipeline from code changes
 

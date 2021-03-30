@@ -17,7 +17,7 @@ amp:
 css:
    syntax: true
    custom: >
-      .ml-li { margin-left: 2rem; }
+      .ml-li { margin-left: auto; }
 ---
 
 In this article, we will go through the lab **GSP343** _[Optimize Costs for Google Kubernetes Engine&colon; Challenge Lab](https://www.qwiklabs.com/focuses/16327?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/157) exercise on Qwiklabs. You will practice the following topics:
@@ -227,13 +227,13 @@ Make sure that you:
    {% include picture.html img="qwiklabs/gsp343-task4-monitoring-traffic-spike.png"
       width="624" height="302" alt="High CPU, Memory and Disk utilization yielded by traffic spike" class="ml-li" %}
 
-{.ml-li}
-Scroll to the **Managed Pods** section, you should observe the number of pods increases by the horizontal pod autoscaling.
+
+   Scroll to the **Managed Pods** section, you should observe the number of pods increases by the horizontal pod autoscaling.
 
    {% include picture.html img="qwiklabs/gsp343-task4-cluster-autoscaling-frontend-pods.png"
       width="624" height="302" alt="The frontend pods increase with horizontal pod autoscaling" class="ml-li" %}
 
-Eventually, you will also see new nodes initiate by the cluster autoscaling. But you need to keep patient for a much long period of time.
+Eventually, you will also see new nodes initiate by the cluster autoscaling. But you need to keep patient for a while.
 
 <br>
 

@@ -17,7 +17,7 @@ amp:
 css:
    syntax: true
    custom: >
-      .ml-li { margin-left: 2rem; }
+      .ml-li { margin-left: auto; }
 ---
 
 In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
@@ -46,12 +46,12 @@ In this task, you will need to:
 4. Add the [COVID 19 Government Response public dataset](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=covid19_govt_response&page=dataset) to the BigQuery Explorer by opening the link in your browser. \
 Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** then search for `oxford covid-19 government response tracker`, click on the item. Then, click **VIEW DATASET** on the detail page.
 
-{% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" class="ml-li" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
+   {% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" class="ml-li" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
 
 {:start="5"}
 5. Use a filter to find the table `oxford_policy_tracker` inside the `bigquery-public-data` as shown below.
 
-{% include picture.html img="qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png" width="1237" height="696" class="ml-li" alt="Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`" %}
+   {% include picture.html img="qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png" width="1237" height="696" class="ml-li" alt="Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`" %}
 
 {:start="6"}
 6. Click **COMPOSE NEW QUERY**. Copy the following to the query editor,
@@ -192,7 +192,7 @@ FROM `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>`
 WHERE population is NULL
 ```
 
-{% include picture.html img="qwiklabs/gsp340-task6-countries-without-population-data.png" width="531" height="521" alt="Countries without population data" %}
+{% include picture.html img="qwiklabs/gsp340-task6-countries-without-population-data.png" width="531" height="521" alt="Countries without population data" class="text-center" %}
 
 Next, try to run the following to query the countries that do not have the country area data.
 
@@ -202,7 +202,7 @@ FROM `<YOUR_DATASET_ID>.<YOUR_TABLE_NAME>`
 WHERE WHERE country_area IS NULL
 ```
 
-{% include picture.html img="qwiklabs/gsp340-task6-countries-without-country-area-data.png" width="530" height="521" alt="Countries without country area data" %}
+{% include picture.html img="qwiklabs/gsp340-task6-countries-without-country-area-data.png" width="530" height="521" alt="Countries without country area data" class="text-center" %}
 
 The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` columns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
 
@@ -219,7 +219,7 @@ ORDER BY country_name ASC
 
 Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, and run the query. The result should be:
 
-{% include picture.html img="qwiklabs/gsp340-task6-union-result.png" width="553" height="528" alt="Output of Union ALL" %}
+{% include picture.html img="qwiklabs/gsp340-task6-union-result.png" width="553" height="528" alt="Output of Union ALL"  class="text-center" %}
 
 **Congratulations! You completed this challenge lab.**
 

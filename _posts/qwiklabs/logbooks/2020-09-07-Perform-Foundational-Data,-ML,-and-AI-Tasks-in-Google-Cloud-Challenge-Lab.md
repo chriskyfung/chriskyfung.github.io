@@ -18,7 +18,7 @@ css:
    syntax: true
    custom: >
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
-      .ml-li { margin-left: 2rem }
+      .ml-li { margin-left: auto }
 ---
 
 In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/117) exercise. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
@@ -56,7 +56,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 11. Enable **Edit as text** and copy the JSON data from the `lab.schema` file to the textarea in the Schema section.
 12. Click **Create table**.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp323-task-1-bigquery-creat-table-from-csv.png" width="673" height="886" class="ml-li text-center" %}
+    {% include picture.html img="qwiklabs/qwiklab-gsp323-task-1-bigquery-creat-table-from-csv.png" width="673" height="886" class="ml-li text-center" %}
 
 #### 1.2 Create a Cloud Storage bucket
 
@@ -119,7 +119,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 11. Copy `file:///usr/lib/spark/examples/jars/spark-examples.jar` to "Jar files".
 12. Enter `/data.txt` to "Arguments".
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataprop-submit-a-job.png" width="542" height="811" class="ml-li text-center" %}
+    {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataprop-submit-a-job.png" width="542" height="811" class="ml-li text-center" %}
 
 {:start="13"}
 13. Click **CREATE**.
@@ -180,7 +180,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 {:start="9"}
 9. Click **Run Job**.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-run-job-on-dataflow.png" width="1268" height="613" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-run-job-on-dataflow.png" width="1268" height="613" class="ml-li" %}
 
 ## Task 4: AI
 

@@ -20,7 +20,7 @@ css:
    syntax: true
    custom: >
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
-      .ml-li { margin-left: 2rem }
+      .ml-li { margin-left: auto }
 ---
 
 In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/119) exercise. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
@@ -265,7 +265,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 5. Copy the External endpoints of the deployed **wordpress** service and open it in your browser.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp321-dev-wordpress.png" alt="WordPress Installation" width="1024" height="768" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp321-dev-wordpress.png" alt="WordPress Installation" width="1024" height="768" class="ml-li" %}
 
 ## Task 8: Enable monitoring
 
@@ -282,7 +282,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
    | Hostname | `YOUR-WORDPRESS_ENDPOINT` |
    | Path     | `/` |
 
-{% include picture.html img="qwiklabs/qwiklab-gsp321-uptime-check.jpg" alt="new GCP uptime checks monitoring" width="567" height="534" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp321-uptime-check.jpg" alt="new GCP uptime checks monitoring" width="567" height="534" class="ml-li text-center" %}
 
 {:start="5"}
 5. Click **TEST**.

@@ -63,13 +63,14 @@ Actually, would anyone need to read this guide? Because I think everybody can do
    | Runtime             | Node.js 8     |
    | Trigger             | Cloud Storage |
 
+{:start="4"}
 4. Copy the given `index.js` and `package.json` to the dialog.
 
    Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic you created in task 2, in line 15 of index.js.
 
 5. Upload a JPG or PNG image file to the bucket created in Task 1.
 
-   {% include picture.html width="706" height="547" img="qwiklabs/map.jpg" alt="" class="ml-4" %}
+   {% include picture.html width="706" height="547" img="qwiklabs/map.jpg" %}
 
 ## Task 4: Remove the previous cloud engineer
 

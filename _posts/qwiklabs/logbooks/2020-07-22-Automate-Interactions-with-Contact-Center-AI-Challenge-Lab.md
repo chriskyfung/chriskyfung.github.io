@@ -57,7 +57,7 @@ Make sure you:
 4. In the **Event Type** dropdown, select **Finalize/Create**.
 5. Click on the **BROWSE** button, and choose the bucket created in Task 1.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp311-task2-create-cloud-function.png" width="591" height="639" class="text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp311-task2-create-cloud-function.png" width="591" height="639" %}
 
 {:start="6"}
 6. Select the **Runtime** to be `Node.js 8`

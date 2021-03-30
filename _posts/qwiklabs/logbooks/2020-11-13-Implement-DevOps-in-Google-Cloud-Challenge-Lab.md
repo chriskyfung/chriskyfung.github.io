@@ -18,7 +18,7 @@ amp:
 css:
    syntax: true
    custom: >
-      .ml-li { margin-left: 2rem }
+      .ml-li { margin-left: auto }
 ---
 
 In this article, we will go through the lab **GSP330** _[Implement DevOps in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/13287?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/141) exercise. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
@@ -168,7 +168,7 @@ Configure your credentials to allow Jenkins to access the code repository. Jenki
 
 5. Select **Google Service Account from metadata** from the **Kind** drop-down and click **OK**.
 
-{% include picture.html img="qwiklabs/gsp330-jenkins-add-gcp-credentials.png" width="1024" height="286" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-add-gcp-credentials.png" width="1024" height="286" class="ml-li" %}
 
 #### Configure the Jenkins job
 
@@ -214,7 +214,7 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
 10. If you correctly configured the pipeline, you will see **Finished: SUCCESS** at the end of the Scan Multibranch Pipeline Log.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.png" width="1024" height="690" class="ml-li" %}
+    {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.png" width="1024" height="690" class="ml-li" %}
 
 ### Examine the Console Output from the Jenkins Pipeline
 
@@ -227,7 +227,7 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
    {% include picture.html img="qwiklabs/gsp330-jenkins-console-output.png" width="1024" height="809" class="ml-li" %}
 
-This process takes about five minutes to complete.
+   This process takes about five minutes to complete.
 
 ## Task 2: Push an update to the application to a development branch
 

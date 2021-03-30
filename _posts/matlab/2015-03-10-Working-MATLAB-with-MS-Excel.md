@@ -24,8 +24,8 @@ This is a tutorial to show the installation of **Spreadsheet Link EX for use wit
 
 2. Click Open. In the Add-Ins dialog box, the Spreadsheet Link EX for use with MATLAB and Excel checkbox is selected.
 
-{% include picture.html width="500" height="368"
-img="matlab/excel_addins_available.png" alt="image: MS Excel Add-in Dialog" class="ml-5 mb-5" %}
+   {% include picture.html width="500" height="368"
+   img="matlab/excel_addins_available.png" alt="image: MS Excel Add-in Dialog" class="mb-5" %}
 
 The **Spreadsheet Link EX Add-In** loads now and with each subsequent Excel session. The MATLAB group appears on the top right of the Home tab in your Excel worksheet. Open the Menu and click **Start MATLAB**.
 
