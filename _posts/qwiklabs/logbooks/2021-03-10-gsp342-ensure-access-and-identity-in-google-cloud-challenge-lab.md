@@ -153,7 +153,7 @@ The new Kubernetes Engine cluster needs to fulfill the following requirements:
 2. Navigate to **VPC network** in the Cloud Console, note down the IP address range for the regional subnet. You may also lookup the IP range from [https://cloud.google.com/vpc/docs/vpc](https://cloud.google.com/vpc/docs/vpc). The IP address for `us-east1` is `10.142.0.0`.
 
    ```bash
-   SUBNET_IP_RANGE="10.142.0.0/20"
+   SUBNET_IP_RANGE="10.142.0.0/28"
    ```
 
 3. Run the following `gcloud` command to create the cluster with the required configrations:
