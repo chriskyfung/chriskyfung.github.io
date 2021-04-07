@@ -241,7 +241,7 @@ Eventually, you will also see new nodes initiate by the cluster autoscaling. But
 
 ## Demonstration Video
 
-{% include youtube.html id="jeB-FIeGKkQ" title="GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab \| 🐱‍🏍 GCP learning tour" %}
+{% include youtube.html id="jeB-FIeGKkQ" title="GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour" %}
 
 ```conf
 ⏱ Timestamps

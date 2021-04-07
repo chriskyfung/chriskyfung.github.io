@@ -156,7 +156,7 @@ The new Kubernetes Engine cluster needs to fulfill the following requirements:
    SUBNET_IP_RANGE="10.142.0.0/28"
    ```
 
-3. Run the following `gcloud` command to create the cluster with the required configrations:
+3. Run the following `gcloud` command to create the cluster with the required configurations:
 
    ```bash
    gcloud beta container clusters create orca-test-cluster \
