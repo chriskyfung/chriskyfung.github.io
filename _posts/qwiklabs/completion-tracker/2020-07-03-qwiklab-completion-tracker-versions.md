@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qwiklabs Completed Labs Tracker - Version History"
+title: "Qwiklabs Lab Completion Tracker - Version History"
 author: chris
 date: 2021-04-10 11:00 +08:00
 category: Projects
@@ -9,7 +9,7 @@ tags: [Qwiklabs, Userscript, Changelog]
 image: 
   path: /images/posts/qwiklabs/science-1408800_1280.jpg
   height: 411
-excerpt: The changelog, the feature highlights and the screenshots of the previous versions of the "Qwiklabs Completed Labs Tracker".
+excerpt: The changelog, the feature highlights and the screenshots of the previous versions of the "Qwiklabs Lab Completion Tracker".
 ---
 
 ## <i class='fas fa-chevron-circle-left'></i> [Userscript for Qwiklabs Completion Tracking]({% post_url qwiklabs/completion-tracker/2019-09-01-Userscript-for-Labelling-Completed-Qwiklabs %})

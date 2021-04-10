@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Userscript for Qwiklabs Completion Tracking v0.5"
+title: "Userscript for Qwiklabs Lab Completion Tracking v0.5"
 author: chris
 date: 2020-07-03 20:30 +08:00
 category: Projects
@@ -16,7 +16,7 @@ excerpt: A tool developed for assisting you tracking unenrolled quests and incom
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice.
 
-As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs [Catalog pages](https://www.qwiklabs.com/catalog) and Search Results. I desired to make a straight-forward way to  identify the catalogue items, by adding a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) next to those completed. So, I tried to develop a solution named "[Qwiklabs Completed Labs Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)" (also formerly known as "Qwiklabs Complete Indicator").
+As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs [Catalog pages](https://www.qwiklabs.com/catalog) and Search Results. I desired to make a straight-forward way to  identify the catalogue items, by adding a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) next to those completed. So, I tried to develop a solution named "[Qwiklabs Lab Completion Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)" (also formerly known as "Qwiklabs Complete Indicator").
 
 <!--more-->
 

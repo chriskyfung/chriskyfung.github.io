@@ -74,7 +74,7 @@ I spent about three months to take all the Qwiklabs quests for Google Cloud Plat
 
 ## Custom Tool for Labelling Completed Labs and Quests
 
-As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results ([www.qwiklabs.com/catalog](https://www.qwiklabs.com/catalog)). I desired to make a straight-forward way to identify the catalog, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Completed Labs Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)".
+As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results ([www.qwiklabs.com/catalog](https://www.qwiklabs.com/catalog)). I desired to make a straight-forward way to identify the catalog, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Lab Completion Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)".
 
 The prototyped tool can help you visually identify the completed catalogue items with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) showing at the end of a lab or quest title. A demo screenshot is shown below.
 
