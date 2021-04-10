@@ -3,7 +3,7 @@ layout: post
 title: "Qwiklabs Lab Completion Tracker - Version History"
 author: chris
 date: 2021-04-10 11:00 +08:00
-category: Projects
+category: [Cloud, Project]
 permalink: /blog/qwiklabs/qwiklab-completion-tracker-versions
 tags: [Qwiklabs, Userscript, Changelog]
 image: 

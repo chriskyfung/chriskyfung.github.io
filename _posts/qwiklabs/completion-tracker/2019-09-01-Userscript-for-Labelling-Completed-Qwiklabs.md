@@ -3,7 +3,7 @@ layout: post
 title: "Userscript for Qwiklabs Lab Completion Tracking v0.5"
 author: chris
 date: 2020-07-03 20:30 +08:00
-category: Projects
+category: [Project, Cloud]
 permalink: /blog/qwiklabs/userscript-for-labelling-completed-qwiklabs
 redirect_from:
  - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs
