@@ -2,8 +2,7 @@
 layout: post
 title: "Qwiklabs Completed Labs Tracker - Version History"
 author: chris
-date: 2019-09-01 20:30 +08:00
-last_modified_at: 2020-07-03 20:30 +08:00
+date: 2021-04-10 11:00 +08:00
 category: Projects
 permalink: /blog/qwiklabs/qwiklab-completion-tracker-versions
 tags: [Qwiklabs, Userscript, Changelog]
@@ -19,6 +18,21 @@ excerpt: The changelog, the feature highlights and the screenshots of the previo
 
 * * *
 
+##### v0.5.4
+
+- Added a quick link to view all **My Learning Activity** results
+- Revised the way to update the database records with the new format of learning activity data
+
+   {% include picture.html img="qwiklabs/my-qwiklabs-learning-activity-tracker-v0.5.4.png" width="1163" height="534" alt="Quick link and batch update My Learning Activity to database" caption="Effects on the new My Learning Activity section (For v0.5.4)" class="text-center" %}
+
+##### v0.5.3
+
+- Eliminate scripts for the `/my_learning/labs` and `/my_learning/courses` pages
+- Modified to parse and annotate the new My **Learning Activity** table
+
+##### v0.5.2
+
+- Amended for the new **Catalog** page design
 ##### v0.5.1 
 
 - One-click update the labs and quests status to the IndexedDB
@@ -35,8 +49,8 @@ excerpt: The changelog, the feature highlights and the screenshots of the previo
 - Each catalog item compares with the manually labelled array data storing within the userscript.
 - Label the completed labs and quests with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) at the end of their titles.
 
-{% include picture.html height="576"
-img="qwiklabs-complete-indicator-catalog-page-old.png" alt="Green Check Mark and Highlight displays on Qwiklabs Catalog Page" caption="Effects on the Qwiklabs catalog page (For version < 0.4.5)" source="projects" class="text-center" %}
+   {% include picture.html height="576"
+      img="qwiklabs-complete-indicator-catalog-page-old.png" alt="Green Check Mark and Highlight displays on Qwiklabs Catalog Page" caption="Effects on the Qwiklabs catalog page (For version < 0.4.5)" source="projects" class="text-center" %}
 
 ##### v0.4.8
 
@@ -53,10 +67,14 @@ img="qwiklabs-complete-indicator-catalog-page-old.png" alt="Green Check Mark and
 
 The **version 0.4.5** start covering the "*Completed Courses*" and "*Completed Labs*" pages under the **My Learning** section. Since the quests mix with speedrun games in the list of completed courses, each row of the game records highlights in purple color for distinguishing them.
 
-{% include picture.html height="339"
-img="qwiklabs-complete-indicator-courses-table.png" alt="Markers and Highlights on Completed Courses" caption="Effects on the <i>Completed Courses</i> page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+<div class="row">
 
-{% include picture.html height="337"
-img="qwiklabs-complete-indicator-labs-table.png" alt="Markers and Highlights on Completed Labs pages" caption="Effects on the <i>Completed Labs</i> page (For version >= 0.4.5)" source="projects" class="text-center mb-4" %}
+   {% include picture.html height="339"
+   img="qwiklabs-complete-indicator-courses-table.png" alt="Markers and Highlights on Completed Courses" caption="Effects on the <i>Completed Courses</i> page (For version >= 0.4.5)" source="projects" class="col-md-6 text-center mb-4" %}
+
+   {% include picture.html height="337"
+   img="qwiklabs-complete-indicator-labs-table.png" alt="Markers and Highlights on Completed Labs pages" caption="Effects on the <i>Completed Labs</i> page (For version >= 0.4.5)" source="projects" class="col-md-6 text-center mb-4" %}
+
+</div>
 
 * * *
