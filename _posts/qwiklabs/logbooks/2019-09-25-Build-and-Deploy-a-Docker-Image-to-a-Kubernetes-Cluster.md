@@ -169,8 +169,8 @@ kubectl run echo-app --image=gcr.io/${PROJECT_ID}/echo-app:v1 --port 8000
 Now create a Kubernetes Service, which is a Kubernetes resource that lets you expose your application (that responds on **port 8000**) to external traffic that responds to normal web requests on **port 80**, by running the following `kubectl expose` command:
 
 ```bash
-kubectl expose deployment echo-app --name echo-web --type="LoadBalancer"
- --type LoadBalancer --port 80 --target-port 8000
+kubectl expose deployment echo-app --name echo-web \
+   --type LoadBalancer --port 80 --target-port 8000
 ```
 
 Inspect the `echo-web` Service by running kubectl get:
