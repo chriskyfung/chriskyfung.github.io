@@ -14,98 +14,96 @@ image: /images/header-bg.jpg
 comments: false
 ---
 
-<!-- Home Jumbotron
-    ================================================== -->    
-<section class="intro full-width">
+<!-- Home Jumbotron  -->    
+  <section class="intro full-width">
     <div class="wrapintro">
-        <h1>Chris KY Fung's Page</h1>
-        <h2 class="lead">Feel free to bookmark this to keep an eye on my project updates</h2>    
-        <a href="/blog/" class="btn">Latest posts</a>
+      <h1>Chris KY Fung's Page</h1>
+      <h2 class="lead">Feel free to bookmark this to keep an eye on my project updates</h2>    
+      <a href="/blog/" class="btn">Latest posts</a>
     </div>
-</section>
-
-    
-<!-- Featured
-    ================================================== -->
+  </section>
+  
+  
+<!-- Featured  -->
 <section class="featured-posts">
+  
+  <div class="section-title">
+    <h2><span>Recent Posts</span></h2>
+  </div>
+  
+  <div class="row listfeaturedtag">
     
-    <div class="section-title">
-        <h2><span>Recent Posts</span></h2>
-    </div>
+    {% for post in site.posts limit:4 %}
     
-    <div class="row listfeaturedtag">
-        
-        {% for post in site.posts limit:4 %}
-        
-        {% include blocks/featured-box.html %}
-        
-        {% endfor %}
-        
-    </div>
+    {% include blocks/featured-box.html %}
     
+    {% endfor %}
+    
+  </div>
+  
 </section>
 
 <section class="recent-posts row">
-
-    <div class="col-sm-4">
-        {% include sidebar/sidebar.html %}
-    </div>
-
-    <div class="col-sm-8">
-
-        <hr>
-
-        <section class="article-post">
-            <h2 class="mt-4"><i class='fas fa-bong'></i> Welcome to my New Site</h2>
-            
-            <p>This site is a new version of my old site "<a href="https://chrisfung1125.wixsite.com/research-blog/" target="_blank">Blog of a POLIDA post-grad II .</a>" which was hosting in Wix.com. Now it has been moved to the GitHub page. It should deliver a much faster page loading speed and a nicer display of codes. I hope you will better enjoy my content.</p>
-            
-        </section>
-
-        <hr>
+  
+  <div class="col-sm-4">
+    {% include sidebar/sidebar.html %}
+  </div>
+  
+  <div class="col-sm-8">
+    
+    <hr>
+    
+    <section class="article-post">
+      <h2 class="mt-4"><i class='fas fa-bong'></i> Welcome to my New Site</h2>
+      
+      <p>This site is a new version of my old site "<a href="https://chrisfung1125.wixsite.com/research-blog/" target="_blank">Blog of a POLIDA post-grad II .</a>" which was hosting in Wix.com. Now it has been moved to the GitHub page. It should deliver a much faster page loading speed and a nicer display of codes. I hope you will better enjoy my content.</p>
+      
+    </section>
+    
+    <hr>
+    
+    <section id="projects" class="article-post">
+      <div class="section-title">
+        <h2><span>Pinned Projects</span></h2>    
+      </div>
+      
+      <section id="academic-project-list">
+        <h3 class="section-title">Academic Projects</h3>
         
-        <section id="projects" class="article-post">
-            <div class="section-title">
-                <h2><span>Pinned Projects</span></h2>    
-            </div>
-
-            <section id="academic-project-list">
-                <h3 class="section-title">Academic Projects</h3>
-            
-                <p class="keywords"><i>keywords: Molecular Dynamics, LAMMPS, OVITO</i></p>
-                
-                <h4 class="project-title"><i class='fas fa-atom'></i> <i class='fas fa-flask'></i> <i class="fas fa-university"></i><br><a href="{{ site.baseurl }}/tag/lammps/">Skills and User Tips for "Large-scale Atomic/Molecular Massively Parallel Simulator" (LAMMPS)</a></h4>
-                
-                <ul>
-                    <li>How to Send a Notification from a LAMMPS Simulation to Your Email</li>
-                    <li>Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables</li>
-                    <li>[template] OVITO python modifier</li>
-                </ul>
-                
-            </section>
-            
-            <section id="personal-project-list">
-                <h3 class="section-title">Personal Projects</h3>
-                                
-                <!-- Qwiklabs Lab Completion Tracker -->
-                <h4 class="project-title"><i class='fab fa-js'></i> <i class='fas fa-flask'></i> <i class='fas fa-tasks'></i><br><a href="{{ site.baseurl }}/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs" target="_blank">Qwiklabs Lab Completion Tracker</a></h4>
-                {% include picture.html img="qwiklabs-complete-indicator-lab-page-demo.png" width="510" height="345" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" source="projects" %}
-                
-                <!-- Windows-Hotkey-for-iFlyVoice -->
-                <h4 class="project-title"><i class="fab fa-windows"></i> <i class="fas fa-keyboard"></i> <i class="fas fa-microphone"></i><br><a href="https://chriskyfung.github.io/voice-input-tools-for-windows/" target="_blank">Windows Hotkey for iFlyVoice</a></h4>
-                {% include picture.html img="windows-hotkey-for-iflyvoice_574.png" width="574" height="287" alt="Windows Hotkey for iFlyVoice" source="projects" %}
-
-                <!-- AutoFetcher for Saving IG Stories to GDrive -->
-                <h4 class="project-title"><i class="fab fa-instagram"></i>  <i class='fas fa-cloud-download-alt'></i> <i class='fab fa-google-drive'></i><br><a href="https://chriskyfung.github.io/AutoFetcher-IG-Stories-to-GDrive/" target="_blank">AutoFetcher for Saving IG Stories to GDrive</a></h4>
-                <p>A Google App Script for deploying a web application that automatically fetches the available latest IG Stories of a target Instagram user to your Google Drive.</p>
-                
-                <!-- MDX LabPanel -->
-                <h4 class="project-title"><i class='fas fa-wrench'></i> <i class='fas fa-tachometer-alt'></i><br><a href="https://craftweeks.com/en/software/mdxlabpanel/" target="_blank">MDX LabPanel</a></h4>
-                <p>GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</p>
-                {% include picture.html img="screenshot-of-mdxlabpanel-v04-a-control-panel-roland-modela-mdx-1520.png" width="574" height="406" alt="MDX LabPanel" source="projects" caption="Screenshot of MDX LabPanel v0.4" %}
-            </section>
-        </section>
+        <p class="keywords"><i>keywords: Molecular Dynamics, LAMMPS, OVITO</i></p>
         
-    </div>
-
+        <h4 class="project-title"><i class='fas fa-atom'></i> <i class='fas fa-flask'></i> <i class="fas fa-university"></i><br><a href="{{ site.baseurl }}/tag/lammps/">Skills and User Tips for "Large-scale Atomic/Molecular Massively Parallel Simulator" (LAMMPS)</a></h4>
+        
+        <ul>
+          <li>How to Send a Notification from a LAMMPS Simulation to Your Email</li>
+          <li>Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables</li>
+          <li>[template] OVITO python modifier</li>
+        </ul>
+        
+      </section>
+      
+      <section id="personal-project-list">
+        <h3 class="section-title">Personal Projects</h3>
+        
+        <!-- Qwiklabs Lab Completion Tracker -->
+        <h4 class="project-title"><i class='fab fa-js'></i> <i class='fas fa-flask'></i> <i class='fas fa-tasks'></i><br><a href="{{ site.baseurl }}/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs" target="_blank">Qwiklabs Lab Completion Tracker</a></h4>
+        {% include picture.html img="qwiklabs-complete-indicator-lab-page-demo.png" width="510" height="345" alt="Green Check Mark and Highlight displays on a Completed Qwiklabs Lab Page" source="projects" %}
+        
+        <!-- Windows-Hotkey-for-iFlyVoice -->
+        <h4 class="project-title"><i class="fab fa-windows"></i> <i class="fas fa-keyboard"></i> <i class="fas fa-microphone"></i><br><a href="https://chriskyfung.github.io/Agile-Win-Hotkey-for-iFlyVoice/" target="_blank">Agile Win Hotkey for iFlyVoice</a></h4>
+        {% include picture.html img="windows-hotkey-for-iflyvoice_574.png" width="574" height="287" alt="Agile Win Hotkey for iFlyVoice" source="projects" %}
+        
+        <!-- AutoFetcher for Saving IG Stories to GDrive -->
+        <h4 class="project-title"><i class="fab fa-instagram"></i>  <i class='fas fa-cloud-download-alt'></i> <i class='fab fa-google-drive'></i><br><a href="https://chriskyfung.github.io/AutoFetcher-IG-Stories-to-GDrive/" target="_blank">AutoFetcher for Saving IG Stories to GDrive</a></h4>
+        <p>A Google App Script for deploying a web application that automatically fetches the available latest IG Stories of a target Instagram user to your Google Drive.</p>
+        
+        <!-- MDX LabPanel -->
+        <h4 class="project-title"><i class='fas fa-wrench'></i> <i class='fas fa-tachometer-alt'></i><br><a href="https://craftweeks.com/en/software/mdxlabpanel/" target="_blank">MDX LabPanel</a></h4>
+        <p>GUI Control Panel for Roland MODELA MDX-15/20 CNC Machine</p>
+        {% include picture.html img="screenshot-of-mdxlabpanel-v04-a-control-panel-roland-modela-mdx-1520.png" width="574" height="406" alt="MDX LabPanel" source="projects" caption="Screenshot of MDX LabPanel v0.4" %}
+      </section>
+    </section>
+    
+  </div>
+  
 </section>
