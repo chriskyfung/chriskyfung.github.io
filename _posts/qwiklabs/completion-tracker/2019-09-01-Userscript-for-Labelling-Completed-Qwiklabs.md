@@ -57,12 +57,6 @@ From **version 0.4.8**, marker annotations support the "_Your Favorites_", "_Fea
 
 {% include picture.html height="334" img="qwiklabs-complete-indicator-home-hots.png" alt="Markers on What's Hot" source="projects" class="text-center mb-5" %}
 
-### How to save records to the database
-
-To fetch all your records to the database, please navigate to the [**Completed Courses**](https://www.qwiklabs.com/my_learning/courses) and [**Completed Labs**](https://www.qwiklabs.com/my_learning/labs) pages to click the *sync* <i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i> button next to the page header, respectively.
-
-{% include picture.html height="290" img="qwiklab-complete-indicator-update-all-button.png" alt="Markers and Highlights on Completed Courses" source="projects" class="text-center mb-4" %}
-
 ### Update records from My Learning page
 
 You can also update the latest records by clicking on the *sync* <i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i> icon next to the table title on the [**My Learning**](https://www.qwiklabs.com/my_learning/) page.

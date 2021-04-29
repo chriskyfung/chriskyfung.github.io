@@ -84,11 +84,11 @@ In Task 3, you need to add your codes to the following part of the script file.
 
 {% include picture.html img="qwiklabs/gsp329-task3-python-code-init.png" width="730" height="531" %}
 
-> Tip 3. You can find details about the Vision API Client `document_text_detection` API call in the [Python API Documentation reference page for the Vision API Client](https://googleapis.dev/python/vision/latest/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClientdocument_text_detection) and the details of the Vision API annotation response object in the [Python API Documentation reference page for the Vision API Objects](https://googleapis.dev/python/vision/latest/gapic/v1/types.html#google.cloud.vision_v1.types.AnnotateImageResponse)
+> Tip 3. You can find details about the Vision API Client `document_text_detection` API call in the [Python API Documentation reference page for the Vision API Client](https://googleapis.dev/python/vision/1.0.0/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection) and the details of the Vision API annotation response object in the [Python API Documentation reference page for the Vision API Objects](https://googleapis.dev/python/vision/latest/vision_v1/types.html#google.cloud.vision_v1.types.AnnotateImageResponse)
 
 {:style="font-family:monospace"}
 **TBD**: Create a Vision API image object called image_object
-**Ref**: [google.cloud.vision_v1.types.Image](https://googleapis.dev/python/vision/latest/gapic/v1/types.html#google.cloud.vision_v1.types.Image)
+**Ref**: [google.cloud.vision_v1.types.Image](https://googleapis.dev/python/vision/latest/vision_v1/types.html#google.cloud.vision_v1.types.Image)
 
 ```python
         image_object = vision.types.Image()
@@ -99,7 +99,7 @@ where `file_content` is the image content extracted from a JEPG or a PNG file vi
 
 {:style="font-family:monospace"}
 **TBD**: Detect text in the image and save the response data into an object called response
-**Ref**: [google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection](https://googleapis.dev/python/vision/latest/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection)
+**Ref**: [google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection](https://googleapis.dev/python/vision/1.0.0/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection)
 
 ```python
         response = vision_client.document_text_detection(image=image_object)
