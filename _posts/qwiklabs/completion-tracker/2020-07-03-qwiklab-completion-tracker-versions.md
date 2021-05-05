@@ -3,20 +3,33 @@ layout: post
 title: "Qwiklabs Lab Completion Tracker - Version History"
 author: chris
 date: 2021-04-10 11:00 +08:00
+last_modified_at: 2021-05-05 08:45 +08:00
 category: [Cloud, Project]
 permalink: /blog/qwiklabs/qwiklab-completion-tracker-versions
 tags: [Qwiklabs, Userscript, Changelog]
 image: 
   path: /images/posts/qwiklabs/science-1408800_1280.jpg
   height: 411
-excerpt: The changelog, the feature highlights and the screenshots of the previous versions of the "Qwiklabs Lab Completion Tracker".
+excerpt: The changelog, the feature highlights, and the screenshots of the previous versions of the "Qwiklabs Lab Completion Tracker".
 ---
 
-## <i class='fas fa-chevron-circle-left'></i> [Userscript for Qwiklabs Completion Tracking]({% post_url qwiklabs/completion-tracker/2019-09-01-Userscript-for-Labelling-Completed-Qwiklabs %})
+<br>
 
-### For v0.5.0 or higher
+<amp-img src="https://img.shields.io/github/v/release/chriskyfung/qwiklabs-completed-labs-tracker" width="94" height="20" alt="GitHub release (latest by date)"></amp-img>
+<amp-img src="https://img.shields.io/badge/License-GPLv3-blue.svg" width="96" height="20" alt="License: GPL v3"></amp-img>
+<amp-img src="https://img.shields.io/github/issues-raw/chriskyfung/qwiklabs-completed-labs-tracker" width="92" height="20" alt="GitHub issues"></amp-img>
 
-* * *
+<i class='fas fa-chevron-circle-left'></i> [Userscript for Qwiklabs Completion Tracking]({% post_url qwiklabs/completion-tracker/2019-09-01-Userscript-for-Labelling-Completed-Qwiklabs %})
+
+### For v0.5.x
+
+<a href="https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js" style="box-shadow: none" rel="noopener" target="_blank"><amp-img src="https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&logo=tampermonkey&style=for-the-badge" width="152" height="28" alt="Install Script with Tampermonkey"></amp-img></a>
+
+##### v0.5.5 Fix 🐛 that unable to match records with `: `
+
+- Set a custom attribute to tag the lab/quest 🆔 for the row of unmarked learning activities
+- Change to use the lab/quest ID as the key 🗝 for batch update to DB
+- Fix the type of lab/quest 🆔 (aka an integer) during update
 
 ##### v0.5.4
 
@@ -42,9 +55,8 @@ excerpt: The changelog, the feature highlights and the screenshots of the previo
 - Store the labs and quests data locally with IndexedDB
 - Repackage JavaScript with Async/Await
 
-### For v0.4.8 or earlier
-
 * * *
+### For v0.4.8 or earlier
 
 - Each catalog item compares with the manually labelled array data storing within the userscript.
 - Label the completed labs and quests with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) at the end of their titles.
