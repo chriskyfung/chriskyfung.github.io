@@ -5,12 +5,12 @@ on:
     
 jobs:
   jekyll:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    - uses: actions/cache@v1
+    - uses: actions/cache@v2
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
@@ -18,6 +18,6 @@ jobs:
           ${{ runner.os }}-gems-
 
     # Standard usage
-    - uses:  helaili/jekyll-action@2.0.3
-      env:
-        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+    - uses:  helaili/jekyll-action@v2
+      with:
+        token: ${{ secrets.GH_PAGES_TOKEN }}
