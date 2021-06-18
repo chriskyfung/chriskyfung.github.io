@@ -2,6 +2,7 @@
 layout: post
 title: "☁ Build a Website on Google Cloud: Challenge Lab | logbook"
 date: 2020-07-01 16:30 +0800
+last_modified_at: 2021-06-18 12:01:00 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
@@ -46,7 +47,7 @@ cd ~/monolith-to-microservices
 ./setup.sh
 ```
 
-Before building the Docker container, you can preview the monolith application on port 8080 by running the following commands to start the web server:
+Before building the Docker container, you can preview the monolith application on **port 8080** by running the following commands to start the web server:
 
 ```bash
 cd ~/monolith-to-microservices/monolith
@@ -91,6 +92,8 @@ kubectl create deployment fancytest --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/fancy
 kubectl expose deployment fancytest --type=LoadBalancer --port 80 --target-port 8080
 ```
 
+Wait till the GKE creates an external IP and a Load Balancer for the application.
+
 ## Task 3: Create a containerized version of your Microservices
 
 **Hint**: Refer to the lab [Migrating a Monolithic Website to Microservices on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/11953?parent=catalog)
@@ -134,6 +137,8 @@ Run the following commands to deploy the **Products Microservice**:
 kubectl create deployment products --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/products:1.0.0
 kubectl expose deployment products --type=LoadBalancer --port 80 --target-port 8082
 ```
+
+Wait till the GKE creates external IPs for the "orders" and "products" deployments.
 
 ## Task 5: Configure the Frontend microservice
 
