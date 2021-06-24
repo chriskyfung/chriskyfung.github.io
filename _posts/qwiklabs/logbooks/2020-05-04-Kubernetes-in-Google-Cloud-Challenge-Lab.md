@@ -3,7 +3,7 @@ layout: post
 title: "☁ Deploy to Kubernetes in Google Cloud: Challenge Lab | logbook"
 author: chris
 date: 2020-05-04 +0800
-last_modified_at: 2020-10-19 09:25:00 +0800
+last_modified_at: 2021-06-24 11:22:00 +0800
 category: Cloud
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook, Jenkins]
 permalink: /blog/qwiklabs/deploy-to-kubernetes-in-google-cloud-challenge-lab
@@ -144,6 +144,10 @@ After pushing the container, the `valkyrie-app` repository will appear in the Cl
 
 **Step 5-1** Increase the replicas from 1 to 3
 
+```bash
+kubectl scale deployment valkyrie-dev --replicas 3
+```
+
 **Step 5-2** Update the deployment with a new version of valkyrie-app
 
 1. Go back to the `valkyrie-app` directory in the Cloud Shell.
@@ -169,10 +173,18 @@ After pushing the container, the `valkyrie-app` repository will appear in the Cl
    kubectl edit deployment valkyrie-dev
    ```
 
-   Change the image tag from `v0.0.1` to `v0.0.2`. then save and exit.
+   Change the image tags from `v0.0.1` to `v0.0.2` for both the backend and frontend, then save and exit.
 
    {:style="background:palegoldenrod;padding:5px 15px;"}
    **Tips**: If you change the text mode editor from Vim to Nano by [`KUBE_EDITOR="nano"`](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#editing-resources) before the **kubectl edit** command.
+
+   {:style="background:palegoldenrod;margin-bottom:0;padding:5px 15px;"}
+   **Tips**: Instead of `kubectl edit`, you can update images for the deployment by running the following:
+   
+   {:style="background:palegoldenrod;padding:5px 15px;"}
+   ```bash
+   kubectl set image deployment valkyrie-dev backend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2 frontend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2
+   ```
 
 ## Task 6: Create a pipeline in Jenkins to deploy your app
 
@@ -206,7 +218,7 @@ In this task, you will need to:
 
    ```bash
    docker ps
-   docker container kill $(docker ps -q)
+   docker container kill $(docker ps -aq)
    ```
 
 3. Click on the **Web Preview** button in cloud shell, then click “Preview on port 8080” to connect to the Jenkins console.<br>
