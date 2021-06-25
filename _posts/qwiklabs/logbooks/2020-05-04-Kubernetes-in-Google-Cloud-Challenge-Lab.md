@@ -20,6 +20,8 @@ amp:
    youtube: true
 css:
    syntax: true
+   custom: >-
+      .callout { background-color:gold; font-size: smaller; padding: 10px; }
 featured: true
 ---
 
@@ -175,16 +177,15 @@ kubectl scale deployment valkyrie-dev --replicas 3
 
    Change the image tags from `v0.0.1` to `v0.0.2` for both the backend and frontend, then save and exit.
 
-   {:style="background:palegoldenrod;padding:5px 15px;"}
+   {:.callout}
    **Tips**: If you change the text mode editor from Vim to Nano by [`KUBE_EDITOR="nano"`](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#editing-resources) before the **kubectl edit** command.
 
-   {:style="background:palegoldenrod;margin-bottom:0;padding:5px 15px;"}
+   {:.callout style="margin-bottom:0;"}
    **Tips**: Instead of `kubectl edit`, you can update images for the deployment by running the following:
-   
-   {:style="background:palegoldenrod;padding:5px 15px;"}
    ```bash
    kubectl set image deployment valkyrie-dev backend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2 frontend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2
    ```
+   {:.callout}
 
 ## Task 6: Create a pipeline in Jenkins to deploy your app
 

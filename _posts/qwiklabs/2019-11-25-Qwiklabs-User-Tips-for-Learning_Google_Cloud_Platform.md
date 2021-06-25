@@ -142,7 +142,7 @@ _The Hints for Challenge Labs 2020:_
 - [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-20-Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab %})
 - [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})
 - [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook ]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
-- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-03-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
+- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-06-25-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
 - [☁ Ensure Access & Identity in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-10-gsp342-ensure-access-and-identity-in-google-cloud-challenge-lab %})
 - [☁  Optimize Costs for Google Kubernetes Engine: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-18-gsp343-optimize-costs-for-google-kubernetes-engine-challenge-lab %})
 

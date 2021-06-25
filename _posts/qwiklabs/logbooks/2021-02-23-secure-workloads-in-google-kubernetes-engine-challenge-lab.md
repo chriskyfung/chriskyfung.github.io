@@ -19,6 +19,7 @@ css:
    syntax: true
    custom: >
       .ml-li { margin-left: 2rem; }
+      .callout { background-color:gold; font-size: smaller; padding: 10px; }
 ---
 
 In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/142) exercise. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
@@ -76,7 +77,7 @@ Alternatively, you can create the cluster using the Cloud Console.
       ```
 {% endcapture %}
 
-{% include callout.html content=tips1 %}
+{% include callout.html content=tips1 color="gold" %}
 
 ## Task 2: Setup WordPress
 
@@ -134,7 +135,7 @@ gcloud sql users create wordpress --host % --instance kraken-cloud-sql --passwor
 **Remark:** However, I got some feedback that it will occasionally fail to pass the checkpoint if using the command line.
 {% endcapture %}
 
-{% include callout.html content=tips2 %}
+{% include callout.html content=tips2 color="gold" %}
 
 ### Create a service account for access to your WordPress database from your WordPress instances
 
@@ -223,7 +224,7 @@ chmod 700 get_helm.sh
 ```
 {% endcapture %}
 
-{% include callout.html content=tips-install-helm %}
+{% include callout.html content=tips-install-helm color="gold" %}
 
 Go ahead and use the following `helm` command to install stable nginx-ingress:
 

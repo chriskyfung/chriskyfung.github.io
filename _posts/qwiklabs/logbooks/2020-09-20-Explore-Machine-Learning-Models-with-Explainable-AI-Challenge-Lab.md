@@ -19,6 +19,7 @@ css:
    syntax: true
    custom: >
       .ml-li { margin-left: auto }
+      .callout { background-color:gold; font-size: smaller; padding: 10px; }
 ---
 
 In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/12011?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/126) exercise. TensorFlow is the dominant AI framework in the industry. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models for machine learning the dataset of the Home Mortgage Disclosure Act (HMDA) in New York.
@@ -136,7 +137,7 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    --project=$GCP_PROJECT
    ```
 
-   {:style="background-color:gold; font-size: smaller"}
+   {:.callout}
    **Remark**: The gcloud ai-platform command group should be `versions` rather than `version`.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v2.1.jpg" width="715" height="390" class="ml-li text-center" caption="Create your first AI Platform model: complete_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
@@ -162,7 +163,7 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    --project=$GCP_PROJECT
    ```
 
-   {:style="background-color:gold; font-size: smaller"}
+   {:.callout}
    **Remark**: The gcloud ai-platform command group should be `versions` rather than `version`.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v2.1.png" width="712" height="388" class="ml-li text-center" caption="Create your second AI Platform model: limited_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}

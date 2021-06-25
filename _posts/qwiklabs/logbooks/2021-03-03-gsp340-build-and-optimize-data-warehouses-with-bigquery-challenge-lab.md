@@ -5,10 +5,7 @@ date: 2021-03-03 11:40 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
-permalink: /blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab
-redirect_from:
-   - /blog/qwiklabs/GSP340
-   - /blog/qwiklabs/gsp340
+permalink: /blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab-v1
 image:
    path: /images/posts/qwiklabs/gsp340-cover.png
 excerpt: A brief procedure for the Google Cloud self-paced training GSP340 on Qwiklabs. You will practice the skills for creating a day-partitioned table in BigQuery and populating data from different datasets to it for the analysis of the Covid-19 pandemic.
@@ -18,6 +15,7 @@ css:
    syntax: true
    custom: >
       .ml-li { margin-left: auto; }
+published: false
 ---
 
 In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.

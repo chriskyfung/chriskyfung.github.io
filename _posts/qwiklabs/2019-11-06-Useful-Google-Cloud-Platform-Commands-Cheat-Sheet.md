@@ -138,6 +138,12 @@ _Replace `user`, `your-server-name-1-vm` and `/path/to/the/directory/that/you/wa
 
 #### Create a new Kubernetes Cluster
 
+Enabling Kubernetes Engine API:
+
+```bash
+gcloud services enable container.googleapis.com
+```
+
 The following command is an example to create a new Kubernetes cluster named `my-cluster` with _two_ nodes (_N1 standard 1_) in the zone **us-central1-f**:
 
 ```bash
