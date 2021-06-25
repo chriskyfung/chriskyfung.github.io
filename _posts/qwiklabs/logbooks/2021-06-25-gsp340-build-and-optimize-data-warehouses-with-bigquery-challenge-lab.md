@@ -111,7 +111,7 @@ In this task, you need to populate the `population` column in your table with th
 
 We can divide this task into two steps:
 
-### Create a new table to store the country population data from European Center for Disease Control COVID 19 public dataset table
+#### Create a new table to store the country population data from European Center for Disease Control COVID 19 public dataset table
 
 ```sql
 CREATE OR REPLACE TABLE oxford_policy_tracker.pop_data_2019 AS
@@ -127,7 +127,7 @@ ORDER BY
   country_territory_code
 ```
 
-### Use SQL JOINs to fill the population data to your table
+#### Use SQL JOINs to fill the population data to your table
 
 The query for the **SQL JOIN** should look like this:
 
@@ -214,8 +214,6 @@ FROM `oxford_policy_tracker.<YOUR_TABLE_NAME>`
 WHERE population is NULL
 ```
 
-{% include picture.html img="qwiklabs/gsp340-task6-countries-without-population-data.png" width="531" height="521" alt="Countries without population data" class="text-center" %}
-
 Next, try to run the following to query the countries that do not have the country area data.
 
 ```sql
@@ -223,8 +221,6 @@ SELECT country_name, country_area
 FROM `oxford_policy_tracker.<YOUR_TABLE_NAME>`
 WHERE WHERE country_area IS NULL
 ```
-
-{% include picture.html img="qwiklabs/gsp340-task6-countries-without-country-area-data.png" width="530" height="521" alt="Countries without country area data" class="text-center" %}
 
 The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` columns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
 
@@ -241,23 +237,23 @@ ORDER BY country_name ASC
 
 Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and table name, and run the query. The result should be:
 
-{% include picture.html img="qwiklabs/gsp340-task6-union-result.png" width="553" height="528" alt="Output of Union ALL"  class="text-center" %}
+{% include picture.html img="qwiklabs/gsp340-task6-union-result-v2.png" width="556" height="459" alt="Output of Union ALL"  class="text-center" %}
 
 **Congratulations! You completed this challenge lab.**
 
 ## Demonstration Video
 
-{% include youtube.html id="yU_NFOIa6HA" title="GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab" %}
+{% include youtube.html id="C49jYtIMAsg" title="GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)" %}
 
 ```conf
 ⏱Timestamps:
-00:00 Overview
-00:45 Task1: Create a table partitioned by date
-04:14 Task2: Add new columns to your table
-06:09 Task3: Add country population data to the population column
-09:35 Task4: Add country area data to the country_area column
-12:39 Task5: Populate the mobility record data
-15:52 Task6: Query missing data in population & country_area columns
+00:00 Start Lab and Overview
+00:22 Task 1: Create a table partitioned by date
+01:29 Task 2: Add new columns to your table
+01:55 Task 3: Add country population data to the population column
+02:53 Task 4: Add country area data to the country_area column
+03:22 Task 5: Populate the mobility record data
+03:55 Task 6: Query missing data in population & country_area columns
 ```
 
 **Keep on reading:**
