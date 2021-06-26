@@ -373,7 +373,7 @@ id,name,duration,level,costs,type,env,youtube
 10417,"Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab",1 hour,Expert,9 Credits,labs,GCP,
 5157,"Monitoring with Stackdriver on Kubernetes Engine",45 minutes,Fundamental,5 Credits,labs,GCP,
 3391,"Machine Learning with TensorFlow",1 hour,Advanced,7 Credits,labs,GCP,
-10258,"Getting Started: Create and Manage Cloud Resources: Challenge Lab",1 hour,Fundamental,5 Credits,labs,GCP,
+10258,"Create and Manage Cloud Resources: Challenge Lab",1 hour,Fundamental,5 Credits,labs,GCP,
 12347,"Design Conversational Flows for your Agent",1 hour 30 minutes,Fundamental,5 Credits,labs,GCP,
 3528,"Cloud Composer: Copying BigQuery Tables Across Different Locations",1 hour,Advanced,7 Credits,labs,GCP,
 1820,"Creating Custom Interactive Dashboards with Bokeh and BigQuery",1 hour 10 minutes,Expert,9 Credits,labs,GCP,

@@ -25,7 +25,7 @@ Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using
 
 This time is about the easiest lab in the challenge quest -- **GSP101** _"[Google Cloud Essential Skills: Challenge Lab](https://google.qwiklabs.com/focuses/1734?parent=catalog)"_. It just asks you to set up a VM instance with running Apache webserver. **Pretty BASIC!** If you know how to do that, I recommend you to try your best. Do not read the rest of the article unless you really need some more Hints.
 
-**Note**: Please DO NOT confuse the current lab with _GSP313 Getting Started: Create and Manage Cloud Resources: Challenge Lab_. If you're looking for that logbook, please [click on the link here]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
+**Note**: Please DO NOT confuse the current lab with _GSP313 Create and Manage Cloud Resources: Challenge Lab_. If you're looking for that logbook, please [click on the link here]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
 
 ## Brief Introduction of Challenge Scenario
 

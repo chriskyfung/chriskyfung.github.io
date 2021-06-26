@@ -127,7 +127,7 @@ _The Cookbooks of Challenge Quest Series:_
 - [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook ]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
 
 _The Hints for Challenge Labs 2020:_
-- [☁ Getting Started: Create and Manage Cloud Resources: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %})
+- [☁ Create and Manage Cloud Resources: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %})
 - [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})
 - [☁ Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-02-Baseline-Infrastructure-Challenge-Lab %})
 - [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})

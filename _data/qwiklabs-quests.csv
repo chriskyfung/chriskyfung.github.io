@@ -1,6 +1,6 @@
 type,id,name,duration,level,costs,env
 quests,23,"Google Cloud Essentials",4 hours,Introductory,8 Credits,GCP
-quests,120,"Getting Started: Create and Manage Cloud Resources",5 hours,Introductory,13 Credits,GCP
+quests,120,"Create and Manage Cloud Resources",5 hours,Introductory,13 Credits,GCP
 quests,33,"Baseline: Infrastructure",3 hours,Introductory,4 Credits,GCP
 quests,118,"Perform Foundational Infrastructure Tasks in Google Cloud",4 hours,Introductory,13 Credits,GCP
 quests,34,"Baseline: Data, ML, AI",5 hours,Introductory,10 Credits,GCP

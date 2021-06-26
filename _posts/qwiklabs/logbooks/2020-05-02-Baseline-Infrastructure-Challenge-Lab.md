@@ -86,7 +86,7 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 ## Summary
 
-All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Getting Started: Create and Manage Cloud Resources: Challenge Lab]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
+All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Create and Manage Cloud Resources: Challenge Lab]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
 
 **9 credits!** Is this cheating money? I hope this beginner's guide to Qwiklabs will help you to get started. If you have any additional questions, feel free to ask me in the comments section below.
 

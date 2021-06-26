@@ -2,6 +2,7 @@
 layout: post
 title: "☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab | logbook"
 date: 2020-09-08 05:30 +0800
+last_modified_at: 2021-06-25 10:18 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning, Cloud AI]
@@ -70,7 +71,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 1. In the Cloud Console, click on **Navigation Menu** > **Dataflow**.
 2. Click **CREATE JOB FROM TEMPLATE**.
 3. In Create job from template, give an arbitrary job name.
-4. From the dropdown under Dataflow template, select **Text Files on Cloud Storage Pub/Sub** under "Process Data in Bulk (batch)". (**DO NOT** select the item under "Process Data Continuously (stream)").
+4. From the dropdown under Dataflow template, select **Text Files on Cloud Storage to BigQuery** under "Process Data in Bulk (batch)". (**DO NOT** select the item under "Process Data Continuously (stream)").
 
    {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-dataflow-create-job-from-template.png" width="610" height="562" class="ml-li text-center" %}
 

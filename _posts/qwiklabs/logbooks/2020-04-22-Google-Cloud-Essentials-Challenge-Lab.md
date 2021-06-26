@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Getting Started: Create and Manage Cloud Resources: Challenge Lab | logbook"
+title: "☁ Create and Manage Cloud Resources: Challenge Lab | logbook"
 author: chris
 date: 2020-04-22 +0800
 last_modified_at: 2020-06-22 09:45:00 +0800
@@ -23,7 +23,7 @@ Qwiklabs implemented a big change to the format of its quests in 2020. Multiple 
 
 In the last few months, I received a few comments that ask for help in those challenge labs. I am going to publish a series of logbooks to provide hints and instructions for those difficult labs.
 
-In this article, we will go through the lab **GSP313** _[Getting Started: Create and Manage Cloud Resources: Challenge Lab](https://www.qwiklabs.com/focuses/10258?parent=catalog)_ (formerly known as _Google Cloud Essentials: Challenge Lab_). This exercise is an extension of the [introductory-level](https://www.qwiklabs.com/quests/120) Quest called "[Google Cloud Essentials](https://www.qwiklabs.com/quests/23)", which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.
+In this article, we will go through the lab **GSP313** _[reate and Manage Cloud Resources: Challenge Lab](https://www.qwiklabs.com/focuses/10258?parent=catalog)_ (formerly known as _Google Cloud Essentials: Challenge Lab_). This exercise is an extension of the [introductory-level](https://www.qwiklabs.com/quests/120) Quest called "[Google Cloud Essentials](https://www.qwiklabs.com/quests/23)", which is recommended as the quest for the Google Cloud learner. You should learn the fundamental tools and services of the Google Cloud, including the deployment of a virtual machine, a Kubernetes Engine, and HTTP load balancers. The challenge lab is to test those skills and techniques again.
 
 **The challenge contains 3 compulsory tasks:**
 
