@@ -2,6 +2,7 @@
 layout: post
 title: "☁ Secure Workloads in Google Kubernetes Engine: Challenge Lab | logbook"
 date: 2021-02-23 11:30 +0800
+last_modified_at: 2021-06-27 15:00 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
@@ -20,6 +21,7 @@ css:
    custom: >
       .ml-li { margin-left: 2rem; }
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
+featured: true
 ---
 
 In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/142) exercise. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
@@ -303,7 +305,7 @@ You need to add one more network policy to allow ingress traffic from the intern
 
 ```yaml
 ---
-apiVersion: Networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
    name: allow-world-to-nginx-ingress
@@ -311,7 +313,7 @@ metadata:
 spec:
    podSelector:
       matchLabels:
-      app: nginx-ingress
+         app: nginx-ingress
    policyTypes:
    - Ingress
    ingress:

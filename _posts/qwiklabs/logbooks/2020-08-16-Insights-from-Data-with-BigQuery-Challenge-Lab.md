@@ -26,7 +26,6 @@ css:
       amp-accordion section:not([expanded]) .show-less {
         display: none;
       }
-featured: true
 custom_head: >-
    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 ---
