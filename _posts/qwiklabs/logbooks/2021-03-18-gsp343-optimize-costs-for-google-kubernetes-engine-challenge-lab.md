@@ -2,6 +2,7 @@
 layout: post
 title: "☁ Optimize Costs for Google Kubernetes Engine: Challenge Lab | logbook"
 date: 2021-03-18 11:45 +0800
+last_modified_at: 2021-06-29 15:15 +0800
 category: Cloud
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes]

@@ -145,6 +145,7 @@ _The Hints for Challenge Labs 2020:_
 - [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-06-25-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
 - [☁ Ensure Access & Identity in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-10-gsp342-ensure-access-and-identity-in-google-cloud-challenge-lab %})
 - [☁  Optimize Costs for Google Kubernetes Engine: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-18-gsp343-optimize-costs-for-google-kubernetes-engine-challenge-lab %})
+- [☁ Serverless Firebase Development: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-07-14-gsp344-serverless-firebase-development-challenge-lab %})
 
 
 _Quizzes Answers:_
