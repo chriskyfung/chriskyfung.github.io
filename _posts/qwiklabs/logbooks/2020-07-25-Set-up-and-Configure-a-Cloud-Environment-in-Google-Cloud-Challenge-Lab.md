@@ -23,7 +23,7 @@ css:
       .ml-li { margin-left: auto }
 ---
 
-In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/119) exercise. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
+In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/119) exercise on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
 
 **The challenge contains 9 required tasks:**
 
@@ -78,7 +78,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    edit prod-network.yaml
    ```
 
-3. Replace `SET_REGION` to `us-east1` in the editor, and then save the change.
+3. Replace `SET_REGION` with `us-east1` in the editor, and then save the change.
 
 4. Go back to the Cloud Shell, use the following command to create the production VPC network with the configuration files:
 
@@ -186,8 +186,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
    - Number of nodes: `2`
 
-
-6. Click **Nodes** Under **default-pool**, and set
+5. Click **Nodes** Under **default-pool**, and set
 
    - Machine type: `n1-standard-4`
 
@@ -233,7 +232,6 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 8. Use the command below to create the key, and then add the key to the Kubernetes environment:
 
-{:.ml-li}
    ```bash
    gcloud iam service-accounts keys create key.json \
        --iam-account=cloud-sql-proxy@$GOOGLE_CLOUD_PROJECT.iam.gserviceaccount.com

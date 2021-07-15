@@ -24,7 +24,7 @@ An existing WordPress installation in the Compute Instance called `blog`, is alr
 
 ## Brief Introduction of Challenge Scenario
 
-When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
+When you open the page of this lab on Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 {% include picture.html width="602" height="578" img="qwiklabs/score_box_of_qwiklabs_GSP306.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP306" class="shadow-none text-center" %}
 
@@ -42,7 +42,7 @@ The screenshot above shows that there are 5 steps required for completing this l
 
 ## Check Existing WordPress Resources
 
-In the lab page, there is the IP of the Demo Blog Site shown in the left panel after provisioning lab resources.
+On the lab page, there is the IP of the Demo Blog Site shown in the left panel after provisioning lab resources.
 
 {% include picture.html width="334" height="488" img="qwiklabs/qwiklabs-GSP306-step0-project-information.png" alt="a sample of project information panel" class="shadow-none text-center" %}
 
@@ -71,11 +71,11 @@ You can continue the procedure below without waiting here.
 If you read "[Migration from MySQL to Cloud SQL](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-concept) in the documentation of Google Cloud Solutions. There are two ways to migrate the database, namely, (a) [Export/import approach](https://cloud.google.com/sql/docs/mysql/replication/replication-from-external) or (b) [External replica promotion approach](https://cloud.google.com/solutions/migrating-mysql-to-cloudsql-using-automated-migration-workflow-tutorial).
 
 - **Export/import migration**
-This method requires to export the entire source database and import the dump data to replica, typically requires downtime for the database during the entire process to keep data in sync.
+This method requires exporting the entire source database and import the dump data to replica, which typically requires downtime for the database during the entire process to keep data in sync.
 - **External replica promotion migration**
 This method process through the automated migration workflow provided by Google Cloud SQL, which aims to minimize the database uptime by promoting the replica database to replace the source after the data is synchronized.
 
-In a production environment, you may consider the automated workflow to take its advantage. In this article, I will only show you the **export/import** approach because it is simpler. I want to make sure you can accomplish this challenge lab.
+In a production environment, you may consider the automated workflow to take its benefits. In this article, I will only show you the **export/import** approach because it is simpler. I want to make sure you can accomplish this challenge lab.
 
 In the web console, navigate to **_Compute Engine > VM instances_** and click the **SSH** button of the instance called `blog`.
 
@@ -108,7 +108,6 @@ gsutil cp ~/wordpress.sql gs://${PROJECT_ID}
 
 In the web console, navigate to ***Storage*** to confirm the uploaded file.
 {% include picture.html height="344" img="qwiklabs/qwiklabs-GSP306-step5-dump-file-in-cloud-storage.png" alt="uploaded wordpress.sql file in cloud storage" %}
-
 
 ## Import to Cloud SQL
 
@@ -194,7 +193,7 @@ define('DB_HOST', '35.226.248.101');
 
 Press **Ctrl + x** and type **Y** to save and exit the file.
 
-If you refresh the website in your web browser, it should be restored. That means the WordPress site is connected to the Cloud SQL. Otherwise, use the following command to restart the webserver,
+If you refresh the website in your web browser, it should be restored. That means the WordPress site is connected to Cloud SQL. Otherwise, use the following command to restart the webserver,
 
 ```bash
 sudo service apache2 restart
@@ -211,7 +210,7 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-Next time, I will try to write a review about different quests in Qwiklabs. See you soon!
+Next time, I will try to write a review about different quests on Qwiklabs. See you soon!
 
 **Keep on reading**:
 

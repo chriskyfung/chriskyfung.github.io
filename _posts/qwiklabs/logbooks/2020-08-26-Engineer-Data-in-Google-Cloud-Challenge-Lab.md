@@ -18,7 +18,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP327** _[Engineer Data in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12379?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/132) exercise. You will practice the skills and knowledge to build a prediction model of taxi fares using machine learning with BigQuery.
+In this article, we will go through the lab **GSP327** _[Engineer Data in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12379?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/132) exercise on Qwiklabs. You will practice the skills and knowledge to build a prediction model of taxi fares using machine learning with BigQuery.
 
 **The challenge contains 6 required tasks:**
 
@@ -103,6 +103,7 @@ _**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Fo
 Compose a new query with the given `ST_distance()` and `ST_GeogPoint()` functions in the Query Editor.
 
 Make sure that:
+
 - set `fare_amount` as the label
 - train with the data in `taxirides.taxi_training_data`
 
@@ -129,7 +130,7 @@ Click **Run** and the machine learning process will take about 2 minutes.
 
 #### Evaluate model performance
 
-After the training completed, you can evaluate the **Root Mean Square Error** (**RMSE**) of the prediction model using the following query.
+After the training is completed, you can evaluate the **Root Mean Square Error** (**RMSE**) of the prediction model using the following query.
 
 ```sql
 #standardSQL
@@ -161,6 +162,7 @@ FROM
 In this task, you need to use the BQML model to predict the taxi fares of the data given in the `taxirides.report_prediction_data` table.
 
 Make sure that:
+
 - store your results in a table called `2015_fare_amount_predictions`.
 
 Procedures:

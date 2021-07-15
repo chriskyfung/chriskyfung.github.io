@@ -19,7 +19,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP329** _[Integrate with Machine Learning APIs: Challenge Lab](https://www.qwiklabs.com/focuses/12704?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/136) exercise. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
+In this article, we will go through the lab **GSP329** _[Integrate with Machine Learning APIs: Challenge Lab](https://www.qwiklabs.com/focuses/12704?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/136) exercise on Qwiklabs. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
 
 **Topics tested**:
 
@@ -105,7 +105,7 @@ where `file_content` is the image content extracted from a JEPG or a PNG file vi
         response = vision_client.document_text_detection(image=image_object)
 ```
 
-This line uses the Cloud Vision API to extract text data from each image inside the for loop.
+This line uses the Cloud Vision API to extract text data from each image inside the for-loop.
 
 **Note**: Make sure that you indent the codes correctly.
 
@@ -118,7 +118,7 @@ In Task 4, you need to add your codes to the following part of the script file.
 > Tip 4. For details about the Translation API Client translate API call, see the [Python API Documentation for the Translation V2 API Client](https://googleapis.dev/python/translation/2.0.1/client.html#google.cloud.translate_v2.client.Client.translate)
 
 {:style="font-family:monospace"}
-**TBD**: For non EN locales pass the description data to the translation API
+**TBD**: For non-EN locales pass the description data to the translation API
 **Ref**: [google.cloud.translate_v2.client.Client.translate](https://googleapis.dev/python/translation/latest/client.html#google.cloud.translate_v2.client.Client.translate)
 
 ```python
@@ -211,4 +211,4 @@ The query results should look like:
 **Useful links**:
 
 - [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs - Qwiklabs](https://www.qwiklabs.com/focuses/1836?parent=catalog)
-- [Integrate with Machine Learning APIs: Challenge Lab Tutorial - by Ajil - Sep, 2020 - Medium](https://medium.com/@ajiltu/integrate-with-machine-learning-apis-challenge-lab-tutorial-4ed8c5cb983e)
+- [Integrate with Machine Learning APIs: Challenge Lab Tutorial - by Ajil - Sep 2020 - Medium](https://medium.com/@ajiltu/integrate-with-machine-learning-apis-challenge-lab-tutorial-4ed8c5cb983e)

@@ -25,7 +25,7 @@ css:
 featured: true
 ---
 
-In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/116) exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_). You will practice the skills and knowledge for configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications.
+In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/116) exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_) on Qwiklabs. You will practice the skills and knowledge for configuring Docker images and containers and deploying fully-fledged Kubernetes Engine applications.
 
 **The challenge contains 4 required tasks:**
 
@@ -200,7 +200,7 @@ In this task, you will need to:
 5. Modify the site
 6. Kick off Deployment
 
-#### 6.1 To connect the Jenkines
+#### 6.1 To connect the Jenkins
 
 1. Get the password with the following command:
 
@@ -210,7 +210,7 @@ In this task, you will need to:
 
 2. Connect to the Jenkins console using the commands below:
 
-   ```
+   ```bash
    export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/component=jenkins-master" -l "app.kubernetes.io/instance=cd" -o jsonpath="{.items[0].metadata.name}")
    kubectl port-forward $POD_NAME 8080:8080 >> /dev/null &
    ```
@@ -251,7 +251,7 @@ Create a pipeline job that points to your */master branch on your source code.
 
 5. From the **Credentials** drop-down, select the name of the credentials you created when adding your service account in the previous steps.
 
-6. Under **Scan Multibranch Pipeline Triggers** section, check the **Periodically if not otherwise run** box and set the **Interval** value to 1 minute.
+6. Under the **Scan Multibranch Pipeline Triggers** section, check the **Periodically if not otherwise run** box and set the **Interval** value to 1 minute.
 
 7. Your job configuration should look like this:
 
@@ -305,7 +305,7 @@ Finally, manually trigger the build in the Jenkins console
 
 ## Summary
 
-Do you feel this challenge lab quite difficult? You might if you don't get enough practice on Kubernetes Engines. Other than that, you might be disturbed if you don't know how to use `docker` command to kill a container and `git config` command before committing the changes. Despite this, most tasks reproduce based on the contents from the labs in the Kubernetes in Google Cloud quest. There is nothing to be afraid of.
+Do you feel this challenge lab quite difficult? You might if you don't get enough practice on Kubernetes Engines. Other than that, you might be disturbed if you don't know how to use the `docker` command to kill a container and the `git config` command before committing the changes. Despite this, most tasks reproduce based on the contents from the labs in the Kubernetes in Google Cloud quest. There is nothing to be afraid of.
 
 * * *
 

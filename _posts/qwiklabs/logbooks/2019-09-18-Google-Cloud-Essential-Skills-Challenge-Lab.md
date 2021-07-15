@@ -21,7 +21,7 @@ css:
 
 <!--more-->
 
-Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using a Windows Bastion Host with Terraform]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})"_ within the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". Different from the normal hand-on-labs in Qwiklabs, the challenge labs do not provide step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
+Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using a Windows Bastion Host with Terraform]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})"_ within the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". Different from the normal hand-on-labs on Qwiklabs, the challenge labs do not provide step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
 
 This time is about the easiest lab in the challenge quest -- **GSP101** _"[Google Cloud Essential Skills: Challenge Lab](https://google.qwiklabs.com/focuses/1734?parent=catalog)"_. It just asks you to set up a VM instance with running Apache webserver. **Pretty BASIC!** If you know how to do that, I recommend you to try your best. Do not read the rest of the article unless you really need some more Hints.
 
@@ -29,7 +29,7 @@ This time is about the easiest lab in the challenge quest -- **GSP101** _"[Googl
 
 ## Brief Introduction of Challenge Scenario
 
-When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
+When you open the page of this lab on Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 {% include picture.html width="606" height="334"
 img="qwiklabs/score_box_of_qwiklabs_GSP101.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP101" class="shadow-none text-center" %}

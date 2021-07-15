@@ -24,7 +24,7 @@ If you read my [last post]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud
 
 ## Brief Introduction of Challenge Scenario
 
-When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
+When you open the page of this lab on Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 {% include picture.html width="603" height="582"
 img="qwiklabs/score_box_of_qwiklabs_GSP301.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP301" caption="Screenshot of Qwiklabs hands-on-lab GSP301 scorebox" class="shadow-none text-center" %}

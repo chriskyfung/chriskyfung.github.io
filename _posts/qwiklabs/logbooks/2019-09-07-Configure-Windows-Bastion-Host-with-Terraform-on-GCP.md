@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Configure Secure RDP using a Windows Bastion Host with Terraform on GCP | logbook"
+title: "☁ Use Terraform to Configure Secure RDP using a Windows Bastion Host on GCP"
 author: chris
 date: 2019-09-07
 category: Cloud
@@ -19,15 +19,15 @@ css:
   syntax: true
 ---
 
-The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challenging lab that I took in Qwiklabs (here is the [link to the lab](https://www.qwiklabs.com/catalog?keywords=GSP303)). It was a tricky one that I failed and did a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
+The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challenging lab that I took on Qwiklabs (here is the [link to the lab](https://www.qwiklabs.com/catalog?keywords=GSP303)). It was a tricky one that I failed and did a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
 
 <!--more-->
 
-[Qwiklabs](https://www.qwiklabs.com) has over 400 hands-on labs and is a great online self-paced learning **Google Cloud Platform (GCP)**. Most exercises in Qwiklabs provide clear step-by-step instructions for you to follow and finish the labs, except a few Advanced Challenge Labs. Those labs are not easy because they do not offer the "cookbook" steps. You have to figure out the solutions by yourself as the exercises for students who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). The lab **GSP303** _"[Configure Secure RDP using a Windows Bastion Host](https://google.qwiklabs.com/focuses/1737?parent=catalog)"_ is one of the challenge exercises.
+[Qwiklabs](https://www.qwiklabs.com) has over 400 hands-on labs and is a great online self-paced learning **Google Cloud Platform (GCP)**. Most exercises on Qwiklabs provide clear step-by-step instructions for you to follow and finish the labs, except a few Advanced Challenge Labs. Those labs are not easy because they do not offer the "cookbook" steps. You have to figure out the solutions by yourself as the exercises for students who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). The lab **GSP303** _"[Configure Secure RDP using a Windows Bastion Host](https://google.qwiklabs.com/focuses/1737?parent=catalog)"_ is one of the challenge exercises.
 
 ## Brief Introduction of Challenge Scenario
 
-When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
+When you open the page of this lab on Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 {% include picture.html width="608" height="823"
 img="qwiklabs/score_box_of_qwiklabs_GSP303.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP303" class="shadow-none text-center" %}
@@ -40,9 +40,9 @@ The screenshot above shows that there are six steps required for completing this
 
 3. Configure a firewall rule that allows TCP port 3389 traffic ( for RDP ) the internet to the bastion host called `vm-bastionhost` using network tags.
 
-4. Create a Windows 2016 server instance `vm-bastionhost` with applying the above firewall rule.
+4. Create a Windows 2016 server instance `vm-bastionhost` by applying the above firewall rule.
 
-5. Create a Windows 2016 server instance called `vm-securehost` that does not have a public IP-address.
+5. Create a Windows 2016 server instance called `vm-securehost` that does not have a public IP address.
 
 6. The `vm-securehost` is running Microsoft IIS web server software.
 
@@ -57,7 +57,7 @@ img="qwiklabs/qwiklabs-GSP303-diagram.png" alt="Schematic Diagram of the Secure 
 
 ## Deploy the infrastructure on GCP with Terraform
 
-If you are not familiar with Terraform, I recommend you learn or practise the Quest _"[Managing Cloud Infrastructure with Terraform](https://google.qwiklabs.com/quests/44)"_ before getting started.
+If you are not familiar with Terraform, I recommend you learn or practice the Quest _"[Managing Cloud Infrastructure with Terraform](https://google.qwiklabs.com/quests/44)"_ before getting started.
 
 ### Verifying Terraform Installation
 
@@ -131,7 +131,7 @@ target_tags = ["bastion"]
 allow {
     protocol = "tcp"
     ports    = ["3389"]
-	}
+  }
 }
 
 resource "google_compute_firewall" "securenetwork-allow-rdp" {
@@ -141,7 +141,7 @@ source_ranges = "10.130.0.0/20"
 allow {
     protocol = "tcp"
     ports    = ["3389"]
-	}
+  }
 }
 
 # Create the vm-securehost instance
@@ -191,7 +191,7 @@ resource "google_compute_instance" "vm_instance" {
   boot_disk {
     initialize_params {
       image = "windows-cloud/windows-2016"
-	  }
+    }
   }
   network_interface {
     subnetwork = "${var.instance_subnetwork}"
@@ -230,7 +230,7 @@ resource "google_compute_instance" "vm_instance" {
   boot_disk {
     initialize_params {
       image = "windows-cloud/windows-2016"
-	  }
+    }
   }
   network_interface {
     subnetwork = "${var.instance_subnetwork}"
@@ -256,7 +256,7 @@ terraform plan
 terraform apply
 ```
 
-After the cloud infrastructure are deployed to your GCP project, you need to install IIS in Windows 2016 Server inside the instance `vm-securehost` to finish the lab. You can follow this [installation guide](https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/) (https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/).
+After the cloud infrastructure deployed to your GCP project, you need to install IIS in Windows 2016 Server inside the instance `vm-securehost` to finish the lab. You can follow this [installation guide](https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/) <https://www.rootusers.com/how-to-install-iis-in-windows-server-2016/>.
 
 Congratulations! You should accomplish the lab if you follow all the above steps.
 

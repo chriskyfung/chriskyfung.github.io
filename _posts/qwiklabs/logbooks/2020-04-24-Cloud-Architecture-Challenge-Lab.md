@@ -38,7 +38,7 @@ In the lab scenario, your client has already established a product development e
 
 ## Task 1: Create the production environment
 
-We can further subdivide it to 3 sub-tasks:
+We can further subdivide it into 3 sub-tasks:
 
 ### 1.1 Create the kraken-prod-vpc using the given Deployment Manager configuration
 
@@ -48,15 +48,14 @@ First of all, navigate to **Deployment Manager** in the Console to check the dep
 
 After the jumphost has been created, navigate to **Compute Engine** > **VM instances**.
 
-1. Click **SSH** button to access the jumphost instance.
+1. Click the **SSH** button to access the jumphost instance.
 
 2. In the SSH window, go to the `/work/dm` directory.
 
    {% include picture.html width="706" height="556" img="qwiklabs/qwiklab-GSP314-jumphost-ssh.png" alt="SSH console" %}
 
 {:start="3"}
-
-3. Use an editor to open the configuration file **prod-network.yaml**, and replace `SET_REGION` to `us-east1`.
+3. Use an editor to open the configuration file **prod-network.yaml**, and replace `SET_REGION` with `us-east1`.
 
 4. Create the **kraken-prod-vpc** with the YAML file using `gcloud` command.<br>
 **Hint**: Refer and modify the `gcloud deployment-manager` command in the lab GSP060 [Deployment Manager - Full Production](https://www.qwiklabs.com/focuses/981?parent=catalog#step9).
@@ -151,19 +150,16 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
    {% include picture.html width="706" height="332" img="qwiklabs/qwiklab-GSP314-spin-deck.png" %}
 
 {:start="3"}
-
 3. Click **Port Forward** at the end of the detail page.
 
    {% include picture.html width="611" height="223" img="qwiklabs/qwiklab-GSP314-port-forwarding.png" %}
 
 {:start="4"}
-
 4. The Cloud Shell will launch automatically with the port forwarding command.
 
    {% include picture.html width="706" height="174" img="qwiklabs/qwiklab-GSP314-port-forwarding-cmd.png" %}
 
 {:start="5"}
-
 5. Click the **Web Preview** icon at the top of the Cloud Shell window and select **Preview on port 8080**, to open the Spinnaker user interface.
 
    {% include picture.html width="706" height="355" img="qwiklabs/qwiklab-GSP314-spinnaker.png" %}

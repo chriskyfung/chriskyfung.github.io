@@ -21,7 +21,7 @@ css:
       .ml-li { margin-left: auto }
 ---
 
-In this article, we will go through the lab **GSP330** _[Implement DevOps in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/13287?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/141) exercise. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
+In this article, we will go through the lab **GSP330** _[Implement DevOps in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/13287?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/141) exercise on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
 
 **Topics tested**:
 
@@ -40,15 +40,15 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
 
 3. Also, review the YAML files for the three types of deployment (production, canary, and dev) in the `sample-app/k8s` directory.
 
-3. Navigate to **Compute Engine** > **VM instances**, click on the **SSH** button of the instance named `kraken-jumphost`.
+4. Navigate to **Compute Engine** > **VM instances**, click on the **SSH** button of the instance named `kraken-jumphost`.
 
-4. In the SSH window, run the following command to configure the compute zone:
+5. In the SSH window, run the following command to configure the compute zone:
 
    ```bash
    gcloud config set compute/zone us-east1-b
    ```
 
-5. (Optional) confirm that your cluster is running by executing the following commands:
+6. (Optional) confirm that your cluster is running by executing the following commands:
 
    ```bash
    gcloud container clusters list
@@ -133,7 +133,7 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
    {% include picture.html img="qwiklabs/gsp330-jenkins-login-page.png" width="1024" height="576" class="ml-li" %}
 
 {:start="4"}
-4. You should now be able to log in with username `admin` and your auto-generated password.
+4. You should now be able to log in with the username `admin` and your auto-generated password.
 
 ### Clone the Sample App Repository and Create the Production Namespace
 
@@ -241,13 +241,13 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
 3. Update the version in the following line:
 
-   ```
+   ```go
    const version string = "1.0.0"
    ```
 
    to
 
-   ```
+   ```go
    const version string = "2.0.0"
    ```
 

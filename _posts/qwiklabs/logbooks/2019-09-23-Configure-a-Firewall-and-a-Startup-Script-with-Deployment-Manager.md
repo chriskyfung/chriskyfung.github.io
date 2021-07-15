@@ -27,7 +27,7 @@ But if you aim to be a professional cloud engineer, you must know and apply some
 
 ## Brief Introduction of Challenge Scenario
 
-When you open the page of this lab in Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
+When you open the page of this lab on Qwiklabs, you can find the task requirements by click the green activity tracker (on the top right of the page) to expand the score box.
 
 {% include picture.html width="603" height="785"
 img="qwiklabs/score_box_of_qwiklabs_GSP302.png" alt="Screenshot of Green Score box of Qwiklabs Hands-on-lab GSP302" class="shadow-none text-center" %}

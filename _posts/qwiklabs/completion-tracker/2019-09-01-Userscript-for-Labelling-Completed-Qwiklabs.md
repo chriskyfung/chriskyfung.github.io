@@ -24,7 +24,7 @@ As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quest
 
 **The objectives of this project are:**
 - To develop a handy way to implement the enhancement to the Qwiklabs website in a web browser.
-- To indicate completed labs and quests in Qwiklabs Catalog pages, thereby easier to inspect the self-learning progress and look for unenrolled quests or incomplete labs.
+- To indicate completed labs and quests on Qwiklabs Catalog pages, thereby easier to inspect the self-learning progress and look for unenrolled quests or incomplete labs.
 - To design a location to store and update the name list of the completed items.
 
 <br>

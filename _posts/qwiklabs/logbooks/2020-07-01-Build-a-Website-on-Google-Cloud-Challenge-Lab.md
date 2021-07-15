@@ -20,9 +20,10 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP319** _[Build a Website on Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11765?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/115) exercise. You will practice the skills and knowledge for website architectures available to be scalable with microservices on Google Kubernetes Engine.
+In this article, we will go through the lab **GSP319** _[Build a Website on Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11765?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/115) exercise on Qwiklabs. You will practice the skills and knowledge for website architectures available to be scalable with microservices on Google Kubernetes Engine.
 
 **The challenge contains 6 required tasks:**
+
 1. Download the monolith code and build your container
 1. Create a kubernetes cluster and deploy the application
 1. Create a containerized version of orders and product 1. Microservices
@@ -81,7 +82,8 @@ gcloud container clusters create fancy-cluster --num-nodes 3
 ```
 
 After the cluster is ready, you need to deploy the application. Make sure that you
-- name the deployment to be "fancytest",
+
+- name the deployment to be `fancytest`,
 - expose the service on port 80, and
 - map it to port 8080.
 
@@ -192,7 +194,7 @@ kubectl expose deployment frontend --type=LoadBalancer --port 80 --target-port 8
 
 ## Summary
 
-Most steps in the exercise are identical to those in the lab **Migrating a Monolithic Website to Microservices on Google Kubernetes Engine**. To complete this challenge, make sure you carefully replace the cluster and deployment names to the specified ones. If you still have questions, you can leave a comment below.
+Most steps in the exercise are identical to those in the lab **Migrating a Monolithic Website to Microservices on Google Kubernetes Engine**. To complete this challenge, make sure you carefully replace the cluster and deployment names with the specified ones. If you still have questions, you can leave a comment below.
 
 ## Demonstration Video
 

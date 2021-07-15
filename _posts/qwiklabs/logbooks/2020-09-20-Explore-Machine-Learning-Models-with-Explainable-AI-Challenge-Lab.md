@@ -22,7 +22,7 @@ css:
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
 ---
 
-In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/12011?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/126) exercise. TensorFlow is the dominant AI framework in the industry. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models for machine learning the dataset of the Home Mortgage Disclosure Act (HMDA) in New York.
+In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/12011?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/126) exercise on Qwiklabs. TensorFlow is the dominant AI framework in the industry. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models for machine learning the dataset of the Home Mortgage Disclosure Act (HMDA) in New York.
 
 **Topics tested**:
 
@@ -111,7 +111,7 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1.jpg" width="865" height="508" class="ml-li" %}
 
 {:start="3"}
-3. Run those three cells and then confirm the created bucket and the uploaded model files in the Cloud Storage.
+3. Run those three cells and then confirm the created bucket and the uploaded model files in Cloud Storage.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task3-build-and-train-models-3.jpg" width="510" height="166" class="ml-li text-center" %}
 
@@ -141,7 +141,6 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    **Remark**: The gcloud ai-platform command group should be `versions` rather than `version`.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v2.1.jpg" width="715" height="390" class="ml-li text-center" caption="Create your first AI Platform model: complete_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
-
 
 ##### Create your second AI Platform model: limited_model
 

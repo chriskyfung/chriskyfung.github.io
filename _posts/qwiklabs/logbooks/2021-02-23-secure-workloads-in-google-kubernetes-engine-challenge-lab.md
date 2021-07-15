@@ -24,7 +24,7 @@ css:
 featured: true
 ---
 
-In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/142) exercise. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
+In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/142) exercise on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
 
 **Topics tested**:
 
@@ -84,6 +84,7 @@ Alternatively, you can create the cluster using the Cloud Console.
 ## Task 2: Setup WordPress
 
 This task involves the following three subtasks:
+
 - a) Setup the Cloud SQL database and database username and password
 - b) Create a service account for access to your WordPress database from your WordPress instances
 - c) Create the WordPress deployment and service
@@ -101,6 +102,7 @@ gcloud sql instances create kraken-cloud-sql --region us-central1
 ```
 
 **Related documentation**:
+
 - [Creating a MySQL instance \| Cloud SQL for MySQL](https://cloud.google.com/sql/docs/mysql/create-instance#create-2nd-gen)
 - [gcloud compute instances create \| Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
 
@@ -117,10 +119,10 @@ It usually requires 5 - 10 minutes to process.
 #### Create a user for accessing the Cloud SQL
 
 1. In the **Cloud SQL** page, select the **Users** tab on the left panel.
-3. Click **ADD USER ACCOUNT*.
-4. Enter `wordpress` as the User name.
-5. Enter a password that you can remember.
-6. Select **Allow any host (%)** for the name of Host.
+2. Click **ADD USER ACCOUNT*.
+3. Enter `wordpress` as the User name.
+4. Enter a password that you can remember.
+5. Select **Allow any host (%)** for the name of the Host.
 6. Click **Add**.
 
 {% capture tips2 %}
@@ -197,7 +199,7 @@ To verify the deployment, navigate to the Kubernetes Engine page in the Cloud Co
 
 **Tips:** Review the lab **GSP181** [NGINX Ingress Controller on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/872?parent=catalog "Qwiklabs") on Qwiklabs before you start doing Task 3. For more information, you may read the community tutorial [Ingress with NGINX controller on Google Kubernetes Engine](https://cloud.google.com/community/tutorials/nginx-ingress-gke) on the Google Cloud's website.
 
-In this this challenge lab, please note that you have to install the same `nginx-ingress` version, which is used in the lab GSP181. Otherwise, you will not able to create `nginx-ingress-controller` for continuing the lab.
+In this challenge lab, please note that you have to install the same `nginx-ingress` version, which is used in lab GSP181. Otherwise, you will not able to create `nginx-ingress-controller` for continuing the lab.
 
 ### Set up nginx-ingress environment
 
@@ -234,7 +236,7 @@ Go ahead and use the following `helm` command to install stable nginx-ingress:
 helm install nginx-ingress stable/nginx-ingress --set rbac.create=true
 ```
 
-Wait until the load balancer gets deployed and exposes an external IP. You get monitor the `nginx-ingress-controller` service by running the following command:
+Wait until the load balancer gets deployed and exposes an external IP. You get to monitor the `nginx-ingress-controller` service by running the following command:
 
 ```bash
 kubectl get service nginx-ingress-controller -w
@@ -264,7 +266,7 @@ kubectl create clusterrolebinding cluster-admin-binding \
    --user=$(gcloud config get-value core/account)
 ```
 
-Navigate to the Kubernetes Engine page in the Cloud Console, now you should have the workloads look like:
+Navigate to the Kubernetes Engine page in the Cloud Console, now you should have the workloads look like this:
 
 {% include picture.html img="/qwiklabs/gsp335-task3-deployed-workloads.png" width="1046" height="494" alt="GKE Workloads after installing the nginx-ingress and cert-manager" %}
 
@@ -272,7 +274,7 @@ Edit `issuer.yaml` and set the email address. The file should become like this:
 
 {% include picture.html img="/qwiklabs/gsp335-task3-edit-issuer-yaml.png" width="844" height="417" alt="Editing email in the issuer.yaml" %}
 
-Save the file changes and run the following to apply it to setup the letsencrypt prod issuer:
+Save the file changes and run the following to apply them to setup the letsencrypt prod issuer:
 
 ```bash
 kubectl apply -f issuer.yaml
@@ -295,7 +297,6 @@ kubectl apply -f ingress.yaml
 Open your domain name `https://YOUR_LAB_USERNAME.labdns.xyz` with HTTPS in a new tab. Now the WordPress application should be accessible like this:
 
 {% include picture.html img="/qwiklabs/gsp335-task3-success-deployed-wordpress.png" width="1249" height="736" alt="The WordPress deployed on the secured GKE" %}
-
 
 ## Task 4: Set up Network Policy
 
@@ -320,7 +321,7 @@ spec:
    - {}
 ```
 
-Append the new policy to the `network-policy.yaml`, and save file.  \
+Append the new policy to the `network-policy.yaml`, and save the file.  \
 Run the following to apply the configuration file:
 
 ```bash
@@ -371,7 +372,8 @@ Your cluster will start updating its binary authorization settings. Wait until t
 
 ## Task 6: Setup Pod Security Policy
 
-**Tips:** Review the lab **GSP496** [Hardening Default GKE Cluster Configurations](https://www.qwiklabs.com/focuses/5158?parent=catalog) on Qwiklabs to get some ideas about how to deploy the PodSecurityPolicy objects. To learn more, you can find more details from the following documentations:
+**Tips:** Review the lab **GSP496** [Hardening Default GKE Cluster Configurations](https://www.qwiklabs.com/focuses/5158?parent=catalog) on Qwiklabs to get some ideas about how to deploy the PodSecurityPolicy objects. To learn more, you can find more details from the following documentation:
+
 - [Using PodSecurityPolicies \| Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/pod-security-policies)
 - [Pod Security Policies \| Kubernetes](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
 

@@ -21,7 +21,7 @@ css:
       .ml-li { margin-left: auto; }
 ---
 
-In this article, we will go through the lab **GSP343** _[Optimize Costs for Google Kubernetes Engine&colon; Challenge Lab](https://www.qwiklabs.com/focuses/16327?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/157) exercise on Qwiklabs. You will practice the following topics:
+In this article, we will go through the lab **GSP343** _[Optimize Costs for Google Kubernetes Engine&colon; Challenge Lab](https://www.qwiklabs.com/focuses/16327?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/157) exercise on Qwiklabs. You will practice the following topics:
 
 - Deploying an app on a multi-tenant cluster
 - Migrating cluster workloads to an optimized node pool
@@ -68,7 +68,7 @@ The following example will create the cluster to the zone `us-central1-a` using 
    kubectl config set-context --current --namespace dev
    ```
 
-5. Copy the application files to the Shell environment, and then deploy **OnlineBoutique** app to GKE:
+5. Copy the application files to the Shell environment, and then deploy the **OnlineBoutique** app to GKE:
 
    ```bash
    git clone https://github.com/GoogleCloudPlatform/microservices-demo.git
@@ -119,7 +119,7 @@ Make sure that you:
       width="945" height="445" alt="Creating optimized node pool for GKE cluster" class="ml-li" %}
 
 {:start="2"}
-2. Wait until the status of new node pool becomes **OK**.
+2. Wait until the status of the new node pool becomes **OK**.
 
 3. Cordon and drain the `default-pool`:
 
@@ -174,7 +174,7 @@ Make sure that you:
       alt="change the image and image pull policy with kubectl edit" class="ml-li" %}
 
 {:start="3"}
-3. (_Optional_) In the Cloud Console, navigate to **Kubernetes Engine** > **Workloads** and click the `frontend` deployment. Go to the **REVISION HISTORY** tab, you should see the latest revision updates to `onlineboutique-frontend:v2.1` .
+3. (_Optional_) In the Cloud Console, navigate to **Kubernetes Engine** > **Workloads** and click the `frontend` deployment. Go to the **REVISION HISTORY** tab, you should see the latest revision updates to `onlineboutique-frontend:v2.1`.
 
    {% include picture.html img="qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.png"
       width="956" height="262" alt="Revision 2" class="ml-li" %}
@@ -182,7 +182,7 @@ Make sure that you:
 ## Task 4: Autoscale from Estimated Traffic
 
 1. You need to apply **horizontal pod autoscaling** to your **frontend deployment** with:
-   
+
    - scaling based on a target CPU percentage of 50, and
    - setting the pod scaling between 1 minimum and 13 maximum.
 
@@ -192,7 +192,7 @@ Make sure that you:
    kubectl autoscale deployment frontend --cpu-percent=50 \
       --min=1 --max=13 --namespace dev
    ```
-   
+
 2. Check the status of the autoscalers by running:
 
    ```bash
@@ -227,7 +227,6 @@ Make sure that you:
 
    {% include picture.html img="qwiklabs/gsp343-task4-monitoring-traffic-spike.png"
       width="624" height="302" alt="High CPU, Memory and Disk utilization yielded by traffic spike" class="ml-li" %}
-
 
    Scroll to the **Managed Pods** section, you should observe the number of pods increases by the horizontal pod autoscaling.
 

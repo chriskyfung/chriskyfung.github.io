@@ -18,7 +18,7 @@ css:
 published: false
 ---
 
-In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
+In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/147) exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
 
 **Topics tested**:
 
@@ -180,7 +180,7 @@ Before running the above query, replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME
 
 You will need to find the countries that are missing the `population` and `country_area`. The result should be a list of the countries ordered by country name. If a country misses both the population and country area, it should appear twice in the list.
 
-**Tips:** The **SQL UNION ALL** operator is recommended in the **Tips and Tricks** section provided on the Qwiklabs. It combines the result of two queries without removing the overlapping results. Read [this SQLShank article](https://www.sqlshack.com/sql-union-vs-union-all-in-sql-server/ "SQL Union vs Union All in SQL Server \| sqlshack.com"), if you want to understand the difference between the **SQL UNION** and **UNION ALL** operators.
+**Tips:** The **SQL UNION ALL** operator is recommended in the **Tips and Tricks** section provided on Qwiklabs. It combines the result of two queries without removing the overlapping results. Read [this SQLShank article](https://www.sqlshack.com/sql-union-vs-union-all-in-sql-server/ "SQL Union vs Union All in SQL Server \| sqlshack.com"), if you want to understand the difference between the **SQL UNION** and **UNION ALL** operators.
 
 First, try to run the following to query the countries that do not have the population data.
 
@@ -202,7 +202,7 @@ WHERE WHERE country_area IS NULL
 
 {% include picture.html img="qwiklabs/gsp340-task6-countries-without-country-area-data.png" width="530" height="521" alt="Countries without country area data" class="text-center" %}
 
-The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` columns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
+The results above contain duplicate rows if you carefully observe them. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` columns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
 
 ```sql
 SELECT DISTINCT country_name

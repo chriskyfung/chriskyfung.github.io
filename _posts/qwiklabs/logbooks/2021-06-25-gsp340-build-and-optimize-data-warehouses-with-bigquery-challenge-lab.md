@@ -20,12 +20,12 @@ css:
       .ml-li { margin-left: auto; }
 ---
 
-In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is labeled as an [advanced-level](https://www.qwiklabs.com/quests/147) exercise. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
+In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/147) exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
 
 **Topics tested**:
 
 - Use BigQuery to access public COVID and other demographic datasets.
-- Create a new BigQuery dataset which will store your tables.
+- Create a new BigQuery dataset that will store your tables.
 - Add a new date partitioned table to your dataset.
 - Add new columns to this table with appropriate data types.
 - Run a series of JOINS to populate these new columns with data drawn from other tables.
@@ -222,7 +222,7 @@ FROM `oxford_policy_tracker.<YOUR_TABLE_NAME>`
 WHERE WHERE country_area IS NULL
 ```
 
-The results above contain duplicate rows if you carefully observe. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` columns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
+The results above contain duplicate rows if you carefully observe them. Refine the queries by adding the **DISTINCT** option to remove any duplicates. Also, keep only the `country_name` column in the results by unselecting the `population` and `country_area` columns. Last, combine the two queries using **UNION ALL** and order by country name. The final query should become like this:
 
 ```sql
 SELECT DISTINCT country_name

@@ -21,7 +21,7 @@ css:
       .ml-li { margin-left: 2rem }
 ---
 
-In this article, we will go through the lab **GSP322** _[Build and Secure Networks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12068?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/128) exercise. You will need to set up firewall rules to configure a simple environment securely that only allow SSH to the bastion via IAP.
+In this article, we will go through the lab **GSP322** _[Build and Secure Networks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12068?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/128) exercise on Qwiklabs. You will need to set up firewall rules to configure a simple environment securely that only allow SSH to the bastion via IAP.
 
 **The challenge contains 6 required tasks:**
 
@@ -29,13 +29,12 @@ In this article, we will go through the lab **GSP322** _[Build and Secure Networ
 2. Start the bastion host instance
 3. Create a firewall rule that allows SSH (tcp/22) from the IAP service and add a network tag on `bastion`
 4. Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add a network tag on `juice-shop`
-5. Create a firewall rule that allows traffic on SSH (tcp/22) from `acme-mgmt-subnet` network address and add a network tag on `juice-shop`
+5. Create a firewall rule that allows traffic on SSH (tcp/22) from the `acme-mgmt-subnet` network address and add a network tag on `juice-shop`
 6. SSH to bastion host via IAP and `juice-shop` via `bastion`
-
 
 ## 1. Remove the overly permissive rules
 
-This task is very simple. You only need to the open-access firewall rules.
+This task is very simple. You only need the open-access firewall rules.
 
 1. In the Cloud Console, navigate to **Menu** > **VPC Network** > **Firewall**
 2. Check the box next to the rule named `open-access`.
@@ -128,7 +127,7 @@ After configuring the firewall rules, try to verify the environment via the bast
 1. Navigate to **Compute Engine** > **VM instances**.
 2. Copy the Internal IP of the **juice-shop** instance.
 3. Click on the SSH button in the row of the **bastion** instance.
-3. In the SSH console, access the juice-shop from the bastion using the following command:
+4. In the SSH console, access the juice-shop from the bastion using the following command:
 
    ```bash
    ssh <internal-IP-of-juice-shop>
@@ -149,7 +148,7 @@ After configuring the firewall rules, try to verify the environment via the bast
 0:00 Start Lab and Provisioning
 2:18 Remove the overly permissive rules
 3:00 Start the bastion host instance
-5:37 Create a firewall rule that allows SSH (tcp/22) from the IAP service and add a network tag on bastion
+5:37 Create a firewall rule that allows SSH (tcp/22) from the IAP service and add a network tag on the bastion
 7:30 Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add a network tag on juice-shop
 9:20 Create a firewall rule that allows traffic on SSH (tcp/22) from acme-mgmt-subnet
 11:18 SSH to bastion host via IAP and juice-shop via bastion

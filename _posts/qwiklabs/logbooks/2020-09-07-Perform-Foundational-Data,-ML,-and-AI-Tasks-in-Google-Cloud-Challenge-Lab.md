@@ -22,7 +22,7 @@ css:
       .ml-li { margin-left: auto }
 ---
 
-In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is labeled as an [expert-level](https://www.qwiklabs.com/quests/117) exercise. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
+In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/117) exercise on Qwiklabs. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
 
 **The challenge contains 4 required tasks:**
 
@@ -51,7 +51,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 {:start="7"}
 7. Go back to the Cloud Console, select the new dataset **lab** and click **Create Table**.
-8. In the Create table dialog, select **Google Cloud Storage** from the dropdown in the Source section.
+8. In the Create Table dialog, select **Google Cloud Storage** from the dropdown in the Source section.
 9. Copy `gs://cloud-training/gsp323/lab.csv` to **Select file from GCS bucket**.
 10. Enter `customers` to "Table name" in the Destination section.
 11. Enable **Edit as text** and copy the JSON data from the `lab.schema` file to the textarea in the Schema section.
@@ -70,7 +70,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 1. In the Cloud Console, click on **Navigation Menu** > **Dataflow**.
 2. Click **CREATE JOB FROM TEMPLATE**.
-3. In Create job from template, give an arbitrary job name.
+3. In Create job from the template, give an arbitrary job name.
 4. From the dropdown under Dataflow template, select **Text Files on Cloud Storage to BigQuery** under "Process Data in Bulk (batch)". (**DO NOT** select the item under "Process Data Continuously (stream)").
 
    {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-dataflow-create-job-from-template.png" width="610" height="562" class="ml-li text-center" %}
@@ -78,15 +78,15 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 {:start="5"}
 5. Under the Required parameters, enter the following values:
 
-   | Field          |   Value               |
-   | ---            | ---                   |
-   | JavaScript UDF path in Cloud Storage | `gs://cloud-training/gsp323/lab.js` |
-   | JSON path	| `gs://cloud-training/gsp323/lab.schema` |
-   | JavaScript UDF name	| `transform` |
-   | BigQuery output table	| `YOUR_PROJECT:lab.customers` |
-   | Cloud Storage input path | `gs://cloud-training/gsp323/lab.csv` |
-   | Temporary BigQuery directory | `gs://YOUR_PROJECT/bigquery_temp` |
-   | Temporary location | `gs://YOUR_PROJECT/temp` |
+   | Field                                | Value                                   |
+   | ------------------------------------ | --------------------------------------- |
+   | JavaScript UDF path in Cloud Storage | `gs://cloud-training/gsp323/lab.js`     |
+   | JSON path                            | `gs://cloud-training/gsp323/lab.schema` |
+   | JavaScript UDF name                  | `transform`                             |
+   | BigQuery output table                | `YOUR_PROJECT:lab.customers`            |
+   | Cloud Storage input path             | `gs://cloud-training/gsp323/lab.csv`    |
+   | Temporary BigQuery directory         | `gs://YOUR_PROJECT/bigquery_temp`       |
+   | Temporary location                   | `gs://YOUR_PROJECT/temp`                |
 
    **Replace** `YOUR_PROJECT` with your project ID.
 
@@ -239,7 +239,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    gcloud ml language analyze-entities --content="Old Norse texts portray Odin as one-eyed and long-bearded, frequently wielding a spear named Gungnir and wearing a cloak and a broad hat." > task4-cnl.result
    ```
 
-3. Upload the resulted file to Cloud Storage by running:
+2. Upload the resulted file to Cloud Storage by running:
 
    ```bash
    gsutil cp task4-cnl.result gs://<YOUR-PROJECT_ID>-marking/task4-cnl.result
@@ -262,14 +262,14 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    ```
 
 3. Go back to the Cloud Console, click on **Navigation menu** > **APIs & Services** > **Credentials**.
-4. Click the service account named with "Qwiklabs User Service Account" to view the details.
+4. Click the service account named "Qwiklabs User Service Account" to view the details.
 5. Click **ADD KEY** > **Create new key**.
 6. Choose **JSON** and click **CREATE** to download the Private key file to your computer.
 7. Upload the file to the Cloud Shell environment.
 8. Rename the uploaded file to `key.json`.
 9. Run the following commands to create a token.
 
-   ```
+   ```bash
    gcloud auth activate-service-account --key-file key.json
    export TOKEN=$(gcloud auth print-access-token)
    ```

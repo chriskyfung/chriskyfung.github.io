@@ -21,7 +21,7 @@ amp:
 
 <!--more-->
 
-Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %}) help you to finish the Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** _[Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10379?parent=catalog)_ (formerly known as _Baseline Infrastructure: Challenge Lab_) is listed below.
+Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %}) help you to finish the Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** *[Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10379?parent=catalog)* (formerly known as *Baseline Infrastructure: Challenge Lab*) is listed below.
 
 **The challenge contains 4 required tasks:**
 
