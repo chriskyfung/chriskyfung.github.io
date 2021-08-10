@@ -16,6 +16,8 @@ css:
 
 <!--more-->
 
+{% include toc.md %}
+
 ## Install gcloud command-line tool
 
 #### For Linux

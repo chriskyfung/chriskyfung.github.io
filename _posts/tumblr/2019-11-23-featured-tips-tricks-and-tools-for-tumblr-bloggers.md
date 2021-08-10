@@ -38,6 +38,8 @@ css:
 
 <!--more-->
 
+{% include toc.md %}
+
 ## Personalize Your Tumblr Site
 
 If you prefer to present your Tumblr like a normal website, you definitely want to erase the Tumblr controls, buttons, and toolbars from your pages. You can follow the **two** instructions below to kill them from

@@ -18,6 +18,8 @@ Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups
 
 <!--more-->
 
+{% include toc.md %}
+
 {% include picture.html width="548" height="288" img="tumblr/Tumblr-Facebook-OpenGraph-Tags-Block.png" alt="Example Facebook Open Graph tags auto-generated in the Tumblr blog" caption="Sample of Facebook Open Graph tags auto-generated in the Tumblr blog" class="text-center" %}
 
 You may want to fix the tags, so you explicitly define your own in your Custom Theme. Tumblr will stop auto-generate the entire markup, once you add an Open Graph meta tags. Therefore, you need to reengineer those by your own codes. Here is an example found on GitHub gists:

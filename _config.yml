@@ -1,10 +1,9 @@
 # Site
-remote_theme: chriskyfung/amp-affiliately-jekyll-theme
+remote_theme: chriskyfung/amp-affiliately-jekyll-theme@v2.0.1-beta
 
 name: "Chris KY FUNG's Page"
 title: "Chris KY FUNG's Blog"
 description: "Feel free to bookmark this to keep an eye on my project updates"
-meta_description: "Chris KY FUNG's Blog."
 baseurl: ''
 url: https://chriskyfung.github.io
 favicon: 'assets/images/favicon_96x96.png'
@@ -15,9 +14,19 @@ permalink: /blog/:year/:month/:day/:title
 paginate_path: "/blog/page:num/"
 paginate: 12
 
+# Navigation features
+nav:
+  global:
+    menu: true
+
+# Content Post-processing
+target_blank: false
+anchor_link: true
+
 sidebar:
   featured: true
   recent_posts: true
+resources_widget: false
 
 # AddThis Inline Share Buttons
 addthis: 
@@ -38,10 +47,10 @@ google_analytics: 'UA-72575541-9' # Google Analytics Tracking ID
 gtm: 'GTM-WQMQK3X' # Google Tag Manager ID
 
 # Google Ads
+adstyle: true
 adsense: 
   client_id: 'ca-pub-4819282024314540' # Google Adsense client ID
   ad_slot:
-    before_content: 2454411055 # Ad Slot that places before content
     sidebar: 1391498756 # Ad Slot that places to sidebar
 
 # Soical Buttons
@@ -55,7 +64,7 @@ buymeacoffee: chriskyfung
 
 # Copyright Start Year
 copyright: 
-  prefix: 2014-
+  prepend: Copyright © 2014-
   ownership: Chris KY FUNG
   link: https://chriskyfung.github.io/
 

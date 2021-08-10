@@ -23,6 +23,8 @@ css:
 featured: true
 ---
 
+{% include toc.md %}
+
 ## What is Qwiklabs
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice. If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
@@ -108,7 +110,7 @@ Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Mediu
 >
 </amp-ad>
 
-## **See Also**
+## See Also 📚
 
 _Resources:_
 
