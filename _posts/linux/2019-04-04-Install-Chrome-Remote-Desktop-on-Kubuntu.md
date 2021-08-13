@@ -121,7 +121,7 @@ display = self.get_unused_display_number()
 self.child_env["DISPLAY"] = ":%d" % display
 ```
 
-Press `Ctrl+X` and then `Y` to save the file and exit the editor. Finally, start Chrome Remote Desktop with the following command.
+Press **Ctrl + X** and then `Y` to save the file and exit the editor. Finally, start Chrome Remote Desktop with the following command.
 
 ```bash
 /opt/google/chrome-remote-desktop/chrome-remote-desktop --start

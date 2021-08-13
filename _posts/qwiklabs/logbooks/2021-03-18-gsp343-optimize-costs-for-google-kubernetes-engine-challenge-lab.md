@@ -82,7 +82,7 @@ The following example will create the cluster to the zone `us-central1-a` using 
    kubectl get svc -w --namespace dev
    ```
 
-   *Press **CTRL+C** to stop the monitoring.*
+   *Press **CTRL + C** to stop the monitoring.*
 
    {% include picture.html img="qwiklabs/gsp343-task1-get-frontend-external-ip.png"
       width="1244" height="374" alt="Monitor service status using Watch command" class="ml-li" %}

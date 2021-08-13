@@ -6,6 +6,8 @@ author: chris
 category: Productivity
 tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/quick-search-evernote-with-phraseexpress
+css:
+  syntax: true
 ---
 
 The common way to search the contents in Evernote on your desktop or using the search bar in the desktop application. Another way may be just perform a normal Google search and the related articles in your Evernote account will be displayed if you have installed Evernote Web Clipper in your browser. But the second way does not always work. You may copy a keyword, switch to the Evernote window and paste the text in the search bar. I have searched the contents in Evernote in this way for more than six years. That is an annoying and stupid task repeating many times day by day. I always think about how to get rid of this [hamster wheel](https://www.urbandictionary.com/define.php?term=hamster%20wheel) and remove such inconvenience. Today, I want to introduce a method that I recently created to improve my productivity without difficult coding using python or other programming languages.
@@ -24,17 +26,19 @@ PhraseExpress is an Autotext or auto-complete typing assistant that monitors you
 
 ### How to configure
 
-1\. Create a new phrase in **PhraseExpress**
+1. Create a new phrase in **PhraseExpress**
 
-2\. Assign a script name to **Description**, e.g. _Go to Evernote_
+2. Assign a script name to **Description**, e.g. _Go to Evernote_
 
-3\. Copy the following script to **Phrase content**
+3. Copy the following script to **Phrase content**
 
-`{#clipboard -copy}{#run -file "C:\Program Files (x86)\Evernote\Evernote\ENScript.exe" -params "showNotes /q "{#trim {#insertclipboard}}""}`
+   ```vb
+   {#clipboard -copy}{#run -file "C:\Program Files (x86)\Evernote\Evernote\ENScript.exe" -params "showNotes /q "{#trim {#insertclipboard}}""}
+   ```
 
-4\. Assign a **Hotkey**, e.g. _Win + Shift+ E_ (Recommended)
+4. Assign a **Hotkey**, e.g. <span class="mono"><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></span> (Recommended)
 
-5\. Assign a **Autotext** (Optional)
+5. Assign a **Autotext** (Optional)
 
 _It can apply to non-editable text, e.g. texts on web pages. But **Don’t** use Autotext method in text editors, the text selected will be replaced as you type in the Autotext._
 
@@ -46,7 +50,7 @@ img="/evernote/phraseexpress-macro-for-everntoe.png" alt="PhraseExpress Macro fo
 For example, I am writing a Chinese article about PhD. I highlight the text in that I want to search, and then press the Hotkey for my script. The Evernote Desktop will launch in a second with the results of your search queue.
 
 {% include picture.html height="493"
-img="evernote/search-evernote-with-shortcut-key-on-windows.png" alt="Press the Hotkey (e.g. Win + Shift + E)" caption="Press the Hotkey (e.g. Win + Shift + E) to call Evernote CLI for searching notes" class="text-center" %}
+img="evernote/search-evernote-with-shortcut-key-on-windows.png" alt="Press the Hotkey (e.g. Win + Shift + E)" caption="Press the Hotkey (e.g. <kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd>) to call Evernote CLI for searching notes" class="text-center" %}
 
 {% include picture.html height="483"
 img="evernote/evernote-search-results-returned-by-cli-shorthand.png" alt="Search results on the Evernote Desktop app activated by the Evernote CLI" caption="Search results on the Evernote Desktop app activated by the Evernote CLI" class="text-center" %}

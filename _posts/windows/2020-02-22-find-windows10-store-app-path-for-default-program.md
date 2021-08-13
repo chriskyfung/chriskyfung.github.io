@@ -37,7 +37,7 @@ The Windows Registry contains the keys and values for all store apps, including 
 
 3. Navigate to *Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages*.
 
-4. Look for the key with the app name, or press **Ctrl+F** to use the "Find" dialog for a quick search under the registry tree.
+4. Look for the key with the app name, or press **Ctrl + F** to use the "Find" dialog for a quick search under the registry tree.
 
 5. Open the app key you found, there should be a subkey called `PackageID` and another called `PackageRootFolder`, shown as the example below.
 

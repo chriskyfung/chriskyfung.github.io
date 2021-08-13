@@ -16,12 +16,12 @@ This time I would like to share other useful tips for Evernote. With Evernote We
 
 <!--more-->
 
-The default shortcut key assigned in Evernote is **Ctrl + Shift + H**. I used it for several years, but I always think it isn’t user-friendly. The key combination is easy to mix with the shortcut keys in other word processors. For instance, Microsoft Word assigns the same function to _Ctrl + Alt + H_. But both of them are stupid design.  
+The default shortcut key assigned in Evernote is <span class="mono"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd></span>. I used it for several years, but I always think it isn’t user-friendly. The key combination is easy to mix with the shortcut keys in other word processors. For instance, Microsoft Word assigns the same function to <span class="mono"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>H</kbd></span>. But both of them are stupid design.  
 
 {% include picture.html height="384"
 img="evernote/ctrl-shirt-h-shortcut-keys.jpg" class="text-center shadow-none" %}
 
-Besides it is confusing, the key combination is really difficult to press with just one hand. The Ctrl and Shift keys are in the most lateral, while the **H** key locates at the middle of a keyboard. It is hard to drag and select text with your mouse, and press the default shortcut key simultaneously. Setting a custom hotkey is one way to cope with this problem, but Evernote has no such preference. To bypass this limitation, I recommend you to solve with PhraseExpress.
+Besides it is confusing, the key combination is really difficult to press with just one hand. The <kbd>Ctrl</kbd> and <kbd>Shift</kbd> keys are in the most lateral, while the <kbd>H</kbd> key locates at the middle of a keyboard. It is hard to drag and select text with your mouse, and press the default shortcut key simultaneously. Setting a custom hotkey is one way to cope with this problem, but Evernote has no such preference. To bypass this limitation, I recommend you to solve with PhraseExpress.
 
 [PhraseExpress](https://www.phraseexpress.com/shop/freeware/) is **free-of-charge** to **personal users** (but you should purchase a license for commercial or professional use). So, I highly recommend you to download and install PhraseExpress on your desktops.  
 
@@ -29,34 +29,29 @@ I will suggest you to custom your hotkey to a comfortable position with minimum 
 
 ## How to configure
 
-1\. Create a new phrase in **PhraseExpress**.
+1. Create a new phrase in **PhraseExpress**.
 
-2\. Assign a script name to **Description** , e.g. _Highlight (Evernote)_
+2. Assign a script name to **Description** , e.g. _Highlight (Evernote)_
 
-3\. Insert _Simulate keypress > More…_ to **Phrase content**.
+3. Insert _Simulate keypress > More…_ to **Phrase content**.
 
-{% include picture.html height="476"
-img="evernote/insert-simulate-keypress-in-phraseexpress.png" class="text-center" %}
+   {% include picture.html height="476" img="evernote/insert-simulate-keypress-in-phraseexpress.png" class="text-center" %}
 
-4\. Choose _Modifier_ to be **Ctrl-Shift**, Type **H** in _Chars_, and then press _OK_.
+4. Choose _Modifier_ to be **Ctrl-Shift**, Type **H** in _Chars_, and then press _OK_.
 
-{% include picture.html width="447" height="142"
-img="evernote/set-ctrl-shift-h-as-simulate-keypress-in-phraseexpres.png" class="text-center" %}
+   {% include picture.html width="447" height="142" img="evernote/set-ctrl-shift-h-as-simulate-keypress-in-phraseexpres.png" class="text-center" %}
 
-5\. Enable **Execute only in specific programs**, and restrict to this shorthand to only execute in Evernote.  
+5. Enable **Execute only in specific programs**, and restrict to this shorthand to only execute in Evernote.  
 
-{% include picture.html width="680" height="441"
-img="evernote/Restrict-PhraseExpress-to-Evernote.png" alt="Advance configuration - Restrict PhraseExpress to Evernote" class="text-center" %}
+   {% include picture.html width="680" height="441" img="evernote/Restrict-PhraseExpress-to-Evernote.png" alt="Advance configuration - Restrict PhraseExpress to Evernote" class="text-center" %}
 
-6\. Set your Hotkey, e.g Ctrl + ` (Recommended).
+6. Set your Hotkey, e.g <kbd>Ctrl</kbd> + <kbd>`</kbd> (Recommended).
 
-{% include picture.html height="476"
-img="evernote/set-hotkey-ctrl+quote-in-phraseexpress.png" class="text-center" %}
+   {% include picture.html height="476" img="evernote/set-hotkey-ctrl+quote-in-phraseexpress.png" class="text-center" %}
 
-7\. Finished. Test it in your Evernote.
+7. Finished. Test it in your Evernote.
 
-{% include picture.html width="714" height="398"
-img="evernote/ctrl-quote-hotkey.jpg" class="text-center shadow-none" %}
+   {% include picture.html width="714" height="398" img="evernote/ctrl-quote-hotkey.jpg" class="text-center shadow-none" %}
 
 * * *
 

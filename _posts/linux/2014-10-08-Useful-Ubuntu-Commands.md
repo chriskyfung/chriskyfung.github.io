@@ -32,26 +32,26 @@ sudo apt-get install terminator
 **Shortcut keys:**
 
 {:.table .table-hover}
-|          Action         |   Shortcut   |
-|-------------------------|--------------|
-| Split horizontally      | Shift+Ctrl+O |
-| Split Vertically        | Shift+Ctrl+E |
-| Focus on above terminal | Alt + UP     |
-| Focus on terminal below | Alt + Down   |
-| Focus on left terminal  | Alt + Left   |
-| Focus on right terminal | Alt + Right  |
-| Create a new Tab        | Shift+Ctrl+T |
-| Switch to previous Tab  | Ctrl+PageUp  |
-| Switch to next Tab      | Ctrl+PageDown|
-| Create a new Window     | Shift+Ctrl+I |
-| Focus on next window    | Alt + TAB    |
-| Close window            | Shift+Ctrl+Q |
-| Close terminal          | Shift+Ctrl+W |
-| Increase font size      | Ctrl + **+** |
-| Decrease font size      | Ctrl + **-** |
-| Restore original font size | Ctrl + 0  |
-| Resize termainal      |Shift+Ctrl+Arrow|
-| Toggle Full Screen      | F11          |
+| Action                     | Shortcut                                                                        |
+| -------------------------- | ------------------------------------------------------------------------------- |
+| Split horizontally         | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>O</kbd></span>     |
+| Split Vertically           | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>E</kbd></span>     |
+| Focus on above terminal    | <span class="mono"><kbd>Alt</kbd> + <kbd>UP</kbd></span>                        |
+| Focus on terminal below    | <span class="mono"><kbd>Alt</kbd> + <kbd>Down</kbd></span>                      |
+| Focus on left terminal     | <span class="mono"><kbd>Alt</kbd> + <kbd>Left</kbd></span>                      |
+| Focus on right terminal    | <span class="mono"><kbd>Alt</kbd> + <kbd>Right</kbd></span>                     |
+| Create a new Tab           | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>T</kbd></span>     |
+| Switch to previous Tab     | <span class="mono"><kbd>Ctrl</kbd> + <kbd>PageUp</kbd></span>                   |
+| Switch to next Tab         | <span class="mono"><kbd>Ctrl</kbd> + <kbd>PageDown</kbd></span>                 |
+| Create a new Window        | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>I</kbd></span>     |
+| Focus on next window       | <span class="mono"><kbd>Alt</kbd> + <kbd>TAB</kbd></span>                       |
+| Close window               | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Q</kbd></span>     |
+| Close terminal             | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>W</kbd></span>     |
+| Increase font size         | <span class="mono"><kbd>Ctrl</kbd> + <kbd>+</kbd></span>                        |
+| Decrease font size         | <span class="mono"><kbd>Ctrl</kbd> + <kbd>-</kbd></span>                        |
+| Restore original font size | <span class="mono"><kbd>Ctrl</kbd> + <kbd>0</kbd></span>                        |
+| Resize termainal           | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Arrow</kbd></span> |
+| Toggle Full Screen         | <span class="mono"><kbd>F11</kbd></span>                                        |
 
 * * *
 
@@ -72,12 +72,14 @@ For more infomation, please find from:
 
 #### Find previous commands
 
-- `history`
+- `history`  \
   Display a list of previous commands
-- `!`_`n`_
-   where _**n**_ is the index of a command displayed by history, e.g. `!4`
-- `Ctrl+R` Find the historical commands
-   Suggest a previous command that starts with the chars as you type
+
+- `!`_`n`_  \
+  where _**n**_ is the index of a command displayed by history, e.g. `!4`
+
+- <span class="mono"><kbd>Ctrl</kbd> + <kbd>R</kbd></span> \
+   Find the historical commands. Suggest a previous command that starts with the chars as you type
 
 #### Execute a shell script
 
