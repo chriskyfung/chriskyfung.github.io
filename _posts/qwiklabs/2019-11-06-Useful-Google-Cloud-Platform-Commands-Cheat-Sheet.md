@@ -10,6 +10,7 @@ redirect_from:
  - /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
 css:
     syntax: true
+featured: true
 ---
 
 **gcloud** is the primary CLI tool for the Google Cloud Platform. You can find a shortlist of the frequently used commands below. There are also some examples of **gsutil** and **terraform** command-line tools. Mastering them helps you to script and automate many GCP operations.

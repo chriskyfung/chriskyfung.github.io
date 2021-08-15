@@ -9,6 +9,7 @@ image:
    path: /images/posts/matlab/excel_addin_menu.png
    width: 251
    height: 262
+   hide: true
 permalink: /blog/matlab/Working-MATLAB-with-MS-Excel
 redirect_from:
  - /blog/2015/03/10/Working-MATLAB-with-MS-Excel
@@ -45,5 +46,7 @@ img="matlab/excel_addin_menu_right_click.png" alt="image: context menu of MATLAB
 * * *
 
 **Keep on reading**:
-- [Matrix Conversion between MATLAB and Microsoft Equation Editor]{% post_url matlab/2020-01-15-Convert-MATLAB-Matrix-to-MS-Office-Equation %}
+
+- [Matrix Conversion between MATLAB and Microsoft Equation Editor]({% post_url matlab/2020-01-15-Convert-MATLAB-Matrix-to-MS-Office-Equation %})
 - [Expand shorten URLs in MATLAB]({% post_url matlab/2015-11-29-expand-twitter-short-url %})
+- [File I/O and File System in MATLAB]({% post_url matlab/2014-10-11-file-io-and-file-system-in-matlab %})

@@ -61,7 +61,7 @@ The `{REDIRECTED_URL}` will be the URL of the final destination, which is what w
 
 ### Sending GET request to the REST API
 
-In MATLAB, we can use [`urlread`](https://www.mathworks.com/help/matlab/ref/urlread.html) to download URL content. You can also use [`webread`](https://www.mathworks.com/help/matlab/ref/webread.html) to read content from RESTful web service if you use MATLAB 2014b or above. To send a request to the expandurl™ API, we can write a script like that:
+In MATLAB, we can use `urlread` [^urlread] to download URL content. You can also use `webread` [^webread] to read content from RESTful web service if you use MATLAB 2014b or above. To send a request to the expandurl™ API, we can write a script like that:
 
 ```matlab
 targetTweetUrl = 'https://t.co/<ShortenTweetID>';
@@ -94,8 +94,15 @@ redirectUrl = substr{2};
 
 * * *
 
-**Keep on reading**:
+## Keep on reading
 
-- [Working MATLAB with MS Excel]{% post_url matlab/2015-03-10-Working-MATLAB-with-MS-Excel %}
+- [Working MATLAB with MS Excel]({% post_url matlab/2015-03-10-Working-MATLAB-with-MS-Excel %})
 
-- [Matrix Conversion between MATLAB and Microsoft Equation Editor]{% post_url matlab/2020-01-15-Convert-MATLAB-Matrix-to-MS-Office-Equation %}
+- [Matrix Conversion between MATLAB and Microsoft Equation Editor]({% post_url matlab/2020-01-15-Convert-MATLAB-Matrix-to-MS-Office-Equation %})
+
+- [File I/O and File System in MATLAB]({% post_url matlab/2014-10-11-file-io-and-file-system-in-matlab %})
+
+## Footnotes
+
+[^urlread]: [Download URL content to character vector (not recommended) - MATLAB urlread](https://www.mathworks.com/help/matlab/ref/urlread.html)
+[^webread]: [Read content from RESTful web service - MATLAB webread](https://www.mathworks.com/help/matlab/ref/webread.html)

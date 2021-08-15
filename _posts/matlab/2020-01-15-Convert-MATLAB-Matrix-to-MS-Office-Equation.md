@@ -66,7 +66,8 @@ Do you use any great tools when writing your reports and essays? Have a question
 
 * * *
 
-**Related posts:**
+**Keep on reading**:
 
-- [Working MATLAB with MS Excel]{% post_url matlab/2015-03-10-Working-MATLAB-with-MS-Excel %}
+- [Working MATLAB with MS Excel]({% post_url matlab/2015-03-10-Working-MATLAB-with-MS-Excel %})
 - [Expand shorten URLs in MATLAB]({% post_url matlab/2015-11-29-expand-twitter-short-url %})
+- [File I/O and File System in MATLAB]({% post_url matlab/2014-10-11-file-io-and-file-system-in-matlab %})
