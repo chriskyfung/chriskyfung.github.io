@@ -13,13 +13,15 @@ featured: true
 #excerpt: 
 ---
 
-## File I/O
+## Low-Level File I/O
 
 Write a text file with the following MATLAB built-in functions:
 
 1. `fopen`;
 2. `fprintf`;
 3. `fclose`.
+
+💡 Learn more: [Export to Text Data Files with Low-Level I/O - MATLAB & Simulink](https://www.mathworks.com/help/matlab/import_export/writing-to-text-data-files-with-low-level-io.html)
 
 ## File System
 

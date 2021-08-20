@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Solve issues in updating or starting up devices when **aksfridge.sys** or **aksdf.sys** 
-date: YYYY-MM-DD HH:MM +0800
-category: Cloud, Web Development, Linux, Windows, Productivity
+date: 2020-08-10 +0800
+category: Windows
 author: chris
 tags: []
-permalink: /blog/
+permalink: /blog/solve-windows-issues-with-aksdf-sys
 image: 
    path: /images/posts/.png
 featured: true
