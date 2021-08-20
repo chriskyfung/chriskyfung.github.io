@@ -21,5 +21,10 @@
       }
     }
   ],
-  "commentTranslate.targetLanguage": "en"
+  "commentTranslate.targetLanguage": "en",
+  "grammarly.userWords": [
+    "html",
+    "toc",
+    ".md"
+  ]
 }
