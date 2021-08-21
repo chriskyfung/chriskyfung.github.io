@@ -121,4 +121,5 @@ relative_links:
   collections: true
 
 # Directories and/or files from the conversion
+include: [.github/FUNDING.yml]
 exclude: [sync.ffs_db]
