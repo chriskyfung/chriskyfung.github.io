@@ -164,7 +164,7 @@ To deploy a production frontend, you need to configure the service endpoint in t
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="4rqeFp87s6I" title="GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour" %}
 

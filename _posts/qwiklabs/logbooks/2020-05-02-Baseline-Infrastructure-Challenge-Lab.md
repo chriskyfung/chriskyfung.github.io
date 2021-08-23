@@ -90,7 +90,7 @@ All tasks can be done with the Cloud Console. There should be no difficulty for 
 
 **9 credits!** Is this cheating money? I hope this beginner's guide to Qwiklabs will help you to get started. If you have any additional questions, feel free to ask me in the comments section below.
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="5UrQ9D-epG8" title="GSP315 Perform Foundational Infrastructure Tasks in Google Cloud= Challenge Lab" %}
 

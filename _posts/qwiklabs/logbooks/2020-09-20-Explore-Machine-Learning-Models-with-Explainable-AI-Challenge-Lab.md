@@ -199,7 +199,7 @@ Run the last cell in the notebook to activate What-If Tool. Explore the differen
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="UzP2pX1qayA" title="GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab" %}
 

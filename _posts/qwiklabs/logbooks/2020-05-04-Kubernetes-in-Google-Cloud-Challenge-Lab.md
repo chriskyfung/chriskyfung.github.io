@@ -288,7 +288,7 @@ Finally, manually trigger the build in the Jenkins console
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="jtHZ_aSlI-4" title="GSP318 Deploy to Kubernetes in Google Cloud: Challenge Lab" %}
 

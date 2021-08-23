@@ -202,7 +202,7 @@ The last task is to deploy a simple test application `hello-server` to the Kuber
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="HiFMZGDBzZo" title="GSP342 Ensure Access & Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)" %}
 

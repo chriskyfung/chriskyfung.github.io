@@ -8,8 +8,9 @@ tags: [Fuzzy Logic, Computer Science]
 permalink: /blog/comp-sci/fuzzy-logic
 amp:
    youtube: true
-#image:
-   #path: /images/posts/.png
+image:
+   path: /images/posts/notebook-4839909_o128.png
+   hide: true
 #featured: true
 excerpt: A brief summary of the types of Fuzzy Logic and its applications in control systems.
 ---

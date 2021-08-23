@@ -360,7 +360,7 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="3zxclCMoQeM" title="GSP787 Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)" %}
 

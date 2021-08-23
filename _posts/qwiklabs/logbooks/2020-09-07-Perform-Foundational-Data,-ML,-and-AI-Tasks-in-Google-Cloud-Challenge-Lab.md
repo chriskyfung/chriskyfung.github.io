@@ -295,7 +295,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="iAGiLYAx7z8" title="GSP323 Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab" %}
 

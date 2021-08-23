@@ -158,7 +158,7 @@ Tasks 1 to 5 were pretty straightforward. If you prefer using the command line t
 
 Only Task 7 was a little tricky. You will get stuck if you try to make a copy of the table using the **COPY TABLE** button in the BigQuery console. It can copy the table structure but cannot copy the data in the table. Once you know how to correctly clone the table, the task is just a piece of cake.
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="uiKc2_i8IOM" title="GSP311 Automate Interactions with Contact Center AI: Challenge Lab" %}
 

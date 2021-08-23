@@ -434,7 +434,7 @@ Expected output:
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="Hcs40i_2o0E" title="GSP336 Build and Manage APIs with Apigee: Challenge Lab" %}
 

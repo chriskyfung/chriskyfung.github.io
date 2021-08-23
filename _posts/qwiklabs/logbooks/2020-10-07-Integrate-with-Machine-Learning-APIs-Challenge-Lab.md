@@ -171,7 +171,7 @@ The query results should look like:
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="kEEqbeqR6og" title="GSP329 Integrate with Machine Learning APIs: Challenge Lab" %}
 

@@ -239,7 +239,7 @@ Eventually, you will also see new nodes initiate by the cluster autoscaling. But
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="jeB-FIeGKkQ" title="GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour" %}
 

@@ -305,7 +305,7 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="pSSA6vlRgtA" title="GSP330 Implement DevOps in Google Cloud: Challenge Lab" %}
 

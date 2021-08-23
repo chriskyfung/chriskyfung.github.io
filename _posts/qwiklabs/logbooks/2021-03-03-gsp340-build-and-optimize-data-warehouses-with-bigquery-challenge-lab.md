@@ -221,7 +221,7 @@ Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and tabl
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="yU_NFOIa6HA" title="GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab" %}
 

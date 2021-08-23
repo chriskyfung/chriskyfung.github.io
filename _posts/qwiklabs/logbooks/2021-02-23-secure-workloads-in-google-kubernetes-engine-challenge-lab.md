@@ -401,7 +401,7 @@ Save the changes, and run the `kubectl apply` command again.
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="bpeOjFZklpg" title="GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab" %}
 

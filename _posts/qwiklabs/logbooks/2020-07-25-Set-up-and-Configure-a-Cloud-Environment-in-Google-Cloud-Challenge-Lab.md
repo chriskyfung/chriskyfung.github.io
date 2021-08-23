@@ -298,7 +298,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="p3jUogiOQqk" title="GSP321 Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab (Revised Ed.)" %}
 

@@ -203,7 +203,7 @@ At the end of the lab, your BigQuery dataset should contain the following tables
 
 **Congratulations! You completed this challenge lab.**
 
-## Demonstration Video
+## <i class="far fa-play-circle"></i> Demonstration Video
 
 {% include youtube.html id="myYCfRS15fM" title="GSP327 Engineer Data in Google Cloud: Challenge Lab" %}
 
