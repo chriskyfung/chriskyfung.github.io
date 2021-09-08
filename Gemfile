@@ -22,11 +22,9 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-seo-tag'
   gem 'jekyll-archives'
-  gem 'jekyll-gist'
-  gem 'jekyll-loading-lazy'
-  gem 'jekyll-gzip'
   gem 'jekyll-redirect-from'
   gem 'jekyll-remote-theme'
+  gem 'jekyll-gist'
   gem 'jekyll-relative-links'
   gem 'jekyll-scholar'
 end
