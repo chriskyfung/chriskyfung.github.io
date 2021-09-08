@@ -69,15 +69,7 @@ copyright:
   link: https://chriskyfung.github.io/
 
 # Authors
-authors:
-  chris:
-    name: Chris KY Fung
-    display_name: Chris F.
-    gravatar: abd876486b2caa54b43bf64a5a86f620
-    email: 
-    web: https://en.gravatar.com/chrisfungky
-    facebook: https://www.facebook.com/chriskyfung/
-    description: "Author of this blog, M.Phil."
+author: chris
 
 # Plugins
 plugins: 
