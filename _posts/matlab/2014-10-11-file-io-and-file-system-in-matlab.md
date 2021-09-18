@@ -9,9 +9,12 @@ tags: [MATLAB, File I/O]
 permalink: /blog/matlab/file-io-and-file-system-in-matlab
 image: 
    path: /images/posts/matlab/matlab-file-system-cover.jpg
-featured: true
-#excerpt: 
+excerpt: A brief note about file handling in MATLAB, including different approaches to list files and folders, and them to the search path.
 ---
+
+{% include toc.md %}
+
+* * *
 
 ## Low-Level File I/O
 
@@ -22,6 +25,8 @@ Write a text file with the following MATLAB built-in functions:
 3. `fclose`.
 
 💡 Learn more: [Export to Text Data Files with Low-Level I/O - MATLAB & Simulink](https://www.mathworks.com/help/matlab/import_export/writing-to-text-data-files-with-low-level-io.html)
+
+* * *
 
 ## File System
 
@@ -41,15 +46,15 @@ MATLAB can obtain the information from a file system by the following MATLAB bui
    **Example output:**
 
    ```matlab
-listing = 
-   
-   5x1 struct array with fields:
+   listing = 
       
-      name
-      date
-      bytes
-      isdir
-      datenum
+      5x1 struct array with fields:
+         
+         name
+         date
+         bytes
+         isdir
+         datenum
    ```
 
    {% include picture.html img="matlab/matlab-dir-listing-struct-o8.png" width="476" height="205" %}
@@ -63,7 +68,7 @@ listing =
 
    💡 **Learn more**: [Check existence of variable, script, function, folder, or class - MATLAB exist](https://www.mathworks.com/help/matlab/ref/exist.html)
 
-## Exclude &apos; . &apos; and &apos; .. &apos; From Listing Files and Folder
+### Exclude &apos; . &apos; and &apos; .. &apos; From Listing Files and Folder
 
 The `dir()` function always returns `.` and `..` in its result.
 
@@ -76,7 +81,7 @@ _e.g._ `getProjectDir(path)`
 
  It will call the `dir(path)` function but return the folder information in a struct array without the rows for  `.` and `..`.
 
-## List Files and Folders with non-ASCII Characters
+### List Files and Folders with non-ASCII Characters
 
 The `dir` function does not support internationalization, such as the characters for the Chinese, Japanese, and Korean (CJK) languages. You need to handle non-ASCII characters using the **java.io.File** Class in MATLAB.
 
@@ -105,7 +110,7 @@ Instead of reinventing the wheel, you can use clone my **[matlab-filesystem-io](
     'README.md'
    ```
 
-## Add Folder(s) to The MATLAB Search Path
+### Add Folder(s) to The MATLAB Search Path
 
 When you want MATLAB to use files that locate not in the current working directory, you need to add their file locations to the [MATLAB search path](https://www.mathworks.com/help/matlab/matlab_env/what-is-the-matlab-search-path.html) using the following functions:
 

@@ -22,7 +22,6 @@ css:
    syntax: true
    custom: >-
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
-featured: true
 ---
 
 In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/116) exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_) on Qwiklabs. You will practice the skills and knowledge for configuring Docker images and containers and deploying fully-fledged Kubernetes Engine applications.

@@ -11,8 +11,7 @@ amp:
 image:
    path: /images/posts/notebook-4839909_o128.png
    hide: true
-#featured: true
-excerpt: A brief summary of the types of Fuzzy Logic and its applications in control systems.
+excerpt: A summary about the types of Fuzzy Logic and their applications in control systems.
 ---
 
 {% include toc.md %}
