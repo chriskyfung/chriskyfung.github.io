@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Userscript for Qwiklabs Lab Completion Tracking v0.5"
+title: "Userscript for Qwiklabs Lab Completion Tracking v1.0"
 author: chris
 date: 2020-07-03 20:30 +08:00
 category: [Project, Cloud]
