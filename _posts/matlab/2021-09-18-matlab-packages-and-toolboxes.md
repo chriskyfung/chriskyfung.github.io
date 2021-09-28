@@ -220,6 +220,8 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 : A function lists files and directories in a directory and its subdirectories recursively.
 
+**Related**: [File I/O and File System in MATLAB]({% post_url matlab/2014-10-11-file-io-and-file-system-in-matlab %})
+
 ## Graphics
 
 {% include picture.html img="matlab/charts-6246450_730x278_o128.png" width="730" height="278" alt="histogram, scatter plot, bar chart, line chart, area chart, box plot, circle plot, etc." class="shadow-none" %}
@@ -606,7 +608,6 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 **Keep on reading**:
 
-- [File I/O and File System in MATLAB]({% post_url matlab/2014-10-11-file-io-and-file-system-in-matlab %})
 - [Working MATLAB with MS Excel]({% post_url matlab/2015-03-10-Working-MATLAB-with-MS-Excel %})
 - [Matrix Conversion between MATLAB and Microsoft Equation Editor]({% post_url matlab/2020-01-15-Convert-MATLAB-Matrix-to-MS-Office-Equation %})
 - [Expand shorten URLs in MATLAB]({% post_url matlab/2015-11-29-expand-twitter-short-url %})

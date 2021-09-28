@@ -44,3 +44,7 @@ istriu	Determine if matrix is upper triangular
 isdiag	Determine if matrix is diagonal
 
 [Matrix Decomposition (or factorization in Matlab)](https://www.matrixlab-examples.com/matrix-decomposition.html)
+
+## Learn More About Linear Algeba
+
+[Essence of linear algebra - YouTube](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
