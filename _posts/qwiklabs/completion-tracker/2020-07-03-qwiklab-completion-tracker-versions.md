@@ -2,7 +2,7 @@
 layout: post
 title: "Qwiklabs Lab Completion Tracker - Version History"
 author: chris
-date: 2021-09-18 11:00 +08:00
+date: 2021-09-30 18:00 +08:00
 category: [Cloud, Project]
 permalink: /blog/qwiklabs/qwiklab-completion-tracker-versions
 tags: [Qwiklabs, Userscript, Changelog]
@@ -22,9 +22,21 @@ excerpt: The changelog, the feature highlights, and the screenshots of the previ
 
 <a href="https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js" style="box-shadow: none" rel="noopener" target="_blank"><amp-img src="https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&logo=tampermonkey&style=for-the-badge" width="152" height="28" alt="Install Script with Tampermonkey"></amp-img></a>
 
-## v1.0.0 - Fix the Change in My Learning URL
+## v2.0 - Revamp for New Qwiklabs Web Design 🚁
 
-<small><i class="fas fa-calendar-day fa-sm"></i> 2021-09-18</small>
+<small><i class="fas fa-calendar-day fa-sm"></i> <time datetime="2021-09-30">2021-09-30</time></small>
+
+Qwiklabs made a significant change in its web design at the end of September 2021. It broke most of the features in our previous versions. I'd made an effort to revise and update the code to keep up with the latest Qwiklabs web design. Today, I'm happy to announce the release the version 2.0 of our Qwiklabs Lab Completion Tracker.
+
+### 🖼 Screenshots of Major Changes in v2.0
+
+{% include picture.html width="1326" height="492" img="card-annotations-by-qwiklabs-lab-completion-tracker_1326x492-o128.png" alt="Card annotations on Qwiklabs Home page by Lab Completion Tracker" caption="Status icons are inserted under the progress bar of activity cards on Qwiklabs Home page" source="projects" class="text-center" %}
+
+{% include picture.html width="1384" height="585" img="features-in-qwiklabs-activities-tab_1384x585-o128.png" alt="Add-ons features on Qwiklabs Profile page by Lab Completion Tracker" caption="The <q>Update database records</q> and <q>View last 100 records</q> add-ons buttons on Qwiklabs Profile page" source="projects" class="text-center" %}
+
+## v1.0 - Fix the Change in My Learning URL
+
+<small><i class="fas fa-calendar-day fa-sm"></i> <time datetime="2021-09-18">2021-09-18</time></small>
 
 - Replaced `/my_learning` with `/profile/activity`.
 - Changed the CSS selector and Regular Expression to look up the total number of activities.
@@ -34,7 +46,7 @@ excerpt: The changelog, the feature highlights, and the screenshots of the previ
 
 ## v0.5.5 - Fix Not Recognize Activity Names That Contains Colons (:)
 
-<small><i class="fas fa-calendar-day fa-sm"></i> 2021-05-04</small>
+<small><i class="fas fa-calendar-day fa-sm"></i> <time datetime="2021-05-04">2021-05-04</time></small>
 
 - Set a custom attribute to tag the lab/quest 🆔 for the row of unmarked learning activities
 - Change to use the lab/quest ID as the key 🗝 for batch update to DB
@@ -42,7 +54,7 @@ excerpt: The changelog, the feature highlights, and the screenshots of the previ
 
 ## v0.5.4 - Fix the Change in My Learning Layout
 
-<small><i class="fas fa-calendar-day fa-sm"></i> 2021-04-09</small>
+<small><i class="fas fa-calendar-day fa-sm"></i> <time datetime="2021-04-09">2021-04-09</time></small>
 
 - Added a quick link to view all **My Learning Activity** results
 - Revised the way to update the database records with the new format of learning activity data
@@ -57,7 +69,8 @@ excerpt: The changelog, the feature highlights, and the screenshots of the previ
 ## v0.5.2
 
 - Amended for the new **Catalog** page design
-## v0.5.1 
+
+## v0.5.1
 
 - One-click update the labs and quests status to the IndexedDB
 
@@ -67,6 +80,7 @@ excerpt: The changelog, the feature highlights, and the screenshots of the previ
 - Repackage JavaScript with Async/Await
 
 * * *
+
 ## For v0.4.8 or Earlier
 
 - Each catalog item compares with the manually labelled array data storing within the userscript.
@@ -77,7 +91,7 @@ excerpt: The changelog, the feature highlights, and the screenshots of the previ
 
 ### v0.4.8 - Support Tracking "Home" and "My Learning" Pages
 
-<small><i class="fas fa-calendar-day fa-sm"></i> 2020-06-06</small>
+<small><i class="fas fa-calendar-day fa-sm"></i> <time datetime="2020-06-06">2020-06-06</time></small>
 
 - Add **NEW** badges and yellow highlights to any unregistered labs and quests.
 - Apply the color scheme to the short tables of the "Completed Courses" and "Completed Labs" pages on the **My Learning** page.
@@ -85,7 +99,7 @@ excerpt: The changelog, the feature highlights, and the screenshots of the previ
 
 ### v0.4.5
 
-<small><i class="fas fa-calendar-day fa-sm"></i> 2021-05-20</small>
+<small><i class="fas fa-calendar-day fa-sm"></i> <time datetime="2020-05-20">2020-05-20</time></small>
 
 - Add green highlight to the titles of completed labs and quests.
 - Add annotations to Your Favorites in the **My Learning** page.

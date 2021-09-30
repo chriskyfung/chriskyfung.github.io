@@ -15,6 +15,7 @@
   "version": "2.4.1",
   "scripts": {
     "build": "bundle exec jekyll build && gulp",
+    "jekyll": "bundle exec jekyll serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

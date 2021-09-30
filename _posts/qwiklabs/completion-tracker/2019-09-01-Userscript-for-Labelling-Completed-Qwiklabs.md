@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Userscript for Qwiklabs Lab Completion Tracking v1.0"
+title: "Userscript for Qwiklabs Lab Completion Tracking v2.0"
 author: chris
 date: 2020-07-03 20:30 +08:00
+last_modified_at: 2021-09-30 18:33 +08:00
 category: [Project, Cloud]
 permalink: /blog/qwiklabs/userscript-for-labelling-completed-qwiklabs
 redirect_from:
@@ -30,6 +31,8 @@ As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quest
 <br>
 
 A prototype was developed using Tampermonkey <i class="fa fa-plug"></i> for Google Chrome <i class="fab fa-chrome"></i>. [Tampermonkey](https://www.tampermonkey.net/) is a Chrome extension which allows users easily create, edit and execute Javascript-based <i class="fa fa-code"></i> [Userscripts](https://en.wikipedia.org/wiki/Userscript) in the web browser. With the prototyped userscript, you can visually identify the completed catalogue items. From **v0.5.0**, each catalog item compares with the `status` field storing in the browser database.
+
+<a href="https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js" style="box-shadow: none" rel="noopener" target="_blank"><amp-img src="https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&logo=tampermonkey&style=for-the-badge" width="152" height="28" alt="Install Script with Tampermonkey"></amp-img></a>
 
 ### Effects on Catalog, Quest and Lab pages
 
@@ -66,6 +69,12 @@ You can also update the latest records by clicking on the *sync* <i class='fas f
 ### Changelog
 
 For more details, please go to the [Version History]({% post_url qwiklabs/completion-tracker/2020-07-03-qwiklab-completion-tracker-versions %}) page.
+
+### 🖼 Screenshots of Major Changes in v2.0
+
+{% include picture.html width="1326" height="492" img="card-annotations-by-qwiklabs-lab-completion-tracker_1326x492-o128.png" alt="Card annotations on Qwiklabs Home page by Lab Completion Tracker" caption="Status icons are inserted under the progress bar of activity cards on Qwiklabs Home page" source="projects" class="text-center" %}
+
+{% include picture.html width="1384" height="585" img="features-in-qwiklabs-activities-tab_1384x585-o128.png" alt="Add-ons features on Qwiklabs Profile page by Lab Completion Tracker" caption="The <q>Update database records</q> and <q>View last 100 records</q> add-ons buttons on Qwiklabs Profile page" source="projects" class="text-center" %}
 
 ### Future Plans
 
