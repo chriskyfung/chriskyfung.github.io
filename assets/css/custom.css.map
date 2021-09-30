@@ -3,8 +3,8 @@
 	"file": "custom.css",
 	"sources": [
 		"custom.scss",
-		"../../tmp/jekyll-remote-theme-20210928-48-mk8smc/_sass/main.scss",
-		"../../tmp/jekyll-remote-theme-20210928-48-mk8smc/_sass/_syntax.scss"
+		"../../tmp/jekyll-remote-theme-20210930-50-1l2paty/_sass/main.scss",
+		"../../tmp/jekyll-remote-theme-20210930-50-1l2paty/_sass/_syntax.scss"
 	],
 	"sourcesContent": [
 		"// Import partials from `sass_dir` (defaults to `_sass`)\n\n@import\n    \"main\"\n;\n\n@import\n\t\"syntax\"\n;",

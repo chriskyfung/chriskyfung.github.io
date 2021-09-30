@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Sep 2021 17:52:17 +0800</pubDate>
-    <lastBuildDate>Tue, 28 Sep 2021 17:52:17 +0800</lastBuildDate>
+    <pubDate>Thu, 30 Sep 2021 18:36:47 +0800</pubDate>
+    <lastBuildDate>Thu, 30 Sep 2021 18:36:47 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -21,9 +21,25 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;152&quot; height=&quot;28&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;v100---fix-the-change-in-my-learning-url&quot;&gt;v1.0.0 - Fix the Change in My Learning URL&lt;/h2&gt;
+&lt;h2 id=&quot;v20---revamp-for-new-qwiklabs-web-design-&quot;&gt;v2.0 - Revamp for New Qwiklabs Web Design 🚁&lt;/h2&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; 2021-09-18&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-30&quot;&gt;2021-09-30&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;Qwiklabs made a significant change in its web design at the end of September 2021. It broke most of the features in our previous versions. I’d made an effort to revise and update the code to keep up with the latest Qwiklabs web design. Today, I’m happy to announce the release the version 2.0 of our Qwiklabs Lab Completion Tracker.&lt;/p&gt;
+
+&lt;h3 id=&quot;-screenshots-of-major-changes-in-v20&quot;&gt;🖼 Screenshots of Major Changes in v2.0&lt;/h3&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;1326&quot; height=&quot;492&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/card-annotations-by-qwiklabs-lab-completion-tracker_1326x492-o128.webp&quot; alt=&quot;Card annotations on Qwiklabs Home page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1326&quot; height=&quot;492&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/card-annotations-by-qwiklabs-lab-completion-tracker_1326x492-o128.png&quot; alt=&quot;Card annotations on Qwiklabs Home page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Status icons are inserted under the progress bar of activity cards on Qwiklabs Home page&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;1384&quot; height=&quot;585&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/features-in-qwiklabs-activities-tab_1384x585-o128.webp&quot; alt=&quot;Add-ons features on Qwiklabs Profile page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1384&quot; height=&quot;585&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/features-in-qwiklabs-activities-tab_1384x585-o128.png&quot; alt=&quot;Add-ons features on Qwiklabs Profile page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;The &lt;q&gt;Update database records&lt;/q&gt; and &lt;q&gt;View last 100 records&lt;/q&gt; add-ons buttons on Qwiklabs Profile page&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;v10---fix-the-change-in-my-learning-url&quot;&gt;v1.0 - Fix the Change in My Learning URL&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-18&quot;&gt;2021-09-18&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Replaced &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/profile/activity&lt;/code&gt;.&lt;/li&gt;
@@ -35,7 +51,7 @@
 
 &lt;h2 id=&quot;v055---fix-not-recognize-activity-names-that-contains-colons-&quot;&gt;v0.5.5 - Fix Not Recognize Activity Names That Contains Colons (:)&lt;/h2&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; 2021-05-04&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-05-04&quot;&gt;2021-05-04&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Set a custom attribute to tag the lab/quest 🆔 for the row of unmarked learning activities&lt;/li&gt;
@@ -45,7 +61,7 @@
 
 &lt;h2 id=&quot;v054---fix-the-change-in-my-learning-layout&quot;&gt;v0.5.4 - Fix the Change in My Learning Layout&lt;/h2&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; 2021-04-09&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-04-09&quot;&gt;2021-04-09&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Added a quick link to view all &lt;strong&gt;My Learning Activity&lt;/strong&gt; results&lt;/li&gt;
@@ -68,9 +84,12 @@
 &lt;h2 id=&quot;v052&quot;&gt;v0.5.2&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Amended for the new &lt;strong&gt;Catalog&lt;/strong&gt; page design
-    &lt;h2 id=&quot;v051&quot;&gt;v0.5.1&lt;/h2&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Amended for the new &lt;strong&gt;Catalog&lt;/strong&gt; page design&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;v051&quot;&gt;v0.5.1&lt;/h2&gt;
+
+&lt;ul&gt;
   &lt;li&gt;One-click update the labs and quests status to the IndexedDB&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -82,6 +101,7 @@
 &lt;/ul&gt;
 
 &lt;hr /&gt;
+
 &lt;h2 id=&quot;for-v048-or-earlier&quot;&gt;For v0.4.8 or Earlier&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -97,7 +117,7 @@
 
 &lt;h3 id=&quot;v048---support-tracking-home-and-my-learning-pages&quot;&gt;v0.4.8 - Support Tracking “Home” and “My Learning” Pages&lt;/h3&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; 2020-06-06&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-06-06&quot;&gt;2020-06-06&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Add &lt;strong&gt;NEW&lt;/strong&gt; badges and yellow highlights to any unregistered labs and quests.&lt;/li&gt;
@@ -107,7 +127,7 @@
 
 &lt;h3 id=&quot;v045&quot;&gt;v0.4.5&lt;/h3&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; 2021-05-20&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-05-20&quot;&gt;2020-05-20&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Add green highlight to the titles of completed labs and quests.&lt;/li&gt;
@@ -132,7 +152,7 @@
 
 &lt;hr /&gt;
 </description>
-        <pubDate>Sat, 18 Sep 2021 11:00:00 +0800</pubDate>
+        <pubDate>Thu, 30 Sep 2021 18:00:00 +0800</pubDate>
         <link>https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</link>
         <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</guid>
         
