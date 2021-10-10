@@ -26,5 +26,6 @@
     "html",
     "toc",
     ".md"
-  ]
+  ],
+  "liveServer.settings.root": "/_site"
 }
