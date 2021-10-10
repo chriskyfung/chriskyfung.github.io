@@ -7,16 +7,28 @@
     "through2": "^4.0.2",
     "glob-parent": ">=5.1.2",
     "nth-check": ">=2.0.1",
-    "set-value": ">=4.0.1"
+    "set-value": ">=4.0.1",
+    "amphtml-validator": "^1.0.35",
+    "gulp-amphtml-validator": "^1.0.6",
+    "gulp-csso": "^4.0.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-format-md": "^2.0.0",
+    "gulp-process-if-modified": "^1.0.4",
+    "styleflux": "^1.2.0",
+    "tar": ">=4.4.18",
+    "trim-newlines": ">=3.0.1"
   },
   "dependencies": {},
   "name": "chriskyfung.github.io",
   "description": "Chris KY FUNG's GitHub Page",
-  "version": "2.4.1",
+  "version": "2.5.3",
   "scripts": {
-    "build": "bundle exec jekyll build && gulp",
+    "convert": "npx gulp convert",
     "jekyll": "bundle exec jekyll serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jekyll:trace": "bundle exec jekyll serve --trace",
+    "build": "bundle exec jekyll build && gulp build",
+    "test": "npx gulp validate",
+    "watch": "npx gulp"
   },
   "repository": {
     "type": "git",
