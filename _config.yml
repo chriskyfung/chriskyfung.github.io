@@ -100,6 +100,10 @@ scholar:
   bibliography: '**/*.bib{,tex}'
   bibliography_template: bib
 
+# Jekyll-SEO-tags
+webmaster_verifications:
+  google: WvB_kR1tvqtLYj1YxGXkQp6X-ue8FgK5kfQOB2K8cZA
+
 # Other
 markdown: kramdown
 highlighter: rouge
