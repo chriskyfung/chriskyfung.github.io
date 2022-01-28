@@ -117,4 +117,10 @@ relative_links:
 
 # Directories and/or files from the conversion
 include: [.github/FUNDING.yml]
-exclude: [sync.ffs_db]
+exclude:
+  - gulpfile.js
+  - LICENSE
+  - package-lock.json
+  - package.json
+  - README.md
+  - sync.ffs_db
