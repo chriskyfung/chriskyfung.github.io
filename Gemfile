@@ -32,9 +32,12 @@ end
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", "~> 1.2"
-  gem "tzinfo-data"
+  gem "tzinfo", "~> 1.2.3"
+  gem "tzinfo-data", "~> 1.2017.2"
 end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# Fix for Load error: cannot load such file – webrick (https://talk.jekyllrb.com/t/load-error-cannot-load-such-file-webrick/5417)
+gem "webrick", "~> 1.7"
