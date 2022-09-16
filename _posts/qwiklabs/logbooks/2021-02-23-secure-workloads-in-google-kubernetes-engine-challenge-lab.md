@@ -292,7 +292,7 @@ Save the file changes and run the following:
 kubectl apply -f ingress.yaml
 ```
 
-**Tips:** To learn more, read the [Securing NGINX-ingress](https://cert-manager.io/docs/tutorials/acme/ingress/) tutorial on the cert-manager website.
+**Tips:** To learn more, read the [Securing NGINX-ingress](https://cert-manager.io/docs/tutorials/acme/nginx-ingress/) tutorial on the cert-manager website.
 
 Open your domain name `https://YOUR_LAB_USERNAME.labdns.xyz` with HTTPS in a new tab. Now the WordPress application should be accessible like this:
 
