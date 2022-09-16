@@ -5,9 +5,9 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Mar 2022 09:57:01 +0800</pubDate>
-    <lastBuildDate>Sun, 20 Mar 2022 09:57:01 +0800</lastBuildDate>
-    <generator>Jekyll v4.2.0</generator>
+    <pubDate>Fri, 16 Sep 2022 18:36:50 +0800</pubDate>
+    <lastBuildDate>Fri, 16 Sep 2022 18:36:50 +0800</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
     
       <item>
         <title>Qwiklabs Lab Completion Tracker - Version History</title>
@@ -1228,7 +1228,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
     &lt;p&gt;Click &lt;strong&gt;COMPOSE NEW QUERY&lt;/strong&gt;. Copy the following to the query editor,&lt;/p&gt;
 
     &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REPLACE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oxford_policy_tracker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NEW_TABLE_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;PARTITION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;PARTITION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;OPTIONS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;partition_expiration_days&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;oxford_policy_tracker table in the COVID 19 Government Response public dataset with  an expiry time set to 90 days.&quot;&lt;/span&gt;
@@ -2403,7 +2403,7 @@ kubectl create clusterrolebinding cluster-admin-binding &lt;span class=&quot;se&
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ingress.yaml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, read the &lt;a href=&quot;https://cert-manager.io/docs/tutorials/acme/ingress/&quot;&gt;Securing NGINX-ingress&lt;/a&gt; tutorial on the cert-manager website.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, read the &lt;a href=&quot;https://cert-manager.io/docs/tutorials/acme/nginx-ingress/&quot;&gt;Securing NGINX-ingress&lt;/a&gt; tutorial on the cert-manager website.&lt;/p&gt;
 
 &lt;p&gt;Open your domain name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://YOUR_LAB_USERNAME.labdns.xyz&lt;/code&gt; with HTTPS in a new tab. Now the WordPress application should be accessible like this:&lt;/p&gt;
 
