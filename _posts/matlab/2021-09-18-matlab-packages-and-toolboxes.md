@@ -35,8 +35,8 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 : A Python package translates MATLAB code to Python. See also:
   
-  - <cite>[A tool to convert MATLAB code to Python - Stack Overflow](https://stackoverflow.com/questions/9845292/a-tool-to-convert-matlab-code-to-python)</cite>
-  - <cite>[NumPy for MATLAB users — NumPy Manual](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html)</cite>
+- <cite>[A tool to convert MATLAB code to Python - Stack Overflow](https://stackoverflow.com/questions/9845292/a-tool-to-convert-matlab-code-to-python)</cite>
+- <cite>[NumPy for MATLAB users — NumPy Manual](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html)</cite>
 
 [oct2py: GNU Octave to Python bridge](https://github.com/blink1073/oct2py)
 

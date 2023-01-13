@@ -122,4 +122,4 @@ After that, you can `./` in front of the filename to execute the shell file in t
 
 **See Also**:
 
-- [Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher](/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu)
+- [Install Chrome Remote Desktop on KDE desktop / Kubuntu 14.04 LTS or higher](/blog/linux/Install-Chrome-Remote-Desktop-on-Kubuntu)

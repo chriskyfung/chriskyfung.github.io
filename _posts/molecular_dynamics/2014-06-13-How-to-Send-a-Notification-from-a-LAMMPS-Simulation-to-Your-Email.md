@@ -24,7 +24,8 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 
 1. First, you need an email account with supporting SMTP outgoing service. For example, Gmail. The following web page describes how to download and set up the Gmail SMTP service in Ubuntu.
 
-   > <a href="https://foksh.com/site/configure-ubuntu-server-to-send-emails-from-gmail-account/" target="_blank">Configure Ubuntu Server to Send Emails From Gmail Account « Foksh.com</a>
+   > <del><a data-href="https://foksh.com/site/configure-ubuntu-server-to-send-emails-from-gmail-account/" target="_blank">Configure Ubuntu Server to Send Emails From Gmail Account « Foksh.com</a></del>   
+   > → [How to Send Email on Ubuntu from Gmail (SMTP Postfix tutorial) - Tony Teaches Tech](https://tonyteaches.tech/postfix-gmail-smtp-on-ubuntu/)
 
 2. Next, we have to add a line at the end of our LAMMPS input script.
 
