@@ -123,7 +123,7 @@ gcloud compute zones list
 
 For more details, please read [gcloud compute zones list](https://cloud.google.com/sdk/gcloud/reference/compute/zones/list) in Cloud SDK Documentation.
 
-#### SHH into a Compute Engine server
+#### SSH into a Compute Engine server
 
 ```bash
 gcloud compute ssh user@your-server-name-1-vm
