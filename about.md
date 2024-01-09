@@ -7,11 +7,11 @@ comments: false
 
 <div class="row post-top-meta">
     <div class="col-md-2">
-        <amp-img class="author-thumb" src="https://www.gravatar.com/avatar/{{ site.authors.chris.gravatar }}?s=250&d=mm&r=x" width="72" height="72" alt="{{ author.display_name }}"></amp-img>
+        <amp-img class="author-thumb" src="https://www.gravatar.com/avatar/{{ site.data.authors.chris.gravatar }}?s=250&d=mm&r=x" width="72" height="72" alt="{{ author.display_name }}"></amp-img>
     </div>
     <div class="col-md-10">
-        <a target="_blank" class="link-dark" href="{{ site.authors.chris.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ site.authors.chris.facebook }}" class="btn follow">Follow</a>
-        <span class="author-description">{{ site.authors.chris.description }}</span>
+        <a target="_blank" class="link-dark" href="{{ site.data.authors.chris.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ site.data.authors.chris.facebook }}" class="btn follow">Follow</a>
+        <span class="author-description">{{ site.data.authors.chris.description }}</span>
     </div>
 </div>
 
