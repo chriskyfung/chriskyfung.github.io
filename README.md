@@ -1,5 +1,6 @@
-![Made with Jekyll](https://img.shields.io/badge/Made%20with-Jekyll-1f425f.svg) ![Deploy GitHub Pages](https://github.com/chriskyfung/chriskyfung.github.io/workflows/Deploy%20GitHub%20Pages/badge.svg) [![Website
+![Made with Jekyll](https://img.shields.io/badge/Made%20with-Jekyll-1f425f.svg) ![Build and Deploy Jekyll to Github Pages](https://github.com/chriskyfung/chriskyfung.github.io/actions/workflows/deploy-jekyll.yml/badge.svg) [![Website
  Monitoring](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fchriskyfung.github.io%2F)](https://chriskyfung.github.io/)
+
 ## 🏡 Chris KY FUNG's GitHub Page
 
 This site is a new version of my old site “Blog of a POLIDA post-grad II .” which was hosting on Wix.com. Now it has been moved to the GitHub page. It should deliver a much faster page loading speed and a nicer display of codes. I hope you will better enjoy my content.
@@ -18,6 +19,6 @@ Would you like to buy me a coffee? I would really appreciate it if you could sup
 
 ## ⚖ Copyright
 
-© 2014-2020 Chris KY FUNG. All rights reserved.
+© 2014-2024 Chris KY FUNG. All rights reserved.
 
 <a href="http://www.copyscape.com/"><img src="https://banners.copyscape.com/img/copyscape-banner-white-160x56.png" width="160" height="56" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a>
