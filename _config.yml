@@ -84,7 +84,6 @@ plugins:
   - jekyll-archives
   - jekyll-redirect-from
   - jekyll-remote-theme
-  - jekyll-gist
   - jekyll-relative-links
   - jekyll-scholar
 

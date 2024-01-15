@@ -24,7 +24,6 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-redirect-from'
   gem 'jekyll-remote-theme'
-  gem 'jekyll-gist'
   gem 'jekyll-relative-links'
   gem 'jekyll-scholar'
 end
