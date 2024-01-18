@@ -1,24 +1,4 @@
 {
-  "devDependencies": {
-    "@ampproject/toolbox-optimizer": "^2.8.10",
-    "@gecka/styleflux": "^1.2.0-gecka2",
-    "amphtml-validator": "^1.0.35",
-    "glob-parent": "^6.0.2",
-    "gulp": "^4.0.2",
-    "gulp-amphtml-validator": "^1.0.6",
-    "gulp-csso": "^4.0.1",
-    "gulp-ext-replace": "^0.3.0",
-    "gulp-format-md": "^2.0.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-minify-inline": "^1.1.0",
-    "gulp-process-if-modified": "^1.0.4",
-    "nth-check": ">=2.0.1",
-    "set-value": ">=4.0.1",
-    "tar": ">=4.4.18",
-    "through2": "^4.0.2",
-    "trim-newlines": ">=3.0.1"
-  },
-  "dependencies": {},
   "name": "chriskyfung.github.io",
   "description": "Chris KY FUNG's GitHub Page",
   "version": "2.5.4",
@@ -51,5 +31,28 @@
   "bugs": {
     "url": "https://github.com/chriskyfung/chriskyfung.github.io/issues"
   },
-  "homepage": "https://github.com/chriskyfung/chriskyfung.github.io#readme"
+  "homepage": "https://github.com/chriskyfung/chriskyfung.github.io#readme",
+  "engines": {
+    "node": ">=18.12.1",
+    "npm": ">=9.1.2"
+  },
+  "devDependencies": {
+    "@ampproject/toolbox-optimizer": "^2.8.10",
+    "@gecka/styleflux": "^1.2.0-gecka2",
+    "amphtml-validator": "^1.0.35",
+    "glob-parent": "^6.0.2",
+    "gulp": "^4.0.2",
+    "gulp-amphtml-validator": "^1.0.6",
+    "gulp-csso": "^4.0.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-format-md": "^2.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-inline": "^1.1.0",
+    "gulp-process-if-modified": "^1.0.4",
+    "nth-check": ">=2.0.1",
+    "set-value": ">=4.0.1",
+    "tar": ">=4.4.18",
+    "through2": "^4.0.2",
+    "trim-newlines": ">=3.0.1"
+  }
 }
