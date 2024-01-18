@@ -45,5 +45,19 @@
     "gulp-minify-inline": "^1.1.0",
     "gulp-process-if-modified": "^1.0.4",
     "through2": "^4.0.2"
+  },
+  "overrides": {
+    "@ampproject/toolbox-optimizer": {
+      "postcss": "^8.4.31",
+      "semver": "^5.7.2",
+      "terser": ">=5.14.2"
+    },
+    "gulp": {
+      "glob-watcher": "^6.0.0",
+      "vinyl-fs": "^4.0.0"
+    },
+    "gulp-minify-inline": {
+      "cheerio": "^1.0.0-rc.3"
+    }
   }
 }
