@@ -42,7 +42,7 @@
     "gulp-amphtml-validator": "^1.0.6",
     "gulp-format-md": "^2.0.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-minify-inline": "^1.1.0",
+    "gulp-minify-inline": "^1.0.0",
     "gulp-process-if-modified": "^1.0.4",
     "through2": "^4.0.2"
   },
