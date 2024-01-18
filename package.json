@@ -1,14 +1,12 @@
 {
   "name": "chriskyfung.github.io",
   "description": "Chris KY FUNG's GitHub Page",
-  "version": "2.5.4",
+  "version": "3.0.0",
   "scripts": {
-    "convert": "npx gulp convert",
     "jekyll": "bundle exec jekyll serve",
     "jekyll:trace": "bundle exec jekyll serve --trace",
     "build": "bundle exec jekyll build && gulp build",
-    "test": "npx gulp validate",
-    "watch": "npx gulp"
+    "test": "npx gulp validate"
   },
   "repository": {
     "type": "git",
@@ -38,21 +36,14 @@
   },
   "devDependencies": {
     "@ampproject/toolbox-optimizer": "^2.8.10",
-    "@gecka/styleflux": "^1.2.0-gecka2",
     "amphtml-validator": "^1.0.35",
     "glob-parent": "^6.0.2",
     "gulp": "^4.0.2",
     "gulp-amphtml-validator": "^1.0.6",
-    "gulp-csso": "^4.0.1",
-    "gulp-ext-replace": "^0.3.0",
     "gulp-format-md": "^2.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-minify-inline": "^1.1.0",
     "gulp-process-if-modified": "^1.0.4",
-    "nth-check": ">=2.0.1",
-    "set-value": ">=4.0.1",
-    "tar": ">=4.4.18",
-    "through2": "^4.0.2",
-    "trim-newlines": ">=3.0.1"
+    "through2": "^4.0.2"
   }
 }
