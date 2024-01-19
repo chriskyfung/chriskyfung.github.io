@@ -833,6 +833,12 @@
         "  <script async custom-element=\"amp-audio\" src=\"https://cdn.ampproject.org/v0/amp-audio-0.1.js\"></script>"
       ],
       "fields": []
+    },
+    "include-toc": {
+      "title": "Table of Contents (TOC)",
+      "description": "Use the include.md template to insert a table of contents that links to the headings in your markdown content",
+      "body": "{% include toc.md %}",
+      "fields": []
     }
   }
 }
