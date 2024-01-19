@@ -27,5 +27,32 @@
     "toc",
     ".md"
   ],
-  "liveServer.settings.root": "/_site"
+  "liveServer.settings.root": "/_site",
+  "git-graph.repository.showRemoteHeads": false,
+  "git-graph.customBranchGlobPatterns": [
+    {
+      "name": "No master",
+      "glob": "heads/[^mH]*[^rD]"
+    },
+    {
+      "name": "No origin/master",
+      "glob": "remotes/origin/[^mH]*[^rD]"
+    },
+    {
+      "name": "Stashes",
+      "glob": "stash"
+    },
+    {
+      "name": "Tags",
+      "glob": "tags/*"
+    },
+  ],
+  "git-graph.repository.onLoad.showSpecificBranches": [
+    "remote-theme",
+    "remotes/origin/remote-theme",
+    "--glob=heads/[^mH]*[^rD]",
+    "--glob=remotes/origin/[^mH]*[^rD]",
+    "--glob=stash",
+    "--glob=tags/*"
+  ]
 }
