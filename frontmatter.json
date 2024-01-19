@@ -758,6 +758,54 @@
           "default": "500"
         }
       ]
+    },
+    "include-youtube-playlist": {
+      "description": "Use the youtube.html template to embed a YouTube playlist on your AMP page by providing the playlist ID and the video ID of the first video to play",
+      "body": "{% include youtube.html id=\"[[vid]]\" playlist=\"[[playlist_id]]\" title=\"[[title]]\" %}",
+      "fields": [
+        {
+          "name": "vid",
+          "title": "first video ID in the playlist",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "playlist_id",
+          "title": "playlist ID",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "title",
+          "title": "title",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
+    },
+    "include-youtube-video": {
+      "title": "Embed a YouTube video with AMP",
+      "description": "Use the youtube.html template to embed a YouTube video on your AMP page by providing the video ID",
+      "body": "{% include youtube.html id=\"[[vid]]\" title=\"[[title]]\" %}",
+      "fields": [
+        {
+          "name": "vid",
+          "title": "video ID",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "title",
+          "title": "title",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
     }
   }
 }

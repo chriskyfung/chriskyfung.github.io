@@ -18,7 +18,9 @@ Prof. Uri Alon gave an inspiring talk in TED. He pointed out what most PhD stude
 
 However, Aion advocates that is an amazing part of science. When you accept the unknown and search the path in the cloud. You may eventually go through the boundary of the unknown and come up with a different answer, which is usually more interesting than the answer that expected in the original path. This comes up that we should overcome our fear of the unknown, and go forward to embrace it.
 
+<!-- FM:Snippet:Start data:{"id":"include-youtube-video","fields":[{"name":"vid","value":"F1U26PLiXjM"},{"name":"title","value":"Uri Alon: Why truly innovative science demands a leap into the unknown"}]} -->
 {% include youtube.html id="F1U26PLiXjM" title="Uri Alon: Why truly innovative science demands a leap into the unknown" %}
+<!-- FM:Snippet:End -->
 
 * * *
 
