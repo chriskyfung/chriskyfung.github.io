@@ -806,6 +806,33 @@
           "default": ""
         }
       ]
+    },
+    "amp-audio": {
+      "title": "Embed an audio file with AMP",
+      "description": "Use the amp-audio component to embed an audio file from a URL",
+      "body": [
+        "<amp-audio width=\"auto\" height=\"50\" src=\"[[sourceURL]]\">",
+        "  <div fallback>Your browser doesn’t support HTML5 audio</div>",
+        "</amp-audio>"
+      ],
+      "fields": [
+        {
+          "name": "sourceURL",
+          "title": "source URL",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
+    },
+    "enable-amp-audio": {
+      "title": "Enable amp-audio on your page or post",
+      "description": "The frontmatter for allowing the use of the amp-audio component on your page or post",
+      "body": [
+        "custom_head: >-",
+        "  <script async custom-element=\"amp-audio\" src=\"https://cdn.ampproject.org/v0/amp-audio-0.1.js\"></script>"
+      ],
+      "fields": []
     }
   }
 }
