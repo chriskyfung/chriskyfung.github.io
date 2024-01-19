@@ -589,18 +589,47 @@
       ]
     }
   ],
+  "frontMatter.projects": [
+    {
+      "name": "blog post",
+      "default": true,
+      "configuration": {
+        "frontMatter.content.publicFolder": "/",
+        "frontMatter.content.pageFolders": [
+          {
+            "title": "Drafts",
+            "path": "[[workspace]]/_drafts",
+            "contentTypes": [
+              "post"
+            ]
+          },
+          {
+            "title": "Posts",
+            "path": "[[workspace]]/_posts",
+            "previewPath": "/{{fm.permalink}}/",
+            "contentTypes": [
+              "post"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "site page",
+      "configuration": {
+        "frontMatter.content.publicFolder": "assets",
+        "frontMatter.content.pageFolders": [
+          {
+            "title": "pages",
+            "path": "[[workspace]]/",
+            "excludeSubdir": true
+          }
+        ]
+      }
+    }
+  ],
   "frontMatter.framework.id": "jekyll",
   "frontMatter.content.publicFolder": "assets",
   "frontMatter.preview.host": "http://localhost:4000",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "drafts",
-      "path": "[[workspace]]/_drafts"
-    },
-    {
-      "title": "posts",
-      "path": "[[workspace]]/_posts"
-    }
-  ],
   "frontMatter.website.host": "https://chriskyfung.github.io"
 }
