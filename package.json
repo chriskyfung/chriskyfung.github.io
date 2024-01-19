@@ -26,6 +26,8 @@
     "jekyll-theme-amp"
   ],
   "author": "Chris K.Y. Fung",
+  "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/chriskyfung/chriskyfung.github.io/issues"
   },
