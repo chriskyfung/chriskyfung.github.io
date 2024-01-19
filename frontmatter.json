@@ -628,6 +628,32 @@
       }
     }
   ],
+  "frontMatter.data.files": [
+    {
+      "id": "suggestions",
+      "title": "Search Suggestions",
+      "file": "[[workspace]]/assets/data/suggestions.json",
+      "fileType": "json",
+      "labelField": "items",
+      "singleEntry": true,
+      "schema": {
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "items"
+        ],
+        "properties": {
+          "items": {
+            "title": "Items",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  ],
   "frontMatter.framework.id": "jekyll",
   "frontMatter.content.publicFolder": "assets",
   "frontMatter.preview.host": "http://localhost:4000",
