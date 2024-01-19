@@ -1,5 +1,11 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.placeholders": [
+    {
+      "id": "preview",
+      "value": "[[workspace]]/{{fm.image.path}}"
+    }
+  ],
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
