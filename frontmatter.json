@@ -4,7 +4,175 @@
     {
       "name": "default",
       "pageBundle": false,
-      "previewPath": null,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "title": "Layout",
+          "name": "layout",
+          "description": "The Jekyll layout file to use",
+          "default": "post",
+          "type": "choice",
+          "choices": [
+            "post"
+          ]
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Author",
+          "name": "author",
+          "default": "chris",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "dateFormat": "YYYY-MM-DD HH:MM:SS XXX",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Last modified date",
+          "name": "last_modified_at",
+          "dateFormat": "YYYY-MM-DD HH:MM:SS XXX",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Permalink",
+          "name": "permalink",
+          "description": "The custom URL",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Featured Image",
+          "name": "image",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Path",
+              "name": "path",
+              "description": "Absolute or relative path of a JPG, PNG, or SVG file",
+              "type": "image",
+              "isPreviewImage": true
+            },
+            {
+              "title": "Width",
+              "name": "width",
+              "default": "730",
+              "type": "number"
+            },
+            {
+              "title": "Height",
+              "name": "height",
+              "default": "431",
+              "type": "number"
+            },
+            {
+              "title": "Class",
+              "name": "class",
+              "description": "Additional class names for the <amp-img> component",
+              "type": "choice",
+              "choices": [
+                "shadow-none"
+              ]
+            },
+            {
+              "title": "Thumbnail alignment",
+              "name": "fit",
+              "description": "The horizontal alignment of the thumbnail in cards and post grid",
+              "type": "choice",
+              "choices": [
+                "left",
+                "right"
+              ]
+            },
+            {
+              "title": "Hide image",
+              "name": "hide",
+              "description": "Set to true to not embed the image on this post",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "CSS",
+          "type": "fields",
+          "name": "css",
+          "fields": [
+            {
+              "title": "Badge",
+              "name": "badge",
+              "type": "boolean"
+            },
+            {
+              "title": "Code block",
+              "name": "syntax",
+              "type": "boolean"
+            },
+            {
+              "title": "Custom CSS",
+              "name": "custom",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "Additional AMP components",
+          "name": "amp",
+          "type": "choice",
+          "multiple": true,
+          "choices": [
+            "gist",
+            "iframe",
+            "script",
+            "youtube"
+          ]
+        },
+        {
+          "title": "Sitemap",
+          "name": "sitemap",
+          "description": "Set the sitemap flag to false to exclude this post from the sitemap ",
+          "type": "boolean"
+        },
+        {
+          "title": "Alias",
+          "name": "redirect_from",
+          "type": "list",
+          "single": true
+        },
+        {
+          "title": "Custum HTML header",
+          "name": "custom_header",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "__default__",
+      "pageBundle": false,
+      "clearEmpty": true,
       "fields": [
         {
           "title": "Title",
@@ -24,14 +192,317 @@
           "isPublishDate": true
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
+          "title": "Last modified date",
+          "name": "last_modified_at",
+          "dateFormat": "YYYY-MM-DD HH:MM:SS XXX",
+          "type": "datetime",
+          "isModifiedDate": true
         },
         {
           "title": "Is in draft",
           "name": "draft",
           "type": "draft"
+        },
+        {
+          "title": "Preview image",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "CSS",
+          "name": "css",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Badge",
+              "name": "badge",
+              "type": "boolean"
+            },
+            {
+              "title": "Code block",
+              "name": "syntax",
+              "type": "boolean"
+            },
+            {
+              "title": "Custom CSS",
+              "name": "custom",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "Additional AMP components",
+          "name": "amp",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Gist",
+              "name": "gist",
+              "type": "boolean"
+            },
+            {
+              "title": "iFrame",
+              "name": "iframe",
+              "type": "boolean"
+            },
+            {
+              "title": "Script",
+              "name": "script",
+              "type": "boolean"
+            },
+            {
+              "title": "Youtube",
+              "name": "youtube",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "title": "Custum HTML header",
+          "name": "custom_header",
+          "type": "string"
+        },
+        {
+          "title": "Sitemap",
+          "name": "sitemap",
+          "description": "Set the sitemap flag to false to exclude this page from the sitemap ",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "title": "Layout",
+          "name": "layout",
+          "description": "The Jekyll layout file to use",
+          "default": "page",
+          "type": "choice",
+          "choices": [ "page" ]
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Last modified date",
+          "name": "last_modified_at",
+          "dateFormat": "YYYY-MM-DD HH:MM:SS XXX",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Preview image",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "CSS",
+          "name": "css",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Badge",
+              "name": "badge",
+              "type": "boolean"
+            },
+            {
+              "title": "Code block",
+              "name": "syntax",
+              "type": "boolean"
+            },
+            {
+              "title": "Custom CSS",
+              "name": "custom",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "Additional AMP components",
+          "name": "amp",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Gist",
+              "name": "gist",
+              "type": "boolean"
+            },
+            {
+              "title": "iFrame",
+              "name": "iframe",
+              "type": "boolean"
+            },
+            {
+              "title": "Script",
+              "name": "script",
+              "type": "boolean"
+            },
+            {
+              "title": "Youtube",
+              "name": "youtube",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "title": "Custum HTML header",
+          "name": "custom_header",
+          "type": "string"
+        },
+        {
+          "title": "Allow comments",
+          "name": "comments",
+          "default": "false",
+          "type": "boolean"
+        },
+        {
+          "title": "Sidebar",
+          "name": "sidebar",
+          "type": "choice",
+          "choices": [
+            "left",
+            "right",
+            "none"
+          ]
+        },
+        {
+          "title": "Redirect to",
+          "name": "redirect_to",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Sitemap",
+          "name": "sitemap",
+          "description": "Set the sitemap flag to false to exclude this page from the sitemap ",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "post",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "title": "Layout",
+          "name": "layout",
+          "description": "The Jekyll layout file to use",
+          "default": "post",
+          "type": "choice",
+          "choices": [
+            "post"
+          ]
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Author",
+          "name": "author",
+          "default": "chris",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "description": "A brief summary to be shown in search engine results",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "dateFormat": "YYYY-MM-DD HH:MM:SS XXX",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Last modified date",
+          "name": "last_modified_at",
+          "dateFormat": "YYYY-MM-DD HH:MM:SS XXX",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Permalink",
+          "name": "permalink",
+          "description": "The custom URL for this post",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Featured Image",
+          "name": "image",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Path",
+              "name": "path",
+              "description": "Absolute or relative path of a JPG, PNG, or SVG file",
+              "type": "image",
+              "isPreviewImage": true
+            },
+            {
+              "title": "Width",
+              "name": "width",
+              "default": "730",
+              "type": "number"
+            },
+            {
+              "title": "Height",
+              "name": "height",
+              "default": "431",
+              "type": "number"
+            },
+            {
+              "title": "Class",
+              "name": "class",
+              "description": "Additional class names for the <amp-img> component",
+              "type": "choice",
+              "choices": [
+                "shadow-none"
+              ]
+            },
+            {
+              "title": "Thumbnail alignment",
+              "name": "fit",
+              "description": "The horizontal alignment of the thumbnail in cards and post grid",
+              "type": "choice",
+              "choices": [
+                "left",
+                "right"
+              ]
+            },
+            {
+              "title": "Hide image",
+              "name": "hide",
+              "description": "Set to true to not embed the image on this post",
+              "type": "boolean"
+            }
+          ]
         },
         {
           "title": "Tags",
@@ -42,6 +513,78 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "Excerpt",
+          "name": "excerpt",
+          "description": "The short text to show on the card of the list/grid of posts, and use as the meta description of this post",
+          "type": "string"
+        },
+        {
+          "title": "Pin as Featured post",
+          "name": "featured",
+          "type": "boolean"
+        },
+        {
+          "title": "CSS",
+          "type": "fields",
+          "name": "css",
+          "fields": [
+            {
+              "title": "Badge",
+              "name": "badge",
+              "type": "boolean"
+            },
+            {
+              "title": "Code block",
+              "name": "syntax",
+              "type": "boolean"
+            },
+            {
+              "title": "Custom CSS",
+              "name": "custom",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "Additional AMP components",
+          "name": "amp",
+          "type": "choice",
+          "multiple": true,
+          "choices": [
+            "gist",
+            "iframe",
+            "script",
+            "youtube"
+          ]
+        },
+        {
+          "title": "Sidebar",
+          "name": "sidebar",
+          "type": "choice",
+          "choices": [
+            "left",
+            "right",
+            "none"
+          ]
+        },
+        {
+          "title": "Sitemap",
+          "name": "sitemap",
+          "description": "Set the sitemap flag to false to exclude this post from the sitemap ",
+          "type": "boolean"
+        },
+        {
+          "title": "Alias",
+          "name": "redirect_from",
+          "type": "list",
+          "single": true
+        },
+        {
+          "title": "Custum HTML header",
+          "name": "custom_header",
+          "type": "string"
         }
       ]
     }
