@@ -660,8 +660,12 @@
       }
     }
   ],
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.git.enabled": true,
+  "frontMatter.git.commitMessage": "Synced by Front Matter {{hour24}}:{{minute}}",
   "frontMatter.framework.id": "jekyll",
   "frontMatter.content.publicFolder": "assets",
   "frontMatter.preview.host": "http://localhost:4000",
+  "frontMatter.site.baseURL": "https://chriskyfung.github.io",
   "frontMatter.website.host": "https://chriskyfung.github.io"
 }
