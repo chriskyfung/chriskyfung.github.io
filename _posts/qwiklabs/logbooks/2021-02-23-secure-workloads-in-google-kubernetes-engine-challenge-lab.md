@@ -66,6 +66,7 @@ gcloud container clusters create kraken-cluster \
 
 **Tips:** To learn more, open this [Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create "gcloud container clusters create - Cloud SDK Documentation") to study the flags for the command line.
 
+<!-- FM:Snippet:Start data:{"id":"jekyll-capture-tags","fields":[{"name":"var","value":"tips1"},{"name":"selection","value":"**Using Cloud Console** \\\nAlternatively, you can create the cluster using the Cloud Console.\n\n   1. Click on the **Navigation Menu** > **Kubernetes Engine** > **Clusters**\n   2. Click **CREATE CLUSTER**\n   3. Set up the cluster as required. Once the cluster is created, run the following in the Cloud Shell to establish a connection:\n\n      ```bash\n      gcloud container clusters get-credentials kraken-cluster  --zone us-central1-c\n      ```"}]} -->
 {% capture tips1 %}
 **Using Cloud Console** \
 Alternatively, you can create the cluster using the Cloud Console.
@@ -78,6 +79,7 @@ Alternatively, you can create the cluster using the Cloud Console.
       gcloud container clusters get-credentials kraken-cluster  --zone us-central1-c
       ```
 {% endcapture %}
+<!-- FM:Snippet:End -->
 
 {% include callout.html content=tips1 color="gold" %}
 
@@ -125,6 +127,7 @@ It usually requires 5 - 10 minutes to process.
 5. Select **Allow any host (%)** for the name of the Host.
 6. Click **Add**.
 
+<!-- FM:Snippet:Start data:{"id":"jekyll-capture-tags","fields":[{"name":"var","value":"tips2"},{"name":"selection","value":"**Command-line method** \\\nYou may also try using the following command line to create the database and the user:\n\n```bash\ngcloud sql databases create wordpress --instance kraken-cloud-sql --charset utf8 --collation utf8_general_ci\n\ngcloud sql users create wordpress --host % --instance kraken-cloud-sql --password Passw0rd\n```\n\n**Tips:** Read this [Cloud SQL Documentation](https://cloud.google.com/sql/docs/mysql/create-manage-databases#create \"Creating and managing MySQL databases \\| Cloud SQL for MySQL\") to learn more.  \\\n**Remark:** However, I got some feedback that it will occasionally fail to pass the checkpoint if using the command line."}]} -->
 {% capture tips2 %}
 **Command-line method** \
 You may also try using the following command line to create the database and the user:
@@ -138,6 +141,7 @@ gcloud sql users create wordpress --host % --instance kraken-cloud-sql --passwor
 **Tips:** Read this [Cloud SQL Documentation](https://cloud.google.com/sql/docs/mysql/create-manage-databases#create "Creating and managing MySQL databases \| Cloud SQL for MySQL") to learn more.  \
 **Remark:** However, I got some feedback that it will occasionally fail to pass the checkpoint if using the command line.
 {% endcapture %}
+<!-- FM:Snippet:End -->
 
 {% include callout.html content=tips2 color="gold" %}
 
@@ -216,6 +220,7 @@ helm repo add stable https://charts.helm.sh/stable
 helm repo update
 ```
 
+<!-- FM:Snippet:Start data:{"id":"jekyll-capture-tags","fields":[{"name":"var","value":"tips-install-helm"},{"name":"selection","value":"**Install Helm**\n\nIf your environment does not install with Helm, you can run the following to [automatically grab the latest version of Helm and install it locally](https://helm.sh/docs/intro/install/#from-script).\n\n```bash\ncurl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3\nchmod 700 get_helm.sh\n./get_helm.sh\n```"}]} -->
 {% capture tips-install-helm %}
 **Install Helm**
 
@@ -227,6 +232,7 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 ```
 {% endcapture %}
+<!-- FM:Snippet:End -->
 
 {% include callout.html content=tips-install-helm color="gold" %}
 
