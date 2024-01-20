@@ -1171,6 +1171,23 @@
           "default": "FM_SELECTED_TEXT"
         }
       ]
+    },
+    "jekyll-raw-tags": {
+      "title": "Escape Liquid Syntax",
+      "description": "Use Jekyll raw tags to prevent Liquid filters from being applied to your code blocks or other parts of your content that contain curly braces, and preserve your original content",
+      "body": [
+        "{% raw %}",
+        "[[&selection]]",
+        "{% endraw %}"
+      ],
+      "fields": [
+        {
+          "name": "selection",
+          "title": "Selected Text",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
     }
   }
 }
