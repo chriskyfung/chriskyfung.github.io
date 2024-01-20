@@ -839,6 +839,12 @@
       "description": "Use the include.md template to insert a table of contents that links to the headings in your markdown content",
       "body": "{% include toc.md %}",
       "fields": []
+    },
+    "excerpt-separator": {
+      "title": "Excerpt separator",
+      "description": "Use the <!--more--> tag in your markdown content to mark the end of the excerpt that will be displayed on your index page or other listing pages",
+      "body": "<!--more-->",
+      "fields": []
     }
   }
 }
