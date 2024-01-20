@@ -845,6 +845,20 @@
       "description": "Use the <!--more--> tag in your markdown content to mark the end of the excerpt that will be displayed on your index page or other listing pages",
       "body": "<!--more-->",
       "fields": []
+    },
+    "kramdown-attribute-list": {
+      "title": "Add attributes to Markdown element",
+      "description": "Use the kramdown attribute list syntax to add HTML attributes such as id, class, or style to any element in your markdown content. For example: id=\"para-one\" class=\"cls1 cls2\"",
+      "body": "{: [[&attributes]] }",
+      "fields": [
+        {
+          "name": "attributes",
+          "title": "attributes",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
     }
   }
 }
