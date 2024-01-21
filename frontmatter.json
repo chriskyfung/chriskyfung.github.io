@@ -1212,6 +1212,23 @@
           "default": "FM_SELECTED_TEXT"
         }
       ]
+    },
+    "kramdown-comment": {
+      "title": "Insert Markdown Comment",
+      "description": "Use kramdown comment syntax to hide text from the output and preserve it in the source",
+      "body": [
+        "{::comment}",
+        "[[&selection]]",
+        "{:/comment}"
+      ],
+      "fields": [
+        {
+          "name": "selection",
+          "title": "Selected Text",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
     }
   }
 }
