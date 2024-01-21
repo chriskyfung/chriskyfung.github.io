@@ -1246,6 +1246,31 @@
           "default": "FM_SELECTED_TEXT"
         }
       ]
+    },
+    "kramdown-footnote": {
+      "title": "Create a Footnote with Markdown",
+      "description": "Use the kramdown footnote syntax to mark the selected text as a footnote and link it to a reference number in the text",
+      "openingTags": "{{",
+      "closingTags": "}}",
+      "body": [
+        "[^{{name}}]:",
+        "  {{&selection}}"
+      ],
+      "fields": [
+        {
+          "name": "name",
+          "title": "Footnote Name",
+          "type": "string",
+          "single": true,
+          "default": "1"
+        },
+        {
+          "name": "selection",
+          "title": "Selected Text",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
     }
   }
 }
