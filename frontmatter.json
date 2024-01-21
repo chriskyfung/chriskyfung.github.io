@@ -1273,7 +1273,7 @@
       ]
     },
     "kramdown-abbreviation": {
-      "title": "Create a abbreviation with Markdown",
+      "title": "Create an Abbreviation with Markdown",
       "description": "Use the kramdown abbreviation syntax to define an abbreviation and its full phrase in your markdown document",
       "openingTags": "{{",
       "closingTags": "}}",
@@ -1294,6 +1294,23 @@
           "type": "string",
           "single": true,
           "default": ""
+        }
+      ]
+    },
+    "kramdown-math-block": {
+      "title": "Create a LaTex Math Block with kramdown",
+      "description": "Use the kramdown syntax to convert the selected text, which contains LaTeX mathematics, into a math block",
+      "body": [
+        "$$",
+        "[[&selection]]",
+        "$$"
+      ],
+      "fields": [
+        {
+          "name": "selection",
+          "title": "LaTeX mathematics",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
         }
       ]
     }
