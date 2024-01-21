@@ -1316,6 +1316,23 @@
         }
       ]
     },
+    "parse-block-html-option": {
+      "title": "Enable Processing Block HTML Tags with kramdown",
+      "description": "Use the kramdown options syntax to enable the kramdown parser to process the content of the selected HTML blocks as kramdown",
+      "body": [
+        "{::options parse_block_html=\"true\" /}",
+        "[[&selection]]",
+        "{::options parse_block_html=\"false\" /}"
+      ],
+      "fields": [
+        {
+          "name": "selection",
+          "title": "HTML",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
+    },
     "kramdown-end-of-block": {
       "title": "End a Markdown Block with ^",
       "description": "Use the kramdown syntax to insert an End-Of-Block (EOB) marker, which is a ^ as the first character on an otherwise empty line, to end a kramdown block element",
