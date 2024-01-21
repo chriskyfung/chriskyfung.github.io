@@ -288,7 +288,9 @@
           "description": "The Jekyll layout file to use",
           "default": "page",
           "type": "choice",
-          "choices": [ "page" ]
+          "choices": [
+            "page"
+          ]
         },
         {
           "title": "Title",
@@ -1313,6 +1315,11 @@
           "default": "FM_SELECTED_TEXT"
         }
       ]
+    },
+    "kramdown-end-of-block": {
+      "title": "End a Markdown Block with ^",
+      "description": "Use the kramdown syntax to insert an End-Of-Block (EOB) marker, which is a ^ as the first character on an otherwise empty line, to end a kramdown block element",
+      "body": "^"
     }
   }
 }
