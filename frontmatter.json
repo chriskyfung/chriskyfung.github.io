@@ -1253,6 +1253,39 @@
         }
       ]
     },
+    "jekyll-bibliography-tag": {
+      "title": "Insert Bibliography with Jekyll-Scholar",
+      "description": "Use the bibliography tag of Jekyll-Scholar plugin to insert a bibliography for the citations in your markdown document",
+      "body": [
+        "{% bibliography [[options]][[args]] %}"
+      ],
+      "fields": [
+        {
+          "name": "options",
+          "title": "Option",
+          "type":"choice",
+          "default": "",
+          "choices": [
+            "",
+            "--cited ",
+            "--cited_in_order ",
+            "--file ",
+            "--query ",
+            "--max ",
+            "--label chapter --locator ",
+            "--label figure --locator ",
+            "--prefix "
+          ]
+        },
+        {
+          "name": "args",
+          "title": "Arguements",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
+    },
     "kramdown-comment": {
       "title": "Insert Markdown Comment",
       "description": "Use kramdown comment syntax to hide text from the output and preserve it in the source",
