@@ -54,5 +54,6 @@
     "--glob=remotes/origin/[^mH]*[^rD]",
     "--glob=stash",
     "--glob=tags/*"
-  ]
+  ],
+  "frontMatter.git.enabled": true
 }
