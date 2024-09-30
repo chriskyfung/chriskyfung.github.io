@@ -9,14 +9,14 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["remote-theme"]
+    branches: ["remote-theme", "build/*"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -56,6 +56,23 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
+      - name: List files
+        run: |
+          pwd
+          ls
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "jekyll build from Action ${GITHUB_SHA}"
+          branch: master
+          commit_options: '--no-verify --signoff'
+          repository: '.'
+          status_options: '--untracked-files=no'
+          add_options: '-A'
+          push_options: '--force'
+          skip_dirty_check: true
+          skip_fetch: true
+          skip_checkout: true
 
   # Deployment job
   deploy:
@@ -68,3 +85,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Commit and push changes
+        run: |
+          pwd
+          ls
+        # uses: stefanzweifel/git-auto-commit-action@v5
+        # with:
+        #   commit_message: "jekyll build from Action ${GITHUB_SHA}"
+        #   branch: master
+        #   commit_options: '--no-verify --signoff'
+        #   repository: './site/'
+        #   status_options: '--untracked-files=no'
+        #   add_options: '-A'
+        #   push_options: '--force'
+        #   skip_dirty_check: true
+        #   skip_fetch: true
+        #   skip_checkout: true
