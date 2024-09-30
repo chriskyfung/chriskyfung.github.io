@@ -1,0 +1,1456 @@
+{
+  "index": [
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/about.html",
+      "val": "231f41676664bdf025bd043de1ff42e9d131d4c4",
+      "life": 1729498179850,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/contact.html",
+      "val": "3548c8d82da840893bbecf6df6cbe6eec12dffb2",
+      "life": 1729498179859,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/google0274dbf4a33f8f07.html",
+      "val": "5d9db34b1480bf4923d682d94f635ad2f06ae417",
+      "life": 1729498179860,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/index.html",
+      "val": "0ad4608aaf890bebfc2ab39e6ebe1d3dd17fad48",
+      "life": 1729498179861,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/privacy-policy.html",
+      "val": "8c509d47a117596b7936194c4090326ebb5aa8f2",
+      "life": 1729498179862,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/search.html",
+      "val": "ba8c90fc48640da2f8a0c94537b465a83701d5ae",
+      "life": 1729498179864,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/yandex_3e10a2d0cfd334f2.html",
+      "val": "9d133ad89c873697f87006a1f5499aade3d2689f",
+      "life": 1729498179865,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/amp-now.html",
+      "val": "e428233866c570f7db97a41aebdca52d8dd21ee8",
+      "life": 1729498179869,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/index.html",
+      "val": "b980b980e6b785ca1b15c29c9836272a304ce9c8",
+      "life": 1729498179870,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/index.html",
+      "val": "cc902b98e50a8084d6eeb002e515ab2432c53f3d",
+      "life": 1729498179872,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/index.html",
+      "val": "5b3f14f9e1b5c15c7bb84dc0d7f22922d9acd97f",
+      "life": 1729498179874,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/comp-sci/fuzzy-logic.html",
+      "val": "90c1ac507b72123ba84ae66e06d9f94a0789f3f5",
+      "life": 1729498179938,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/comp-sci/index.html",
+      "val": "b0899e7676d32d5b02a5a6327c233e8228fec232",
+      "life": 1729498179942,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/evernote/add-table-and-formatting-in-evernote-with-phraseexpress.html",
+      "val": "47c2aab75ad5082c35ec7fee561c19995c84a8ec",
+      "life": 1729498179944,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/evernote/custom-evernote-text-highlight-shortcut-key.html",
+      "val": "d750dfb9a539cb97b92d8d598c5233897721225d",
+      "life": 1729498179946,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/evernote/index.html",
+      "val": "dbe0d6f5533dfe28f84c65e83ad884a23202b248",
+      "life": 1729498179946,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/evernote/quick-search-evernote-with-phraseexpress.html",
+      "val": "7256cec0f5855059d6ce94e45c93204be79201e7",
+      "life": 1729498179948,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/linux/Install-Chrome-Remote-Desktop-on-Kubuntu.html",
+      "val": "96e6d528dd132896d42d8e491dd09d3d85bc70ff",
+      "life": 1729498179949,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/linux/Useful-Ubuntu-Commands.html",
+      "val": "7cb02c87f74885b27b95388bf9f3d6495c7e428a",
+      "life": 1729498179951,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/linux/index.html",
+      "val": "e7e837e929364a44a8bb21420439f6a7dfab06c7",
+      "life": 1729498179952,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation.html",
+      "val": "7c32a6f98333b623536d45d7e44b9beba4ccf3d4",
+      "life": 1729498179953,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/matlab/Working-MATLAB-with-MS-Excel.html",
+      "val": "52cddb9accad7973196636daaf065970bb1a3be9",
+      "life": 1729498179955,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/matlab/expand-twitter-short-url.html",
+      "val": "7fcd39bc813b5e1e8dd375ac9f20befc3f9948f3",
+      "life": 1729498179956,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/matlab/file-io-and-file-system-in-matlab.html",
+      "val": "cc788dc75e1a5789c14a991f38f84f641d034d49",
+      "life": 1729498179957,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/matlab/index.html",
+      "val": "7e25e3bacfdd33d3e17d228760dc88edccf100c3",
+      "life": 1729498179958,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/matlab/matlab-packages-and-toolboxes.html",
+      "val": "3f87604f83db171859fe2435615675f3f88dd28b",
+      "life": 1729498179960,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/page2/index.html",
+      "val": "9a84a442abe6840c18221dcc677acb0622965fee",
+      "life": 1729498179961,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/page3/index.html",
+      "val": "d997c9230919d0d032410a7ccf358fa7b3690df7",
+      "life": 1729498179963,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/page4/index.html",
+      "val": "fd3b72a10b8a8fa739933fc8ca68ae7ab3403f69",
+      "life": 1729498179964,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/page5/index.html",
+      "val": "a1d293ee0cc3a6acfd26dece53d7b71096838005",
+      "life": 1729498179965,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/page6/index.html",
+      "val": "0f47574984d21da9a49f1ace789dc255739ef593",
+      "life": 1729498179966,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab.html",
+      "val": "26719307d494c1254e5023060dfd8c638055da22",
+      "life": 1729498179968,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab.html",
+      "val": "c8149d533914b826a184c6ff65bd158f016ebb1c",
+      "life": 1729498179968,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Build-a-Website-on-Google-Cloud-Challenge-Lab.html",
+      "val": "e477b60f82713eca0750cd123c002368469d2dd6",
+      "life": 1729498179969,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster.html",
+      "val": "e2a51e2cd0fddc55ee1f7aa6cb2c63f8605259a6",
+      "life": 1729498179970,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Build-and-Manage-APIs-with-Apigee-Challenge-Lab.html",
+      "val": "5db53f8ca072c9b2b8312b5b8024ae152d32e348",
+      "life": 1729498179971,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab.html",
+      "val": "009affd2c532f9e28f47b13d99d39b75c9c3012e",
+      "life": 1729498179972,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Cloud-Architecture-Challenge-Lab.html",
+      "val": "4b4194c5e085863f972fe6ca3fc7032d54e7b393",
+      "life": 1729498179973,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP.html",
+      "val": "ed40c60912ba0091d19660db3104085e9250c2f8",
+      "life": 1729498179975,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager.html",
+      "val": "0d8252a9c5ce6a2ecfb9465fb42f513d87002e1d",
+      "life": 1729498179976,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Controlling-Your-Costs-Quiz.html",
+      "val": "943c26bd5d905d264f8964d76b04ba73062cdccf",
+      "life": 1729498179977,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script.html",
+      "val": "b73783ab04b38ade727c2d96478cf9a11e343801",
+      "life": 1729498179978,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Deploy-and-Manage-Cloud-Environments-with-Google-Cloud-Challenge-Lab.html",
+      "val": "4b4194c5e085863f972fe6ca3fc7032d54e7b393",
+      "life": 1729498179979,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Deploy-to-Kubernetes-in-Google-Cloud-Challenge-Lab.html",
+      "val": "0e717d9ae51884c789753dd7efcc96b363110528",
+      "life": 1729498179979,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab.html",
+      "val": "063b1a8e79a7e42827554d1de884afe6fdfed84c",
+      "life": 1729498179981,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab.html",
+      "val": "1d91269123f36de6b91ed6976aed55b8952d6521",
+      "life": 1729498179982,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP101.html",
+      "val": "45c831ce2a00f247ed24378314ea992a5b7bddff",
+      "life": 1729498179983,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP301.html",
+      "val": "3eb08ac98a4efa30c33dca0bf13f4bbc9b3983f6",
+      "life": 1729498179984,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP302.html",
+      "val": "48a53951b582af5bb40d4a850c35542fb5ec25dd",
+      "life": 1729498179985,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP303.html",
+      "val": "0265bed48a3c268ca5d3c4adef0216c256babb86",
+      "life": 1729498179986,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP304.html",
+      "val": "d47e026f830d7ee72e06cded9c4cf9705f2195ba",
+      "life": 1729498179987,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP305.html",
+      "val": "4490651b923287e1ab65d4d189da67795cbd9727",
+      "life": 1729498179988,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP306.html",
+      "val": "7d34b9589a4cf09443b1f7688aba62b0aaecc65c",
+      "life": 1729498179989,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP311.html",
+      "val": "5939d2847e64a573c26bda700e85fa1de1a9fee4",
+      "life": 1729498179989,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP313.html",
+      "val": "91e56eab8a91a4ac10872e6cb22a5525e641d3a1",
+      "life": 1729498179990,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP314.html",
+      "val": "4b4194c5e085863f972fe6ca3fc7032d54e7b393",
+      "life": 1729498179992,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP315.html",
+      "val": "c8149d533914b826a184c6ff65bd158f016ebb1c",
+      "life": 1729498179993,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP318.html",
+      "val": "0e717d9ae51884c789753dd7efcc96b363110528",
+      "life": 1729498179993,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP319.html",
+      "val": "e477b60f82713eca0750cd123c002368469d2dd6",
+      "life": 1729498179994,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP321.html",
+      "val": "dc34704a4ffc229163f64cc5c23e044765b13434",
+      "life": 1729498179995,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP322.html",
+      "val": "89af042bbacf9a29613af891c99f61687df760e0",
+      "life": 1729498179996,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP323.html",
+      "val": "157e5c6abef848d02d21e40ec88f8c01007a6913",
+      "life": 1729498179996,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP324.html",
+      "val": "c7708d8c1227a91d1c6347e74562e27f69fd98d0",
+      "life": 1729498179997,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP327.html",
+      "val": "9cd960169012e393028712560dea5e2d10ef29db",
+      "life": 1729498179998,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP329.html",
+      "val": "74feddb575985f5d8edcfa87bf5508e84e58928f",
+      "life": 1729498180000,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP330.html",
+      "val": "e1e7afced03e23caac0ea91fab4a9f5a3096f63c",
+      "life": 1729498180001,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP335.html",
+      "val": "db06a798cc01b3590977c63caa357b451b0789d4",
+      "life": 1729498180003,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP336.html",
+      "val": "5db53f8ca072c9b2b8312b5b8024ae152d32e348",
+      "life": 1729498180004,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP340.html",
+      "val": "92d200e25a0fd6e48723fe81243031bcb2e95006",
+      "life": 1729498180005,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP342.html",
+      "val": "431e9bb89799c7e167f75859b54fffc9a25acf11",
+      "life": 1729498180006,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP343.html",
+      "val": "3c1c96164bd25a6aa31fb6d44cd53bf77eb582f3",
+      "life": 1729498180007,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP344.html",
+      "val": "f77898d18704f00fd50c866bf342b45ffa332c7c",
+      "life": 1729498180008,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/GSP787.html",
+      "val": "27b66c85721c2f6039039918aa18376ae70239c8",
+      "life": 1729498180008,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab.html",
+      "val": "2e043eedf3a21d1223912e6cb7fa9db298e08afe",
+      "life": 1729498180010,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Google-Cloud-Essential-Challenge-Lab.html",
+      "val": "91e56eab8a91a4ac10872e6cb22a5525e641d3a1",
+      "life": 1729498180010,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab.html",
+      "val": "df610c928537c2341614150414071a08e61dd176",
+      "life": 1729498180013,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab.html",
+      "val": "11642e5e1003b1e542b369ba9fa82a1d8d8f4fab",
+      "life": 1729498180014,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab.html",
+      "val": "3a9f831bc4188b61a3909646d38acb5329d7134b",
+      "life": 1729498180016,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab.html",
+      "val": "9d28cfa3cec8d01f7105772d2d5780f2d4418e5a",
+      "life": 1729498180017,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Kubernetes-in-Google-Cloud-Challenge-Lab.html",
+      "val": "0e717d9ae51884c789753dd7efcc96b363110528",
+      "life": 1729498180018,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL.html",
+      "val": "da42e66c01d31ce8b661dcdb917d88eeb5d2ec79",
+      "life": 1729498180021,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab.html",
+      "val": "09b5d4bb7121f91d5001e8f45a9abd4802fe710b",
+      "life": 1729498180023,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab.html",
+      "val": "3354700e05252cf64d6e796b08877f3f32418e00",
+      "life": 1729498180025,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform.html",
+      "val": "a8f247064685f68425c7fa02c27e438d121b6dd5",
+      "life": 1729498180026,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster.html",
+      "val": "9a97ed51943d18cdb50594a912c839888b3240bd",
+      "life": 1729498180029,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Secure-Workloads-in-Google-Kubernetes-Engine-Challenge-Lab.html",
+      "val": "db06a798cc01b3590977c63caa357b451b0789d4",
+      "life": 1729498180030,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab.html",
+      "val": "5ef87683664f5551b9bd2c56f4ddcc326abddd15",
+      "life": 1729498180031,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet.html",
+      "val": "47e90d48d73b29fae1834ebf16b4c6db68600e18",
+      "life": 1729498180032,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/Userscript-for-Labelling-Completed-Qwiklabs.html",
+      "val": "f5c36163d30f2558b6b3b272596c0a4b1f9e437b",
+      "life": 1729498180033,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/build-a-website-on-google-cloud-challenge-lab.html",
+      "val": "37d918aff776aec9b866ad960d4d37809ff2ee98",
+      "life": 1729498180034,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/build-and-manage-apis-with-apigee-challenge-lab.html",
+      "val": "b0ade10b1b052b452e6884b41619d72cd544c21c",
+      "life": 1729498180036,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab.html",
+      "val": "272dfaf5949280d8e766373106a8d9be48b345bc",
+      "life": 1729498180038,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/controlling-your-costs-quiz.html",
+      "val": "bd1f2c4c986d192238f3d21599c2e374adda016a",
+      "life": 1729498180039,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/deploy-and-manage-cloud-environments-with-google-cloud-challenge-lab.html",
+      "val": "3935c734722d85b1f6bfd21083cd59208f7fa11b",
+      "life": 1729498180041,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/deploy-to-kubernetes-in-google-cloud-challenge-lab.html",
+      "val": "b4cbaa416fed5afdcb052f0d174098bd5ab58e5e",
+      "life": 1729498180043,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/ensure-access-and-identity-in-google-cloud-challenge-lab.html",
+      "val": "20fbf3c8886b5c0a8531916f4e3d3c1f0d59fc5a",
+      "life": 1729498180044,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp101.html",
+      "val": "45c831ce2a00f247ed24378314ea992a5b7bddff",
+      "life": 1729498180046,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp301.html",
+      "val": "3eb08ac98a4efa30c33dca0bf13f4bbc9b3983f6",
+      "life": 1729498180047,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp302.html",
+      "val": "48a53951b582af5bb40d4a850c35542fb5ec25dd",
+      "life": 1729498180049,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp303.html",
+      "val": "0265bed48a3c268ca5d3c4adef0216c256babb86",
+      "life": 1729498180050,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp304.html",
+      "val": "d47e026f830d7ee72e06cded9c4cf9705f2195ba",
+      "life": 1729498180051,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp305.html",
+      "val": "4490651b923287e1ab65d4d189da67795cbd9727",
+      "life": 1729498180052,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp306.html",
+      "val": "7d34b9589a4cf09443b1f7688aba62b0aaecc65c",
+      "life": 1729498180053,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp311.html",
+      "val": "5939d2847e64a573c26bda700e85fa1de1a9fee4",
+      "life": 1729498180055,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp313.html",
+      "val": "91e56eab8a91a4ac10872e6cb22a5525e641d3a1",
+      "life": 1729498180056,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp314.html",
+      "val": "4b4194c5e085863f972fe6ca3fc7032d54e7b393",
+      "life": 1729498180057,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp315.html",
+      "val": "c8149d533914b826a184c6ff65bd158f016ebb1c",
+      "life": 1729498180058,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp318.html",
+      "val": "0e717d9ae51884c789753dd7efcc96b363110528",
+      "life": 1729498180059,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp319.html",
+      "val": "e477b60f82713eca0750cd123c002368469d2dd6",
+      "life": 1729498180060,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp321.html",
+      "val": "dc34704a4ffc229163f64cc5c23e044765b13434",
+      "life": 1729498180060,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp322.html",
+      "val": "89af042bbacf9a29613af891c99f61687df760e0",
+      "life": 1729498180061,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp323.html",
+      "val": "157e5c6abef848d02d21e40ec88f8c01007a6913",
+      "life": 1729498180062,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp324.html",
+      "val": "c7708d8c1227a91d1c6347e74562e27f69fd98d0",
+      "life": 1729498180064,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp327.html",
+      "val": "9cd960169012e393028712560dea5e2d10ef29db",
+      "life": 1729498180065,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp329.html",
+      "val": "74feddb575985f5d8edcfa87bf5508e84e58928f",
+      "life": 1729498180066,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp330.html",
+      "val": "e1e7afced03e23caac0ea91fab4a9f5a3096f63c",
+      "life": 1729498180068,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp335.html",
+      "val": "db06a798cc01b3590977c63caa357b451b0789d4",
+      "life": 1729498180069,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp336.html",
+      "val": "5db53f8ca072c9b2b8312b5b8024ae152d32e348",
+      "life": 1729498180070,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp340.html",
+      "val": "92d200e25a0fd6e48723fe81243031bcb2e95006",
+      "life": 1729498180071,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp342.html",
+      "val": "431e9bb89799c7e167f75859b54fffc9a25acf11",
+      "life": 1729498180072,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp343.html",
+      "val": "3c1c96164bd25a6aa31fb6d44cd53bf77eb582f3",
+      "life": 1729498180074,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp344.html",
+      "val": "f77898d18704f00fd50c866bf342b45ffa332c7c",
+      "life": 1729498180075,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/gsp787.html",
+      "val": "27b66c85721c2f6039039918aa18376ae70239c8",
+      "life": 1729498180076,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/index.html",
+      "val": "c22ca3a7ce3ec9707e31359e25d7d9ea80a50b47",
+      "life": 1729498180076,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/optimize-costs-for-google-kubernetes-engine-challenge-lab.html",
+      "val": "b9533ae7ee91125585f8361015b94e1601df2762",
+      "life": 1729498180078,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/qwiklab-completion-tracker-versions.html",
+      "val": "44a3c49f86e4535d15d69cc79c3a03583f4857a4",
+      "life": 1729498180080,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/qwiklabs-user-tips-for-learning-google-cloud-platform.html",
+      "val": "015b74351e7bf9ccc14ac7b76040735c7f9b36cf",
+      "life": 1729498180081,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/secure-workloads-in-google-kubernetes-engine-challenge-lab.html",
+      "val": "712f1fb4593b5bec448ec99b7493ee9d50920f1d",
+      "life": 1729498180083,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/serverless-firebase-development-challenge-lab.html",
+      "val": "6d972d19d065f937fdd329252499a79bfbc860bf",
+      "life": 1729498180085,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/useful-google-cloud-platform-commands-cheat-sheet.html",
+      "val": "9fa3d1ff186e5348a44b30a524afb41a82eefd60",
+      "life": 1729498180087,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/userscript-for-labelling-completed-qwiklabs.html",
+      "val": "dcf1a024b6947afbb07cba8575d6c54e5b3c141e",
+      "life": 1729498180090,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/qwiklabs/where-does-my-bear-badge-go.html",
+      "val": "b4e72a5e0704cd33d7bb074f2a03d150bfa42c74",
+      "life": 1729498180092,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/tumblr-tricks/featured-tips-tricks-and-tools-for-tumblr-bloggers.html",
+      "val": "7362bb5184c8e6af5c1e0e154b91d91502597973",
+      "life": 1729498180094,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog.html",
+      "val": "b860bf3dc602c8c23ee3f12a45bc5c9c44485a47",
+      "life": 1729498180100,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/tumblr-tricks/index.html",
+      "val": "ef682b5a25408e645d1a733cfc3f8984b00fcb6c",
+      "life": 1729498180102,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/windows/find-windows10-boot-loop-after-fail-upgrade.html",
+      "val": "6b46f2d88be11b8be3151ff7e21243117db7da3c",
+      "life": 1729498180103,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/windows/find-windows10-store-app-path-for-default-program.html",
+      "val": "3d47e6dda0ca9674a2b8a1102595faac4a33f6e8",
+      "life": 1729498180105,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/windows/fix-windows10-boot-loop-after-fail-upgrade.html",
+      "val": "be04abd8361aac6d11f68e1f758212040cfcba5e",
+      "life": 1729498180107,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/windows/index.html",
+      "val": "7e25e3bacfdd33d3e17d228760dc88edccf100c3",
+      "life": 1729498180108,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/academic/index.html",
+      "val": "1efc8d75e8b0322c0c8371000f37c79ca9fb4d42",
+      "life": 1729498180110,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/announcement/index.html",
+      "val": "cb82d842353dec5930c755575acc09cc68093a79",
+      "life": 1729498180112,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/cloud/index.html",
+      "val": "3a299fd08b5a526ba7d9c660e16b9583ce233530",
+      "life": 1729498180114,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/computer-science/index.html",
+      "val": "9ca1ef0c58f4235eca8c4e2dbacecf2f419e4b69",
+      "life": 1729498180116,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/developer-tools/index.html",
+      "val": "90050883a7746adf0b553404ab8f3d158e9d84e6",
+      "life": 1729498180118,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/linux/index.html",
+      "val": "4de05b1da71aed84ba2a59ebee32ce22eca43606",
+      "life": 1729498180120,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/productivity/index.html",
+      "val": "c2688217115bdbeb1a3d79aab54d6ffd709fe5d2",
+      "life": 1729498180123,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/project/index.html",
+      "val": "d485675ce6d3db3d980be9ff459b0d91b5f547dd",
+      "life": 1729498180125,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/web-development/index.html",
+      "val": "478d37a09dfad095a9ba1aadce81b3dba7fcba1f",
+      "life": 1729498180127,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/category/windows/index.html",
+      "val": "d510ab7d89a2ac715aab815571540bbd47b9f2e1",
+      "life": 1729498180129,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/images/projects/qwiklabs-quests-map.html",
+      "val": "83fd4115fe40e800d8acf77ef88ab145d62c6140",
+      "life": 1729498180132,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/android-studio/index.html",
+      "val": "25173d3ae821820aa79a7dbc84bec78d88e1ed3d",
+      "life": 1729498180134,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/apigee/index.html",
+      "val": "9bc38205ba76da43ce2677aa54889d2251ce6026",
+      "life": 1729498180136,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/bigquery/index.html",
+      "val": "cb1421cee963490383ad1ccdc1fa9bedb60e18a8",
+      "life": 1729498180137,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/changelog/index.html",
+      "val": "2233d6d2ff109fba5a8457ee9ce7a14651b481e2",
+      "life": 1729498180139,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/cloud-ai/index.html",
+      "val": "8f4106233d8f23de3abb7139aad8bd358d4b0067",
+      "life": 1729498180141,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/cloud-function/index.html",
+      "val": "05200b884e90cf20a978f35fcc0e5da6d220c8c7",
+      "life": 1729498180143,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/command-line/index.html",
+      "val": "36548d6612d7eccb41e13ac0748c16c712fc0800",
+      "life": 1729498180145,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/computer-science/index.html",
+      "val": "0b927ad93a65ee33d0cbf473867d75b901fa2ae1",
+      "life": 1729498180147,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/conference/index.html",
+      "val": "ffcb70cbaa849160c3209d5fbfed6eef93b05c24",
+      "life": 1729498180150,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/conference-paper/index.html",
+      "val": "fe6e968c6f395652093701a46834236c0b748bcf",
+      "life": 1729498180152,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/custom-theme/index.html",
+      "val": "065d7cc635c5fbfac4566e47bed6c237bbe47fd2",
+      "life": 1729498180154,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/data-science/index.html",
+      "val": "641f5d8925c7d89222b895f11079262ac0d75e49",
+      "life": 1729498180157,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/docker/index.html",
+      "val": "10fabf9cf83d03ffb97f95d0dd3d3bc3ec775c11",
+      "life": 1729498180159,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/email/index.html",
+      "val": "57964d38dc3738d0694088d4905098ec30c31ab5",
+      "life": 1729498180161,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/evernote/index.html",
+      "val": "72aa51ff3530ab38a3ef6027902a1503c75425e4",
+      "life": 1729498180163,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/file-i-o/index.html",
+      "val": "72b9d21c66a5309fa213c87fcf1bc8aea3640520",
+      "life": 1729498180165,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/fuzzy-logic/index.html",
+      "val": "de7f579cc07bbd08df2310660beea11089b0b25a",
+      "life": 1729498180167,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/gcloud/index.html",
+      "val": "ff25e3b114804941b6ed4569fe5da3146d040f28",
+      "life": 1729498180169,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/google-cloud/index.html",
+      "val": "8b74122636e8609ab9bba97d469668952370b9b5",
+      "life": 1729498180171,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/how-to-research/index.html",
+      "val": "ca5981a8ef94e9b338dac0833ebfa90c6fb36151",
+      "life": 1729498180173,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/jekyll/index.html",
+      "val": "533b40b25065627bd26cd98a4b9906a1389ad43b",
+      "life": 1729498180175,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/jenkins/index.html",
+      "val": "d8d51a2dc16b0aba594b09ab012c129678875109",
+      "life": 1729498180177,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/journal-ranks/index.html",
+      "val": "6d862d5702f704184d8e36f185e5aca35c67da88",
+      "life": 1729498180180,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/kde/index.html",
+      "val": "897d876627ff910d86a7b15a8db50f7daa9c6ff4",
+      "life": 1729498180183,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/kubernetes/index.html",
+      "val": "9d52000033b894e9a99185a1592b0b93eb1c7a3b",
+      "life": 1729498180186,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/lammps/index.html",
+      "val": "b59de63d6c7209509aa953fe7b5c26d1fd5570c5",
+      "life": 1729498180188,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/learning-map/index.html",
+      "val": "a649baf4e15491af2fdb71fb96e761e2a1246466",
+      "life": 1729498180190,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/linux/index.html",
+      "val": "5081dabaa48bd1ae5c463ee4c6935f152899111a",
+      "life": 1729498180192,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/logbook/index.html",
+      "val": "422fa599bc436ad28f2b09b83239b5fce2c47821",
+      "life": 1729498180194,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/machine-learning/index.html",
+      "val": "c1822c4f79036ea71f440d5fb8f8bcdd051451dd",
+      "life": 1729498180197,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/matlab/index.html",
+      "val": "b854fd33a2baf4ab544f7aea16058e45dc01d2f2",
+      "life": 1729498180201,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/medium/index.html",
+      "val": "2263e0d42069d90d29aae42ba416d32486da3ce9",
+      "life": 1729498180203,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/meta-tags/index.html",
+      "val": "0e0e336193af991b62f2dea0de7d4de9ffcc0dc2",
+      "life": 1729498180205,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/molecular-dynamics/index.html",
+      "val": "d40adff0e10924a3cd70119f3697cd99e1ecff86",
+      "life": 1729498180207,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/ms-excel/index.html",
+      "val": "3f9cdbc84daf3e63ded6a8b18b43a493a6022da3",
+      "life": 1729498180210,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/ms-office/index.html",
+      "val": "ac702f3936a384c35c60640db40058ce9960f571",
+      "life": 1729498180211,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/mysql/index.html",
+      "val": "f4c03fa2a1dd5ca47014a6a53f303fe8a32235bf",
+      "life": 1729498180213,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/open-graph/index.html",
+      "val": "36a4acf6b0d339cb8517c0970037aaee1f98967e",
+      "life": 1729498180216,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/ovito/index.html",
+      "val": "bab1e85a5a0760f1c13b05f9d1d83815e87969a9",
+      "life": 1729498180217,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/pdf-viewer/index.html",
+      "val": "17c273fbb28add8b3419b611062e517d989fce82",
+      "life": 1729498180220,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/phraseexpress/index.html",
+      "val": "01f8d0ca02990a5dcfe6dbe7831974e4bf005824",
+      "life": 1729498180222,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/python/index.html",
+      "val": "d94c1158dea7807bfe400980a872c20f52df7024",
+      "life": 1729498180224,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/qwiklabs/index.html",
+      "val": "6ff4cab37d43c4c7aabf101b9c86e15b06ebf821",
+      "life": 1729498180227,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/remote-desktop/index.html",
+      "val": "b927c96439054755f730e89688985d1b0d6c7dc8",
+      "life": 1729498180229,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/research/index.html",
+      "val": "33256e55f86c7b2bdc3d8af6c6c7aadad4dc561e",
+      "life": 1729498180231,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/research-tool/index.html",
+      "val": "1c64f54c4c68e7baf1ef182c2249bd4042ed0342",
+      "life": 1729498180234,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/secure-vpc/index.html",
+      "val": "883ecd0f956753de1bddfef65843befed8404111",
+      "life": 1729498180236,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/shorthand/index.html",
+      "val": "846eea4470f2eda5620107346766043cfbb8974f",
+      "life": 1729498180238,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/single-crystal-diamond/index.html",
+      "val": "fcddbce6376973ee584a1c8de942bef3739c22ae",
+      "life": 1729498180240,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/taiwan/index.html",
+      "val": "943f9bce3604326c1233037bb774f01cd4672955",
+      "life": 1729498180242,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/ted/index.html",
+      "val": "7c4eeb888f04b280c2ce39d532dfdefb0f19236e",
+      "life": 1729498180244,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/tensorflow/index.html",
+      "val": "78a44cded882cca017b46a6b4af2431ab2f3c39b",
+      "life": 1729498180246,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/terraform/index.html",
+      "val": "5d9a5294f05db675c55ef8a4f440362422866f5d",
+      "life": 1729498180248,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/tumblr/index.html",
+      "val": "0ff3c6b341d18c89856dc4610dd08e4c0bc4606b",
+      "life": 1729498180250,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/twitter/index.html",
+      "val": "63faa0f833f4a5394d534c977144bef76c3a804d",
+      "life": 1729498180252,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/ubuntu/index.html",
+      "val": "5ad626809d7f5a39c8fd090879ae11759a3d21a9",
+      "life": 1729498180254,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/user-tips/index.html",
+      "val": "69e453971190ac4fb23849175fa7b47eaf12f0d8",
+      "life": 1729498180257,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/userscript/index.html",
+      "val": "a65d4c2798683d15504a617c3f293456131de128",
+      "life": 1729498180259,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/windows-10/index.html",
+      "val": "61fa43b3bfba1d37eef636eea8fe60ba79b85fde",
+      "life": 1729498180261,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/windows-server/index.html",
+      "val": "89a04656d86e7cbfac9e7d172f52c76438e6059b",
+      "life": 1729498180263,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/wordpress/index.html",
+      "val": "35afa9e94afe4202935b1c0ca36ce5d0b9e3c52c",
+      "life": 1729498180265,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/tag/wsl2/index.html",
+      "val": "1550a24e4ad2d1512b140f943766a70179d86cc3",
+      "life": 1729498180267,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email.html",
+      "val": "457d8b1a55cbf1c1e7898a362796f7ca2da52180",
+      "life": 1729498180335,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2014/07/04/Creating-an-array-of-SJR-widget-for-visual-comparison-of-journal-ranks.html",
+      "val": "255b36c447194114d75c42a58b7b3876fb5e5700",
+      "life": 1729498180339,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables.html",
+      "val": "6ce63adde4643dfed9c29ffef5d2243e69a41a4b",
+      "life": 1729498180342,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2014/08/22/My-new-conference-paper-is-now-available-online.html",
+      "val": "89281ea0c32698cbda3fc7e3261cba347c0d6c56",
+      "life": 1729498180345,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2014/09/12/My-trip-of-AEPA-2014-conference.html",
+      "val": "a7f887726c2bb9c4b47a5e6a42a9a1821e214e90",
+      "life": 1729498180349,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2014/10/05/An-Inspiring-TED-video-talking-about-how-we-should-rethink-about-the-unknown-in-the-postgraduate-or-research-study.html",
+      "val": "6fcc5829de7a1a8df29b47aa0b19e44f8a91a337",
+      "life": 1729498180353,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2014/10/08/Useful-Ubuntu-Commands.html",
+      "val": "a06ea57c403057810e1244964f30c063cd5f9518",
+      "life": 1729498180356,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2015/03/10/Working-MATLAB-with-MS-Excel.html",
+      "val": "ce83cc7f28dc3c1d0c19ac17ca0ccca60cada470",
+      "life": 1729498180357,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2015/04/09/Highlighting-words-in-PDF-using-the-JavaScript-console-in-PDFXchange-Viewer.html",
+      "val": "40741f2b2fe5d847130a64b5eced3005d2ae3b19",
+      "life": 1729498180359,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2015/11/27/OVITO-The-Open-Visualization-Tool-Version-261-has-been-released.html",
+      "val": "8329ab716d102dde7e2d9797d199f4c4796e687f",
+      "life": 1729498180362,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2015/11/27/template-OVITO-python-modifier.html",
+      "val": "04a8af758abdb5d9b084560e831783a0cdff2858",
+      "life": 1729498180364,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2016/01/18/Installation-of-Andriod-Studio.html",
+      "val": "73c92a621234507f0ca6d370970cf98e482136fc",
+      "life": 1729498180367,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2017/02/26/new-site-is-opened.html",
+      "val": "da2f3549d4e16b001ce5510ff5e9d4467a789338",
+      "life": 1729498180370,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/04/04/Install-Chrome-Remote-Desktop-on-Kubuntu.html",
+      "val": "96beaebc358a4bc2e53825f8dd706c12061bc565",
+      "life": 1729498180372,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs.html",
+      "val": "f5c36163d30f2558b6b3b272596c0a4b1f9e437b",
+      "life": 1729498180374,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/07/Configure-Windows-Bastion-Host-with-Terraform-on-GCP.html",
+      "val": "0265bed48a3c268ca5d3c4adef0216c256babb86",
+      "life": 1729498180376,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/18/Google-Cloud-Essential-Skills-Challenge-Lab.html",
+      "val": "45c831ce2a00f247ed24378314ea992a5b7bddff",
+      "life": 1729498180377,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/20/Deploy-a-Compute-Instance-with-a-Remote-Startup-Script.html",
+      "val": "3eb08ac98a4efa30c33dca0bf13f4bbc9b3983f6",
+      "life": 1729498180379,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/23/Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager.html",
+      "val": "48a53951b582af5bb40d4a850c35542fb5ec25dd",
+      "life": 1729498180381,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/25/Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster.html",
+      "val": "d47e026f830d7ee72e06cded9c4cf9705f2195ba",
+      "life": 1729498180382,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/27/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster.html",
+      "val": "4490651b923287e1ab65d4d189da67795cbd9727",
+      "life": 1729498180384,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL.html",
+      "val": "7d34b9589a4cf09443b1f7688aba62b0aaecc65c",
+      "life": 1729498180386,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/10/22/Follow-Me-on-Medium.html",
+      "val": "b12cd96b144046095be0f4ffb99dca8287836f6c",
+      "life": 1729498180388,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/10/30/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog.html",
+      "val": "08e017c36c5c7b3ba50d753bc4ad955b08450d90",
+      "life": 1729498180390,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers.html",
+      "val": "3ee9f62aeb59c542c21c863d82409293dfa46435",
+      "life": 1729498180392,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/11/25/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform.html",
+      "val": "a8f247064685f68425c7fa02c27e438d121b6dd5",
+      "life": 1729498180393,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2019/12/29/Controlling-Your-Costs-Quiz.html",
+      "val": "943c26bd5d905d264f8964d76b04ba73062cdccf",
+      "life": 1729498180395,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation.html",
+      "val": "8bf9a438d150d43a3de1995ad1f4f6df2cddd860",
+      "life": 1729498180397,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2020/02/22/find-windows10-store-app-path-for-default-program.html",
+      "val": "659b5bef608f7a3ebd3cee43641ad8ab431adc85",
+      "life": 1729498180398,
+      "tags": []
+    },
+    {
+      "key": "/home/runner/work/chriskyfung.github.io/chriskyfung.github.io/_site/blog/2020/06/01/enjoy-our-new-theme.html",
+      "val": "8eabe3ec5b2d8f7b9eb8cafe9b9919aa5d55adde",
+      "life": 1729498180401,
+      "tags": []
+    }
+  ]
+}
