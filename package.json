@@ -36,14 +36,14 @@
     "node": ">=18.12.1",
     "npm": ">=9.1.2"
   },
+  "type": "module",
   "devDependencies": {
     "@ampproject/toolbox-optimizer": "^2.8.10",
-    "amphtml-validator": "^1.0.35",
+    "amphtml-validator": "^1.0.38",
     "glob-parent": "^6.0.2",
-    "gulp": "^4.0.2",
-    "gulp-amphtml-validator": "^1.0.6",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-process-if-modified": "^1.0.4",
+    "gulp": "^5.0.0",
+    "gulp-amphtml-validator": "^1.0.8",
+    "gulp-html-minifier-terser": "^7.1.0",
     "through2": "^4.0.2"
   },
   "overrides": {
@@ -51,10 +51,6 @@
       "postcss": "^8.4.31",
       "semver": "^5.7.2",
       "terser": ">=5.14.2"
-    },
-    "gulp": {
-      "glob-watcher": "^6.0.0",
-      "vinyl-fs": "^4.0.0"
     }
   }
 }

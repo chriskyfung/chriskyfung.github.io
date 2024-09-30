@@ -1,20 +1,20 @@
-const {src, dest, watch, series, parallel} = require('gulp');
-const htmlmin = require('gulp-htmlmin');
-const processIfModified = require('gulp-process-if-modified');
+import { src, dest, watch, series, parallel } from 'gulp';
+import htmlmin from 'gulp-html-minifier-terser';
+import gulpAmpValidator from 'gulp-amphtml-validator';
 
-const through2 = require('through2');
+import through2 from 'through2';
+import amphtmlValidator from 'amphtml-validator';
+import AmpOptimizer from '@ampproject/toolbox-optimizer';
 
-const AmpOptimizer = require('@ampproject/toolbox-optimizer');
 const ampOptimizer = AmpOptimizer.create();
-const gulpAmpValidator = require('gulp-amphtml-validator');
-const amphtmlValidator = require('amphtml-validator');
 
 function build(cb) {
   return src('./_site/**/*.html')
-    .pipe(processIfModified())
     .pipe(
       through2.obj(async (file, _, cb) => {
         if (file.isBuffer()) {
+          const date = new Date();
+          console.log(`[\x1b[90m${date.toLocaleTimeString('it-IT')}\x1b[0m] Running AMP Optimizer on ${file.path}`);
           const optimizedHtml = await ampOptimizer.transformHtml(
             file.contents.toString()
           );
@@ -63,6 +63,4 @@ function validate() {
     );
 }
 
-exports.build = build;
-exports.test = test;
-exports.validate = validate;
+export { build, test, validate };
