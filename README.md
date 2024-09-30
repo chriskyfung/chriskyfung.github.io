@@ -1,4 +1,4 @@
-![Made with Jekyll](https://img.shields.io/badge/Made%20with-Jekyll-1f425f.svg) ![Build and Deploy Jekyll to Github Pages](https://github.com/chriskyfung/chriskyfung.github.io/actions/workflows/deploy-jekyll.yml/badge.svg) [![Website
+![Made with Jekyll](https://img.shields.io/badge/Made%20with-Jekyll-1f425f.svg) [![Deploy Jekyll site to Pages](https://github.com/chriskyfung/chriskyfung.github.io/actions/workflows/jekyll-build.yml/badge.svg)](https://github.com/chriskyfung/chriskyfung.github.io/actions/workflows/jekyll-build.yml) [![Website
  Monitoring](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fchriskyfung.github.io%2F)](https://chriskyfung.github.io/)
 
 ## 🏡 Chris KY FUNG's GitHub Page
