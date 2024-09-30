@@ -1,6 +1,5 @@
 const {src, dest, watch, series, parallel} = require('gulp');
 const htmlmin = require('gulp-htmlmin');
-const minifyInline = require('gulp-minify-inline');
 const processIfModified = require('gulp-process-if-modified');
 
 const through2 = require('through2');
@@ -25,7 +24,6 @@ function build(cb) {
       })
     )
     .pipe(htmlmin({ collapseWhitespace: false }))
-    .pipe(minifyInline())
     .pipe(dest('./_site/'));
 }
 

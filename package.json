@@ -43,7 +43,6 @@
     "gulp": "^4.0.2",
     "gulp-amphtml-validator": "^1.0.6",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-minify-inline": "^1.0.0",
     "gulp-process-if-modified": "^1.0.4",
     "through2": "^4.0.2"
   },
@@ -56,9 +55,6 @@
     "gulp": {
       "glob-watcher": "^6.0.0",
       "vinyl-fs": "^4.0.0"
-    },
-    "gulp-minify-inline": {
-      "cheerio": "^1.0.0-rc.3"
     }
   }
 }
