@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "custom.css",
+	"sources": [
+		"custom.scss"
+	],
+	"sourcesContent": [
+		"// Import partials from `sass_dir` (defaults to `_sass`)\n\n// @import\n//     \"main\"\n// ;\n\n// @import\n// \t\"syntax\"\n// ;"
+	],
+	"names": [],
+	"mappings": ""
+}

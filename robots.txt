@@ -1,0 +1,4 @@
+User-agent: *
+
+Sitemap: https://chriskyfung.github.io/sitemap.xml
+Sitemap: https://chriskyfung.github.io/amp-affiliately-jekyll-theme/sitemap.xml
