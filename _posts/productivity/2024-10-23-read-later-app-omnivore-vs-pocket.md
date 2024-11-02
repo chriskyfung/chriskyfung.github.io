@@ -2,6 +2,7 @@
 layout: post
 title: Should You Switch to Omnivore from Pocket in 2024?
 date: 2024-10-23 12:15:58 +08:00
+last_modified_at: 2024-10-25 16:03 +08:00
 author: chris
 excerpt: Compare Pocket and Omnivore read-later apps. Discover their features, search functionality, language support, and find the best fit for your reading needs!
 category: Productivity
@@ -13,6 +14,7 @@ permalink: /blog/productivity/read-later-app-omnivore-vs-pocket
 image:
   path: /images/posts/read-later-app/omnivore-vs-pocket-cover.jpg
   height: 417
+published: false
 ---
 
 Do you ever feel overwhelmed by the countless articles you want to read but can never find the time?
@@ -30,26 +32,27 @@ In this post, I’ll compare Pocket and Omnivore to help you decide if Omnivore 
 
 ## Why I Loved Pocket
 
-I’ve been using Pocket for a long time and have watched it evolve over the years.
+I’ve been using Pocket for over 10 years and have watched it evolve.
 It’s really convenient and functional. I honestly think [Pocket Premium][Pocket Premium] is worth paying for.
 
 [Pocket Premium]: https://getpocket.com/premium?ep=1
 
-### Features I Love
+### What I Love
 
 - **Cross-Platform Use**: Pocket works seamlessly across iOS, Android, and the Web, allowing you to [save and read your articles][How to Save to Pocket] anywhere.
 - **Listen to Articles**: Pocket makes use of robust text-to-speech (TTS) engines on iOS and Android, supporting a wide variety of languages. You can [use the TTS feature to listen to your articles][Listening to articles in Pocket with Text-to-Speech].
-- **Offline Access**: Great for reading on the move, Pocket lets you access over a thousand articles offline.
+- **Offline Access**: Great for reading on the move, Pocket lets you [access over a thousand articles offline][Using Pocket offline].
 
 Pocket is a great app, at least for now. But if you're a heavy user like me, you might find that Pocket doesn’t quite meet the needs of serious readers.
 
 [How to Save to Pocket]: https://support.mozilla.org/en-US/kb/how-to-save-to-pocket-overview
 [Listening to articles in Pocket with Text-to-Speech]: https://support.mozilla.org/en-US/kb/listening-to-articles-in-pocket-with-text-to-speech
+[Using Pocket offline](https://support.mozilla.org/en-US/kb/using-pocket-offline)
 
-### Features I'm Not Satisfied With
+### What I Don't Like
 
 - **Search Functionality**: Pocket’s search feature in the free account is fairly simple, missing filters or advanced operators to help narrow down your results. To access [Full-Text Search and Advanced Search Operators][Pocket Premium Full-Text Search], you'll need to upgrade to Pocket Premium.
-- **Undesired Recent Changes**: It looks like Mozilla is planning a major overhaul of Pocket’s front-end in 2024, and there are some changes that I find disappointing. For instance, sharing an article now leads to a preview page on *[getpocket.com]* rather than the original webpage. Also, the [bulk editing feature][Bulk Editing Pocket] has been taken away from the search result pages.
+- **Undesired Recent Changes**: Mozilla rolled out several updates to Pocket in 2024, but I found some of the changes quite disappointing. For example, the article link shared now directs to a preview page on *[getpocket.com]* rather than the original webpage. Also, the [bulk editing feature][Bulk Editing Pocket] has been removed from the search result pages.
 
 {% include picture.html width="413" height="434" img="/read-later-app/getpocket.com_shared_item.jpg" alt="Pocket's Saved Items" caption="Pocket's Saved Items" class="text-center" %}
 
