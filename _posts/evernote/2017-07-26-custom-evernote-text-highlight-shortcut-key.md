@@ -10,6 +10,7 @@ image:
   path: /images/posts/evernote/evernote-tips-productivity-shortcut-customization.png
   height: 381
   class: shadow-none
+published: false
 ---
 
 This time I would like to share other useful tips for Evernote. With Evernote Web Clipper, [Evernote](https://www.evernote.com/referral/Registration.action?sig=f0a699e8560c4fe4cd1cf6c35f32094507754c721ea5f1b69a8698dd21fda726&uid=20626019) is the best tool to capture, store and organize web contents in my digital devices. While reading the stored contents in Evernote, I _highlight_ the important texts as same as you do. However, moving your mouse cursor between the text content and the toolbar button to highlight the texts is frustrating. You want to streamline the process by pressing a shortcut key.

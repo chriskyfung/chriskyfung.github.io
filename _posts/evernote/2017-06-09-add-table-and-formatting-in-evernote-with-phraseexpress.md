@@ -8,6 +8,7 @@ tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/add-table-and-formatting-in-evernote-with-phraseexpress
 amp:
     youtube: true
+published: false
 ---
 
 Last time, I introduced [How to create a shorthand for quick searching your Evernote](/blog/evernote/quick-search-evernote-with-phraseexpress). This time I’ll introduce two more productivity tips for Evernote users. Let’s create shorthands with PhraseExpress.

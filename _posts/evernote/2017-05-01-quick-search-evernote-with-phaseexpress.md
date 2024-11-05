@@ -8,6 +8,7 @@ tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/quick-search-evernote-with-phraseexpress
 css:
   syntax: true
+published: false
 ---
 
 The common way to search the contents in Evernote on your desktop or using the search bar in the desktop application. Another way may be just perform a normal Google search and the related articles in your Evernote account will be displayed if you have installed Evernote Web Clipper in your browser. But the second way does not always work. You may copy a keyword, switch to the Evernote window and paste the text in the search bar. I have searched the contents in Evernote in this way for more than six years. That is an annoying and stupid task repeating many times day by day. I always think about how to get rid of this [hamster wheel](https://www.urbandictionary.com/define.php?term=hamster%20wheel) and remove such inconvenience. Today, I want to introduce a method that I recently created to improve my productivity without difficult coding using python or other programming languages.
