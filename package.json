@@ -6,6 +6,7 @@
     "jekyll": "bundle exec jekyll serve",
     "jekyll:trace": "bundle exec jekyll serve --trace",
     "build": "bundle exec jekyll build && gulp build",
+    "deploy": "npx gh-pages --dist _site --branch master --nojekyll",
     "test": "npx gulp validate"
   },
   "repository": {
@@ -40,6 +41,7 @@
   "devDependencies": {
     "@ampproject/toolbox-optimizer": "^2.10.1",
     "amphtml-validator": "^1.0.38",
+    "gh-pages": "^6.2.0",
     "glob-parent": "^6.0.2",
     "gulp": "^5.0.0",
     "gulp-amphtml-validator": "^1.0.8",
