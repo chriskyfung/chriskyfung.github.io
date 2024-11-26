@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Sep 2024 19:47:14 +0800</pubDate>
-    <lastBuildDate>Mon, 30 Sep 2024 19:47:14 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Nov 2024 16:21:46 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Nov 2024 16:21:46 +0800</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -1092,61 +1092,11 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;4rqeFp87s6I&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-4rqeFp87s6I&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;4rqeFp87s6I&quot; title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/4rqeFp87s6I&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;4rqeFp87s6I&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour | youtu.be/4rqeFp87s6I&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;4rqeFp87s6I&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour | youtu.be/4rqeFp87s6I&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;4rqeFp87s6I&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour | youtu.be/4rqeFp87s6I&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱ &lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;
 &lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
@@ -1414,61 +1364,11 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/C49jYtIMAsg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;C49jYtIMAsg&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021) | youtu.be/C49jYtIMAsg&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;C49jYtIMAsg&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021) | youtu.be/C49jYtIMAsg&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;C49jYtIMAsg&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021) | youtu.be/C49jYtIMAsg&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
 &lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
@@ -1773,61 +1673,11 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;jeB-FIeGKkQ&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-jeB-FIeGKkQ&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;jeB-FIeGKkQ&quot; title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/jeB-FIeGKkQ&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;jeB-FIeGKkQ&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour | youtu.be/jeB-FIeGKkQ&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;jeB-FIeGKkQ&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour | youtu.be/jeB-FIeGKkQ&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;jeB-FIeGKkQ&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour | youtu.be/jeB-FIeGKkQ&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱ &lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;
 &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Challenge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Scenario&lt;/span&gt;
@@ -2056,61 +1906,11 @@ gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHEL
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;HiFMZGDBzZo&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-HiFMZGDBzZo&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;HiFMZGDBzZo&quot; title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/HiFMZGDBzZo&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;HiFMZGDBzZo&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉) | youtu.be/HiFMZGDBzZo&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;HiFMZGDBzZo&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉) | youtu.be/HiFMZGDBzZo&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;HiFMZGDBzZo&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉) | youtu.be/HiFMZGDBzZo&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt; &amp;amp; &lt;span class=&quot;n&quot;&gt;Challenge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scenario&lt;/span&gt;
 &lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;47&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Inspect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;provisioned&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt;
@@ -2551,61 +2351,11 @@ Run the following to apply the configuration file:&lt;/p&gt;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;bpeOjFZklpg&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-bpeOjFZklpg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;bpeOjFZklpg&quot; title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=bpeOjFZklpg&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/bpeOjFZklpg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=bpeOjFZklpg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;bpeOjFZklpg&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab | youtu.be/bpeOjFZklpg&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;bpeOjFZklpg&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab | youtu.be/bpeOjFZklpg&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;bpeOjFZklpg&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab | youtu.be/bpeOjFZklpg&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
 &lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task0&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Download&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;necessary&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt;
@@ -3036,61 +2786,11 @@ git push origin master
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;pSSA6vlRgtA&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-pSSA6vlRgtA&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;pSSA6vlRgtA&quot; title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=pSSA6vlRgtA&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/pSSA6vlRgtA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=pSSA6vlRgtA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;pSSA6vlRgtA&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab | youtu.be/pSSA6vlRgtA&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;pSSA6vlRgtA&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab | youtu.be/pSSA6vlRgtA&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;pSSA6vlRgtA&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab | youtu.be/pSSA6vlRgtA&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
 &lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
@@ -3315,61 +3015,11 @@ python analyze-images.py &lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt; 
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;kEEqbeqR6og&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-kEEqbeqR6og&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;kEEqbeqR6og&quot; title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=kEEqbeqR6og&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/kEEqbeqR6og&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=kEEqbeqR6og&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;kEEqbeqR6og&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab | youtu.be/kEEqbeqR6og&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;kEEqbeqR6og&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab | youtu.be/kEEqbeqR6og&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;kEEqbeqR6og&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab | youtu.be/kEEqbeqR6og&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
 &lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
@@ -3685,61 +3335,11 @@ python analyze-images.py &lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt; 
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;UzP2pX1qayA&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-UzP2pX1qayA&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;UzP2pX1qayA&quot; title=&quot;GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab&quot; data-vars-video-title=&quot;GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=UzP2pX1qayA&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://youtu.be/UzP2pX1qayA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=UzP2pX1qayA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;/amp-youtube&gt;
-&lt;amp-analytics type=&quot;gtag&quot; data-credentials=&quot;include&quot; data-block-on-consent-purposes=&quot;analytics&quot;&gt;
-  &lt;script type=&quot;application/json&quot;&gt;
-  {
-    &quot;vars&quot;: {
-      &quot;gtag_id&quot;: &quot;G-HP4LN87NJE&quot;,
-      &quot;config&quot;: {
-        &quot;G-HP4LN87NJE&quot;: { &quot;groups&quot;: &quot;default&quot; }
-      }
-  },
-    &quot;triggers&quot;: {
-      &quot;videoPlay&quot;: {
-        &quot;on&quot;: &quot;video-play&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;UzP2pX1qayA&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_played&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab | youtu.be/UzP2pX1qayA&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoPause&quot;: {
-        &quot;on&quot;: &quot;video-pause&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;UzP2pX1qayA&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_paused&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab | youtu.be/UzP2pX1qayA&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      },
-      &quot;videoEnded&quot;: {
-        &quot;on&quot;: &quot;video-ended&quot;,
-        &quot;request&quot;: &quot;ga4Event&quot;,
-        &quot;selector&quot;: &quot;amp-youtube[data-videoid=&apos;UzP2pX1qayA&apos;]&quot;,
-        &quot;vars&quot;: {
-          &quot;ga4_event_name&quot;: &quot;video_ended&quot;
-        },
-        &quot;extraUrlParams&quot;: {
-          &quot;event__str_video_title&quot;: &quot;GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab | youtu.be/UzP2pX1qayA&quot;,
-          &quot;event__num_video_duration&quot;: &quot;${duration}&quot;
-        }
-      }
-    }
-  }
-  &lt;/script&gt;
-&lt;/amp-analytics&gt;
+&lt;/amp-youtube&gt;
 
 &lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
 &lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt;
