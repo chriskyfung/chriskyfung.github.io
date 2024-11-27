@@ -2,8 +2,8 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.content.placeholders": [
     {
-      "id": "preview",
-      "value": "[[workspace]]/{{fm.image.path}}"
+      "id": "permalink",
+      "value": "{{fm.permalink}}"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [
@@ -263,5 +263,8 @@
   "frontMatter.content.publicFolder": "assets",
   "frontMatter.preview.host": "http://localhost:4000",
   "frontMatter.site.baseURL": "https://chriskyfung.github.io",
-  "frontMatter.website.host": "https://chriskyfung.github.io"
+  "frontMatter.website.host": "https://chriskyfung.github.io",
+  "frontMatter.extensibility.scripts": [
+    "[[workspace]]/.frontmatter/ui/external.js"
+  ]
 }
