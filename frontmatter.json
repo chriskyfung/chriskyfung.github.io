@@ -636,32 +636,6 @@
       }
     }
   ],
-  "frontMatter.data.files": [
-    {
-      "id": "suggestions",
-      "title": "Search Suggestions",
-      "file": "[[workspace]]/assets/data/suggestions.json",
-      "fileType": "json",
-      "labelField": "items",
-      "singleEntry": true,
-      "schema": {
-        "title": "Items",
-        "type": "object",
-        "required": [
-          "items"
-        ],
-        "properties": {
-          "items": {
-            "title": "Items",
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        }
-      }
-    }
-  ],
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.git.enabled": true,
   "frontMatter.git.commitMessage": "Synced by Front Matter {{hour24}}:{{minute}}",
