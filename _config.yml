@@ -117,11 +117,13 @@ relative_links:
   collections: true
 
 # Directories and/or files from the conversion
-include: [.github/FUNDING.yml]
+include: 
+  - .github/FUNDING.yml
 exclude:
+  - .post-template
+  - frontmatter.json
   - gulpfile.js
   - LICENSE
   - package-lock.json
   - package.json
-  - README.md
   - sync.ffs_db
