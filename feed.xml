@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Nov 2024 16:21:46 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Nov 2024 16:21:46 +0800</lastBuildDate>
+    <pubDate>Fri, 29 Nov 2024 00:28:10 +0800</pubDate>
+    <lastBuildDate>Fri, 29 Nov 2024 00:28:10 +0800</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -1987,6 +1987,10 @@ gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHEL
 
 &lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, open this &lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/container/clusters/create&quot; title=&quot;gcloud container clusters create - Cloud SDK Documentation&quot;&gt;Cloud SDK Documentation&lt;/a&gt; to study the flags for the command line.&lt;/p&gt;
 
+&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;jekyll-capture-tags&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;var&quot;,&quot;value&quot;:&quot;tips1&quot;},{&quot;name&quot;:&quot;selection&quot;,&quot;value&quot;:&quot;**Using Cloud Console** \\\nAlternatively, you can create the cluster using the Cloud Console.\n\n   1. Click on the **Navigation Menu** &gt; **Kubernetes Engine** &gt; **Clusters**\n   2. Click **CREATE CLUSTER**\n   3. Set up the cluster as required. Once the cluster is created, run the following in the Cloud Shell to establish a connection:\n\n      ```bash\n      gcloud container clusters get-credentials kraken-cluster  --zone us-central1-c\n      ```&quot;}]} --&gt;
+
+&lt;!-- FM:Snippet:End --&gt;
+
 &lt;div class=&quot;callout&quot; style=&quot;margin-bottom: 24px; padding: 16px 16px 8px; background-color: gold; box-shadow: 0 2px 4px;&quot;&gt;
   
 &lt;p&gt;&lt;strong&gt;Using Cloud Console&lt;/strong&gt; &lt;br /&gt;
@@ -2055,6 +2059,10 @@ Alternatively, you can create the cluster using the Cloud Console.&lt;/p&gt;
   &lt;li&gt;Select &lt;strong&gt;Allow any host (%)&lt;/strong&gt; for the name of the Host.&lt;/li&gt;
   &lt;li&gt;Click &lt;strong&gt;Add&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;jekyll-capture-tags&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;var&quot;,&quot;value&quot;:&quot;tips2&quot;},{&quot;name&quot;:&quot;selection&quot;,&quot;value&quot;:&quot;**Command-line method** \\\nYou may also try using the following command line to create the database and the user:\n\n```bash\ngcloud sql databases create wordpress --instance kraken-cloud-sql --charset utf8 --collation utf8_general_ci\n\ngcloud sql users create wordpress --host % --instance kraken-cloud-sql --password Passw0rd\n```\n\n**Tips:** Read this [Cloud SQL Documentation](https://cloud.google.com/sql/docs/mysql/create-manage-databases#create \&quot;Creating and managing MySQL databases \\| Cloud SQL for MySQL\&quot;) to learn more.  \\\n**Remark:** However, I got some feedback that it will occasionally fail to pass the checkpoint if using the command line.&quot;}]} --&gt;
+
+&lt;!-- FM:Snippet:End --&gt;
 
 &lt;div class=&quot;callout&quot; style=&quot;margin-bottom: 24px; padding: 16px 16px 8px; background-color: gold; box-shadow: 0 2px 4px;&quot;&gt;
   
@@ -2142,6 +2150,10 @@ gcloud iam service-accounts keys create key.json &lt;span class=&quot;nt&quot;&g
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;helm repo add stable https://charts.helm.sh/stable
 helm repo update
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;jekyll-capture-tags&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;var&quot;,&quot;value&quot;:&quot;tips-install-helm&quot;},{&quot;name&quot;:&quot;selection&quot;,&quot;value&quot;:&quot;**Install Helm**\n\nIf your environment does not install with Helm, you can run the following to [automatically grab the latest version of Helm and install it locally](https://helm.sh/docs/intro/install/#from-script).\n\n```bash\ncurl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3\nchmod 700 get_helm.sh\n./get_helm.sh\n```&quot;}]} --&gt;
+
+&lt;!-- FM:Snippet:End --&gt;
 
 &lt;div class=&quot;callout&quot; style=&quot;margin-bottom: 24px; padding: 16px 16px 8px; background-color: gold; box-shadow: 0 2px 4px;&quot;&gt;
   
