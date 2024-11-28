@@ -142,7 +142,9 @@ Format the REST profile using a JSON to YAML converter, such as https://www.json
 
 Copy the above firewall configuration to the .jinja file. The final `qwiklabs.jinja` file should become:
 
+<!-- FM:Snippet:Start data:{"id":"amp-gist-file","fields":[{"name":"gist_id","value":"245e0eb142df08d97f42717ea188be72"},{"name":"filename","value":"qwiklabs.jinja"},{"name":"height","value":"1196"}]} -->
 <amp-gist data-gistid="245e0eb142df08d97f42717ea188be72" data-file="qwiklabs.jinja" layout="fixed-height" height="1196"></amp-gist>
+<!-- FM:Snippet:End -->
 
 <br>
 _Replace `<YOUR-SERVICE-ACCOUNT-EMAIL>` in Line 31 to the Service Account of your GCP project, if you copy the codes from this snippet._

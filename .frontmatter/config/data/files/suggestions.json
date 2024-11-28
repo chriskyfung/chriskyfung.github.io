@@ -1,0 +1,25 @@
+{
+  "$schema": "https://frontmatter.codes/config/data.files.schema.json",
+  "id": "suggestions",
+  "title": "Search Suggestions",
+  "file": "[[workspace]]/assets/data/suggestions.json",
+  "fileType": "json",
+  "labelField": "items",
+  "singleEntry": true,
+  "schema": {
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "items"
+    ],
+    "properties": {
+      "items": {
+        "title": "Items",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

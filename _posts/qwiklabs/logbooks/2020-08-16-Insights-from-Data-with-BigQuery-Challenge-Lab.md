@@ -123,8 +123,9 @@ WHERE
   <section>
     <header><span class="show-more">&nbsp;<i class='fas fa-caret-down'></i> Show previous solution</span> <span class="show-less">&nbsp;<i class='fas fa-caret-up'></i> Hide previous solution</span></header>
     <div style="background-color:#efefef;padding:10px">
+<!-- FM:Snippet:Start data:{"id":"jekyll-highlight-tags","fields":[{"name":"type","value":"sql"},{"name":"selection","value":"SELECT\n    subregion1_name AS state,\n    SUM(cumulative_confirmed) AS total_confirmed_cases\nFROM\n    `bigquery-public-data.covid19_open_data.covid19_open_data`\nWHERE\n    country_name=\"United States of America\"\n    AND date = \"2020-04-10\"\nGROUP BY subregion1_name\nHAVING total_confirmed_cases > 1000\nORDER BY total_confirmed_cases DESC"}]} -->
 {% highlight sql %}
-SELECT
+  SELECT
     subregion1_name AS state,
     SUM(cumulative_confirmed) AS total_confirmed_cases
 FROM
@@ -136,6 +137,7 @@ GROUP BY subregion1_name
 HAVING total_confirmed_cases > 1000
 ORDER BY total_confirmed_cases DESC
 {% endhighlight %}
+<!-- FM:Snippet:End -->
 Due to Qwiklabs' poor design, you have to format <b>GROUP BY</b>, <b>HAVING</b> and <b>ORDER BY</b> to single-line statements, respectively.
 </div>
   </section>
