@@ -10,14 +10,16 @@ image:
    path: /images/posts/coding/gh-repo-clone-custom-completion-cover.jpg
 fmContentType: post
 keywords: github cli, gh repo clone, bash completion, zsh completion, git automation
-categories: 
-   - Developer tools	
+categories:
+   - Developer tools
 tags:
    - Bash
    - Command-line
    - GitHub CLI
    - Autocompletions
 excerpt: Learn how to supercharge your GitHub CLI experience with custom bash completion for the 'gh repo clone' command. Includes step-by-step setup and practical examples.
+css:
+   syntax: true
 ---
 
 Ever found yourself typing `gh repo clone` and struggling to remember repository names? I've been there. As a developer who works with dozens of repositories daily, I needed a better solution. That's why I created a custom completion script that makes the GitHub CLI's clone command more powerful and user-friendly.
@@ -42,7 +44,7 @@ The completion script automatically populates suggestions, enabling faster inter
 
 ### Common Use Cases
 
-```shell
+```bash
 # Clone to a custom directory
 gh repo clone username/repo
 
@@ -57,13 +59,13 @@ gh repo clone username/repo -- --depth 1
 
 1. **Install the completion script**:
 
-   ```shell
+   ```bash
    curl -o ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
    ```
 
 2. **Add to your shell**:
 
-   ```sh
+   ```bash
    echo 'source ~/.gh-repo-clone-completion.bash' >> ~/.bashrc  # for bash
    # OR
    echo 'source ~/.gh-repo-clone-completion.bash' >> ~/.zshrc   # for zsh
