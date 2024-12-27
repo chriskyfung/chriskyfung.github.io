@@ -7,6 +7,7 @@
     "jekyll:trace": "bundle exec jekyll serve --trace",
     "build": "bundle exec jekyll build && npx gulp build",
     "build:prod": "npx cross-env JEKYLL_ENV=production bundle exec jekyll build && npx gulp build",
+    "predeploy": "node -e \"const os = require('os'); if (os.platform() === 'win32') { console.log('\\x1b[33mNotice: This npm script is designed to run on Linux. Please use a Linux OS.\\x1b[0m'); process.exit(1); }\"",
     "deploy": "npx gh-pages --dist _site --branch master --nojekyll",
     "test": "npx gulp validate",
     "watch": "npx gulp"
