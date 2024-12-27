@@ -5,9 +5,10 @@
   "scripts": {
     "jekyll": "bundle exec jekyll serve",
     "jekyll:trace": "bundle exec jekyll serve --trace",
-    "build": "bundle exec jekyll build && gulp build",
-    "deploy": "npx gh-pages --dist _site --branch master --nojekyll",
-    "test": "npx gulp validate"
+    "build": "bundle exec jekyll build && npx gulp build",
+    "build:prod": "npx cross-env JEKYLL_ENV=production bundle exec jekyll build && npx gulp build",
+    "test": "npx gulp validate",
+    "watch": "npx gulp"
   },
   "repository": {
     "type": "git",
