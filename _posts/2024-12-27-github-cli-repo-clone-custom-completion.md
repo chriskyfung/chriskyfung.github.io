@@ -63,7 +63,7 @@ gh repo clone username/repo -- --depth 1
    curl -o ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
    ```
 
-   You can view the source code and contribute on [GitHub Gist](https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280).
+   You can view the source code on **[GitHub Gist](https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280)**.
 
 2. **Add to your shell**:
 
@@ -79,10 +79,10 @@ gh repo clone username/repo -- --depth 1
 
    Type `gh repo clone -- <tab>` in your terminal. You should see additional `git clone` flags by listing them after `--`.
 
-## Conclusion
+## Wrapping Up
 
-Implementing this custom completion function can transform your GitHub CLI experience by making it more efficient and user-friendly. My coding sessions are now more about creativity and less about the little frustrations.
+Adding this custom completion function can really level up your GitHub CLI game, making it smoother and more user-friendly without the little frustrations. Give it a try and see how much faster your GitHub workflow becomes.
 
-Try it yourself and see how much faster your GitHub workflow becomes. Questions or suggestions? Feel free to contribute to the script on my GitHub!
-
+Got questions or suggestions?
+Feel free to contribute to the script on GitHub!  \
 Happy coding! 🚀
