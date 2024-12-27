@@ -5,9 +5,97 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 29 Nov 2024 00:28:10 +0800</pubDate>
-    <lastBuildDate>Fri, 29 Nov 2024 00:28:10 +0800</lastBuildDate>
+    <pubDate>Fri, 27 Dec 2024 18:23:52 +0800</pubDate>
+    <lastBuildDate>Fri, 27 Dec 2024 18:23:52 +0800</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Speed Up GitHub CLI: Custom Completion for &apos;gh repo clone&apos; Command</title>
+        <description>&lt;p&gt;Ever found yourself typing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; and struggling to remember repository names? I’ve been there. As a developer who works with dozens of repositories daily, I needed a better solution. That’s why I created a custom completion script that makes the GitHub CLI’s clone command more powerful and user-friendly.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-custom-completion-matters&quot;&gt;Why Custom Completion Matters&lt;/h2&gt;
+
+&lt;p&gt;While the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; is incredibly useful, it lacks intelligent autocompletion. Here’s what you’re missing:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gh repo clone my&amp;lt;tab&amp;gt;
+my-awesome-project    my-docker-images     my-python-scripts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I struggled to recall exact repository names, some of which are a mouthful. Then there were the flags that I could never remember. These tiny hurdles added up, hindering productivity, especially for those who constantly work with multiple repositories.&lt;/p&gt;
+
+&lt;p&gt;Driven by the desire for seamless interaction, I embarked on a quest to enhance my command-line experience. Instead of wrestling with repository names and flags, I decided to create a custom completion script for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; command. The script enables:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Smart Repository Suggestions&lt;/strong&gt;: Instantly see matching repositories as you type.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Flag Completion&lt;/strong&gt;: Access additional &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; options for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; by pressing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tab&lt;/code&gt; twice after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; flag.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The completion script automatically populates suggestions, enabling faster interaction and execution with the GitHub CLI.&lt;/p&gt;
+
+&lt;h3 id=&quot;common-use-cases&quot;&gt;Common Use Cases&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Clone to a custom directory&lt;/span&gt;
+gh repo clone username/repo
+
+&lt;span class=&quot;c&quot;&gt;# Clone with a specific branch&lt;/span&gt;
+gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branch&lt;/span&gt; feature-branch
+
+&lt;span class=&quot;c&quot;&gt;# Clone with depth limit&lt;/span&gt;
+gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;quick-setup-guide&quot;&gt;Quick Setup Guide&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Install the completion script&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;You can view the source code and contribute on &lt;a href=&quot;https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280&quot;&gt;GitHub Gist&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add to your shell&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;source ~/.gh-repo-clone-completion.bash&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc  &lt;span class=&quot;c&quot;&gt;# for bash&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# OR&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;source ~/.gh-repo-clone-completion.bash&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.zshrc   &lt;span class=&quot;c&quot;&gt;# for zsh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Verify the Setup&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone &amp;lt;tab&amp;gt;&lt;/code&gt; in your terminal. If set up correctly, you should see repository suggestions as you type.&lt;/p&gt;
+
+    &lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone -- &amp;lt;tab&amp;gt;&lt;/code&gt; in your terminal. You should see additional &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; flags by listing them after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Implementing this custom completion function can transform your GitHub CLI experience by making it more efficient and user-friendly. My coding sessions are now more about creativity and less about the little frustrations.&lt;/p&gt;
+
+&lt;p&gt;Try it yourself and see how much faster your GitHub workflow becomes. Questions or suggestions? Feel free to contribute to the script on my GitHub!&lt;/p&gt;
+
+&lt;p&gt;Happy coding! 🚀&lt;/p&gt;
+</description>
+        <pubDate>Fri, 27 Dec 2024 15:12:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/github-cli-repo-clone-custom-completion/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/github-cli-repo-clone-custom-completion/</guid>
+        
+        <category>Bash</category>
+        
+        <category>Command-line</category>
+        
+        <category>GitHub CLI</category>
+        
+        <category>Autocompletions</category>
+        
+        
+        <category>Developer tools</category>
+        
+      </item>
     
       <item>
         <title>Qwiklabs Lab Completion Tracker - Version History</title>
@@ -1092,7 +1180,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-4rqeFp87s6I&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;4rqeFp87s6I&quot; title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-4rqeFp87s6I&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;4rqeFp87s6I&quot; title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -1364,7 +1452,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -1673,7 +1761,7 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-jeB-FIeGKkQ&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;jeB-FIeGKkQ&quot; title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-jeB-FIeGKkQ&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;jeB-FIeGKkQ&quot; title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -1906,7 +1994,7 @@ gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHEL
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-HiFMZGDBzZo&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;HiFMZGDBzZo&quot; title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-HiFMZGDBzZo&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;HiFMZGDBzZo&quot; title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -2363,7 +2451,7 @@ Run the following to apply the configuration file:&lt;/p&gt;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-bpeOjFZklpg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;bpeOjFZklpg&quot; title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=bpeOjFZklpg&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-bpeOjFZklpg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;bpeOjFZklpg&quot; title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=bpeOjFZklpg&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=bpeOjFZklpg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -2798,7 +2886,7 @@ git push origin master
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-pSSA6vlRgtA&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;pSSA6vlRgtA&quot; title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=pSSA6vlRgtA&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-pSSA6vlRgtA&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;pSSA6vlRgtA&quot; title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=pSSA6vlRgtA&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=pSSA6vlRgtA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -3027,7 +3115,7 @@ python analyze-images.py &lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt; 
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-kEEqbeqR6og&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;kEEqbeqR6og&quot; title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=kEEqbeqR6og&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-kEEqbeqR6og&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;kEEqbeqR6og&quot; title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=kEEqbeqR6og&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=kEEqbeqR6og&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -3087,313 +3175,6 @@ python analyze-images.py &lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt; 
         <category>Logbook</category>
         
         <category>Cloud AI</category>
-        
-        
-        <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP324&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/12011?parent=catalog&quot;&gt;Explore Machine Learning Models with Explainable AI: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/126&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. TensorFlow is the dominant AI framework in the industry. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models for machine learning the dataset of the Home Mortgage Disclosure Act (HMDA) in New York.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Launching an AI Platform Notebook&lt;/li&gt;
-  &lt;li&gt;Downloading and exploring a sample dataset&lt;/li&gt;
-  &lt;li&gt;Building and training two different TensorFlow models&lt;/li&gt;
-  &lt;li&gt;Deploying models to the Cloud AI Platform&lt;/li&gt;
-  &lt;li&gt;Using the What-If Tool to compare the models&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;start-a-jupyterlab-notebook-instance&quot;&gt;Start a JupyterLab Notebook instance&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In the Cloud Console, in the search bar, type in &lt;strong&gt;Notebook&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Select &lt;strong&gt;Notebook&lt;/strong&gt; for &lt;strong&gt;AI Platform&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;On the Notebook instances page, click &lt;strong&gt;New Instance&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the Customize instance menu, select the latest version of TensorFlow &lt;em&gt;without&lt;/em&gt; GPUs.&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1138&quot; height=&quot;660&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-1.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1138&quot; height=&quot;660&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-1.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;5&quot;&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the &lt;strong&gt;New notebook instance&lt;/strong&gt; dialog, accept the default options and click &lt;strong&gt;Create&lt;/strong&gt;.&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li text-center&quot;&gt;&lt;amp-img width=&quot;559&quot; height=&quot;506&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-2.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;559&quot; height=&quot;506&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-2.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;6&quot;&gt;
-  &lt;li&gt;After a few minutes, the AI Platform console will display your instance name, followed by Open Jupyterlab.&lt;br /&gt;&lt;br /&gt;Click &lt;strong&gt;Open JupyterLab&lt;/strong&gt;. Your notebook is now set up.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;download-the-challenge-notebook&quot;&gt;Download the Challenge Notebook&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;In your notebook, click the &lt;strong&gt;terminal&lt;/strong&gt;.&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;985&quot; height=&quot;668&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-1.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;985&quot; height=&quot;668&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-1.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;2&quot;&gt;
-  &lt;li&gt;
-    &lt;p&gt;Clone the repo:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/GoogleCloudPlatform/training-data-analyst
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;3&quot;&gt;
-  &lt;li&gt;Go to the enclosing folder: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;training-data-analyst/quests/dei&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open the notebook file &lt;a href=&quot;https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/quests/dei/what-if-tool-challenge.ipynb&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;what-if-tool-challenge.ipynb&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;973&quot; height=&quot;690&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-2.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;973&quot; height=&quot;690&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-2.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;5&quot;&gt;
-  &lt;li&gt;Download and import the dataset &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hmda_2017_ny_all-records_labels&lt;/code&gt; by running the first to the eighth cells (the &lt;strong&gt;Get the Train &amp;amp; Test Data&lt;/strong&gt; section).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;build-and-train-your-models&quot;&gt;Build and train your models&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the second cell of the &lt;strong&gt;Train your first model on the complete dataset&lt;/strong&gt; section, add the following lines to create the model.&lt;/p&gt;
-
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sequential&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input_dim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;sigmoid&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;optimizer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;sgd&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loss&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;mse&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;epochs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1100&quot; height=&quot;668&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task3-build-and-train-models-1.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1100&quot; height=&quot;668&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task3-build-and-train-models-1.jpg&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;2&quot;&gt;
-  &lt;li&gt;
-    &lt;p&gt;Copy the code for training the second model. Modify &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;model&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;limited_model&lt;/code&gt; as well as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;train_data, train_labels&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;limited_train_data, limited_train_labels&lt;/code&gt;. The code for the second model should look like the following.&lt;/p&gt;
-
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;limited_model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sequential&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;limited_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input_dim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;limited_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;sigmoid&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;limited_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;optimizer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;sgd&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loss&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;mse&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;limited_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;limited_train_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;limited_train_labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;epochs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;964&quot; height=&quot;584&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task3-build-and-train-models-2.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;964&quot; height=&quot;584&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task3-build-and-train-models-2.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;3&quot;&gt;
-  &lt;li&gt;Run the cells in this section and wait for the finish of model training.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;deploy-the-models-to-ai-platform&quot;&gt;Deploy the models to AI Platform&lt;/h2&gt;
-
-&lt;p&gt;Moving on to the &lt;strong&gt;Deploy your models to the AI Platform&lt;/strong&gt; section in the notebook.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Replace the values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GCP_PROJECT&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MODEL_BUCKET&lt;/code&gt; with your project ID and a unique bucket name.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REGION&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;us-west1&lt;/code&gt; (Use the same region of the Notebook instance).&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;865&quot; height=&quot;508&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;865&quot; height=&quot;508&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1.jpg&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;3&quot;&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run those three cells and then confirm the created bucket and the uploaded model files in Cloud Storage.&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li text-center&quot;&gt;&lt;amp-img width=&quot;510&quot; height=&quot;166&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task3-build-and-train-models-3.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;510&quot; height=&quot;166&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task3-build-and-train-models-3.jpg&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h5 id=&quot;create-your-first-ai-platform-model-complete_model&quot;&gt;Create your first AI Platform model: complete_model&lt;/h5&gt;
-
-&lt;figure class=&quot;ml-li text-center&quot;&gt;&lt;amp-img width=&quot;678&quot; height=&quot;251&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-3.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;678&quot; height=&quot;251&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-3.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;The specification for creating AI Platform models listed in the notebook&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;ol start=&quot;4&quot;&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add the following codes to the notebook cells for your COMPLETE model.&lt;/p&gt;
-
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ai&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;platform&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MODEL_NAME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;regions&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;REGION&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ai&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;platform&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VERSION_NAME&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MODEL_NAME&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;framework&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;TensorFlow&apos;&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runtime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.1&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MODEL_BUCKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;saved_model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_model&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;staging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bucket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MODEL_BUCKET&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.7&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GCP_PROJECT&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p class=&quot;callout&quot;&gt;&lt;strong&gt;Remark&lt;/strong&gt;: The gcloud ai-platform command group should be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;versions&lt;/code&gt; rather than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;version&lt;/code&gt;.&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li text-center&quot;&gt;&lt;amp-img width=&quot;715&quot; height=&quot;390&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v2.1.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;715&quot; height=&quot;390&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v2.1.jpg&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;figcaption&gt;Create your first AI Platform model: complete_model&lt;br /&gt;(With params --runtime-version=2.1, --python-version=3.7)&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h5 id=&quot;create-your-second-ai-platform-model-limited_model&quot;&gt;Create your second AI Platform model: limited_model&lt;/h5&gt;
-
-&lt;ol start=&quot;5&quot;&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add the following codes to the notebook cells for your LIMITED model.&lt;/p&gt;
-
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ai&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;platform&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LIM_MODEL_NAME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;regions&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;REGION&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ai&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;platform&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;versions&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VERSION_NAME&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LIM_MODEL_NAME&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;framework&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;TensorFlow&apos;&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runtime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.1&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MODEL_BUCKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;saved_limited_model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_limited_model&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;staging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bucket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MODEL_BUCKET&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.7&lt;/span&gt; \
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GCP_PROJECT&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p class=&quot;callout&quot;&gt;&lt;strong&gt;Remark&lt;/strong&gt;: The gcloud ai-platform command group should be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;versions&lt;/code&gt; rather than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;version&lt;/code&gt;.&lt;/p&gt;
-
-    &lt;figure class=&quot;ml-li text-center&quot;&gt;&lt;amp-img width=&quot;712&quot; height=&quot;388&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v2.1.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;712&quot; height=&quot;388&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v2.1.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;figcaption&gt;Create your second AI Platform model: limited_model&lt;br /&gt;(With params --runtime-version=2.1, --python-version=3.7)&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;troubleshooting-runtime-version-issue&quot;&gt;Troubleshooting runtime version issue&lt;/h3&gt;
-
-&lt;p&gt;The lab had a serious bug when I was carrying it out on Jun 12, 2020. I couldn’t pass the third checkpoint if set up the AI Platform models according to the lab instruction. The issue seems to be caused by the inconsistencies between the GCP training material and the Qwiklabs marking scheme. While the notebook guided to create the models with runtime version 2.1 and Python 3.7, the checkpoint message specified the required runtime version = 1.14 as shown in the below picture.&lt;/p&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;452&quot; height=&quot;208&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-error.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;452&quot; height=&quot;208&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-error.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Checkpoint requirement for creating your AI Platform models&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;Unfortunately, it still doesn’t work if you just change the runtime version from 2.1 to 1.14. The runtime version 1.14 must be coupled with Python 3.5, according to the &lt;a href=&quot;https://cloud.google.com/ai-platform/prediction/docs/runtime-version-list#runtime-version-support&quot;&gt;AI Platform Documentation&lt;/a&gt;. Thus, after replacing the runtime and Python version numbers, correspondingly, the codes for creating the AI Platform models should be modified as shown below.&lt;/p&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;675&quot; height=&quot;389&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v1.14.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;675&quot; height=&quot;389&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v1.14.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Create your first AI Platform model: complete_model&lt;br /&gt;(Fixed with --runtime-version=1.14, --python-version=3.5)&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;675&quot; height=&quot;389&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v1.14.webp&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;675&quot; height=&quot;389&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v1.14.png&quot; alt=&quot;Image in ☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Create your second AI Platform model: limited_model&lt;br /&gt; (Fixed with --runtime-version=1.14, --python-version=3.5)&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;use-the-what-if-tool-to-explore-biases&quot;&gt;Use the What-If Tool to explore biases&lt;/h2&gt;
-
-&lt;p&gt;Run the last cell in the notebook to activate What-If Tool. Explore the differences between the two models and you should be able to get the answers as follows:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;1. In the Performance and Fairness tab, slice by sex (applicant_sex_name_Female). How does the complete model compare to the limited model for females?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;399&quot; height=&quot;79&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task5-what-if-ttol-1.webp&quot; alt=&quot;The complete model has equal performance across sexes, whereas the limited model is much worse on females&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;399&quot; height=&quot;79&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task5-what-if-ttol-1.png&quot; alt=&quot;The complete model has equal performance across sexes, whereas the limited model is much worse on females&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;2. Click on one of the datapoints in the middle of the arc. In the datapoint editor, change (applicant_sex_name_Female) to 0, and (applicant_sex_name_Male) to 1. Now run the inference again. How does the model change?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;397&quot; height=&quot;85&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task5-what-if-ttol-2.webp&quot; alt=&quot;The limited model has a significantly larger delta than the complete model, whereas the complete model has almost no change&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;397&quot; height=&quot;85&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task5-what-if-ttol-2.png&quot; alt=&quot;The limited model has a significantly larger delta than the complete model, whereas the complete model has almost no change&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;3. In the Performance and Fairness tab, use the fairness buttons to see the thresholds for the sexes for demographic parity between males and females. How does this change the thresholds for the limited model?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;397&quot; height=&quot;56&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task5-what-if-ttol-3.webp&quot; alt=&quot;The thresholds have to be wildly different for the limited model&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;397&quot; height=&quot;56&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/qwiklab-gsp324-task5-what-if-ttol-3.png&quot; alt=&quot;The thresholds have to be wildly different for the limited model&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-UzP2pX1qayA&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;UzP2pX1qayA&quot; title=&quot;GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab&quot; data-vars-video-title=&quot;GSP324 Explore Machine Learning Models with Explainable AI: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=UzP2pX1qayA&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=UzP2pX1qayA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;35&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JupyterLab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Notebook&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;43&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Download&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Challenge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Notebook&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;05&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;38&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;21&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;40&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Deploy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AI&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Platform&lt;/span&gt; (❌ &lt;span class=&quot;n&quot;&gt;runtime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; = &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;.&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;Python&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;.&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt; )
-&lt;span class=&quot;m&quot;&gt;37&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;09&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Use&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;What&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;If&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Tool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explore&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;biases&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;47&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Deploy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AI&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Platform&lt;/span&gt; (✔️&lt;span class=&quot;n&quot;&gt;Troubleshooting&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;runtime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;issue&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep on reading&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab&quot;&gt;☁ Engineer Data in Google Cloud: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Useful links&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/quests/dei/what-if-tool-challenge.ipynb&quot;&gt;what-if-tool-challenge.ipynb at mGoogleCloudPlatform/training-data-analyst&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.tensorflow.org/api_docs/python/tf/keras/Sequential&quot;&gt;tf.keras.Sequential - TensorFlow Core v2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense&quot;&gt;tf.keras.layers.Dense - TensorFlow Core v2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/ai-platform&quot;&gt;gcloud ai-platform - Google Cloud SDK Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pair-code.github.io/what-if-tool/&quot;&gt;What-If Tool&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 28 Sep 2020 01:25:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>TensorFlow</category>
-        
-        <category>Data Science</category>
-        
-        <category>Machine Learning</category>
         
         
         <category>Cloud</category>
