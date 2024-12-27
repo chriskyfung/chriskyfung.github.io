@@ -4,7 +4,7 @@ title: "☁ Create and Manage Cloud Resources: Challenge Lab | logbook"
 author: chris
 date: 2020-04-22 +0800
 last_modified_at: 2020-06-22 09:45:00 +0800
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/Getting-Started-Create-and-Manage_Cloud_Resources-Challenge-Lab
 redirect_from:

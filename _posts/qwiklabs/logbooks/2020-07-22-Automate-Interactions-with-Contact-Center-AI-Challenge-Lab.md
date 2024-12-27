@@ -2,7 +2,7 @@
 layout: post
 title: "☁ Automate Interactions with Contact Center AI: Challenge Lab | logbook"
 date: 2020-07-22 12:32 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Cloud AI]
 permalink: /blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab

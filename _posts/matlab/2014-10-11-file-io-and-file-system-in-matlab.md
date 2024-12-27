@@ -3,7 +3,7 @@ layout: post
 title: File I/O and File System in MATLAB
 date: 2014-10-07 00:21 +0800
 last_modified_at: 2021-08-15 22:21 +0800
-category: Academic
+categories: [Academic]
 author: chris
 tags: [MATLAB, File I/O]
 permalink: /blog/matlab/file-io-and-file-system-in-matlab

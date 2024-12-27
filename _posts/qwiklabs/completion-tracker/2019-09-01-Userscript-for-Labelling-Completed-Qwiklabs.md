@@ -4,7 +4,7 @@ title: "Userscript for Qwiklabs Lab Completion Tracking v2.0"
 author: chris
 date: 2020-07-03 20:30 +08:00
 last_modified_at: 2021-09-30 18:33 +08:00
-category: [Project, Cloud]
+categories: [Project, Cloud]
 permalink: /blog/qwiklabs/userscript-for-labelling-completed-qwiklabs
 redirect_from:
  - /blog/2019/09/01/Userscript-for-Labelling-Completed-Qwiklabs

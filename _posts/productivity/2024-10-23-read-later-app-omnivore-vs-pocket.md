@@ -5,7 +5,7 @@ date: 2024-10-23 12:15:58 +08:00
 last_modified_at: 2024-10-25 16:03 +08:00
 author: chris
 excerpt: Compare Pocket and Omnivore read-later apps. Discover their features, search functionality, language support, and find the best fit for your reading needs!
-category: Productivity
+categories: [Productivity]
 tags:
   - Read Later App
   - Omnivore

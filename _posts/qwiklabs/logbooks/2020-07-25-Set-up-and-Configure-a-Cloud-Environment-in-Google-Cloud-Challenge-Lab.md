@@ -3,7 +3,7 @@ layout: post
 title: "☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab | logbook"
 date: 2020-07-25 16:00 +0800
 last_modified_at: 2020-10-08 4:25 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab

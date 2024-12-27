@@ -4,7 +4,7 @@ title: "☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge La
 author: chris
 date: 2020-04-24 +0800
 last_modified_at: 2020-06-22 10:05:00 +0800
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Logbook, Docker, Kubernetes]
 permalink: /blog/qwiklabs/deploy-and-manage-cloud-environments-with-google-cloud-challenge-lab
 redirect_from:

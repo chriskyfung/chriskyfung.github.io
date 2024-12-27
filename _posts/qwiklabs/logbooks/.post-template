@@ -2,7 +2,7 @@
 layout: post
 title: "☁"
 date: YYYY-MM-DD HH:MM +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/

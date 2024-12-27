@@ -3,7 +3,7 @@ layout: post
 title: "My APEA conference paper is now available on Scientific.Net"
 author: chris
 date: 2014-08-22
-category: Academic
+categories: [Academic]
 tags: [Research, Conference paper, Single crystal diamond, Molecular dynamics]
 excerpt: K.Y. Fung, C.Y. Tang, Chi Fai Cheung, W.C. Law (2014). Molecular Dynamics Simulation of Plastic Deformation of Diamond at an Elevated Temperature.  Key Engineering Materials, 626, 329. doi:10.4028/www.scientific.net/KEM.626.329
 

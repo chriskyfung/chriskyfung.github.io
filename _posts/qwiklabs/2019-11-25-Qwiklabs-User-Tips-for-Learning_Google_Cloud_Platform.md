@@ -4,7 +4,7 @@ title: "Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool
 date: 2020-02-22 22:10 +0800
 last_modified_at: 2020-06-20 23:36 +0800
 author: chris
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, User tips, Learning map]
 permalink: /blog/qwiklabs/qwiklabs-user-tips-for-learning-google-cloud-platform
 redirect_from:

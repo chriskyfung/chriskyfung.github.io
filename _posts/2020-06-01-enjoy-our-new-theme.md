@@ -3,7 +3,7 @@ layout: post
 title: Launch new theme
 date: 2020-06-01 23:59:00 +0800
 last_modified_at: 2020-07-14 16:00 +0800
-category: Announcement
+categories: [Announcement]
 author: chris
 tags: [Changelog, Jekyll]
 image: 

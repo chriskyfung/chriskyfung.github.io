@@ -2,7 +2,7 @@
 layout: post
 title: Short Notes on Fuzzy Logic
 date: 2015-06-10 08:36 +0800
-category: [Academic, Computer Science]
+categories: [Academic, Computer Science]
 author: chris
 tags: [Fuzzy Logic, Computer Science]
 permalink: /blog/comp-sci/fuzzy-logic

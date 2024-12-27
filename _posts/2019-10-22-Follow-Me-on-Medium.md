@@ -3,7 +3,7 @@ layout: post
 title: Follow Me on Medium !
 date: 2019-10-22 18:15
 author: chris
-category: Announcement
+categories: [Announcement]
 tags:
    - Changelog
    - Qwiklabs

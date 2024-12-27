@@ -3,7 +3,7 @@ layout: post
 title: "☁ Controlling Your Costs [Quiz] | logbook"
 date: 2019-11-26 11:56
 author: chris
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/controlling-your-costs-quiz
 redirect_from:

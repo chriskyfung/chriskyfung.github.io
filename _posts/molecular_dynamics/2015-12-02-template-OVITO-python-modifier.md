@@ -3,7 +3,7 @@ layout: post
 title: "[template] OVITO python modifier"
 author: chris
 date: 2015-11-27
-category: Academic
+categories: [Academic]
 tags: [OVITO, Python, Molecular dynamics]
 css:
     syntax: true

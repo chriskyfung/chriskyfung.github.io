@@ -3,7 +3,7 @@ layout: post
 title:  "QMyths: My badge for 'Challenge: GCP Architecture' disappears?!"
 author: chris
 date: 2020-06-09 +0800
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/where-does-my-bear-badge-go
 image: 

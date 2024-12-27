@@ -2,7 +2,7 @@
 layout: post
 title: "☁ Serverless Firebase Development: Challenge Lab | logbook"
 date: 2021-07-14 11:30 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/serverless-firebase-development-challenge-lab

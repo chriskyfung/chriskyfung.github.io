@@ -3,7 +3,7 @@ layout: post
 title: "☁ Build a Website on Google Cloud: Challenge Lab | logbook"
 date: 2020-07-01 16:30 +0800
 last_modified_at: 2021-06-18 12:01:00 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook]
 permalink: /blog/qwiklabs/build-a-website-on-google-cloud-challenge-lab

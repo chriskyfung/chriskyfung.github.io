@@ -2,7 +2,7 @@
 layout: post
 title: "☁ Ensure Access & Identity in Google Cloud: Challenge Lab | logbook"
 date: 2021-03-12 11:45 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, Secure VPC]
 permalink: /blog/qwiklabs/ensure-access-and-identity-in-google-cloud-challenge-lab

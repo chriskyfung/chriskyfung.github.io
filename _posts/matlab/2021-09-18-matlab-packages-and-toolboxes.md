@@ -2,7 +2,7 @@
 layout: post
 title: "My MATLAB Package and Toolbox Picks"
 date: 2021-09-18 01:12
-category: Academic
+categories: [Academic]
 author: chris
 tags: [MATLAB]
 permalink: /blog/matlab/matlab-packages-and-toolboxes

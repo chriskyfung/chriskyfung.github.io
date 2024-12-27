@@ -3,7 +3,7 @@ layout: post
 title: "Launches Site with GitHub Pages"
 author: chris
 date: 2017-02-26
-category: Announcement
+categories: [Announcement]
 tags: [Changelog]
 ---
 

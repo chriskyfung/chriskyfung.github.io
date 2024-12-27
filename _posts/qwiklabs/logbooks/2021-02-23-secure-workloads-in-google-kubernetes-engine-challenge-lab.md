@@ -3,7 +3,7 @@ layout: post
 title: "☁ Secure Workloads in Google Kubernetes Engine: Challenge Lab | logbook"
 date: 2021-02-23 11:30 +0800
 last_modified_at: 2021-06-27 15:00 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes, WordPress, Secure VPC]
 permalink: /blog/qwiklabs/secure-workloads-in-google-kubernetes-engine-challenge-lab

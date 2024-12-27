@@ -3,7 +3,7 @@ layout: post
 title: "☁ Explore Machine Learning Models with Explainable AI: Challenge Lab | logbook"
 date: 2020-09-28 1:25 +0800
 last_modified_at: 2020-10-29 16:20 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, TensorFlow, Data Science, Machine Learning]
 permalink: /blog/qwiklabs/Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab

@@ -4,7 +4,7 @@ title: "☁ Perform Foundational Infrastructure Tasks in Google Cloud: Challenge
 author: chris
 date: 2020-05-02 +0800
 last_modified_at: 2020-08-04 10:08:00 +0800
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Logbook, Cloud Function]
 permalink: /blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab
 redirect_from:

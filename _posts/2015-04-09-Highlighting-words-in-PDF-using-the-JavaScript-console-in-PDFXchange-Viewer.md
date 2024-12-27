@@ -3,7 +3,7 @@ layout: post
 title: "Highlighting words in PDF using the JavaScript console in PDF-Xchange Viewer"
 author: chris
 date: 2015-04-09
-category: Productivity
+categories: [Productivity]
 tags: [PDF Viewer, Shorthand, User tips]
 css:
     syntax: true

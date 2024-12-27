@@ -2,7 +2,7 @@
 layout: post
 title: "☁ Build and Manage APIs with Apigee: Challenge Lab | logbook"
 date: 2020-09-13 14:25 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Apigee]
 permalink: /blog/qwiklabs/build-and-manage-apis-with-apigee-challenge-lab

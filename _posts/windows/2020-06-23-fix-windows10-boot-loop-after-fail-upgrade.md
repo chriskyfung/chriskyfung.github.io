@@ -2,7 +2,7 @@
 layout: post
 title: Fix reboot loop after a fail upgrade of Windows 10, Version 2004, Build 19041
 date: 2020-06-23 23:18:00 +0800
-category: Windows
+categories: [Windows]
 author: chris
 tags: [Windows 10, WSL2]
 permalink: /blog/windows/fix-windows10-boot-loop-after-fail-upgrade

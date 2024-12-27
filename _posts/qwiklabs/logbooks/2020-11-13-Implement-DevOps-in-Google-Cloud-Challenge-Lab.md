@@ -2,7 +2,7 @@
 layout: post
 title: "☁ Implement DevOps in Google Cloud: Challenge Lab | logbook"
 date: 2020-11-13 16:22 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, Jenkins]
 permalink: /blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab

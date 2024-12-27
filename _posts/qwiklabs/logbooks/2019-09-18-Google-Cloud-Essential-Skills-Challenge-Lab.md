@@ -3,7 +3,7 @@ layout: post
 title: "☁ Google Cloud Essential Skills: Challenge Lab | logbook"
 author: chris
 date: 2019-09-18
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Logbook]
 permalink: /blog/qwiklabs/Google-Cloud-Essential-Skills-Challenge-Lab
 redirect_from:

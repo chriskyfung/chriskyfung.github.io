@@ -3,7 +3,7 @@ layout: post
 title: "Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables"
 author: chris
 date: 2014-07-12
-category: Academic
+categories: [Academic]
 tags: [LAMMPS, Linux, Command-line, Molecular dynamics]
 css:
     syntax: true

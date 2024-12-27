@@ -3,7 +3,7 @@ layout: post
 title: Evernote Tips ─ Create shortcuts for inserting tables and formatting texts with PhraseExpress
 date: 2017-06-09 15:36:40 +0800
 author: chris
-category: Productivity
+categories: [Productivity]
 tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/add-table-and-formatting-in-evernote-with-phraseexpress
 amp:

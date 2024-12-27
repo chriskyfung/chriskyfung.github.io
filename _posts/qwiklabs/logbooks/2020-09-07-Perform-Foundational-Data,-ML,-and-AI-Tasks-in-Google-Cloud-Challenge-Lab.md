@@ -3,7 +3,7 @@ layout: post
 title: "☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab | logbook"
 date: 2020-09-08 05:30 +0800
 last_modified_at: 2021-06-25 10:18 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning, Cloud AI]
 permalink: /blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab

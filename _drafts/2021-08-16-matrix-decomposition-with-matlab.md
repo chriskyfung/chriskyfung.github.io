@@ -2,7 +2,7 @@
 layout: post
 title: Matrix Decomposition With MATLAB
 date: 2014-10-08 16:15 +0800
-category: Academic
+categories: [Academic]
 author: chris
 tags: [MATLAB, Linear Algebra]
 permalink: /blog/matlab/matrix-decomposition-with-matlab

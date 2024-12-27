@@ -2,7 +2,7 @@
 layout: post
 title: "☁ Engineer Data in Google Cloud: Challenge Lab | logbook"
 date: 2020-08-26 15:30 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science, Machine Learning]
 permalink: /blog/qwiklabs/Engineer-Data-in-Google-Cloud-Challenge-Lab

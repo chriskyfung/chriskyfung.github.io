@@ -2,7 +2,7 @@
 layout: post
 title: How to add a custom Open Graph image tag to your tumblr blog
 date: 2019-10-30 00:00
-category: Web Development
+categories: [Web Development]
 author: chris
 tags: [Tumblr, Custom Theme, Open Graph, Meta Tags]
 permalink: /blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog

@@ -3,7 +3,7 @@ layout: post
 title: Useful command lines in Ubuntu that help using terminals
 date: 2014-10-08 16:21
 last_modified_at: 2017-03-01 17:59
-category: Linux
+categories: [Linux]
 author: chris
 tags: [Ubuntu]
 permalink: /blog/linux/Useful-Ubuntu-Commands

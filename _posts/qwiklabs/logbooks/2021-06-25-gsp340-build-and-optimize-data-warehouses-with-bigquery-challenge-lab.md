@@ -2,7 +2,7 @@
 layout: post
 title: "☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab | logbook"
 date: 2021-06-25 10:30 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab

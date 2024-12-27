@@ -2,7 +2,7 @@
 layout: post
 title: Installation of Android Studio and SDK Tools
 date: 2016-01-18 21:36
-category: Developer tools
+categories: [Developer tools]
 author: chris
 tags: [Android Studio]
 image: 

@@ -3,7 +3,7 @@ layout: post
 title: "My conference trip for AEPA 2014"
 author: chris
 date: 2014-09-12
-category: Academic
+categories: [Academic]
 tags: [Research, Conference, Taiwan]
 image: 
    path: /images/posts/events/20140912_AEPA.jpg

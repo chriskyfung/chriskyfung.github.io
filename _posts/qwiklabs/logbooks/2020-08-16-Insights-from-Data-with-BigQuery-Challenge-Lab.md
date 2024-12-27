@@ -3,7 +3,7 @@ layout: post
 title: "☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) | logbook"
 date: 2020-08-16 06:48 +0800
 last_modified_at: 2020-10-08 03:56 +0800
-category: Cloud
+categories: [Cloud]
 author: chris
 tags: [Qwiklabs, Google Cloud, Logbook, BigQuery, Data Science]
 permalink: /blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab

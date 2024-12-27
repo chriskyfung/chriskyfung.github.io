@@ -3,7 +3,7 @@ layout: post
 title: Evernote Tips ─ Create a Quick Search Hotkey with PhraseExpress
 date: 2017-05-01 20:48:24 +0800
 author: chris
-category: Productivity
+categories: [Productivity]
 tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/quick-search-evernote-with-phraseexpress
 css:

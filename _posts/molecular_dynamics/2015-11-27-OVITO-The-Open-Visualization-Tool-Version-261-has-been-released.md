@@ -3,7 +3,7 @@ layout: post
 title: "OVITO - The Open Visualization Tool - Version 2.6.1 - has been released"
 author: chris
 date: 2015-11-27
-category: Academic
+categories: [Academic]
 tags: [OVITO, Molecular dynamics]
 ---
 

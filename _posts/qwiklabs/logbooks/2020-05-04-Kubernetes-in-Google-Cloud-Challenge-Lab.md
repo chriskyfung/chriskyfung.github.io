@@ -4,7 +4,7 @@ title: "☁ Deploy to Kubernetes in Google Cloud: Challenge Lab | logbook"
 author: chris
 date: 2020-05-04 +0800
 last_modified_at: 2021-06-24 11:22:00 +0800
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Kubernetes, Logbook, Jenkins]
 permalink: /blog/qwiklabs/deploy-to-kubernetes-in-google-cloud-challenge-lab
 redirect_from:

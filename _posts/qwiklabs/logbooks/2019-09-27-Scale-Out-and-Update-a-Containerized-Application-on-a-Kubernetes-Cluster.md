@@ -3,7 +3,7 @@ layout: post
 title: "☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster | logbook"
 author: chris
 date: 2019-09-27 +0800
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Logbook, Kubernetes]
 permalink: /blog/qwiklabs/Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster
 redirect_from:

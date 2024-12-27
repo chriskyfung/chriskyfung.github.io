@@ -3,7 +3,7 @@ layout: post
 title: "☁ Migrate a MySQL Database to Google Cloud SQL | logbook"
 author: chris
 date: 2019-09-30
-category: Cloud
+categories: [Cloud]
 tags: [Qwiklabs, Google Cloud, Logbook, WordPress, MySQL]
 permalink: /blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
 redirect_from:

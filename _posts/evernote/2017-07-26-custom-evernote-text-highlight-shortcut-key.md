@@ -3,7 +3,7 @@ layout: post
 title: Evernote Tips ─ Custom shortcut key for Evernote Text Highlighting
 date: 2017-06-09 15:36:40 +0800
 author: chris
-category: Productivity
+categories: [Productivity]
 tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/custom-evernote-text-highlight-shortcut-key
 image: 

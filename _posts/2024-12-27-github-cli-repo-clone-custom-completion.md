@@ -2,14 +2,21 @@
 layout: post
 title: "Speed Up GitHub CLI: Custom Completion for 'gh repo clone' Command"
 author: chris
-date: 2024-12-27 11:12 +0800
+date: 2024-12-27 15:12 +0800
 permalink: /github-cli-repo-clone-custom-completion/
 image:
-  path: /assets/images/write-2160925.svg
-  width: "730"
-  height: "431"
+   width: "730"
+   height: "431"
+   path: /images/posts/coding/gh-repo-clone-custom-completion-cover.jpg
 fmContentType: post
 keywords: github cli, gh repo clone, bash completion, zsh completion, git automation
+categories: 
+   - Developer tools	
+tags:
+   - Bash
+   - Command-line
+   - GitHub CLI
+   - Autocompletions
 excerpt: Learn how to supercharge your GitHub CLI experience with custom bash completion for the 'gh repo clone' command. Includes step-by-step setup and practical examples.
 ---
 
