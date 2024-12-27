@@ -63,6 +63,8 @@ gh repo clone username/repo -- --depth 1
    curl -o ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
    ```
 
+   You can view the source code and contribute on [GitHub Gist](https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280).
+
 2. **Add to your shell**:
 
    ```bash
