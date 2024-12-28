@@ -3,11 +3,13 @@ layout: post
 title: "Speed Up GitHub CLI: Custom Completion for 'gh repo clone' Command"
 author: chris
 date: 2024-12-27 15:12 +0800
-permalink: /github-cli-repo-clone-custom-completion/
+permalink: /blog/devtools/github-cli-repo-clone-custom-completion/
+redirect_from:
+   - /github-cli-repo-clone-custom-completion/
 image:
    width: "730"
    height: "431"
-   path: /images/posts/coding/gh-repo-clone-custom-completion-cover.jpg
+   path: /images/posts/devtools/gh-repo-clone-custom-completion-cover.jpg
 fmContentType: post
 keywords: github cli, gh repo clone, bash completion, zsh completion, git automation
 categories:
