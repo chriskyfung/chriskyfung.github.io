@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Dec 2024 18:23:52 +0800</pubDate>
-    <lastBuildDate>Fri, 27 Dec 2024 18:23:52 +0800</lastBuildDate>
+    <pubDate>Sat, 28 Dec 2024 11:33:20 +0800</pubDate>
+    <lastBuildDate>Sat, 28 Dec 2024 11:33:20 +0800</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -53,7 +53,7 @@ gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;p&gt;You can view the source code and contribute on &lt;a href=&quot;https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280&quot;&gt;GitHub Gist&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;You can view the source code on &lt;strong&gt;&lt;a href=&quot;https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280&quot;&gt;GitHub Gist&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Add to your shell&lt;/strong&gt;:&lt;/p&gt;
@@ -72,17 +72,17 @@ gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping Up&lt;/h2&gt;
 
-&lt;p&gt;Implementing this custom completion function can transform your GitHub CLI experience by making it more efficient and user-friendly. My coding sessions are now more about creativity and less about the little frustrations.&lt;/p&gt;
+&lt;p&gt;Adding this custom completion function can really level up your GitHub CLI game, making it smoother and more user-friendly without the little frustrations. Give it a try and see how much faster your GitHub workflow becomes.&lt;/p&gt;
 
-&lt;p&gt;Try it yourself and see how much faster your GitHub workflow becomes. Questions or suggestions? Feel free to contribute to the script on my GitHub!&lt;/p&gt;
-
-&lt;p&gt;Happy coding! 🚀&lt;/p&gt;
+&lt;p&gt;Got questions or suggestions?
+Feel free to contribute to the script on GitHub!  &lt;br /&gt;
+Happy coding! 🚀&lt;/p&gt;
 </description>
         <pubDate>Fri, 27 Dec 2024 15:12:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/github-cli-repo-clone-custom-completion/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/github-cli-repo-clone-custom-completion/</guid>
+        <link>https://chriskyfung.github.io/blog/devtools/github-cli-repo-clone-custom-completion/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/github-cli-repo-clone-custom-completion/</guid>
         
         <category>Bash</category>
         
