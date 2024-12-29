@@ -19,6 +19,7 @@ tags:
    - Command-line
    - GitHub CLI
    - Autocompletions
+   - Linux
 excerpt: Learn how to supercharge your GitHub CLI experience with custom bash completion for the 'gh repo clone' command. Includes step-by-step setup and practical examples.
 css:
    syntax: true
