@@ -3,8 +3,14 @@ layout: post
 title: "Tip for scripting LAMMPS: Create And Rename A Folder Based On The Input Variables"
 author: chris
 date: 2014-07-12
-categories: [Academic]
-tags: [LAMMPS, Linux, Command-line, Molecular dynamics]
+categories:
+    - Academic
+tags:
+    - LAMMPS
+    - Linux
+    - Bash
+    - Command-line
+    - Molecular dynamics
 css:
     syntax: true
 ---
@@ -22,11 +28,15 @@ img="lammps/new_3folder_80x80.png" alt="image: New folder with LAMMPS scripts" c
 
 ### Methods
 
-I use the mkdir and cp commands this time.
+I use the `mkdir` and `cp` commands this time.
 
-`shell mkdir FOLDERNAME`  make a new directory named to be FOLDERNAME
+```shell
+# make a new directory named to be FOLDERNAME
+mkdir FOLDERNAME
 
-`shell cp FILENAME  DESTINATION`   copy the file to another directory
+# copy the file to another directory
+cp FILENAME  DESTINATION
+```
 
 ### Example input script
 
@@ -63,7 +73,7 @@ dump         1 all xyz  500 ${respath}/dump.*.lammpstrj
 ### Example command line
 
 ```bash
-$ lammps_linux  -v potential  y1990 -v vx  1.0 < in.script
+lammps_linux  -v potential  y1990 -v vx  1.0 < in.script
 ```
 
 ### Results
