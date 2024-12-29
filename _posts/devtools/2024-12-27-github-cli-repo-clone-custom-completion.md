@@ -24,7 +24,7 @@ css:
    syntax: true
 ---
 
-Ever found yourself typing `gh repo clone` and struggling to remember repository names? I've been there. As a developer who works with dozens of repositories daily, I needed a better solution. That's why I created a custom completion script that makes the GitHub CLI's clone command more powerful and user-friendly.
+Ever found yourself typing [`gh repo clone`](https://cli.github.com/manual/gh_repo_clone) and struggling to remember repository names? I've been there. As a developer who works with dozens of repositories daily, I needed a better solution. That's why I created a custom completion script that makes the GitHub CLI's clone command more powerful and user-friendly.
 
 ## Why Custom Completion Matters
 
@@ -40,21 +40,24 @@ I struggled to recall exact repository names, some of which are a mouthful. Then
 Driven by the desire for seamless interaction, I embarked on a quest to enhance my command-line experience. Instead of wrestling with repository names and flags, I decided to create a custom completion script for the `gh repo clone` command. The script enables:
 
 - **Smart Repository Suggestions**: Instantly see matching repositories as you type.
-- **Flag Completion**: Access additional `git clone` options for `gh repo clone` by pressing `tab` twice after the `--` flag.
+- **Flag Completion**: Access additional [`git clone`](https://git-scm.com/docs/git-clone) options for `gh repo clone` by pressing `tab` twice after the `--` flag.
 
 The completion script automatically populates suggestions, enabling faster interaction and execution with the GitHub CLI.
 
 ### Common Use Cases
 
 ```bash
-# Clone to a custom directory
-gh repo clone username/repo
+# Clone only a single branch
+gh repo clone username/repo -- --single-branch
 
 # Clone with a specific branch
-gh repo clone username/repo -- --branch feature-branch
+gh repo clone username/repo -- --branch feature-branch --single-branch
 
 # Clone with depth limit
 gh repo clone username/repo -- --depth 1
+
+# Clone with sparse checkout
+gh repo clone username/repo -- --sparse
 ```
 
 ## Quick Setup Guide
