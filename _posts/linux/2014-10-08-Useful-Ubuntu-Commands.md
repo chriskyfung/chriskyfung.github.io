@@ -3,15 +3,19 @@ layout: post
 title: Useful command lines in Ubuntu that help using terminals
 date: 2014-10-08 16:21
 last_modified_at: 2017-03-01 17:59
-categories: [Linux]
+categories:
+  - Linux
 author: chris
-tags: [Ubuntu]
+tags:
+  - Linux
+  - Ubuntu
+  - Command-line
 permalink: /blog/linux/Useful-Ubuntu-Commands
 redirect_from:
- - /blog/2014/10/08/Useful-Ubuntu-Commands
+  - /blog/2014/10/08/Useful-Ubuntu-Commands
 excerpt: A short note about my favorite terminal application and the commands to show running processes, get root permission for GUI file manager, find previous commands and execute a shell script.
 css:
-   syntax: true
+  syntax: true
 ---
 
 <!--more-->
@@ -63,6 +67,7 @@ sudo apt-get install terminator
 - `ps -A`
 
 For more infomation, please find from:
+
 - [Show All Running Processes in Linux using ps/htop commands - nixCraft](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/)
 - [How to Manage Processes from the Linux Terminal: 10 Commands You Need to Know - How-To Geek](https://www.howtogeek.com/107217/how-to-manage-processes-from-the-linux-terminal-10-commands-you-need-to-know/)
 
