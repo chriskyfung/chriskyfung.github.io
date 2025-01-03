@@ -10,8 +10,7 @@ image:
    width: "730"
    height: "431"
    path: /images/posts/devtools/gh-repo-clone-custom-completion-cover.jpg
-fmContentType: post
-keywords: github cli, gh repo clone, bash completion, zsh completion, git automation
+keywords: [github cli, gh repo clone, bash completion, git automation]
 categories:
    - Developer tools
 tags:
@@ -23,6 +22,7 @@ tags:
 excerpt: Learn how to supercharge your GitHub CLI experience with custom bash completion for the 'gh repo clone' command. Includes step-by-step setup and practical examples.
 css:
    syntax: true
+last_modified_at: 2025-01-03 08:01 +0800
 ---
 
 Ever found yourself typing [`gh repo clone`](https://cli.github.com/manual/gh_repo_clone) and struggling to remember repository names? I've been there. As a developer who works with dozens of repositories daily, I needed a better solution. That's why I created a custom completion script that makes the GitHub CLI's clone command more powerful and user-friendly.
@@ -92,3 +92,9 @@ Adding this custom completion function can really level up your GitHub CLI game,
 Got questions or suggestions?
 Feel free to contribute to the script on GitHub!  \
 Happy coding! 🚀
+
+## References
+
+- [Scripting with GitHub CLI - The GitHub Blog](https://github.blog/engineering/engineering-principles/scripting-with-github-cli/)
+- [The Linux .bashrc File: What It Is, Plus 6 Things You Can Do With It](https://www.howtogeek.com/the-linux-bashrc-file-explained/)
+- [What's the Difference Between .bashrc and .profile on Linux?](https://www.howtogeek.com/830549/whats-the-difference-between-bashrc-and-profile-on-linux/)
