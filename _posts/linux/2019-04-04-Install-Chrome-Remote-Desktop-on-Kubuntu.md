@@ -142,7 +142,7 @@ Although the above method can set up the Chrome Remote Desktop on an Ubuntu with
 
 I hope this article can help you to solve your problem.
 
-**References**
+**References**:
 
 1. [How to Install Chrome Remote Desktop on Ubuntu 18.04 - Medium](https://medium.com/@vsimon/how-to-install-chrome-remote-desktop-on-ubuntu-18-04-52d99980d83e)
 2. [Access another computer with Chrome Remote Desktop - Computer - Google Chrome Help](https://support.google.com/chrome/answer/1649523)
@@ -150,5 +150,4 @@ I hope this article can help you to solve your problem.
 
 * * *
 
-**Related**: [Useful command lines in Ubuntu that help using terminals
-](/blog/linux/Useful-Ubuntu-Commands)
+**Related**: [Useful command lines in Ubuntu that help using terminals](/blog/linux/Useful-Ubuntu-Commands)
