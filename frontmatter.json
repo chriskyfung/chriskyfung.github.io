@@ -263,6 +263,8 @@
   "frontMatter.content.publicFolder": "assets",
   "frontMatter.preview.host": "http://localhost:4000",
   "frontMatter.site.baseURL": "https://chriskyfung.github.io",
+  "frontMatter.taxonomy.seoDescriptionField": "excerpt",
+  "frontMatter.taxonomy.seoTitleLength": 70,
   "frontMatter.website.host": "https://chriskyfung.github.io",
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"
