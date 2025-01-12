@@ -234,7 +234,11 @@
 </url>
 <url>
 <loc>https://chriskyfung.github.io/blog/devtools/github-cli-repo-clone-custom-completion/</loc>
-<lastmod>2024-12-27T15:12:00+08:00</lastmod>
+<lastmod>2025-01-03T08:01:00+08:00</lastmod>
+</url>
+<url>
+<loc>https://chriskyfung.github.io/blog/devtools/helpful-git-github-cli-commands/</loc>
+<lastmod>2025-01-11T03:01:00+08:00</lastmod>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/about</loc>
@@ -280,6 +284,9 @@
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/linux/</loc>
+</url>
+<url>
+<loc>https://chriskyfung.github.io/tag/bash/</loc>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/research/</loc>
@@ -436,9 +443,6 @@
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/tensorflow/</loc>
-</url>
-<url>
-<loc>https://chriskyfung.github.io/tag/bash/</loc>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/github-cli/</loc>

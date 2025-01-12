@@ -5,13 +5,299 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Dec 2024 11:33:20 +0800</pubDate>
-    <lastBuildDate>Sat, 28 Dec 2024 11:33:20 +0800</lastBuildDate>
+    <pubDate>Sun, 12 Jan 2025 11:09:56 +0800</pubDate>
+    <lastBuildDate>Sun, 12 Jan 2025 11:09:56 +0800</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
+        <title>Helpful Git and GitHub CLI Commands You Should Know</title>
+        <description>&lt;p&gt;Hello, future innovators and researchers!&lt;/p&gt;
+
+&lt;p&gt;Whether you’re studying computer science, conducting scientific research, working with data, or diving into AI and machine learning, mastering &lt;strong&gt;Git&lt;/strong&gt; and &lt;strong&gt;GitHub&lt;/strong&gt; can significantly enhance your workflow. These tools are not just for traditional software developers; they play a crucial role in managing code, data sets, and collaborative projects across various scientific disciplines.&lt;/p&gt;
+
+&lt;p&gt;In this post, we’ll explore essential &lt;strong&gt;Git&lt;/strong&gt; and &lt;strong&gt;GitHub CLI&lt;/strong&gt; commands through relatable scenarios and best practices that will help you streamline your projects and drive your research forward. &lt;em&gt;Let’s get started!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;esential-git-commands&quot;&gt;Esential Git Commands&lt;/h2&gt;
+
+&lt;h3 id=&quot;enable-git-tab-completion-in-linux-bash&quot;&gt;Enable Git Tab Completion in Linux Bash&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/share/bash-completion/completions/git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Imagine you’re in the middle of an intense coding session, tab completion speeds up command entry and minimizing errors, so you can focus more on what’s important—your research.&lt;/p&gt;
+
+&lt;h3 id=&quot;viewing-git-history-at-a-glance&quot;&gt;Viewing Git History at a Glance&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log &lt;span class=&quot;nt&quot;&gt;--oneline&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Picture this: You’re tracking the evolution of a complex code project. Viewing your Git history in a simplified one-line format helps you quickly review changes and ensure that your latest modifications align with your project’s goals.&lt;/p&gt;
+
+&lt;h3 id=&quot;change-the-date-of-the-last-commit&quot;&gt;Change the date of the last commit&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;........&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;undoing-changes-soft-reset&quot;&gt;Undoing Changes: Soft Reset&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset &lt;span class=&quot;nt&quot;&gt;--soft&lt;/span&gt; HEAD^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Why It’s Useful&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;A soft reset lets you undo your last commit without losing your hard work, allowing you to address the mistake swiftly.&lt;/p&gt;
+
+&lt;h3 id=&quot;interactive-rebase-organize-your-commits&quot;&gt;Interactive Rebase: Organize Your Commits&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Interactive rebase lets you reorganize commit sequences for clarity, ensuring that every team member can easily track the project’s progress.&lt;/p&gt;
+
+&lt;h3 id=&quot;cleaning-up-remove-unwanted-files&quot;&gt;Cleaning Up: Remove Unwanted Files&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; dir1/ dir2/
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Remove obsolete files&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Best Practice&lt;/strong&gt;:
+During long research projects, clutter can quickly accumulate. Regularly cleaning up your repository by removing outdated files ensures your work remains tidy and efficient, much like a well-organized lab.&lt;/p&gt;
+
+&lt;h3 id=&quot;push-commits-to-remote-upto-a-special-commit-in-the-git-history&quot;&gt;Push commits to remote (upto a special commit in the git history)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;commit ref&amp;gt;:&amp;lt;remote branch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;efficient-branch-management&quot;&gt;Efficient Branch Management&lt;/h3&gt;
+
+&lt;h3 id=&quot;create-a-new-branch-from-the-current-branch&quot;&gt;#Create a new branch from the current branch&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &amp;lt;new branch name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pick-a-commit-from-another-branch-and-add-it-to-the-current-branch&quot;&gt;#Pick a commit from another branch and add it to the current branch&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git cherry-pick &amp;lt;commit ref&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;rebase-new-commits-in-branch-b-onto-branch-a&quot;&gt;Rebase new commits in branch B onto branch A&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase branch-A branch-B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Narrative&lt;/strong&gt;: Suppose you’re developing different models for data analysis. Creating separate branches allows you to explore various methodologies concurrently, merging successful approaches into your main branch once validated.&lt;/p&gt;
+
+&lt;h2 id=&quot;useful-github-cli-commands&quot;&gt;Useful GitHub CLI Commands&lt;/h2&gt;
+
+&lt;p&gt;Official manual: &lt;a href=&quot;https://cli.GitHub.com/manual/&quot;&gt;https://cli.GitHub.com/manual/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;securely-authenticate-with-github&quot;&gt;Securely Authenticate with GitHub&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh auth login
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Importance&lt;/strong&gt;:
+In an era where data security is paramount, securely connecting your GitHub account ensures that your sensitive research data remains protected while facilitating seamless collaboration.&lt;/p&gt;
+
+&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_auth_login&quot;&gt;https://cli.GitHub.com/manual/gh_auth_login&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;repository-management-made-easy&quot;&gt;Repository Management Made Easy&lt;/h3&gt;
+
+&lt;h4 id=&quot;list-all-repositories&quot;&gt;List all repositories&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo list &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;owner&amp;gt;] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;flags]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_list&quot;&gt;https://cli.GitHub.com/manual/gh_repo_list&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;cloning-repositories&quot;&gt;Cloning Repositories&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_clone&quot;&gt;https://cli.GitHub.com/manual/gh_repo_clone&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario&lt;/strong&gt;: As a researcher juggling multiple projects, quickly accessing your repositories becomes crucial. These commands allow effortless management, so you can focus on your research rather than administrative tasks.&lt;/p&gt;
+
+&lt;h3 id=&quot;advanced-cloning-techniques&quot;&gt;Advanced Cloning Techniques&lt;/h3&gt;
+
+&lt;h4 id=&quot;perform-a-shallow-clone&quot;&gt;Perform a Shallow Clone&lt;/h4&gt;
+
+&lt;p&gt;A shallow clone allows you to clone a repository with a limited history, which can save time and space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;perform-a-partial-clone&quot;&gt;Perform a Partial Clone&lt;/h4&gt;
+
+&lt;p&gt;A partial clone allows you to clone a repository without downloading all the history, which can save time and space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;perform-a-sparse-checkout&quot;&gt;Perform a Sparse Checkout&lt;/h4&gt;
+
+&lt;p&gt;Sparse checkout allows you to check out only a subset of files from the repository.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone the repository:&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enable sparse checkout:&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout init &lt;span class=&quot;nt&quot;&gt;--cone&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Define the directories or files you want to include:&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &amp;lt;directory-or-file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;example-usage&quot;&gt;Example Usage&lt;/h4&gt;
+
+&lt;p&gt;To efficiently clone a large repository with many binary files, you can combine shallow clone, partial clone, and sparse checkout:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &amp;lt;repository&amp;gt;
+git sparse-checkout init &lt;span class=&quot;nt&quot;&gt;--cone&lt;/span&gt;
+git sparse-checkout &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &amp;lt;directory-or-file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This approach minimizes the amount of data transferred and stored locally by only including the necessary files and excluding large binary files.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Benefit&lt;/strong&gt;:
+When dealing with large datasets or codebases, these techniques minimize storage use and download times, getting you to the analysis phase faster—a vital efficiency for any data-driven research project.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-and-view-repositories&quot;&gt;Create and View Repositories&lt;/h3&gt;
+
+&lt;h4 id=&quot;create-a-new-private-repository-on-github-based-on-a-template-repository&quot;&gt;Create a new private repository on GitHub based on a template repository&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create &amp;lt;owner&amp;gt;/&amp;lt;new-name&amp;gt; &lt;span class=&quot;nt&quot;&gt;--private&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;lt;repository&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_create&quot;&gt;https://cli.GitHub.com/manual/gh_repo_create&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;viewing-repository-details&quot;&gt;Viewing Repository Details&lt;/h4&gt;
+
+&lt;h3 id=&quot;gh-repo-view&quot;&gt;gh repo view&lt;/h3&gt;
+
+&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_view&quot;&gt;https://cli.GitHub.com/manual/gh_repo_view&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;open-a-repository-in-the-browser&quot;&gt;Open a repository in the browser&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--web&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;list-the-description-and-topics-of-a-remote-repository-in-json-format&quot;&gt;List the description and topics of a remote repository in JSON format&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; description,repositoryTopics
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;list-the-projects-of-a-remote-repository-in-json-format&quot;&gt;List the projects of a remote repository in JSON format&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; description,repositoryTopics
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;check-the-disk-usage-of-a-remote-repository-in-json-format&quot;&gt;Check the disk usage of a remote repository in JSON format&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; diskUsage
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Insight&lt;/strong&gt;:
+Protect your academic work and sensitive data by creating private repositories, while still having the flexibility to view and share your project details with advisors and peers.&lt;/p&gt;
+
+&lt;h3 id=&quot;enhance-and-edit-repositories&quot;&gt;Enhance and Edit Repositories&lt;/h3&gt;
+
+&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_edit&quot;&gt;https://cli.GitHub.com/manual/gh_repo_edit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;add-topics-to-a-remote-repository&quot;&gt;Add topics to a remote repository&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--add-topic&lt;/span&gt; &amp;lt;strings&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;:
+Categorizing your repositories effectively enhances their discoverability, connecting your work with a broader academic audience and facilitating interdisciplinary collaboration.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;By mastering these Git and GitHub CLI commands, you equip yourself with the tools needed to manage and share your research projects efficiently. These commands not only streamline your workflow but also enhance your collaboration skills, setting you up for success in both academic and professional settings. As you explore these tools, you’ll find that they offer endless possibilities for innovation and efficiency. So go ahead, experiment, and integrate these commands into your research toolkit. Remember, the more you practice, the more proficient you’ll become. Happy researching!&lt;/p&gt;
+
+&lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Official Manuals and Guides: Dive deeper into command documentation for a comprehensive understanding.&lt;/li&gt;
+  &lt;li&gt;Community Forums: Engage with a network of learners and professionals to exchange insights and solutions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unleash the full potential of Git and GitHub, and watch your research endeavors reach new heights! 🌟&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Jan 2025 03:01:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/devtools/helpful-git-github-cli-commands/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/helpful-git-github-cli-commands/</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Speed Up GitHub CLI: Custom Completion for &apos;gh repo clone&apos; Command</title>
-        <description>&lt;p&gt;Ever found yourself typing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; and struggling to remember repository names? I’ve been there. As a developer who works with dozens of repositories daily, I needed a better solution. That’s why I created a custom completion script that makes the GitHub CLI’s clone command more powerful and user-friendly.&lt;/p&gt;
+        <description>&lt;p&gt;Ever found yourself typing &lt;a href=&quot;https://cli.github.com/manual/gh_repo_clone&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt;&lt;/a&gt; and struggling to remember repository names? I’ve been there. As a developer who works with dozens of repositories daily, I needed a better solution. That’s why I created a custom completion script that makes the GitHub CLI’s clone command more powerful and user-friendly.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-custom-completion-matters&quot;&gt;Why Custom Completion Matters&lt;/h2&gt;
 
@@ -27,21 +313,24 @@ my-awesome-project    my-docker-images     my-python-scripts
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Smart Repository Suggestions&lt;/strong&gt;: Instantly see matching repositories as you type.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Flag Completion&lt;/strong&gt;: Access additional &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; options for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; by pressing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tab&lt;/code&gt; twice after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; flag.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Flag Completion&lt;/strong&gt;: Access additional &lt;a href=&quot;https://git-scm.com/docs/git-clone&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt;&lt;/a&gt; options for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; by pressing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tab&lt;/code&gt; twice after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; flag.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The completion script automatically populates suggestions, enabling faster interaction and execution with the GitHub CLI.&lt;/p&gt;
 
 &lt;h3 id=&quot;common-use-cases&quot;&gt;Common Use Cases&lt;/h3&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Clone to a custom directory&lt;/span&gt;
-gh repo clone username/repo
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Clone only a single branch&lt;/span&gt;
+gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# Clone with a specific branch&lt;/span&gt;
-gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branch&lt;/span&gt; feature-branch
+gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branch&lt;/span&gt; feature-branch &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# Clone with depth limit&lt;/span&gt;
 gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
+
+&lt;span class=&quot;c&quot;&gt;# Clone with sparse checkout&lt;/span&gt;
+gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--sparse&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;quick-setup-guide&quot;&gt;Quick Setup Guide&lt;/h2&gt;
@@ -79,6 +368,14 @@ gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt
 &lt;p&gt;Got questions or suggestions?
 Feel free to contribute to the script on GitHub!  &lt;br /&gt;
 Happy coding! 🚀&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.blog/engineering/engineering-principles/scripting-with-github-cli/&quot;&gt;Scripting with GitHub CLI - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.howtogeek.com/the-linux-bashrc-file-explained/&quot;&gt;The Linux .bashrc File: What It Is, Plus 6 Things You Can Do With It&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.howtogeek.com/830549/whats-the-difference-between-bashrc-and-profile-on-linux/&quot;&gt;What’s the Difference Between .bashrc and .profile on Linux?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Fri, 27 Dec 2024 15:12:00 +0800</pubDate>
         <link>https://chriskyfung.github.io/blog/devtools/github-cli-repo-clone-custom-completion/</link>
@@ -91,6 +388,8 @@ Happy coding! 🚀&lt;/p&gt;
         <category>GitHub CLI</category>
         
         <category>Autocompletions</category>
+        
+        <category>Linux</category>
         
         
         <category>Developer tools</category>
@@ -2937,244 +3236,6 @@ git push origin master
         <category>Logbook</category>
         
         <category>Jenkins</category>
-        
-        
-        <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Integrate with Machine Learning APIs: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP329&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/12704?parent=catalog&quot;&gt;Integrate with Machine Learning APIs: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/136&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Grant the service account admin privileges for BigQuery and Cloud Storage.&lt;/li&gt;
-  &lt;li&gt;Create and download a service account credentials file to provide Google Cloud credentials to a Python application.&lt;/li&gt;
-  &lt;li&gt;Modify a Python script to extract text from image files using the Google Cloud Vision API.&lt;/li&gt;
-  &lt;li&gt;Modify a Python script to translate text using the Google Translate API.&lt;/li&gt;
-  &lt;li&gt;Check which languages are in the extracted data by executing a BigQuery SQL query.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-1-configure-a-service-account-to-access-the-machine-learning-apis-bigquery-and-cloud-storage&quot;&gt;Task 1: Configure a service account to access the Machine Learning APIs, BigQuery, and Cloud Storage&lt;/h2&gt;
-
-&lt;p&gt;In the Cloud Shell, create a new service account that provides credentials for the script using the following commands. (Remember to replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Your_Project_ID&amp;gt;&lt;/code&gt; with your GCP project ID)&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PROJECT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;lt;Your_Project_ID&amp;gt;
-gcloud iam service-accounts create my-account &lt;span class=&quot;nt&quot;&gt;--display-name&lt;/span&gt; my-account
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Tip 1. You do not need to provide any specific permissions to a service account to access most of the Google Machine Learning APIs, such as the Google Cloud Vision and Translation APIs. The Python script does need permissions to access BigQuery and to create objects in Cloud Storage. The easiest way to do that is to bind the service account to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roles/bigquery.admin&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roles/storage.admin&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Once you have created the account, bind the BigQuery Admin and Cloud Storage Admin roles to the Service Account to provide the IAM permissions required to process files from Cloud Storage and insert the result data into a BigQuery table.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;serviceAccount:my-account@&lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt;.iam.gserviceaccount.com &lt;span class=&quot;nt&quot;&gt;--role&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;roles/bigquery.admin
-gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;serviceAccount:my-account@&lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt;.iam.gserviceaccount.com &lt;span class=&quot;nt&quot;&gt;--role&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;roles/storage.admin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;task-2-create-and-download-a-credential-file-for-your-service-account&quot;&gt;Task 2: Create and download a credential file for your Service Account&lt;/h2&gt;
-
-&lt;p&gt;Run the following commands to download the JSON format IAM credentials file for the service account, and configure the name of the credential file as an environment variable.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud iam service-accounts keys create key.json &lt;span class=&quot;nt&quot;&gt;--iam-account&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;my-account@&lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt;.iam.gserviceaccount.com
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOOGLE_APPLICATION_CREDENTIALS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;key.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Tip 2. You must set an environment variable to provide the details of the credentials file that should be used by the Python script to access the Google Cloud APIs.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In the Cloud Console, navigate to &lt;strong&gt;IAM &amp;amp; Admin&lt;/strong&gt; &amp;gt; &lt;strong&gt;Service Accounts&lt;/strong&gt; to confirm the status of the service account (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;my-account&lt;/code&gt;).&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;959&quot; height=&quot;606&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task2-confirm-new-service-account.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;959&quot; height=&quot;606&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task2-confirm-new-service-account.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;task-3-modify-the-python-script-to-extract-text-from-image-files&quot;&gt;Task 3: Modify the Python script to extract text from image files&lt;/h2&gt;
-
-&lt;p&gt;Navigate to &lt;strong&gt;Storage&lt;/strong&gt; in the Cloud Console, then click on the bucket name to explore the image files and the Python script that have been provided for you.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1254&quot; height=&quot;945&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-analyze.py-in-cloud-storage-bucket.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1254&quot; height=&quot;945&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-analyze.py-in-cloud-storage-bucket.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Run the following &lt;strong&gt;gsutil&lt;/strong&gt; command to copy the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;analyze-images.py&lt;/code&gt; from the Cloud Storage bucket into the Cloud Shell.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gsutil &lt;span class=&quot;nb&quot;&gt;cp &lt;/span&gt;gs://&lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt;/analyze-images.py &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Open the Cloud Shell Editor to review and edit the script file.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1259&quot; height=&quot;934&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-analyze-image-py-file.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1259&quot; height=&quot;934&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-analyze-image-py-file.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;There are three unfinished parts in the script that you must complete to make the correct Machine Learning API calls. All of them are preceded with a comment using the label &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;# TBD:&lt;/code&gt;. You will need to make use of the Vision API, the Translation API, and the BigQuery API. The import of the Google Cloud Library modules for the required APIs has been done in line 7 of the script file. Note down the name of their API clients that have also been declared from lines 25 to 32.&lt;/p&gt;
-
-&lt;p&gt;In Task 3, you need to add your codes to the following part of the script file.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;730&quot; height=&quot;531&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-python-code-init.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;531&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-python-code-init.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Tip 3. You can find details about the Vision API Client &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document_text_detection&lt;/code&gt; API call in the &lt;a href=&quot;https://googleapis.dev/python/vision/1.0.0/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection&quot;&gt;Python API Documentation reference page for the Vision API Client&lt;/a&gt; and the details of the Vision API annotation response object in the &lt;a href=&quot;https://googleapis.dev/python/vision/latest/vision_v1/types.html#google.cloud.vision_v1.types.AnnotateImageResponse&quot;&gt;Python API Documentation reference page for the Vision API Objects&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;font-family:monospace&quot;&gt;&lt;strong&gt;TBD&lt;/strong&gt;: Create a Vision API image object called image_object
-&lt;strong&gt;Ref&lt;/strong&gt;: &lt;a href=&quot;https://googleapis.dev/python/vision/latest/vision_v1/types.html#google.cloud.vision_v1.types.Image&quot;&gt;google.cloud.vision_v1.types.Image&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        &lt;span class=&quot;n&quot;&gt;image_object&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;image_object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file_content&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file_content&lt;/code&gt; is the image content extracted from a JEPG or a PNG file via lines 51 and 52 of the script.&lt;/p&gt;
-
-&lt;p style=&quot;font-family:monospace&quot;&gt;&lt;strong&gt;TBD&lt;/strong&gt;: Detect text in the image and save the response data into an object called response
-&lt;strong&gt;Ref&lt;/strong&gt;: &lt;a href=&quot;https://googleapis.dev/python/vision/1.0.0/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection&quot;&gt;google.cloud.vision_v1.ImageAnnotatorClient.document_text_detection&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vision_client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;document_text_detection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image_object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This line uses the Cloud Vision API to extract text data from each image inside the for-loop.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Make sure that you indent the codes correctly.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-4-modify-the-python-script-to-translate-the-text-using-the-translation-api&quot;&gt;Task 4: Modify the Python script to translate the text using the Translation API&lt;/h2&gt;
-
-&lt;p&gt;In Task 4, you need to add your codes to the following part of the script file.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;730&quot; height=&quot;416&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task4-python-code-init.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;416&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task4-python-code-init.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Tip 4. For details about the Translation API Client translate API call, see the &lt;a href=&quot;https://googleapis.dev/python/translation/2.0.1/client.html#google.cloud.translate_v2.client.Client.translate&quot;&gt;Python API Documentation for the Translation V2 API Client&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p style=&quot;font-family:monospace&quot;&gt;&lt;strong&gt;TBD&lt;/strong&gt;: For non-EN locales pass the description data to the translation API
-&lt;strong&gt;Ref&lt;/strong&gt;: &lt;a href=&quot;https://googleapis.dev/python/translation/latest/client.html#google.cloud.translate_v2.client.Client.translate&quot;&gt;google.cloud.translate_v2.client.Client.translate&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            &lt;span class=&quot;c1&quot;&gt;# Set the target_language locale to &apos;en&apos;)
-&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;translation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translate_client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target_language&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;en&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This line uses the Translation API to translate the non-English text into English.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Make sure that you indent the codes correctly.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-5-identify-the-most-common-non-english-language-used-in-the-signs-in-the-data-set&quot;&gt;Task 5: Identify the most common non-English language used in the signs in the data set&lt;/h2&gt;
-
-&lt;p&gt;In Task 5, you need to remove the comment characters to enable the line of code in the following part of the script.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;730&quot; height=&quot;167&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task5-python-code-init.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;167&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task5-python-code-init.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;process-the-image-files-using-the-updated-python&quot;&gt;Process the image files using the updated Python&lt;/h3&gt;
-
-&lt;p&gt;Save the changes and then run the modified script file in the Cloud Shell:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;BUCKET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt;
-python analyze-images.py &lt;span class=&quot;nv&quot;&gt;$PROJECT&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$BUCKET&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You should see an output like that:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1256&quot; height=&quot;1191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-to-5-python-results.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1256&quot; height=&quot;1191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task3-to-5-python-results.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;confirm-that-image-data-has-been-successfully-uploaded-to-bigquery&quot;&gt;Confirm that image data has been successfully uploaded to BigQuery&lt;/h3&gt;
-
-&lt;p&gt;Go back to the Cloud Console, navigate to &lt;strong&gt;BigQuery&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Preview the table &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image_text_detail&lt;/code&gt; in the dataset called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image_classification_dataset&lt;/code&gt; in your project.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1215&quot; height=&quot;506&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task5-biquery-table-preview.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1215&quot; height=&quot;506&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task5-biquery-table-preview.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Confirm that image data has been successfully processed by running the following Query in BigQuery:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-SQL&quot;&gt;SELECT locale,COUNT(locale) as lcount FROM image_classification_dataset.image_text_detail GROUP BY locale ORDER BY lcount DESC
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The query results should look like:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;653&quot; height=&quot;356&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task5-query-results.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;653&quot; height=&quot;356&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-task5-query-results.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-kEEqbeqR6og&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;kEEqbeqR6og&quot; title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-title=&quot;GSP329 Integrate with Machine Learning APIs: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=kEEqbeqR6og&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=kEEqbeqR6og&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;56&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Confirm&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vision&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;AutoML&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Translation&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BigQuery&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;APIs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enabled&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;04&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;55&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task1&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Configure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;access&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Machine&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Learning&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;APIs&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;BigQuery&lt;/span&gt;, &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Storage&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;06&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;54&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task2&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;download&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;credential&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Service&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Account&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;08&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;05&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task3&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Modify&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extract&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task4&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Modify&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Translation&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;API&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;14&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;05&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task5&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Identify&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;most&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;common&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;non&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;English&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;language&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;used&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;signs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;set&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;14&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;35&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Process&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;updated&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Python&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;17&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Confirm&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;has&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;been&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successfully&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uploaded&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BigQuery&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;📌 Hints for Tasks 1 - 2
-  &lt;a href=&quot;https://www.qwiklabs.com/focuses/1749?parent=catalog&quot;&gt;Classify Text into Categories with the Natural Language API - Qwiklabs&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;📌 Hints for Tasks 3 - 5
-  &lt;a href=&quot;https://developers.google.com/codelabs/cloud-ml-apis&quot;&gt;Integrating Machine Learning APIs - Google Codelabs&lt;/a&gt;&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;965&quot; height=&quot;603&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-codelabs-reference.webp&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;965&quot; height=&quot;603&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp329-codelabs-reference.png&quot; alt=&quot;Image in ☁ Integrate with Machine Learning APIs: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep on reading&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Automate-Interactions-with-Contact-Center-AI-Challenge-Lab&quot;&gt;☁ Automate Interactions with Contact Center AI: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Perform-Foundational-Data-ML-and-AI-Tasks-in-Google-Cloud-Challenge-Lab&quot;&gt;☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Useful links&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/1836?parent=catalog&quot;&gt;Extract, Analyze, and Translate Text from Images with the Cloud ML APIs - Qwiklabs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/@ajiltu/integrate-with-machine-learning-apis-challenge-lab-tutorial-4ed8c5cb983e&quot;&gt;Integrate with Machine Learning APIs: Challenge Lab Tutorial - by Ajil - Sep 2020 - Medium&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 07 Oct 2020 17:30:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/Integrate-with-Machine-Learning-APIs-Challenge-Lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>Cloud AI</category>
         
         
         <category>Cloud</category>
