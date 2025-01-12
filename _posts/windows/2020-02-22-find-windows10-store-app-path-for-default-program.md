@@ -22,6 +22,7 @@ image:
     path: /images/posts/windows/windows-10-lens-cover.jpeg
     width: "730"
     height: "411"
+featured: true
 ---
 
 Recently, I faced a problem to choose a Windows Store app as the default app for a specific file type. The app was not found by using neither [Windows 10's Settings page or the "Open With" option from the right-click menu of the files](https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/). So I need to go for the "Look for another app on this PC" and locate where is the program (.exe) file.

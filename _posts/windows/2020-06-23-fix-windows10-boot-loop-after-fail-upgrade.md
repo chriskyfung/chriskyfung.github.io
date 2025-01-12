@@ -24,7 +24,6 @@ css:
       background-color: #f7f7f9;
       border-radius: .25rem;
     }
-featured: true
 ---
 
 Microsoft released the Windows 10 May 2020 update. The most compelling feature is the [**Windows Subsystem for Linux version 2 (WSL2)**](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10), which uses the latest and greatest in virtualization technology to run a Linux kernel inside of a lightweight utility virtual machine (VM).
