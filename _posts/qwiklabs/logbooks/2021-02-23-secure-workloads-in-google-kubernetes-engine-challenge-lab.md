@@ -21,7 +21,6 @@ css:
    custom: >
       .ml-li { margin-left: 2rem; }
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
-featured: true
 ---
 
 In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/142) exercise on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.

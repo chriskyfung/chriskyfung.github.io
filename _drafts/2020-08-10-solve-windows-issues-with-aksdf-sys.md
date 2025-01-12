@@ -8,7 +8,6 @@ tags: []
 permalink: /blog/solve-windows-issues-with-aksdf-sys
 image: 
    path: /images/posts/.png
-featured: true
 excerpt: 
 ---
 

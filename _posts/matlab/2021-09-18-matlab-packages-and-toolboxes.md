@@ -9,6 +9,7 @@ permalink: /blog/matlab/matlab-packages-and-toolboxes
 image: 
    path: /images/posts/matlab/matlab-packages.jpg
 excerpt: A collection of useful MATLAB packages and toolboxes that support and improve your workflow, data visualization, code functionility and performance.
+featured: true
 ---
 
 {% include toc.md %}
