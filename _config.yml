@@ -67,6 +67,7 @@ copyright:
 
 # Cookie Consent Notice
 consent: true
+consent_preview: false
 consent_dev_mode: false
 
 # Authors
