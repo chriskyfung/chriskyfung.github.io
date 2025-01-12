@@ -19,9 +19,9 @@ css:
             margin-left: 3rem;
         }
 image:
-    path: /assets/images/write-2160925.svg
+    path: /images/posts/windows/windows-10-lens-cover.jpeg
     width: "730"
-    height: "431"
+    height: "411"
 ---
 
 Recently, I faced a problem to choose a Windows Store app as the default app for a specific file type. The app was not found by using neither [Windows 10's Settings page or the "Open With" option from the right-click menu of the files](https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/). So I need to go for the "Look for another app on this PC" and locate where is the program (.exe) file.
@@ -36,7 +36,7 @@ The Windows Registry contains the keys and values for all store apps, including 
 
    {% include picture.html width="131" height="121" img="windows/icon%20of%20regedit.exe.png" alt="icon of regedit.exe" %}
 
-{:start="2"}
+   {:start="2"}
 
 2. Registry Editor will open.
 
@@ -46,9 +46,9 @@ The Windows Registry contains the keys and values for all store apps, including 
 
 5. Open the app key you found, there should be a subkey called `PackageID` and another called `PackageRootFolder`, shown as the example below.
 
-    {% include picture.html width="691" height="190" img="windows/Example%20registry%20of%20a%20windows%20store%20app.png" alt="Example registry of a windows store app" %}
+   {% include picture.html width="691" height="190" img="windows/Example%20registry%20of%20a%20windows%20store%20app.png" alt="Example registry of a windows store app" %}
 
-{:start="6"}
+   {:start="6"}
 
 6. Double-click the name of the subkey `PackageRootFolder`, and copy the value data to the clipboard.
 
@@ -62,7 +62,7 @@ The Windows Registry contains the keys and values for all store apps, including 
 
    {% include picture.html width="419" height="224" img="windows/The%20app%20root%20folder%20in%20WindowsApps.jpg" alt="The app root folder in WindowsApps" %}
 
-{:start="4"}
+   {:start="4"}
 
 4. The app root folder will open. Find and choose the Program (.exe) file inside the folder and in its subfolders, for the application you want to make as the default.
 
