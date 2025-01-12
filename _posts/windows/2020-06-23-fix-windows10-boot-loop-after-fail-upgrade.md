@@ -8,8 +8,8 @@ tags: [Windows 10, WSL2]
 permalink: /blog/windows/fix-windows10-boot-loop-after-fail-upgrade
 redirect_from: /blog/windows/find-windows10-boot-loop-after-fail-upgrade
 image: 
-  path: /images/posts/windows/restoring-your-previous-version-of-windows-10.png
-  width: 693
+  path: /images/posts/windows/restoring-your-previous-version-of-windows-10-cover.png
+  width: 537
   height: 302
   hide: true
 amp:
