@@ -256,7 +256,6 @@
       }
     }
   ],
-  "frontMatter.dashboard.openOnStart": true,
   "frontMatter.git.enabled": true,
   "frontMatter.git.commitMessage": "Synced by Front Matter {{hour24}}:{{minute}}",
   "frontMatter.framework.id": "jekyll",

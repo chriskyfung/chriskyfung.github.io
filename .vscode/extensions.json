@@ -5,8 +5,8 @@
     "eliostruyf.vscode-front-matter",
     "ginfuru.vscode-jekyll-snippets",
     "catherinekorres.amp-snippets",
-    "amphtml.amphtml-validator",
     "redhat.vscode-yaml",
-    "znck.grammarly"
+    "kisstkondoros.vscode-gutter-preview",
+    "davidanson.vscode-markdownlint"
   ]
 }
