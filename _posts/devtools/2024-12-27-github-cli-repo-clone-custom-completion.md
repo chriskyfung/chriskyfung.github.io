@@ -8,7 +8,7 @@ redirect_from:
    - /github-cli-repo-clone-custom-completion/
 image:
    width: "730"
-   height: "431"
+   height: "417"
    path: /images/posts/devtools/gh-repo-clone-custom-completion-cover.jpg
 keywords: [github cli, gh repo clone, bash completion, git automation]
 categories:
