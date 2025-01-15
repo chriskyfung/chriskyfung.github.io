@@ -5,293 +5,523 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Jan 2025 11:09:56 +0800</pubDate>
-    <lastBuildDate>Sun, 12 Jan 2025 11:09:56 +0800</lastBuildDate>
+    <pubDate>Wed, 15 Jan 2025 18:25:00 +0800</pubDate>
+    <lastBuildDate>Wed, 15 Jan 2025 18:25:00 +0800</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
-        <title>Helpful Git and GitHub CLI Commands You Should Know</title>
-        <description>&lt;p&gt;Hello, future innovators and researchers!&lt;/p&gt;
+        <title>Mastering Git &amp; GitHub CLI: Essential Commands You Should Know</title>
+        <description>&lt;p&gt;Hello, future developers, engineers, researchers and scientists!&lt;/p&gt;
 
-&lt;p&gt;Whether you’re studying computer science, conducting scientific research, working with data, or diving into AI and machine learning, mastering &lt;strong&gt;Git&lt;/strong&gt; and &lt;strong&gt;GitHub&lt;/strong&gt; can significantly enhance your workflow. These tools are not just for traditional software developers; they play a crucial role in managing code, data sets, and collaborative projects across various scientific disciplines.&lt;/p&gt;
+&lt;p&gt;Whether you’re studying computer science, conducting scientific research, working with data, or diving into AI and machine learning, mastering Git and GitHub can significantly enhance your workflow.&lt;/p&gt;
 
-&lt;p&gt;In this post, we’ll explore essential &lt;strong&gt;Git&lt;/strong&gt; and &lt;strong&gt;GitHub CLI&lt;/strong&gt; commands through relatable scenarios and best practices that will help you streamline your projects and drive your research forward. &lt;em&gt;Let’s get started!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;These tools are not just for traditional software developers; they play a crucial role in managing code, datasets, and collaborative projects across various scientific disciplines.&lt;/p&gt;
 
-&lt;h2 id=&quot;esential-git-commands&quot;&gt;Esential Git Commands&lt;/h2&gt;
+&lt;p&gt;In this post, we’ll explore essential &lt;strong&gt;&lt;a href=&quot;https://git-scm.com&quot;&gt;Git&lt;/a&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;a href=&quot;https://cli.github.com&quot;&gt;GitHub CLI&lt;/a&gt;&lt;/strong&gt; commands that will help you streamline your projects. &lt;em&gt;Let’s get started!&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;enable-git-tab-completion-in-linux-bash&quot;&gt;Enable Git Tab Completion in Linux Bash&lt;/h3&gt;
+&lt;aside style=&quot;position: relative;&quot;&gt;
+    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
+&lt;/aside&gt;
+
+&lt;h2 class=&quot;no_toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-essential-git-commands&quot; id=&quot;markdown-toc-1-essential-git-commands&quot;&gt;1. Essential Git Commands&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#11-enable-git-tab-completion-in-linux-bash&quot; id=&quot;markdown-toc-11-enable-git-tab-completion-in-linux-bash&quot;&gt;1.1 Enable Git Tab Completion in Linux Bash&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#12-viewing-git-history-at-a-glance&quot; id=&quot;markdown-toc-12-viewing-git-history-at-a-glance&quot;&gt;1.2 Viewing Git History at a Glance&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#13-amend-the-last-git-commit&quot; id=&quot;markdown-toc-13-amend-the-last-git-commit&quot;&gt;1.3 Amend the Last Git Commit&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#14-undoing-changes-soft-reset&quot; id=&quot;markdown-toc-14-undoing-changes-soft-reset&quot;&gt;1.4 Undoing Changes: Soft Reset&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#15-interactive-rebase-organize-your-commits&quot; id=&quot;markdown-toc-15-interactive-rebase-organize-your-commits&quot;&gt;1.5 Interactive Rebase: Organize Your Commits&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#16-cleaning-up-remove-unwanted-files&quot; id=&quot;markdown-toc-16-cleaning-up-remove-unwanted-files&quot;&gt;1.6 Cleaning Up: Remove Unwanted Files&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#17-efficient-branch-management&quot; id=&quot;markdown-toc-17-efficient-branch-management&quot;&gt;1.7 Efficient Branch Management&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#171-creating-new-branches&quot; id=&quot;markdown-toc-171-creating-new-branches&quot;&gt;1.7.1 Creating New Branches&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#172-cherry-picking-commits&quot; id=&quot;markdown-toc-172-cherry-picking-commits&quot;&gt;1.7.2 Cherry-Picking Commits&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#173-rebasing-branches&quot; id=&quot;markdown-toc-173-rebasing-branches&quot;&gt;1.7.3 Rebasing Branches&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#18-pushing-commits-to-a-remote-repository&quot; id=&quot;markdown-toc-18-pushing-commits-to-a-remote-repository&quot;&gt;1.8 Pushing Commits to a Remote Repository&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#181-force-pushing&quot; id=&quot;markdown-toc-181-force-pushing&quot;&gt;1.8.1 Force Pushing&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#182-partial-push&quot; id=&quot;markdown-toc-182-partial-push&quot;&gt;1.8.2 Partial Push&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-useful-github-cli-commands&quot; id=&quot;markdown-toc-2-useful-github-cli-commands&quot;&gt;2. Useful GitHub CLI Commands&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#21-securely-authenticate-with-github&quot; id=&quot;markdown-toc-21-securely-authenticate-with-github&quot;&gt;2.1 Securely Authenticate with GitHub&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#22-list-repositories&quot; id=&quot;markdown-toc-22-list-repositories&quot;&gt;2.2 List Repositories&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#23-cloning-repositories&quot; id=&quot;markdown-toc-23-cloning-repositories&quot;&gt;2.3 Cloning Repositories&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#231-perform-a-shallow-clone&quot; id=&quot;markdown-toc-231-perform-a-shallow-clone&quot;&gt;2.3.1 Perform a Shallow Clone&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#232-perform-a-partial-clone&quot; id=&quot;markdown-toc-232-perform-a-partial-clone&quot;&gt;2.3.2 Perform a Partial Clone&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#233-perform-a-sparse-checkout&quot; id=&quot;markdown-toc-233-perform-a-sparse-checkout&quot;&gt;2.3.3 Perform a Sparse Checkout&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#234-combined-usage&quot; id=&quot;markdown-toc-234-combined-usage&quot;&gt;2.3.4 Combined Usage&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#24-creating-repositories-on-github&quot; id=&quot;markdown-toc-24-creating-repositories-on-github&quot;&gt;2.4 Creating Repositories on GitHub&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#241-create-a-repository-with-custom-settings&quot; id=&quot;markdown-toc-241-create-a-repository-with-custom-settings&quot;&gt;2.4.1 Create a Repository with Custom Settings&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#242-create-a-repository-based-on-a-template&quot; id=&quot;markdown-toc-242-create-a-repository-based-on-a-template&quot;&gt;2.4.2 Create a Repository Based on a Template&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#25-accessing-repository-details&quot; id=&quot;markdown-toc-25-accessing-repository-details&quot;&gt;2.5 Accessing Repository Details&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#251-view-repository-details&quot; id=&quot;markdown-toc-251-view-repository-details&quot;&gt;2.5.1 View Repository Details&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#252-open-a-repository-in-the-browser&quot; id=&quot;markdown-toc-252-open-a-repository-in-the-browser&quot;&gt;2.5.2 Open a Repository in the Browser&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#253-retrieve-description-and-topics-in-json&quot; id=&quot;markdown-toc-253-retrieve-description-and-topics-in-json&quot;&gt;2.5.3 Retrieve Description and Topics in JSON&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#254-retrieve-projects-in-json&quot; id=&quot;markdown-toc-254-retrieve-projects-in-json&quot;&gt;2.5.4 Retrieve Projects in JSON&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#255-monitor-disk-usage-in-json&quot; id=&quot;markdown-toc-255-monitor-disk-usage-in-json&quot;&gt;2.5.5 Monitor Disk Usage in JSON&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#26-enhance-and-edit-repositories&quot; id=&quot;markdown-toc-26-enhance-and-edit-repositories&quot;&gt;2.6 Enhance and Edit Repositories&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#261-add-topics-to-a-remote-repository&quot; id=&quot;markdown-toc-261-add-topics-to-a-remote-repository&quot;&gt;2.6.1 Add Topics to a Remote Repository&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#262-update-repository-description&quot; id=&quot;markdown-toc-262-update-repository-description&quot;&gt;2.6.2 Update Repository Description&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#263-change-repository-visibility&quot; id=&quot;markdown-toc-263-change-repository-visibility&quot;&gt;2.6.3 Change Repository Visibility&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#wrapping-up&quot; id=&quot;markdown-toc-wrapping-up&quot;&gt;Wrapping Up&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#additional-resources&quot; id=&quot;markdown-toc-additional-resources&quot;&gt;Additional Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
+
+&lt;h2 id=&quot;1-essential-git-commands&quot;&gt;1. Essential Git Commands&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-enable-git-tab-completion-in-linux-bash&quot;&gt;1.1 Enable Git Tab Completion in Linux Bash&lt;/h3&gt;
+
+&lt;p&gt;Imagine you’re in the middle of an intense coding session, &lt;kbd&gt;Tab&lt;/kbd&gt; completion speeds up command entry and minimizing errors, so you can focus more on what’s important—your research.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/share/bash-completion/completions/git
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/share/bash-completion/completions/git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Imagine you’re in the middle of an intense coding session, tab completion speeds up command entry and minimizing errors, so you can focus more on what’s important—your research.&lt;/p&gt;
-
-&lt;h3 id=&quot;viewing-git-history-at-a-glance&quot;&gt;Viewing Git History at a Glance&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log &lt;span class=&quot;nt&quot;&gt;--oneline&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;12-viewing-git-history-at-a-glance&quot;&gt;1.2 Viewing Git History at a Glance&lt;/h3&gt;
 
 &lt;p&gt;Picture this: You’re tracking the evolution of a complex code project. Viewing your Git history in a simplified one-line format helps you quickly review changes and ensure that your latest modifications align with your project’s goals.&lt;/p&gt;
 
-&lt;h3 id=&quot;change-the-date-of-the-last-commit&quot;&gt;Change the date of the last commit&lt;/h3&gt;
-
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;........&quot;&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log &lt;span class=&quot;nt&quot;&gt;--oneline&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;undoing-changes-soft-reset&quot;&gt;Undoing Changes: Soft Reset&lt;/h3&gt;
+&lt;h3 id=&quot;13-amend-the-last-git-commit&quot;&gt;1.3 Amend the Last Git Commit&lt;/h3&gt;
+
+&lt;p&gt;When working with Git, you might need to amend the last commit for various reasons. This command is useful if you made a mistake in your commit message or forgot to include some changes.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset &lt;span class=&quot;nt&quot;&gt;--soft&lt;/span&gt; HEAD^
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Why It’s Useful&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;After running this command, your text editor will open with the commit message. You can edit the message and save the changes. The last commit will be updated with the new message.&lt;/p&gt;
 
-&lt;p&gt;A soft reset lets you undo your last commit without losing your hard work, allowing you to address the mistake swiftly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Command with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--date&lt;/code&gt; option&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;h3 id=&quot;interactive-rebase-organize-your-commits&quot;&gt;Interactive Rebase: Organize Your Commits&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;YYYY-MM-DDTHH:MM:SS&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Interactive rebase lets you reorganize commit sequences for clarity, ensuring that every team member can easily track the project’s progress.&lt;/p&gt;
+&lt;p&gt;By adding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--date&lt;/code&gt; flag, you can set a new date and time for the commit. For instance, if you made a commit but forgot to set the correct date, running this command will update the date of your last commit.&lt;/p&gt;
 
-&lt;h3 id=&quot;cleaning-up-remove-unwanted-files&quot;&gt;Cleaning Up: Remove Unwanted Files&lt;/h3&gt;
+&lt;h3 id=&quot;14-undoing-changes-soft-reset&quot;&gt;1.4 Undoing Changes: Soft Reset&lt;/h3&gt;
+
+&lt;p&gt;When you realize there’s an issue with your last commit, but you don’t want to lose any of the changes, a soft reset can come to the rescue.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; dir1/ dir2/
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset &lt;span class=&quot;nt&quot;&gt;--soft&lt;/span&gt; HEAD^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Unlike a hard reset, a soft reset doesn’t discard changes. Your files remain exactly as they were, ready to be modified or recommitted. This is particularly useful when you’ve committed too soon or need to tweak something in your latest changes.&lt;/p&gt;
+
+&lt;h3 id=&quot;15-interactive-rebase-organize-your-commits&quot;&gt;1.5 Interactive Rebase: Organize Your Commits&lt;/h3&gt;
+
+&lt;p&gt;Interactive rebase lets you reorganize commit sequences for clarity, ensuring that every team member can easily track the project’s progress. You can reorder, squash, edit, or drop commits to clean up your commit history.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &amp;lt;base&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Interactive Rebase With &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--root&lt;/code&gt; Option&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--root&lt;/code&gt; option extends interactive rebase to include the very first commit in your repository. This can be useful if you need to make changes that affect the entire history of the project, such as updating a license file in the initial commit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--root&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;16-cleaning-up-remove-unwanted-files&quot;&gt;1.6 Cleaning Up: Remove Unwanted Files&lt;/h3&gt;
+
+&lt;p&gt;During long research projects, clutter can quickly accumulate. Regularly cleaning up your repository by removing outdated files ensures your work remains tidy and efficient, much like a well-organized lab.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; dir1/ dir2/
 git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Remove obsolete files&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Best Practice&lt;/strong&gt;:
-During long research projects, clutter can quickly accumulate. Regularly cleaning up your repository by removing outdated files ensures your work remains tidy and efficient, much like a well-organized lab.&lt;/p&gt;
+&lt;h3 id=&quot;17-efficient-branch-management&quot;&gt;1.7 Efficient Branch Management&lt;/h3&gt;
 
-&lt;h3 id=&quot;push-commits-to-remote-upto-a-special-commit-in-the-git-history&quot;&gt;Push commits to remote (upto a special commit in the git history)&lt;/h3&gt;
+&lt;p&gt;Managing branches effectively in Git is crucial for maintaining a clean and organized project history. Here are some common commands and use cases for efficient branch management.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+&lt;h4 id=&quot;171-creating-new-branches&quot;&gt;1.7.1 Creating New Branches&lt;/h4&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;commit ref&amp;gt;:&amp;lt;remote branch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;efficient-branch-management&quot;&gt;Efficient Branch Management&lt;/h3&gt;
-
-&lt;h3 id=&quot;create-a-new-branch-from-the-current-branch&quot;&gt;#Create a new branch from the current branch&lt;/h3&gt;
+&lt;p&gt;Creating a new branch allows you to work on separate features or fixes without affecting the main branch. This command creates a new branch from the current branch and checks it out.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &amp;lt;new branch name&amp;gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &amp;lt;new-branch-name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;pick-a-commit-from-another-branch-and-add-it-to-the-current-branch&quot;&gt;#Pick a commit from another branch and add it to the current branch&lt;/h3&gt;
+&lt;h4 id=&quot;172-cherry-picking-commits&quot;&gt;1.7.2 Cherry-Picking Commits&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cherry-pick&lt;/code&gt; command allows you to copy and apply changes from a specific commit in another branch to your current branch.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git cherry-pick &amp;lt;commit ref&amp;gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git cherry-pick &amp;lt;commit-ref&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;rebase-new-commits-in-branch-b-onto-branch-a&quot;&gt;Rebase new commits in branch B onto branch A&lt;/h4&gt;
+&lt;h4 id=&quot;173-rebasing-branches&quot;&gt;1.7.3 Rebasing Branches&lt;/h4&gt;
+
+&lt;p&gt;Rebasing allows you to move or combine a sequence of commits on top of an upstream branch, which can help keep your project history linear and clean.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase branch-A branch-B
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &amp;lt;upstream&amp;gt; &amp;lt;branch&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Narrative&lt;/strong&gt;: Suppose you’re developing different models for data analysis. Creating separate branches allows you to explore various methodologies concurrently, merging successful approaches into your main branch once validated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;h2 id=&quot;useful-github-cli-commands&quot;&gt;Useful GitHub CLI Commands&lt;/h2&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase main feature-branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Official manual: &lt;a href=&quot;https://cli.GitHub.com/manual/&quot;&gt;https://cli.GitHub.com/manual/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This command takes the commits from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; and applies them onto the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; branch.&lt;/p&gt;
 
-&lt;h3 id=&quot;securely-authenticate-with-github&quot;&gt;Securely Authenticate with GitHub&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use cases&lt;/strong&gt;: If you’re developing different models for data analysis, creating separate branches lets you explore various methodologies concurrently. Once validated, you can merge the successful approaches into your main branch.&lt;/p&gt;
+
+&lt;h3 id=&quot;18-pushing-commits-to-a-remote-repository&quot;&gt;1.8 Pushing Commits to a Remote Repository&lt;/h3&gt;
+
+&lt;p&gt;When it’s time to share your hard work or back up your local changes to a remote repository, you’ll need to push your commits. This command pushes all the commits from your specified local branch to the remote branch, ensuring your remote branch is in sync with your local changes.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh auth login
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;branch-name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Importance&lt;/strong&gt;:
-In an era where data security is paramount, securely connecting your GitHub account ensures that your sensitive research data remains protected while facilitating seamless collaboration.&lt;/p&gt;
+&lt;h4 id=&quot;181-force-pushing&quot;&gt;1.8.1 Force Pushing&lt;/h4&gt;
 
-&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_auth_login&quot;&gt;https://cli.GitHub.com/manual/gh_auth_login&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;repository-management-made-easy&quot;&gt;Repository Management Made Easy&lt;/h3&gt;
-
-&lt;h4 id=&quot;list-all-repositories&quot;&gt;List all repositories&lt;/h4&gt;
+&lt;p&gt;Force pushing lets you take control and overwrite the remote branch with your local branch, which is particularly useful after rewriting commit history, such as after a rebase or an amended commit, giving you a clean slate to work with.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo list &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;owner&amp;gt;] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;flags]
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_list&quot;&gt;https://cli.GitHub.com/manual/gh_repo_list&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, force pushing can be risky in a collaborative environment, as it may overwrite others’ work, leading to conflicts or lost commits.&lt;/p&gt;
 
-&lt;h4 id=&quot;cloning-repositories&quot;&gt;Cloning Repositories&lt;/h4&gt;
+&lt;p&gt;To reduce these risks, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--force-with-lease&lt;/code&gt; instead, which only pushes if no one else has updated the remote branch since your last fetch, adding a layer of safety.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push &lt;span class=&quot;nt&quot;&gt;--force-with-lease&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_clone&quot;&gt;https://cli.GitHub.com/manual/gh_repo_clone&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Responsible use of force pushing helps maintain a clean and accurate project history while minimizing risks.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Scenario&lt;/strong&gt;: As a researcher juggling multiple projects, quickly accessing your repositories becomes crucial. These commands allow effortless management, so you can focus on your research rather than administrative tasks.&lt;/p&gt;
+&lt;h4 id=&quot;182-partial-push&quot;&gt;1.8.2 Partial Push&lt;/h4&gt;
 
-&lt;h3 id=&quot;advanced-cloning-techniques&quot;&gt;Advanced Cloning Techniques&lt;/h3&gt;
-
-&lt;h4 id=&quot;perform-a-shallow-clone&quot;&gt;Perform a Shallow Clone&lt;/h4&gt;
-
-&lt;p&gt;A shallow clone allows you to clone a repository with a limited history, which can save time and space.&lt;/p&gt;
+&lt;p&gt;Sometimes, you may need to push only specific commits to a remote repository rather than the entire branch. You can use the following command to achieve this:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;commit-ref&amp;gt;:&amp;lt;remote-branch&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;perform-a-partial-clone&quot;&gt;Perform a Partial Clone&lt;/h4&gt;
+&lt;p&gt;This command pushes a specific commit along with all its predecessors to the specified remote branch.&lt;/p&gt;
 
-&lt;p&gt;A partial clone allows you to clone a repository without downloading all the history, which can save time and space.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin abc1234:main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Using these commands effectively helps maintain a well-organized and efficient workflow, allowing you to control which commits are pushed to the remote repository.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-useful-github-cli-commands&quot;&gt;2. Useful GitHub CLI Commands&lt;/h2&gt;
+
+&lt;p&gt;The &lt;strong&gt;GitHub CLI&lt;/strong&gt; provides a powerful set of tools for managing your repositories and streamlining your workflow. While this guide covers some of the most essential commands, we encourage you to explore the full list of commands available in the official manual to take full advantage of everything the GitHub CLI has to offer.&lt;/p&gt;
+
+&lt;p&gt;For more detailed information, refer to the official manual: 📄 &lt;a href=&quot;https://cli.github.com/manual/&quot;&gt;GitHub CLI Manual&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;21-securely-authenticate-with-github&quot;&gt;2.1 Securely Authenticate with GitHub&lt;/h3&gt;
+
+&lt;p&gt;In an era where data security is paramount, the &lt;a href=&quot;https://cli.github.com/manual/gh_auth_login&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh auth login&lt;/code&gt;&lt;/a&gt; command allows you to authenticate with GitHub from the command line. You can use either a web browser or a token, ensuring a secure and efficient login process that securely connects your GitHub account.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh auth login
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;perform-a-sparse-checkout&quot;&gt;Perform a Sparse Checkout&lt;/h4&gt;
+&lt;h3 id=&quot;22-list-repositories&quot;&gt;2.2 List Repositories&lt;/h3&gt;
 
-&lt;p&gt;Sparse checkout allows you to check out only a subset of files from the repository.&lt;/p&gt;
+&lt;p&gt;Managing multiple repositories can be challenging, but with the &lt;a href=&quot;https://cli.github.com/manual/gh_repo_list&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo list&lt;/code&gt;&lt;/a&gt; command, you can easily view all repositories for a specified owner. This command supports various flags that allow you to filter the list, providing a streamlined way to manage and navigate your projects efficiently.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo list &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;owner&amp;gt;] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;flags]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;23-cloning-repositories&quot;&gt;2.3 Cloning Repositories&lt;/h3&gt;
+
+&lt;p&gt;Cloning a repository is a fundamental operation when working with GitHub. The &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_clone&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt;&lt;/a&gt; command simplifies this process by allowing you to quickly clone a repository to your local machine, ensuring you have the latest version of the codebase for development or review.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;directory&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;While the basic cloning command is sufficient for many use cases, there are advanced techniques available to optimize the cloning process for specific scenarios. These techniques can save time and space, particularly when dealing with large repositories or limited storage.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/devtools/github-cli-repo-clone-custom-completion/&quot;&gt;Speed Up GitHub CLI: Custom Completion for ‘gh repo clone’ Command&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;231-perform-a-shallow-clone&quot;&gt;2.3.1 Perform a Shallow Clone&lt;/h4&gt;
+
+&lt;p&gt;A shallow clone allows you to clone a repository with a limited history, which can significantly reduce the time and storage required.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;232-perform-a-partial-clone&quot;&gt;2.3.2 Perform a Partial Clone&lt;/h4&gt;
+
+&lt;p&gt;A partial clone enables you to clone a repository without downloading all the history and large binary files, further optimizing time and space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;233-perform-a-sparse-checkout&quot;&gt;2.3.3 Perform a Sparse Checkout&lt;/h4&gt;
+
+&lt;p&gt;Sparse checkout allows you to check out only a subset of files from the repository, which can be especially useful when working with large projects containing many files you do not need.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Clone the repository:&lt;/p&gt;
+    &lt;p&gt;Clone the repository without checking out files:&lt;/p&gt;
 
     &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Enable sparse checkout:&lt;/p&gt;
+    &lt;p&gt;Enable sparse checkout mode:&lt;/p&gt;
 
     &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout init &lt;span class=&quot;nt&quot;&gt;--cone&lt;/span&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout init &lt;span class=&quot;nt&quot;&gt;--cone&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Define the directories or files you want to include:&lt;/p&gt;
+    &lt;p&gt;Define the specific directories or files you want to include in the checkout:&lt;/p&gt;
 
     &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &amp;lt;directory-or-file&amp;gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &amp;lt;directory-or-file&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;example-usage&quot;&gt;Example Usage&lt;/h4&gt;
+&lt;h4 id=&quot;234-combined-usage&quot;&gt;2.3.4 Combined Usage&lt;/h4&gt;
 
-&lt;p&gt;To efficiently clone a large repository with many binary files, you can combine shallow clone, partial clone, and sparse checkout:&lt;/p&gt;
+&lt;p&gt;To efficiently clone a large repository with many binary files, you can combine shallow clone, partial clone, and sparse checkout techniques:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Commands&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--sparse&lt;/span&gt;
+
 &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &amp;lt;repository&amp;gt;
-git sparse-checkout init &lt;span class=&quot;nt&quot;&gt;--cone&lt;/span&gt;
 git sparse-checkout &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &amp;lt;directory-or-file&amp;gt;
+git checkout &amp;lt;branch&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This approach minimizes the amount of data transferred and stored locally by only including the necessary files and excluding large binary files.&lt;/p&gt;
+&lt;p&gt;This approach minimizes the amount of data transferred and stored locally by including only the necessary files and excluding large binary files.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Benefit&lt;/strong&gt;:
-When dealing with large datasets or codebases, these techniques minimize storage use and download times, getting you to the analysis phase faster—a vital efficiency for any data-driven research project.&lt;/p&gt;
+When dealing with large datasets or extensive codebases, these advanced cloning techniques help minimize storage use and download times, enabling you to focus on development and analysis more quickly. This efficiency is crucial for any data-driven research project, ensuring that resources are utilized effectively and processes remain streamlined.&lt;/p&gt;
 
-&lt;h3 id=&quot;create-and-view-repositories&quot;&gt;Create and View Repositories&lt;/h3&gt;
+&lt;h3 id=&quot;24-creating-repositories-on-github&quot;&gt;2.4 Creating Repositories on GitHub&lt;/h3&gt;
 
-&lt;h4 id=&quot;create-a-new-private-repository-on-github-based-on-a-template-repository&quot;&gt;Create a new private repository on GitHub based on a template repository&lt;/h4&gt;
+&lt;p&gt;With the GitHub CLI, you can create new repositories directly from the command line, simplifying the workflow and integrating seamlessly into your development process.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+&lt;h4 id=&quot;241-create-a-repository-with-custom-settings&quot;&gt;2.4.1 Create a Repository with Custom Settings&lt;/h4&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create &amp;lt;owner&amp;gt;/&amp;lt;new-name&amp;gt; &lt;span class=&quot;nt&quot;&gt;--private&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;lt;repository&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_create&quot;&gt;https://cli.GitHub.com/manual/gh_repo_create&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;viewing-repository-details&quot;&gt;Viewing Repository Details&lt;/h4&gt;
-
-&lt;h3 id=&quot;gh-repo-view&quot;&gt;gh repo view&lt;/h3&gt;
-
-&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_view&quot;&gt;https://cli.GitHub.com/manual/gh_repo_view&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;open-a-repository-in-the-browser&quot;&gt;Open a repository in the browser&lt;/h4&gt;
+&lt;p&gt;Using the &lt;a href=&quot;https://cli.github.com/manual/gh_repo_create&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo create&lt;/code&gt;&lt;/a&gt; command, you can set various custom settings for your new repository, such as visibility (public or private), initialization options (like adding a README, .gitignore, or license), and choosing the default branch.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--web&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create &amp;lt;owner&amp;gt;/&amp;lt;new-name&amp;gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;flags]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;list-the-description-and-topics-of-a-remote-repository-in-json-format&quot;&gt;List the description and topics of a remote repository in JSON format&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Key Flags&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--public&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--private&lt;/code&gt;: Sets the visibility of the repository.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--readme&lt;/code&gt;: Initializes with a README file.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--gitignore&lt;/code&gt;: Adds a .gitignore file based on common templates.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--license&lt;/code&gt;: Adds a license file.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--default-branch &amp;lt;branch-name&amp;gt;&lt;/code&gt;: Sets the default branch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create my-org/new-project &lt;span class=&quot;nt&quot;&gt;--private&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--readme&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--gitignore&lt;/span&gt; Node &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--license&lt;/span&gt; MIT &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--default-branch&lt;/span&gt; main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;242-create-a-repository-based-on-a-template&quot;&gt;2.4.2 Create a Repository Based on a Template&lt;/h4&gt;
+
+&lt;p&gt;Using a template repository can save time and ensure consistency across your projects. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo create&lt;/code&gt; command allows you to create a new repository on GitHub based on a specified template repository.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; description,repositoryTopics
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create &amp;lt;owner&amp;gt;/&amp;lt;new-name&amp;gt; &lt;span class=&quot;nt&quot;&gt;--template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;lt;repository&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;list-the-projects-of-a-remote-repository-in-json-format&quot;&gt;List the projects of a remote repository in JSON format&lt;/h4&gt;
+&lt;h3 id=&quot;25-accessing-repository-details&quot;&gt;2.5 Accessing Repository Details&lt;/h3&gt;
+
+&lt;p&gt;Navigating and managing your repositories efficiently can be a game changer. The GitHub CLI offers some nifty commands to help you view various details about your repositories. Whether you need to open a repository in the browser, retrieve metadata, or monitor disk usage.&lt;/p&gt;
+
+&lt;h4 id=&quot;251-view-repository-details&quot;&gt;2.5.1 View Repository Details&lt;/h4&gt;
+
+&lt;p&gt;Want to see what’s under the hood of a repository? Use the &lt;a href=&quot;https://cli.github.com/manual/gh_repo_view&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo view&lt;/code&gt;&lt;/a&gt; command to display essential information, like the description and README, right in your terminal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; description,repositoryTopics
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;check-the-disk-usage-of-a-remote-repository-in-json-format&quot;&gt;Check the disk usage of a remote repository in JSON format&lt;/h4&gt;
+&lt;h4 id=&quot;252-open-a-repository-in-the-browser&quot;&gt;2.5.2 Open a Repository in the Browser&lt;/h4&gt;
+
+&lt;p&gt;Need to dive deeper? Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--web&lt;/code&gt; flag with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo view&lt;/code&gt; command to open the repository in your default web browser.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; diskUsage
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--web&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Insight&lt;/strong&gt;:
-Protect your academic work and sensitive data by creating private repositories, while still having the flexibility to view and share your project details with advisors and peers.&lt;/p&gt;
+&lt;h4 id=&quot;253-retrieve-description-and-topics-in-json&quot;&gt;2.5.3 Retrieve Description and Topics in JSON&lt;/h4&gt;
 
-&lt;h3 id=&quot;enhance-and-edit-repositories&quot;&gt;Enhance and Edit Repositories&lt;/h3&gt;
-
-&lt;p&gt;📄 &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_edit&quot;&gt;https://cli.GitHub.com/manual/gh_repo_edit&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;add-topics-to-a-remote-repository&quot;&gt;Add topics to a remote repository&lt;/h4&gt;
+&lt;p&gt;Get the nitty-gritty details in a structured format. Fetch the description and topics of a repository in JSON format for integration or analysis, particularly useful for tagging and categorizing repositories programmatically.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--add-topic&lt;/span&gt; &amp;lt;strings&amp;gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; description,repositoryTopics
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;:
-Categorizing your repositories effectively enhances their discoverability, connecting your work with a broader academic audience and facilitating interdisciplinary collaboration.&lt;/p&gt;
+&lt;h4 id=&quot;254-retrieve-projects-in-json&quot;&gt;2.5.4 Retrieve Projects in JSON&lt;/h4&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Need an overview of ongoing work? Access a list of projects associated with a repository in JSON. It’s super handy for managing and analyzing project boards, especially in bigger projects with multiple tracking boards.&lt;/p&gt;
 
-&lt;p&gt;By mastering these Git and GitHub CLI commands, you equip yourself with the tools needed to manage and share your research projects efficiently. These commands not only streamline your workflow but also enhance your collaboration skills, setting you up for success in both academic and professional settings. As you explore these tools, you’ll find that they offer endless possibilities for innovation and efficiency. So go ahead, experiment, and integrate these commands into your research toolkit. Remember, the more you practice, the more proficient you’ll become. Happy researching!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; projects
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;255-monitor-disk-usage-in-json&quot;&gt;2.5.5 Monitor Disk Usage in JSON&lt;/h4&gt;
+
+&lt;p&gt;Keep an eye on your storage. Monitor the disk usage of a repository to manage space efficiently, especially for those with large files or extensive histories.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; diskUsage
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;By leveraging these commands, you can efficiently manage repository details, enhancing your workflow and keeping your projects running smoothly.&lt;/p&gt;
+
+&lt;h3 id=&quot;26-enhance-and-edit-repositories&quot;&gt;2.6 Enhance and Edit Repositories&lt;/h3&gt;
+
+&lt;p&gt;Effective management of repositories goes beyond viewing details. It involves enhancing and editing repository information to ensure they are well-categorized and easily discoverable. The &lt;a href=&quot;https://cli.github.com/manual/gh_repo_edit&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo edit&lt;/code&gt;&lt;/a&gt; command allows you to seamlessly edit various attributes of your repositories.&lt;/p&gt;
+
+&lt;h4 id=&quot;261-add-topics-to-a-remote-repository&quot;&gt;2.6.1 Add Topics to a Remote Repository&lt;/h4&gt;
+
+&lt;p&gt;Enhance your repository’s discoverability by adding relevant topics. This not only makes it easier for others to find but also helps it stand out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--add-topic&lt;/span&gt; &amp;lt;strings&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit my-repo &lt;span class=&quot;nt&quot;&gt;--add-topic&lt;/span&gt; machine-learning,data-science
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;262-update-repository-description&quot;&gt;2.6.2 Update Repository Description&lt;/h4&gt;
+
+&lt;p&gt;Provide a clear and concise summary of your repository’s purpose by updating its description.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--description&lt;/span&gt; &amp;lt;string&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;263-change-repository-visibility&quot;&gt;2.6.3 Change Repository Visibility&lt;/h4&gt;
+
+&lt;p&gt;Adjust the visibility of your repository to make it public, private, or internal, depending on your needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--visibility&lt;/span&gt; &amp;lt;public|private|internal&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;By leveraging these commands, you can efficiently manage and enhance your repositories, making them more accessible and tailored to your project’s requirements.&lt;/p&gt;
+
+&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping Up&lt;/h2&gt;
+
+&lt;p&gt;Unlocking the power of Git and GitHub CLI commands not only streamlines your workflow but also elevates your collaboration skills, paving the way for success in both academic and professional arenas.&lt;/p&gt;
+
+&lt;p&gt;As you explore these tools, you’ll find that they offer endless possibilities for innovation and efficiency. Experiment, integrate them into your research toolkit, and watch your productivity soar. The more you practice, the more proficient you’ll become.&lt;/p&gt;
+
+&lt;p&gt;Embrace this journey of discovery. Happy coding!&lt;/p&gt;
 
 &lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Official Manuals and Guides: Dive deeper into command documentation for a comprehensive understanding.&lt;/li&gt;
-  &lt;li&gt;Community Forums: Engage with a network of learners and professionals to exchange insights and solutions.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/git-guides&quot;&gt;Git Guides - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85&quot;&gt;A Complete Beginners Guide to Git - DEV Community&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.git-tower.com/learn/&quot;&gt;Learn Version Control with Git - Git Tower&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.to/basementdevs/everything-that-you-need-to-know-about-git-2440&quot;&gt;Everything you need to know about GIT - DEV Community&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/&quot;&gt;Get up to speed with partial clone and shallow clone - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://about.gitlab.com/blog/2020/03/13/partial-clone-for-massive-repositories/&quot;&gt;How Git Partial Clone lets you fetch only the large file you need - GitLab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/&quot;&gt;Bring your monorepo down to size with sparse-checkout - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/github-cli/&quot;&gt;GitHub CLI: A Guide to GitHub from the Command Line - SitePoint&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Unleash the full potential of Git and GitHub, and watch your research endeavors reach new heights! 🌟&lt;/p&gt;
 </description>
-        <pubDate>Sat, 11 Jan 2025 03:01:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/devtools/helpful-git-github-cli-commands/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/helpful-git-github-cli-commands/</guid>
+        <pubDate>Tue, 14 Jan 2025 16:01:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/devtools/mastering-git-github-cli-essential-commands/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/mastering-git-github-cli-essential-commands/</guid>
         
+        <category>Git</category>
+        
+        <category>GitHub CLI</category>
+        
+        <category>User tips</category>
+        
+        <category>Command-line</category>
+        
+        
+        <category>Developer tools</category>
         
       </item>
     
@@ -333,6 +563,8 @@ gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt
 gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--sparse&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/devtools/mastering-git-github-cli-essential-commands/&quot;&gt;Mastering Git &amp;amp; GitHub CLI: Essential Commands You Should Know&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;quick-setup-guide&quot;&gt;Quick Setup Guide&lt;/h2&gt;
 
 &lt;ol&gt;
@@ -368,6 +600,8 @@ gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt
 &lt;p&gt;Got questions or suggestions?
 Feel free to contribute to the script on GitHub!  &lt;br /&gt;
 Happy coding! 🚀&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/linux/Useful-Ubuntu-Commands&quot;&gt;Useful command lines in Ubuntu that help using terminals&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
