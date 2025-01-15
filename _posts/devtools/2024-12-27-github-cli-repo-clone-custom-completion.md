@@ -61,6 +61,8 @@ gh repo clone username/repo -- --depth 1
 gh repo clone username/repo -- --sparse
 ```
 
+**Related**: [Mastering Git & GitHub CLI: Essential Commands You Should Know]({% post_url devtools/2025-01-11-top-git-and-github-cli-commands-you-should-know %})
+
 ## Quick Setup Guide
 
 1. **Install the completion script**:
@@ -92,6 +94,8 @@ Adding this custom completion function can really level up your GitHub CLI game,
 Got questions or suggestions?
 Feel free to contribute to the script on GitHub!  \
 Happy coding! 🚀
+
+**Related**: [Useful command lines in Ubuntu that help using terminals]({% post_url linux/2014-10-08-Useful-Ubuntu-Commands %})
 
 ## References
 

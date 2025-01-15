@@ -254,6 +254,8 @@ gh repo clone <repository> [<directory>]
 
 While the basic cloning command is sufficient for many use cases, there are advanced techniques available to optimize the cloning process for specific scenarios. These techniques can save time and space, particularly when dealing with large repositories or limited storage.
 
+**Related**: [Speed Up GitHub CLI: Custom Completion for 'gh repo clone' Command]({% post_url devtools/2024-12-27-github-cli-repo-clone-custom-completion %})
+
 #### 2.3.1 Perform a Shallow Clone
 
 A shallow clone allows you to clone a repository with a limited history, which can significantly reduce the time and storage required.
