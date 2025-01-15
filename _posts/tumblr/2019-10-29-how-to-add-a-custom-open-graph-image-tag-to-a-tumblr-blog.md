@@ -2,16 +2,26 @@
 layout: post
 title: How to add a custom Open Graph image tag to your tumblr blog
 date: 2019-10-30 00:00
-categories: [Web Development]
+categories:
+    - Web Development
 author: chris
-tags: [Tumblr, Custom Theme, Open Graph, Meta Tags]
-permalink: /blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
+tags:
+    - Tumblr
+    - Custom Theme
+    - Open Graph
+    - Meta Tags
+permalink: /blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog/
 redirect_from:
- - /blog/2019/10/30/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
+    - /blog/2019/10/30/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
 amp:
     gist: true
 css:
     syntax: true
+image:
+    path: /assets/images/write-2160925.svg
+    width: "730"
+    height: "431"
+    hide: true
 ---
 
 Basically, Tumblr auto-generates Facebook Open Graph and/or Twitter Card markups to your blogs without a clear mechanism. I found that some of my Tumblr blog posts including the markups, but some of them not. Indeed, we have a lack of control over what kind of information to be auto-tagged. The Tumblr crawler may also pick up incorrect contents, especially og:type and og:image. You can use [Facebook Sharing Debugger tool](https://developers.facebook.com/tools/debug/) to inspect the tags of your posts.

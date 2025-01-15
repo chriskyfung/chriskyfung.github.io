@@ -16,6 +16,11 @@ redirect_from:
 excerpt: A short note about my favorite terminal application and the commands to show running processes, get root permission for GUI file manager, find previous commands and execute a shell script.
 css:
   syntax: true
+image:
+  path: /assets/images/write-2160925.svg
+  width: "730"
+  height: "431"
+  hide: true
 ---
 
 <!--more-->

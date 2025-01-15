@@ -3,10 +3,20 @@ layout: post
 title: "[template] OVITO python modifier"
 author: chris
 date: 2015-11-27
-categories: [Academic]
-tags: [OVITO, Python, Molecular dynamics]
+categories:
+    - Academic
+tags:
+    - OVITO
+    - Python
+    - Molecular dynamics
 css:
     syntax: true
+image:
+    path: /assets/images/write-2160925.svg
+    width: "730"
+    height: "431"
+    hide: true
+permalink: blog/2015/11/27/template-OVITO-python-modifier/
 ---
 
 [OVITO](https://www.ovito.org/) 2.6.0 allows users to program their own modifier in Python. Here provides a template including the common headers and a for-loop for per-particle assignment.
