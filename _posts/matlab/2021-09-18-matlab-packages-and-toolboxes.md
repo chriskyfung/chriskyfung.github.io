@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "My MATLAB Package and Toolbox Picks"
+title: My MATLAB Package and Toolbox Picks
 date: 2021-09-18 01:12
-categories: [Academic]
+categories:
+   - Academic
 author: chris
-tags: [MATLAB]
+tags:
+   - MATLAB
 permalink: /blog/matlab/matlab-packages-and-toolboxes
-image: 
+image:
    path: /images/posts/matlab/matlab-packages.jpg
+   width: "730"
+   height: "431"
 excerpt: A collection of useful MATLAB packages and toolboxes that support and improve your workflow, data visualization, code functionility and performance.
-featured: true
 ---
 
 {% include toc.md %}

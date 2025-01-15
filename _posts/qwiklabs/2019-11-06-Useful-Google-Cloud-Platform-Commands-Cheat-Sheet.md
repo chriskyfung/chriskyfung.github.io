@@ -2,15 +2,27 @@
 layout: post
 title: Useful Google Cloud Platform Commands Cheat Sheet (15 Practical Tips)
 date: 2019-11-06 13:12 +0800
-categories: [Cloud]
+categories:
+    - Cloud
 author: chris
-tags: [Google Cloud, User tips, GCLOUD, Terraform, Qwiklabs, Shorthand]
+tags:
+    - Google Cloud
+    - User tips
+    - GCLOUD
+    - Terraform
+    - Qwiklabs
+    - Shorthand
 permalink: /blog/qwiklabs/useful-google-cloud-platform-commands-cheat-sheet
 redirect_from:
- - /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
+    - /blog/qwiklabs/Useful-Google-Cloud-Platform-Commands-Cheat-Sheet
 css:
     syntax: true
 featured: true
+image:
+    path: /assets/images/write-2160925.svg
+    width: "730"
+    height: "431"
+    hide: true
 ---
 
 **gcloud** is the primary CLI tool for the Google Cloud Platform. You can find a shortlist of the frequently used commands below. There are also some examples of **gsutil** and **terraform** command-line tools. Mastering them helps you to script and automate many GCP operations.
