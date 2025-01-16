@@ -477,11 +477,16 @@ Embrace this journey of discovery. Happy coding!
 
 ## Additional Resources
 
-- [Git Guides \| GitHub](https://github.com/git-guides)
-- [A Complete Beginners Guide to Git \| DEV Community](https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85)
-- [Learn Version Control with Git \| Git Tower](https://www.git-tower.com/learn/)
-- [Everything you need to know about GIT \| DEV Community](https://dev.to/basementdevs/everything-that-you-need-to-know-about-git-2440)
-- [How Git Partial Clone lets you fetch only the large file you need \| GitLab](https://about.gitlab.com/blog/2020/03/13/partial-clone-for-massive-repositories/)
-- [Bring your monorepo down to size with sparse-checkout \| The GitHub Blog](https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/)
+- [Git Guides - GitHub](https://github.com/git-guides)
+- [A Complete Beginners Guide to Git - DEV Community](https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85)
+- [Learn Version Control with Git - Git Tower](https://www.git-tower.com/learn/)
+- [Everything you need to know about GIT - DEV Community](https://dev.to/basementdevs/everything-that-you-need-to-know-about-git-2440)
+- [20 Git Command-Line Tricks Every Developer Should Know - DEV Community](https://dev.to/jagroop2001/20-git-command-line-tricks-every-developer-should-know-1i21)
+- [Get your Practice-Git on!](https://bueltge.de/git/)
+- [Advanced Git Log - Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/git-log)
+- [How Git Partial Clone lets you fetch only the large file you need - GitLab](https://about.gitlab.com/blog/2020/03/13/partial-clone-for-massive-repositories/)
+- [Get up to speed with partial clone and shallow clone - The GitHub Blog](https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/)
+- [Bring your monorepo down to size with sparse-checkout - The GitHub Blog](https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/)
+- [GitHub CLI: A Guide to GitHub from the Command Line - SitePoint](https://www.sitepoint.com/github-cli/)
 
 Unleash the full potential of Git and GitHub, and watch your research endeavors reach new heights! 🌟
