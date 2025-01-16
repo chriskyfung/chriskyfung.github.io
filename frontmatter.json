@@ -6,6 +6,7 @@
       "value": "{{fm.permalink}}"
     }
   ],
+  "frontMatter.taxonomy.slugTemplate": " ",
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
@@ -228,6 +229,7 @@
             "title": "Drafts",
             "path": "[[workspace]]/_drafts",
             "contentTypes": [
+              "default",
               "post"
             ]
           },
@@ -236,6 +238,7 @@
             "path": "[[workspace]]/_posts",
             "previewPath": "/{{fm.permalink}}/",
             "contentTypes": [
+              "default",
               "post"
             ]
           }
