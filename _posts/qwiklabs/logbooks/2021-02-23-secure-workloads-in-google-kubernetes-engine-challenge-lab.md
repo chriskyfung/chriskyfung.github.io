@@ -19,7 +19,6 @@ amp:
 css:
    syntax: true
    custom: >
-      .ml-li { margin-left: 2rem; }
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
 ---
 
@@ -358,9 +357,8 @@ kubectl apply -f network-policy.yaml
    - gcr.io/cloudsql-docker/*
    - quay.io/jetstack/*
 
-{% include picture.html img="/qwiklabs/gsp335-task5-custom-exempt-images.png" width="824" height="691" alt="Images exempt from Binary Authorization policy" class="ml-li" %}
+   {% include picture.html img="/qwiklabs/gsp335-task5-custom-exempt-images.png" width="824" height="691" alt="Images exempt from Binary Authorization policy" %}
 
-{:start="8"}
 8. Click **SAVE POLICY**.
 
 ### Enable Binary Authorization in Google Kubernetes Engine
@@ -369,9 +367,8 @@ kubectl apply -f network-policy.yaml
 2. Click your cluster name to view its detail page.
 3. Click on the pencil icon for Binary authorization under the Security section.
 
-{% include picture.html img="/qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.png" width="823" height="191" alt="Edit Binary Authorization in Google Kubernetes Engine" class="ml-li" %}
+   {% include picture.html img="/qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.png" width="823" height="191" alt="Edit Binary Authorization in Google Kubernetes Engine" %}
 
-{:start="4"}
 4. Check **Enable Binary Authorization** in the dialog.
 5. Click **SAVE CHANGES**.
 

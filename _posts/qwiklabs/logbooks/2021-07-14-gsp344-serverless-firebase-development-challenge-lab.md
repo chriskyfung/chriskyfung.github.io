@@ -16,8 +16,6 @@ amp:
    youtube: true   
 css:
    syntax: true
-   custom: >
-      .ml-li { margin-left: 1.5rem; }
 ---
 
 In this article, we will go through the lab **GSP344** _[GSP344 Serverless Firebase Development: Challenge Lab](https://www.qwiklabs.com/focuses/14677?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/153) exercise on Qwiklabs. You will practice the skills for deploying a serverless web application with Firestore Database and Cloud Run on Google Cloud Platform.
@@ -142,7 +140,7 @@ gcloud beta run deploy frontend-staging-service \
 
 To deploy a production frontend, you need to configure the service endpoint in the `public/app.js` file by modifying the following:
 
-{% include picture.html img="qwiklabs/gsp334-task6-configure-rest-api-service-url-in-app-js.png" width="866" height="328" class="ml-li" alt="File head of public/app.js" %}
+{% include picture.html img="qwiklabs/gsp334-task6-configure-rest-api-service-url-in-app-js.png" width="866" height="328" alt="File head of public/app.js" %}
 
 1. Comment out `const REST_API_SERVICE = "data/netflix.json"`. in line 4.
 2. Uncomment `// const REST_API_SERVICE = "https://XXXX-SERVICE.run.app/2000"` in line 5.

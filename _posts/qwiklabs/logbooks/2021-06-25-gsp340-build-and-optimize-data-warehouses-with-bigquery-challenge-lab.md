@@ -16,8 +16,6 @@ amp:
    youtube: true   
 css:
    syntax: true
-   custom: >
-      .ml-li { margin-left: auto; }
 ---
 
 In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/147) exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
@@ -48,11 +46,11 @@ In this task, you will need to:
    {:.callout}
    Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** then search for `oxford covid-19 government response tracker`, click on the item. Then, click **VIEW DATASET** on the detail page.
 
-   {% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" class="ml-li" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
+   {% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
 
 5. Use a filter to find the table `oxford_policy_tracker` inside the `bigquery-public-data` as shown below.
 
-   {% include picture.html img="qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png" width="1237" height="696" class="ml-li" alt="Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`" %}
+   {% include picture.html img="qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png" width="1237" height="696" alt="Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`" %}
 
 6. Click **COMPOSE NEW QUERY**. Copy the following to the query editor,
 

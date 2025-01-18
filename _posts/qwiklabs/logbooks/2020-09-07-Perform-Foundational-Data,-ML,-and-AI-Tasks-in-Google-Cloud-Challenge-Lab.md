@@ -18,15 +18,14 @@ amp:
 css:
    syntax: true
    custom: >
-      table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
-      .ml-li { margin-left: auto }
+      table { font-size: .975rem; width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
 ---
 
 In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/117) exercise on Qwiklabs. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
 
 **The challenge contains 4 required tasks:**
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-checkpoints.png" width="599" height="246" class="ml-li" alt="Task 1: Run a simple Dataflow job. Task 2: Run a simple Dataproc job. Task 3: Run a simple Dataprep job. Task 4: AI." %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-checkpoints.png" width="599" height="246" alt="Task 1: Run a simple Dataflow job. Task 2: Run a simple Dataproc job. Task 3: Run a simple Dataprep job. Task 4: AI." %}
 
 ## Task 1: Run a simple Dataflow job
 
@@ -39,7 +38,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 3. Click **CREATE DATASET**.
 4. Enter `lab` in the Dataset ID, then click **Create dataset**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-create-bigquery-dataset.png" width="487" height="377" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-create-bigquery-dataset.png" width="487" height="377" class="text-center" %}
 
    #### Optional
 
@@ -73,7 +72,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 3. In Create job from the template, give an arbitrary job name.
 4. From the dropdown under Dataflow template, select **Text Files on Cloud Storage to BigQuery** under "Process Data in Bulk (batch)". (**DO NOT** select the item under "Process Data Continuously (stream)").
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-dataflow-create-job-from-template.png" width="610" height="562" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-dataflow-create-job-from-template.png" width="610" height="562" class="text-center" %}
 
 5. Under the Required parameters, enter the following values:
 
@@ -89,7 +88,8 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
    **Replace** `YOUR_PROJECT` with your project ID.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task1-data-flow-required-parameter.png" width="928" height="840" class="ml-li" %}
+   {% include picture.html  width="928" height="840"
+      img="qwiklabs/qwiklab-gsp323-task1-data-flow-required-parameter.png" %}
 
 6. Click **RUN JOB**.
 
@@ -103,7 +103,8 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 4. Click **Create**.
 5. After the cluster has been created, click the **SSH** button in the row of the master instance.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataproc-ssh.png" width="1269" height="501" class="ml-li" %}
+   {% include picture.html width="1269" height="501"
+      img="qwiklabs/qwiklab-gsp323-task2-dataproc-ssh.png" %}
 
 6. In the SSH console, run the following command:
 
@@ -118,7 +119,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 11. Copy `file:///usr/lib/spark/examples/jars/spark-examples.jar` to "Jar files".
 12. Enter `/data.txt` to "Arguments".
 
-    {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataprop-submit-a-job.png" width="542" height="811" class="ml-li text-center" %}
+    {% include picture.html img="qwiklabs/qwiklab-gsp323-task2-dataprop-submit-a-job.png" width="542" height="811" class="text-center" %}
 
 13. Click **CREATE**.
 
@@ -129,14 +130,14 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 1. In the Cloud Console, click on **Navigation menu** > **Dataprep**.
 2. After entering the home page of Cloud Dataprep, click the **Import Data** button.
 
-   {% include picture.html width="1248" height="589" class="ml-li"
+   {% include picture.html width="1248" height="589"
       img="qwiklabs/qwiklab-gsp323-task3-dataprep-home.png" %}
 
 3. In the Import Data page, select **GCS** in the left pane.
 4. Click on the pencil icon under Choose a file or folder.
 5. Copy `gs://cloud-training/gsp323/runs.csv` to the textbox, and click the **Go** button next to it.
 
-   {% include picture.html width="824" height="269" class="ml-li"
+   {% include picture.html width="824" height="269"
       img="qwiklabs/qwiklab-gsp323-task3-dataprep-import-from-gcs.png" %}
 
 6. After showing the preview of runs.csv in the right pane, click on the **Import & Wrangle** button.
@@ -147,15 +148,15 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 2. In the Details pane, click **FAILURE** under Unique Values to show the context menu.
 3. Select **Delete rows with selected values** to Remove all rows with the state of "FAILURE".
 
-   {% include picture.html width="710" height="499" class="ml-li text-center"
+   {% include picture.html width="710" height="499" class="text-center"
       img="qwiklabs/qwiklab-gsp323-task3-dataprep-remove-rows-with-status-failure.png" %}
 
 4. Click the downward arrow next to **column9**, choose **Filter rows** > **On column value** > **Contains**.
 5. In the Filter rows pane, enter the regex pattern `/(^0$|^0\.0$)/` to "Pattern to match".
 6. Select **Delete matching rows** under the Action section, then click the **Add** button.
 
-   {% include picture.html width="940" height="476" class="ml-li"
-       img="qwiklabs/qwiklab-gsp323-task3-dataprep-filter-column9.png" %}
+   {% include picture.html width="940" height="476"
+      img="qwiklabs/qwiklab-gsp323-task3-dataprep-filter-column9.png" %}
 
 7. Rename the columns to be:
 
@@ -172,11 +173,11 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 8. Confirm the recipe. It should like the screenshot below.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-final-recipe.png" width="378" height="615" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-final-recipe.png" width="378" height="615" class="text-center" %}
 
 9. Click **Run Job**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-run-job-on-dataflow.png" width="1268" height="613" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task3-dataprep-run-job-on-dataflow.png" width="1268" height="613" %}
 
 ## Task 4: AI
 
@@ -215,7 +216,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
    "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}" > task4-gcs.result
    ```
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp323-task4-ai-gcs-result.png" width="1186" height="249" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp323-task4-ai-gcs-result.png" width="1186" height="249" %}
 
 8. Upload the resulted file to Cloud Storage by running:
 
