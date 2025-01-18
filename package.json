@@ -10,6 +10,8 @@
     "predeploy": "node -e \"const os = require('os'); if (os.platform() === 'win32') { console.log('\\x1b[33mNotice: This npm script is designed to run on Linux. Please use a Linux OS.\\x1b[0m'); process.exit(1); }\"",
     "deploy": "npx gh-pages --dist _site --branch master --nojekyll",
     "test": "npx gulp validate",
+    "test:markdownlint": "npx markdownlint-cli2 ./_posts/**/*.md",
+    "test:markdownlint:stdout": "npx markdownlint-cli2 ./_posts/**/*.md 2>&1",
     "watch": "npx gulp"
   },
   "repository": {
@@ -49,6 +51,7 @@
     "gulp": "^5.0.0",
     "gulp-amphtml-validator": "^1.0.8",
     "gulp-html-minifier-terser": "^7.1.0",
+    "markdownlint-cli2": "^0.17.2",
     "through2": "^4.0.2"
   },
   "overrides": {
