@@ -102,7 +102,6 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
 
    {% include picture.html img="qwiklabs/gsp330-cd-jenkins-pod-ready.jpg" width="623" height="38" %}
 
-{:start="5"}
 5. The Jenkins chart will automatically create an admin password for you. To retrieve it, run:
 
    ```bash
@@ -130,7 +129,6 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
 
    {% include picture.html img="qwiklabs/gsp330-jenkins-login-page.png" width="1024" height="576" %}
 
-{:start="4"}
 4. You should now be able to log in with the username `admin` and your auto-generated password.
 
 ### Clone the Sample App Repository and Create the Production Namespace

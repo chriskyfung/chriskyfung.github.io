@@ -54,12 +54,10 @@ Procedures:
 
    {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-more-query-settings.png" width="381" height="173" class="text-center" %}
 
-{:start="3"}
 3. Select **Set a destination table for query results** under Destination; Enter `taxi_training_data` as the Table name
 
    {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-query-settings-details.png" width="492" height="492" class="text-center" %}
 
-{:start="4"}
 4. Click **Save**
 5. Run the following SQL query
 

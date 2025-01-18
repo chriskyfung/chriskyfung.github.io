@@ -281,7 +281,6 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
    {% include picture.html img="qwiklabs/qwiklab-gsp321-uptime-check.jpg" alt="new GCP uptime checks monitoring" width="567" height="534" class="text-center" %}
 
-{:start="5"}
 5. Click **TEST**.
 6. Click **SAVE** if there is no error.
 

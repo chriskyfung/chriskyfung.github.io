@@ -85,7 +85,6 @@ The following example will create the cluster to the zone `us-central1-a` using 
    {% include picture.html img="qwiklabs/gsp343-task1-get-frontend-external-ip.png"
       width="1244" height="374" alt="Monitor service status using Watch command" %}
 
-{:start="7"}
 7. Open `http://<EXTERNAL_IP>` in a new tab. You should see the homepage of the Online Boutique application like this:
 
    {% include picture.html img="qwiklabs/gsp343-task1-deployed-online-boutique-application.jpg"
@@ -171,7 +170,6 @@ Make sure that you:
    {% include picture.html img="qwiklabs/gsp343-task3-kubectl-edit.png" width="863" height="708"
       alt="change the image and image pull policy with kubectl edit" %}
 
-{:start="3"}
 3. (_Optional_) In the Cloud Console, navigate to **Kubernetes Engine** > **Workloads** and click the `frontend` deployment. Go to the **REVISION HISTORY** tab, you should see the latest revision updates to `onlineboutique-frontend:v2.1`.
 
    {% include picture.html img="qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.png"

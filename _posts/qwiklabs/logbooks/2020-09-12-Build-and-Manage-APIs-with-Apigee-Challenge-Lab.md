@@ -89,12 +89,10 @@ Apigee now deploys the API proxy into your test environment. Click **Edit proxy*
 
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-develop-init.png" width="1920" height="1080" %}
 
-{:start="3"}
 3. Select **Assign Message** from the left menu, then click **Add**.
 
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-add-assign-message.png" width="763" height="546" %}
 
-{:start="4"}
 4. Modify Policy Assign Message-1:
 
    Replace the **Set** element in the policy with the below.
@@ -138,7 +136,6 @@ curl -X POST \
 
    {% include picture.html img="qwiklabs/qwiklab-gsp336-task1-apigee-proxy-download-revision.png" width="394" height="358" class="text-center" %}
 
-{:start="2"}
 2. Extract the downloaded zip file to your local storage.
 3. In the Cloud Console, click on **Navigation Menu** > **Storage**.
 4. Create a new bucket.
