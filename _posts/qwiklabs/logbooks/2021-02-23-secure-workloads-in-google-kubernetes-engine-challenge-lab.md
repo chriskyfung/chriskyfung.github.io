@@ -77,6 +77,7 @@ Alternatively, you can create the cluster using the Cloud Console.
       ```bash
       gcloud container clusters get-credentials kraken-cluster  --zone us-central1-c
       ```
+
 {% endcapture %}
 <!-- FM:Snippet:End -->
 
@@ -120,7 +121,7 @@ It usually requires 5 - 10 minutes to process.
 #### Create a user for accessing the Cloud SQL
 
 1. In the **Cloud SQL** page, select the **Users** tab on the left panel.
-2. Click **ADD USER ACCOUNT*.
+2. Click **ADD USER ACCOUNT**.
 3. Enter `wordpress` as the User name.
 4. Enter a password that you can remember.
 5. Select **Allow any host (%)** for the name of the Host.
@@ -230,6 +231,7 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scr
 chmod 700 get_helm.sh
 ./get_helm.sh
 ```
+
 {% endcapture %}
 <!-- FM:Snippet:End -->
 

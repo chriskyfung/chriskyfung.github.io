@@ -27,13 +27,14 @@ featured: true
 
 ## What is Qwiklabs
 
-[Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice. If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
+**[Qwiklabs](https://www.qwiklabs.com)** is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice. If you are not familiar with Qwiklabs, I suggest you watch this video made by Google Cloud Team to get a rough idea about using Qwiklabs for Hands-on Practice with Google Cloud.
 
 {% include youtube.html id="cyp7soKLOYI" title="Using Qwiklabs for Hands-on Practice with Google Cloud | Google Cloud Labs" %}
 
 <br>
 
 After you logged in to Qwiklabs, you can see there are five training categories, i.e.
+
 - Infrastructure & DevOps
 - Websites & App Dev
 - Big Data
@@ -131,6 +132,7 @@ _The Cookbooks of Challenge Quest Series:_
 - [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook ]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
 
 _The Hints for Challenge Labs 2020:_
+
 - [☁ Create and Manage Cloud Resources: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %})
 - [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})
 - [☁ Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-02-Baseline-Infrastructure-Challenge-Lab %})
@@ -150,7 +152,6 @@ _The Hints for Challenge Labs 2020:_
 - [☁ Ensure Access & Identity in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-10-gsp342-ensure-access-and-identity-in-google-cloud-challenge-lab %})
 - [☁  Optimize Costs for Google Kubernetes Engine: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-18-gsp343-optimize-costs-for-google-kubernetes-engine-challenge-lab %})
 - [☁ Serverless Firebase Development: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-07-14-gsp344-serverless-firebase-development-challenge-lab %})
-
 
 _Quizzes Answers:_
 

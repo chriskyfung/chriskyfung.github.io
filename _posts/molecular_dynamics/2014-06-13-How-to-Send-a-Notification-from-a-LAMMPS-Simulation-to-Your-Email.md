@@ -1,17 +1,23 @@
 ---
 layout: post
-title: "How to Send a Notification from a LAMMPS Simulation to Your Email"
+title: How to Send a Notification from a LAMMPS Simulation to Your Email
 author: chris
 date: 2014-06-13
-categories: [Academic]
-tags: [LAMMPS, Email, Command-line, Molecular dynamics]
-image: 
+categories:
+  - Academic
+tags:
+  - LAMMPS
+  - Email
+  - Command-line
+  - Molecular dynamics
+image:
   path: /images/posts/lammps/lammps_send_email_transparent.png
   width: 620
   height: 158
   class: shadow-none
 css:
   syntax: true
+permalink: blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email/
 ---
 
 Molecular dynamics simulations often take long computational times, from several hours to a few days. It is a boring job to monitor the progress of simulations. Very often, we switch to do other work on another computer, but you may be anxious to see the simulation results. So, how can we better spend our time and focus on our research work? Here is one solution to allow the LAMMPS to send you an email, so you can no longer actively checking the progress of simulations. It is also important to minimize the idle time and maximize the utility of your computer.
@@ -24,8 +30,7 @@ I run my LAMMPS in Ubuntu 12.04 LTS. Because I require the USER-CUDA and USER-RE
 
 1. First, you need an email account with supporting SMTP outgoing service. For example, Gmail. The following web page describes how to download and set up the Gmail SMTP service in Ubuntu.
 
-   > <del><a data-href="https://foksh.com/site/configure-ubuntu-server-to-send-emails-from-gmail-account/" target="_blank">Configure Ubuntu Server to Send Emails From Gmail Account « Foksh.com</a></del>   
-   > → [How to Send Email on Ubuntu from Gmail (SMTP Postfix tutorial) - Tony Teaches Tech](https://tonyteaches.tech/postfix-gmail-smtp-on-ubuntu/)
+   > [How to Send Email on Ubuntu from Gmail (SMTP Postfix tutorial) - Tony Teaches Tech](https://tonyteaches.tech/postfix-gmail-smtp-on-ubuntu/)
 
 2. Next, we have to add a line at the end of our LAMMPS input script.
 

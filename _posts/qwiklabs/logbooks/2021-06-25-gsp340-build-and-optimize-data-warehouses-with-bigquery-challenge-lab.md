@@ -50,12 +50,10 @@ In this task, you will need to:
 
    {% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" class="ml-li" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
 
-{:start="5"}
 5. Use a filter to find the table `oxford_policy_tracker` inside the `bigquery-public-data` as shown below.
 
    {% include picture.html img="qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png" width="1237" height="696" class="ml-li" alt="Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`" %}
 
-{:start="6"}
 6. Click **COMPOSE NEW QUERY**. Copy the following to the query editor,
 
    ```sql
@@ -111,7 +109,7 @@ In this task, you need to populate the `population` column in your table with th
 
 We can divide this task into two steps:
 
-#### Create a new table to store the country population data from European Center for Disease Control COVID 19 public dataset table
+### Create a new table to store the country population data from European Center for Disease Control COVID 19 public dataset table
 
 ```sql
 CREATE OR REPLACE TABLE oxford_policy_tracker.pop_data_2019 AS
@@ -127,7 +125,7 @@ ORDER BY
   country_territory_code
 ```
 
-#### Use SQL JOINs to fill the population data to your table
+### Use SQL JOINs to fill the population data to your table
 
 The query for the **SQL JOIN** should look like this:
 

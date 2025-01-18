@@ -22,7 +22,7 @@ image:
 
 This post records the correct answers for the Qwiklabs quiz ["Knowledge Check: Controlling Your Costs search"](https://www.qwiklabs.com/quizzes/183), which is a part of the quest [_"Optimizing Your GCP Costs"_](https://www.qwiklabs.com/quests/97).
 
-_Last update: 2020-04-29_
+_Last update:_ _2020-04-29_
 
 <!--more-->
 

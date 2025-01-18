@@ -4,8 +4,13 @@ title: "☁ Perform Foundational Infrastructure Tasks in Google Cloud: Challenge
 author: chris
 date: 2020-05-02 +0800
 last_modified_at: 2020-08-04 10:08:00 +0800
-categories: [Cloud]
-tags: [Qwiklabs, Google Cloud, Logbook, Cloud Function]
+categories:
+   - Cloud
+tags:
+   - Qwiklabs
+   - Google Cloud
+   - Logbook
+   - Cloud Function
 permalink: /blog/qwiklabs/Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud-Challenge-Lab
 redirect_from:
    - /blog/qwiklabs/Baseline-Infrastructure-Challenge-Lab
@@ -14,14 +19,15 @@ redirect_from:
 excerpt: A brief procedure for the Google Cloud self-paced training GSP315 "Perform Foundational Infrastructure Tasks in Google Cloud&#58; Challenge Lab" on Qwiklabs.
 image:
    path: /images/posts/qwiklabs/map.jpg
-   height: 565
+   width: "1024"
+   height: "793"
 amp:
    youtube: true
 ---
 
 <!--more-->
 
-Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %}) help you to finish the Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** *[Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10379?parent=catalog)* (formerly known as *Baseline Infrastructure: Challenge Lab*) is listed below.
+Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %}) help you to finish the Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** _[Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10379?parent=catalog)_ (formerly known as _Baseline Infrastructure: Challenge Lab_) is listed below.
 
 **The challenge contains 4 required tasks:**
 
@@ -56,14 +62,13 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 3. In the Create function dialog, enter the following values:
 
-{:.table}
    | Field               |   Value       |
    |---------------------|---------------|
    | Function to execute | thumbnail     |
    | Runtime             | Node.js 8     |
    | Trigger             | Cloud Storage |
+   {:.table} {% comment %}<!-- markdownlint-disable-line MD055 MD056 -->{% endcomment %}
 
-{:start="4"}
 4. Copy the given `index.js` and `package.json` to the dialog.
 
    Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic you created in task 2, in line 15 of index.js.

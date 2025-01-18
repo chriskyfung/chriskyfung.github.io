@@ -3,6 +3,7 @@ layout: page-right-sidebar
 title: Privacy Policy
 image: /images/header-bg.jpg
 comments: false
+permalink: /privacy-policy/
 ---
 
 ## Overview
@@ -19,22 +20,22 @@ By visiting this site, viewing our content, you acknowledge that you accept the 
 
 ## Information Collection
 
-#### Information collected automatically
+### Information collected automatically
 
 chriskyfung.github.io may automatically (without the user being aware or notified) receive/log/collect certain types of information when you visit or interact with this site, services, mobile applications, or other products.
 
 The collected information includes but may not be limited to
 
--   Browser Information
--   Operating System Information
--   Mobile Device Information (e.g., device identifier, mobile operating system, etc.)
--   IP Address
--   Internet Service Provider
--   Content Viewed
--   Geographic Location
--   Connection Speed
--   Time of Visit
--   Referring Site, Application, or Service
+- Browser Information
+- Operating System Information
+- Mobile Device Information (e.g., device identifier, mobile operating system, etc.)
+- IP Address
+- Internet Service Provider
+- Content Viewed
+- Geographic Location
+- Connection Speed
+- Time of Visit
+- Referring Site, Application, or Service
 
 #### Comments, Public Posts, sharing on third party websites
 
@@ -58,11 +59,11 @@ chriskyfung.github.io may use cookies to provide users with a better experience 
 
 Cookies may/will also be used by 3rd-party content providers such as
 
--   Newsfeeds
--   Advertisers like Google Adsense
--   Social sharing sites like Twitter, Facebook, LinkedIn
--   Comment management services like Disqus
--   Visitor analytics services like Google Analytics
+- Newsfeeds
+- Advertisers like Google Adsense
+- Social sharing sites like Twitter, Facebook, LinkedIn
+- Comment management services like Disqus
+- Visitor analytics services like Google Analytics
 
 Cookies themselves do not contain any personal information, and this site does not use cookies to collect any personal information.
 
@@ -76,7 +77,7 @@ This site uses third-party advertising companies to serve ads when you visit thi
 
 We allow third-party companies to serve ads and/or collect certain anonymous information when you visit our web site. These companies may use non-personally identifiable information (e.g., click stream information, browser type, time and date, subject of advertisements clicked or scrolled over) during your visits to this and other Web sites in order to provide advertisements about goods and services likely to be of greater interest to you. These companies typically use a **cookie** or third party web beacon to collect this information.
 
-#### Use of cookies by third-party advertisements
+### Use of cookies by third-party advertisements
 
 Some of our third-party advertising partners may distribute cookies to users through the advertisements that are displayed/delivered on this site.
 
@@ -84,7 +85,7 @@ chriskyfung.github.io or the site does not control and **is not responsible** 
 
 chriskyfung.github.io holds no responsibility for the technologies, tools, or practices of the advertisers that provide advertising and related services on this site. This Privacy Policy does not cover any collection, use, or disclosure of information by advertisers who provide advertising and related services on chriskyfung.github.io. These advertisers' information gathering practices, including their policies regarding the use of cookies and other tracking technologies, are governed entirely by their own privacy policies, not this one.
 
-#### About Google Adsense program
+### About Google Adsense program
 
 Any advertisements served by Google Inc. (Google Adsense Program) and affiliated companies may be using cookies. These cookies allow Google to display ads based on your visits to this site and other sites that use Google advertising services. Learn how to [opt-out of Google's cookie usage](https://www.google.com/policies/technologies/ads/). Any tracking done by Google through cookies and other mechanisms is subject to Google's own privacy policies.
 

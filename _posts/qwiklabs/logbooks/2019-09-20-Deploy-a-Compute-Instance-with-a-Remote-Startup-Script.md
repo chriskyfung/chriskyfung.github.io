@@ -58,19 +58,21 @@ img="qwiklabs/qwiklabs-GSP301-download-startup-script-file.png" alt="download sa
 4. Make the file publicly accessible (This ensures the file can be accessed by the VM instance deployed soon).
 
    {% include picture.html width="397" height="306"
-   img="qwiklabs/qwiklabs-GSP301-edit-file-permission-in-GCP-storage-bucket.png" alt="Edit the file permissions in Cloud Storage using GCP web console" %}
+      img="qwiklabs/qwiklabs-GSP301-edit-file-permission-in-GCP-storage-bucket.png"
+      alt="Edit the file permissions in Cloud Storage using GCP web console" %}
 
    Click the three dots (<i class='fas fa-ellipsis-v'></i>) icon at the right end of the filename. Choose **_Edit permissions_** in the dropdown menu.
 
    {% include picture.html width="527" height="441"
-   img="qwiklabs/qwiklabs-GSP301-add-allusers-read-permission-to-install-web-sh.png" alt="Add allUsers and Reader access to the file" %}
+      img="qwiklabs/qwiklabs-GSP301-add-allusers-read-permission-to-install-web-sh.png"
+      alt="Add allUsers and Reader access to the file" %}
 
    Add a new **User**, type `allUsers` to the name field, and choose **Reader**.
 
    {% include picture.html width="632" height="244"
-   img="qwiklabs/qwiklabs-GSP301-make-install-web-sh-publicly-accessible.png" alt="Confirm the install-web.sh file become pubilcly accessible" %}
+      img="qwiklabs/qwiklabs-GSP301-make-install-web-sh-publicly-accessible.png"
+      alt="Confirm the install-web.sh file become pubilcly accessible" %}
 
-{:start="5"}
 5. Click the filename and copy the URL, i.e. `gs://.../install-web.sh` for later use.
 
    {% include picture.html width="682" height="299"
@@ -83,23 +85,25 @@ img="qwiklabs/qwiklabs-GSP301-download-startup-script-file.png" alt="download sa
 2. Select `Allow HTTP traffic` under the Firewall section.
 
    {% include picture.html width="464" height="248"
-   img="qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting.png" alt="Firewall rule setting for creating a VM instance" %}
+      img="qwiklabs/qwiklabs-GSP101-step2-allow-HTTP-traffic-in-firewall-setting.png"
+      alt="Firewall rule setting for creating a VM instance" %}
 
-{:start="3"}
 3. Expand **Management, security, disks, networking, sole tenancy**.
 
 4. In the Metadata section, add `startup-script-url` and paste the URL of the script file as the key value.
 
    {% include picture.html width="454" height="174"
-   img="qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata.png" alt="Configure a remote startup script url to the metadata in Crate a VM instance page" %}
+      img="qwiklabs/qwiklabs-GSP301-configure-startup-script-url-to-metadata.png"
+      alt="Configure a remote startup script url to the metadata in Crate a VM instance page" %}
 
    If you want to learn more, please refer [Running Startup Scripts](https://cloud.google.com/compute/docs/startupscript) in Compute Engine Documentation.
 
-{:start="5"}
 5. Click **Create** to create the instance.
 
    {% include picture.html width="682" height="174"
-   img="qwiklabs/qwiklabs-GSP301-check-progress-created-instance-1.png" alt="Successfully created instance-1" caption="The new Compute Engine, `instance-1`" %}
+      img="qwiklabs/qwiklabs-GSP301-check-progress-created-instance-1.png"
+      alt="Successfully created instance-1"
+      caption="The new Compute Engine, `instance-1`" %}
 
 ## Inspect Instance Correctly Running Startup Script
 
@@ -108,23 +112,25 @@ img="qwiklabs/qwiklabs-GSP301-download-startup-script-file.png" alt="download sa
 2. Click the instance name to open its Details tab. Then, expand the Logs and click **Serial port 1 (console)**.
 
    {% include picture.html width="674" height="380"
-   img="qwiklabs/qwiklabs-GSP301-view-serial-port-of-created-vm-instance.png" alt="Serial port logs showing in the Details tab of instance-1" %}
+      img="qwiklabs/qwiklabs-GSP301-view-serial-port-of-created-vm-instance.png"
+      alt="Serial port logs showing in the Details tab of instance-1" %}
 
-{:start="3"}
 3. The startup script automatically installs the Apache web server software while creating the VM instance. You should able to find the log events about downloading the startup script and installing the apache packages.
 
    {% include picture.html width="682" height="343"
-   img="qwiklabs/qwiklabs-GSP301-logs-of-serial-port-1.png" alt="Serial Log: downloading startup script" %}
+      img="qwiklabs/qwiklabs-GSP301-logs-of-serial-port-1.png"
+      alt="Serial Log: downloading startup script" %}
 
    {% include picture.html width="682" height="165"
-   img="qwiklabs/qwiklabs-GSP301-apache-installation-in-logs-of-serial-port-1.png" alt="Serial Logs: installing Apache with startup script" caption="Logs that shows the execution of the startup script" %}
-
-{:start="4"}
+      img="qwiklabs/qwiklabs-GSP301-apache-installation-in-logs-of-serial-port-1.png"
+      alt="Serial Logs: installing Apache with startup script"
+      caption="Logs that shows the execution of the startup script" %}
 
 4. Open the external IP in your web browser. You should view the Apache default page if the startup script has been successfully executed.
 
    {% include picture.html width="682" height="441"
-   img="qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance.png" alt="Apache2 Debian Default Page" caption="The Apache web server installed by the startup script" %}
+      img="qwiklabs/qwiklabs-GSP101-step3-configure-apache2-web-server-in-VM-instance.png" alt="Apache2 Debian Default Page"
+      caption="The Apache web server installed by the startup script" %}
 
 Congratulations! You should accomplish the lab if you follow all the above steps.
 
@@ -136,7 +142,7 @@ With the GCP web console, you can to set up a VM instance as a web server withou
 
 * * *
 
-**See Also**
+**See Also**:
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
 - [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})

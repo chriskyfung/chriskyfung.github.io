@@ -106,7 +106,7 @@ Qwiklabs made a significant change in its web design at the end of September 202
 - Add color backgrounds to each row in tables of the **Completed Courses** and **Completed Labs** pages.
 - Change to use JSON-markup for storing lab and quest data.
 
-The **version 0.4.5** start covering the "*Completed Courses*" and "*Completed Labs*" pages under the **My Learning** section. Since the quests mix with speedrun games in the list of completed courses, each row of the game records highlights in purple color for distinguishing them.
+The **version 0.4.5** start covering the "_Completed Courses_" and "_Completed Labs_" pages under the **My Learning** section. Since the quests mix with speedrun games in the list of completed courses, each row of the game records highlights in purple color for distinguishing them.
 
 <div class="row">
 

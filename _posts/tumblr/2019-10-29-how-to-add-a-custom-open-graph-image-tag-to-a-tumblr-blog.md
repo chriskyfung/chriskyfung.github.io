@@ -56,10 +56,10 @@ In this section, I will demonstrate how to set up a GitHub repository to a GitHu
 
 In the **Settings** tab of the new repository, go to **GitHub Pages** section and configure the settings as below:
 
- - Source: `master branch`
- - Theme: _(Optional) chooses a theme as you like_
- - Custom domain: _(Optional) recommends using a subdomain, e.g. `res.example.com`_
- - Enforce HTTPS: _(Optional)_
+- Source: `master branch`
+- Theme: _(Optional) chooses a theme as you like_
+- Custom domain: _(Optional) recommends using a subdomain, e.g. `res.example.com`_
+- Enforce HTTPS: _(Optional)_
 
 {% include picture.html height="618" img="tumblr/GitHub-Page-Settings.png" alt="Example GitHub Pages configuration" caption="Example GitHub Pages configuration"%}
 
@@ -127,6 +127,7 @@ Log in your Tumblr account and go to edit the HTML code of your theme. Next, add
 Please replace the `og:locale` tags with your languages, you can find the choices from [Yoast SEO's Knowledge Base](https://developer.yoast.com/features/opengraph/api/changing-og-locale-output/)
 
 The above code specifies the `og:image` of all Text posts to point at **`https://<your-github-page-url>/og-images/{PostID}.png`**. For example:
+
 - `https://res.example.com/og-images/1234.png` _(with a custom domain)_, or
 - `https://john.github.io/repository-abc/og-images/1234.png` _(without custom domain)_
 

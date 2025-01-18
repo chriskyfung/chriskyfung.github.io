@@ -41,7 +41,7 @@ The Windows Registry contains the keys and values for all store apps, including 
 
 2. Registry Editor will open.
 
-3. Navigate to *`Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages`*.
+3. Navigate to _`Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages`_.
 
 4. Look for the key with the app name, or press <kbd>Ctrl</kbd> + <kbd>F</kbd> to use the "Find" dialog for a quick search under the registry tree.
 
@@ -59,7 +59,7 @@ The Windows Registry contains the keys and values for all store apps, including 
 
 2. Scroll down and click on **Look for another app on this PC**.
 
-3. In the "Open with..." dialog, paste the copied path to the field "*File name:*" and hit Enter.
+3. In the "Open with..." dialog, paste the copied path to the field _"File name:"_ and hit Enter.
 
    {% include picture.html width="419" height="224" img="windows/The%20app%20root%20folder%20in%20WindowsApps.jpg" alt="The app root folder in WindowsApps" %}
 

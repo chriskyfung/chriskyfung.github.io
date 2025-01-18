@@ -25,13 +25,13 @@ In this article, we will go through the lab **GSP311** _[Automate Interactions w
 **The challenge contains 8 required tasks:**
 
 1. Create a Regional Cloud Storage bucket
-1. Create a Cloud Function
-1. Create a BigQuery dataset
-1. Create a Pub/Sub topic
-1. Create a Regional Cloud Storage bucket with DFaudio folder
-1. Deploy Dataflow pipeline
-1. Process the sample audio files
-1. Run a Data Loss Prevention Job
+2. Create a Cloud Function
+3. Create a BigQuery dataset
+4. Create a Pub/Sub topic
+5. Create a Regional Cloud Storage bucket with DFaudio folder
+6. Deploy Dataflow pipeline
+7. Process the sample audio files
+8. Run a Data Loss Prevention Job
 
 ## Setting up the environment
 
@@ -59,9 +59,9 @@ Make sure you:
 4. In the **Event Type** dropdown, select **Finalize/Create**.
 5. Click on the **BROWSE** button, and choose the bucket created in Task 1.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp311-task2-create-cloud-function.png" width="591" height="639" %}
+   {% include picture.html width="591" height="639"
+      img="qwiklabs/qwiklab-gsp311-task2-create-cloud-function.png" %}
 
-{:start="6"}
 6. Select the **Runtime** to be `Node.js 8`
 7. Open the [source repository](https://github.com/GoogleCloudPlatform/dataflow-contact-center-speech-analysis/tree/master/saf-longrun-job-func) in a new window.
 8. Replace the **INDEX.JS** AND **PACKAGE.JSON** in the Cloud Function with the source codes from the repository.
@@ -107,7 +107,8 @@ export TABLE_NAME=transcript
 python3 saflongrunjobdataflow.py --project=$PROJECT_ID --input_topic=projects/$PROJECT_ID/topics/$TOPIC_NAME --runner=DataflowRunner --region=us-central1 --temp_location=gs://$BUCKET_NAME/tmp --output_bigquery=$DATASET_NAME.$TABLE_NAME --requirements_file="requirements.txt"
 ```
 
-{% include picture.html img="qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png" width="842" height="808" %}
+{% include picture.html width="842" height="808"
+   img="qwiklabs/qwiklab-gsp311-task6-cloud-dataflow-pipeline.png" %}
 
 ## Task 7: Upload Sample Audio Files for Processing
 
@@ -124,7 +125,8 @@ gsutil -h x-goog-meta-callid:1234567 -h x-goog-meta-stereo:true -h x-goog-meta-p
 > Q: What is the TOP named entity in the 5 audio files processed by the pipeline?
 > A: pair
 
-{% include picture.html img="qwiklabs/qwiklab-gsp311-task7-bigquery.png" width="914" height="847" %}
+{% include picture.html width="914" height="847"
+   img="qwiklabs/qwiklab-gsp311-task7-bigquery.png" %}
 
 ## Task 8: Run a Data Loss Prevention Job
 
@@ -135,9 +137,10 @@ You must make a copy of your BigQuery table before running a Data Loss Preventio
 3. Click on **More** > **Query settings**.
 4. Assign a Table name, e.g. `copied`, then click **Save**.
 
-{% include picture.html img="/qwiklabs/qwiklab-gsp311-task8-copy-bigqury-table.png" width="317" height="314" class="text-center" %}
+   {% include picture.html width="317" height="314"
+      img="/qwiklabs/qwiklab-gsp311-task8-copy-bigqury-table.png"
+      class="text-center" %}
 
-{:start="5"}
 5. Run the following SQL query:
 
    ```sql

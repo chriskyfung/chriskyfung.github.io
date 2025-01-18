@@ -52,9 +52,10 @@ After the jumphost has been created, navigate to **Compute Engine** > **VM insta
 
 2. In the SSH window, go to the `/work/dm` directory.
 
-   {% include picture.html width="706" height="556" img="qwiklabs/qwiklab-GSP314-jumphost-ssh.png" alt="SSH console" %}
+   {% include picture.html width="706" height="556"
+      img="qwiklabs/qwiklab-GSP314-jumphost-ssh.png"
+      alt="SSH console" %}
 
-{:start="3"}
 3. Use an editor to open the configuration file **prod-network.yaml**, and replace `SET_REGION` with `us-east1`.
 
 4. Create the **kraken-prod-vpc** with the YAML file using `gcloud` command.<br>
@@ -123,7 +124,6 @@ Make sure you:
 
    {% include picture.html width="706" height="718" img="qwiklabs/qwiklab-GSP314-alerting.png" %}
 
-{:start="4"}
 4. Click **ADD**, and then add an email in the Notification setting.
 
    Click **Check my progress** to verify **Task 2**.
@@ -147,22 +147,23 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
 
 2. Search **spin-deck**.
 
-   {% include picture.html width="706" height="332" img="qwiklabs/qwiklab-GSP314-spin-deck.png" %}
+   {% include picture.html width="706" height="332"
+      img="qwiklabs/qwiklab-GSP314-spin-deck.png" %}
 
-{:start="3"}
 3. Click **Port Forward** at the end of the detail page.
 
-   {% include picture.html width="611" height="223" img="qwiklabs/qwiklab-GSP314-port-forwarding.png" %}
+   {% include picture.html width="611" height="223"
+      img="qwiklabs/qwiklab-GSP314-port-forwarding.png" %}
 
-{:start="4"}
 4. The Cloud Shell will launch automatically with the port forwarding command.
 
-   {% include picture.html width="706" height="174" img="qwiklabs/qwiklab-GSP314-port-forwarding-cmd.png" %}
+   {% include picture.html width="706" height="174"
+      img="qwiklabs/qwiklab-GSP314-port-forwarding-cmd.png" %}
 
-{:start="5"}
 5. Click the **Web Preview** icon at the top of the Cloud Shell window and select **Preview on port 8080**, to open the Spinnaker user interface.
 
-   {% include picture.html width="706" height="355" img="qwiklabs/qwiklab-GSP314-spinnaker.png" %}
+   {% include picture.html width="706" height="355"
+      img="qwiklabs/qwiklab-GSP314-spinnaker.png" %}
 
 ### 3.2 Clone your source code repository
 
@@ -172,9 +173,9 @@ The lab manual suggests you use Cloud Shell and `kubectl` to **port forward** th
 
 3. Click **Clone** at the top of the repository, and copy the git clone command to the Cloud Shell.
 
-   {% include picture.html width="706" height="500" img="qwiklabs/qwiklab-GSP314-clone-sample-app.png" %}
+   {% include picture.html width="706" height="500"
+      img="qwiklabs/qwiklab-GSP314-clone-sample-app.png" %}
 
-{:start="4"}
 4. Run the copied command to download the sample application source code, and then set the username and email address for the Git commits in this repository using run the following codes:
 
    ```bash

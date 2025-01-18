@@ -14,6 +14,8 @@ image:
    height: 480
 css:
    syntax: true
+   custom: >-
+    .red { color: red; }
 ---
 
 Teamviewer is the primary choice of cross-platform remote desktop software for Windows, Mac, and Linux systems. It is quite often that universities and institutes have a secured network, therefore traditional VNC connect fails to receive incoming packets via listening ports. The Teamviewer allows PC connections beyond private networks, that are blocked by firewalls or router settings. It is also easy to set up, as it installs its host and client at one time. It is wonderful to remotely access your desktop at any time and anywhere. Teamviewer is awesome and free for personal, non-commercial use.
@@ -36,9 +38,10 @@ I eventually successfully run the host of Chrome Remote Desktop on my Kubuntu 14
 
 Before the following steps, please read [Google's help document](https://support.google.com/chrome/answer/1649523).
 
-<span style="color:red">Note: ** Ubuntu 12.04 is no longer supported due to outdated chrome version **</span>
+**NOTE: Ubuntu 12.04 is no longer supported due to outdated chrome version**
+{:.red}
 
-**Install Google Chrome**
+**Install Google Chrome**:
 
 Run the following commands to download and install the Chrome Browser,
 
@@ -48,7 +51,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
-**Download and Install Chrome Remote Desktop Host Component Package**
+**Download and Install Chrome Remote Desktop Host Component Package**:
 
 Run the following commands to download and install the host component of Chrome Remote Desktop for 64-bit Debian,
 
@@ -60,7 +63,7 @@ sudo dpkg -i chrome-remote-desktop_current_amd64.deb
 sudo apt-get install -f
 ```
 
-**Add Groups**
+**Add Groups**:
 
 Use the commands below to add your `<username>` to the chrome-remote-desktop group, and then reboot/logoff for the changes to take effect.
 

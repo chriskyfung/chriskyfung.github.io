@@ -181,9 +181,12 @@ kubectl scale deployment valkyrie-dev --replicas 3
 
    {:.callout style="margin-bottom:0;"}
    **Tips**: Instead of `kubectl edit`, you can update images for the deployment by running the following:
+
+   {% comment %}<!-- markdownlint-disable MD031 -->{% endcomment %}
    ```bash
    kubectl set image deployment valkyrie-dev backend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2 frontend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2
    ```
+   {% comment %}<!-- markdownlint-enable MD031 -->{% endcomment %}
    {:.callout}
 
 ## Task 6: Create a pipeline in Jenkins to deploy your app
@@ -199,7 +202,7 @@ In this task, you will need to:
 5. Modify the site
 6. Kick off Deployment
 
-#### 6.1 To connect the Jenkins
+### 6.1 To connect the Jenkins
 
 1. Get the password with the following command:
 
@@ -224,7 +227,7 @@ In this task, you will need to:
 3. Click on the **Web Preview** button in cloud shell, then click “Preview on port 8080” to connect to the Jenkins console.<br>
    **Username**: admin
 
-#### 6.2 Adding your service account credentials
+### 6.2 Adding your service account credentials
 
 1. In the Jenkins user interface, click **Credentials** in the left navigation.
 
@@ -236,7 +239,7 @@ In this task, you will need to:
 
 5. Select **Google Service Account from metadata** from the **Kind** drop-down and click **OK**.
 
-#### 6.3 Creating the Jenkins job
+### 6.3 Creating the Jenkins job
 
 Create a pipeline job that points to your */master branch on your source code.
 
@@ -256,15 +259,15 @@ Create a pipeline job that points to your */master branch on your source code.
 
    {% include picture.html width="706" height="717" img="qwiklabs/qwiklab-GSP318-Multibranch_Pipeline.png" %}
 
-#### 6.4 Modifying the pipeline definition
+### 6.4 Modifying the pipeline definition
 
 Open `Jenkinsfile` file in a text editor, and replace **YOUR_PROJECT** with your GCP project ID.
 
-#### 6.5 Modify the site
+### 6.5 Modify the site
 
 Open `source/html.go` file in a text editor, and change the color of headings from green to orange.
 
-#### 6.6 Kick off Deployment
+### 6.6 Kick off Deployment
 
 Commit and push the changes:
 

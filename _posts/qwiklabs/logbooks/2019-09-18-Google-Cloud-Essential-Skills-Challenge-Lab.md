@@ -108,6 +108,6 @@ Creating a Compute Engine instance as a web server using the web console is pret
 
 * * *
 
-**See Also**
+**See Also**:
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})

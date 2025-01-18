@@ -106,12 +106,12 @@ gsutil mb gs://${PROJECT_ID}
 gsutil cp ~/wordpress.sql gs://${PROJECT_ID}
 ```
 
-In the web console, navigate to ***Storage*** to confirm the uploaded file.
+In the web console, navigate to _**Storage**_ to confirm the uploaded file.
 {% include picture.html height="344" img="qwiklabs/qwiklabs-GSP306-step5-dump-file-in-cloud-storage.png" alt="uploaded wordpress.sql file in cloud storage" %}
 
 ## Import to Cloud SQL
 
-Go back to the web console, navigate to ***SQL*** to check whether the cloud SQL instance is ready. Once the instance is online, click the instance name to view the details.
+Go back to the web console, navigate to _**SQL**_ to check whether the cloud SQL instance is ready. Once the instance is online, click the instance name to view the details.
 
 Choose **DATABASES** tab, and click **Create database**.
 

@@ -17,8 +17,6 @@ amp:
    youtube: true
 css:
    syntax: true
-   custom: >
-      .ml-li { margin-left: auto }
 ---
 
 In this article, we will go through the lab **GSP330** _[Implement DevOps in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/13287?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/141) exercise on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
@@ -102,7 +100,7 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
 
    Example Output:
 
-   {% include picture.html img="qwiklabs/gsp330-cd-jenkins-pod-ready.jpg" width="623" height="38" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-cd-jenkins-pod-ready.jpg" width="623" height="38" %}
 
 {:start="5"}
 5. The Jenkins chart will automatically create an admin password for you. To retrieve it, run:
@@ -130,7 +128,7 @@ In this article, we will go through the lab **GSP330** _[Implement DevOps in Goo
 
 3. To get to the Jenkins user interface, click on the Web Preview button in the cloud shell, then click **Preview on port 8080**.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-login-page.png" width="1024" height="576" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-login-page.png" width="1024" height="576" %}
 
 {:start="4"}
 4. You should now be able to log in with the username `admin` and your auto-generated password.
@@ -168,7 +166,7 @@ Configure your credentials to allow Jenkins to access the code repository. Jenki
 
 5. Select **Google Service Account from metadata** from the **Kind** drop-down and click **OK**.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-add-gcp-credentials.png" width="1024" height="286" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-add-gcp-credentials.png" width="1024" height="286" %}
 
 #### Configure the Jenkins job
 
@@ -182,16 +180,14 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
 3. Click on the job name of **sample-app**.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-pipeline-job.png" width="1024" height="277" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-pipeline-job.png" width="1024" height="277" %}
 
-{:start="4"}
 4. Click **Configure** in the left pane.
 
 5. In the configuration page, enter `sample-app` as the Display Name in the General section.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.png" width="1024" height="430" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.png" width="1024" height="430" %}
 
-{:start="6"}
 6. In the Branch Sources section, click on **Add source** and choose **Git** from the dropdown menu.
 
 7. Copy the Cloud Source URL of the **sample-app** repository to the **Project Repository** field. The URL should look like this:
@@ -202,30 +198,27 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
    Select the service account for your GCP project from the **Credentials** dropdown list.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.png" width="946" height="524" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.png" width="946" height="524" %}
 
-{:start="8"}
 8. Check **Periodically if not otherwise run** in the **Scan Multibranch Pipeline Trigger** section, and then select **1 minute** for the interval.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-build-and-trigger-config.png " width="944" height="354" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-job-build-and-trigger-config.png " width="944" height="354" %}
 
-{:start="9"}
 9. Scroll to the bottom and click on **Save**.
 
 10. If you correctly configured the pipeline, you will see **Finished: SUCCESS** at the end of the Scan Multibranch Pipeline Log.
 
-    {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.png" width="1024" height="690" class="ml-li" %}
+    {% include picture.html img="qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.png" width="1024" height="690" %}
 
 ### Examine the Console Output from the Jenkins Pipeline
 
 1. Click on **sample-app >> master** under Build Executor Status in the left pane, then click on the job under Build History.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-build-master.png" width="739" height="560" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-build-master.png" width="739" height="560" %}
 
-{:start="2"}
 2. Click **Console Output** in the left navigation to monitor the build process.
 
-   {% include picture.html img="qwiklabs/gsp330-jenkins-console-output.png" width="1024" height="809" class="ml-li" %}
+   {% include picture.html img="qwiklabs/gsp330-jenkins-console-output.png" width="1024" height="809" %}
 
    This process takes about five minutes to complete.
 

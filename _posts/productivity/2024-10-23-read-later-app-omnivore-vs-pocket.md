@@ -20,7 +20,7 @@ published: false
 Do you ever feel overwhelmed by the countless articles you want to read but can never find the time?
 Whether you're a fan of **[Pocket]** or **[Instapaper]**, I truly believe these read-later apps are a must for anyone eager to learn and absorb new information.
 
-I've been a loyal user of Pocket since it was originally called *Read It Later*.
+I've been a loyal user of Pocket since it was originally called _Read It Later_.
 It helps me save articles from the web and read them whenever I get a free moment.
 
 But with new apps like **[Omnivore]** popping up, it might be worth considering a switch.
@@ -47,12 +47,12 @@ Pocket is a great app, at least for now. But if you're a heavy user like me, you
 
 [How to Save to Pocket]: https://support.mozilla.org/en-US/kb/how-to-save-to-pocket-overview
 [Listening to articles in Pocket with Text-to-Speech]: https://support.mozilla.org/en-US/kb/listening-to-articles-in-pocket-with-text-to-speech
-[Using Pocket offline](https://support.mozilla.org/en-US/kb/using-pocket-offline)
+[Using Pocket offline]: https://support.mozilla.org/en-US/kb/using-pocket-offline
 
 ### What I Don't Like
 
 - **Search Functionality**: Pocket’s search feature in the free account is fairly simple, missing filters or advanced operators to help narrow down your results. To access [Full-Text Search and Advanced Search Operators][Pocket Premium Full-Text Search], you'll need to upgrade to Pocket Premium.
-- **Undesired Recent Changes**: Mozilla rolled out several updates to Pocket in 2024, but I found some of the changes quite disappointing. For example, the article link shared now directs to a preview page on *[getpocket.com]* rather than the original webpage. Also, the [bulk editing feature][Bulk Editing Pocket] has been removed from the search result pages.
+- **Undesired Recent Changes**: Mozilla rolled out several updates to Pocket in 2024, but I found some of the changes quite disappointing. For example, the article link shared now directs to a preview page on _[getpocket.com]_ rather than the original webpage. Also, the [bulk editing feature][Bulk Editing Pocket] has been removed from the search result pages.
 
 {% include picture.html width="413" height="434" img="/read-later-app/getpocket.com_shared_item.jpg" alt="Pocket's Saved Items" caption="Pocket's Saved Items" class="text-center" %}
 
@@ -110,7 +110,7 @@ I’d love to hear about your experiences with Pocket and Omnivore.
 What features do you value most in a read-later app?
 Share your thoughts in the comments below!
 
-*Happy reading*! 🔖
+_Happy reading_! 🔖
 
 * * *
 

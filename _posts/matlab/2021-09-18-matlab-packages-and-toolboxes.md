@@ -25,7 +25,7 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 : MATLink is a Mathematica™ application to communicate with MATLAB™, providing functionality to easily transfer data between the two systems, and use MATLAB functions, scripts, and toolboxes from within Mathematica.
 
-   ***Learn more**:* <cite>[MATLink Package for Mathematica - YouTube](https://www.youtube.com/watch?v=g1rzyVl9VCA)</cite>
+   _**Learn more**:_ <cite>[MATLink Package for Mathematica - YouTube](https://www.youtube.com/watch?v=g1rzyVl9VCA)</cite>
 
 [SMATLINK - Let MATLAB Dance with Mathematica](https://www.mathworks.com/matlabcentral/fileexchange/20573-smatlink-let-matlab-dance-with-mathematica "File Exchange - MATLAB Central")
 
@@ -82,7 +82,7 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 : A function converts text to double like MATLAB's str2double, but up to 400x faster! multithreaded.
 
-***Learn more**:*
+_**Learn more**:_
 
 - <cite>[Techniques to Improve Performance - MathWorks](https://www.mathworks.com/help/matlab/matlab_prog/techniques-for-improving-performance.html)</cite>
 - <cite>[Profile Your Code to Improve Performance - MathWorks](https://www.mathworks.com/help/matlab/matlab_prog/profiling-for-improving-performance.html)</cite>
@@ -246,7 +246,7 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 [Beautiful and distinguishable line colors + colormap](https://www.mathworks.com/matlabcentral/fileexchange/42673-beautiful-and-distinguishable-line-colors-colormap "File Exchange - MATLAB Central")
 
-: A function creates a plot with lots of lines with very distinguishable and aesthetically pleasing colors. Works for *N* colors.
+: A function creates a plot with lots of lines with very distinguishable and aesthetically pleasing colors. Works for _N_ colors.
 
 [Contour Line Smoothing](https://www.mathworks.com/matlabcentral/fileexchange/38862-contour-line-smoothing "File Exchange - MATLAB Central")
 
@@ -386,7 +386,7 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 : A function creates a legend with a specified number of columns.
   
-  ***Remark**: As of MATLAB 2018a, legend() now supports columns, so this function will no longer be maintained*.
+  _**Remark**: As of MATLAB 2018a, legend() now supports columns, so this function will no longer be maintained_.
 
 ### Colors and Styling
 
@@ -452,7 +452,7 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 : A function allows you to interact a 3D plot with a crosshair and dynamically view X and Y linecuts of surf or image data.
 
-  ***Remark**: This function does not work if the figure is being held on status*.
+  _**Remark**: This function does not work if the figure is being held on status_.
 
 [3D image rotation using sliders](https://www.mathworks.com/matlabcentral/fileexchange/19891-3d-image-rotation-using-sliders "File Exchange - MATLAB Central")
 
@@ -508,7 +508,7 @@ excerpt: A collection of useful MATLAB packages and toolboxes that support and i
 
 : A package creates a dialog box for selecting variables from the base workspace.
 
-***Learn more**:*
+_**Learn more**:_
 
 - <cite>[MATLAB GUI - MathWorks](https://www.mathworks.com/discovery/matlab-gui.html)</cite>
 

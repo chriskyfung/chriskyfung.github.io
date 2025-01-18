@@ -69,6 +69,7 @@ Open the `qwiklabs.jinja` file, you should see the following codes:
 img="qwiklabs/qwiklabs-GSP302-jinja-in-Cloud-Shell-Code-Editor.png" alt="Snapshot of the given Jinja template in Cloud Shell code editor" %}
 
 The template already includes the following configurations:
+
 - Instance name: vm-test
 - Zone: _Read the value from the `qwiklabs.yaml`_
 - Machine Type: f1-micro
@@ -76,6 +77,7 @@ The template already includes the following configurations:
 - Network Interfaces: Default Network with a public IP address
 
 To fulfil the lab requirements, the template still does not have,
+
 - metadata for embedding the startup script, and
 - a tag called `http`.
 
@@ -90,8 +92,9 @@ img="qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor.png" alt
 
 Let's recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})"_.
 
-This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})"_. You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL). For more information, read [Running startup scripts
-](https://cloud.google.com/compute/docs/startupscript) in the Cloud Deployment Manager documentation.
+This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})"_.
+You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL).
+For more information, read [Running startup scripts](https://cloud.google.com/compute/docs/startupscript) in the Cloud Deployment Manager documentation.
 
 Add the following properties to the instance configuration:
 
@@ -170,7 +173,7 @@ This post has also been published to Medium. If you like to read and take notes 
 
 If you finished the first three labs of the challenge quest, you are capable of building Linux-based web servers on Google Cloud. How about a Windows server, do you know how to set up an IIS web server on it and allow RDP access through the VPC network? [Next lab](https://chriskyfung.github.io/blog/qwiklabs/Configure-Windows-Bastion-Host-with-Terraform-on-GCP) is a challenge of configuring a secure Windows web server with a Bastion host (or jump box).
 
-**See Also**
+**See Also**:
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
 

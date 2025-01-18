@@ -61,7 +61,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    | Region:    | `us-east1` |
    | IP address range: | `192.168.32.0/20` |
 
-5. Click **Create**.
+7. Click **Create**.
 
 ## Task 2: Create production VPC using Deployment Manager
 
@@ -250,9 +250,10 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 2. Replace `YOUR_SQL_INSTANCE` with `griffin-dev-db`'s Instance connection name.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp321-sql-conf-yaml.jpg" width="673" height="155" class="ml-li text-center" %}
+   {% include picture.html width="673" height="155"
+      img="qwiklabs/qwiklab-gsp321-sql-conf-yaml.jpg"
+      class="ml-li text-center" %}
 
-{:start="3"}
 3. Save the file change.
 4. Go back to the Cloud Shell, run the following commands:
 

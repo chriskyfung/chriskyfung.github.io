@@ -10,7 +10,7 @@ image:
    width: 251
    height: 262
    hide: true
-permalink: /blog/matlab/Working-MATLAB-with-MS-Excel
+permalink: /blog/matlab/Working-MATLAB-with-MS-Excel/
 redirect_from:
  - /blog/2015/03/10/Working-MATLAB-with-MS-Excel
 ---
@@ -37,7 +37,7 @@ The **MATLAB Command Window** button appears on the Microsoft Windows taskbar. S
 
 {% include picture.html width="147" height="35"
 img="matlab/ml_cmd_window_taskbar.excel2010.png" alt="image: Windows taskbar with MS Excel and MATLAB" class="mb-5 text-center" %}
- 
+
 Now, you can see a list of the MATLAB options in the context menu when you right-click a cell in Excel.
 
 {% include picture.html width="642" height="615"
