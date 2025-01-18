@@ -254,7 +254,7 @@ After the above procedure, the **Proxy Endpoints** → **PreFlow** should look l
 
 9. Once the app is created, the page displays details about the app credentials. Click **Show** on the Key row then copy the API key.
 
-### Testing {% comment %}<!-- markdownlint-disable-line MD022 MD024 -->{% endcomment %}
+### Testing {#testing-2}
 
 Replace `<APP_API_KEY>` with the key from the app credentials. Then, run the following curl statement in the Cloud Shell:
 
@@ -364,7 +364,7 @@ Go to the Cloud Shell, run the commands given in the lab.
 
 9. Click **Save**.
 
-### Testing {#testing-2}
+### Testing {#testing-4}
 
 Test the real backend routing using the `curl` statement below.
 

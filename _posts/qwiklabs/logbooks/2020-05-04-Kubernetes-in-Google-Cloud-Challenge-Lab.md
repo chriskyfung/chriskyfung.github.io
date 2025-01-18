@@ -182,11 +182,9 @@ kubectl scale deployment valkyrie-dev --replicas 3
    {:.callout style="margin-bottom:0;"}
    **Tips**: Instead of `kubectl edit`, you can update images for the deployment by running the following:
 
-   {% comment %}<!-- markdownlint-disable MD031 -->{% endcomment %}
    ```bash
    kubectl set image deployment valkyrie-dev backend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2 frontend=gcr.io/$PROJECT_ID/valkyrie-app:v0.0.2
-   ```
-   {% comment %}<!-- markdownlint-enable MD031 -->{% endcomment %}
+   ``` {% comment %}<!-- markdownlint-disable-line MD031 -->{% endcomment %}
    {:.callout}
 
 ## Task 6: Create a pipeline in Jenkins to deploy your app
