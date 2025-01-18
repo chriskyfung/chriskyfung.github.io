@@ -18,7 +18,6 @@ css:
    syntax: true
    custom: >
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
-      .ml-li { margin-left: 2rem }
 ---
 
 In this article, we will go through the lab **GSP322** _[Build and Secure Networks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12068?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/128) exercise on Qwiklabs. You will need to set up firewall rules to configure a simple environment securely that only allow SSH to the bastion via IAP.

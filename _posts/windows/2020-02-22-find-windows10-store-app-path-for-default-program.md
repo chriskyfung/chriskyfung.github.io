@@ -37,19 +37,15 @@ The Windows Registry contains the keys and values for all store apps, including 
 
    {% include picture.html width="131" height="121" img="windows/icon%20of%20regedit.exe.png" alt="icon of regedit.exe" %}
 
-   {:start="2"}
-
 2. Registry Editor will open.
 
-3. Navigate to *`Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages`*.
+3. Navigate to _`Computer\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Repository\Packages`_.
 
 4. Look for the key with the app name, or press <kbd>Ctrl</kbd> + <kbd>F</kbd> to use the "Find" dialog for a quick search under the registry tree.
 
 5. Open the app key you found, there should be a subkey called `PackageID` and another called `PackageRootFolder`, shown as the example below.
 
    {% include picture.html width="691" height="190" img="windows/Example%20registry%20of%20a%20windows%20store%20app.png" alt="Example registry of a windows store app" %}
-
-   {:start="6"}
 
 6. Double-click the name of the subkey `PackageRootFolder`, and copy the value data to the clipboard.
 
@@ -59,11 +55,9 @@ The Windows Registry contains the keys and values for all store apps, including 
 
 2. Scroll down and click on **Look for another app on this PC**.
 
-3. In the "Open with..." dialog, paste the copied path to the field "*File name:*" and hit Enter.
+3. In the "Open with..." dialog, paste the copied path to the field _"File name:"_ and hit Enter.
 
    {% include picture.html width="419" height="224" img="windows/The%20app%20root%20folder%20in%20WindowsApps.jpg" alt="The app root folder in WindowsApps" %}
-
-   {:start="4"}
 
 4. The app root folder will open. Find and choose the Program (.exe) file inside the folder and in its subfolders, for the application you want to make as the default.
 

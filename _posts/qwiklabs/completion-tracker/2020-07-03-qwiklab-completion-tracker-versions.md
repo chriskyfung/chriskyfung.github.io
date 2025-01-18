@@ -8,7 +8,8 @@ permalink: /blog/qwiklabs/qwiklab-completion-tracker-versions
 tags: [Qwiklabs, Userscript, Changelog]
 image: 
   path: /images/posts/qwiklabs/science-1408800_1280.jpg
-  height: 411
+  width: "1280"
+  height: "720"
 excerpt: The changelog, the feature highlights, and the screenshots of the previous versions of the "Qwiklabs Lab Completion Tracker".
 ---
 
@@ -106,7 +107,7 @@ Qwiklabs made a significant change in its web design at the end of September 202
 - Add color backgrounds to each row in tables of the **Completed Courses** and **Completed Labs** pages.
 - Change to use JSON-markup for storing lab and quest data.
 
-The **version 0.4.5** start covering the "*Completed Courses*" and "*Completed Labs*" pages under the **My Learning** section. Since the quests mix with speedrun games in the list of completed courses, each row of the game records highlights in purple color for distinguishing them.
+The **version 0.4.5** start covering the "_Completed Courses_" and "_Completed Labs_" pages under the **My Learning** section. Since the quests mix with speedrun games in the list of completed courses, each row of the game records highlights in purple color for distinguishing them.
 
 <div class="row">
 

@@ -2,18 +2,23 @@
 layout: post
 title: Installation of Android Studio and SDK Tools
 date: 2016-01-18 21:36
-categories: [Developer tools]
+categories:
+  - Developer tools
 author: chris
-tags: [Android Studio]
-image: 
-  path: /images/posts/android/Android_Studio_setup.png
-  width: 513
-  height: 400
+tags:
+  - Android Studio
+image:
+  path: /assets/images/write-2160925.svg
+  width: "730"
+  height: "411"
+  hide: true
+permalink: blog/2016/01/18/Installation-of-Andriod-Studio/
 ---
 
 <!--more-->
 
 ### Preparation
+
 Beforehand, you have to download the installers of **Android Studio** and **JDK7 or higher** from the following links:
 
 <i class='fas fa-download'></i> [**Download Android Studio and SDK Tools \| Android Developers**](https://developer.android.com/studio)
@@ -23,11 +28,12 @@ Beforehand, you have to download the installers of **Android Studio** and **JDK7
 <i class='fas fa-download'></i> [**Java SE Development Kit 7u79**](https://www.oracle.com/java/technologies/javase-downloads.html#JDK8)
 
 ### Steps of Installation
+
 1. First, install the JDK7. (It will take 5 to 10 mins)
 2. For Windows, add a new system variable **JAVA_HOME** to Environment Variables.
-    i. Select **Start menu** > **Computer** > **System Properties** > **Advanced System Properties**.
-	ii. Then open **Advanced tab** > **Environment Variables**.
-	iii. Add a new system variable **JAVA_HOME** that points to your _JDK folder_, for example: `C:\Program Files\Java\jdk1.7.0_xx`
+   i. Select **Start menu** > **Computer** > **System Properties** > **Advanced System Properties**.
+   ii. Then open **Advanced tab** > **Environment Variables**.
+   iii. Add a new system variable **JAVA_HOME** that points to your _JDK folder_, for example: `C:\Program Files\Java\jdk1.7.0_xx`
 3. After setting up the JDK, run the Android Studio installer (it will take about 10 mins for installation).
 
 * * *

@@ -9,8 +9,8 @@ permalink: /blog/windows/fix-windows10-boot-loop-after-fail-upgrade
 redirect_from: /blog/windows/find-windows10-boot-loop-after-fail-upgrade
 image: 
   path: /images/posts/windows/restoring-your-previous-version-of-windows-10-cover.png
-  width: 537
-  height: 302
+  width: "537"
+  height: "302"
   hide: true
 amp:
   youtube: true
@@ -74,9 +74,8 @@ In the Advanced options, select the **Command Prompt** option. Use the following
 6. <span class="cli">DISKPART&gt;</span>`assign letter=S`
 7. <span class="cli">DISKPART&gt;</span>`exit`
 
-Next, change the current path to the partition and use the `bcdboot` command to repair the damaged boot files:
+   Next, change the current path to the partition and use the `bcdboot` command to repair the damaged boot files:
 
-{:start="8"}
 8. <span class="cli">X:\&gt;</span>`S:`
 9. <span class="cli">S:\&gt;</span>`bcdboot D:\Windows /s S: /f UEFI`<br>\* _replace `D:` with the letter for the partition that has the Windows system_
 10. <span class="cli">S:\&gt;</span>`exit`

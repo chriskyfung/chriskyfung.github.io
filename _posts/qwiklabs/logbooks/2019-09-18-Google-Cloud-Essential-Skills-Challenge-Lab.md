@@ -13,8 +13,8 @@ redirect_from:
 excerpt: A summary of Google Cloud self-paced training GSP101 "Google Cloud Essential Skills&#58; Challenge Lab" on Qwiklabs | 1. Brief Introduction of Challenge Scenario | 2. Create a VM instance | 3. Install Apache and Overwrite Default Web Page
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP101-step4-test-custom-default-web-page.png
-   width: 348
-   height: 146
+   width: "348"
+   height: "146"
 css:
    syntax: true
 ---
@@ -108,6 +108,6 @@ Creating a Compute Engine instance as a web server using the web console is pret
 
 * * *
 
-**See Also**
+**See Also**:
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})

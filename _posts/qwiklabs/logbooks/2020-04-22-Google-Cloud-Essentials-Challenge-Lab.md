@@ -14,7 +14,8 @@ redirect_from:
 excerpt: Hints for the Google Cloud self-paced training GSP313 "Getting Started&#58; Create and Manage Cloud Resources&#58; Challenge Lab" on Qwiklabs | 1. Create a project jumphost instance | 2. Create a Kubernetes service cluster | 3. Setup an HTTP load balancer
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP313-task1.png
-   height: 386
+   width: "958"
+   height: "507"
 ---
 
 <!--more-->

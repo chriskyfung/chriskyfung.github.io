@@ -19,7 +19,7 @@ css:
 image:
   path: /assets/images/write-2160925.svg
   width: "730"
-  height: "431"
+  height: "411"
   hide: true
 ---
 
@@ -40,7 +40,6 @@ sudo apt-get install terminator
 
 **Shortcut keys:**
 
-{:.table .table-hover}
 | Action                     | Shortcut                                                                        |
 | -------------------------- | ------------------------------------------------------------------------------- |
 | Split horizontally         | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>O</kbd></span>     |
@@ -61,6 +60,7 @@ sudo apt-get install terminator
 | Restore original font size | <span class="mono"><kbd>Ctrl</kbd> + <kbd>0</kbd></span>                        |
 | Resize termainal           | <span class="mono"><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Arrow</kbd></span> |
 | Toggle Full Screen         | <span class="mono"><kbd>F11</kbd></span>                                        |
+{:.table .table-hover} {% comment %}<!-- markdownlint-disable-line MD055 MD056 -->{% endcomment %}
 
 * * *
 

@@ -24,6 +24,7 @@ As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quest
 <br>
 
 **The objectives of this project are:**
+
 - To develop a handy way to implement the enhancement to the Qwiklabs website in a web browser.
 - To indicate completed labs and quests on Qwiklabs Catalog pages, thereby easier to inspect the self-learning progress and look for unenrolled quests or incomplete labs.
 - To design a location to store and update the name list of the completed items.
@@ -62,7 +63,7 @@ From **version 0.4.8**, marker annotations support the "_Your Favorites_", "_Fea
 
 ### Update records from My Learning page
 
-You can also update the latest records by clicking on the *sync* <i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i> icon next to the table title on the [**My Learning**](https://www.qwiklabs.com/my_learning/) page.
+You can also update the latest records by clicking on the **sync** (<i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i>) icon next to the table title on the [**My Learning**](https://www.qwiklabs.com/my_learning/) page.
 
 {% include picture.html height="280" img="qwiklab-complete-indicator-group-update-button.png" alt="Markers and Highlights on Completed Courses" source="projects" class="text-center mb-4" %}
 

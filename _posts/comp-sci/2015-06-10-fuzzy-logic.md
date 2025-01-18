@@ -2,15 +2,20 @@
 layout: post
 title: Short Notes on Fuzzy Logic
 date: 2015-06-10 08:36 +0800
-categories: [Academic, Computer Science]
+categories:
+   - Academic
+   - Computer Science
 author: chris
-tags: [Fuzzy Logic, Computer Science]
+tags:
+   - Fuzzy Logic
+   - Computer Science
 permalink: /blog/comp-sci/fuzzy-logic
 amp:
    youtube: true
 image:
    path: /images/posts/notebook-4839909_o128.png
-   hide: true
+   width: "730"
+   height: "411"
 excerpt: A summary about the types of Fuzzy Logic and their applications in control systems.
 ---
 
@@ -28,8 +33,8 @@ excerpt: A summary about the types of Fuzzy Logic and their applications in cont
 There are mainly two types of fuzzy inference systems, namely,
 
 + Mamdani-type {% cite mamdani_experiment_1975 mamdani_advances_1976 %}
-   - fuzzy consequents (also being called type-I)
-   - Singleton consequents (also being called type-II)
+  + fuzzy consequents (also being called type-I)
+  + Singleton consequents (also being called type-II)
 + TSK-type (also being called type-III) {% cite tanaka_stability_1992 %}
 
 #### Mamdani-type FIS

@@ -17,7 +17,7 @@ Recently, I noticed that the Quest "Challenge: GCP Architecture" was no longer f
 
 {% include picture.html height="287" img="qwiklabs/where-does-my-bear-badge-go.png" alt="An archived screenshot of Challenge: GCP Architecture badge" caption="Screenshot: The <i>Challenge: GCP Architecture</i> badge from my archive" %}
 
-{:.text-danger}
+{:.text-danger} {% comment %}<!-- markdownlint-disable-next-line MD022 -->{% endcomment %}
 ## Where does the bear badge go?
 
 In a nullshell, the quest (ID: 47) **Challenge: GCP Architecture** has been renamed to [Cloud Architecture - Design, Implement, and Manage](https://google.qwiklabs.com/quests/124). The URL also changed `/quests/124`. Therefore, it seems to be off-shelf. Indeed, All the labs in the quest remains unchanged. You record is still there but it is replaced with the new quest title and the new badge.

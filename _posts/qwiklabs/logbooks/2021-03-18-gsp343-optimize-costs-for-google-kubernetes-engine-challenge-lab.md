@@ -17,8 +17,6 @@ amp:
    youtube: true
 css:
    syntax: true
-   custom: >
-      .ml-li { margin-left: auto; }
 ---
 
 In this article, we will go through the lab **GSP343** _[Optimize Costs for Google Kubernetes Engine&colon; Challenge Lab](https://www.qwiklabs.com/focuses/16327?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/157) exercise on Qwiklabs. You will practice the following topics:
@@ -82,16 +80,15 @@ The following example will create the cluster to the zone `us-central1-a` using 
    kubectl get svc -w --namespace dev
    ```
 
-   *Press **CTRL + C** to stop the monitoring.*
+   _Press **CTRL + C** to stop the monitoring._
 
    {% include picture.html img="qwiklabs/gsp343-task1-get-frontend-external-ip.png"
-      width="1244" height="374" alt="Monitor service status using Watch command" class="ml-li" %}
+      width="1244" height="374" alt="Monitor service status using Watch command" %}
 
-{:start="7"}
 7. Open `http://<EXTERNAL_IP>` in a new tab. You should see the homepage of the Online Boutique application like this:
 
    {% include picture.html img="qwiklabs/gsp343-task1-deployed-online-boutique-application.jpg"
-      width="1248" height="1056" alt="The Homepage of the Online Boutique demo application" class="ml-li" %}
+      width="1248" height="1056" alt="The Homepage of the Online Boutique demo application" %}
 
 ## Task 2: Migrate to an Optimized Nodepool
 
@@ -115,10 +112,10 @@ Make sure that you:
       --zone=$ZONE
    ```
 
-   {% include picture.html img="qwiklabs/gsp343-task2-create-optimized-node-pool.png"
-      width="945" height="445" alt="Creating optimized node pool for GKE cluster" class="ml-li" %}
+   {% include picture.html width="945" height="445"
+      img="qwiklabs/gsp343-task2-create-optimized-node-pool.png"
+      alt="Creating optimized node pool for GKE cluster" %}
 
-{:start="2"}
 2. Wait until the status of the new node pool becomes **OK**.
 
 3. Cordon and drain the `default-pool`:
@@ -147,7 +144,7 @@ Make sure that you:
    ```
 
    {% include picture.html img="qwiklabs/gsp343-task2-after-cordon-drain-and-delete-default-node-pool.png"
-      width="1046" height="275" alt="After cordon, drain, and delete the default pool from the GKE cluster" class="ml-li" %}
+      width="1046" height="275" alt="After cordon, drain, and delete the default pool from the GKE cluster" %}
 
 ## Task 3: Apply a Frontend Update
 
@@ -171,13 +168,12 @@ Make sure that you:
    Save the file changes.
 
    {% include picture.html img="qwiklabs/gsp343-task3-kubectl-edit.png" width="863" height="708"
-      alt="change the image and image pull policy with kubectl edit" class="ml-li" %}
+      alt="change the image and image pull policy with kubectl edit" %}
 
-{:start="3"}
 3. (_Optional_) In the Cloud Console, navigate to **Kubernetes Engine** > **Workloads** and click the `frontend` deployment. Go to the **REVISION HISTORY** tab, you should see the latest revision updates to `onlineboutique-frontend:v2.1`.
 
    {% include picture.html img="qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.png"
-      width="956" height="262" alt="Revision 2" class="ml-li" %}
+      width="956" height="262" alt="Revision 2" %}
 
 ## Task 4: Autoscale from Estimated Traffic
 
@@ -200,9 +196,8 @@ Make sure that you:
    ```
 
    {% include picture.html img="qwiklabs/gsp343-task4-kubectl-get-hea.png"
-      width="1159" height="55" alt="Horizontal pod autoscaler for the frontend deployment" class="ml-li" %}
+      width="1159" height="55" alt="Horizontal pod autoscaler for the frontend deployment" %}
 
-{:start="3"}
 3. Update your **cluster autoscaler** to scale between 1 node minimum and 6 nodes maximum.
 
    ```bash
@@ -211,9 +206,8 @@ Make sure that you:
    ```
 
    {% include picture.html img="qwiklabs/gsp343-task4-cluster-autoscaler.png"
-      width="624" height="302" alt="Cluster autoscaler for the optimized node pool" class="ml-li" %}
+      width="624" height="302" alt="Cluster autoscaler for the optimized node pool" %}
 
-{:start="4"}
 4. To test the autoscalers, run the following to perform a load test to simulate the traffic surge.
 
    ```bash
@@ -226,12 +220,12 @@ Make sure that you:
 5. Navigate to the OVERVIEW tab of the **frontend deployment**, you should see a sharp increase in CPU, Memory, and Disk utilization after the load test started.
 
    {% include picture.html img="qwiklabs/gsp343-task4-monitoring-traffic-spike.png"
-      width="624" height="302" alt="High CPU, Memory and Disk utilization yielded by traffic spike" class="ml-li" %}
+      width="624" height="302" alt="High CPU, Memory and Disk utilization yielded by traffic spike" %}
 
    Scroll to the **Managed Pods** section, you should observe the number of pods increases by the horizontal pod autoscaling.
 
    {% include picture.html img="qwiklabs/gsp343-task4-cluster-autoscaling-frontend-pods.png"
-      width="624" height="302" alt="The frontend pods increase with horizontal pod autoscaling" class="ml-li" %}
+      width="624" height="302" alt="The frontend pods increase with horizontal pod autoscaling" %}
 
 Eventually, you will also see new nodes initiate by the cluster autoscaling. But you need to keep patient for a while.
 

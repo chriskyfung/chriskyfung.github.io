@@ -10,7 +10,8 @@ redirect_from:
    /blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers
 image: 
    path: /images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png
-   height: 222
+   width: "1400"
+   height: "425"
 css:
    syntax: true
    custom: >-
@@ -45,16 +46,15 @@ css:
 If you prefer to present your Tumblr like a normal website, you definitely want to erase the Tumblr controls, buttons, and toolbars from your pages. You can follow the **two** instructions below to kill them from
 screens.
 
-#### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
+### Remove the “Follow,” “Unfollow” and “Join Tumblr” buttons
 
 You can follow the procedures below to disable the Tumblr buttons for non-Tumblr users:
 
 1. In the Tumblr Dashboard, click on the _Account_ → **Edit Appearance**
 2. Click on **Edit Theme** button (same **Customize**)
-3. Scroll to the button and click **Advanced Settings** <br>
-{% include picture.html width="267" height="363" img="tumblr/uncheck-promote-tumblr-in-tumblr-theme-advanced-options.png" alt="Tumblr Theme Editor Advance Options" class="text-center" %}
+3. Scroll to the button and click **Advanced Settings**
+   {% include picture.html width="267" height="363" img="tumblr/uncheck-promote-tumblr-in-tumblr-theme-advanced-options.png" alt="Tumblr Theme Editor Advance Options" class="text-center" %}
 
-{:start="4"}
 4. Uncheck **Promote Tumblr!**
 5. Click **Save**
 
@@ -93,7 +93,7 @@ In the **[Recover Custom Theme](https://www.tumblr.com/themes/recover)** page, c
 
 ## Plugins for Tumblr Sites
 
-#### Amazon Associates Ads Loader for Tumblr
+### Amazon Associates Ads Loader for Tumblr
 
 {% include picture.html height="287" img="amzn_assoc_loader_for_tumblr.png" alt="Amazon Associates Ads Loader for Tumblr" source="projects" %}
 
@@ -207,7 +207,7 @@ The screenshot below shows the files been downloaded from Google Design's Tumblr
 
 ## API Tools
 
-#### pytumblrtools
+### pytumblrtools
 
 A set of python scripts for manipulating Tumblr blogs
 ([https://github.com/chriskyfung/pytumblrtools](https://github.com/chriskyfung/pytumblrtools))
@@ -225,11 +225,9 @@ A set of python scripts for manipulating Tumblr blogs
 
 - [A Guide to the Best Tumblr Features for Bloggers](https://www.lifewire.com/tumblr-features-for-bloggers-3476404)
 
-- [Tumblr SEO: An Internet Marketers Guide to Owning Tumblr
-](https://elite-strategies.com/tumblr-seo/)
+- [Tumblr SEO: An Internet Marketers Guide to Owning Tumblr](https://elite-strategies.com/tumblr-seo/)
 
-- [The Complete Guide to Tumblr Search Engine Optimization (SEO)
-](https://www.pitiya.com/tumblr-seo.html)
+- [The Complete Guide to Tumblr Search Engine Optimization (SEO)](https://www.pitiya.com/tumblr-seo.html)
 
 - [Is it possible to Monetize tumblr Blog by AdSense?](https://www.bloggerspice.com/2016/01/how-to-Add-adsense-ads-on-tumblr-blog.html)
 

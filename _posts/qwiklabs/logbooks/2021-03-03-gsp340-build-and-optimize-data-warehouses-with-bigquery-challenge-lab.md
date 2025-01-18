@@ -13,8 +13,6 @@ amp:
    youtube: true   
 css:
    syntax: true
-   custom: >
-      .ml-li { margin-left: auto; }
 published: false
 ---
 
@@ -44,14 +42,12 @@ In this task, you will need to:
 4. Add the [COVID 19 Government Response public dataset](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=covid19_govt_response&page=dataset) to the BigQuery Explorer by opening the link in your browser. \
 Alternatively, you can click on **+ ADD DATA** > **Explore public datasets** then search for `oxford covid-19 government response tracker`, click on the item. Then, click **VIEW DATASET** on the detail page.
 
-   {% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" class="ml-li" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
+   {% include picture.html img="qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png" width="868" height="401" alt="Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset" %}
 
-{:start="5"}
 5. Use a filter to find the table `oxford_policy_tracker` inside the `bigquery-public-data` as shown below.
 
-   {% include picture.html img="qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png" width="1237" height="696" class="ml-li" alt="Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`" %}
+   {% include picture.html img="qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png" width="1237" height="696" alt="Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`" %}
 
-{:start="6"}
 6. Click **COMPOSE NEW QUERY**. Copy the following to the query editor,
 
    ```sql

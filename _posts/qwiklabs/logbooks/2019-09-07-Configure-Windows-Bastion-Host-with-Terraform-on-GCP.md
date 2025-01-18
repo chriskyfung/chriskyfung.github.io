@@ -12,7 +12,8 @@ redirect_from:
 tags: [Qwiklabs, Windows server, Google Cloud, Terraform, Logbook, Secure VPC]
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP303-diagram.png
-   height: 495
+   width: "853"
+   height: "578"
 amp:
   youtube: true
 css:

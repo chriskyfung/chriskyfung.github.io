@@ -3,11 +3,21 @@ layout: post
 title: Evernote Tips ─ Create shortcuts for inserting tables and formatting texts with PhraseExpress
 date: 2017-06-09 15:36:40 +0800
 author: chris
-categories: [Productivity]
-tags: [Evernote, PhraseExpress, User tips, Shorthand]
-permalink: /blog/evernote/add-table-and-formatting-in-evernote-with-phraseexpress
+categories:
+    - Productivity
+tags:
+    - Evernote
+    - PhraseExpress
+    - User tips
+    - Shorthand
+permalink: /blog/evernote/add-table-and-formatting-in-evernote-with-phraseexpress/
 amp:
     youtube: true
+image:
+    path: /assets/images/write-2160925.svg
+    width: "730"
+    height: "411"
+    hide: true
 published: false
 ---
 
@@ -29,10 +39,10 @@ I summarized the three ways of inserting a table given in Evernote Desktop, and 
 
 Which are the most convenient, the last one that I proposed?
 
-**Pros**
+**Pros**:
 
-1.  operating as you type without leaving your hands from keyword
-2.  calling the function with natural language, easy-to-remember
+1. operating as you type without leaving your hands from keyword
+2. calling the function with natural language, easy-to-remember
 
 With setting a shorthand with PhraseExpress, you add a table seamlessly as you are typing your text content. You don’t need to move your hand between mouse and keyboard. You also don’t know to find where are the button in the toolbar or the main menu. All you need to do is just type in your custom Autotext, e.g. “add t…”, the option prompts in the auto-expand menu. This should reduce your brain load and avoid confusion with the layout of other programs.
 
@@ -46,18 +56,20 @@ img="evernote/PhraseExpress-macro-for-add-table-to-evernote.png" alt="PhraseExpr
 
 **How to configure:**
 
-1.  Open **PhraseExpress**.
-2.  Create a new phrase, and give it a description for your to recognize, e.g. “_add Table to Evernote_”.
-3.  Copy and paste this code to **Phrase content**.
+1. Open **PhraseExpress**.
+2. Create a new phrase, and give it a description for your to recognize, e.g. “_add Table to Evernote_”.
+3. Copy and paste this code to **Phrase content**.
 
-    `{#ALT -chars o}{#sleep 500}{#NONE -chars T}`
+   `{#ALT -chars o}{#sleep 500}{#NONE -chars T}`
 
-4.  Define an Autotext for you to remember easily, or simply choose **SmartComplete**.
+4. Define an Autotext for you to remember easily, or simply choose **SmartComplete**.
 
-5.  Enable **Execute only in specific programs**, and restrict to this shorthand to only execute in Evernote.
+5. Enable **Execute only in specific programs**, and restrict to this shorthand to only execute in Evernote.
 
-    {% include picture.html width="680" height="441"
-img="evernote/Restrict-PhraseExpress-to-Evernote.png" alt="Advance configuration - Restrict PhraseExpress to Evernote" class="text-center" %}
+   {% include picture.html width="680" height="441"
+    img="evernote/Restrict-PhraseExpress-to-Evernote.png"
+    alt="Advance configuration - Restrict PhraseExpress to Evernote"
+    class="text-center" %}
 
 * * *
 

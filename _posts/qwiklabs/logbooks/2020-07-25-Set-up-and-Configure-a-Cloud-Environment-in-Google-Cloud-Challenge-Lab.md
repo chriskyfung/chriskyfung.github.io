@@ -20,7 +20,6 @@ css:
    syntax: true
    custom: >
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
-      .ml-li { margin-left: auto }
 ---
 
 In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/119) exercise on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
@@ -61,7 +60,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
    | Region:    | `us-east1` |
    | IP address range: | `192.168.32.0/20` |
 
-5. Click **Create**.
+7. Click **Create**.
 
 ## Task 2: Create production VPC using Deployment Manager
 
@@ -88,7 +87,7 @@ Make sure you create all resources in the `us-east1` region and `us-east1-b` zon
 
 5. Go back to the Cloud Console, navigate to **Deployment Manager** to confirm the deployment.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp321-prod-vpc-by-deployment-manager.jpg" alt="Create griffin-dev-vpc network using Deployment Manager" width="1069" height="472" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp321-prod-vpc-by-deployment-manager.jpg" alt="Create griffin-dev-vpc network using Deployment Manager" width="1069" height="472" %}
 
 ## Task 3: Create bastion host
 
@@ -195,9 +194,8 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
    - Network: `griffin-dev-vpc`
    - Node subnet: `griffin-dev-wp`
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp321-k8s-vpc-networking.png" width="913" height="947" alt="Networking settings for new Kubernetes cluster griffin-dev" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp321-k8s-vpc-networking.png" width="913" height="947" alt="Networking settings for new Kubernetes cluster griffin-dev" %}
 
-{:start="7"}
 7. Click **CREATE**.
 
 ## Task 6: Prepare the Kubernetes cluster
@@ -250,9 +248,10 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 2. Replace `YOUR_SQL_INSTANCE` with `griffin-dev-db`'s Instance connection name.
 
-{% include picture.html img="qwiklabs/qwiklab-gsp321-sql-conf-yaml.jpg" width="673" height="155" class="ml-li text-center" %}
+   {% include picture.html width="673" height="155"
+      img="qwiklabs/qwiklab-gsp321-sql-conf-yaml.jpg"
+      class="text-center" %}
 
-{:start="3"}
 3. Save the file change.
 4. Go back to the Cloud Shell, run the following commands:
 
@@ -263,7 +262,7 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 
 5. Copy the External endpoints of the deployed **wordpress** service and open it in your browser.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp321-dev-wordpress.png" alt="WordPress Installation" width="1024" height="768" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp321-dev-wordpress.png" alt="WordPress Installation" width="1024" height="768" %}
 
 ## Task 8: Enable monitoring
 
@@ -280,9 +279,8 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
    | Hostname | `YOUR-WORDPRESS_ENDPOINT` |
    | Path     | `/` |
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp321-uptime-check.jpg" alt="new GCP uptime checks monitoring" width="567" height="534" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp321-uptime-check.jpg" alt="new GCP uptime checks monitoring" width="567" height="534" class="text-center" %}
 
-{:start="5"}
 5. Click **TEST**.
 6. Click **SAVE** if there is no error.
 

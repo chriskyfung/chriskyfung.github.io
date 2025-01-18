@@ -10,7 +10,8 @@ redirect_from:
  - /blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation
 image: 
    path: /images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg
-   height: 417
+   width: "1050"
+   height: "600"
 css:
    syntax: true
 ---
@@ -25,10 +26,10 @@ The usages are described below.
 
 The file `mat2mseq.m` contains the function to convert a numerical matrix in MATLAB to a plain-text formatted MS office equation. The function takes two arguments:
 
-- \<m-by-n matrix\> A two-dimensional matrix of numbers
-- \<string\> The string format of the numbers (see [sprintf](https://www.mathworks.com/help/matlab/ref/sprintf.html))
+- `<m-by-n matrix>` A two-dimensional matrix of numbers
+- `<string>` The string format of the numbers (see [`sprintf`](https://www.mathworks.com/help/matlab/ref/sprintf.html))
 
-**Example** 
+**Example**:
 
 ```matlab
 
@@ -46,20 +47,22 @@ You will obtain {% include picture.html width="120" height="105" img="matlab/mat
 ## Convert from MS Office Equation to MATLAB
 
 The file `mseq2mat.m` contains the function to convert an MS Equation matrix to numerical data in MATLAB. The function requires the following argument:
-- \<string\> a matrix in the MS office equation (in plain-text format)
+
+- `<string>` a matrix in the MS office equation (in plain-text format)
 
 For example, when you copy {% include picture.html width="120" height="105" img="matlab/matrixA.png" alt="matrixA" class="shadow-none text-center" %} from MS Word and paste it to MATLAB. The matrix will be displayed in the plain-text format of MS Equation, like `■(1&0&0@0&1&0@0&0&1)` in the command line. Convert it to numerical data by evaluating the text with the function, as the example below:
 
 ```matlab
 A = mseq2mat('■(1&0&0@0&1&0@0&0&1)')
-	
+
 => A = 
-	[ 1 0 0 ; 
-	  0 1 0 ; 
-	  0 0 1 ] 
+   [ 1 0 0 ; 
+     0 1 0 ; 
+     0 0 1 ] 
 ```
 
 ## For Developers
+
 To develop your MATH translator, you can read the documentation _"[UTN #28: Nearly Plain-Text Encoding of Mathematics](https://www.unicode.org/notes/tn28/)"_ to explore how Microsoft uses Unicodes in encoding mathematical expressions. If you want to learn about the shortcut commands of MS Equation Editor, this [PDF Note](https://pages.mtu.edu/~tbco/cm416/EquationEditor_main.pdf) from _Michigan Technological University_ should be helpful.
 
 Do you use any great tools when writing your reports and essays? Have a question or suggestion? Let us know in the comments below.

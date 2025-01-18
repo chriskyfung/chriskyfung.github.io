@@ -93,7 +93,6 @@ Make sure that you use `country_name` to filter the US reconds instead of `count
 
 Copy the following code to the Query editor and then click **Run**.
 
-{:style="margin-bottom:0"}
 ```sql
 SELECT
   *

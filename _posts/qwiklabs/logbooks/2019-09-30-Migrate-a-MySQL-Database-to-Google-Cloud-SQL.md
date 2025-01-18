@@ -13,7 +13,8 @@ redirect_from:
 excerpt: A summary of Google Cloud self-paced training GSP306 "Migrate a MySQL Database to Google Cloud SQL" on Qwiklabs | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png
-   height: 317
+   width: "795"
+   height: "345"
 css:
    syntax: true
 ---
@@ -106,12 +107,12 @@ gsutil mb gs://${PROJECT_ID}
 gsutil cp ~/wordpress.sql gs://${PROJECT_ID}
 ```
 
-In the web console, navigate to ***Storage*** to confirm the uploaded file.
+In the web console, navigate to _**Storage**_ to confirm the uploaded file.
 {% include picture.html height="344" img="qwiklabs/qwiklabs-GSP306-step5-dump-file-in-cloud-storage.png" alt="uploaded wordpress.sql file in cloud storage" %}
 
 ## Import to Cloud SQL
 
-Go back to the web console, navigate to ***SQL*** to check whether the cloud SQL instance is ready. Once the instance is online, click the instance name to view the details.
+Go back to the web console, navigate to _**SQL**_ to check whether the cloud SQL instance is ready. Once the instance is online, click the instance name to view the details.
 
 Choose **DATABASES** tab, and click **Create database**.
 

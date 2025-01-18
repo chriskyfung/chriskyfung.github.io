@@ -39,36 +39,31 @@ In this article, we will go through the lab **GSP324** _[Explore Machine Learnin
 3. On the Notebook instances page, click **New Instance**.
 4. In the Customize instance menu, select the latest version of TensorFlow _without_ GPUs.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-1.png" width="1138" height="660" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-1.png" width="1138" height="660" %}
 
-{:start="5"}
 5. In the **New notebook instance** dialog, accept the default options and click **Create**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-2.png" width="559" height="506" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task1-new-tensorflow-notebook-2.png" width="559" height="506" class="text-center" %}
 
-{:start="6"}
 6. After a few minutes, the AI Platform console will display your instance name, followed by Open Jupyterlab.<br><br>Click **Open JupyterLab**. Your notebook is now set up.
 
 ## Download the Challenge Notebook
 
 1. In your notebook, click the **terminal**.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-1.png" width="985" height="668" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-1.png" width="985" height="668" %}
 
-{:start="2"}
 2. Clone the repo:
 
    ```bash
    git clone https://github.com/GoogleCloudPlatform/training-data-analyst
    ```
 
-{:start="3"}
 3. Go to the enclosing folder: `training-data-analyst/quests/dei`
 4. Open the notebook file [`what-if-tool-challenge.ipynb`](https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/quests/dei/what-if-tool-challenge.ipynb).
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-2.png" width="973" height="690" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task2-import-dataset-to-jupyter-notebook-2.png" width="973" height="690" %}
 
-{:start="5"}
 5. Download and import the dataset `hmda_2017_ny_all-records_labels` by running the first to the eighth cells (the **Get the Train & Test Data** section).
 
 ## Build and train your models
@@ -83,9 +78,8 @@ In this article, we will go through the lab **GSP324** _[Explore Machine Learnin
    model.fit(train_data, train_labels, batch_size=32, epochs=10)
    ```
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task3-build-and-train-models-1.jpg" width="1100" height="668" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task3-build-and-train-models-1.jpg" width="1100" height="668" %}
 
-{:start="2"}
 2. Copy the code for training the second model. Modify `model` to `limited_model` as well as `train_data, train_labels` to `limited_train_data, limited_train_labels`. The code for the second model should look like the following.
 
    ```python
@@ -96,9 +90,8 @@ In this article, we will go through the lab **GSP324** _[Explore Machine Learnin
    limited_model.fit(limited_train_data, limited_train_labels, batch_size=32, epochs=10)
    ```
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task3-build-and-train-models-2.png" width="964" height="584" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task3-build-and-train-models-2.png" width="964" height="584" %}
 
-{:start="3"}
 3. Run the cells in this section and wait for the finish of model training.
 
 ## Deploy the models to AI Platform
@@ -108,18 +101,16 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
 1. Replace the values of `GCP_PROJECT` and `MODEL_BUCKET` with your project ID and a unique bucket name.
 2. Change the `REGION` to `us-west1` (Use the same region of the Notebook instance).
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1.jpg" width="865" height="508" class="ml-li" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1.jpg" width="865" height="508" %}
 
-{:start="3"}
 3. Run those three cells and then confirm the created bucket and the uploaded model files in Cloud Storage.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task3-build-and-train-models-3.jpg" width="510" height="166" class="ml-li text-center" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task3-build-and-train-models-3.jpg" width="510" height="166" class="text-center" %}
 
-##### Create your first AI Platform model: complete_model
+   ### Create your first AI Platform model: complete_model
 
-{% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-3.png" width="678" height="251" class="ml-li text-center" caption="The specification for creating AI Platform models listed in the notebook" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-3.png" width="678" height="251" class="text-center" caption="The specification for creating AI Platform models listed in the notebook" %}
 
-{:start="4"}
 4. Add the following codes to the notebook cells for your COMPLETE model.
 
    ```python
@@ -140,11 +131,10 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    {:.callout}
    **Remark**: The gcloud ai-platform command group should be `versions` rather than `version`.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v2.1.jpg" width="715" height="390" class="ml-li text-center" caption="Create your first AI Platform model: complete_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-1st-model-v2.1.jpg" width="715" height="390" class="text-center" caption="Create your first AI Platform model: complete_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
 
-##### Create your second AI Platform model: limited_model
+   ### Create your second AI Platform model: limited_model
 
-{:start="5"}
 5. Add the following codes to the notebook cells for your LIMITED model.
 
    ```python
@@ -165,7 +155,7 @@ Moving on to the **Deploy your models to the AI Platform** section in the notebo
    {:.callout}
    **Remark**: The gcloud ai-platform command group should be `versions` rather than `version`.
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v2.1.png" width="712" height="388" class="ml-li text-center" caption="Create your second AI Platform model: limited_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
+   {% include picture.html img="qwiklabs/qwiklab-gsp324-task4-deploy-models-to-ai-platform-2nd-model-v2.1.png" width="712" height="388" class="text-center" caption="Create your second AI Platform model: limited_model<br>(With params --runtime-version=2.1, --python-version=3.7)" %}
 
 ### Troubleshooting runtime version issue
 

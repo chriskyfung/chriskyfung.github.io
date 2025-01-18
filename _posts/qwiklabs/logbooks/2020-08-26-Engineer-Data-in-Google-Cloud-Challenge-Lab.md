@@ -54,12 +54,10 @@ Procedures:
 
    {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-more-query-settings.png" width="381" height="173" class="text-center" %}
 
-{:start="3"}
 3. Select **Set a destination table for query results** under Destination; Enter `taxi_training_data` as the Table name
 
    {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-query-settings-details.png" width="492" height="492" class="text-center" %}
 
-{:start="4"}
 4. Click **Save**
 5. Run the following SQL query
 
@@ -98,7 +96,7 @@ In this task, you need to:
 
 _**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/1797?parent=catalog) on Qwiklabs_
 
-#### Create a model
+### Create a model
 
 Compose a new query with the given `ST_distance()` and `ST_GeogPoint()` functions in the Query Editor.
 
@@ -128,7 +126,7 @@ WITH
 
 Click **Run** and the machine learning process will take about 2 minutes.
 
-#### Evaluate model performance
+### Evaluate model performance
 
 After the training is completed, you can evaluate the **Root Mean Square Error** (**RMSE**) of the prediction model using the following query.
 
@@ -152,7 +150,7 @@ FROM
         taxitrips ))
 ```
 
-**Results**
+**Results**:
 
 {% include picture.html img="qwiklabs/qwiklab-gsp327-task2-eval-rmse-without-euclidean.png" width="340" height="152" class="text-center" caption="RMSE of a modeal trained without euclidean" %}
 {% include picture.html img="qwiklabs/qwiklab-gsp327-task2-eval-rmse-with-euclidean.png" width="339" height="131" class="text-center" caption="RMSE of a modeal trained with euclidean" %}
@@ -169,9 +167,10 @@ Procedures:
 
 1. Select **Set a destination table for query results** under Destination; Enter `2015_fare_amount_predictions` as the Table name
 
-   {% include picture.html img="qwiklabs/qwiklab-gsp327-task3-query-settings-details.png" width="460" height="472" class="text-center" %}
+   {% include picture.html width="460" height="472"
+      img="qwiklabs/qwiklab-gsp327-task3-query-settings-details.png"
+      class="text-center" %}
 
-{:start="2"}
 2. Click **Save**
 3. Run the following SQL query.
 

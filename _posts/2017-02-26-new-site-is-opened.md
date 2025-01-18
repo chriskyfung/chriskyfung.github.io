@@ -10,7 +10,7 @@ tags:
 image:
   path: /assets/images/write-2160925.svg
   width: "730"
-  height: "431"
+  height: "411"
   hide: true
 permalink: blog/2017/02/26/new-site-is-opened/
 ---

@@ -16,8 +16,6 @@ amp:
    youtube: true
 css:
    syntax: true
-   custom: >
-      .ml-li { margin-left: 2rem; }
 ---
 
 In this article, we will go through the lab **GSP342** _[Ensure Access & Identity in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/14572?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/150) exercise on Qwiklabs. You will practice the following topics:
