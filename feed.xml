@@ -5,9 +5,9 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Jan 2025 18:25:00 +0800</pubDate>
-    <lastBuildDate>Wed, 15 Jan 2025 18:25:00 +0800</lastBuildDate>
-    <generator>Jekyll v4.2.2</generator>
+    <pubDate>Sat, 18 Jan 2025 20:53:08 +0800</pubDate>
+    <lastBuildDate>Sat, 18 Jan 2025 20:53:08 +0800</lastBuildDate>
+    <generator>Jekyll v4.3.4</generator>
     
       <item>
         <title>Mastering Git &amp; GitHub CLI: Essential Commands You Should Know</title>
@@ -500,8 +500,11 @@ When dealing with large datasets or extensive codebases, these advanced cloning 
   &lt;li&gt;&lt;a href=&quot;https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85&quot;&gt;A Complete Beginners Guide to Git - DEV Community&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.git-tower.com/learn/&quot;&gt;Learn Version Control with Git - Git Tower&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://dev.to/basementdevs/everything-that-you-need-to-know-about-git-2440&quot;&gt;Everything you need to know about GIT - DEV Community&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/&quot;&gt;Get up to speed with partial clone and shallow clone - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.to/jagroop2001/20-git-command-line-tricks-every-developer-should-know-1i21&quot;&gt;20 Git Command-Line Tricks Every Developer Should Know - DEV Community&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bueltge.de/git/&quot;&gt;Get your Practice-Git on!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/git/tutorials/git-log&quot;&gt;Advanced Git Log - Atlassian Git Tutorial&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://about.gitlab.com/blog/2020/03/13/partial-clone-for-massive-repositories/&quot;&gt;How Git Partial Clone lets you fetch only the large file you need - GitLab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/&quot;&gt;Get up to speed with partial clone and shallow clone - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/&quot;&gt;Bring your monorepo down to size with sparse-checkout - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/github-cli/&quot;&gt;GitHub CLI: A Guide to GitHub from the Command Line - SitePoint&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1532,7 +1535,7 @@ Happy coding! 🚀&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Keep on reading&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/matlab/Working-MATLAB-with-MS-Excel&quot;&gt;Working MATLAB with MS Excel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/matlab/Working-MATLAB-with-MS-Excel/&quot;&gt;Working MATLAB with MS Excel&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation&quot;&gt;Matrix Conversion between MATLAB and Microsoft Equation Editor&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/matlab/expand-twitter-short-url&quot;&gt;Expand shorten URLs in MATLAB&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1684,7 +1687,7 @@ gcloud beta run deploy frontend-staging-service &lt;span class=&quot;se&quot;&gt
 
 &lt;p&gt;To deploy a production frontend, you need to configure the service endpoint in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public/app.js&lt;/code&gt; file by modifying the following:&lt;/p&gt;
 
-&lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;866&quot; height=&quot;328&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task6-configure-rest-api-service-url-in-app-js.webp&quot; alt=&quot;File head of public/app.js&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+&lt;figure&gt;&lt;amp-img width=&quot;866&quot; height=&quot;328&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task6-configure-rest-api-service-url-in-app-js.webp&quot; alt=&quot;File head of public/app.js&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
         &lt;amp-img fallback=&quot;&quot; width=&quot;866&quot; height=&quot;328&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task6-configure-rest-api-service-url-in-app-js.png&quot; alt=&quot;File head of public/app.js&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
       &lt;/amp-img&gt;&lt;/figure&gt;
 
@@ -1784,23 +1787,17 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
     &lt;p class=&quot;callout&quot;&gt;Alternatively, you can click on &lt;strong&gt;+ ADD DATA&lt;/strong&gt; &amp;gt; &lt;strong&gt;Explore public datasets&lt;/strong&gt; then search for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford covid-19 government response tracker&lt;/code&gt;, click on the item. Then, click &lt;strong&gt;VIEW DATASET&lt;/strong&gt; on the detail page.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.webp&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.webp&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;5&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Use a filter to find the table &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford_policy_tracker&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bigquery-public-data&lt;/code&gt; as shown below.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1237&quot; height=&quot;696&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-oxford-policy-tracker-schema.webp&quot; alt=&quot;Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1237&quot; height=&quot;696&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-oxford-policy-tracker-schema.webp&quot; alt=&quot;Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1237&quot; height=&quot;696&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png&quot; alt=&quot;Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;6&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Click &lt;strong&gt;COMPOSE NEW QUERY&lt;/strong&gt;. Copy the following to the query editor,&lt;/p&gt;
 
@@ -1820,9 +1817,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
     &lt;p&gt;Replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; with your dataset ID and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; to a table name you desired.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;RUN&lt;/strong&gt; to process the query.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;RUN&lt;/strong&gt; to process the query.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, read the section &lt;a href=&quot;https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#creating_a_partitioned_table_from_the_result_of_a_query&quot; title=&quot;Using data definition language statements \| BigQuery \| Google Cloud&quot;&gt;&lt;em&gt;Creating a partitioned table from the result of a query&lt;/em&gt;&lt;/a&gt; in the BigQuery documentation.&lt;/p&gt;
@@ -1858,7 +1853,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;p&gt;We can divide this task into two steps:&lt;/p&gt;
 
-&lt;h4 id=&quot;create-a-new-table-to-store-the-country-population-data-from-european-center-for-disease-control-covid-19-public-dataset-table&quot;&gt;Create a new table to store the country population data from European Center for Disease Control COVID 19 public dataset table&lt;/h4&gt;
+&lt;h3 id=&quot;create-a-new-table-to-store-the-country-population-data-from-european-center-for-disease-control-covid-19-public-dataset-table&quot;&gt;Create a new table to store the country population data from European Center for Disease Control COVID 19 public dataset table&lt;/h3&gt;
 
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REPLACE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oxford_policy_tracker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop_data_2019&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
@@ -1873,7 +1868,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
   &lt;span class=&quot;n&quot;&gt;country_territory_code&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;use-sql-joins-to-fill-the-population-data-to-your-table&quot;&gt;Use SQL JOINs to fill the population data to your table&lt;/h4&gt;
+&lt;h3 id=&quot;use-sql-joins-to-fill-the-population-data-to-your-table&quot;&gt;Use SQL JOINs to fill the population data to your table&lt;/h3&gt;
 
 &lt;p&gt;The query for the &lt;strong&gt;SQL JOIN&lt;/strong&gt; should look like this:&lt;/p&gt;
 
@@ -2096,17 +2091,14 @@ kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ./release/kuberne
 
     &lt;p&gt;&lt;em&gt;Press &lt;strong&gt;CTRL + C&lt;/strong&gt; to stop the monitoring.&lt;/em&gt;&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1244&quot; height=&quot;374&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-get-frontend-external-ip.webp&quot; alt=&quot;Monitor service status using Watch command&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1244&quot; height=&quot;374&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-get-frontend-external-ip.webp&quot; alt=&quot;Monitor service status using Watch command&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1244&quot; height=&quot;374&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-get-frontend-external-ip.png&quot; alt=&quot;Monitor service status using Watch command&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;7&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://&amp;lt;EXTERNAL_IP&amp;gt;&lt;/code&gt; in a new tab. You should see the homepage of the Online Boutique application like this:&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1248&quot; height=&quot;1056&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-deployed-online-boutique-application.webp&quot; alt=&quot;The Homepage of the Online Boutique demo application&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1248&quot; height=&quot;1056&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-deployed-online-boutique-application.webp&quot; alt=&quot;The Homepage of the Online Boutique demo application&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1248&quot; height=&quot;1056&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-deployed-online-boutique-application.jpg&quot; alt=&quot;The Homepage of the Online Boutique demo application&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
@@ -2137,13 +2129,10 @@ kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ./release/kuberne
    &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ZONE&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;945&quot; height=&quot;445&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-create-optimized-node-pool.webp&quot; alt=&quot;Creating optimized node pool for GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;945&quot; height=&quot;445&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-create-optimized-node-pool.webp&quot; alt=&quot;Creating optimized node pool for GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;945&quot; height=&quot;445&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-create-optimized-node-pool.png&quot; alt=&quot;Creating optimized node pool for GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;2&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Wait until the status of the new node pool becomes &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
   &lt;/li&gt;
@@ -2172,7 +2161,7 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
    &lt;span class=&quot;nt&quot;&gt;--cluster&lt;/span&gt; onlineboutique-cluster &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ZONE&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1046&quot; height=&quot;275&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-after-cordon-drain-and-delete-default-node-pool.webp&quot; alt=&quot;After cordon, drain, and delete the default pool from the GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1046&quot; height=&quot;275&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-after-cordon-drain-and-delete-default-node-pool.webp&quot; alt=&quot;After cordon, drain, and delete the default pool from the GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1046&quot; height=&quot;275&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-after-cordon-drain-and-delete-default-node-pool.png&quot; alt=&quot;After cordon, drain, and delete the default pool from the GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
@@ -2202,17 +2191,14 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
 
     &lt;p&gt;Save the file changes.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;863&quot; height=&quot;708&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-kubectl-edit.webp&quot; alt=&quot;change the image and image pull policy with kubectl edit&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;863&quot; height=&quot;708&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-kubectl-edit.webp&quot; alt=&quot;change the image and image pull policy with kubectl edit&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;863&quot; height=&quot;708&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-kubectl-edit.png&quot; alt=&quot;change the image and image pull policy with kubectl edit&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;3&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;(&lt;em&gt;Optional&lt;/em&gt;) In the Cloud Console, navigate to &lt;strong&gt;Kubernetes Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;Workloads&lt;/strong&gt; and click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;frontend&lt;/code&gt; deployment. Go to the &lt;strong&gt;REVISION HISTORY&lt;/strong&gt; tab, you should see the latest revision updates to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onlineboutique-frontend:v2.1&lt;/code&gt;.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;956&quot; height=&quot;262&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.webp&quot; alt=&quot;Revision 2&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;956&quot; height=&quot;262&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.webp&quot; alt=&quot;Revision 2&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;956&quot; height=&quot;262&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.png&quot; alt=&quot;Revision 2&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
@@ -2241,13 +2227,10 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl get hpa &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1159&quot; height=&quot;55&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-kubectl-get-hea.webp&quot; alt=&quot;Horizontal pod autoscaler for the frontend deployment&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1159&quot; height=&quot;55&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-kubectl-get-hea.webp&quot; alt=&quot;Horizontal pod autoscaler for the frontend deployment&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1159&quot; height=&quot;55&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-kubectl-get-hea.png&quot; alt=&quot;Horizontal pod autoscaler for the frontend deployment&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;3&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Update your &lt;strong&gt;cluster autoscaler&lt;/strong&gt; to scale between 1 node minimum and 6 nodes maximum.&lt;/p&gt;
 
@@ -2255,13 +2238,10 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
    &lt;span class=&quot;nt&quot;&gt;--enable-autoscaling&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--min-nodes&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;--max-nodes&lt;/span&gt; 6 &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ZONE&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaler.webp&quot; alt=&quot;Cluster autoscaler for the optimized node pool&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaler.webp&quot; alt=&quot;Cluster autoscaler for the optimized node pool&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaler.png&quot; alt=&quot;Cluster autoscaler for the optimized node pool&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;4&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;To test the autoscalers, run the following to perform a load test to simulate the traffic surge.&lt;/p&gt;
 
@@ -2274,13 +2254,13 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
   &lt;li&gt;
     &lt;p&gt;Navigate to the OVERVIEW tab of the &lt;strong&gt;frontend deployment&lt;/strong&gt;, you should see a sharp increase in CPU, Memory, and Disk utilization after the load test started.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-monitoring-traffic-spike.webp&quot; alt=&quot;High CPU, Memory and Disk utilization yielded by traffic spike&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-monitoring-traffic-spike.webp&quot; alt=&quot;High CPU, Memory and Disk utilization yielded by traffic spike&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-monitoring-traffic-spike.png&quot; alt=&quot;High CPU, Memory and Disk utilization yielded by traffic spike&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
 
     &lt;p&gt;Scroll to the &lt;strong&gt;Managed Pods&lt;/strong&gt; section, you should observe the number of pods increases by the horizontal pod autoscaling.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaling-frontend-pods.webp&quot; alt=&quot;The frontend pods increase with horizontal pod autoscaling&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaling-frontend-pods.webp&quot; alt=&quot;The frontend pods increase with horizontal pod autoscaling&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaling-frontend-pods.png&quot; alt=&quot;The frontend pods increase with horizontal pod autoscaling&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
@@ -2628,6 +2608,7 @@ Alternatively, you can create the cluster using the Cloud Console.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
+
 &lt;/div&gt;
 
 &lt;h2 id=&quot;task-2-setup-wordpress&quot;&gt;Task 2: Setup WordPress&lt;/h2&gt;
@@ -2674,7 +2655,7 @@ Alternatively, you can create the cluster using the Cloud Console.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;In the &lt;strong&gt;Cloud SQL&lt;/strong&gt; page, select the &lt;strong&gt;Users&lt;/strong&gt; tab on the left panel.&lt;/li&gt;
-  &lt;li&gt;Click &lt;em&gt;*ADD USER ACCOUNT&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;ADD USER ACCOUNT&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordpress&lt;/code&gt; as the User name.&lt;/li&gt;
   &lt;li&gt;Enter a password that you can remember.&lt;/li&gt;
   &lt;li&gt;Select &lt;strong&gt;Allow any host (%)&lt;/strong&gt; for the name of the Host.&lt;/li&gt;
@@ -2786,6 +2767,7 @@ helm repo update
 &lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;700 get_helm.sh
 ./get_helm.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 
 &lt;/div&gt;
 
@@ -2914,14 +2896,11 @@ Run the following to apply the configuration file:&lt;/p&gt;
       &lt;li&gt;gcr.io/cloudsql-docker/*&lt;/li&gt;
       &lt;li&gt;quay.io/jetstack/*&lt;/li&gt;
     &lt;/ul&gt;
+
+    &lt;figure&gt;&lt;amp-img width=&quot;824&quot; height=&quot;691&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-custom-exempt-images.webp&quot; alt=&quot;Images exempt from Binary Authorization policy&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+     &lt;amp-img fallback=&quot;&quot; width=&quot;824&quot; height=&quot;691&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-custom-exempt-images.png&quot; alt=&quot;Images exempt from Binary Authorization policy&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+   &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;824&quot; height=&quot;691&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-custom-exempt-images.webp&quot; alt=&quot;Images exempt from Binary Authorization policy&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;824&quot; height=&quot;691&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-custom-exempt-images.png&quot; alt=&quot;Images exempt from Binary Authorization policy&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;ol start=&quot;8&quot;&gt;
   &lt;li&gt;Click &lt;strong&gt;SAVE POLICY&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -2930,14 +2909,13 @@ Run the following to apply the configuration file:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Navigate to &lt;strong&gt;Kubernetes Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;Clusters&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;Click your cluster name to view its detail page.&lt;/li&gt;
-  &lt;li&gt;Click on the pencil icon for Binary authorization under the Security section.&lt;/li&gt;
-&lt;/ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click on the pencil icon for Binary authorization under the Security section.&lt;/p&gt;
 
-&lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;823&quot; height=&quot;191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.webp&quot; alt=&quot;Edit Binary Authorization in Google Kubernetes Engine&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;823&quot; height=&quot;191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.png&quot; alt=&quot;Edit Binary Authorization in Google Kubernetes Engine&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;ol start=&quot;4&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;823&quot; height=&quot;191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.webp&quot; alt=&quot;Edit Binary Authorization in Google Kubernetes Engine&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+     &lt;amp-img fallback=&quot;&quot; width=&quot;823&quot; height=&quot;191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.png&quot; alt=&quot;Edit Binary Authorization in Google Kubernetes Engine&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+   &lt;/amp-img&gt;&lt;/figure&gt;
+  &lt;/li&gt;
   &lt;li&gt;Check &lt;strong&gt;Enable Binary Authorization&lt;/strong&gt; in the dialog.&lt;/li&gt;
   &lt;li&gt;Click &lt;strong&gt;SAVE CHANGES&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
@@ -3134,13 +3112,10 @@ helm repo update
 
     &lt;p&gt;Example Output:&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;623&quot; height=&quot;38&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-cd-jenkins-pod-ready.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;623&quot; height=&quot;38&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-cd-jenkins-pod-ready.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;623&quot; height=&quot;38&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-cd-jenkins-pod-ready.jpg&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;5&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;The Jenkins chart will automatically create an admin password for you. To retrieve it, run:&lt;/p&gt;
 
@@ -3170,14 +3145,13 @@ kubectl port-forward &lt;span class=&quot;nv&quot;&gt;$POD_NAME&lt;/span&gt; 808
   &lt;li&gt;
     &lt;p&gt;To get to the Jenkins user interface, click on the Web Preview button in the cloud shell, then click &lt;strong&gt;Preview on port 8080&lt;/strong&gt;.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-login-page.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-login-page.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-login-page.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;4&quot;&gt;
-  &lt;li&gt;You should now be able to log in with the username &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;admin&lt;/code&gt; and your auto-generated password.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You should now be able to log in with the username &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;admin&lt;/code&gt; and your auto-generated password.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;clone-the-sample-app-repository-and-create-the-production-namespace&quot;&gt;Clone the Sample App Repository and Create the Production Namespace&lt;/h3&gt;
@@ -3222,7 +3196,7 @@ kubectl create ns production
   &lt;li&gt;
     &lt;p&gt;Select &lt;strong&gt;Google Service Account from metadata&lt;/strong&gt; from the &lt;strong&gt;Kind&lt;/strong&gt; drop-down and click &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;286&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-add-gcp-credentials.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;286&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-add-gcp-credentials.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;286&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-add-gcp-credentials.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
@@ -3244,26 +3218,20 @@ kubectl create ns production
   &lt;li&gt;
     &lt;p&gt;Click on the job name of &lt;strong&gt;sample-app&lt;/strong&gt;.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;277&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-pipeline-job.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;277&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-pipeline-job.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;277&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-pipeline-job.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;4&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Click &lt;strong&gt;Configure&lt;/strong&gt; in the left pane.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;In the configuration page, enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample-app&lt;/code&gt; as the Display Name in the General section.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;430&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;430&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;430&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;6&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;In the Branch Sources section, click on &lt;strong&gt;Add source&lt;/strong&gt; and choose &lt;strong&gt;Git&lt;/strong&gt; from the dropdown menu.&lt;/p&gt;
   &lt;/li&gt;
@@ -3275,30 +3243,24 @@ kubectl create ns production
 
     &lt;p&gt;Select the service account for your GCP project from the &lt;strong&gt;Credentials&lt;/strong&gt; dropdown list.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;946&quot; height=&quot;524&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;946&quot; height=&quot;524&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;946&quot; height=&quot;524&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;8&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Check &lt;strong&gt;Periodically if not otherwise run&lt;/strong&gt; in the &lt;strong&gt;Scan Multibranch Pipeline Trigger&lt;/strong&gt; section, and then select &lt;strong&gt;1 minute&lt;/strong&gt; for the interval.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;944&quot; height=&quot;354&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-build-and-trigger-config.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;944&quot; height=&quot;354&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-build-and-trigger-config.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;944&quot; height=&quot;354&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-build-and-trigger-config.png &quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;9&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Scroll to the bottom and click on &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;If you correctly configured the pipeline, you will see &lt;strong&gt;Finished: SUCCESS&lt;/strong&gt; at the end of the Scan Multibranch Pipeline Log.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;690&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;690&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
     &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;690&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
   &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
@@ -3310,17 +3272,14 @@ kubectl create ns production
   &lt;li&gt;
     &lt;p&gt;Click on &lt;strong&gt;sample-app » master&lt;/strong&gt; under Build Executor Status in the left pane, then click on the job under Build History.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;739&quot; height=&quot;560&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-build-master.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;739&quot; height=&quot;560&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-build-master.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;739&quot; height=&quot;560&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-build-master.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol start=&quot;2&quot;&gt;
   &lt;li&gt;
     &lt;p&gt;Click &lt;strong&gt;Console Output&lt;/strong&gt; in the left navigation to monitor the build process.&lt;/p&gt;
 
-    &lt;figure class=&quot;ml-li&quot;&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;809&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-console-output.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;809&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-console-output.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;809&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-console-output.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
 
