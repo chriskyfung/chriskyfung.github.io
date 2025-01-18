@@ -14,7 +14,8 @@ redirect_from:
 excerpt: A summary of Google Cloud self-paced training GSP302 "Configure a Firewall and a Startup Script with Deployment Manager" on Qwiklabs | 1. Download the baseline Deployment Manager template | 2. Edit the Jinja Template | 3. Setting Metadata and Using Startup Scripts | 4. Apply the Deployment
 image:
   path: /images/posts/qwiklabs/qwiklabs-GSP302-Deployment-Manager-template-in-Cloud-Shell-Code-Editor.png
-  height: 447
+  width: "959"
+  height: "587"
 amp:
   gist: true
 css:

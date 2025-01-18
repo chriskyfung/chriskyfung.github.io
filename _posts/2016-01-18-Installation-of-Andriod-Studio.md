@@ -9,6 +9,8 @@ tags:
   - Android Studio
 image:
   path: /assets/images/write-2160925.svg
+  width: "730"
+  height: "411"
   hide: true
 permalink: blog/2016/01/18/Installation-of-Andriod-Studio/
 ---

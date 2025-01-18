@@ -10,7 +10,8 @@ redirect_from:
    /blog/2019/11/23/featured-tips-tricks-and-tools-for-tumblr-bloggers
 image: 
    path: /images/posts/tumblr/tips-tricks-and-tools-for-tumblr-bloggers.png
-   height: 222
+   width: "1400"
+   height: "425"
 css:
    syntax: true
    custom: >-

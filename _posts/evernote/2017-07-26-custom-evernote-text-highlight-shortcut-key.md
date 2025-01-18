@@ -8,7 +8,8 @@ tags: [Evernote, PhraseExpress, User tips, Shorthand]
 permalink: /blog/evernote/custom-evernote-text-highlight-shortcut-key
 image: 
   path: /images/posts/evernote/evernote-tips-productivity-shortcut-customization.png
-  height: 381
+  width: "965"
+  height: "504"
   class: shadow-none
 published: false
 ---

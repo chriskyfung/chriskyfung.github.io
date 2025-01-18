@@ -8,7 +8,8 @@ permalink: /blog/qwiklabs/qwiklab-completion-tracker-versions
 tags: [Qwiklabs, Userscript, Changelog]
 image: 
   path: /images/posts/qwiklabs/science-1408800_1280.jpg
-  height: 411
+  width: "1280"
+  height: "720"
 excerpt: The changelog, the feature highlights, and the screenshots of the previous versions of the "Qwiklabs Lab Completion Tracker".
 ---
 

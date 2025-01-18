@@ -16,7 +16,7 @@ redirect_from:
 image:
   path: /assets/images/write-2160925.svg
   width: "730"
-  height: "431"
+  height: "411"
   hide: true
 ---
 

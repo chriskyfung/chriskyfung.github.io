@@ -11,7 +11,7 @@ tags:
 image:
   path: /assets/images/write-2160925.svg
   width: "730"
-  height: "431"
+  height: "411"
   hide: true
 permalink: blog/2015/11/27/OVITO-The-Open-Visualization-Tool-Version-261-has-been-released/
 ---

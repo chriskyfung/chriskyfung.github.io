@@ -12,8 +12,8 @@ tags:
   - Molecular dynamics
 image:
   path: /images/posts/lammps/lammps_send_email_transparent.png
-  width: 620
-  height: 158
+  width: "620"
+  height: "158"
   class: shadow-none
 css:
   syntax: true

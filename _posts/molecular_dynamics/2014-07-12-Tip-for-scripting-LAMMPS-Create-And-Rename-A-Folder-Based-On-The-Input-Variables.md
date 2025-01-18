@@ -16,7 +16,7 @@ css:
 image:
     path: /assets/images/write-2160925.svg
     width: "730"
-    height: "431"
+    height: "411"
     hide: true
 permalink: blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables/
 ---

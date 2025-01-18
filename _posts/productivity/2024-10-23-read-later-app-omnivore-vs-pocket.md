@@ -13,7 +13,8 @@ tags:
 permalink: /blog/productivity/read-later-app-omnivore-vs-pocket
 image:
   path: /images/posts/read-later-app/omnivore-vs-pocket-cover.jpg
-  height: 417
+  width: "730"
+  height: "417"
 published: false
 ---
 

@@ -11,7 +11,7 @@ permalink: /blog/matlab/matlab-packages-and-toolboxes
 image:
    path: /images/posts/matlab/matlab-packages.jpg
    width: "730"
-   height: "431"
+   height: "411"
 excerpt: A collection of useful MATLAB packages and toolboxes that support and improve your workflow, data visualization, code functionility and performance.
 ---
 

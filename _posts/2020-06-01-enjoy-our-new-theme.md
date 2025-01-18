@@ -8,7 +8,8 @@ author: chris
 tags: [Changelog, Jekyll]
 image: 
   path: /images/posts/jekyll/theme-after-may2020-chriskyfung.github.io.png
-  height: 548
+  width: "1292"
+  height: "969"
 ---
 
 Since migrated from Wix in 2017, this site has [run on GitHub Pages for over 3 years](/blog/2017/02/26/new-site-is-opened). I knew nearly nothing about [Jekyll](https://jekyllrb.com/) and GitHub at that time. I had just chosen [Architect theme](https://pages-themes.github.io/architect/) from the official theme chooser for GitHub Pages.

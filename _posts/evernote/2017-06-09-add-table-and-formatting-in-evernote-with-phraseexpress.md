@@ -15,6 +15,8 @@ amp:
     youtube: true
 image:
     path: /assets/images/write-2160925.svg
+    width: "730"
+    height: "411"
     hide: true
 published: false
 ---

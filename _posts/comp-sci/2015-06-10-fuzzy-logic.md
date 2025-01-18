@@ -14,7 +14,8 @@ amp:
    youtube: true
 image:
    path: /images/posts/notebook-4839909_o128.png
-   hide: true
+   width: "730"
+   height: "411"
 excerpt: A summary about the types of Fuzzy Logic and their applications in control systems.
 ---
 

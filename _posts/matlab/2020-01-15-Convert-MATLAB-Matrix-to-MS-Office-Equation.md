@@ -10,7 +10,8 @@ redirect_from:
  - /blog/2020/01/15/Convert-MATLAB-Matrix-to-MS-Office-Equation
 image: 
    path: /images/posts/matlab/convert-matrix-between-matlab-and-ms-equation.jpg
-   height: 417
+   width: "1050"
+   height: "600"
 css:
    syntax: true
 ---

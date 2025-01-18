@@ -12,7 +12,8 @@ redirect_from:
  - /blog/qwiklabs/Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform
 image:
   path: /images/posts/qwiklabs/qwiklabs-badges.jpg
-  height: 410
+  width: "1217"
+  height: "684"
 excerpt: Over 400 hands-on labs and quests available on Qwiklabs for learning GCP. Therefore, we made a visual map for you to more easily seek your desired learning path.
 amp:
   youtube: true

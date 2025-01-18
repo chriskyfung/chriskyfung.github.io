@@ -7,8 +7,8 @@ categories: [Academic]
 tags: [MATLAB, MS Excel, Data Science]
 image: 
    path: /images/posts/matlab/excel_addin_menu.png
-   width: 251
-   height: 262
+   width: "251"
+   height: "262"
    hide: true
 permalink: /blog/matlab/Working-MATLAB-with-MS-Excel/
 redirect_from:
