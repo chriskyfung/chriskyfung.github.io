@@ -4,98 +4,134 @@ title: Privacy Policy
 image: /images/header-bg.jpg
 comments: false
 permalink: /privacy-policy/
+date: 2025-01-27 21:31 +0800
+last_modified_at: 2025-01-27 21:31 +0800
 ---
 
 ## Overview
 
-This privacy policy sets out the privacy policies and practices for chriskyfung.github.io with respect to the collection, use, and disclosure of user/visitor information (personal or not) by chriskyfung.github.io. This Privacy Policy applies to information collected from you by chriskyfung.github.io. The security of your data is of utmost importance to chriskyfung.github.io. We value you as a site visitor and we are committed to maintaining your privacy and securing any information you may provide through our site.
+This privacy policy outlines how chriskyfung.github.io ("we", "our", or "the Site") collects, uses, and protects your information. We are committed to protecting your privacy and ensuring the security of any information you provide while using our Site.
 
-## Definitions
+## Acceptance of Terms
 
-As used in this Privacy Policy, "chriskyfung.github.io" or "this site" or "The site" refers to the website chriskyfung.github.io
+By accessing or using this Site, you agree to the collection and use of information in accordance with this policy. If you disagree with any part of this policy, please discontinue use of our Site.
 
-## Accept this prior to using this site
+## Information Collection and Use
 
-By visiting this site, viewing our content, you acknowledge that you accept the practices and policies outlined in this Privacy Policy.
+### Automatic Data Collection
 
-## Information Collection
+We automatically collect certain information when you visit our Site, including:
 
-### Information collected automatically
+- Browser type and version
+- Device information and specifications
+- IP address
+- Geographic location
+- Usage patterns and statistics
+- Access timestamps
+- Referring websites and sources
+- Operating system details
 
-chriskyfung.github.io may automatically (without the user being aware or notified) receive/log/collect certain types of information when you visit or interact with this site, services, mobile applications, or other products.
+### Third-Party Services Details
 
-The collected information includes but may not be limited to
+#### GitHub Pages
 
-- Browser Information
-- Operating System Information
-- Mobile Device Information (e.g., device identifier, mobile operating system, etc.)
-- IP Address
-- Internet Service Provider
-- Content Viewed
-- Geographic Location
-- Connection Speed
-- Time of Visit
-- Referring Site, Application, or Service
+- **Purpose**: Hosting service for our website
+- **Data Collected**: Usage logs, IP addresses
+- **Privacy Policy**: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
+- **Data Processing Location**: United States
 
-#### Comments, Public Posts, sharing on third party websites
+#### Google Analytics
 
-chriskyfung.github.io encourages active participation by users, through comments on this site and other methods like sharing on social websites, etc. However, please be aware that if you voluntarily disclose Information, personal or otherwise, on chriskyfung.github.io, that Information can be viewed, collected and used by others, including other users, search engines, advertisers, third-party applications developers, and anyone with access to chriskyfung.github.io. The Site has no control over the use, collection or disclosure of any Information that you post publicly on chriskyfung.github.io.
+- **Purpose**: Web analytics service
+- **Data Collected**: Usage data, device information, location data
+- **Privacy Policy**: [Google Analytics Privacy Policy](https://policies.google.com/privacy)
+- **Data Processing Location**: Global
+- **Opt-out**: Via [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
 
-chriskyfung.github.io may also use a third-party comment system (like Disqus, Facebook, etc) on this site, which may require the user to register with those third-party sites. Such third party sites may place "cookie" on the user's browser.
+#### Google AdSense
 
-#### Mailing Lists & Service Emails
+- **Purpose**: Advertisement delivery
+- **Data Collected**: Cookie data, browsing behavior, ad preferences
+- **Privacy Policy**: [Google AdSense Privacy Policy](https://policies.google.com/technologies/ads)
+- **Data Processing Location**: Global
+- **Ad Personalization Controls**: [Google Ad Settings](https://adssettings.google.com)
 
-This site may be running a mailing list, in order to provide subscribers with relevant information like new articles, weekly or daily round-ups, for example. In order to sign up to receive regular emails from this site's mailing list, users must submit information including a valid email address and demographic information such as location and interests.
+#### Disqus
 
-This information will be used in aggregate form only in order to assess general user interest in various internal and third party products and services, and your personal and contact information will not be passed to any other organization. Users who choose to sign up for a mailing list will receive regular emails from the site. This site may from time to time track user email usage in a continued effort to improve our services. Most of the time, these will be content from the site, but we may occasionally send out an email from a third party sponsor. This will be infrequent and does not represent an endorsement by the Site of any products advertised therein. It will clearly be marked as advertising.
+- **Purpose**: Comment system
+- **Data Collected**: User profile, comments, IP address
+- **Privacy Policy**: [Disqus Privacy Policy](https://help.disqus.com/en/articles/1717103-disqus-privacy-policy)
+- **Data Processing Location**: United States
+- **Opt-out**: Via Disqus account settings
 
-If you do not wish to receive emails from third party advertisers, please do not sign up for the mailing list.
+#### iubenda
 
-#### Use of cookies
+- **Purpose**: Privacy compliance and cookie consent management
+- **Data Collected**: Cookie preferences, consent records
+- **Privacy Policy**: [iubenda Privacy Policy](https://www.iubenda.com/privacy-policy/36700132)
+- **Data Processing Location**: European Union
+- **Controls**: Via cookie consent banner
 
-A "cookie" is a small data text file that is placed in your browser and allows chriskyfung.github.io to recognize you each time you visit this site. A cookie can be used to track the behavior of a user on a particular domain/site.
+### Cookie Management
 
-chriskyfung.github.io may use cookies to provide users with a better experience when using this site.
+Our site uses the iubenda Privacy Controls system for cookie management. You can:
 
-Cookies may/will also be used by 3rd-party content providers such as
+1. Modify preferences via the cookie banner
+2. Access detailed cookie settings through the iubenda interface
+3. Withdraw consent at any time
+4. Request a complete cookie declaration
 
-- Newsfeeds
-- Advertisers like Google Adsense
-- Social sharing sites like Twitter, Facebook, LinkedIn
-- Comment management services like Disqus
-- Visitor analytics services like Google Analytics
+#### Cookie Categories
 
-Cookies themselves do not contain any personal information, and this site does not use cookies to collect any personal information.
+1. **Necessary Cookies**
 
-#### Control your privacy
+   - Essential for site functionality
+   - Cannot be disabled
+   - No personal data stored
 
-If you do not want this site to place and use cookies on your computer, you should set your browser preferences to refuse cookies before accessing this site. chriskyfung.github.io is not responsible for any failure by you or your browser to block cookies. If you choose to decline cookies, you may not be able to sign in or use other interactive features of this site that depend on cookies.
+2. **Experience Cookies**
 
-## Third-party advertisements on this site
+   - Enhance user experience
+   - Remember preferences
+   - Enable external content
 
-This site uses third-party advertising companies to serve ads when you visit this site. For example Google Adsense. These companies may use information (not including your name, address, email address or telephone number) about your visits to this site and other websites in order to provide advertisements about goods and services that may be of interest to you.
+3. **Measurement Cookies**
 
-We allow third-party companies to serve ads and/or collect certain anonymous information when you visit our web site. These companies may use non-personally identifiable information (e.g., click stream information, browser type, time and date, subject of advertisements clicked or scrolled over) during your visits to this and other Web sites in order to provide advertisements about goods and services likely to be of greater interest to you. These companies typically use a **cookie** or third party web beacon to collect this information.
+   - Analytics and statistics
+   - Anonymous usage data
+   - Performance monitoring
 
-### Use of cookies by third-party advertisements
+4. **Marketing Cookies**
 
-Some of our third-party advertising partners may distribute cookies to users through the advertisements that are displayed/delivered on this site.
+   - Personalized advertising
+   - Behavioral tracking
+   - Ad delivery optimization
 
-chriskyfung.github.io or the site does not control and **is not responsible** for the use of cookies by its third-party partners or advertisers.
+## Data Protection and Rights
 
-chriskyfung.github.io holds no responsibility for the technologies, tools, or practices of the advertisers that provide advertising and related services on this site. This Privacy Policy does not cover any collection, use, or disclosure of information by advertisers who provide advertising and related services on chriskyfung.github.io. These advertisers' information gathering practices, including their policies regarding the use of cookies and other tracking technologies, are governed entirely by their own privacy policies, not this one.
+### Legal Basis for Processing
 
-### About Google Adsense program
+We process your data based on:
 
-Any advertisements served by Google Inc. (Google Adsense Program) and affiliated companies may be using cookies. These cookies allow Google to display ads based on your visits to this site and other sites that use Google advertising services. Learn how to [opt-out of Google's cookie usage](https://www.google.com/policies/technologies/ads/). Any tracking done by Google through cookies and other mechanisms is subject to Google's own privacy policies.
+- Your explicit consent
+- Legitimate business interests
+- Legal obligations
+- Contract performance
 
-Google, as a third-party vendor, uses cookies to serve ads on your site. Google's use of the DART cookie enables it to serve ads to your users based on their visit to your sites and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the [Google ad and content network privacy policy](https://policies.google.com/technologies/ads).
+### Your GDPR Rights
 
-## About analytics services
+You have the right to:
 
-chriskyfung.github.io uses third-party analytics providers and products (for example Google Analytics) to obtain, compile, and analyze information (that may include **Personally-Identifying Information** ) about how users are using and interacting with this site. chriskyfung.github.io may provide this information (including Personally-Identifying Information) to these analytics providers for the purpose of obtaining statistics and other information about how users are using and interacting with this site. These analytics providers may use tracking techniques other than HTTP cookies to recognize your computer or device and/or to collect or compile this information. These techniques may be used directly on this site. chriskyfung.github.io has **no responsibility** for the technologies, tools, or practices of the third parties that providing analytics products and services to chriskyfung.github.io.
+- Access your personal data
+- Request data rectification
+- Request data erasure
+- Restrict processing
+- Object to processing
+- Withdraw consent
 
-Please also keep in mind that your web browser may not permit you to block the use of these techniques, and that browser settings that block conventional cookies may have no effect on such techniques.
+### Data Retention
+
+We retain personal data only for as long as necessary for the purposes specified in this policy.
 
 ## External Links
 
@@ -109,14 +145,17 @@ This site will never ask for Credit Card details and request that you do not ent
 
 While we do our best to protect your personal information, we cannot guarantee the security of any information that you transmit to this site and you are solely responsible for maintaining the secrecy of any passwords or other account information. In addition, other Internet sites or services that may be accessible through chriskyfung.github.io have separate data and privacy practices independent of us, and therefore we disclaim any responsibility or liability for their policies or actions.
 
-## Notification of Changes
+## Changes to This Policy
 
-Whenever this site changes its privacy policy, we will post those changes to this Privacy Policy page, and other places we deem appropriate so our users are always aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it.
+We reserve the right to update this policy at any time. Changes will be posted on this page with an updated effective date.
 
-## How to Contact Us
+## Contact Information
 
-chriskyfung.github.io welcomes any questions or comments you may have regarding this **Privacy Policy** or its implementation. Any such questions or comments should be submitted via email to chriskyfung.github.io. We will undertake reasonable efforts to resolve or address your concern.
+For privacy-related inquiries, please:
 
-## Effective Date of this Privacy Policy
+- Visit our [contact page](/contact), or
+- Send us a private message on our [Facebook Page](https://www.facebook.com/chriskyfung)
 
-This Privacy Policy is effective as of Jun 23, 2020.
+## Effective Date
+
+This policy is effective as of January 27, 2025.
