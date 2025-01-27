@@ -31,7 +31,7 @@ logo: 'assets/images/logo-plainSVG.svg'
 timezone: 'Asia/Hong_Kong'
 
 permalink: /blog/:year/:month/:day/:title
-paginate_path: "/blog/page:num/"
+paginate_path: "/blog/page-:num/"
 paginate: 12
 
 # Navigation features
