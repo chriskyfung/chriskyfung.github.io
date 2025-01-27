@@ -10,7 +10,11 @@ image:
    path: /images/posts/devtools/gh-repo-clone-custom-completion-cover.jpg
    width: "730"
    height: "417"
-keywords: [github cli, gh repo clone, bash completion, git automation]
+keywords:
+   - github cli
+   - gh repo clone
+   - bash completion
+   - git automation
 categories:
    - Developer tools
 tags:
@@ -22,7 +26,7 @@ tags:
 excerpt: Learn how to supercharge your GitHub CLI experience with custom bash completion for the 'gh repo clone' command. Includes step-by-step setup and practical examples.
 css:
    syntax: true
-last_modified_at: 2025-01-03 08:01 +0800
+last_modified_at: 2025-01-26 21:01 +0800
 ---
 
 Ever found yourself typing [`gh repo clone`](https://cli.github.com/manual/gh_repo_clone) and struggling to remember repository names? I've been there. As a developer who works with dozens of repositories daily, I needed a better solution. That's why I created a custom completion script that makes the GitHub CLI's clone command more powerful and user-friendly.
@@ -49,23 +53,23 @@ The completion script automatically populates suggestions, enabling faster inter
 
 ```bash
 # Clone only a single branch
-gh repo clone username/repo -- --single-branch
+gh repo clone <repository> -- --single-branch
 
 # Clone with a specific branch
-gh repo clone username/repo -- --branch feature-branch --single-branch
+gh repo clone <repository> -- --branch feature-branch --single-branch
 
-# Clone with depth limit
-gh repo clone username/repo -- --depth 1
+# Shadow clone
+gh repo clone <repository> -- --depth 1
 
-# Clone with sparse checkout
-gh repo clone username/repo -- --sparse
+# Partial clone with sparse checkout
+gh repo clone <repository> -- --sparse --filter=blob:none
 ```
 
 **Related**: [Mastering Git & GitHub CLI: Essential Commands You Should Know]({% post_url devtools/2025-01-11-top-git-and-github-cli-commands-you-should-know %})
 
 ## Quick Setup Guide
 
-1. **Install the completion script**:
+1. **Download the completion script to your computer**:
 
    ```bash
    curl -o ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
