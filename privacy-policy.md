@@ -6,6 +6,7 @@ comments: false
 permalink: /privacy-policy/
 date: 2025-01-27 21:31 +0800
 last_modified_at: 2025-01-27 21:31 +0800
+consent_ui: false
 ---
 
 ## Overview
