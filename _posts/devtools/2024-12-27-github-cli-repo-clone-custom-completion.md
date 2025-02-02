@@ -72,7 +72,7 @@ gh repo clone <repository> -- --sparse --filter=blob:none
 1. **Download the completion script to your computer**:
 
    ```bash
-   curl -o ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
+   curl -o ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.gh-repo-clone-completion.bash
    ```
 
    You can view the source code on **[GitHub Gist](https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280)**.
