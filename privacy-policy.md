@@ -4,8 +4,8 @@ title: Privacy Policy
 image: /images/header-bg.jpg
 comments: false
 permalink: /privacy-policy/
-date: 2025-01-27 21:31 +0800
-last_modified_at: 2025-01-27 21:31 +0800
+date: 2025-02-11 20:02 +0800
+last_modified_at: 2025-02-11 20:02 +0800
 consent_ui: false
 ---
 
@@ -73,6 +73,13 @@ We automatically collect certain information when you visit our Site, including:
 - **Data Processing Location**: European Union
 - **Controls**: Via cookie consent banner
 
+#### Cloudflare Workers
+
+- **Purpose**: Content delivery and security
+- **Data Collected**: IP addresses, usage data
+- **Privacy Policy**: [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/)
+- **Data Processing Location**: Global
+
 ### Cookie Management
 
 Our site uses the iubenda Privacy Controls system for cookie management. You can:
@@ -136,7 +143,7 @@ We retain personal data only for as long as necessary for the purposes specified
 
 ## External Links
 
-The site contains links to other sites. Please be aware that the Site is not responsible for the privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of each and every Web site that collects personally identifiable information. This Privacy Policy applies solely to information collected by the Site
+The site contains links to other sites. Please be aware that the Site is not responsible for the privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of each and every Web site that collects personally identifiable information. This Privacy Policy applies solely to information collected by the Site.
 
 ## Credit card details
 
@@ -159,4 +166,4 @@ For privacy-related inquiries, please:
 
 ## Effective Date
 
-This policy is effective as of January 27, 2025.
+This policy is effective as of February 11, 2025.
