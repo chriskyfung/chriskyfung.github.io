@@ -1,5 +1,5 @@
 ---
-layout: page-right-sidebar
+layout: page
 title: Privacy Policy
 date: 2025-02-18 18:45 +0800
 last_modified_at: 2025-02-18 18:45 +0800
@@ -7,6 +7,7 @@ permalink: /privacy-policy/
 image: /images/header-bg.jpg
 comments: false
 consent_ui: false
+sidebar: none
 ---
 
 ## Overview
