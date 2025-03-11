@@ -13,6 +13,7 @@ image:
    width: "730"
    height: "411"
 excerpt: A collection of useful MATLAB packages and toolboxes that support and improve your workflow, data visualization, code functionility and performance.
+featured: true
 ---
 
 {% include toc.md %}
