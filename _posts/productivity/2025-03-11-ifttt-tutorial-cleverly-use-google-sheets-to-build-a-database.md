@@ -28,7 +28,7 @@ This guide will show you how to use **IFTTT’s "Filter Code"** to transform Goo
 
 ## Learning Objectives
 
-Before diving in, it’s important to note that **IFTTT isn’t the ideal automation tool for complex data workflows.** Platforms like Zapier, Make, n8n, and Microsoft Power Automate are better suited for such tasks. **This guide focuses on extending IFTTT’s capabilities and unlocking greater value for users already familiar with IFTTT’s interface.**
+Before diving in, it’s important to note that **IFTTT isn’t the ideal automation tool for complex data workflows.** Platforms like _Zapier_, _Make_, _n8n_, and _Microsoft Power Automate_ are better suited for such tasks. **This guide focuses on extending IFTTT’s capabilities and unlocking greater value for users already familiar with IFTTT’s interface.**
 
 By the end of this tutorial, you’ll be able to:
 
@@ -53,7 +53,7 @@ Here are some creative ways to apply this setup:
 
 ### Prerequisites
 
-- An **IFTTT Pro+ Subscription** (required for advanced queries).
+- An **IFTTT Pro+ Subscription** (required for Queries and Filter Code features).
 - A **Google Sheets Document** (formatted data as described below).
 
 ### Step 1: Format Your Google Sheets Data
@@ -162,3 +162,19 @@ If you haven’t joined IFTTT yet, sign up via [**this referral link**](https://
 This tutorial isn’t just about technical workarounds—**it’s about reimagining the possibilities of tools.** Just as DeepSeek creatively overcomes hardware constraints to develop groundbreaking AI technology, we too can push the boundaries of what’s achievable through clever design and innovative thinking.
 
 Let’s break boundaries with creativity! Feel free to share your unique ideas in the comments section and explore more creative applications together!
+
+---
+
+## Additional Resources
+
+- [IFTTT Plans at a glance – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/360053706813-IFTTT-Plans-at-a-glance)
+- [What is a query? – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/360053502173-What-is-a-query)
+- [Building with filter code – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/360052451954-Building-with-filter-code)
+- [How to add filter code – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/4406412223771-How-to-add-filter-code)
+- [Filter code generators – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/1260805596369-Filter-code-generators)
+- [Example Applets using queries and filter code – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/360053657913-Example-Applets-using-queries-and-filter-code)
+- [Parsing JSON body with filter code – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/4405029291163-Parsing-JSON-body-with-filter-code)
+- [Can I make my Applets run only at certain times? – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/360053527994-Can-I-make-my-Applets-run-only-at-certain-times)
+- [Get random strings from an array with no duplicates – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/4406117732251-Get-random-strings-from-an-array-with-no-duplicates)
+- [How to create multi-action Applets – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/4410084170651-How-to-create-multi-action-Applets)
+- [IFTTT Service Rate Limits – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/1260803229749-IFTTT-Service-Rate-Limits)
