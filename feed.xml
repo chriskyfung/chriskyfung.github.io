@@ -5,9 +5,417 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Jan 2025 20:53:08 +0800</pubDate>
-    <lastBuildDate>Sat, 18 Jan 2025 20:53:08 +0800</lastBuildDate>
+    <pubDate>Tue, 25 Mar 2025 16:34:15 +0800</pubDate>
+    <lastBuildDate>Tue, 25 Mar 2025 16:34:15 +0800</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Unlock IFTTT: Build a Dynamic Database with Google Sheets</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://ifttt.com/join?referral_code=r_uGpbe_3SEbCqwVweoOEBtPuSQdQswV&quot;&gt;IFTTT&lt;/a&gt; (If This Then That), a leading automation platform supporting over 900 apps and services, simplifies cross-platform tasks in everyday life. However, its lack of native database integration &lt;strong&gt;forces users to rely on Google Sheets as a workaround for data storage&lt;/strong&gt;, creating challenges for data-driven workflows like content scheduling or random task assignment.&lt;/p&gt;
+
+&lt;p&gt;This guide will show you how to use &lt;strong&gt;IFTTT’s “Filter Code”&lt;/strong&gt; to transform Google Sheets into a lightweight NoSQL database, capable of storing thousands of JSON-formatted entries. This bridges the gap between “triggers” and “actions” with streamlined data processing.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;learning-objectives&quot;&gt;Learning Objectives&lt;/h2&gt;
+
+&lt;p&gt;Before diving in, it’s important to note that &lt;strong&gt;IFTTT isn’t the ideal automation tool for complex data workflows.&lt;/strong&gt; Platforms like &lt;em&gt;Zapier&lt;/em&gt;, &lt;em&gt;Make&lt;/em&gt;, &lt;em&gt;n8n&lt;/em&gt;, and &lt;em&gt;Microsoft Power Automate&lt;/em&gt; are better suited for such tasks. &lt;strong&gt;This guide focuses on extending IFTTT’s capabilities and unlocking greater value for users already familiar with IFTTT’s interface.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;By the end of this tutorial, you’ll be able to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Overcome IFTTT’s Limits:&lt;/strong&gt; Fully utilize the query allowance (i.e. single-row A-Z columns, up to 30,000 characters per cell) to bypass bottlenecks in data processing.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Optimize Data Storage:&lt;/strong&gt; Compress thousands of structured data entries into JSON format within a single row, turning your spreadsheet into a functional database.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Streamline Data Handling:&lt;/strong&gt; Extract content for random selection or conditional filtering and push results to designated platforms such as email, notifications, or social media.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;practical-use-cases&quot;&gt;Practical Use Cases&lt;/h2&gt;
+
+&lt;p&gt;Here are some creative ways to apply this setup:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Content Creation:&lt;/strong&gt; Pull blog topics or daily writing prompts automatically.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Digital Marketing:&lt;/strong&gt; Schedule social media posts from a curated database to maintain brand or product exposure.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Education:&lt;/strong&gt; Share quiz questions or motivational quotes to boost engagement.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Everyday Life:&lt;/strong&gt; Automate recipe suggestions or fitness challenges for variety.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;step-by-step-guide&quot;&gt;Step-by-Step Guide&lt;/h2&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An &lt;strong&gt;IFTTT Pro+ Subscription&lt;/strong&gt; (required for Queries and Filter Code features).&lt;/li&gt;
+  &lt;li&gt;A &lt;strong&gt;Google Sheets Document&lt;/strong&gt; (formatted data as described below).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-1-format-your-google-sheets-data&quot;&gt;Step 1: Format Your Google Sheets Data&lt;/h3&gt;
+
+&lt;p&gt;Organize your data as &lt;strong&gt;comma-separated JSON objects&lt;/strong&gt; within cells. For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;quote&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Success is a lousy teacher. It seduces smart people into thinking they can’t lose.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Bill Gates&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hashtag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#MotivationalQuotes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;quote&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;I don’t spend my time pontificating about high-concept things; I spend my time solving engineering and manufacturing problems.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Elon Musk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hashtag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#CareerWisdom&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;quote&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Quality is more important than quantity. One home run is much better than two doubles.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Steve Jobs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hashtag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#LifePhilosophy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Key points:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Spread datasets across columns A-Z in a single row.&lt;/li&gt;
+  &lt;li&gt;Ensure no cell exceeds 30,000 characters.&lt;/li&gt;
+  &lt;li&gt;Validate your JSON syntax with tools like &lt;a href=&quot;https://jsonlint.com/&quot;&gt;JSONLint&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;step-2-create-an-ifttt-applet&quot;&gt;Step 2: Create an IFTTT Applet&lt;/h3&gt;
+
+&lt;figure class=&quot;shadow-none text-center&quot;&gt;&lt;amp-img width=&quot;600&quot; height=&quot;600&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/ifttt/ifttt-google-sheets-workflow-scaled.webp&quot; alt=&quot;Create an automated process: when a button is pressed, query the current values of a row from a Google Sheets document and handle them with filter code, then send the email&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;600&quot; height=&quot;600&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/ifttt/ifttt-google-sheets-workflow-scaled.png&quot; alt=&quot;Create an automated process: when a button is pressed, query the current values of a row from a Google Sheets document and handle them with filter code, then send the email&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Select a Trigger&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Testing Phase:&lt;/em&gt; Use &lt;strong&gt;Button Widget&lt;/strong&gt; for manual execution.&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Routine Operations:&lt;/em&gt; Use &lt;strong&gt;Date &amp;amp; Time&lt;/strong&gt; for scheduled triggers.&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Advanced Options:&lt;/em&gt; Integrate other apps for event-based triggers or use &lt;strong&gt;Webhooks&lt;/strong&gt; for API calls.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Set Up a Google Sheets Query&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Choose &lt;strong&gt;Current values of a row&lt;/strong&gt; (read current values from a specific row).&lt;/li&gt;
+      &lt;li&gt;Provide your spreadsheet’s shareable link and specify the row to query (e.g., Row 2).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Add Actions&lt;/strong&gt; (Supports multiple actions)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Notifications:&lt;/em&gt; Add &lt;strong&gt;Email &amp;gt; Send me an email&lt;/strong&gt; to receive updates directly.&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Dynamic updates:&lt;/em&gt; Add &lt;strong&gt;Google Sheets &amp;gt; Update cell in spreadsheet&lt;/strong&gt;  for advanced customization.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add Filter Code&lt;/strong&gt;
+Paste this example TypeScript snippet into the filter editor for random selection:&lt;/p&gt;
+
+    &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Retrieve data from columns A-Z&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;GoogleSheets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cellValuesInRow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+   
+&lt;span class=&quot;c1&quot;&gt;// Initialize an empty array to store parsed JSON data&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Record&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+   
+&lt;span class=&quot;c1&quot;&gt;// Parse JSON strings&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/^Column/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jsonChunks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\{&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?\}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;jsonChunks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chunk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chunk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   
+&lt;span class=&quot;c1&quot;&gt;// Random selection&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;randomIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectedData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;randomIndex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;No valid data&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+   
+&lt;span class=&quot;c1&quot;&gt;// Output result&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sendMeEmail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setBody&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`Today’s Recommendation: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;selectedData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;No data&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;&lt;strong&gt;Optional Enhancements:&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Add conditional statements for dynamic filtering.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Perform real-time updates by modifying a cell with the &lt;strong&gt;Update cell in spreadsheet&lt;/strong&gt; action. For example:&lt;/p&gt;
+
+        &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Retrieve the value of ColumnE&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;ColumnE&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+     
+&lt;span class=&quot;c1&quot;&gt;// Example: Convert the value to uppercase (customize logic as needed)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+     
+&lt;span class=&quot;c1&quot;&gt;// Update the specified cell in the spreadsheet (e.g., B5)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;GoogleSheets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;updateCellInSpreadsheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;B5&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;GoogleSheets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;updateCellInSpreadsheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-3-test-and-debug&quot;&gt;Step 3: Test and Debug&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use your chosen trigger to test the applet and observe the execution results.&lt;/li&gt;
+  &lt;li&gt;Check whether the data updates in the spreadsheet as intended.&lt;/li&gt;
+  &lt;li&gt;Track error messages via &lt;a href=&quot;https://ifttt.com/activity&quot;&gt;&lt;strong&gt;IFTTT Activity Log&lt;/strong&gt;&lt;/a&gt; and make adjustments.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;key-takeaways&quot;&gt;Key Takeaways&lt;/h2&gt;
+
+&lt;p&gt;By leveraging &lt;strong&gt;Filter Code and Google Sheets&lt;/strong&gt;, you can unlock a new level of flexibility for IFTTT workflows. Despite limitations like single-row queries, column constraints (A–Z), and a 30,000-character cell limit, compressing data into JSON fragments and reassembling it opens up endless possibilities.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What creative possibilities come to mind for you?&lt;/strong&gt; If you’re already an IFTTT Pro+ user, consider these applications:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Daily Recipe Rotation:&lt;/strong&gt; Keep meals fresh with automated suggestions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Smart Task Assignment:&lt;/strong&gt; Allocate tasks based on team performance data.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Weather-Based Alerts:&lt;/strong&gt; Combine real-time weather data with personalized reminders.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you haven’t joined IFTTT yet, sign up via &lt;a href=&quot;https://ifttt.com/join?referral_code=r_uGpbe_3SEbCqwVweoOEBtPuSQdQswV&quot;&gt;&lt;strong&gt;this referral link&lt;/strong&gt;&lt;/a&gt; to enjoy 10% off and start creating your automations today!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;This tutorial isn’t just about technical workarounds—&lt;strong&gt;it’s about reimagining the possibilities of tools.&lt;/strong&gt; Just as DeepSeek creatively overcomes hardware constraints to develop groundbreaking AI technology, we too can push the boundaries of what’s achievable through clever design and innovative thinking.&lt;/p&gt;
+
+&lt;p&gt;Let’s break boundaries with creativity! Feel free to share your unique ideas in the comments section and explore more creative applications together!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053706813-IFTTT-Plans-at-a-glance&quot;&gt;IFTTT Plans at a glance – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053502173-What-is-a-query&quot;&gt;What is a query? – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360052451954-Building-with-filter-code&quot;&gt;Building with filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4406412223771-How-to-add-filter-code&quot;&gt;How to add filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/1260805596369-Filter-code-generators&quot;&gt;Filter code generators – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053657913-Example-Applets-using-queries-and-filter-code&quot;&gt;Example Applets using queries and filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4405029291163-Parsing-JSON-body-with-filter-code&quot;&gt;Parsing JSON body with filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053527994-Can-I-make-my-Applets-run-only-at-certain-times&quot;&gt;Can I make my Applets run only at certain times? – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4406117732251-Get-random-strings-from-an-array-with-no-duplicates&quot;&gt;Get random strings from an array with no duplicates – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4410084170651-How-to-create-multi-action-Applets&quot;&gt;How to create multi-action Applets – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/1260803229749-IFTTT-Service-Rate-Limits&quot;&gt;IFTTT Service Rate Limits – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://business.tutsplus.com/tutorials/how-to-use-ifttt-with-google-sheets--cms-28355&quot;&gt;How to Use IFTTT With Google Sheets | Envato Tuts+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 20 Mar 2025 00:03:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/productivity/ifttt-tutorial-google-sheets-database/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/ifttt-tutorial-google-sheets-database/</guid>
+        
+        <category>IFTTT</category>
+        
+        <category>Google Sheets</category>
+        
+        <category>User tips</category>
+        
+        
+        <category>Productivity</category>
+        
+      </item>
+    
+      <item>
+        <title>Fixing Old Emails in Your Git History: A Beginner&apos;s Guide</title>
+        <description>&lt;p&gt;Git is a powerful version control system that acts like a diary for your code. Every change you make gets recorded in what’s called a commit history. But what if you realize some of your commits are tied to an outdated email address? Maybe you used a school email that’s no longer active, or your personal email for work projects and want to tidy up your digital footprint. Let’s learn how to fix that! In this guide, you’ll learn how to update your email address across all commits, using the mighty &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;understanding-git-identity&quot;&gt;Understanding Git Identity&lt;/h2&gt;
+
+&lt;p&gt;When you make a commit, Git records two key pieces of identity information:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Author&lt;/strong&gt;: The person who originally wrote the code.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Committer&lt;/strong&gt;: The person who added the code to the repository (often the same as the author).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If either of these fields uses an out-of-date email address, it can lead to confusion—especially if you want your work to reflect who you are today.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;the-problem-ghosts-of-emails-past&quot;&gt;The Problem: Ghosts of Emails Past&lt;/h2&gt;
+
+&lt;p&gt;Imagine your coding journey is like a scrapbook. Each commit is a snapshot of your progress. You set up Git with your shiny new GitHub email, but when you push code, your commits are still linked to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;old_school_email@university.edu&lt;/code&gt;—an account you can’t even access anymore!
+It might confuse future readers (or even recruiters) checking your portfolio. Updating your commit history helps you:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Present a Professional Image: Your Git history becomes a polished record of your growth.&lt;/li&gt;
+  &lt;li&gt;Improve Traceability: Linking commits to your current email makes it easier to track contributions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This happened to me when I tried to share code from my postgraduate projects. My commits were tied to an ancient email, making my contributions invisible on GitHub. Worse, collaborators couldn’t recognize my work.&lt;/p&gt;
+
+&lt;p&gt;The solution? Rewriting Git history to update old emails. Let’s break down how to do this safely.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;the-magic-command-git-filter-branch&quot;&gt;The Magic Command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;To magically update your old commits, we use a shell script with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt;—Git’s built-in “history editor.” Think of it as a “find and replace” feature for your entire Git history that has the old email with your updated details.&lt;/p&gt;
+
+&lt;p&gt;While powerful, it’s not beginner-friendly—so follow closely! Here’s the script to update emails and names in all commits:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git filter-branch &lt;span class=&quot;nt&quot;&gt;--env-filter&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;  
+WRONG_EMAIL=&quot;old.email@example.com&quot;
+NEW_NAME=&quot;Your New Name&quot;
+NEW_EMAIL=&quot;new.email@newdomain.com&quot;
+
+if [ &quot;$GIT_AUTHOR_EMAIL&quot; = &quot;$WRONG_EMAIL&quot; ]; then  
+    export GIT_AUTHOR_NAME=&quot;$NEW_NAME&quot;  
+    export GIT_AUTHOR_EMAIL=&quot;$NEW_EMAIL&quot;  
+fi
+
+if [ &quot;$GIT_COMMITTER_EMAIL&quot; = &quot;$WRONG_EMAIL&quot; ]; then  
+    export GIT_COMMITTER_NAME=&quot;$NEW_NAME&quot;  
+    export GIT_COMMITTER_EMAIL=&quot;$NEW_EMAIL&quot;  
+fi
+&apos;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--tag-name-filter&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branches&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--tags&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s break it down:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;variables-your-before-and-after&quot;&gt;Variables (Your “Before” and “After”)&lt;/h3&gt;
+
+    &lt;p&gt;At the start of the script, you assign your details:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WRONG_EMAIL&lt;/code&gt;: The email you want to replace (e.g., an old school address).&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_NAME&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_EMAIL&lt;/code&gt;: Your current name and email (like your GitHub credentials).&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Replace these placeholders with your actual values.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;the-find-and-replace-logic&quot;&gt;The “Find and Replace” Logic&lt;/h3&gt;
+
+    &lt;p&gt;The script checks whether the commit’s author or committer email matches your old email. If it does, it replaces the name and email with your new ones. In plain terms:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;If this commit was made with the wrong email, update it.&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;scope-where-to-fix&quot;&gt;Scope (Where to Fix)&lt;/h3&gt;
+
+    &lt;p&gt;Finally, the options &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--tag-name-filter cat -- --branches --tags&lt;/code&gt; ensure that every branch and tag in your repository is checked and updated if needed.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;step-by-step-safely-rewriting-history&quot;&gt;Step-by-Step: Safely Rewriting History&lt;/h2&gt;
+
+&lt;h3 id=&quot;️-step-0-backup-your-repository&quot;&gt;⚠️ &lt;strong&gt;Step 0&lt;/strong&gt;: Backup Your Repository&lt;/h3&gt;
+
+&lt;p&gt;Rewriting history is a big change! Make sure you have a backup (or clone) of your repository before running the script.&lt;/p&gt;
+
+&lt;p&gt;You can clone a copy of your repo:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone &lt;span class=&quot;nt&quot;&gt;--mirror&lt;/span&gt; your-repo-url backup-folder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-1-run-the-script&quot;&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Run the Script&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open Git Bash or Terminal.&lt;/li&gt;
+  &lt;li&gt;Navigate to your repository (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd your-repo&lt;/code&gt;).
+&lt;strong&gt;Note:&lt;/strong&gt; Replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;your-repo&lt;/code&gt; with your actual repository name.&lt;/li&gt;
+  &lt;li&gt;Paste the script, replacing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WRONG_EMAIL&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_NAME&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_EMAIL&lt;/code&gt; with your details.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-2-force-push-the-changes&quot;&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Force-Push the Changes&lt;/h3&gt;
+
+&lt;p&gt;Since history has been rewritten, you need to force-push the changes to your remote repository:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
+git push origin &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--tags&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you work on a team, coordinate with your teammates before force-pushing, as this can disrupt others’ work.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;caveats-and-helpful-tips&quot;&gt;Caveats and Helpful Tips&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Working in a Team&lt;/strong&gt;: Rewriting history changes commit IDs (hashes). Make sure everyone on your project is aware and ready to adjust their local copies.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Large Repositories&lt;/strong&gt;: The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt; command can be slow on big projects. For faster results, consider using &lt;a href=&quot;https://rtyley.github.io/bfg-repo-cleaner/&quot;&gt;BFG Repo-Cleaner&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Modern Alternatives&lt;/strong&gt;: The Git community now often recommends using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-repo&lt;/code&gt; for such tasks. While this guide focuses on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter-branch&lt;/code&gt; (because of its wide use and educational value), it’s worth exploring newer tools as you advance.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Prevent Future Headaches&lt;/strong&gt;: Configure Git to use your correct email globally.&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;Your Name&quot;&lt;/span&gt;  
+git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;your@email.com&quot;&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Check Your Work&lt;/strong&gt;: After running the script, verify a commit’s details with&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%an &amp;lt;%ae&amp;gt;, %cn &amp;lt;%ce&amp;gt;&quot;&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why-bother-a-lesson-beyond-the-code&quot;&gt;Why Bother? A Lesson Beyond the Code&lt;/h2&gt;
+
+&lt;p&gt;Fixing your Git history isn’t just a technical task—it’s a lesson in attention to detail, responsibility, and self-improvement. Your Git history is like your academic portfolio; keeping it accurate reflects your growth as a programmer. Plus, you’re learning a technique that could prove useful when dealing with sensitive data or accidental mistakes in the future.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;Rewriting Git history isn’t something you’ll need to do every day. It might seem intimidating at first, but with careful steps and a clear understanding, it’s a powerful skill. By updating your commit emails, you’re not only tidying up your past work but also setting up a professional foundation for your future projects.&lt;/p&gt;
+
+&lt;p&gt;So, take a deep breath, back up your work, and give it a try. With each commit, you are fine-tuning your development story—a story that is uniquely yours!&lt;/p&gt;
+
+&lt;p&gt;Happy coding!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://gklsan.medium.com/how-to-change-git-commit-author-information-for-all-commits-a-complete-guide-29c954e8319d&quot;&gt;How to Change Git Commit Author Information for All Commits: A Complete Guide | by Gokul | Medium&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/67308161&quot;&gt;command line - Git commits are not getting linked with my GitHub account - Stack Overflow&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://git-scm.com/docs/git-filter-branch&quot;&gt;Git Official Documentation on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter-branch&lt;/code&gt;&lt;/a&gt;&lt;br /&gt;
+The official Git documentation explaining the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter-branch&lt;/code&gt; command.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://exchangetuts.com/index.php/git-commits-are-not-getting-linked-with-my-github-account-1639701252030376&quot;&gt;Git commits are not getting linked with my GitHub account&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://medium.com/@alameerashraf/protecting-your-code-how-to-prevent-and-fix-sensitive-data-exposure-on-github-e1934611847f&quot;&gt;Protecting Your Code: How to Prevent and Fix Sensitive Data Exposure on GitHub | by ALameer Ashraf | Medium&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 11 Mar 2025 20:03:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/devtools/fixing-old-emails-in-your-git-history/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/fixing-old-emails-in-your-git-history/</guid>
+        
+        <category>Git</category>
+        
+        <category>Command-line</category>
+        
+        <category>User tips</category>
+        
+        
+        <category>Developer tools</category>
+        
+      </item>
     
       <item>
         <title>Mastering Git &amp; GitHub CLI: Essential Commands You Should Know</title>
@@ -23,9 +431,9 @@
     &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
 &lt;/aside&gt;
 
-&lt;h2 class=&quot;no_toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
 
-&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#1-essential-git-commands&quot; id=&quot;markdown-toc-1-essential-git-commands&quot;&gt;1. Essential Git Commands&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#11-enable-git-tab-completion-in-linux-bash&quot; id=&quot;markdown-toc-11-enable-git-tab-completion-in-linux-bash&quot;&gt;1.1 Enable Git Tab Completion in Linux Bash&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#12-viewing-git-history-at-a-glance&quot; id=&quot;markdown-toc-12-viewing-git-history-at-a-glance&quot;&gt;1.2 Viewing Git History at a Glance&lt;/a&gt;&lt;/li&gt;
@@ -554,16 +962,16 @@ my-awesome-project    my-docker-images     my-python-scripts
 &lt;h3 id=&quot;common-use-cases&quot;&gt;Common Use Cases&lt;/h3&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Clone only a single branch&lt;/span&gt;
-gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
+gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# Clone with a specific branch&lt;/span&gt;
-gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branch&lt;/span&gt; feature-branch &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
+gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branch&lt;/span&gt; feature-branch &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;# Clone with depth limit&lt;/span&gt;
-gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
+&lt;span class=&quot;c&quot;&gt;# Shadow clone&lt;/span&gt;
+gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
 
-&lt;span class=&quot;c&quot;&gt;# Clone with sparse checkout&lt;/span&gt;
-gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--sparse&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Partial clone with sparse checkout&lt;/span&gt;
+gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--sparse&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/devtools/mastering-git-github-cli-essential-commands/&quot;&gt;Mastering Git &amp;amp; GitHub CLI: Essential Commands You Should Know&lt;/a&gt;&lt;/p&gt;
@@ -572,9 +980,9 @@ gh repo clone username/repo &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Install the completion script&lt;/strong&gt;:&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Download the completion script to your computer&lt;/strong&gt;:&lt;/p&gt;
 
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.bash_profile
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.gh-repo-clone-completion.bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
     &lt;p&gt;You can view the source code on &lt;strong&gt;&lt;a href=&quot;https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280&quot;&gt;GitHub Gist&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
@@ -799,9 +1207,9 @@ Happy coding! 🚀&lt;/p&gt;
     &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
 &lt;/aside&gt;
 
-&lt;h2 class=&quot;no_toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
 
-&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#cross-product-toolboxes&quot; id=&quot;markdown-toc-cross-product-toolboxes&quot;&gt;Cross-Product Toolboxes&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#parallel-processing&quot; id=&quot;markdown-toc-parallel-processing&quot;&gt;Parallel Processing&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#shorthands&quot; id=&quot;markdown-toc-shorthands&quot;&gt;Shorthands&lt;/a&gt;    &lt;ul&gt;
@@ -1716,7 +2124,8 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-4rqeFp87s6I&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;4rqeFp87s6I&quot; title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-4rqeFp87s6I&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;4rqeFp87s6I&quot; title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; data-param-rel=&quot;0&quot;&gt;
+  &lt;amp-img src=&quot;https://i.ytimg.com/vi/4rqeFp87s6I/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -1980,7 +2389,8 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
+  &lt;amp-img src=&quot;https://i.ytimg.com/vi/C49jYtIMAsg/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -2274,7 +2684,8 @@ for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span c
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-jeB-FIeGKkQ&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;jeB-FIeGKkQ&quot; title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-jeB-FIeGKkQ&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;jeB-FIeGKkQ&quot; title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; data-param-rel=&quot;0&quot;&gt;
+  &lt;amp-img src=&quot;https://i.ytimg.com/vi/jeB-FIeGKkQ/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -2507,7 +2918,8 @@ gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHEL
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-HiFMZGDBzZo&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;HiFMZGDBzZo&quot; title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-HiFMZGDBzZo&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;HiFMZGDBzZo&quot; title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; data-param-rel=&quot;0&quot;&gt;
+  &lt;amp-img src=&quot;https://i.ytimg.com/vi/HiFMZGDBzZo/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
@@ -2536,899 +2948,6 @@ gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHEL
         <category>Kubernetes</category>
         
         <category>Secure VPC</category>
-        
-        
-        <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Secure Workloads in Google Kubernetes Engine: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP335&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/13389?parent=catalog&quot;&gt;Secure Workloads in Google Kubernetes Engine: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/142&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Enable TLS access using nginx-ingress and cert-manager.io&lt;/li&gt;
-  &lt;li&gt;Secure traffic with a network policy&lt;/li&gt;
-  &lt;li&gt;Enable Binary Authorization to ensure only approved images are deployed&lt;/li&gt;
-  &lt;li&gt;Ensure that pods do not allow escalations to root&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;your-challenge&quot;&gt;Your challenge&lt;/h2&gt;
-
-&lt;p&gt;You need to secure a WordPress running on GKE that uses Cloud SQL as its database.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-0-download-the-necessary-files&quot;&gt;Task 0: Download the necessary files&lt;/h2&gt;
-
-&lt;p&gt;Run the following to download all the files for this lab:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gsutil &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cp &lt;/span&gt;gs://cloud-training/gsp335/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;task-1-setup-cluster&quot;&gt;Task 1: Setup Cluster&lt;/h2&gt;
-
-&lt;p&gt;You need to create a Kubernetes cluster with the following values:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;zone: Us-central1-c&lt;/li&gt;
-  &lt;li&gt;machine-type: n1-standard-4&lt;/li&gt;
-  &lt;li&gt;number of nodes: 2&lt;/li&gt;
-  &lt;li&gt;enable network policy&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Run the following &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud&lt;/code&gt; command will create a cluster called &lt;strong&gt;kraken-cluster&lt;/strong&gt; with the required specifications:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container clusters create kraken-cluster &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt; us-central1-c &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--machine-type&lt;/span&gt; n1-standard-4 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--num-nodes&lt;/span&gt; 2 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--enable-network-policy&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, open this &lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/container/clusters/create&quot; title=&quot;gcloud container clusters create - Cloud SDK Documentation&quot;&gt;Cloud SDK Documentation&lt;/a&gt; to study the flags for the command line.&lt;/p&gt;
-
-&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;jekyll-capture-tags&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;var&quot;,&quot;value&quot;:&quot;tips1&quot;},{&quot;name&quot;:&quot;selection&quot;,&quot;value&quot;:&quot;**Using Cloud Console** \\\nAlternatively, you can create the cluster using the Cloud Console.\n\n   1. Click on the **Navigation Menu** &gt; **Kubernetes Engine** &gt; **Clusters**\n   2. Click **CREATE CLUSTER**\n   3. Set up the cluster as required. Once the cluster is created, run the following in the Cloud Shell to establish a connection:\n\n      ```bash\n      gcloud container clusters get-credentials kraken-cluster  --zone us-central1-c\n      ```&quot;}]} --&gt;
-
-&lt;!-- FM:Snippet:End --&gt;
-
-&lt;div class=&quot;callout&quot; style=&quot;margin-bottom: 24px; padding: 16px 16px 8px; background-color: gold; box-shadow: 0 2px 4px;&quot;&gt;
-  
-&lt;p&gt;&lt;strong&gt;Using Cloud Console&lt;/strong&gt; &lt;br /&gt;
-Alternatively, you can create the cluster using the Cloud Console.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Click on the &lt;strong&gt;Navigation Menu&lt;/strong&gt; &amp;gt; &lt;strong&gt;Kubernetes Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;Clusters&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;CREATE CLUSTER&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Set up the cluster as required. Once the cluster is created, run the following in the Cloud Shell to establish a connection:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container clusters get-credentials kraken-cluster  &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt; us-central1-c
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;task-2-setup-wordpress&quot;&gt;Task 2: Setup WordPress&lt;/h2&gt;
-
-&lt;p&gt;This task involves the following three subtasks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;a) Setup the Cloud SQL database and database username and password&lt;/li&gt;
-  &lt;li&gt;b) Create a service account for access to your WordPress database from your WordPress instances&lt;/li&gt;
-  &lt;li&gt;c) Create the WordPress deployment and service&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can perform the first two subtasks simultaneously, while you are creating the cluster in Task 1. It usually takes more time on GCP to create a Cloud SQL instance, compared to a Kubernetes cluster. Both the Cloud SQL and the cluster will be ready when you are going to conduct the rest of the tasks.&lt;/p&gt;
-
-&lt;h3 id=&quot;setup-the-cloud-sql-database-and-database-username-and-password&quot;&gt;Setup the Cloud SQL database and database username and password&lt;/h3&gt;
-
-&lt;h4 id=&quot;create-a-cloud-sql-instance&quot;&gt;Create a Cloud SQL instance&lt;/h4&gt;
-
-&lt;p&gt;You can create the Cloud SQL instance using either Cloud Console or Cloud Shell. In production, I will suggest you go for the Cloud Console because you can better look at all the configurations. But in this lab, you can simply run the following command to create a default MySQL instance in the region &lt;strong&gt;us-central1&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud sql instances create kraken-cloud-sql &lt;span class=&quot;nt&quot;&gt;--region&lt;/span&gt; us-central1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Related documentation&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/sql/docs/mysql/create-instance#create-2nd-gen&quot;&gt;Creating a MySQL instance | Cloud SQL for MySQL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/compute/instances/create&quot;&gt;gcloud compute instances create | Cloud SDK Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It usually requires 5 - 10 minutes to process.&lt;/p&gt;
-
-&lt;h4 id=&quot;create-a-database-for-wordpress&quot;&gt;Create a database for WordPress&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In the Cloud Console, click on &lt;strong&gt;Navigation Menu&lt;/strong&gt; &amp;gt; &lt;strong&gt;SQL&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Once the Cloud SQL instance is ready, select the &lt;strong&gt;Databases&lt;/strong&gt; tab on the left panel.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;CREATE DATABASE&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordpress&lt;/code&gt; as the database name.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;Create&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;create-a-user-for-accessing-the-cloud-sql&quot;&gt;Create a user for accessing the Cloud SQL&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In the &lt;strong&gt;Cloud SQL&lt;/strong&gt; page, select the &lt;strong&gt;Users&lt;/strong&gt; tab on the left panel.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;ADD USER ACCOUNT&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordpress&lt;/code&gt; as the User name.&lt;/li&gt;
-  &lt;li&gt;Enter a password that you can remember.&lt;/li&gt;
-  &lt;li&gt;Select &lt;strong&gt;Allow any host (%)&lt;/strong&gt; for the name of the Host.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;Add&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;jekyll-capture-tags&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;var&quot;,&quot;value&quot;:&quot;tips2&quot;},{&quot;name&quot;:&quot;selection&quot;,&quot;value&quot;:&quot;**Command-line method** \\\nYou may also try using the following command line to create the database and the user:\n\n```bash\ngcloud sql databases create wordpress --instance kraken-cloud-sql --charset utf8 --collation utf8_general_ci\n\ngcloud sql users create wordpress --host % --instance kraken-cloud-sql --password Passw0rd\n```\n\n**Tips:** Read this [Cloud SQL Documentation](https://cloud.google.com/sql/docs/mysql/create-manage-databases#create \&quot;Creating and managing MySQL databases \\| Cloud SQL for MySQL\&quot;) to learn more.  \\\n**Remark:** However, I got some feedback that it will occasionally fail to pass the checkpoint if using the command line.&quot;}]} --&gt;
-
-&lt;!-- FM:Snippet:End --&gt;
-
-&lt;div class=&quot;callout&quot; style=&quot;margin-bottom: 24px; padding: 16px 16px 8px; background-color: gold; box-shadow: 0 2px 4px;&quot;&gt;
-  
-&lt;p&gt;&lt;strong&gt;Command-line method&lt;/strong&gt; &lt;br /&gt;
-You may also try using the following command line to create the database and the user:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud sql databases create wordpress &lt;span class=&quot;nt&quot;&gt;--instance&lt;/span&gt; kraken-cloud-sql &lt;span class=&quot;nt&quot;&gt;--charset&lt;/span&gt; utf8 &lt;span class=&quot;nt&quot;&gt;--collation&lt;/span&gt; utf8_general_ci
-
-gcloud sql &lt;span class=&quot;nb&quot;&gt;users &lt;/span&gt;create wordpress &lt;span class=&quot;nt&quot;&gt;--host&lt;/span&gt; % &lt;span class=&quot;nt&quot;&gt;--instance&lt;/span&gt; kraken-cloud-sql &lt;span class=&quot;nt&quot;&gt;--password&lt;/span&gt; Passw0rd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Read this &lt;a href=&quot;https://cloud.google.com/sql/docs/mysql/create-manage-databases#create&quot; title=&quot;Creating and managing MySQL databases \| Cloud SQL for MySQL&quot;&gt;Cloud SQL Documentation&lt;/a&gt; to learn more.  &lt;br /&gt;
-&lt;strong&gt;Remark:&lt;/strong&gt; However, I got some feedback that it will occasionally fail to pass the checkpoint if using the command line.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h3 id=&quot;create-a-service-account-for-access-to-your-wordpress-database-from-your-wordpress-instances&quot;&gt;Create a service account for access to your WordPress database from your WordPress instances&lt;/h3&gt;
-
-&lt;p&gt;Now you need a service account with binding the role &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roles/cloudsql.client&lt;/code&gt; and save its credentials as a JSON file. In the Cloud Shell, run the following commands:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud iam service-accounts create kraken-wordpress-sa
-
-gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;serviceAccount:kraken-wordpress-sa@&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.iam.gserviceaccount.com&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--role&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;roles/cloudsql.client&quot;&lt;/span&gt;
-
-gcloud iam service-accounts keys create key.json &lt;span class=&quot;nt&quot;&gt;--iam-account&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;kraken-wordpress-sa@&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;.iam.gserviceaccount.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Read &lt;a href=&quot;https://cloud.google.com/docs/authentication/production#command-line&quot; title=&quot;Creating a service account \| Cloud IAM Documentation&quot;&gt;this documentation&lt;/a&gt; to learn more about how to authenticate an application as a service account.&lt;/p&gt;
-
-&lt;p&gt;After that, save the service account file as a secret in your Kubernetes cluster using the command provided in the official lab instruction.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl create secret generic cloudsql-instance-credentials &lt;span class=&quot;nt&quot;&gt;--from-file&lt;/span&gt; key.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Also, the WordPress database username and password as well.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl create secret generic cloudsql-db-credentials &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--from-literal&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;wordpress &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--from-literal&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Passw0rd&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;create-the-wordpress-deployment-and-service&quot;&gt;Create the WordPress deployment and service&lt;/h3&gt;
-
-&lt;p&gt;Run the following to create a persistent volume for your WordPress application:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; volume.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Go to the overview page of your Cloud SQL instance, and copy the &lt;strong&gt;Connection name&lt;/strong&gt; as shown below.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;881&quot; height=&quot;448&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task2-copy-sql-connection-name.webp&quot; alt=&quot;Copy the Connection name of Cloud SQL instance from the overview page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;881&quot; height=&quot;448&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task2-copy-sql-connection-name.jpg&quot; alt=&quot;Copy the Connection name of Cloud SQL instance from the overview page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordpress.yaml&lt;/code&gt; with your favorite editor, and replace &lt;strong&gt;INSTANCE_CONNECTION_NAME&lt;/strong&gt; (in line 61) with the Connection name of your Cloud SQL instance.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;796&quot; height=&quot;231&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task2-edit-wordpress-yaml.webp&quot; alt=&quot;Lines 54 to 65 in wordpress.yaml&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;796&quot; height=&quot;231&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task2-edit-wordpress-yaml.png&quot; alt=&quot;Lines 54 to 65 in wordpress.yaml&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Save the file changes, and run the following to apply the file to create the WordPress environment in the cluster.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; wordpress.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To verify the deployment, navigate to the Kubernetes Engine page in the Cloud Console. Now you should see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordpress&lt;/code&gt; in the Workloads tab as well as the Services tab.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-3-setup-ingress-with-tls&quot;&gt;Task 3: Setup Ingress with TLS&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Review the lab &lt;strong&gt;GSP181&lt;/strong&gt; &lt;a href=&quot;https://www.qwiklabs.com/focuses/872?parent=catalog&quot; title=&quot;Qwiklabs&quot;&gt;NGINX Ingress Controller on Google Kubernetes Engine&lt;/a&gt; on Qwiklabs before you start doing Task 3. For more information, you may read the community tutorial &lt;a href=&quot;https://cloud.google.com/community/tutorials/nginx-ingress-gke&quot;&gt;Ingress with NGINX controller on Google Kubernetes Engine&lt;/a&gt; on the Google Cloud’s website.&lt;/p&gt;
-
-&lt;p&gt;In this challenge lab, please note that you have to install the same &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nginx-ingress&lt;/code&gt; version, which is used in lab GSP181. Otherwise, you will not able to create &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nginx-ingress-controller&lt;/code&gt; for continuing the lab.&lt;/p&gt;
-
-&lt;h3 id=&quot;set-up-nginx-ingress-environment&quot;&gt;Set up nginx-ingress environment&lt;/h3&gt;
-
-&lt;p&gt;The nginx-ingress will be installed using Helm. A recent, stable version of Helm should be pre-installed on your Cloud Shell. Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;helm version&lt;/code&gt; to check which version you are using and also ensure that Helm is installed:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;helm version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Run the following to add the chart repository and ensure the chart list is up to date:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;helm repo add stable https://charts.helm.sh/stable
-helm repo update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;jekyll-capture-tags&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;var&quot;,&quot;value&quot;:&quot;tips-install-helm&quot;},{&quot;name&quot;:&quot;selection&quot;,&quot;value&quot;:&quot;**Install Helm**\n\nIf your environment does not install with Helm, you can run the following to [automatically grab the latest version of Helm and install it locally](https://helm.sh/docs/intro/install/#from-script).\n\n```bash\ncurl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3\nchmod 700 get_helm.sh\n./get_helm.sh\n```&quot;}]} --&gt;
-
-&lt;!-- FM:Snippet:End --&gt;
-
-&lt;div class=&quot;callout&quot; style=&quot;margin-bottom: 24px; padding: 16px 16px 8px; background-color: gold; box-shadow: 0 2px 4px;&quot;&gt;
-  
-&lt;p&gt;&lt;strong&gt;Install Helm&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If your environment does not install with Helm, you can run the following to &lt;a href=&quot;https://helm.sh/docs/intro/install/#from-script&quot;&gt;automatically grab the latest version of Helm and install it locally&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;700 get_helm.sh
-./get_helm.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-
-&lt;p&gt;Go ahead and use the following &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;helm&lt;/code&gt; command to install stable nginx-ingress:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;helm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nginx-ingress stable/nginx-ingress &lt;span class=&quot;nt&quot;&gt;--set&lt;/span&gt; rbac.create&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Wait until the load balancer gets deployed and exposes an external IP. You get to monitor the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nginx-ingress-controller&lt;/code&gt; service by running the following command:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl get service nginx-ingress-controller &lt;span class=&quot;nt&quot;&gt;-w&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;set-up-your-dns-record&quot;&gt;Set up your DNS record&lt;/h3&gt;
-
-&lt;p&gt;Once the service obtained an external IP address, press &lt;strong&gt;Ctrl + C&lt;/strong&gt; to stop the previous command. You can now continue to set up your DNS record.&lt;/p&gt;
-
-&lt;p&gt;A shell script called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add_ip.sh&lt;/code&gt; is provided, and you have downloaded it to the Cloud Shell at the beginning of the lab. Execute it by running this command:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; add_ip.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;set-up-cert-managerio&quot;&gt;Set up cert-manager.io&lt;/h3&gt;
-
-&lt;p&gt;You can find the &lt;a href=&quot;https://cert-manager.io/docs/installation/kubernetes/#installing-with-regular-manifests&quot;&gt;official installation guide for Kubernetes&lt;/a&gt; from the cert-manager website.&lt;/p&gt;
-
-&lt;p&gt;Run the following commands to deploy the cert-manager:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.yaml
-
-kubectl create clusterrolebinding cluster-admin-binding &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--clusterrole&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cluster-admin &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;gcloud config get-value core/account&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Navigate to the Kubernetes Engine page in the Cloud Console, now you should have the workloads look like this:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1046&quot; height=&quot;494&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-deployed-workloads.webp&quot; alt=&quot;GKE Workloads after installing the nginx-ingress and cert-manager&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1046&quot; height=&quot;494&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-deployed-workloads.png&quot; alt=&quot;GKE Workloads after installing the nginx-ingress and cert-manager&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;issuer.yaml&lt;/code&gt; and set the email address. The file should become like this:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;844&quot; height=&quot;417&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-edit-issuer-yaml.webp&quot; alt=&quot;Editing email in the issuer.yaml&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;844&quot; height=&quot;417&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-edit-issuer-yaml.png&quot; alt=&quot;Editing email in the issuer.yaml&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Save the file changes and run the following to apply them to setup the letsencrypt prod issuer:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; issuer.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;configure-nginx-ingress-to-use-an-encrypted-certificate-for-your-site&quot;&gt;Configure nginx-ingress to use an encrypted certificate for your site&lt;/h3&gt;
-
-&lt;p&gt;Edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ingress.yaml&lt;/code&gt; and set your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YOUR_LAB_USERNAME.labdns.xyz&lt;/code&gt; DNS record to lines 11 and 14 like this:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;731&quot; height=&quot;476&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-edit-ingress-yaml.webp&quot; alt=&quot;Set DNS and domain name to the issuer.yaml&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;731&quot; height=&quot;476&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-edit-ingress-yaml.png&quot; alt=&quot;Set DNS and domain name to the issuer.yaml&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Save the file changes and run the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ingress.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, read the &lt;a href=&quot;https://cert-manager.io/docs/tutorials/acme/nginx-ingress/&quot;&gt;Securing NGINX-ingress&lt;/a&gt; tutorial on the cert-manager website.&lt;/p&gt;
-
-&lt;p&gt;Open your domain name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://YOUR_LAB_USERNAME.labdns.xyz&lt;/code&gt; with HTTPS in a new tab. Now the WordPress application should be accessible like this:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1249&quot; height=&quot;736&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-success-deployed-wordpress.webp&quot; alt=&quot;The WordPress deployed on the secured GKE&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1249&quot; height=&quot;736&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task3-success-deployed-wordpress.png&quot; alt=&quot;The WordPress deployed on the secured GKE&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;task-4-set-up-network-policy&quot;&gt;Task 4: Set up Network Policy&lt;/h2&gt;
-
-&lt;p&gt;Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;network-policy.yaml&lt;/code&gt; in an editor. You should see there are already two network policies. The first one is to deny all ingress from the internet and the second one is to allow the traffic from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ngnix-ingress&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordpress&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;You need to add one more network policy to allow ingress traffic from the internet into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nginx-ingress&lt;/code&gt;. Use the second network policy as a template to compose a new policy. Change values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spec&lt;/code&gt; to the configuration like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;networking.k8s.io/v1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;NetworkPolicy&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;allow-world-to-nginx-ingress&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;default&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;podSelector&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;matchLabels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-         &lt;span class=&quot;na&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nginx-ingress&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;policyTypes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Ingress&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;ingress&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;{}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Append the new policy to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;network-policy.yaml&lt;/code&gt;, and save the file.  &lt;br /&gt;
-Run the following to apply the configuration file:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; network-policy.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Related documentation:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/kubernetes-engine/docs/how-to/network-policy#using-gcloud-init&quot;&gt;Creating a cluster network policy | Kubernetes Engine Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/concepts/services-networking/network-policies/&quot;&gt;Network Policies | Kubernetes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/&quot;&gt;Declare Network Policy | Kubernetes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;task-5-setup-binary-authorization&quot;&gt;Task 5: Setup Binary Authorization&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Review the lab &lt;strong&gt;GSP479&lt;/strong&gt; &lt;a href=&quot;https://www.qwiklabs.com/focuses/5154?parent=catalog&quot;&gt;Google Kubernetes Engine Security: Binary Authorization&lt;/a&gt; on Qwiklabs before start doing Task 5.&lt;/p&gt;
-
-&lt;h3 id=&quot;configure-binary-authorization-policy&quot;&gt;Configure Binary Authorization Policy&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In the Cloud Console, navigate to &lt;strong&gt;Security&lt;/strong&gt; &amp;gt; &lt;strong&gt;Binary Authorization&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Enable the &lt;strong&gt;Binary Authorization API&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;On the Binary Authorization page, click on &lt;strong&gt;CONFIGURE POLICY&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Select &lt;em&gt;Disallow all images&lt;/em&gt; for the &lt;strong&gt;Default rule&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Scroll down to Images exempt from this policy, click &lt;strong&gt;ADD IMAGE PATH&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Paste &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker.io/library/wordpress:latest&lt;/code&gt; to the textbox, and click &lt;strong&gt;DONE&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Repeat the above two steps to add the following image paths:
-    &lt;ul&gt;
-      &lt;li&gt;us.gcr.io/k8s-artifacts-prod/ingress-nginx/*&lt;/li&gt;
-      &lt;li&gt;gcr.io/cloudsql-docker/*&lt;/li&gt;
-      &lt;li&gt;quay.io/jetstack/*&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;824&quot; height=&quot;691&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-custom-exempt-images.webp&quot; alt=&quot;Images exempt from Binary Authorization policy&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;824&quot; height=&quot;691&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-custom-exempt-images.png&quot; alt=&quot;Images exempt from Binary Authorization policy&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;SAVE POLICY&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;enable-binary-authorization-in-google-kubernetes-engine&quot;&gt;Enable Binary Authorization in Google Kubernetes Engine&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Navigate to &lt;strong&gt;Kubernetes Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;Clusters&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Click your cluster name to view its detail page.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click on the pencil icon for Binary authorization under the Security section.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;823&quot; height=&quot;191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.webp&quot; alt=&quot;Edit Binary Authorization in Google Kubernetes Engine&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;823&quot; height=&quot;191&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task5-enable-binary-authorization-in-gke.png&quot; alt=&quot;Edit Binary Authorization in Google Kubernetes Engine&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Check &lt;strong&gt;Enable Binary Authorization&lt;/strong&gt; in the dialog.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;SAVE CHANGES&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Your cluster will start updating its binary authorization settings. Wait until the update finish.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-6-setup-pod-security-policy&quot;&gt;Task 6: Setup Pod Security Policy&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Review the lab &lt;strong&gt;GSP496&lt;/strong&gt; &lt;a href=&quot;https://www.qwiklabs.com/focuses/5158?parent=catalog&quot;&gt;Hardening Default GKE Cluster Configurations&lt;/a&gt; on Qwiklabs to get some ideas about how to deploy the PodSecurityPolicy objects. To learn more, you can find more details from the following documentation:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/kubernetes-engine/docs/how-to/pod-security-policies&quot;&gt;Using PodSecurityPolicies | Kubernetes Engine Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/concepts/policy/pod-security-policy/&quot;&gt;Pod Security Policies | Kubernetes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The challenge lab provides the following Pod Security Policy demo files for you to use:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psp-restrictive.yaml&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psp-role.yaml&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pop-use.yaml&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Running the following command to deploy each file:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &amp;lt;filename&amp;gt;.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Unfortunately, you will fail to delopy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psp-restrictive.yaml&lt;/code&gt; and receive the following error message:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1209&quot; height=&quot;55&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task6-no-matches-for-kind-podsecuritypolicy-in-version-extensions-v1beta1.webp&quot; alt=&quot;no matches for kind PodSecurityPolicy in version extensions/v1beta1&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1209&quot; height=&quot;55&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task6-no-matches-for-kind-podsecuritypolicy-in-version-extensions-v1beta1.png&quot; alt=&quot;no matches for kind PodSecurityPolicy in version extensions/v1beta1&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psp-restrictive.yaml&lt;/code&gt; with an editor, and replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;appVersion: extensions/v1beta1&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;policy/v1beta1&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Save the changes, and run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl apply&lt;/code&gt; command again.&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1037&quot; height=&quot;144&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task6-deploy-podsecurity-policy-files.webp&quot; alt=&quot;podsecuritypolicy.policy, rolebinding.rbac.authorization.k8s.io, clusterrole.rbac.authorization.k8s.io created&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1037&quot; height=&quot;144&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//qwiklabs/gsp335-task6-deploy-podsecurity-policy-files.png&quot; alt=&quot;podsecuritypolicy.policy, rolebinding.rbac.authorization.k8s.io, clusterrole.rbac.authorization.k8s.io created&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-bpeOjFZklpg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;bpeOjFZklpg&quot; title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-title=&quot;GSP335 Secure Workloads in Google Kubernetes Engine: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=bpeOjFZklpg&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=bpeOjFZklpg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task0&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Download&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;necessary&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task1&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Setup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cluster&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Task2&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Setup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WordPress&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;37&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SQL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;59&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;54&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MySQL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;14&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;secrets&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;access&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WP&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;52&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deployment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Task3&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Setup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ingress&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TLS&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;04&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;58&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;up&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cert&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;06&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;up&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cert&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;07&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;43&lt;/span&gt; - &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;) &lt;span class=&quot;n&quot;&gt;Configure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nginx&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;ingress&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;encrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;certificate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;09&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;04&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task4&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;up&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Network&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Policy&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task5&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Setup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Binary&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Authorization&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;40&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task6&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Setup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pod&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Security&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Policy&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep on reading&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab&quot;&gt;☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab&quot;&gt;☁ Build and Secure Networks in Google Cloud: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/deploy-to-kubernetes-in-google-cloud-challenge-lab&quot;&gt;☁ Deploy to Kubernetes in Google Cloud: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Migrate-a-MySQL-Database-to-Google-Cloud-SQL&quot;&gt;☁ Migrate a MySQL Database to Google Cloud SQL | logbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 23 Feb 2021 11:30:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/secure-workloads-in-google-kubernetes-engine-challenge-lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/secure-workloads-in-google-kubernetes-engine-challenge-lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>Kubernetes</category>
-        
-        <category>WordPress</category>
-        
-        <category>Secure VPC</category>
-        
-        
-        <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Implement DevOps in Google Cloud: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP330&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/13287?parent=catalog&quot;&gt;Implement DevOps in Google Cloud: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/141&quot;&gt;expert-level&lt;/a&gt; exercise on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use Jenkins console logs to resolve application deployment issues.&lt;/li&gt;
-  &lt;li&gt;Deploy and a development update to a sample application for Jenkins to deploy using a development pipeline.&lt;/li&gt;
-  &lt;li&gt;Deploy and test a Kubernetes Canary deployment for a sample application.&lt;/li&gt;
-  &lt;li&gt;Push the Canary application branch to master and confirm this triggers a production pipeline update.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;task-1-configure-a-jenkins-pipeline-for-continuous-deployment-to-kubernetes-engine&quot;&gt;Task 1: Configure a Jenkins pipeline for continuous deployment to Kubernetes Engine&lt;/h2&gt;
-
-&lt;h3 id=&quot;inspect-provisioned-resources&quot;&gt;Inspect Provisioned Resources&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the Cloud Console, navigate to &lt;strong&gt;Kubernetes Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;Clusters&lt;/strong&gt; to inspect the provisioned cluster named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jenkins-cd&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Navigate to &lt;strong&gt;Source Repositories&lt;/strong&gt;, click on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample-app&lt;/code&gt; and review the &lt;strong&gt;Jenkinsfile&lt;/strong&gt; in the root of that repository.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Also, review the YAML files for the three types of deployment (production, canary, and dev) in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample-app/k8s&lt;/code&gt; directory.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Navigate to &lt;strong&gt;Compute Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;VM instances&lt;/strong&gt;, click on the &lt;strong&gt;SSH&lt;/strong&gt; button of the instance named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kraken-jumphost&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the SSH window, run the following command to configure the compute zone:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;compute/zone us-east1-b
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(Optional) confirm that your cluster is running by executing the following commands:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container clusters list
-kubectl cluster-info
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;install-and-setup-helm&quot;&gt;Install and Setup Helm&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;You will use Helm to install Jenkins from the Charts repository. Helm is a package manager that makes it easy to configure and deploy Kubernetes applications. To install Helm, run the following commands to fetch the Helm installer script, and then execute it locally.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;700 get_helm.sh
-./get_helm.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Setting up and updating Helm by running the following commands:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;helm repo add stable https://kubernetes-charts.storage.googleapis.com/
-helm repo update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;configure-and-install-jenkins&quot;&gt;Configure and Install Jenkins&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use git to clone the lab’s sample code:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/GoogleCloudPlatform/continuous-deployment-on-kubernetes.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Change to the following directory:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;continuous-deployment-on-kubernetes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To configure and install Jenkins, run the following command to deploy with the Helm CLI.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;helm &lt;span class=&quot;nb&quot;&gt;install cd &lt;/span&gt;stable/jenkins &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; jenkins/values.yaml &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt; 1.2.2 &lt;span class=&quot;nt&quot;&gt;--wait&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;This command may take several minutes to complete.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Once the command completed, ensure the Jenkins pod goes to the Running state and the container is in the READY state:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl get pods
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;Example Output:&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;623&quot; height=&quot;38&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-cd-jenkins-pod-ready.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;623&quot; height=&quot;38&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-cd-jenkins-pod-ready.jpg&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The Jenkins chart will automatically create an admin password for you. To retrieve it, run:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;kubectl get secret cd-jenkins &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;jsonpath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{.data.jenkins-admin-password}&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;base64&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--decode&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;connect-to-jenkins&quot;&gt;Connect to Jenkins&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go back to the Cloud Console, then open a cloud shell and run the following command to get the credentials for your cluster:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container clusters get-credentials jenkins-cd &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt; us-east1-b
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run the following command to setup port forwarding to the Jenkins UI from the Cloud Shell.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;POD_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;kubectl get pods &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; default &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;app.kubernetes.io/component=jenkins-master&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;app.kubernetes.io/instance=cd&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;jsonpath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{.items[0].metadata.name}&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-kubectl port-forward &lt;span class=&quot;nv&quot;&gt;$POD_NAME&lt;/span&gt; 8080:8080 &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; /dev/null &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;(You don’t need to configure the Jenkins service account because it has already been created during provisioning.)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To get to the Jenkins user interface, click on the Web Preview button in the cloud shell, then click &lt;strong&gt;Preview on port 8080&lt;/strong&gt;.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-login-page.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-login-page.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;You should now be able to log in with the username &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;admin&lt;/code&gt; and your auto-generated password.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;clone-the-sample-app-repository-and-create-the-production-namespace&quot;&gt;Clone the Sample App Repository and Create the Production Namespace&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go back to the SSH window, clone the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample-app&lt;/code&gt; source code from the Cloud Source Repository by running the following command:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud &lt;span class=&quot;nb&quot;&gt;source &lt;/span&gt;repos clone sample-app &lt;span class=&quot;nt&quot;&gt;--project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;lt;YOUR-PROJECT-ID&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;em&gt;Remember to replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR-PROJECT-ID&amp;gt;&lt;/code&gt; with your GCP project ID&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Change to the sample application directory and then create the Kubernetes namespace to logically isolate the deployment:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;sample-app
-kubectl create ns production
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;creating-the-jenkins-pipeline&quot;&gt;Creating the Jenkins Pipeline&lt;/h3&gt;
-
-&lt;h4 id=&quot;adding-your-service-account-credentials&quot;&gt;Adding your service account credentials&lt;/h4&gt;
-
-&lt;p&gt;Configure your credentials to allow Jenkins to access the code repository. Jenkins will use your cluster’s service account credentials in order to download code from the Cloud Source Repositories.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the Jenkins user interface, click &lt;strong&gt;Manage Jenkins&lt;/strong&gt; in the left navigation then click &lt;strong&gt;Manage Credentials&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;Jenkins&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;Global credentials (unrestricted)&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;Add Credentials&lt;/strong&gt; in the left navigation.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Select &lt;strong&gt;Google Service Account from metadata&lt;/strong&gt; from the &lt;strong&gt;Kind&lt;/strong&gt; drop-down and click &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;286&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-add-gcp-credentials.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;286&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-add-gcp-credentials.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;configure-the-jenkins-job&quot;&gt;Configure the Jenkins job&lt;/h4&gt;
-
-&lt;p&gt;After configuring your credentials, follow these steps to configure a Pipeline job.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;Jenkins&lt;/strong&gt; to return the welcome page.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Reload the page a few times until you see a pipeline job named &lt;strong&gt;sample-app&lt;/strong&gt; in the Jenkins user interface.&lt;/p&gt;
-
-    &lt;p&gt;(If you fail to get any job, click &lt;strong&gt;Jenkins&lt;/strong&gt; &amp;gt; &lt;strong&gt;New Item&lt;/strong&gt; in the left navigation to create the multibranch pipeline.)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click on the job name of &lt;strong&gt;sample-app&lt;/strong&gt;.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;277&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-pipeline-job.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;277&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-pipeline-job.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;Configure&lt;/strong&gt; in the left pane.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the configuration page, enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample-app&lt;/code&gt; as the Display Name in the General section.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;430&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;430&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-configure-general-tab.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the Branch Sources section, click on &lt;strong&gt;Add source&lt;/strong&gt; and choose &lt;strong&gt;Git&lt;/strong&gt; from the dropdown menu.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Copy the Cloud Source URL of the &lt;strong&gt;sample-app&lt;/strong&gt; repository to the &lt;strong&gt;Project Repository&lt;/strong&gt; field. The URL should look like this:&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code class=&quot;language-url&quot;&gt;https://source.developers.google.com/p/&amp;lt;YOUR-PROJECT-ID&amp;gt;/r/sample-app
-&lt;/code&gt;&lt;/pre&gt;
-
-    &lt;p&gt;Select the service account for your GCP project from the &lt;strong&gt;Credentials&lt;/strong&gt; dropdown list.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;946&quot; height=&quot;524&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;946&quot; height=&quot;524&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-branch-sources-config.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check &lt;strong&gt;Periodically if not otherwise run&lt;/strong&gt; in the &lt;strong&gt;Scan Multibranch Pipeline Trigger&lt;/strong&gt; section, and then select &lt;strong&gt;1 minute&lt;/strong&gt; for the interval.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;944&quot; height=&quot;354&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-build-and-trigger-config.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;944&quot; height=&quot;354&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-job-build-and-trigger-config.png &quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Scroll to the bottom and click on &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you correctly configured the pipeline, you will see &lt;strong&gt;Finished: SUCCESS&lt;/strong&gt; at the end of the Scan Multibranch Pipeline Log.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;690&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-    &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;690&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-sample-app-scan-multibranch-pipeline-log.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-  &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;examine-the-console-output-from-the-jenkins-pipeline&quot;&gt;Examine the Console Output from the Jenkins Pipeline&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click on &lt;strong&gt;sample-app » master&lt;/strong&gt; under Build Executor Status in the left pane, then click on the job under Build History.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;739&quot; height=&quot;560&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-build-master.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;739&quot; height=&quot;560&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-build-master.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;Console Output&lt;/strong&gt; in the left navigation to monitor the build process.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1024&quot; height=&quot;809&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-console-output.webp&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1024&quot; height=&quot;809&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp330-jenkins-console-output.png&quot; alt=&quot;Image in ☁ Implement DevOps in Google Cloud: Challenge Lab | logbook&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-
-    &lt;p&gt;This process takes about five minutes to complete.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-2-push-an-update-to-the-application-to-a-development-branch&quot;&gt;Task 2: Push an update to the application to a development branch&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go back to the SSH window, run the following command to create a development branch in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample-app&lt;/code&gt; directory.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; new-feature
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open the &lt;strong&gt;main.go&lt;/strong&gt; file with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nano&lt;/code&gt;, or the Cloud Shell Editor.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Update the version in the following line:&lt;/p&gt;
-
-    &lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;to&lt;/p&gt;
-
-    &lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;2.0.0&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;then save the change.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open the &lt;strong&gt;html.go&lt;/strong&gt; file and change the two instances of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div class=&quot;card blue&quot;&amp;gt;&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div class=&quot;card orange&quot;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Commit and push your changes by running the following commands:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;you@example.com&quot;&lt;/span&gt;
-git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;Your Name&quot;&lt;/span&gt;
-git add Jenkinsfile html.go main.go
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Version 2.0.0&quot;&lt;/span&gt;
-git push origin new-feature
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go to the Jenkins user interface, click &lt;strong&gt;Scan Multibranch Pipeline Now&lt;/strong&gt; if you want to trigger the build immediately.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-3-push-a-canary-deployment-to-the-production-namespace&quot;&gt;Task 3: Push a Canary deployment to the production namespace&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go back to the SSH window, run the following command to create a canary branch in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample-app&lt;/code&gt; directory.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; canary
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Merge the change from the development branch:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git merge new-feature
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Push the canary to the Git server:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin canary
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go to the Jenkins user interface, click &lt;strong&gt;Scan Multibranch Pipeline Now&lt;/strong&gt; if you want to trigger the build immediately.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-4-promote-the-canary-deployment-to-production&quot;&gt;Task 4: Promote the Canary Deployment to production&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go back to the SSH window, run the following commands to merge the canary branch, and push it to the Git server.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
-git merge canary
-git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go to the Jenkins user interface, click &lt;strong&gt;Scan Multibranch Pipeline Now&lt;/strong&gt; if you want to trigger the build immediately.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-pSSA6vlRgtA&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; credentials=&quot;omit&quot; data-videoid=&quot;pSSA6vlRgtA&quot; title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-title=&quot;GSP330 Implement DevOps in Google Cloud: Challenge Lab&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=pSSA6vlRgtA&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=pSSA6vlRgtA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;48&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Review&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;previous&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Exercise&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GSP051&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Inspect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;provisioned&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task1&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Configure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Jenkins&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pipeline&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;continuous&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deployment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Kubernetes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Engine&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;04&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;52&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Configure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Helm&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;08&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Retrieve&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Jenkins&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Admin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;09&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;05&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Configure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kubectl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;proxy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;access&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Jenkins&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UI&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;09&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;53&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cloud&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Source&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Repository&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;08&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;production&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;credentials&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Jenkins&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;59&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Configure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multibranch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Jenkins&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pipeline&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;job&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;17&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Examine&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;console&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Jenkins&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pipeline&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;22&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task2&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Push&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;development&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;branch&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;27&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;45&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task3&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Push&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Canary&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deployment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;production&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task4&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Promote&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Canary&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Deployment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;production&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/1104?parent=catalog&quot;&gt;Continuous Delivery with Jenkins in Kubernetes Engine | Qwiklabs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://helm.sh/docs/intro/install/&quot;&gt;Helm | Installing Helm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep on reading&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/deploy-to-kubernetes-in-google-cloud-challenge-lab&quot;&gt;☁ Deploy to Kubernetes in Google Cloud: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/deploy-and-manage-cloud-environments-with-google-cloud-challenge-lab&quot;&gt;☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab | logbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 13 Nov 2020 16:22:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/Implement-DevOps-in-Google-Cloud-Challenge-Lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>Jenkins</category>
         
         
         <category>Cloud</category>
