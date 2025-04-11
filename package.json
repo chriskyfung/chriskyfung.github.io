@@ -3,17 +3,19 @@
   "description": "Chris KY FUNG's GitHub Page",
   "version": "3.2.0",
   "scripts": {
-    "start": "npm run jekyll",
-    "jekyll": "bundle exec jekyll serve",
-    "jekyll:trace": "bundle exec jekyll serve --trace",
+    "install": "bundle install",
+    "start": "npm run serve",
     "build": "bundle exec jekyll build && npx gulp build",
     "build:prod": "npx cross-env JEKYLL_ENV=production bundle exec jekyll build && npx gulp build",
-    "predeploy": "node -e \"if (require('os').platform() === 'win32') { console.log('\\x1b[33mNotice: This npm script is designed to run on Linux. Please use a Linux OS.\\x1b[0m'); process.exit(1); }\"",
-    "deploy": "npx gh-pages --dist _site --branch master --nojekyll",
+    "deploy:status": "gh workflow view jekyll-build.yml",
+    "prepush": "node -e \"if (require('os').platform() === 'win32') { console.log('\\x1b[33mNotice: This npm script is designed to run on Linux. Please use a Linux OS.\\x1b[0m'); process.exit(1); }\"",
+    "push": "npx gh-pages --dist _site --branch master --nojekyll",
+    "serve": "bundle exec jekyll serve --livereload",
+    "serve:trace": "bundle exec jekyll serve --trace --livereload",
     "test": "npx gulp validate",
     "test:markdownlint": "npx markdownlint-cli2 ./_posts/**/*.md",
     "test:markdownlint:stdout": "npx markdownlint-cli2 ./_posts/**/*.md 2>&1",
-    "watch": "npx gulp"
+    "watch": "npx gulp build"
   },
   "repository": {
     "type": "git",
