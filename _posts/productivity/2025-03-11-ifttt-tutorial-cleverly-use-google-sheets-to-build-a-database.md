@@ -178,3 +178,4 @@ Let’s break boundaries with creativity! Feel free to share your unique ideas i
 - [Get random strings from an array with no duplicates – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/4406117732251-Get-random-strings-from-an-array-with-no-duplicates)
 - [How to create multi-action Applets – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/4410084170651-How-to-create-multi-action-Applets)
 - [IFTTT Service Rate Limits – IFTTT Help Center](https://help.ifttt.com/hc/en-us/articles/1260803229749-IFTTT-Service-Rate-Limits)
+- [How to Use IFTTT With Google Sheets \| Envato Tuts+](https://business.tutsplus.com/tutorials/how-to-use-ifttt-with-google-sheets--cms-28355)
