@@ -147,4 +147,13 @@ Now you’re all set! You can use the `ntl` command to run Node Task List tasks,
 
 By following these steps, you resolve the executable naming conflict between Node Task List and Netlify CLI on a Windows machine with Volta. This solution is perfect for Netlify developers who want to maintain a smooth, efficient workflow without installation hassles.
 
-If you’re interested in more tips, be sure to check out our blog for additional resources. Happy coding!
+If you’re interested in more tips, be sure to check out our blog for additional resources.
+
+Happy coding!
+
+---
+
+## Additional Resources
+
+- [Get started with Netlify CLI \| Netlify Docs](https://docs.netlify.com/cli/get-started/)
+- [Top 10 Netlify CLI Commands - DEV Community](https://dev.to/kizmelvin/top-10-netlify-cli-commands-13ai)
