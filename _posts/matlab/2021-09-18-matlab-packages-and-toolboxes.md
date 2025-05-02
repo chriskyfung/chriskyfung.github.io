@@ -55,7 +55,7 @@ featured: true
 
 : A GUI runs the Weka classifiers and displays the results in MATLAB.
 
-[Plotly | Online MATLAB Graphing](https://www.mathworks.com/matlabcentral/fileexchange/42202-plotly-%7C-online-matlab-graphing "File Exchange - MATLAB Central")
+[Plotly \| Online MATLAB Graphing](https://www.mathworks.com/matlabcentral/fileexchange/42202-plotly-%7C-online-matlab-graphing "File Exchange - MATLAB Central")
 
 : A package converts your MATLAB figures into online Plotly graphs with a single line of code.
 
