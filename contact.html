@@ -24,23 +24,38 @@ amp:
 
     If you need to discuss any of the posts/articles published on this website, you can use the Disqus comment box on the posts.</p>
 
-<form action-xhr="https://getsimpleform.com/messages?form_api_token=7038eea2fdbb0f5b0abc92b0cb60113d" method="POST">
-    
-    <div class="form-group row">
-
-        <div class="col-md-6">
-            <input class="form-control" type="text" name="name" placeholder="Name">
+<form action-xhr="https://n8n-rkaruufh.ap-southeast-1.clawcloudrun.com/webhook/540bba70-6d85-4506-aad9-81b6eab362ee
+" method="POST" target="_blank">
+    <fieldset>
+        <div class="form-group row">
+            <div class="col-md-6">
+                <input class="form-control" type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address" required>
+            </div>
         </div>
+        <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message" required></textarea>
+        <input class="btn btn-primary" type="submit" value="Send">
+    </fieldset>
 
-        <div class="col-md-6">
-            <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address">
-        </div>
-
+    <div submitting>
+        <template type="amp-mustache">
+            Form submitting... Thank you for waiting.
+        </template>
     </div>
-
-    <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message"></textarea>
-    
-    <input class="btn btn-primary" type="submit" value="Send">
-
-    
+    <div submit-success>
+        <template type="amp-mustache">
+            <div class="alert alert-success" role="alert">
+                Thank you for your message! I will get back to you soon.
+            </div>
+        </template>
+    </div>
+    <div submit-error>
+        <template type="amp-mustache">
+            <div class="alert alert-danger" role="alert">
+                Oops! Something went wrong. Please try again later.
+            </div>
+        </template>
+    </div>
 </form>
