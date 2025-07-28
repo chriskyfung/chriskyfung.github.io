@@ -151,6 +151,7 @@ relative_links:
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - _docs/
   - .jekyll-cache/
   - .post-template
   - .sass-cache/
@@ -158,8 +159,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - gemfiles/
+  - GEMINI.md
   - gulpfile.js
   - LICENSE
+  - log_cweb.log
   - node_modules/
   - package-lock.json
   - package.json
