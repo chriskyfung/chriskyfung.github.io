@@ -83,3 +83,7 @@ This project follows the [Conventional Commits](https://www.conventionalcommits.
 - `frontmatter.json`: The central configuration for the Front Matter CMS.
 - `.markdownlint-cli2.yaml`: Defines the Markdown linting rules.
 - `.github/workflows/jekyll-build.yml`: Defines the CI/CD and deployment pipeline.
+
+## Development Constraints
+
+- **`bigdecimal` Gem Build Failure:** The `bigdecimal` Ruby gem (a dependency of `google-protobuf` -> `sass-embedded`) fails to build on the Windows host environment. Do not attempt to update `bigdecimal`, `google-protobuf`, or `sass-embedded` until the underlying build issue on Windows is resolved.

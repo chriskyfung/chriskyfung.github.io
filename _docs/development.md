@@ -99,4 +99,12 @@ To ensure content quality and consistency, run the Markdown linter:
 npm run lint
 ```
 
-_(Note: You may need to add a `lint` script to `package.json` like `"lint": "markdownlint-cli2 \"**/*.md\""` if it doesn't exist.)_
+_(Note: You may need to add a `lint` script to `package.json` like `"lint": "markdownlint-cli2 "**/*.md""` if it doesn't exist.)_
+
+## 6. Known Issues
+
+### `bigdecimal` Gem Build Failure on Windows
+
+When running `bundle update` or `bundle install` on a Windows environment, the installation may fail on the `bigdecimal` gem with a native extension build error.
+
+This is a known issue with the current Ruby on Windows build environment. To work around this, avoid updating the `bigdecimal` gem or its direct dependencies (`google-protobuf`, `sass-embedded`). If you encounter this error, run a more targeted `bundle update` that excludes these gems.
