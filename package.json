@@ -51,7 +51,7 @@
     "amphtml-validator": "^1.0.38",
     "gh-pages": "^6.2.0",
     "glob-parent": "^6.0.2",
-    "gulp": "^5.0.0",
+    "gulp": "^5.0.1",
     "gulp-amphtml-validator": "^1.0.8",
     "gulp-html-minifier-terser": "^7.1.0",
     "markdownlint-cli2": "^0.17.2",
