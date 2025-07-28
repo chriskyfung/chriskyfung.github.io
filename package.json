@@ -54,7 +54,7 @@
     "gulp": "^5.0.1",
     "gulp-amphtml-validator": "^1.0.8",
     "gulp-html-minifier-terser": "^7.1.0",
-    "markdownlint-cli2": "^0.17.2",
+    "markdownlint-cli2": "^0.18.1",
     "through2": "^4.0.2"
   },
   "overrides": {
