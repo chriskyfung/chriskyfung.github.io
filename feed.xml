@@ -5,9 +5,252 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Mar 2025 16:34:15 +0800</pubDate>
-    <lastBuildDate>Tue, 25 Mar 2025 16:34:15 +0800</lastBuildDate>
+    <pubDate>Tue, 29 Jul 2025 11:35:19 +0800</pubDate>
+    <lastBuildDate>Tue, 29 Jul 2025 11:35:19 +0800</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>InstapaperScraper: Export Your Bookmarks to CSV Effortlessly</title>
+        <description>&lt;p&gt;In today’s digital age, managing saved &lt;a href=&quot;https://www.instapaper.com/&quot;&gt;Instapaper&lt;/a&gt; articles can be overwhelming, especially for free plan users who lack a search feature. Obtaining API keys for Instapaper APIs can also be time-consuming.&lt;/p&gt;
+
+&lt;p&gt;Say hello to &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/InstapaperScraper&quot;&gt;InstapaperScraper&lt;/a&gt;&lt;/strong&gt;—a lightweight Python script designed to simplify the process. With InstapaperScraper, you can scrape bookmarks from your Instapaper account and export them as neatly formatted CSV data—all without needing an API key.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what-is-instapaperscraper&quot;&gt;What Is InstapaperScraper?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;InstapaperScraper&lt;/strong&gt; is a simple Python tool for retrieving and organizing Instapaper bookmarks. Key features include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Comprehensive Bookmark Scraping:&lt;/strong&gt; Efficiently organize bookmarks from your homepage or specific folders, with pagination support to ensure no bookmarks are missed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;CSV Export:&lt;/strong&gt; InstapaperScraper formats bookmark metadata—page number, ID, title, and URL—into CSV output, making it easy to import and analyze in tools like Excel or Google Sheets.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Effortless Configuration:&lt;/strong&gt; Set up a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file with your Instapaper credentials and optional folder settings to start scraping immediately.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;Setting up InstapaperScraper is quick and straightforward. Follow these steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Clone the Repository&lt;/strong&gt; Download the project from GitHub.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Install Dependencies&lt;/strong&gt; Use the provided &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt; to install all necessary Python libraries:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Configure Your Environment&lt;/strong&gt; Create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file in the project root with the following:&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;INSTAPAPER_USERNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;your_username
+&lt;span class=&quot;nv&quot;&gt;INSTAPAPER_PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;your_password
+&lt;span class=&quot;nv&quot;&gt;ENABLE_FOLDER_MODE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Optional: enable this to scrape a specific folder&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;FOLDER_ID_AND_SLUG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;your_folder_id/your_folder_slug  &lt;span class=&quot;c&quot;&gt;# Required if folder mode is enabled&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Run the Scraper&lt;/strong&gt; Export your bookmarks to CSV by running:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  python scrape.py &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; bookmarks.csv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this setup, you can quickly back up your Instapaper bookmarks locally.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;unlocking-data-driven-insights&quot;&gt;Unlocking Data-Driven Insights&lt;/h2&gt;
+
+&lt;p&gt;The CSV output from InstapaperScraper opens up exciting possibilities for data analysis and visualization:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Filter by Page Index:&lt;/strong&gt; Use text editors or Microsoft Excel to find the page number or bookmark ID of a specific bookmark, enabling you to locate its pagination or full-text view.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Analyze Reading Patterns:&lt;/strong&gt; Track your reading habits over time to identify trends in interests or productivity.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Categorize Bookmarks:&lt;/strong&gt; Organize bookmarks by topic or source to gain insights into your preferred content types.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Set Goals and Automate Recommendations:&lt;/strong&gt; Integrate bookmark data with other tools to create personalized reading goals, recommendations, or automated content curation.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;contribute--stay-updated&quot;&gt;Contribute &amp;amp; Stay Updated&lt;/h2&gt;
+
+&lt;p&gt;InstapaperScraper is an open-source project on GitHub (&lt;a href=&quot;https://github.com/chriskyfung/InstapaperScraper&quot;&gt;chriskyfung/InstapaperScraper&lt;/a&gt;) that welcomes contributions. Share your ideas, join discussions, or submit pull requests to help advance the project.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Happy scraping, and may your bookmarks always be in order!&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Jun 2025 17:06:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/productivity/introducing-instapaper-scraper/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/introducing-instapaper-scraper/</guid>
+        
+        <category>Instapaper</category>
+        
+        <category>Python</category>
+        
+        <category>Read Later App</category>
+        
+        
+        <category>Productivity</category>
+        
+      </item>
+    
+      <item>
+        <title>Fix Netlify CLI &amp; Node Task List `ntl` Conflict on Windows with Volta</title>
+        <description>&lt;p&gt;If you’re a web developer hosting your projects on Netlify, chances are the &lt;a href=&quot;https://docs.netlify.com/cli/get-started/&quot;&gt;Netlify CLI&lt;/a&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netlify-cli&lt;/code&gt;) is one of your must-have tools for streamline deployments, configuring site settings, and debugging issues—all right from your terminal. At the same time, &lt;a href=&quot;https://www.npmjs.com/package/ntl&quot;&gt;Node Task List&lt;/a&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt;) is a fantastic utlity that scans your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt; and creates an interactive menu of npm scripts. With NTL, you can easily launch tasks like starting a server or running builds in just a few clicks, saving you time and effort.&lt;/p&gt;
+
+&lt;p&gt;The catch is that both packages attempt to register the same executable name, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt;. When installed globally via npm, this results in a naming conflict and produces installation errors.&lt;/p&gt;
+
+&lt;h2 id=&quot;common-errors&quot;&gt;Common Errors&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;On Linux with NVM&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Terminal
+&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl
+&lt;span class=&quot;gr&quot;&gt;npm error code EEXIST
+npm error path /home/user/.nvm/versions/node/v20.17.0/bin/ntl
+npm error EEXIST: file already exists
+npm error File exists: /home/user/.nvm/versions/node/v20.17.0/bin/ntl
+npm error Remove the existing file and try again, or run npm
+npm error with --force to overwrite files recklessly.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Luckily, fixing the conflict on Linux is straightforward if you’re using the Node version manager &lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;NVM&lt;/a&gt;. Simply install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netlify-cli&lt;/code&gt; first, then force the installation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--force&lt;/code&gt; option to overwrite the conflicting executable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;On Windows with Volta&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# PowerShell
+&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt;
+&lt;span class=&quot;gr&quot;&gt;Volta error: Executable &apos;ntl&apos; is already installed by netlify-cli
+&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;
+Please remove netlify-cli before installing ntl
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For Windows users especially who rely on &lt;a href=&quot;https://volta.sh/&quot;&gt;Volta&lt;/a&gt; as their Node version manager, the issue is  a bit trickier. Volta doesn’t allow conflicting executables, so forcing the installation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; won’t resolve the problem.&lt;/p&gt;
+
+&lt;p&gt;In this guide, we’ll walk you through the steps to resolve the naming conflict on Windows, ensuring that both tools can coexist peacefully and letting you enjoy the best of both worlds in your development workflow.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;step-by-step-guide-to-fix-the-conflict&quot;&gt;Step-by-Step Guide to Fix the Conflict&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-uninstall-node-task-list-if-already-installed&quot;&gt;1. Uninstall Node Task List (if already installed)&lt;/h3&gt;
+
+&lt;p&gt;To ensure there are no lingering conflicts, begin by uninstalling any global installation of Node Task List:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm uninstall &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2-install-netlify-cli&quot;&gt;2. Install Netlify CLI&lt;/h3&gt;
+
+&lt;p&gt;Next, install the Netlify CLI globally. This sets up the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; executable for Netlify:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; netlify-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-verify-the-netlify-cli-installation&quot;&gt;3. Verify the Netlify CLI Installation&lt;/h3&gt;
+
+&lt;p&gt;Check that Netlify CLI is properly installed by running:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;volta which ntl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see an output similar to:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Users\&amp;lt;User Name&amp;gt;\AppData\Local\Volta\tools\image\packages\netlify-cli\ntl&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-modify-voltas-user-binaries-configuration&quot;&gt;4. Modify Volta’s User Binaries Configuration&lt;/h3&gt;
+
+&lt;p&gt;Open File Explorer and navigate to:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Users\&amp;lt;User Name&amp;gt;\AppData\Local\Volta\tools\user\bins\&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-remove-the-conflicting-registration-file&quot;&gt;5. Remove the Conflicting Registration File&lt;/h3&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bins&lt;/code&gt; folder, locate and delete the file named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl.json&lt;/code&gt;. Removing this file clears the conflicting registration for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-reinstall-node-task-list&quot;&gt;6. Reinstall Node Task List&lt;/h3&gt;
+
+&lt;p&gt;With the conflicting file removed, reinstall Node Task List globally:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command registers Node Task List with its own executable path without interfering with Netlify CLI.&lt;/p&gt;
+
+&lt;h3 id=&quot;7-verify-both-installations-are-working-separately&quot;&gt;7. Verify Both Installations Are Working Separately&lt;/h3&gt;
+
+&lt;p&gt;Finally, ensure both tools are correctly configured by checking their respective executable paths:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;volta which ntl
+volta which netlify
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The outputs should point to different locations, for example:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Node Task List:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;...\Volta\tools\image\packages\ntl\ntl&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Netlify CLI:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;...\Volta\tools\image\packages\netlify-cli\netlify&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now you’re all set! You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; command to run Node Task List tasks, while the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netlify&lt;/code&gt; command will work with the Netlify CLI—without any conflicts.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;By following these steps, you resolve the executable naming conflict between Node Task List and Netlify CLI on a Windows machine with Volta. This solution is perfect for Netlify developers who want to maintain a smooth, efficient workflow without installation hassles.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in more tips, be sure to check out our blog for additional resources.&lt;/p&gt;
+
+&lt;p&gt;Happy coding!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.netlify.com/cli/get-started/&quot;&gt;Get started with Netlify CLI | Netlify Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.to/kizmelvin/top-10-netlify-cli-commands-13ai&quot;&gt;Top 10 Netlify CLI Commands - DEV Community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 10 Apr 2025 23:04:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/devtools/resolve-netlify-cli-node-task-list-ntl-conflict-windows-volta/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/resolve-netlify-cli-node-task-list-ntl-conflict-windows-volta/</guid>
+        
+        <category>Netlify CLI</category>
+        
+        <category>NodeJS</category>
+        
+        <category>Volta</category>
+        
+        <category>Windows</category>
+        
+        <category>User tips</category>
+        
+        
+        <category>Developer tools</category>
+        
+      </item>
     
       <item>
         <title>Unlock IFTTT: Build a Dynamic Database with Google Sheets</title>
@@ -1286,20 +1529,10 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;dd&gt;
     &lt;p&gt;A GUI runs the Weka classifiers and displays the results in MATLAB.&lt;/p&gt;
   &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;[Plotly&lt;/td&gt;
-      &lt;td&gt;Online MATLAB Graphing](https://www.mathworks.com/matlabcentral/fileexchange/42202-plotly-%7C-online-matlab-graphing “File Exchange - MATLAB Central”)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;: A package converts your MATLAB figures into online Plotly graphs with a single line of code.&lt;/p&gt;
-
-&lt;dl&gt;
+  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/42202-plotly-%7C-online-matlab-graphing&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Plotly | Online MATLAB Graphing&lt;/a&gt;&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;A package converts your MATLAB figures into online Plotly graphs with a single line of code.&lt;/p&gt;
+  &lt;/dd&gt;
   &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/4667-matlab-for-kate-and-kwrite&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;MATLAB for Kate and Kwrite&lt;/a&gt;&lt;/dt&gt;
   &lt;dd&gt;
     &lt;p&gt;Syntax highlighting file for Linux/KDE editors Kate and Kwrite.&lt;/p&gt;
@@ -2425,529 +2658,6 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
         <category>BigQuery</category>
         
         <category>Data Science</category>
-        
-        
-        <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Optimize Costs for Google Kubernetes Engine: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP343&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/16327?parent=catalog&quot;&gt;Optimize Costs for Google Kubernetes Engine&amp;amp;colon; Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/157&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice the following topics:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Deploying an app on a multi-tenant cluster&lt;/li&gt;
-  &lt;li&gt;Migrating cluster workloads to an optimized node pool&lt;/li&gt;
-  &lt;li&gt;Rolling out an application update while maintaining cluster availability&lt;/li&gt;
-  &lt;li&gt;Cluster and pod autoscaling&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;task-1-create-our-cluster-and-deploy-our-app&quot;&gt;Task 1: Create our cluster and deploy our app&lt;/h2&gt;
-
-&lt;p&gt;Make sure that you:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create the cluster in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;us-central1&lt;/code&gt; region,&lt;/li&gt;
-  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onlineboutique-cluster&lt;/code&gt; as the cluster name according to the naming scheme for team-resource,&lt;/li&gt;
-  &lt;li&gt;Make the zonal cluster with only two (2) nodes, and&lt;/li&gt;
-  &lt;li&gt;Start with machine type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n1-standard-2&lt;/code&gt; (2 vCPU, 8G memory).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Hints:&lt;/strong&gt; Review the README and the files within the &lt;a href=&quot;https://github.com/GoogleCloudPlatform/microservices-demo&quot;&gt;@GoogleCloudPlatform/microservices-demo&lt;/a&gt; repository on GitHub.&lt;/p&gt;
-
-&lt;p&gt;The following example will create the cluster to the zone &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;us-central1-a&lt;/code&gt; using the command-line tools.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Set the zone as a variable in the Cloud Shell.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;ZONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;us-central1-a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run the following to create the cluster with the specified configuration:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container clusters create onlineboutique-cluster &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DEVSHELL_PROJECT_ID&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ZONE&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--machine-type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;n1-standard-2 &lt;span class=&quot;nt&quot;&gt;--num-nodes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;After the GKE cluster is created, you need to set up the namespaces &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prod&lt;/code&gt;.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl create namespace dev
-kubectl create namespace prod
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;You will deploy the application to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev&lt;/code&gt; namespace. Switch the current namespace from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev&lt;/code&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl config set-context &lt;span class=&quot;nt&quot;&gt;--current&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Copy the application files to the Shell environment, and then deploy the &lt;strong&gt;OnlineBoutique&lt;/strong&gt; app to GKE:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/GoogleCloudPlatform/microservices-demo.git
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;microservices-demo
-kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ./release/kubernetes-manifests.yaml &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wait until the load balancer exposes an External IP for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;frontend-external&lt;/code&gt; service. You can monitor the service status using the following command:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl get svc &lt;span class=&quot;nt&quot;&gt;-w&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;em&gt;Press &lt;strong&gt;CTRL + C&lt;/strong&gt; to stop the monitoring.&lt;/em&gt;&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1244&quot; height=&quot;374&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-get-frontend-external-ip.webp&quot; alt=&quot;Monitor service status using Watch command&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1244&quot; height=&quot;374&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-get-frontend-external-ip.png&quot; alt=&quot;Monitor service status using Watch command&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://&amp;lt;EXTERNAL_IP&amp;gt;&lt;/code&gt; in a new tab. You should see the homepage of the Online Boutique application like this:&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1248&quot; height=&quot;1056&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-deployed-online-boutique-application.webp&quot; alt=&quot;The Homepage of the Online Boutique demo application&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1248&quot; height=&quot;1056&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task1-deployed-online-boutique-application.jpg&quot; alt=&quot;The Homepage of the Online Boutique demo application&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-2-migrate-to-an-optimized-nodepool&quot;&gt;Task 2: Migrate to an Optimized Nodepool&lt;/h2&gt;
-
-&lt;p&gt;Make sure that you:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;create a new node pool named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;optimized-pool&lt;/code&gt;,&lt;/li&gt;
-  &lt;li&gt;configure &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;custom-2-3584&lt;/code&gt; as the machine type, and&lt;/li&gt;
-  &lt;li&gt;set the number of nodes to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt;;&lt;/li&gt;
-  &lt;li&gt;migrate the application to the new node pool by cordoning off and draining &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-pool&lt;/code&gt;; and&lt;/li&gt;
-  &lt;li&gt;delete the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-pool&lt;/code&gt; after the migration.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Hints:&lt;/strong&gt; Review the lab &lt;strong&gt;GSP767&lt;/strong&gt; &lt;a href=&quot;https://www.qwiklabs.com/focuses/15577?parent=catalog&quot;&gt;&lt;em&gt;Exploring Cost-optimization for GKE Virtual Machines&lt;/em&gt;&lt;/a&gt; on Qwiklabs.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run the following to create the node pool as specified:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container node-pools create optimized-pool &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--cluster&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;onlineboutique-cluster &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--machine-type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;custom-2-3584 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--num-nodes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ZONE&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;945&quot; height=&quot;445&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-create-optimized-node-pool.webp&quot; alt=&quot;Creating optimized node pool for GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;945&quot; height=&quot;445&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-create-optimized-node-pool.png&quot; alt=&quot;Creating optimized node pool for GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wait until the status of the new node pool becomes &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Cordon and drain the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-pool&lt;/code&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;kubectl get nodes &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; cloud.google.com/gke-nodepool&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;default-pool &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;name&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
-   &lt;/span&gt;kubectl cordon &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$node&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;done
-   
-for &lt;/span&gt;node &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;kubectl get nodes &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; cloud.google.com/gke-nodepool&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;default-pool &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;name&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
-   &lt;/span&gt;kubectl drain &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--ignore-daemonsets&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--delete-local-data&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--grace-period&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10 &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$node&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Verify if your pods are running on the new, `optimized-pool, node pool:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl get pods &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;wide &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;With the pods migrated, it’s safe to delete the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-pool&lt;/code&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container node-pools delete default-pool &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--cluster&lt;/span&gt; onlineboutique-cluster &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ZONE&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1046&quot; height=&quot;275&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-after-cordon-drain-and-delete-default-node-pool.webp&quot; alt=&quot;After cordon, drain, and delete the default pool from the GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1046&quot; height=&quot;275&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task2-after-cordon-drain-and-delete-default-node-pool.png&quot; alt=&quot;After cordon, drain, and delete the default pool from the GKE cluster&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-3-apply-a-frontend-update&quot;&gt;Task 3: Apply a Frontend Update&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Set a &lt;a href=&quot;https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-poddisruptionbudget-em-&quot; title=&quot;Kubectl Reference Docs&quot;&gt;pod disruption budget&lt;/a&gt; for your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;frontend&lt;/code&gt; deployment. Name it &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onlineboutique-frontend-pdb&lt;/code&gt; and set the min-availability of your deployment to 1.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl create poddisruptionbudget onlineboutique-frontend-pdb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;--selector&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;frontend &lt;span class=&quot;nt&quot;&gt;--min-available&lt;/span&gt; 1  &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use &lt;a href=&quot;https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#edit&quot; title=&quot;Kubectl Reference Docs&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl edit&lt;/code&gt;&lt;/a&gt; to update resources:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;KUBE_EDITOR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;nano&quot;&lt;/span&gt; kubectl edit deployment/frontend &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;Change the following in the configuration:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;image&lt;/strong&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcr.io/qwiklabs-resources/onlineboutique-frontend:v2.1&lt;/code&gt;, and&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;imagePullPolicy&lt;/strong&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Always&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;Save the file changes.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;863&quot; height=&quot;708&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-kubectl-edit.webp&quot; alt=&quot;change the image and image pull policy with kubectl edit&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;863&quot; height=&quot;708&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-kubectl-edit.png&quot; alt=&quot;change the image and image pull policy with kubectl edit&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(&lt;em&gt;Optional&lt;/em&gt;) In the Cloud Console, navigate to &lt;strong&gt;Kubernetes Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;Workloads&lt;/strong&gt; and click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;frontend&lt;/code&gt; deployment. Go to the &lt;strong&gt;REVISION HISTORY&lt;/strong&gt; tab, you should see the latest revision updates to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onlineboutique-frontend:v2.1&lt;/code&gt;.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;956&quot; height=&quot;262&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.webp&quot; alt=&quot;Revision 2&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;956&quot; height=&quot;262&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task3-frontend-v2.1-in-revision-history.png&quot; alt=&quot;Revision 2&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-4-autoscale-from-estimated-traffic&quot;&gt;Task 4: Autoscale from Estimated Traffic&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;You need to apply &lt;strong&gt;horizontal pod autoscaling&lt;/strong&gt; to your &lt;strong&gt;frontend deployment&lt;/strong&gt; with:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;scaling based on a target CPU percentage of 50, and&lt;/li&gt;
-      &lt;li&gt;setting the pod scaling between 1 minimum and 13 maximum.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;Run the following to configure the autoscaler:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl autoscale deployment frontend &lt;span class=&quot;nt&quot;&gt;--cpu-percent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;50 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nt&quot;&gt;--max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;13 &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check the status of the autoscalers by running:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl get hpa &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt; dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1159&quot; height=&quot;55&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-kubectl-get-hea.webp&quot; alt=&quot;Horizontal pod autoscaler for the frontend deployment&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1159&quot; height=&quot;55&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-kubectl-get-hea.png&quot; alt=&quot;Horizontal pod autoscaler for the frontend deployment&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Update your &lt;strong&gt;cluster autoscaler&lt;/strong&gt; to scale between 1 node minimum and 6 nodes maximum.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud beta container clusters update onlineboutique-cluster &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--enable-autoscaling&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--min-nodes&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;--max-nodes&lt;/span&gt; 6 &lt;span class=&quot;nt&quot;&gt;--zone&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ZONE&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaler.webp&quot; alt=&quot;Cluster autoscaler for the optimized node pool&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaler.png&quot; alt=&quot;Cluster autoscaler for the optimized node pool&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To test the autoscalers, run the following to perform a load test to simulate the traffic surge.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;kubectl get pod &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;dev | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;loadgenerator&apos;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos; &apos;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;dev &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; bash &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;export USERS=8000; sh ./loadgen.sh&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;The command produces traffic on the store from a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;loadgenerator&lt;/code&gt; pod with a high number of concurrent users.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Navigate to the OVERVIEW tab of the &lt;strong&gt;frontend deployment&lt;/strong&gt;, you should see a sharp increase in CPU, Memory, and Disk utilization after the load test started.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-monitoring-traffic-spike.webp&quot; alt=&quot;High CPU, Memory and Disk utilization yielded by traffic spike&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-monitoring-traffic-spike.png&quot; alt=&quot;High CPU, Memory and Disk utilization yielded by traffic spike&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-
-    &lt;p&gt;Scroll to the &lt;strong&gt;Managed Pods&lt;/strong&gt; section, you should observe the number of pods increases by the horizontal pod autoscaling.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaling-frontend-pods.webp&quot; alt=&quot;The frontend pods increase with horizontal pod autoscaling&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;624&quot; height=&quot;302&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp343-task4-cluster-autoscaling-frontend-pods.png&quot; alt=&quot;The frontend pods increase with horizontal pod autoscaling&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Eventually, you will also see new nodes initiate by the cluster autoscaling. But you need to keep patient for a while.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-jeB-FIeGKkQ&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;jeB-FIeGKkQ&quot; title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-title=&quot;GSP343 Optimize Costs for Google Kubernetes Engine: Challenge Lab | GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;amp-img src=&quot;https://i.ytimg.com/vi/jeB-FIeGKkQ/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=jeB-FIeGKkQ&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱ &lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Challenge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Scenario&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task1&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cluster&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deploy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;54&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task2&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Migrate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Optimized&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Nodepool&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task3&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Apply&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Frontend&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Update&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;39&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task4&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Autoscale&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Estimated&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Traffic&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Extra&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Load&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Test&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Simulate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Traffic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Surge&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Thu, 18 Mar 2021 11:45:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/optimize-costs-for-google-kubernetes-engine-challenge-lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/optimize-costs-for-google-kubernetes-engine-challenge-lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>Kubernetes</category>
-        
-        
-        <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Ensure Access &amp; Identity in Google Cloud: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP342&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/14572?parent=catalog&quot;&gt;Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/150&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice the following topics:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create a custom security role.&lt;/li&gt;
-  &lt;li&gt;Create a service account.&lt;/li&gt;
-  &lt;li&gt;Bind IAM security roles to a service account.&lt;/li&gt;
-  &lt;li&gt;Create a private Kubernetes Engine cluster in a custom subnet.&lt;/li&gt;
-  &lt;li&gt;Deploy an application to a private Kubernetes Engine cluster.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;task-0-prep&quot;&gt;Task 0: Prep&lt;/h2&gt;
-
-&lt;p&gt;Before stepping inside the main tasks, I suggest you conduct the following preparations.&lt;/p&gt;
-
-&lt;h3 id=&quot;-inspect-provisioned-resources&quot;&gt;🔍 Inspect provisioned resources&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In the Cloud Console, navigate to &lt;strong&gt;Compute Engine&lt;/strong&gt; &amp;gt; &lt;strong&gt;VM instances&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Click the name of the instance called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-jumphost&lt;/code&gt; to view the detail page.&lt;/li&gt;
-  &lt;li&gt;Scroll to the &lt;strong&gt;Network interfaces&lt;/strong&gt; section, click on the network called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-build-vpc&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Find out the region of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-build-vpc&lt;/code&gt; subnet.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;-set-a-zone&quot;&gt;📍 Set a zone&lt;/h3&gt;
-
-&lt;p&gt;In the example video, the lab provision created the subnet to the region &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;us-east1&lt;/code&gt;. Later on, we will need to deploy a Kubernetes cluster to the subnet. To ensure they are in the same region, run the following to configure the default zone (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;us-east1-b&lt;/code&gt;) in the Cloud Shell:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;compute/zone us-east1-b
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Useful documentation&lt;/strong&gt;: &lt;a href=&quot;https://cloud.google.com/compute/docs/gcloud-compute#set_default_zone_and_region_in_your_local_client&quot;&gt;&lt;em&gt;Set default region and zone in your local client&lt;/em&gt;  |  Compute Engine Documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;task-1-create-a-custom-security-role&quot;&gt;Task 1: Create a custom security role&lt;/h2&gt;
-
-&lt;p&gt;You will create a new custom IAM security role called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca_storage_update&lt;/code&gt; in this task. The custom role needs to include the permissions necessary to add and update objects in Google Cloud Storage buckets.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Hints:&lt;/strong&gt; Review the lab &lt;strong&gt;GSP190&lt;/strong&gt; &lt;a href=&quot;https://www.qwiklabs.com/focuses/1035?parent=catalog&quot;&gt;&lt;em&gt;IAM Custom Roles&lt;/em&gt;&lt;/a&gt; on Qwiklabs. You can also read &lt;a href=&quot;https://cloud.google.com/iam/docs/creating-custom-roles#creating_a_custom_role&quot;&gt;&lt;em&gt;Creating a custom role&lt;/em&gt;&lt;/a&gt; in the Cloud IAM Documentation.&lt;/p&gt;
-
-&lt;p&gt;The following steps show how to create a custom role using a YAML file:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Create a YAML file in the Cloud Shell environment.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Copy the following to the YAML file.&lt;/p&gt;
-
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Edirca&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Storage&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Update&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Google&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Cloud&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Storage&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;buckets&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;includedPermissions&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;storage.buckets.get&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;storage.objects.get&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;storage.objects.list&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;storage.objects.update&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;storage.objects.create&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run the following command to create the custom role using the definition in the YAML file.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud iam roles create orca_storage_update &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--project&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--file&lt;/span&gt; role-definition.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, read the details about &lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/iam/roles/create&quot;&gt;gcloud iam roles create&lt;/a&gt; in the Cloud SDK Documentation.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-2-create-a-service-account&quot;&gt;Task 2: Create a service account&lt;/h2&gt;
-
-&lt;p&gt;This task only requires you to create a new service account named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-private-cluster-sa&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Run the following command line in the Cloud Shell:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud iam service-accounts create orca-private-cluster-sa &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--display-name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Orca Private Cluster Service Account&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Useful documentation:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://google.qwiklabs.com/focuses/1038?parent=catalog&quot;&gt;&lt;em&gt;GSP199 Service Accounts and Roles: Fundamentals&lt;/em&gt; | Qwiklabs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating&quot;&gt;&lt;em&gt;Creating a service account&lt;/em&gt; | Cloud IAM Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud iam service-accounts create&lt;/code&gt; | Cloud SDK Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;task-3-bind-a-custom-security-role-to-a-service-account&quot;&gt;Task 3: Bind a custom security role to a service account&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Read about &lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud projects add-iam-policy-binding&lt;/code&gt;&lt;/a&gt; in the Cloud SDK Documentation.&lt;/p&gt;
-
-&lt;p&gt;The lab requires you to bind these three built-in roles to the service account:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roles/monitoring.viewer&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roles/monitoring.metricWriter&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roles/logging.logWriter&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Run the following to bind them to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-private-cluster-sa&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--member&lt;/span&gt; serviceAccount:orca-private-cluster-sa@&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;.iam.gserviceaccount.com &lt;span class=&quot;nt&quot;&gt;--role&lt;/span&gt; roles/monitoring.viewer
-
-gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--member&lt;/span&gt; serviceAccount:orca-private-cluster-sa@&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;.iam.gserviceaccount.com &lt;span class=&quot;nt&quot;&gt;--role&lt;/span&gt; roles/monitoring.metricWriter
-
-gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--member&lt;/span&gt; serviceAccount:orca-private-cluster-sa@&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;.iam.gserviceaccount.com &lt;span class=&quot;nt&quot;&gt;--role&lt;/span&gt; roles/logging.logWriter
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Also, bind the custom role &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca_storage_update&lt;/code&gt; created in Task 1 by running the following command:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud projects add-iam-policy-binding &lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--member&lt;/span&gt; serviceAccount:orca-private-cluster-sa@&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;.iam.gserviceaccount.com &lt;span class=&quot;nt&quot;&gt;--role&lt;/span&gt; projects/&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;/roles/orca_storage_update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;task-4-create-and-configure-a-new-kubernetes-engine-private-cluster&quot;&gt;Task 4: Create and configure a new Kubernetes Engine private cluster&lt;/h2&gt;
-
-&lt;p&gt;The new Kubernetes Engine cluster needs to fulfill the following requirements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The cluster must be called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-test-cluster&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;The cluster must be deployed to the subnet &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-build-subnet&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;The cluster must be configured to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-private-cluster-sa&lt;/code&gt; service account.&lt;/li&gt;
-  &lt;li&gt;The private cluster options &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enable-master-authorized-networks&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enable-ip-alias&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enable-private-nodes&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enable-private-endpoint&lt;/code&gt; must be enabled.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Hints:&lt;/strong&gt; Review the lab &lt;a href=&quot;https://www.qwiklabs.com/focuses/867?parent=catalog&quot;&gt;GSP178 Setting up a Private Kubernetes Cluster&lt;/a&gt; on Qwiklabs. If you want to practice with command-line tools, take a look at the detail about &lt;a href=&quot;https://cloud.google.com/sdk/gcloud/reference/container/clusters/create&quot;&gt;gcloud container clusters create&lt;/a&gt; in the Cloud SDK Documentation.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Navigate to &lt;strong&gt;Compute Engine&lt;/strong&gt; in the Cloud Console, note down the &lt;strong&gt;Internal IP&lt;/strong&gt; address of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-jumphost&lt;/code&gt; instance.&lt;/p&gt;
-
-    &lt;p&gt;Alternatively, you can use the following command to obtain the IP address:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;JUMPHOST_IP&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;gcloud compute instances describe orca-jumphost &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;get(networkInterfaces[0].networkIP)&apos;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;To learn more, read about &lt;a href=&quot;https://cloud.google.com/compute/docs/instances/view-ip-address&quot;&gt;Locating IP addresses for an instance&lt;/a&gt; in the Compute Engine Documentation.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Navigate to &lt;strong&gt;VPC network&lt;/strong&gt; in the Cloud Console, note down the IP address range for the regional subnet. You may also lookup the IP range from &lt;a href=&quot;https://cloud.google.com/vpc/docs/vpc&quot;&gt;https://cloud.google.com/vpc/docs/vpc&lt;/a&gt;. The IP address for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;us-east1&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10.142.0.0&lt;/code&gt;.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;SUBNET_IP_RANGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;10.142.0.0/28&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run the following &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcloud&lt;/code&gt; command to create the cluster with the required configurations:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud beta container clusters create orca-test-cluster &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--network&lt;/span&gt; orca-build-vpc
-   &lt;span class=&quot;nt&quot;&gt;--subnetwork&lt;/span&gt; orca-build-subnet &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--service-account&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;SERVICE_ACCOUNT orca-private-cluster-sa@&lt;span class=&quot;nv&quot;&gt;$DEVSHELL_PROJECT_ID&lt;/span&gt;.iam.gserviceaccount.com &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--enable-master-authorized-networks&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$JUMPHOST_IP&lt;/span&gt;/32 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--master-authorized-networks&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--enable-private-nodes&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--master-ipv4-cidr&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SUBNET_IP_RANGE&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--enable-ip-alias&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--enable-private-endpoint&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-5-deploy-an-application-to-a-private-kubernetes-engine-cluster&quot;&gt;Task 5: Deploy an application to a private Kubernetes Engine cluster&lt;/h2&gt;
-
-&lt;p&gt;The last task is to deploy a simple test application &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello-server&lt;/code&gt; to the Kubernetes Engine cluster. The Cloud Shell cannot directly access the private cluster. So, you have to access it via the jumphost.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Navigate to &lt;strong&gt;Compute Engine&lt;/strong&gt; in the Cloud Console.&lt;/li&gt;
-  &lt;li&gt;Click on the &lt;strong&gt;SSH&lt;/strong&gt; button for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orca-jumphost&lt;/code&gt; instance.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the SSH window, connect to the private cluster by running the following:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud container clusters get-credentials orca-test-cluster &lt;span class=&quot;nt&quot;&gt;--internal-ip&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Deploy the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello-server&lt;/code&gt; to the private cluster using the following &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl&lt;/code&gt; command:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl create deployment hello-server &lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;gcr.io/google-samples/hello-app:1.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Finally, run the following to expose the application using a load balancer service with mapping from port 80 to 8080:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl expose deployment hello-server &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; orca-hello-service &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;--type&lt;/span&gt; LoadBalancer &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt; 80 &lt;span class=&quot;nt&quot;&gt;--target-port&lt;/span&gt; 8080
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;Useful documentation:&lt;/strong&gt; &lt;a href=&quot;https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps#using_kubectl_expose_to_create_a_service&quot;&gt;&lt;em&gt;Using kubectl expose to create a Service&lt;/em&gt; | Kubernetes Engine Documentation&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-HiFMZGDBzZo&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;HiFMZGDBzZo&quot; title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-title=&quot;GSP342 Ensure Access &amp;amp; Identity in Google Cloud: Challenge Lab (With Audio Instruction 🔉)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;amp-img src=&quot;https://i.ytimg.com/vi/HiFMZGDBzZo/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=HiFMZGDBzZo&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt; &amp;amp; &lt;span class=&quot;n&quot;&gt;Challenge&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scenario&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;47&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Inspect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;provisioned&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;according&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;region&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;orca&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;subnet&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task1&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;custom&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;security&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;role&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;called&lt;/span&gt; `&lt;span class=&quot;n&quot;&gt;orca_storage_update&lt;/span&gt;`
-&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;44&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task2&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;called&lt;/span&gt; `&lt;span class=&quot;n&quot;&gt;orca&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;private&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;cluster&lt;/span&gt;-&lt;span class=&quot;n&quot;&gt;sa&lt;/span&gt;`
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task3&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Bind&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;custom&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;security&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;role&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;05&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task4&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;configure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Kubernetes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Engine&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cluster&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;09&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;07&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task5&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Deploy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Kubernetes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Engine&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cluster&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Fri, 12 Mar 2021 11:45:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/ensure-access-and-identity-in-google-cloud-challenge-lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/ensure-access-and-identity-in-google-cloud-challenge-lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>Kubernetes</category>
-        
-        <category>Secure VPC</category>
         
         
         <category>Cloud</category>

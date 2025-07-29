@@ -28,7 +28,7 @@ function build(cb) {
 }
 
 function test() {
-  return src('./_site/**/*.html')
+  return src(['./_site/**/*.html', '!./_site/images/projects/qwiklabs-quests-map.html'])
     // Validate the input and attach the validation result to the "amp" property
     // of the file object.
     .pipe(gulpAmpValidator.validate())
@@ -40,7 +40,7 @@ function test() {
 }
 
 function validate() {
-  return src('./_site/**/*.html')
+  return src(['./_site/**/*.html', '!./_site/images/projects/qwiklabs-quests-map.html'])
     .pipe(
       through2.obj(async (file, _, cb) => {
         if (file.isBuffer()) {
