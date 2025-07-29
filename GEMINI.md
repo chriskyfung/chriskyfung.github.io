@@ -89,3 +89,17 @@ This project follows the [Conventional Commits](https://www.conventionalcommits.
 - **`bigdecimal` Gem Build Failure:** The `bigdecimal` Ruby gem (a dependency of `google-protobuf` -> `sass-embedded`) fails to build on the Windows host environment. Do not attempt to update `bigdecimal`, `google-protobuf`, or `sass-embedded` until the underlying build issue on Windows is resolved.
 - **AMP Validation - `search.html`:** The `search.html` page contains non-AMP-compliant code from the standard Google Custom Search Engine. The fix has been deferred, so do not attempt to fix the validation errors for this file without a new strategy.
 - **AMP Validation - `qwiklabs-quests-map.html`:** The `images/projects/qwiklabs-quests-map.html` file is an SVG resource, not a standard HTML page. It is intentionally excluded from the AMP validation process in `gulpfile.mjs` to prevent false-positive errors.
+
+## Web Auditing
+
+### Broken Link Checking
+
+To check for broken links, use the `test:links` script defined in `package.json`. This script uses `linkinator` and is configured via the `.linkinatorrc` file.
+
+To run the checker and save the report, use the following command:
+
+```bash
+npm run test:links > linkinator.log 2>&1
+```
+
+This will generate a `linkinator.log` file, which is excluded from the site build.

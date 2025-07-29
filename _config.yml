@@ -153,6 +153,7 @@ relative_links:
 exclude:
   - _docs/
   - .jekyll-cache/
+  - .notes.md
   - .post-template
   - .sass-cache/
   - frontmatter.json
@@ -162,6 +163,7 @@ exclude:
   - GEMINI.md
   - gulpfile.js
   - LICENSE
+  - linkinator.log
   - log_cweb.log
   - node_modules/
   - package-lock.json
