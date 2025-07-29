@@ -1,0 +1,27 @@
+{
+  "concurrency": 5,
+  "recurse": true,
+  "skip": [
+    "^http://localhost.+\\Wabout$",
+    "^http://localhost.+\\Wcontact$",
+    "https://developer.android.com/latest-updates/",
+    "https://developer.android.com/studio",
+    "https://developers.facebook.com/tools/debug/",
+    "https://fonts.gstatic.com/",
+    "https://medium.com/@chriskyfung",
+    "https://www.facebook.com/chriskyfung",
+    "https://www.googletagmanager.com",
+    "https://www.sitepoint.com/github-cli/",
+    "https://www.sqlshack.com/sql-union-vs-union-all-in-sql-server/",
+    "https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense",
+    "https://www.tensorflow.org/api_docs/python/tf/keras/Sequential"
+  ],
+  "silent": true,
+  "directoryListing": true,
+  "urlRewriteSearch": [
+    "^(http://localhost.+[^\\w\\._-])blog([^\\w_-][\\w_-]+|[^\\w\\._-]\\d+[^\\w\\._-]\\d+[^\\w_-]\\d+)?([^\\w\\._-][a-zA-Z0-9_-]+)$"
+  ],
+  "urlRewriteReplace": [
+    "$1blog$2$3.html"
+  ]
+}

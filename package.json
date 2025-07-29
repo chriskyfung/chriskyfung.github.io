@@ -15,6 +15,7 @@
     "test": "npx gulp validate",
     "test:markdownlint": "npx markdownlint-cli2 ./_posts/**/*.md",
     "test:markdownlint:stdout": "npx markdownlint-cli2 ./_posts/**/*.md 2>&1",
+    "test:links": "npx linkinator ./_site",
     "watch": "npx gulp build"
   },
   "repository": {
