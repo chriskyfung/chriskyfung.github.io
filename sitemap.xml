@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://chriskyfung.github.io/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email/</loc>
+<loc>https://chriskyfung.github.io/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email</loc>
 <lastmod>2014-06-13T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -9,11 +9,11 @@
 <lastmod>2014-07-04T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>https://chriskyfung.github.io/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables/</loc>
+<loc>https://chriskyfung.github.io/blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables</loc>
 <lastmod>2014-07-12T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>https://chriskyfung.github.io/blog/2014/08/22/My-new-conference-paper-is-now-available-online/</loc>
+<loc>https://chriskyfung.github.io/blog/2014/08/22/My-new-conference-paper-is-now-available-online</loc>
 <lastmod>2014-08-22T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -53,7 +53,7 @@
 <lastmod>2016-01-18T21:36:00+08:00</lastmod>
 </url>
 <url>
-<loc>https://chriskyfung.github.io/blog/2017/02/26/new-site-is-opened/</loc>
+<loc>https://chriskyfung.github.io/blog/2017/02/26/new-site-is-opened</loc>
 <lastmod>2017-02-26T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -93,7 +93,7 @@
 <lastmod>2019-10-22T18:15:00+08:00</lastmod>
 </url>
 <url>
-<loc>https://chriskyfung.github.io/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog/</loc>
+<loc>https://chriskyfung.github.io/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog</loc>
 <lastmod>2019-10-30T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -545,7 +545,7 @@
 </url>
 <url>
 <loc>https://chriskyfung.github.io/images/projects/qwiklabs-quests-map.html</loc>
-<lastmod>2025-01-18T20:17:11+08:00</lastmod>
+<lastmod>2025-07-31T02:21:01+08:00</lastmod>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/yandex_3e10a2d0cfd334f2.html</loc>

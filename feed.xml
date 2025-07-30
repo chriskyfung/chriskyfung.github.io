@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Jul 2025 11:35:19 +0800</pubDate>
-    <lastBuildDate>Tue, 29 Jul 2025 11:35:19 +0800</lastBuildDate>
+    <pubDate>Thu, 31 Jul 2025 02:21:48 +0800</pubDate>
+    <lastBuildDate>Thu, 31 Jul 2025 02:21:48 +0800</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -1151,7 +1151,7 @@ When dealing with large datasets or extensive codebases, these advanced cloning 
   &lt;li&gt;&lt;a href=&quot;https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85&quot;&gt;A Complete Beginners Guide to Git - DEV Community&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.git-tower.com/learn/&quot;&gt;Learn Version Control with Git - Git Tower&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://dev.to/basementdevs/everything-that-you-need-to-know-about-git-2440&quot;&gt;Everything you need to know about GIT - DEV Community&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.to/jagroop2001/20-git-command-line-tricks-every-developer-should-know-1i21&quot;&gt;20 Git Command-Line Tricks Every Developer Should Know - DEV Community&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.to/sachinkg12/25-git-commands-every-developer-should-know-498f&quot;&gt;25 Git Commands Every Developer Should Know - DEV Community&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://bueltge.de/git/&quot;&gt;Get your Practice-Git on!&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/git/tutorials/git-log&quot;&gt;Advanced Git Log - Atlassian Git Tutorial&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://about.gitlab.com/blog/2020/03/13/partial-clone-for-massive-repositories/&quot;&gt;How Git Partial Clone lets you fetch only the large file you need - GitLab&lt;/a&gt;&lt;/li&gt;
@@ -1601,7 +1601,7 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;dd&gt;
     &lt;p&gt;A helper function to concatenate or merge structures with different field names.&lt;/p&gt;
   &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/48729-for-each&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;For-Each&lt;/a&gt;&lt;/dt&gt;
+  &lt;dt&gt;&lt;a href=&quot;https://blogs.mathworks.com/pick/2015/02/27/for-each/&quot; title=&quot;For Each » File Exchange Pick of the Week - MATLAB &amp;amp; Simulink&quot;&gt;For-Each&lt;/a&gt;&lt;/dt&gt;
   &lt;dd&gt;
     &lt;p&gt;A toolbox enables simple, readable, and powerful for-loops in MATLAB.&lt;/p&gt;
   &lt;/dd&gt;
@@ -2194,7 +2194,7 @@ Happy coding! 🚀&lt;/p&gt;
     
       <item>
         <title>☁ Serverless Firebase Development: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP344&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/14677?parent=catalog&quot;&gt;GSP344 Serverless Firebase Development: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/153&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice the skills for deploying a serverless web application with Firestore Database and Cloud Run on Google Cloud Platform.&lt;/p&gt;
+        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP344&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.cloudskillsboost.google/focuses/14677?parent=catalog&quot;&gt;GSP344 Serverless Firebase Development: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.cloudskillsboost.google/course_templates/649&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice the skills for deploying a serverless web application with Firestore Database and Cloud Run on Google Cloud Platform.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
 
@@ -2395,8 +2395,8 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
       </item>
     
       <item>
-        <title>☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP340&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.qwiklabs.com/focuses/14341?parent=catalog&quot;&gt;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.qwiklabs.com/quests/147&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.&lt;/p&gt;
+        <title>☁ Build a Data Warehouse with BigQuery: Challenge Lab | logbook</title>
+        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP340&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.cloudskillsboost.google/course_templates/624/labs/403512&quot;&gt;GSP340 Build a Data Warehouse with BigQuery: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.cloudskillsboost.google/course_templates/624&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
 
@@ -2622,7 +2622,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
 &lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
 
-&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
+&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build a Data Warehouse with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build a Data Warehouse with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
   &lt;amp-img src=&quot;https://i.ytimg.com/vi/C49jYtIMAsg/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
   &lt;div fallback=&quot;&quot;&gt;
     &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
@@ -2642,7 +2642,7 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 &lt;p&gt;&lt;strong&gt;Keep on reading:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab&quot;&gt;☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) | logbook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab&quot;&gt;☁ Derive Insights from BigQuery Data: Challenge Lab (COVID-19 Open Data) | logbook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 Jun 2021 10:30:00 +0800</pubDate>
