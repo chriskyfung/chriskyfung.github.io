@@ -12,7 +12,7 @@ image:
   width: "730"
   height: "411"
   hide: true
-permalink: blog/2017/02/26/new-site-is-opened/
+permalink: blog/2017/02/26/new-site-is-opened
 ---
 
 Well. Finally got around to putting this old website together. The neat thing about it - powered by [Jekyll](https://jekyllrb.com) and I can use Markdown to author my posts. It is a lot easier than I thought it was going to be.

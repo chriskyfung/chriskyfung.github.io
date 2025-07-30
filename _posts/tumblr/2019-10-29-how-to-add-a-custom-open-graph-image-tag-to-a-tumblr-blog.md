@@ -10,7 +10,7 @@ tags:
     - Custom Theme
     - Open Graph
     - Meta Tags
-permalink: /blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog/
+permalink: /blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
 redirect_from:
     - /blog/2019/10/30/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog
 amp:

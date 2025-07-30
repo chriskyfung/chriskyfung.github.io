@@ -18,7 +18,7 @@ image:
     width: "730"
     height: "411"
     hide: true
-permalink: blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables/
+permalink: blog/2014/07/12/Tip-for-scripting-LAMMPS-Create-And-Rename-A-Folder-Based-On-The-Input-Variables
 ---
 
 In a molecular dynamics study, simulation is often repeated with different sets of parameters, e.g. dimensions, velocity, initial pressure and temperature. If the parameters are defined as variables in the LAMMPS input script, we can change the value of the variables using the command line/terminal. So, we don't need to modify the script each time.

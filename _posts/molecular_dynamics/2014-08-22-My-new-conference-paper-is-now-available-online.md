@@ -16,7 +16,7 @@ image:
   width: "730"
   height: "411"
   hide: true
-permalink: blog/2014/08/22/My-new-conference-paper-is-now-available-online/
+permalink: blog/2014/08/22/My-new-conference-paper-is-now-available-online
 ---
 
 ### Molecular Dynamics Simulation of Plastic Deformation of Diamond at an Elevated Temperature
