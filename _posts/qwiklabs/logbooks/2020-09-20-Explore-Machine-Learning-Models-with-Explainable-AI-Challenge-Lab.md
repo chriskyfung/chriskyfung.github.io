@@ -22,7 +22,7 @@ css:
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
 ---
 
-In this article, we will go through the lab **GSP324** _[Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.qwiklabs.com/focuses/12011?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/126) exercise on Qwiklabs. TensorFlow is the dominant AI framework in the industry. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models for machine learning the dataset of the Home Mortgage Disclosure Act (HMDA) in New York.
+In this article, we will go through the lab **GSP324** _[\[DEPRECATED\] Explore Machine Learning Models with Explainable AI: Challenge Lab](https://www.cloudskillsboost.google/catalog?keywords=GSP324)_, which is an advanced-level exercise on Qwiklabs. TensorFlow is the dominant AI framework in the industry. You will practice the skills and knowledge in using Cloud AI Platform to build, train and deploy TensorFlow models for machine learning the dataset of the Home Mortgage Disclosure Act (HMDA) in New York.
 
 **Topics tested**:
 
@@ -206,7 +206,7 @@ Run the last cell in the notebook to activate What-If Tool. Explore the differen
 
 **Keep on reading**:
 
-- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})
+- [☁ Engineer Data for Predictive Modeling with BigQuery ML: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})
 
 **Useful links**:
 

@@ -22,7 +22,7 @@ css:
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
 ---
 
-In this article, we will go through the lab **GSP335** _[Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.qwiklabs.com/focuses/13389?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/142) exercise on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
+In this article, we will go through the lab **GSP335** _[\[DEPRECATED\] Secure Workloads in Google Kubernetes Engine: Challenge Lab](https://www.cloudskillsboost.google/catalog?keywords=GSP335)_, which is an advanced-level exercise on Qwiklabs. You will practice the skills in security at scale on Google Kubernetes Engine (GKE) including how to set up HTTPS and TLS certificate with cert-manager.io, restrict access in GKE with Network Policies, use Binary Authorization for security controls of your images, and deploy PodSecurityPolicy to control access to privileged containers based on role and groups.
 
 **Topics tested**:
 
@@ -200,7 +200,7 @@ To verify the deployment, navigate to the Kubernetes Engine page in the Cloud Co
 
 ## Task 3: Setup Ingress with TLS
 
-**Tips:** Review the lab **GSP181** [NGINX Ingress Controller on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/872?parent=catalog "Qwiklabs") on Qwiklabs before you start doing Task 3. For more information, you may read the community tutorial [Ingress with NGINX controller on Google Kubernetes Engine](https://cloud.google.com/community/tutorials/nginx-ingress-gke) on the Google Cloud's website.
+**Tips:** Review the lab **GSP181** [NGINX Ingress Controller on Google Kubernetes Engine](https://www.cloudskillsboost.google/focuses/872?parent=catalog "Qwiklabs") on Qwiklabs before you start doing Task 3. For more information, you may read the community tutorial [Ingress with NGINX controller on Google Kubernetes Engine](https://cloud.google.com/community/tutorials/nginx-ingress-gke) on the Google Cloud's website.
 
 In this challenge lab, please note that you have to install the same `nginx-ingress` version, which is used in lab GSP181. Otherwise, you will not able to create `nginx-ingress-controller` for continuing the lab.
 
@@ -342,7 +342,7 @@ kubectl apply -f network-policy.yaml
 
 ## Task 5: Setup Binary Authorization
 
-**Tips:** Review the lab **GSP479** [Google Kubernetes Engine Security: Binary Authorization](https://www.qwiklabs.com/focuses/5154?parent=catalog) on Qwiklabs before start doing Task 5.
+**Tips:** Review the lab **GSP479** [Google Kubernetes Engine Security: Binary Authorization](https://www.cloudskillsboost.google/focuses/5154?parent=catalog) on Qwiklabs before start doing Task 5.
 
 ### Configure Binary Authorization Policy
 
@@ -376,7 +376,7 @@ Your cluster will start updating its binary authorization settings. Wait until t
 
 ## Task 6: Setup Pod Security Policy
 
-**Tips:** Review the lab **GSP496** [Hardening Default GKE Cluster Configurations](https://www.qwiklabs.com/focuses/5158?parent=catalog) on Qwiklabs to get some ideas about how to deploy the PodSecurityPolicy objects. To learn more, you can find more details from the following documentation:
+**Tips:** Review the lab **GSP496** [Hardening Default GKE Cluster Configurations](https://www.cloudskillsboost.google/focuses/5158?parent=catalog) on Qwiklabs to get some ideas about how to deploy the PodSecurityPolicy objects. To learn more, you can find more details from the following documentation:
 
 - [Using PodSecurityPolicies \| Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/pod-security-policies)
 - [Pod Security Policies \| Kubernetes](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
@@ -431,6 +431,6 @@ Task3: Setup Ingress with TLS
 **Keep on reading**:
 
 - [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
-- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
-- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
+- [☁ Build a Secure Google Cloud Network: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy Kubernetes Applications on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Migrate a MySQL Database to Google Cloud SQL: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})

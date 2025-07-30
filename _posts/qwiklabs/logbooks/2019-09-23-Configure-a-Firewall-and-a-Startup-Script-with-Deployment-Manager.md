@@ -22,9 +22,9 @@ css:
   syntax: true
 ---
 
-With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". The web console assists in quick access to the GCP resources for testing and building small projects. If you are an amateur or hobbyist developer, just make use of the web console is pretty enough.
+With the Google Cloud web console, you can easily configure and deploy many different GCP resources without any coding skills. I believe that there is no big deal for you, even a beginner, to finish the first and second labs of the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://www.cloudskillsboost.google/course_templates/640)". The web console assists in quick access to the GCP resources for testing and building small projects. If you are an amateur or hobbyist developer, just make use of the web console is pretty enough.
 
-But if you aim to be a professional cloud engineer, you must know and apply some more advanced skills, such as creating and managing cloud resources with simple templates for a repeatable deployment process. The third lab of the challenge quest, **GSP302** _"[Configure a Firewall and a Startup Script with Deployment Manager](https://www.qwiklabs.com/focuses/1736?parent=catalog)"_, is to test your ability to define the resources of a basic apache web server. You need to know how to format and parameterize the resource properties in YAML as a Jinja2 configuration file. It is much harder than the previous labs. I recommend you revising the Qwiklabs quest called [Deployment Manager](https://www.qwiklabs.com/quests/30), if you are not familiar with building custom templates.
+But if you aim to be a professional cloud engineer, you must know and apply some more advanced skills, such as creating and managing cloud resources with simple templates for a repeatable deployment process. The third lab of the challenge quest, **GSP302** _"[\[DEPRECATED\] Configure a Firewall and a Startup Script with Deployment Manager](https://www.cloudskillsboost.google/catalog?keywords=GSP302)"_, is to test your ability to define the resources of a basic apache web server. You need to know how to format and parameterize the resource properties in YAML as a Jinja2 configuration file. It is much harder than the previous labs. I recommend you revising the Qwiklabs quest called [\[DEPRECATED\] Deployment Manager](https://www.cloudskillsboost.google/catalog?keywords=cloud+deployment+manager), if you are not familiar with building custom templates.
 
 ## Brief Introduction of Challenge Scenario
 
@@ -93,7 +93,7 @@ img="qwiklabs/qwiklabs-GSP302-install-web-sh-in-Cloud-Shell-Code-Editor.png" alt
 
 Let's recall your memory. You have already used them to manually install an Apache web server in the previous lab, if you have done the first challenge lab _"[Google Cloud Essential Skills]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})"_.
 
-This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})"_.
+This time, you need to deploy the commands automatically with the Deployment Manager. It is similar to use a remote startup script in the previous lab _"[Deploy a Compute Instance with a Remote Startup Script: Challenge Lab]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})"_.
 You have to configure metadata, but you use the key `startup-script` and the commands directly as the value (rather than `startup-script-url` and a remote file URL).
 For more information, read [Running startup scripts](https://cloud.google.com/compute/docs/startupscript) in the Cloud Deployment Manager documentation.
 
@@ -178,8 +178,8 @@ If you finished the first three labs of the challenge quest, you are capable of 
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
 
-- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
+- [☁ Deploy and Troubleshoot a Website: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
 
-- [☁ Deploy a Compute Instance with a Remote Startup Script \| logbook]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
+- [☁ Deploy a Compute Instance with a Remote Startup Script: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
 
-- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build a Secure Google Cloud Network: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})

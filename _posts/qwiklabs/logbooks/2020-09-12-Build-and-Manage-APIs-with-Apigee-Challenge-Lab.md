@@ -23,7 +23,7 @@ css:
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
 ---
 
-In this article, we will go through the lab **GSP336** _[Build and Manage APIs with Apigee: Challenge Lab](https://www.qwiklabs.com/focuses/13360?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/137) exercise on Qwiklabs. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
+In this article, we will go through the lab **GSP336** _[\[DEPRECATED\] Build and Manage APIs with Apigee: Challenge Lab](https://www.cloudskillsboost.google/catalog?keywords=GSP336)_, which is an [expert-level](https://www.cloudskillsboost.google/catalog?keywords=Apigee) exercise on Qwiklabs. You will practice the skills and knowledge in the Build and Manage APIs with Apigee.
 
 **Topics tested:**
 
