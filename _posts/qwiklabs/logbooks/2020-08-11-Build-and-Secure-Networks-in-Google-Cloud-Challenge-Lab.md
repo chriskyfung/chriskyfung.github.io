@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Build and Secure Networks in Google Cloud: Challenge Lab | logbook"
+title: "☁ Build a Secure Google Cloud Network: Challenge Lab | logbook"
 date: 2020-08-15 12:00 +0800
 categories: [Cloud]
 author: chris
@@ -20,7 +20,7 @@ css:
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
 ---
 
-In this article, we will go through the lab **GSP322** _[Build and Secure Networks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12068?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/128) exercise on Qwiklabs. You will need to set up firewall rules to configure a simple environment securely that only allow SSH to the bastion via IAP.
+In this article, we will go through the lab **GSP322** _[Build a Secure Google Cloud Network: Challenge Lab](https://www.cloudskillsboost.google/course_templates/654/labs/404067)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/654) exercise on Qwiklabs. You will need to set up firewall rules to configure a simple environment securely that only allow SSH to the bastion via IAP.
 
 **The challenge contains 6 required tasks:**
 
@@ -140,7 +140,7 @@ After configuring the firewall rules, try to verify the environment via the bast
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="NToEHzJTpgs" title="GSP322 Build and Secure Networks in Google Cloud: Challenge Lab" %}
+{% include youtube.html id="NToEHzJTpgs" title="GSP322 Build a Secure Google Cloud Network: Challenge Lab" %}
 
 ```conf
 ⏱Timestamps:
@@ -159,4 +159,4 @@ After configuring the firewall rules, try to verify the environment via the bast
 
 - [☁ Configure a Firewall and a Startup Script with Deployment Manager \| logbook]({% post_url qwiklabs/logbooks/2019-09-23-Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager %})
 - [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
-- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform on GCP \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})
+- [☁ Configure Secure RDP using a Windows Bastion Host: Challenge Lab with Terraform on GCP \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})

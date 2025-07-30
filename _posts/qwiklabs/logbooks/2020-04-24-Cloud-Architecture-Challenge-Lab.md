@@ -25,7 +25,7 @@ css:
 
 Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}) help you to finish the first challenge lab? Are you familiar with the basic knowledge from the **Google Cloud Essentials** quest now?
 
-It's important before you move on to the exercise **GSP314** _[Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10417?parent=catalog)_, formerly known as _Cloud Architecture: Challenge Lab_, which will be studied below. This lab is much complicated than the last one. It will test your skills and knowledge for creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker. It requires you well understand and integrate what you learned and experienced from the labs in the Cloud Architecture quest.
+It's important before you move on to the exercise **GSP314** _[Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/focuses/10417?parent=catalog)_, formerly known as _Cloud Architecture: Challenge Lab_, which will be studied below. This lab is much complicated than the last one. It will test your skills and knowledge for creating multiple VPC networks using Deployment Manager configuration, create a Kubernetes cluster with services, set up Cloud Logging, and update the services with Spinnaker. It requires you well understand and integrate what you learned and experienced from the labs in the Cloud Architecture quest.
 
 In the lab scenario, your client has already established a product development environment with Spinnaker and the application delivery pipeline in the network **kraken-build-vpc**. Those resources will be provisioned while the lab starts. You only need to complete the unfinished part of the architecture ([in the red box of the diagram](https://cdn.qwiklabs.com/KQtWhw5izJUfg3%2BL%2B0uLZQ6v44HXVd9BOdAOhhatO3Q%3D)).
 
@@ -60,7 +60,7 @@ After the jumphost has been created, navigate to **Compute Engine** > **VM insta
 3. Use an editor to open the configuration file **prod-network.yaml**, and replace `SET_REGION` with `us-east1`.
 
 4. Create the **kraken-prod-vpc** with the YAML file using `gcloud` command.<br>
-**Hint**: Refer and modify the `gcloud deployment-manager` command in the lab GSP060 [Deployment Manager - Full Production](https://www.qwiklabs.com/focuses/981?parent=catalog#step9).
+**Hint**: Refer and modify the `gcloud deployment-manager` command in the lab GSP060 [Deployment Manager - Full Production](https://www.cloudskillsboost.google/focuses/981?parent=catalog#step9).
 
 ### 1.2 Create a Kubernetes cluster in the new network
 
@@ -74,7 +74,7 @@ Click **Create Cluster**. Make sure you:
 
 ### 1.3 Create the frontend and backend deployments and services
 
-Hint: Refer and modify the **kubectl create** command in the lab GSP021 [Orchestrating the Cloud with Kubernetes](https://www.qwiklabs.com/focuses/557?parent=catalog).
+Hint: Refer and modify the **kubectl create** command in the lab GSP021 [Orchestrating the Cloud with Kubernetes](https://www.cloudskillsboost.google/focuses/557?parent=catalog).
 
 Return to the SSH window, use the following commands to create the frontend and backend deployments and services:
 
@@ -131,7 +131,7 @@ Make sure you:
 
 ## Task 3: Verify the Spinnaker deployment
 
-**Hint**: Refer to the procedures in the lab GSP114 [Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine](https://www.qwiklabs.com/focuses/552?parent=catalog).
+**Hint**: Refer to the procedures in the lab GSP114 [Continuous Delivery Pipelines with Spinnaker and Kubernetes Engine](https://www.cloudskillsboost.google/focuses/552?parent=catalog).
 
 In this lab, several resources have been already provisioned. you **DO NOT** need to implement the following tasks:
 
@@ -221,5 +221,5 @@ This lab is challenging. You might not know what need to do if you cannot spot s
 
 **See Also**:
 
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
-- [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy Kubernetes Applications on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Implement DevOps Workflows in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})

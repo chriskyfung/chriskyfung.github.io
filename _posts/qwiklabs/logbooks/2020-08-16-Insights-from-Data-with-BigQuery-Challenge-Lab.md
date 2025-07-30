@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) | logbook"
+title: "☁ Derive Insights from BigQuery Data: Challenge Lab (COVID-19 Open Data) | logbook"
 date: 2020-08-16 06:48 +0800
 last_modified_at: 2020-10-08 03:56 +0800
 categories: [Cloud]
@@ -30,7 +30,7 @@ custom_head: >-
    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 ---
 
-In this article, we will go through the lab **GSP322** _[Insights from Data with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/11988?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/123) exercise on Qwiklabs. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
+In this article, we will go through the lab **GSP787** _[Derive Insights from BigQuery Data: Challenge Lab](https://www.cloudskillsboost.google/course_templates/623/labs/403507)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/623) exercise on Qwiklabs. You will practice BigQuery for the data analysis of the COVID-19 open dataset `bigquery-public-data.covid19_open_data.covid19_open_data`.
 
 ## Open Public Dataset
 
@@ -43,7 +43,7 @@ In this article, we will go through the lab **GSP322** _[Insights from Data with
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-tables.jpg" width="982" height="618" alt="BigQuery Results" %}
 
-## Query 1: Total Confirmed Cases
+## Task 1. Total Confirmed Cases
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-01.jpg" width="1349" height="531" alt="BigQuery Results" %}
 
@@ -60,7 +60,7 @@ WHERE
 
 This query sums up the cumulative confirmed cases of all records on 15 April 2020.
 
-## Query 2: Worst Affected Areas
+## Task 2. Worst Affected Areas
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-02.jpg" width="1330" height="513" alt="BigQuery Results" %}
 
@@ -87,7 +87,7 @@ WHERE death_count > 100
 
 Make sure that you use `country_name` to filter the US reconds instead of `country_code`, and use `subregion1_name` to group the states in the US.
 
-## Query 3: Identifying Hotspots
+## Task 3. Identifying Hotspots
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-03.jpg" width="1365" height="843" alt="BigQuery Results" %}
 
@@ -142,7 +142,7 @@ Due to Qwiklabs' poor design, you have to format <b>GROUP BY</b>, <b>HAVING</b> 
   </section>
 </amp-accordion>
 
-## Query 4: Fatality Ratio
+## Task 4. Fatality Ratio
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-04.jpg" width="1341" height="546" alt="BigQuery Results" %}
 
@@ -156,7 +156,7 @@ WHERE country_name="Italy" AND date BETWEEN "2020-04-01" AND "2020-04-30"
 
 Originally, it should be `date='2020-04-30'`. I don't know why Qwiklabs replaced it with a date range.
 
-## Query 5: Identifying specific day
+## Task 5. Identifying specific day
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-05.jpg" width="1449" height="550" alt="BigQuery Results" %}
 
@@ -176,7 +176,7 @@ LIMIT 1
 
 Make sure that you use **ORDER BY** to sort the results by date.
 
-## Query 6: Finding days with zero net new cases
+## Task 6. Finding days with zero net new cases
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-06.jpg" width="1366" height="767" alt="BigQuery Results" %}
 
@@ -214,7 +214,7 @@ WHERE
   net_new_cases = 0
 ```
 
-## Query 7: Doubling rate
+## Task 7. Doubling rate
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-07.jpg" width="1333" height="855" alt="BigQuery Results" %}
 
@@ -256,7 +256,7 @@ WHERE
   percentage_increase > 10
 ```
 
-## Query 8: Recovery rate
+## Task 8. Recovery rate
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-08.jpg" width="1292" height="866" alt="BigQuery Results" %}
 
@@ -293,7 +293,7 @@ ORDER BY recovery_rate DESC
 LIMIT 10
 ```
 
-## Query 9: CDGR - Cumulative Daily Growth Rate
+## Task 9. CDGR - Cumulative Daily Growth Rate
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-09.jpg" width="1325" height="777" alt="BigQuery Results" %}
 
@@ -329,7 +329,7 @@ select first_day_cases, last_day_cases, days_diff, POWER(last_day_cases/first_da
 from summary
 ```
 
-## Create a Datastudio report
+## Task 10. Create a Datastudio report
 
 {% include picture.html img="qwiklabs/qwiklab-gsp787-10.jpg" width="858" height="257" alt="BigQuery Results" %}
 
@@ -363,7 +363,7 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="3zxclCMoQeM" title="GSP787 Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data)" %}
+{% include youtube.html id="3zxclCMoQeM" title="GSP787 Derive Insights from BigQuery Data: Challenge Lab (COVID-19 Open Data)" %}
 
 ```conf
 ⏱Timestamps:
@@ -389,5 +389,5 @@ If you fail to get the score of this task, remove all data and reports from the 
 
 **Keep on reading**:
 
-- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-06-25-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
-- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build a Data Warehouse with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-06-25-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
+- [☁ Engineer Data for Predictive Modeling with BigQuery ML: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Implement DevOps in Google Cloud: Challenge Lab | logbook"
+title: "☁ Implement DevOps Workflows in Google Cloud: Challenge Lab | logbook"
 date: 2020-11-13 16:22 +0800
 categories: [Cloud]
 author: chris
@@ -19,7 +19,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP330** _[Implement DevOps in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/13287?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/141) exercise on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
+In this article, we will go through the lab **GSP330** _[Implement DevOps Workflows in Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/course_templates/716/labs/408157)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/716) exercise on Qwiklabs. You will practice the skills in implementing a continuous deployment pipeline using the Jenkins build and deployment automation tool.
 
 **Topics tested**:
 
@@ -298,7 +298,7 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="pSSA6vlRgtA" title="GSP330 Implement DevOps in Google Cloud: Challenge Lab" %}
+{% include youtube.html id="pSSA6vlRgtA" title="GSP330 Implement DevOps Workflows in Google Cloud: Challenge Lab" %}
 
 ```conf
 ⏱Timestamps:
@@ -323,10 +323,10 @@ After configuring your credentials, follow these steps to configure a Pipeline j
 
 **References**:
 
-- [Continuous Delivery with Jenkins in Kubernetes Engine \| Qwiklabs](https://www.qwiklabs.com/focuses/1104?parent=catalog)
+- [Continuous Delivery with Jenkins in Kubernetes Engine \| Qwiklabs](https://www.cloudskillsboost.google/focuses/1104?parent=catalog)
 - [Helm \| Installing Helm](https://helm.sh/docs/intro/install/)
 
 **Keep on reading**:
 
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy Kubernetes Applications on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
 - [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})

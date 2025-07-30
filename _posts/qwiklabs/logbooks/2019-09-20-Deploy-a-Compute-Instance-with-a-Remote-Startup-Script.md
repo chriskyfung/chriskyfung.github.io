@@ -21,7 +21,7 @@ image:
    height: "174"
 ---
 
-If you read my [last post]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %}), you should know how to manually create a VM instance and configure it as an Apache2 web server with the web console in Google Cloud Platform (GCP). The steps are easy but you can automate and scale your web server installation process by adopting a **Startup Script**. Loading the startup script remotely from a cloud storage bucket is one method. The second lab of the challenge quest, **GSP301** _"[Deploy a Compute Instance with a Remote Startup Script](https://www.qwiklabs.com/focuses/1735?parent=catalog)"_, is to test if you can deploy an Apache server to a VM instance with a remote startup script. You must know how to create a bucket and upload files to Google Cloud Storage, and configure the metadata in the dialog of creating an instance.
+If you read my [last post]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %}), you should know how to manually create a VM instance and configure it as an Apache2 web server with the web console in Google Cloud Platform (GCP). The steps are easy but you can automate and scale your web server installation process by adopting a **Startup Script**. Loading the startup script remotely from a cloud storage bucket is one method. The second lab of the challenge quest, **GSP301** _"[Deploy a Compute Instance with a Remote Startup Script: Challenge Lab](https://www.cloudskillsboost.google/course_templates/640/labs/403984)"_, is to test if you can deploy an Apache server to a VM instance with a remote startup script. You must know how to create a bucket and upload files to Google Cloud Storage, and configure the metadata in the dialog of creating an instance.
 
 ## Brief Introduction of Challenge Scenario
 
@@ -41,7 +41,7 @@ The screenshot above shows that there are 4 steps required for completing this l
 4. Confirm the web server can be connected using HTTP and get a non-error response.
 
 {% include picture.html width="724" height="382"
-img="qwiklabs/qwiklab-GSP301-schematic.png" alt="Schematic diagram of Qwiklabs GSP301: Deploy a Compute Instance with a Remote Startup Script" caption="Schematic diagram of GSP301: Deploy a Compute Instance with a Remote Startup Script" class="shadow-none" %}
+img="qwiklabs/qwiklab-GSP301-schematic.png" alt="Schematic diagram of Qwiklabs GSP301: Deploy a Compute Instance with a Remote Startup Script: Challenge Lab" caption="Schematic diagram of GSP301: Deploy a Compute Instance with a Remote Startup Script: Challenge Lab" class="shadow-none" %}
 
 ## Download Sample Startup Script
 
@@ -145,4 +145,4 @@ With the GCP web console, you can to set up a VM instance as a web server withou
 **See Also**:
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
-- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
+- [☁ Deploy and Troubleshoot a Website: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})

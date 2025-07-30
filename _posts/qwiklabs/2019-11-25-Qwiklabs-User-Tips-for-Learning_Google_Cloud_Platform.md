@@ -78,7 +78,7 @@ I spent about three months to take all the Qwiklabs quests for Google Cloud Plat
 
 ## Custom Tool for Labelling Completed Labs and Quests
 
-As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results ([www.qwiklabs.com/catalog](https://www.qwiklabs.com/catalog)). I desired to make a straight-forward way to identify the catalog, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Lab Completion Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)".
+As a Qwiklabs user, I found it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs Catalog page or Search Results ([www.qwiklabs.com/catalog](https://www.cloudskillsboost.google/catalog)). I desired to make a straight-forward way to identify the catalog, by adding a green check-circle next to those completed. So, I tried to develop a solution named "[Qwiklabs Lab Completion Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)".
 
 The prototyped tool can help you visually identify the completed catalogue items with a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) showing at the end of a lab or quest title. A demo screenshot is shown below.
 
@@ -90,7 +90,7 @@ For more information, you can read the post _"[Userscript for Labelling Complete
 
 ## Tips for Preparing a Lab
 
-Sometimes, you can find examples and tutorials from the Qwiklabs' blog on [Medium](https://qwiklabs.medium.com/) ([@qwiklabs](https://qwiklabs.medium.com/)). Also, you may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
+You may search for introductive videos from YouTube, such as the [Qwiklabs](https://www.youtube.com/channel/UCgadTofKslPYREQE8TjY7AA/videos) and the [Google Cloud Platform](https://www.youtube.com/user/googlecloudplatform) channels. The playlist below includes parts of the videos,
 
 <!-- FM:Snippet:Start data:{"id":"include-youtube-playlist","fields":[{"name":"vid","value":"ew-r46FmzSM"},{"name":"playlist_id","value":"PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D"},{"name":"title","value":"Qwiklabs Quests Previews | Google Cloud Labs"}]} -->
 {% include youtube.html id="ew-r46FmzSM" playlist="PLIivdWyY5sqKOsBSMDTF0M76nXeChgh5D" title="Qwiklabs Quests Previews | Google Cloud Labs" %}
@@ -124,32 +124,32 @@ _The Cookbooks of Challenge Quest Series:_
 
 {% include picture.html width="473" height="188" img="qwiklabs/qwiklabs-change-badge-for-Challenge-GCP-Architecture-quest.png" alt="Badges for Challenge-GCP-Architecture: Before and After" class="text-center" caption="Badge Change in 2020" link="/blog/qwiklabs/where-does-my-bear-badge-go" %}
 
-- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
-- [☁ Deploy a Compute Instance with a Remote Startup Script \| logbook ]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
+- [☁ Deploy and Troubleshoot a Website: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
+- [☁ Deploy a Compute Instance with a Remote Startup Script: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
 - [☁ Configure a Firewall and a Startup Script with Deployment Manager \| logbook ]({% post_url qwiklabs/logbooks/2019-09-23-Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager %})
-- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform \| logbook ]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})
-- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster \| logbook ]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
-- [☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster \| logbook ]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
-- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook ]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
+- [☁ Configure Secure RDP using a Windows Bastion Host: Challenge Lab with Terraform \| logbook ]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})
+- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
+- [☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
+- [☁ Migrate a MySQL Database to Google Cloud SQL: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
 
 _The Hints for Challenge Labs 2020:_
 
-- [☁ Create and Manage Cloud Resources: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %})
+- [☁ Implement Load Balancing on Compute Engine: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %})
 - [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})
 - [☁ Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-02-Baseline-Infrastructure-Challenge-Lab %})
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy Kubernetes Applications on Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
 - [☁ Build a Website on Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-07-01-Build-a-Website-on-Google-Cloud-Challenge-Lab %})
 - [☁ Automate Interactions with Contact Center AI: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-07-22-Automate-Interactions-with-Contact-Center-AI-Challenge-Lab %})
 - [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
-- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
-- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook ]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
-- [☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-07-Perform-Foundational-Data,-ML,-and-AI-Tasks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build a Secure Google Cloud Network: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Derive Insights from BigQuery Data: Challenge Lab (COVID-19 Open Data) \| logbook ]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
+- [☁ Prepare Data for ML APIs on Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-07-Perform-Foundational-Data,-ML,-and-AI-Tasks-in-Google-Cloud-Challenge-Lab %})
 - [☁ Build and Manage APIs with Apigee: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-12-Build-and-Manage-APIs-with-Apigee-Challenge-Lab %})
-- [☁ Engineer Data in Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})
+- [☁ Engineer Data for Predictive Modeling with BigQuery ML: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-08-26-Engineer-Data-in-Google-Cloud-Challenge-Lab %})
 - [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-09-20-Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab %})
-- [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})
-- [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook ]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
-- [☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-06-25-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
+- [☁ Use Machine Learning APIs on Google Cloud: Challenge Lab \| logbook ]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})
+- [☁ Implement DevOps Workflows in Google Cloud: Challenge Lab" \| logbook ]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build a Data Warehouse with BigQuery: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-06-25-gsp340-build-and-optimize-data-warehouses-with-bigquery-challenge-lab %})
 - [☁ Ensure Access & Identity in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-10-gsp342-ensure-access-and-identity-in-google-cloud-challenge-lab %})
 - [☁  Optimize Costs for Google Kubernetes Engine: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-03-18-gsp343-optimize-costs-for-google-kubernetes-engine-challenge-lab %})
 - [☁ Serverless Firebase Development: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-07-14-gsp344-serverless-firebase-development-challenge-lab %})

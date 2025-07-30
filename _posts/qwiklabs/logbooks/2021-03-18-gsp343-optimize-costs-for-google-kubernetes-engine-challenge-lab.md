@@ -19,7 +19,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP343** _[Optimize Costs for Google Kubernetes Engine&colon; Challenge Lab](https://www.qwiklabs.com/focuses/16327?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/157) exercise on Qwiklabs. You will practice the following topics:
+In this article, we will go through the lab **GSP343** _[Optimize Costs for Google Kubernetes Engine&colon; Challenge Lab](https://www.cloudskillsboost.google/focuses/16327?parent=catalog)_, which is an [advanced-level](https://www.cloudskillsboost.google/course_templates/655) exercise on Qwiklabs. You will practice the following topics:
 
 - Deploying an app on a multi-tenant cluster
 - Migrating cluster workloads to an optimized node pool
@@ -100,7 +100,7 @@ Make sure that you:
 - migrate the application to the new node pool by cordoning off and draining `default-pool`; and
 - delete the `default-pool` after the migration.
 
-**Hints:** Review the lab **GSP767** [_Exploring Cost-optimization for GKE Virtual Machines_](https://www.qwiklabs.com/focuses/15577?parent=catalog) on Qwiklabs.
+**Hints:** Review the lab **GSP767** [_Exploring Cost-optimization for GKE Virtual Machines_](https://www.cloudskillsboost.google/focuses/15577?parent=catalog) on Qwiklabs.
 
 1. Run the following to create the node pool as specified:
 

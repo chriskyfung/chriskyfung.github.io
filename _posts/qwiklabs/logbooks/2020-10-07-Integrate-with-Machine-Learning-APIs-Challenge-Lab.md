@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Integrate with Machine Learning APIs: Challenge Lab | logbook"
+title: "☁ Use Machine Learning APIs on Google Cloud: Challenge Lab | logbook"
 date: 2020-10-7 17:30 +0800
 categories: [Cloud]
 author: chris
@@ -19,7 +19,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP329** _[Integrate with Machine Learning APIs: Challenge Lab](https://www.qwiklabs.com/focuses/12704?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/136) exercise on Qwiklabs. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
+In this article, we will go through the lab **GSP329** _[Use Machine Learning APIs on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/course_templates/630/labs/403547)_, which is an [advanced-level](https://www.cloudskillsboost.google/course_templates/630) exercise on Qwiklabs. You will practice the skills and knowledge for getting service account credentials to run Cloud Vision API, Google Translate API, and BigQuery API via a Python script.
 
 **Topics tested**:
 
@@ -173,7 +173,7 @@ The query results should look like:
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="kEEqbeqR6og" title="GSP329 Integrate with Machine Learning APIs: Challenge Lab" %}
+{% include youtube.html id="kEEqbeqR6og" title="GSP329 Use Machine Learning APIs on Google Cloud: Challenge Lab" %}
 
 ```conf
 ⏱Timestamps:
@@ -194,7 +194,7 @@ The query results should look like:
 **References**:
 
 📌 Hints for Tasks 1 - 2
-  [Classify Text into Categories with the Natural Language API - Qwiklabs](https://www.qwiklabs.com/focuses/1749?parent=catalog)
+  [Classify Text into Categories with the Natural Language API - Qwiklabs](https://www.cloudskillsboost.google/focuses/1749?parent=catalog)
 
 📌 Hints for Tasks 3 - 5
   [Integrating Machine Learning APIs - Google Codelabs](https://developers.google.com/codelabs/cloud-ml-apis)
@@ -206,9 +206,9 @@ The query results should look like:
 **Keep on reading**:
 
 - [☁ Automate Interactions with Contact Center AI: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-22-Automate-Interactions-with-Contact-Center-AI-Challenge-Lab %})
-- [☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-09-07-Perform-Foundational-Data,-ML,-and-AI-Tasks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Prepare Data for ML APIs on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-09-07-Perform-Foundational-Data,-ML,-and-AI-Tasks-in-Google-Cloud-Challenge-Lab %})
 
 **Useful links**:
 
-- [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs - Qwiklabs](https://www.qwiklabs.com/focuses/1836?parent=catalog)
-- [Integrate with Machine Learning APIs: Challenge Lab Tutorial - by Ajil - Sep 2020 - Medium](https://medium.com/@ajiltu/integrate-with-machine-learning-apis-challenge-lab-tutorial-4ed8c5cb983e)
+- [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs - Qwiklabs](https://www.cloudskillsboost.google/focuses/1836?parent=catalog)
+- [Use Machine Learning APIs on Google Cloud: Challenge Lab Tutorial - by Ajil - Sep 2020 - Medium](https://ajiltu.medium.com/integrate-with-machine-learning-apis-challenge-lab-tutorial-4ed8c5cb983e)

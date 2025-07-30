@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Build and Optimize Data Warehouses with BigQuery: Challenge Lab | logbook"
+title: "☁ Build a Data Warehouse with BigQuery: Challenge Lab | logbook"
 date: 2021-06-25 10:30 +0800
 categories: [Cloud]
 author: chris
@@ -18,7 +18,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP340** _[GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab](https://www.qwiklabs.com/focuses/14341?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/147) exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
+In this article, we will go through the lab **GSP340** _[GSP340 Build a Data Warehouse with BigQuery: Challenge Lab](https://www.cloudskillsboost.google/course_templates/624/labs/403512)_, which is an [advanced-level](https://www.cloudskillsboost.google/course_templates/624) exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.
 
 **Topics tested**:
 
@@ -239,7 +239,7 @@ Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and tabl
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="C49jYtIMAsg" title="GSP340 Build and Optimize Data Warehouses with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)" %}
+{% include youtube.html id="C49jYtIMAsg" title="GSP340 Build a Data Warehouse with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)" %}
 
 ```conf
 ⏱Timestamps:
@@ -254,4 +254,4 @@ Replace `<YOUR_DATASET_ID>` and `<NEW_TABLE_NAME>` with your dataset ID and tabl
 
 **Keep on reading:**
 
-- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
+- [☁ Derive Insights from BigQuery Data: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})

@@ -18,7 +18,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP344** _[GSP344 Serverless Firebase Development: Challenge Lab](https://www.qwiklabs.com/focuses/14677?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/153) exercise on Qwiklabs. You will practice the skills for deploying a serverless web application with Firestore Database and Cloud Run on Google Cloud Platform.
+In this article, we will go through the lab **GSP344** _[GSP344 Serverless Firebase Development: Challenge Lab](https://www.cloudskillsboost.google/focuses/14677?parent=catalog)_, which is an [advanced-level](https://www.cloudskillsboost.google/course_templates/649) exercise on Qwiklabs. You will practice the skills for deploying a serverless web application with Firestore Database and Cloud Run on Google Cloud Platform.
 
 **Topics tested**:
 

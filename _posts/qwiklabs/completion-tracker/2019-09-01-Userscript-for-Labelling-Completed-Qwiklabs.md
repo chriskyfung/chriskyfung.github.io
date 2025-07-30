@@ -17,7 +17,7 @@ excerpt: A tool developed for assisting you tracking unenrolled quests and incom
 
 [Qwiklabs](https://www.qwiklabs.com) is a great online self-paced learning platform for getting hands-on experience of the Google Cloud Platform. It has over 400 hands-on labs and quests to learn and practice.
 
-As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs [Catalog pages](https://www.qwiklabs.com/catalog) and Search Results. I desired to make a straight-forward way to  identify the catalogue items, by adding a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) next to those completed. So, I tried to develop a solution named "[Qwiklabs Lab Completion Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)" (also formerly known as "Qwiklabs Complete Indicator").
+As a Qwiklabs user, I figure out it is messy and damp to lookup unenrolled quests or incompleted labs from the Qwiklabs [Catalog pages](https://www.cloudskillsboost.google/catalog) and Search Results. I desired to make a straight-forward way to  identify the catalogue items, by adding a green check-circle (<i class="fa fa-check-circle" style="color:green"></i>) next to those completed. So, I tried to develop a solution named "[Qwiklabs Lab Completion Tracker](https://github.com/chriskyfung/qwiklabs-completed-labs-tracker)" (also formerly known as "Qwiklabs Complete Indicator").
 
 <!--more-->
 
@@ -63,7 +63,7 @@ From **version 0.4.8**, marker annotations support the "_Your Favorites_", "_Fea
 
 ### Update records from My Learning page
 
-You can also update the latest records by clicking on the **sync** (<i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i>) icon next to the table title on the [**My Learning**](https://www.qwiklabs.com/my_learning/) page.
+You can also update the latest records by clicking on the **sync** (<i class='fas fa-sync-alt' style="transform: rotate(50deg) scaleY(-1);"></i>) icon next to the table title on the [**My Learning**](https://www.cloudskillsboost.google/my_learning/) page.
 
 {% include picture.html height="280" img="qwiklab-complete-indicator-group-update-button.png" alt="Markers and Highlights on Completed Courses" source="projects" class="text-center mb-4" %}
 
@@ -87,6 +87,6 @@ For more details, please go to the [Version History]({% post_url qwiklabs/comple
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
 
-- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
+- [☁ Deploy and Troubleshoot a Website: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
 
-- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})
+- [☁ Configure Secure RDP using a Windows Bastion Host: Challenge Lab with Terraform \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})

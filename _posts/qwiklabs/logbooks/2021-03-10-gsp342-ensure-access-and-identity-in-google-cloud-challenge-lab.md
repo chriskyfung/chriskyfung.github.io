@@ -18,7 +18,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP342** _[Ensure Access & Identity in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/14572?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/150) exercise on Qwiklabs. You will practice the following topics:
+In this article, we will go through the lab **GSP342** _[Ensure Access & Identity in Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/focuses/14572?parent=catalog)_, which is an [advanced-level](https://www.cloudskillsboost.google/course_templates/645) exercise on Qwiklabs. You will practice the following topics:
 
 - Create a custom security role.
 - Create a service account.
@@ -51,7 +51,7 @@ gcloud config set compute/zone us-east1-b
 
 You will create a new custom IAM security role called `orca_storage_update` in this task. The custom role needs to include the permissions necessary to add and update objects in Google Cloud Storage buckets.
 
-**Hints:** Review the lab **GSP190** [_IAM Custom Roles_](https://www.qwiklabs.com/focuses/1035?parent=catalog) on Qwiklabs. You can also read [_Creating a custom role_](https://cloud.google.com/iam/docs/creating-custom-roles#creating_a_custom_role) in the Cloud IAM Documentation.
+**Hints:** Review the lab **GSP190** [_IAM Custom Roles_](https://www.cloudskillsboost.google/focuses/1035?parent=catalog) on Qwiklabs. You can also read [_Creating a custom role_](https://cloud.google.com/iam/docs/creating-custom-roles#creating_a_custom_role) in the Cloud IAM Documentation.
 
 The following steps show how to create a custom role using a YAML file:
 
@@ -135,7 +135,7 @@ The new Kubernetes Engine cluster needs to fulfill the following requirements:
 - The cluster must be configured to use the `orca-private-cluster-sa` service account.
 - The private cluster options `enable-master-authorized-networks`, `enable-ip-alias`, `enable-private-nodes`, and `enable-private-endpoint` must be enabled.
 
-**Hints:** Review the lab [GSP178 Setting up a Private Kubernetes Cluster](https://www.qwiklabs.com/focuses/867?parent=catalog) on Qwiklabs. If you want to practice with command-line tools, take a look at the detail about [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create) in the Cloud SDK Documentation.
+**Hints:** Review the lab [GSP178 Setting up a Private Kubernetes Cluster](https://www.cloudskillsboost.google/focuses/867?parent=catalog) on Qwiklabs. If you want to practice with command-line tools, take a look at the detail about [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create) in the Cloud SDK Documentation.
 
 1. Navigate to **Compute Engine** in the Cloud Console, note down the **Internal IP** address of the `orca-jumphost` instance.
 
@@ -146,7 +146,7 @@ The new Kubernetes Engine cluster needs to fulfill the following requirements:
    --format='get(networkInterfaces[0].networkIP)')
    ```
 
-   To learn more, read about [Locating IP addresses for an instance](https://cloud.google.com/compute/docs/instances/view-ip-address) in the Compute Engine Documentation.
+   To learn more, read about [IP addresses](https://cloud.google.com/compute/docs/ip-addresses/) in the Compute Engine Documentation.
 
 2. Navigate to **VPC network** in the Cloud Console, note down the IP address range for the regional subnet. You may also lookup the IP range from [https://cloud.google.com/vpc/docs/vpc](https://cloud.google.com/vpc/docs/vpc). The IP address for `us-east1` is `10.142.0.0`.
 

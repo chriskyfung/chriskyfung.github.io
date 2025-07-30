@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Deploy to Kubernetes in Google Cloud: Challenge Lab | logbook"
+title: "☁ Deploy Kubernetes Applications on Google Cloud: Challenge Lab | logbook"
 author: chris
 date: 2020-05-04 +0800
 last_modified_at: 2021-06-24 11:22:00 +0800
@@ -24,7 +24,7 @@ css:
       .callout { background-color:gold; font-size: smaller; padding: 10px; }
 ---
 
-In this article, we will go through the lab **GSP318** _[Deploy to Kubernetes in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10457?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/116) exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_) on Qwiklabs. You will practice the skills and knowledge for configuring Docker images and containers and deploying fully-fledged Kubernetes Engine applications.
+In this article, we will go through the lab **GSP318** _[Deploy Kubernetes Applications on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/course_templates/663/labs/405582)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/663) exercise (formerly known as _Kubernetes in Google Cloud: Challenge Lab_) on Qwiklabs. You will practice the skills and knowledge for configuring Docker images and containers and deploying fully-fledged Kubernetes Engine applications.
 
 **The challenge contains 4 required tasks:**
 
@@ -141,7 +141,7 @@ After pushing the container, the `valkyrie-app` repository will appear in the Cl
 
 ## Task 5: Update the deployment with a new version of valkyrie-app
 
-**Hint**: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) or my previous article [Qwiklabs/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
+**Hint**: Refer the skills in lab GSP053 [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) or my previous article [Qwiklabs/Logbook: Scale Out and Update a Containerized Application on a Kubernetes Cluster: Challenge Lab]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
 
 **Step 5-1** Increase the replicas from 1 to 3
 
@@ -290,7 +290,7 @@ Finally, manually trigger the build in the Jenkins console
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="jtHZ_aSlI-4" title="GSP318 Deploy to Kubernetes in Google Cloud: Challenge Lab" %}
+{% include youtube.html id="jtHZ_aSlI-4" title="GSP318 Deploy Kubernetes Applications on Google Cloud: Challenge Lab" %}
 
 ```conf
 ⏱Timestamps:
@@ -312,4 +312,4 @@ Do you feel this challenge lab quite difficult? You might if you don't get enoug
 **See Also**:
 
 - [☁ Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %})
-- [☁ Implement DevOps in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})
+- [☁ Implement DevOps Workflows in Google Cloud: Challenge Lab" \| logbook]({% post_url qwiklabs/logbooks/2020-11-13-Implement-DevOps-in-Google-Cloud-Challenge-Lab %})

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab | logbook"
+title: "☁ Prepare Data for ML APIs on Google Cloud: Challenge Lab | logbook"
 date: 2020-09-08 05:30 +0800
 last_modified_at: 2021-06-25 10:18 +0800
 categories: [Cloud]
@@ -21,7 +21,7 @@ css:
       table { font-size: .975rem; width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
 ---
 
-In this article, we will go through the lab **GSP323** _[Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11044?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/117) exercise on Qwiklabs. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
+In this article, we will go through the lab **GSP323** _[Prepare Data for ML APIs on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/course_templates/631/labs/403561)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/631) exercise on Qwiklabs. You will practice the skills and knowledge for running Dataflow, Dataproc, and Dataprep as well as Google Cloud Speech API.
 
 **The challenge contains 4 required tasks:**
 
@@ -292,7 +292,7 @@ In this task, you have to transfer the data in a CSV file to BigQuery using Data
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="iAGiLYAx7z8" title="GSP323 Perform Foundational Data, ML, and AI Tasks in Google Cloud: Challenge Lab" %}
+{% include youtube.html id="iAGiLYAx7z8" title="GSP323 Prepare Data for ML APIs on Google Cloud: Challenge Lab" %}
 
 ```conf
 ⏱Timestamps:

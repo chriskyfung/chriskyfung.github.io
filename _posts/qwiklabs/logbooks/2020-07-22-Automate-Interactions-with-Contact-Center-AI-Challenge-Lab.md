@@ -20,7 +20,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP311** _[Automate Interactions with Contact Center AI: Challenge Lab](https://www.qwiklabs.com/focuses/12008?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/127) exercise on Qwiklabs. You will practice the skills and knowledge to deploy Cloud Dataflow Pipeline to transcript audio files and store the data to BigQuery. You will also need to implement Data Loss Prevention API for redacting the sensitive data from the audio transcriptions (such as name, email, phone number, and SSN).
+In this article, we will go through the lab **GSP311** _[Automate Interactions with Contact Center AI: Challenge Lab](https://www.cloudskillsboost.google/focuses/12008?parent=catalog)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/622) exercise on Qwiklabs. You will practice the skills and knowledge to deploy Cloud Dataflow Pipeline to transcript audio files and store the data to BigQuery. You will also need to implement Data Loss Prevention API for redacting the sensitive data from the audio transcriptions (such as name, email, phone number, and SSN).
 
 **The challenge contains 8 required tasks:**
 
@@ -182,4 +182,4 @@ Only Task 7 was a little tricky. You will get stuck if you try to make a copy of
 
 **Keep on reading**:
 
-- [☁ Integrate with Machine Learning APIs: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})
+- [☁ Use Machine Learning APIs on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-10-07-Integrate-with-Machine-Learning-APIs-Challenge-Lab %})

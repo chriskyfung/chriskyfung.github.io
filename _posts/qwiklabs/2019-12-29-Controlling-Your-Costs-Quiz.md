@@ -20,7 +20,7 @@ image:
   hide: true
 ---
 
-This post records the correct answers for the Qwiklabs quiz ["Knowledge Check: Controlling Your Costs search"](https://www.qwiklabs.com/quizzes/183), which is a part of the quest [_"Optimizing Your GCP Costs"_](https://www.qwiklabs.com/quests/97).
+This post records the correct answers for the Qwiklabs quiz ["Knowledge Check: Controlling Your Costs search"](https://www.cloudskillsboost.google/quizzes/183), which is a part of the quest [_"Optimize Your Google Cloud Costs"_](https://www.cloudskillsboost.google/course_templates/767).
 
 _Last update:_ _2020-04-29_
 

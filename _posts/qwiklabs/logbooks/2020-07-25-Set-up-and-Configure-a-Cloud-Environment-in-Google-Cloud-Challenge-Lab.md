@@ -22,7 +22,7 @@ css:
       table { width: 100%; max-width: 400px; margin-bottom: 1.5rem; }
 ---
 
-In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10603?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/119) exercise on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
+In this article, we will go through the lab **GSP321** _[Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/focuses/10603?parent=catalog)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/663) exercise on Qwiklabs. You will practice the skills and knowledge to deploy VPCs for development and production, a Kubernetes cluster, and a Cloud SQL instance for a WordPress site.
 
 **The challenge contains 9 required tasks:**
 
@@ -321,11 +321,11 @@ Create a 2 node cluster (n1-standard-4) called `griffin-dev`, in the `griffin-de
 **Keep on reading**:
 
 - [☁ Secure Workloads in Google Kubernetes Engine: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2021-02-23-secure-workloads-in-google-kubernetes-engine-challenge-lab %})
-- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build a Secure Google Cloud Network: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy Kubernetes Applications on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
 - [☁ Build a Website on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-01-Build-a-Website-on-Google-Cloud-Challenge-Lab %})
-- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
+- [☁ Migrate a MySQL Database to Google Cloud SQL: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
 
 **Useful external link**:
 
-- [VM Migration: Modernize an Application Stack with GKE and MySQL \| Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)
+- [VM Migration: Modernize an Application Stack with GKE and MySQL \| Qwiklabs](https://www.cloudskillsboost.google/focuses/6898?parent=catalog)

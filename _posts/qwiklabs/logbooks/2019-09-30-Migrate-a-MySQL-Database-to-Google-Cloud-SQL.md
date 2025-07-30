@@ -10,7 +10,7 @@ redirect_from:
    - /blog/2019/09/30/Migrate-a-MySQL-Database-to-Google-Cloud-SQL
    - /blog/qwiklabs/GSP306
    - /blog/qwiklabs/gsp306
-excerpt: A summary of Google Cloud self-paced training GSP306 "Migrate a MySQL Database to Google Cloud SQL" on Qwiklabs | 1. Check Existing WordPress Resources | 2. Create Cloud SQL Instance | 3. Export SQL Database | 4. Import to Cloud SQL | 5. Authorized Blog Instance to Access Cloud SQL | 6. Reconfigure WordPress to connect the Cloud SQL instance
+excerpt: This is a summary of Google Cloud self-paced training GSP306, covering 6 key steps, including Migrate SQL Database and Configure WordPress to Access Cloud SQL.
 image:
    path: /images/posts/qwiklabs/qwiklabs-GSP306-migrating-mysql-to-cloudsql-concepts-sequence.png
    width: "795"
@@ -19,7 +19,7 @@ css:
    syntax: true
 ---
 
-This is the last article of the series about the Qwiklabs quest **_"Challenge: GCP Architecture"_**. Compared to the previous labs, this one is more practical and also valuable for non-developers. We will touch a WordPress site in the lab **GSP306** _"[Migrate a MySQL Database to Google Cloud SQL](https://www.qwiklabs.com/focuses/1740?parent=catalog)"_ this time. It is useful if you are going to move or integrate your applications with flexible and scalable Cloud SQL service.
+This is the last article of the series about the Qwiklabs quest **_"Challenge: GCP Architecture"_**. Compared to the previous labs, this one is more practical and also valuable for non-developers. We will touch a WordPress site in the lab **GSP306** _"[Migrate a MySQL Database to Google Cloud SQL: Challenge Lab](https://www.cloudskillsboost.google/course_templates/640/labs/403988)"_ this time. It is useful if you are going to move or integrate your applications with flexible and scalable Cloud SQL service.
 
 An existing WordPress installation in the Compute Instance called `blog`, is already running in the lab. The blog is connecting with a MySQL database running on the same server. You need to migrate the local database to Google Cloud SQL and reconfigure WordPress to access the Cloud database instead.
 
@@ -205,7 +205,7 @@ sudo service apache2 status
 
 {% include picture.html height="682" img="qwiklabs/qwiklabs-GSP306-step2-Blog-Demo-wordpress-site.png" alt="Screenshot of the Blog-Demo Website" %}
 
-Congratulations! You should accomplish the lab if you follow the above steps. Also, you earned a badge if you completed the quest _"[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)"_. You become a cloud expert now!
+Congratulations! You should accomplish the lab if you follow the above steps. Also, you earned a badge if you completed the quest _"[Cloud Architecture: Design, Implement, and Manage](https://www.cloudskillsboost.google/course_templates/640)"_. You become a cloud expert now!
 
 This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/qwiklab-logbook-migrate-a-mysql-database-to-google-cloud-sql-7c129ba586c9).
 
@@ -220,4 +220,4 @@ Next time, I will try to write a review about different quests on Qwiklabs. See 
 
 **Useful external link**:
 
-- [VM Migration: Modernize an Application Stack with GKE and MySQL \| Qwiklabs](https://www.qwiklabs.com/focuses/6898?parent=catalog)
+- [VM Migration: Modernize an Application Stack with GKE and MySQL \| Qwiklabs](https://www.cloudskillsboost.google/focuses/6898?parent=catalog)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Engineer Data in Google Cloud: Challenge Lab | logbook"
+title: "☁ Engineer Data for Predictive Modeling with BigQuery ML: Challenge Lab | logbook"
 date: 2020-08-26 15:30 +0800
 categories: [Cloud]
 author: chris
@@ -18,7 +18,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP327** _[Engineer Data in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/12379?parent=catalog)_, which is an [expert-level](https://www.qwiklabs.com/quests/132) exercise on Qwiklabs. You will practice the skills and knowledge to build a prediction model of taxi fares using machine learning with BigQuery.
+In this article, we will go through the lab **GSP327** _[Engineer Data for Predictive Modeling with BigQuery ML: Challenge Lab](https://www.cloudskillsboost.google/course_templates/627/labs/403529)_, which is an [expert-level](https://www.cloudskillsboost.google/course_templates/627) exercise on Qwiklabs. You will practice the skills and knowledge to build a prediction model of taxi fares using machine learning with BigQuery.
 
 **The challenge contains 6 required tasks:**
 
@@ -32,7 +32,7 @@ In this task, you need to make a copy of `historical_taxi_rides_raw` to `taxi_tr
 
 {% include picture.html img="qwiklabs/qwiklab-gsp327-task1-taxirides-dataset.png" width="287" height="157" class="text-center" %}
 
-_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/1797?parent=catalog) on Qwiklabs_
+_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.cloudskillsboost.google/focuses/1797?parent=catalog) on Qwiklabs_
 
 Make sure that:
 
@@ -94,7 +94,7 @@ In this task, you need to:
 - Create a model called `taxirides.fare_model`
 - Train the model with an RMSE < 10
 
-_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.qwiklabs.com/focuses/1797?parent=catalog) on Qwiklabs_
+_**Hints**: Refer to the lab **GSP426** [Predict Taxi Fare with a BigQuery ML Forecasting Model](https://www.cloudskillsboost.google/focuses/1797?parent=catalog) on Qwiklabs_
 
 ### Create a model
 
@@ -204,7 +204,7 @@ At the end of the lab, your BigQuery dataset should contain the following tables
 
 ## <i class="far fa-play-circle"></i> Demonstration Video
 
-{% include youtube.html id="myYCfRS15fM" title="GSP327 Engineer Data in Google Cloud: Challenge Lab" %}
+{% include youtube.html id="myYCfRS15fM" title="GSP327 Engineer Data for Predictive Modeling with BigQuery ML: Challenge Lab" %}
 
 ```conf
 ⏱Timestamps:
@@ -219,5 +219,5 @@ At the end of the lab, your BigQuery dataset should contain the following tables
 
 **Keep on reading**:
 
-- [☁ Insights from Data with BigQuery: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
+- [☁ Derive Insights from BigQuery Data: Challenge Lab (COVID-19 Open Data) \| logbook]({% post_url qwiklabs/logbooks/2020-08-16-Insights-from-Data-with-BigQuery-Challenge-Lab %})
 - [☁ Explore Machine Learning Models with Explainable AI: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-09-20-Explore-Machine-Learning-Models-with-Explainable-AI-Challenge-Lab %})

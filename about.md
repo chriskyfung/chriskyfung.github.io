@@ -26,7 +26,7 @@ The research experience lets me know that programming and computer skills become
 <i class="fa fa-id-card-o"></i> **Public Profiles:**
 
 - <i class="fa fa-graduation-cap"></i> [**Google Scholar**](https://scholar.google.com.hk/citations?user=UxJpoYcAAAAJ)
-- <i class='fas fa-flask'></i> [**Qwiklabs**](https://www.qwiklabs.com/public_profiles/c2765684-379a-4aa7-89bc-0182cc5a01be)
+- <i class='fas fa-flask'></i> [**Qwiklabs**](https://www.cloudskillsboost.google/public_profiles/c2765684-379a-4aa7-89bc-0182cc5a01be)
 - <i class="fab fa-microsoft"></i> [**Microsoft Learn**](https://docs.microsoft.com/en-us/users/chriskyfung/)
 
 * * *

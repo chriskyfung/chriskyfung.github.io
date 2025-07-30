@@ -27,7 +27,7 @@ amp:
 
 <!--more-->
 
-Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %}) help you to finish the Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** _[Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/10379?parent=catalog)_ (formerly known as _Baseline Infrastructure: Challenge Lab_) is listed below.
+Did the hints from the [last article]({% post_url qwiklabs/logbooks/2020-04-24-Cloud-Architecture-Challenge-Lab %}) help you to finish the Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab? This time moves back to a very easy lab. A brief procedure for  **GSP315** _[Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/focuses/10379?parent=catalog)_ (formerly known as _Baseline Infrastructure: Challenge Lab_) is listed below.
 
 **The challenge contains 4 required tasks:**
 
@@ -91,7 +91,7 @@ Actually, would anyone need to read this guide? Because I think everybody can do
 
 ## Summary
 
-All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Create and Manage Cloud Resources: Challenge Lab]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
+All tasks can be done with the Cloud Console. There should be no difficulty for you to finish them. I think this lab is even simpler than [Implement Load Balancing on Compute Engine: Challenge Lab]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
 
 **9 credits!** Is this cheating money? I hope this beginner's guide to Qwiklabs will help you to get started. If you have any additional questions, feel free to ask me in the comments section below.
 

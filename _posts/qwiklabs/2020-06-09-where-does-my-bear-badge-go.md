@@ -20,16 +20,16 @@ Recently, I noticed that the Quest "Challenge: GCP Architecture" was no longer f
 {:.text-danger} {% comment %}<!-- markdownlint-disable-next-line MD022 -->{% endcomment %}
 ## Where does the bear badge go?
 
-In a nullshell, the quest (ID: 47) **Challenge: GCP Architecture** has been renamed to [Cloud Architecture - Design, Implement, and Manage](https://google.qwiklabs.com/quests/124). The URL also changed `/quests/124`. Therefore, it seems to be off-shelf. Indeed, All the labs in the quest remains unchanged. You record is still there but it is replaced with the new quest title and the new badge.
+In a nullshell, the quest (ID: 47) **Challenge: GCP Architecture** has been renamed to [Cloud Architecture: Design, Implement, and Manage](https://www.cloudskillsboost.google/course_templates/640). The URL also changed `/course_templates/640`. Therefore, it seems to be off-shelf. Indeed, All the labs in the quest remains unchanged. You record is still there but it is replaced with the new quest title and the new badge.
 
-{% include picture.html height="312" img="qwiklabs/where-the-Challenge-GCP-Architecture-badge-goes.png" alt="screenshot of the new badge for Challenge: GCP Architecture" caption="Became <i>Cloud Architecture - Design, Implement, and Manage</i> at the same position" %}
+{% include picture.html height="312" img="qwiklabs/where-the-Challenge-GCP-Architecture-badge-goes.png" alt="screenshot of the new badge for Challenge: GCP Architecture" caption="Became <i>Cloud Architecture: Design, Implement, and Manage</i> at the same position" %}
 
 **The Cookbooks of the Cloud Architecture Series**:
 
-- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
-- [☁ Deploy a Compute Instance with a Remote Startup Script \| logbook]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
+- [☁ Deploy and Troubleshoot a Website: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
+- [☁ Deploy a Compute Instance with a Remote Startup Script: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})
 - [☁ Configure a Firewall and a Startup Script with Deployment Manager \| logbook]({% post_url qwiklabs/logbooks/2019-09-23-Configure-a-Firewall-and-a-Startup-Script-with-Deployment-Manager %})
-- [☁ Configure Secure RDP using a Windows Bastion Host with Terraform \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})
-- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster \| logbook]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
-- [☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster \| logbook]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
-- [☁ Migrate a MySQL Database to Google Cloud SQL \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})
+- [☁ Configure Secure RDP using a Windows Bastion Host: Challenge Lab with Terraform \| logbook]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})
+- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
+- [☁ Scale Out and Update a Containerized Application on a Kubernetes Cluster: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-27-Scale-Out-and-Update-a-Containerized-Application-on-a-Kubernetes-Cluster %})
+- [☁ Migrate a MySQL Database to Google Cloud SQL: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-30-Migrate-a-MySQL-Database-to-Google-Cloud-SQL %})

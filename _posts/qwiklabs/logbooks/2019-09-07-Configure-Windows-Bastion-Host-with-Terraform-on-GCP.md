@@ -20,11 +20,11 @@ css:
   syntax: true
 ---
 
-The topic _"Configure Secure RDP using a Windows Bastion Host"_ is from a challenging lab that I took on Qwiklabs (here is the [link to the lab](https://www.qwiklabs.com/catalog?keywords=GSP303)). It was a tricky one that I failed and did a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
+The topic _"Configure Secure RDP using a Windows Bastion Host: Challenge Lab"_ is from a challenging lab that I took on Qwiklabs (here is the [link to the lab](https://www.cloudskillsboost.google/course_templates/640/labs/403985)). It was a tricky one that I failed and did a few times of retakes to accomplish it. If you face the same challenge, I hope this blog article would help you. I will share my codes with you for your reference.
 
 <!--more-->
 
-[Qwiklabs](https://www.qwiklabs.com) has over 400 hands-on labs and is a great online self-paced learning **Google Cloud Platform (GCP)**. Most exercises on Qwiklabs provide clear step-by-step instructions for you to follow and finish the labs, except a few Advanced Challenge Labs. Those labs are not easy because they do not offer the "cookbook" steps. You have to figure out the solutions by yourself as the exercises for students who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). The lab **GSP303** _"[Configure Secure RDP using a Windows Bastion Host](https://google.qwiklabs.com/focuses/1737?parent=catalog)"_ is one of the challenge exercises.
+[Google Cloud Skills Boost](https://www.cloudskillsboost.google/) (formly called Qwiklabs) has over 400 hands-on labs and is a great online self-paced learning **Google Cloud Platform (GCP)**. Most exercises on Qwiklabs provide clear step-by-step instructions for you to follow and finish the labs, except a few Advanced Challenge Labs. Those labs are not easy because they do not offer the "cookbook" steps. You have to figure out the solutions by yourself as the exercises for students who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). The lab **GSP303** _"[Configure Secure RDP using a Windows Bastion Host: Challenge Lab](https://www.cloudskillsboost.google/course_templates/640/labs/403985)"_ is one of the challenge exercises.
 
 ## Brief Introduction of Challenge Scenario
 
@@ -47,7 +47,7 @@ The screenshot above shows that there are six steps required for completing this
 
 6. The `vm-securehost` is running Microsoft IIS web server software.
 
-{% include youtube.html id="nyimrSBKpr8" title="Configure Secure RDP using a Windows Bastion Host" %}
+{% include youtube.html id="nyimrSBKpr8" title="Configure Secure RDP using a Windows Bastion Host: Challenge Lab" %}
 
 <br>
 
@@ -58,7 +58,7 @@ img="qwiklabs/qwiklabs-GSP303-diagram.png" alt="Schematic Diagram of the Secure 
 
 ## Deploy the infrastructure on GCP with Terraform
 
-If you are not familiar with Terraform, I recommend you learn or practice the Quest _"[Managing Cloud Infrastructure with Terraform](https://google.qwiklabs.com/quests/44)"_ before getting started.
+If you are not familiar with Terraform, I recommend you learn or practice the Quest _"[Managing Cloud Infrastructure with Terraform](https://www.cloudskillsboost.google/course_templates/746)"_ before getting started.
 
 ### Verifying Terraform Installation
 
@@ -272,5 +272,5 @@ This post has also been published to Medium. If you like to read and take notes 
 **See Also**:
 
 - [Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips]({% post_url qwiklabs/2019-11-25-Qwiklabs-User-Tips-for-Learning_Google_Cloud_Platform %})
-- [☁ Google Cloud Essential Skills: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
-- [☁ Build and Secure Networks in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})
+- [☁ Deploy and Troubleshoot a Website: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-18-Google-Cloud-Essential-Skills-Challenge-Lab %})
+- [☁ Build a Secure Google Cloud Network: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-08-11-Build-and-Secure-Networks-in-Google-Cloud-Challenge-Lab %})

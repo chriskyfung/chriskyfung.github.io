@@ -19,7 +19,7 @@ css:
    syntax: true
 ---
 
-Containerization with Docker and Kubernetes (K8s) is an emerging application architecture for deploying, scaling and, managing distributed applications. The challenge lab **GSP304** _"[Build and Deploy a Docker Image to a Kubernetes Cluster](https://www.qwiklabs.com/focuses/1738?parent=catalog)"_ is a test to assess the essential professional skills in deploying your application on GKE.
+Containerization with Docker and Kubernetes (K8s) is an emerging application architecture for deploying, scaling and, managing distributed applications. The challenge lab **GSP304** _"[Build and Deploy a Docker Image to a Kubernetes Cluster: Challenge Lab](https://www.cloudskillsboost.google/course_templates/640/labs/403986)"_ is a test to assess the essential professional skills in deploying your application on GKE.
 
 ## Brief Introduction of Challenge Scenario
 
@@ -50,7 +50,7 @@ I recommend starting from preparing the hardware because the process takes time.
 
 ## Build a Docker Image of Sample Application
 
-If you do not remember how to build a docker image on GCP, I recommend you revise the lab _"[Introduction to Docker](https://www.qwiklabs.com/focuses/1029?parent=catalog)"_ before you start.
+If you do not remember how to build a docker image on GCP, I recommend you revise the lab _"[Introduction to Docker](https://www.cloudskillsboost.google/focuses/1029?parent=catalog)"_ before you start.
 
 1. (_Optional_)  While the provisioning of lab resources, you may click the link below the timer to download the given archive called `echo-web.tar.gz`. You may spend some time studying the contained files in your local storage.
 

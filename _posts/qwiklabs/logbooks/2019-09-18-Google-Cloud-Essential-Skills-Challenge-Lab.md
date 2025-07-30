@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "☁ Google Cloud Essential Skills: Challenge Lab | logbook"
+title: "☁ Deploy and Troubleshoot a Website: Challenge Lab | logbook"
 author: chris
 date: 2019-09-18
 categories: [Cloud]
@@ -21,11 +21,11 @@ css:
 
 <!--more-->
 
-Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using a Windows Bastion Host with Terraform]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})"_ within the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://google.qwiklabs.com/quests/124)". Different from the normal hand-on-labs on Qwiklabs, the challenge labs do not provide step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
+Last time I wrote about a challenging lab entitled _"[Configure Secure RDP using a Windows Bastion Host: Challenge Lab with Terraform]({% post_url qwiklabs/logbooks/2019-09-07-Configure-Windows-Bastion-Host-with-Terraform-on-GCP %})"_ within the Qwiklabs quest of "[Cloud Architecture: Design, Implement, and Manage](https://www.cloudskillsboost.google/course_templates/640)". Different from the normal hand-on-labs on Qwiklabs, the challenge labs do not provide step-by-step cookbooks for you. Instead, only a scenario is given to you. So, you have to figure out the solutions by yourself as the exercises for who prepare for the [Google Cloud Certified Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect). Some of them are hard and tricky, and you cannot try the labs again and again (because each lab has a limited quota to attempt). So, I am going to make a logbook for each of the labs in the challenge quest. I hope the articles would help you if you get stuck with taking those labs.
 
-This time is about the easiest lab in the challenge quest -- **GSP101** _"[Google Cloud Essential Skills: Challenge Lab](https://google.qwiklabs.com/focuses/1734?parent=catalog)"_. It just asks you to set up a VM instance with running Apache webserver. **Pretty BASIC!** If you know how to do that, I recommend you to try your best. Do not read the rest of the article unless you really need some more Hints.
+This time is about the easiest lab in the challenge quest -- **GSP101** _"[Deploy and Troubleshoot a Website: Challenge Lab](https://www.cloudskillsboost.google/course_templates/640/labs/403989)"_. It just asks you to set up a VM instance with running Apache webserver. **Pretty BASIC!** If you know how to do that, I recommend you to try your best. Do not read the rest of the article unless you really need some more Hints.
 
-**Note**: Please DO NOT confuse the current lab with _GSP313 Create and Manage Cloud Resources: Challenge Lab_. If you're looking for that logbook, please [click on the link here]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
+**Note**: Please DO NOT confuse the current lab with _GSP313 Implement Load Balancing on Compute Engine: Challenge Lab_. If you're looking for that logbook, please [click on the link here]({% post_url qwiklabs/logbooks/2020-04-22-Google-Cloud-Essentials-Challenge-Lab %}).
 
 ## Brief Introduction of Challenge Scenario
 
@@ -62,7 +62,7 @@ img="qwiklabs/qwiklabs-GSP101-check-progress1-VM-created.png" alt="Check your pr
 
 ## Step 2 - Install Apache and Overwrite Default Web Page
 
-After the VM instance is really, you have to configure it as an Apache webserver. If you do not remember how to install Apache, I advise you to look up the **_command lines_** from the lab **GSP212** _"[VPC Flow Logs - Analyzing Network Traffic](https://www.qwiklabs.com/catalog?keywords=GSP212)"_.
+After the VM instance is really, you have to configure it as an Apache webserver. If you do not remember how to install Apache, I advise you to look up the **_command lines_** from the lab **GSP212** _"[VPC Flow Logs - Analyzing Network Traffic](https://www.cloudskillsboost.google/catalog?keywords=GSP212)"_.
 
 Keep inside the VM instances console, click **SSH** to launch a terminal, and connect to the `apache` instance. You will install the packages with the following command-lines.
 
@@ -104,7 +104,7 @@ This post has also been published to Medium. If you like to read and take notes 
 
 * * *
 
-Creating a Compute Engine instance as a web server using the web console is pretty basic. It is always a good start for you to build anything from scratch, and manually install packages via an SSH terminal. Alternatively, you can initialize identical instances with a startup script automatically, and you can practise it in the next lab, _[Qwiklab/Logbook: Deploy a Compute Instance with a Remote Startup Script]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})_.
+Creating a Compute Engine instance as a web server using the web console is pretty basic. It is always a good start for you to build anything from scratch, and manually install packages via an SSH terminal. Alternatively, you can initialize identical instances with a startup script automatically, and you can practise it in the next lab, _[Deploy a Compute Instance with a Remote Startup Script: Challenge Lab]({% post_url qwiklabs/logbooks/2019-09-20-Deploy-a-Compute-Instance-with-a-Remote-Startup-Script %})_.
 
 * * *
 

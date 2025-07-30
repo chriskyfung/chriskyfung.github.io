@@ -20,7 +20,7 @@ css:
    syntax: true
 ---
 
-In this article, we will go through the lab **GSP319** _[Build a Website on Google Cloud: Challenge Lab](https://www.qwiklabs.com/focuses/11765?parent=catalog)_, which is an [advanced-level](https://www.qwiklabs.com/quests/115) exercise on Qwiklabs. You will practice the skills and knowledge for website architectures available to be scalable with microservices on Google Kubernetes Engine.
+In this article, we will go through the lab **GSP319** _[Build a Website on Google Cloud: Challenge Lab](https://www.cloudskillsboost.google/focuses/11765?parent=catalog)_, which is an [advanced-level](https://www.cloudskillsboost.google/course_templates/638) exercise on Qwiklabs. You will practice the skills and knowledge for website architectures available to be scalable with microservices on Google Kubernetes Engine.
 
 **The challenge contains 6 required tasks:**
 
@@ -33,7 +33,7 @@ In this article, we will go through the lab **GSP319** _[Build a Website on Goog
 
 ## Task 1: Download the monolith code and build your container
 
-**Hint**: Refer and modify the procedures in the first two sections of the lab [Deploy Your Website on Cloud Run](https://www.qwiklabs.com/focuses/10445?parent=catalog)
+**Hint**: Refer and modify the procedures in the first two sections of the lab [Deploy Your Website on Cloud Run](https://www.cloudskillsboost.google/focuses/10445?parent=catalog)
 
 First of all, you need to clone the [project repository](https://github.com/googlecodelabs/monolith-to-microservices) from GitHub to your Cloud Shell environment.
 
@@ -66,7 +66,7 @@ In the Cloud Console, navigate to **Cloud Run** and wait for the successful buil
 
 ## Task 2: Create a kubernetes cluster and deploy the application
 
-**Hint**: Refer to in the lab [Deploy, Scale, and Update Your Website on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/10470?parent=catalog)
+**Hint**: Refer to in the lab [Deploy, Scale, and Update Your Website on Google Kubernetes Engine](https://www.cloudskillsboost.google/focuses/10470?parent=catalog)
 
 **Make sure that you:**
 
@@ -98,7 +98,7 @@ Wait till the GKE creates an external IP and a Load Balancer for the application
 
 ## Task 3: Create a containerized version of your Microservices
 
-**Hint**: Refer to the lab [Migrating a Monolithic Website to Microservices on Google Kubernetes Engine](https://www.qwiklabs.com/focuses/11953?parent=catalog)
+**Hint**: Refer to the lab [Migrating a Monolithic Website to Microservices on Google Kubernetes Engine](https://www.cloudskillsboost.google/focuses/11953?parent=catalog)
 
 **Make sure that you:**
 
@@ -218,5 +218,5 @@ Most steps in the exercise are identical to those in the lab **Migrating a Monol
 **Keep on reading**:
 
 - [☁ Set up and Configure a Cloud Environment in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-07-25-Set-up-and-Configure-a-Cloud-Environment-in-Google-Cloud-Challenge-Lab %})
-- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster \| logbook]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
-- [☁ Deploy to Kubernetes in Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
+- [☁ Build and Deploy a Docker Image to a Kubernetes Cluster: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2019-09-25-Build-and-Deploy-a-Docker-Image-to-a-Kubernetes-Cluster %})
+- [☁ Deploy Kubernetes Applications on Google Cloud: Challenge Lab \| logbook]({% post_url qwiklabs/logbooks/2020-05-04-Kubernetes-in-Google-Cloud-Challenge-Lab %})
