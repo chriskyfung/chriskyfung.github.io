@@ -37,4 +37,5 @@ Beforehand, you have to download the installers of **Android Studio** and **JDK7
 3. After setting up the JDK, run the Android Studio installer (it will take about 10 mins for installation).
 
 * * *
-<small>※ Updates: You can find the changelog of Android Studio from [http://tools.android.com/recent](http://tools.android.com/recent).</small>
+> **Note:**  
+> For the most recent information and updates, visit the [official Android Studio updates page](https://developer.android.com/latest-updates/).

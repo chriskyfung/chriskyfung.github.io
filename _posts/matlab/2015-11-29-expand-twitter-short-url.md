@@ -27,11 +27,13 @@ Sometimes I use MATLAB scripts to analyze Twitter posts. One issue is that Twitt
 
 ### The API for getting expanded or redirected URL
 
-The shorten URLs can be restored by using an online URL expander, called [expandurl™ API](http://expandurl.com/api.php). The REST endpoint URL is
+The shorten URLs can be restored by using an online URL expander, such as the (now-defunct) expandurl™ API. The REST endpoint URL was:
 
 ```bash
 http://expandurl.com/api/v1/
 ```
+
+> **NOTE:** The expandurl™ is no longer available, consider using alternative free URL expander APIs, such as [unshorten.me](https://unshorten.me/api), which provides similar functionality.
 
 The query string to get the JSON response looks like:
 

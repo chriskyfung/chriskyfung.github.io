@@ -223,7 +223,7 @@ A set of python scripts for manipulating Tumblr blogs
 
 - [How to add a custom Open Graph image tag to your tumblr blog](/blog/tumblr-tricks/how-to-add-a-custom-open-graph-image-tag-to-a-tumblr-blog)
 
-- [A Guide to the Best Tumblr Features for Bloggers](https://www.lifewire.com/tumblr-features-for-bloggers-3476404)
+- [Tumblr Features for Bloggers](https://www.thoughtco.com/tumblr-features-for-bloggers-3476404)
 
 - [Tumblr SEO: An Internet Marketers Guide to Owning Tumblr](https://elite-strategies.com/tumblr-seo/)
 
@@ -280,6 +280,6 @@ A set of python scripts for manipulating Tumblr blogs
 - [Customization with META - Build Themes](https://buildthemes.tumblr.com/ch3/customization)
 - [Removing "Open"/"Install the App" header toolbar from mobile Tumblr page : web_design](https://www.reddit.com/r/web_design/comments/3vtb1z/removing_openinstall_the_app_header_toolbar_from/)
 - [How to increase you Tumblr SEO. - How to increase you Tumblr SEO. - Nerd Ramblings](https://nerdramblings.tumblr.com/post/4388960162/how-to-increase-you-tumblr-seo)
-- [Tumblr Vs. Medium: Comparing Popular Blogging Platforms](https://www.lifewire.com/tumblr-vs-medium-comparing-popular-blogging-platforms-3485755)
+- [What's With New Blogging Platforms Like Medium? Should I Use One?](https://lifehacker.com/whats-with-new-blogging-platforms-like-medium-should-1518292181)
 
 This post has also been published to Medium. If you like to read and take notes in Medium, please visit [Medium (@chriskyfung)](https://medium.com/@chriskyfung/featured-tips-tricks-and-tools-for-tumblr-bloggers-2019-25c51fad73ee).

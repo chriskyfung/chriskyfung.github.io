@@ -111,7 +111,7 @@ _**Learn more**:_
 
 : A helper function to concatenate or merge structures with different field names.
 
-[For-Each](https://www.mathworks.com/matlabcentral/fileexchange/48729-for-each "File Exchange - MATLAB Central")
+[For-Each](https://blogs.mathworks.com/pick/2015/02/27/for-each/ "For Each » File Exchange Pick of the Week - MATLAB & Simulink")
 
 : A toolbox enables simple, readable, and powerful for-loops in MATLAB.
 
