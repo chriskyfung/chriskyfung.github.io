@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Aug 2025 17:54:32 +0800</pubDate>
-    <lastBuildDate>Wed, 27 Aug 2025 17:54:32 +0800</lastBuildDate>
+    <pubDate>Fri, 12 Sep 2025 12:23:30 +0800</pubDate>
+    <lastBuildDate>Fri, 12 Sep 2025 12:23:30 +0800</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -2424,15 +2424,21 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
   &lt;li&gt;In the Cloud Console, navigate to the &lt;strong&gt;BigQuery&lt;/strong&gt; page.&lt;/li&gt;
   &lt;li&gt;Click your &lt;em&gt;Project ID&lt;/em&gt; under the BigQuery Explorer, then click &lt;strong&gt;CREATE DATASET&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;Give the new dataset an ID (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford_policy_tracker&lt;/code&gt;), and click &lt;strong&gt;Create dataset&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add the &lt;a href=&quot;https://console.cloud.google.com/bigquery?p=bigquery-public-data&amp;amp;d=covid19_govt_response&amp;amp;page=dataset&quot;&gt;COVID 19 Government Response public dataset&lt;/a&gt; to the BigQuery Explorer by opening the link in your browser. \&lt;/p&gt;
+  &lt;li&gt;Add the &lt;a href=&quot;https://console.cloud.google.com/bigquery?p=bigquery-public-data&amp;amp;d=covid19_govt_response&amp;amp;page=dataset&quot;&gt;COVID 19 Government Response public dataset&lt;/a&gt; to the BigQuery Explorer by opening the link in your browser. \&lt;/li&gt;
+&lt;/ol&gt;
 
-    &lt;p class=&quot;callout&quot;&gt;Alternatively, you can click on &lt;strong&gt;+ ADD DATA&lt;/strong&gt; &amp;gt; &lt;strong&gt;Explore public datasets&lt;/strong&gt; then search for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford covid-19 government response tracker&lt;/code&gt;, click on the item. Then, click &lt;strong&gt;VIEW DATASET&lt;/strong&gt; on the detail page.&lt;/p&gt;
+&lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;Alternatively, you can click on &lt;strong&gt;+ ADD DATA&lt;/strong&gt; &amp;gt; &lt;strong&gt;Explore public datasets&lt;/strong&gt; then search for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford covid-19 government response tracker&lt;/code&gt;, click on the item. Then, click &lt;strong&gt;VIEW DATASET&lt;/strong&gt; on the detail page.&lt;/p&gt;
 
-    &lt;figure&gt;&lt;amp-img width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.webp&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;figure&gt;&lt;amp-img width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.webp&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;/figure&gt;
+
+&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Use a filter to find the table &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford_policy_tracker&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bigquery-public-data&lt;/code&gt; as shown below.&lt;/p&gt;
 
@@ -2459,7 +2465,9 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
 
     &lt;p&gt;Replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; with your dataset ID and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; to a table name you desired.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;RUN&lt;/strong&gt; to process the query.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click &lt;strong&gt;RUN&lt;/strong&gt; to process the query.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, read the section &lt;a href=&quot;https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#creating_a_partitioned_table_from_the_result_of_a_query&quot; title=&quot;Using data definition language statements \| BigQuery \| Google Cloud&quot;&gt;&lt;em&gt;Creating a partitioned table from the result of a query&lt;/em&gt;&lt;/a&gt; in the BigQuery documentation.&lt;/p&gt;
