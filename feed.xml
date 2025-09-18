@@ -5,9 +5,104 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Sep 2025 01:00:38 +0800</pubDate>
-    <lastBuildDate>Wed, 17 Sep 2025 01:00:38 +0800</lastBuildDate>
+    <pubDate>Thu, 18 Sep 2025 10:37:02 +0800</pubDate>
+    <lastBuildDate>Thu, 18 Sep 2025 10:37:02 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Securely Self-Host n8n with Docker, Traefik, and Cloudflare</title>
+        <description>&lt;p&gt;I’m a huge fan of &lt;a href=&quot;https://n8n.io/&quot;&gt;n8n&lt;/a&gt;, the powerful workflow automation tool. While self-hosting n8n offers great flexibility, I found the initial setup process could be complex and time-consuming. I wanted a simple, secure, and repeatable way to deploy my own n8n instance. That’s why I created &lt;strong&gt;n8n-stack&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m excited to share it with you today!&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-n8n-stack&quot;&gt;What is n8n-stack?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;n8n-stack&lt;/strong&gt; (officially &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n8n-traefik-cloudflared-stack&lt;/code&gt;) is a production-ready set of configuration files to help you self-host n8n using Docker or Podman. It comes with Traefik as a reverse proxy and is secured by Cloudflare Zero Trust, giving you a private and secure n8n environment.&lt;/p&gt;
+
+&lt;p&gt;The project is based on an excellent tutorial by &lt;a href=&quot;https://kjetilfuras.com/self-host-n8n-with-cloudflare-zero-trust/&quot;&gt;Kjetil Furas&lt;/a&gt;, but I’ve added my own tweaks and enhancements to make it even more robust and user-friendly for a seamless n8n self-hosting experience.&lt;/p&gt;
+
+&lt;p&gt;The stack includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;n8n:&lt;/strong&gt; The star of the show for all your automation needs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Traefik:&lt;/strong&gt; A modern reverse proxy to handle web traffic efficiently.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cloudflare Tunnel:&lt;/strong&gt; Securely exposes your n8n instance to the internet without opening firewall ports, thanks to Cloudflare Zero Trust.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-self-host-n8n-with-this-stack&quot;&gt;Why Self-Host n8n with This Stack?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Enhanced Security:&lt;/strong&gt; By using Cloudflare Tunnel, you don’t expose your server directly to the internet. All traffic is routed through Cloudflare’s secure network.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Simplified Management:&lt;/strong&gt; The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; files are pre-configured for a quick start.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cost-Effective:&lt;/strong&gt; Self-hosting can be cheaper than paid plans, especially if you already have a server.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Full Control:&lt;/strong&gt; You have complete control over your data, workflows, and the n8n environment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;key-features-of-n8n-stack&quot;&gt;Key Features of n8n-stack&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Docker and Podman Ready:&lt;/strong&gt; Includes compose files for both Docker and rootless Podman, so you can use your preferred container engine.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security Hardened:&lt;/strong&gt; The default configuration is enhanced for better security, such as using a file-based provider for Traefik.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Simple Backup and Restore:&lt;/strong&gt; A handy script is included to help you back up and restore your n8n data with ease.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clear Documentation:&lt;/strong&gt; Comprehensive documentation is available in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/docs&lt;/code&gt; directory to guide you through every step.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pinned Versions:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n8n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;traefik&lt;/code&gt; image versions are pinned to ensure stable and predictable deployments.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;getting-started-with-your-secure-n8n-instance&quot;&gt;Getting Started with Your Secure n8n Instance&lt;/h2&gt;
+
+&lt;p&gt;I’ve tried to make it as simple as possible to get up and running:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Clone the repository:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/chriskyfung/n8n-traefik-cloudflared-stack.git
+ &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;n8n-traefik-cloudflared-stack
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Follow the setup instructions:&lt;/strong&gt; The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md&lt;/code&gt; contains all the details for the initial configuration.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Choose your container engine:&lt;/strong&gt; Head over to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/docs&lt;/code&gt; directory and follow the specific guide for either Docker or Podman.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;let-me-know-what-you-think&quot;&gt;Let Me Know What You Think&lt;/h2&gt;
+
+&lt;p&gt;I built n8n-stack to solve my own n8n self-hosting challenges, and I hope it can be useful to others in the community. I’d love for you to check it out on GitHub, give it a try, and share your feedback.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/n8n-traefik-cloudflared-stack&quot;&gt;Check out the n8n-stack repository on GitHub&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m always open to feedback and contributions, so feel free to open an issue or a pull request!&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kjetilfuras.com/self-host-n8n-with-cloudflare-zero-trust/&quot;&gt;Self-Host n8n with Cloudflare Zero Trust and Docker&lt;/a&gt; by Kjetil Furas&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.n8n.io/&quot;&gt;n8n Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.traefik.io/traefik/&quot;&gt;Traefik Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/&quot;&gt;Cloudflare Zero Trust Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.podman.io/&quot;&gt;Podman Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/&quot;&gt;Docker Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 18 Sep 2025 09:09:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/secure-self-host-n8n-stack/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/secure-self-host-n8n-stack/</guid>
+        
+        <category>n8n</category>
+        
+        <category>self-hosting</category>
+        
+        <category>Docker</category>
+        
+        <category>Podman</category>
+        
+        <category>Traefik</category>
+        
+        <category>Cloudflare</category>
+        
+        
+        <category>Developer tools</category>
+        
+      </item>
     
       <item>
         <title>InstapaperScraper: Export Your Bookmarks to CSV Effortlessly</title>
@@ -2378,284 +2473,6 @@ gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;
         <pubDate>Wed, 14 Jul 2021 11:30:00 +0800</pubDate>
         <link>https://chriskyfung.github.io/blog/qwiklabs/serverless-firebase-development-challenge-lab</link>
         <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/serverless-firebase-development-challenge-lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>BigQuery</category>
-        
-        <category>Data Science</category>
-        
-        
-        <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Build a Data Warehouse with BigQuery: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP340&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.cloudskillsboost.google/course_templates/624/labs/403512&quot;&gt;GSP340 Build a Data Warehouse with BigQuery: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.cloudskillsboost.google/course_templates/624&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice how to create a day-partitioned table in BigQuery and populate data from different datasets, related to the Covid-19 pandemic.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use BigQuery to access public COVID and other demographic datasets.&lt;/li&gt;
-  &lt;li&gt;Create a new BigQuery dataset that will store your tables.&lt;/li&gt;
-  &lt;li&gt;Add a new date partitioned table to your dataset.&lt;/li&gt;
-  &lt;li&gt;Add new columns to this table with appropriate data types.&lt;/li&gt;
-  &lt;li&gt;Run a series of JOINS to populate these new columns with data drawn from other tables.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;task-1-create-a-table-partitioned-by-data&quot;&gt;Task 1: Create a table partitioned by data&lt;/h2&gt;
-
-&lt;p&gt;In this task, you will need to:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;create a new dataset&lt;/li&gt;
-  &lt;li&gt;create a table in that dataset&lt;/li&gt;
-  &lt;li&gt;set partition by date with an expiry of 90 days&lt;/li&gt;
-  &lt;li&gt;copy the schema from the source table&lt;/li&gt;
-  &lt;li&gt;copy the data from the source table for all countries except the United Kingdom (GBR), Brazil (BRA), Canada (CAN) and the United States (USA).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;In the Cloud Console, navigate to the &lt;strong&gt;BigQuery&lt;/strong&gt; page.&lt;/li&gt;
-  &lt;li&gt;Click your &lt;em&gt;Project ID&lt;/em&gt; under the BigQuery Explorer, then click &lt;strong&gt;CREATE DATASET&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Give the new dataset an ID (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford_policy_tracker&lt;/code&gt;), and click &lt;strong&gt;Create dataset&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Add the &lt;a href=&quot;https://console.cloud.google.com/bigquery?p=bigquery-public-data&amp;amp;d=covid19_govt_response&amp;amp;page=dataset&quot;&gt;COVID 19 Government Response public dataset&lt;/a&gt; to the BigQuery Explorer by opening the link in your browser. \&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
-    
-&lt;p&gt;Alternatively, you can click on &lt;strong&gt;+ ADD DATA&lt;/strong&gt; &amp;gt; &lt;strong&gt;Explore public datasets&lt;/strong&gt; then search for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford covid-19 government response tracker&lt;/code&gt;, click on the item. Then, click &lt;strong&gt;VIEW DATASET&lt;/strong&gt; on the detail page.&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.webp&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;868&quot; height=&quot;401&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-add-oxford-covid-19-governement-response-tracker.png&quot; alt=&quot;Oxford COVID 19 Government Response Tracker in GCP BigQuery public dataset&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use a filter to find the table &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oxford_policy_tracker&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bigquery-public-data&lt;/code&gt; as shown below.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1237&quot; height=&quot;696&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-oxford-policy-tracker-schema.webp&quot; alt=&quot;Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1237&quot; height=&quot;696&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task1-oxford-policy-tracker-schema.png&quot; alt=&quot;Schema of the BigQuery table `bigquery-public-data.covid19_govt_response.oxford_policy_tracker`&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;COMPOSE NEW QUERY&lt;/strong&gt;. Copy the following to the query editor,&lt;/p&gt;
-
-    &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REPLACE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oxford_policy_tracker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NEW_TABLE_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;PARTITION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;OPTIONS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;partition_expiration_days&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;oxford_policy_tracker table in the COVID 19 Government Response public dataset with  an expiry time set to 90 days.&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
-   &lt;span class=&quot;nv&quot;&gt;`bigquery-public-data.covid19_govt_response.oxford_policy_tracker`&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;alpha_3_code&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;GBR&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;BRA&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;CAN&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;USA&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;Replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; with your dataset ID and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; to a table name you desired.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;RUN&lt;/strong&gt; to process the query.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; To learn more, read the section &lt;a href=&quot;https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#creating_a_partitioned_table_from_the_result_of_a_query&quot; title=&quot;Using data definition language statements \| BigQuery \| Google Cloud&quot;&gt;&lt;em&gt;Creating a partitioned table from the result of a query&lt;/em&gt;&lt;/a&gt; in the BigQuery documentation.&lt;/p&gt;
-
-&lt;p&gt;If you are interested in the dataset, go to &lt;a href=&quot;https://www.bsg.ox.ac.uk/covidtracker&quot; title=&quot;COVID-19 Government Response Tracker \| Blavatnik School of Government&quot;&gt;www.bsg.ox.ac.uk/covidtracker&lt;/a&gt; to find more information about the OxCGRT research project. You can also visit the &lt;a href=&quot;https://github.com/OxCGRT/covid-policy-tracker&quot;&gt;OxCGRT/covid-policy-tracker&lt;/a&gt; repository on GitHub to get the CSV-formatted data for any other projects.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-2-add-new-columns-to-your-table&quot;&gt;Task 2: Add new columns to your table&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Read &lt;a href=&quot;https://cloud.google.com/bigquery/docs/managing-table-schemas#manually_adding_an_empty_column&quot; title=&quot;Modifying table schemas \| BigQuery&quot;&gt;&lt;em&gt;Manually adding an empty column&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#adding_columns&quot; title=&quot;Using data definition language statements \| BigQuery&quot;&gt;&lt;em&gt;Adding columns&lt;/em&gt;&lt;/a&gt;, and &lt;a href=&quot;https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#adding_a_record_column&quot; title=&quot;Using data definition language statements \| BigQuery&quot;&gt;&lt;em&gt;Adding a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RECORD&lt;/code&gt; column&lt;/em&gt;&lt;/a&gt; in the BigQuery documentation.&lt;/p&gt;
-
-&lt;p&gt;The query for adding columns to your table should look like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oxford_policy_tracker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;YOUR_TABLE_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INT64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FLOAT64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STRUCT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;avg_retail&lt;/span&gt;      &lt;span class=&quot;n&quot;&gt;FLOAT64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;avg_grocery&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;FLOAT64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;avg_parks&lt;/span&gt;       &lt;span class=&quot;n&quot;&gt;FLOAT64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;avg_transit&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;FLOAT64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;avg_workplace&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;FLOAT64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;avg_residential&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FLOAT64&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Before running the above query, replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; with your dataset ID and table name, correspondingly.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-3-add-country-population-data-to-the-population-column&quot;&gt;Task 3: Add country population data to the population column&lt;/h2&gt;
-
-&lt;p&gt;In this task, you need to populate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;population&lt;/code&gt; column in your table with the data in the table &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;covid_19_geographic_distribution_worldwide&lt;/code&gt; under the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;covid19_ecdc&lt;/code&gt; public dataset based on each country and date combination. You can use &lt;strong&gt;SQL JOINs&lt;/strong&gt; to bring the data together.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;: Read &lt;a href=&quot;https://cloud.google.com/bigquery/docs/reference/standard-sql/dml-syntax#update_using_joins&quot; title=&quot;Data manipulation language syntax \| BigQuery&quot;&gt;&lt;em&gt;UPDATE using joins&lt;/em&gt;&lt;/a&gt; in the BigQuery documentation as well as the template in the Challenge scenario provided by Qwiklabs.&lt;/p&gt;
-
-&lt;p&gt;We can divide this task into two steps:&lt;/p&gt;
-
-&lt;h3 id=&quot;create-a-new-table-to-store-the-country-population-data-from-european-center-for-disease-control-covid-19-public-dataset-table&quot;&gt;Create a new table to store the country population data from European Center for Disease Control COVID 19 public dataset table&lt;/h3&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REPLACE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oxford_policy_tracker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop_data_2019&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;country_territory_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pop_data_2019&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; 
-  &lt;span class=&quot;nv&quot;&gt;`bigquery-public-data.covid19_ecdc.covid_19_geographic_distribution_worldwide`&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;country_territory_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pop_data_2019&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;country_territory_code&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;use-sql-joins-to-fill-the-population-data-to-your-table&quot;&gt;Use SQL JOINs to fill the population data to your table&lt;/h3&gt;
-
-&lt;p&gt;The query for the &lt;strong&gt;SQL JOIN&lt;/strong&gt; should look like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt;
-   &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.&amp;lt;YOUR_TABLE_NAME&amp;gt;`&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop_data_2019&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
-   &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.pop_data_2019`&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;CONCAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha_3_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONCAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_territory_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Before running the above query, replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; with your dataset ID and table name, correspondingly.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-4-add-country-area-data-to-the-country_area-column&quot;&gt;Task 4: Add country area data to the country_area column&lt;/h2&gt;
-
-&lt;p&gt;Similar to Task 3, using a join to populate country area data from the table &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;country_names_area&lt;/code&gt; under the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;census_bureau_international&lt;/code&gt; public dataset.&lt;/p&gt;
-
-&lt;p&gt;The query for the SQL JOIN should look like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt;
-   &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.&amp;lt;YOUR_TABLE_NAME&amp;gt;`&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
-   &lt;span class=&quot;nv&quot;&gt;`bigquery-public-data.census_bureau_international.country_names_area`&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Before running the above query, replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; with your dataset ID and table name, correspondingly.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-5-populate-the-mobility-record-data&quot;&gt;Task 5: Populate the mobility record data&lt;/h2&gt;
-
-&lt;p&gt;Still using a join clause, you need to handle the structured RECORD of the mobility data.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; Read &lt;a href=&quot;https://cloud.google.com/bigquery/docs/reference/standard-sql/dml-syntax#update_nested_fields&quot;&gt;&lt;em&gt;UPDATE nested fields&lt;/em&gt;&lt;/a&gt; in the BigQuery documentation as well as the &lt;strong&gt;Tips and Tricks&lt;/strong&gt; section provided on the Qwiklabs.&lt;/p&gt;
-
-&lt;p&gt;Before joining the nested data, you have to transform the data from the table &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mobility_report&lt;/code&gt; under the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;covid19_google_mobility&lt;/code&gt; public dataset. You are required to compute the average value of each child column in the source table for each country and date combination. Then, update the resulting data to the record structure in your working table.&lt;/p&gt;
-
-&lt;p&gt;The query for updating the mobility record should look like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt;
-   &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.&amp;lt;YOUR_TABLE_NAME&amp;gt;`&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_retail&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_retail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_grocery&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_grocery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_parks&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_parks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_transit&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_transit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_workplace&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_workplace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_residential&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;avg_residential&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_region&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;AVG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;retail_and_recreation_percent_change_from_baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;avg_retail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;AVG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grocery_and_pharmacy_percent_change_from_baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;avg_grocery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;AVG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parks_percent_change_from_baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;avg_parks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;AVG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transit_stations_percent_change_from_baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;avg_transit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;AVG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;workplaces_percent_change_from_baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;avg_workplace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;AVG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;residential_percent_change_from_baseline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;avg_residential&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bigquery-public-data.covid19_google_mobility.mobility_report`&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_region&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;CONCAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONCAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_region&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Before running the above query, replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; with your dataset ID and table name, correspondingly.&lt;/p&gt;
-
-&lt;h2 id=&quot;task-6-query-missing-data-in-population--country_area-columns&quot;&gt;Task 6: Query missing data in population &amp;amp; country_area columns&lt;/h2&gt;
-
-&lt;p&gt;You will need to find the countries that are missing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;population&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;country_area&lt;/code&gt;. The result should be a list of the countries ordered by country name. If a country misses both the population and country area, it should appear twice in the list.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; The &lt;strong&gt;SQL UNION ALL&lt;/strong&gt; operator is recommended in the &lt;strong&gt;Tips and Tricks&lt;/strong&gt; section provided on the Qwiklabs. It combines the result of two queries without removing the overlapping results. Read &lt;a href=&quot;https://www.sqlshack.com/sql-union-vs-union-all-in-sql-server/&quot; title=&quot;SQL Union vs Union All in SQL Server \| sqlshack.com&quot;&gt;this SQLShank article&lt;/a&gt;, if you want to understand the difference between the &lt;strong&gt;SQL UNION&lt;/strong&gt; and &lt;strong&gt;UNION ALL&lt;/strong&gt; operators.&lt;/p&gt;
-
-&lt;p&gt;First, try to run the following to query the countries that do not have the population data.&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.&amp;lt;YOUR_TABLE_NAME&amp;gt;`&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Next, try to run the following to query the countries that do not have the country area data.&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.&amp;lt;YOUR_TABLE_NAME&amp;gt;`&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The results above contain duplicate rows if you carefully observe them. Refine the queries by adding the &lt;strong&gt;DISTINCT&lt;/strong&gt; option to remove any duplicates. Also, keep only the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;country_name&lt;/code&gt; column in the results by unselecting the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;population&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;country_area&lt;/code&gt; columns. Last, combine the two queries using &lt;strong&gt;UNION ALL&lt;/strong&gt; and order by country name. The final query should become like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.&amp;lt;YOUR_TABLE_NAME&amp;gt;`&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`oxford_policy_tracker.&amp;lt;YOUR_TABLE_NAME&amp;gt;`&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ASC&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR_DATASET_ID&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;NEW_TABLE_NAME&amp;gt;&lt;/code&gt; with your dataset ID and table name, and run the query. The result should be:&lt;/p&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;556&quot; height=&quot;459&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task6-union-result-v2.webp&quot; alt=&quot;Output of Union ALL&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;556&quot; height=&quot;459&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp340-task6-union-result-v2.png&quot; alt=&quot;Output of Union ALL&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-C49jYtIMAsg&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;C49jYtIMAsg&quot; title=&quot;GSP340 Build a Data Warehouse with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-title=&quot;GSP340 Build a Data Warehouse with BigQuery: Challenge Lab (UPDATED ON JUNE 2021)&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;amp-img src=&quot;https://i.ytimg.com/vi/C49jYtIMAsg/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=C49jYtIMAsg&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱&lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;:
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lab&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partitioned&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;55&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;53&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;area&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Populate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mobility&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;record&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;03&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;55&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Query&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;missing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;population&lt;/span&gt; &amp;amp; &lt;span class=&quot;n&quot;&gt;country_area&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep on reading:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/Insights-from-Data-with-BigQuery-Challenge-Lab&quot;&gt;☁ Derive Insights from BigQuery Data: Challenge Lab (COVID-19 Open Data) | logbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 25 Jun 2021 10:30:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/build-and-optimize-data-warehouses-with-bigquery-challenge-lab</guid>
         
         <category>Qwiklabs</category>
         
