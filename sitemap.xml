@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://chriskyfung.github.io/blog/2014/06/13/How-to-Send-a-Notification-from-a-LAMMPS-Simulation-to-Your-Email</loc>
-<lastmod>2014-06-13T00:00:00+08:00</lastmod>
+<lastmod>2025-09-19T13:09:00+08:00</lastmod>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/blog/2014/07/04/Creating-an-array-of-SJR-widget-for-visual-comparison-of-journal-ranks</loc>
@@ -285,13 +285,16 @@
 <loc>https://chriskyfung.github.io/tag/lammps/</loc>
 </url>
 <url>
-<loc>https://chriskyfung.github.io/tag/email/</loc>
-</url>
-<url>
-<loc>https://chriskyfung.github.io/tag/command-line/</loc>
+<loc>https://chriskyfung.github.io/tag/notification/</loc>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/molecular-dynamics/</loc>
+</url>
+<url>
+<loc>https://chriskyfung.github.io/tag/automation/</loc>
+</url>
+<url>
+<loc>https://chriskyfung.github.io/tag/scripting/</loc>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/journal-ranks/</loc>
@@ -304,6 +307,9 @@
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/bash/</loc>
+</url>
+<url>
+<loc>https://chriskyfung.github.io/tag/command-line/</loc>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/tag/research/</loc>
@@ -553,14 +559,14 @@
 </url>
 <url>
 <loc>https://chriskyfung.github.io/google0274dbf4a33f8f07.html</loc>
-<lastmod>2025-09-18T10:36:55+08:00</lastmod>
+<lastmod>2025-09-19T15:17:30+08:00</lastmod>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/images/projects/qwiklabs-quests-map.html</loc>
-<lastmod>2025-09-18T10:36:56+08:00</lastmod>
+<lastmod>2025-09-19T15:17:30+08:00</lastmod>
 </url>
 <url>
 <loc>https://chriskyfung.github.io/yandex_3e10a2d0cfd334f2.html</loc>
-<lastmod>2025-09-18T10:36:56+08:00</lastmod>
+<lastmod>2025-09-19T15:17:30+08:00</lastmod>
 </url>
 </urlset>
