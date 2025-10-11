@@ -5,9 +5,264 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Oct 2025 12:26:19 +0800</pubDate>
-    <lastBuildDate>Thu, 02 Oct 2025 12:26:19 +0800</lastBuildDate>
+    <pubDate>Sat, 11 Oct 2025 16:11:53 +0800</pubDate>
+    <lastBuildDate>Sat, 11 Oct 2025 16:11:53 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Supercharge Your Learning: A Free Userscript to Track Google Cloud Skills Boost Progress</title>
+        <description>
+&lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;
+&lt;i class=&quot;fas fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Looking for an older version?
+&lt;/div&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;This post is for &lt;strong&gt;v3.0 and later&lt;/strong&gt;, which supports the new &lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt; platform. If you are looking for the archived post for the old Qwiklabs platform (v2.x), you can find it here: &lt;a href=&quot;/blog/qwiklabs/userscript-for-labelling-completed-qwiklabs-v2&quot; class=&quot;alert-link&quot;&gt;Userscript for Qwiklabs v2.0 (Archived)&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cloudskillsboost.google/&quot;&gt;&lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt;&lt;/a&gt; (formerly Qwiklabs) is a fantastic platform for gaining hands-on experience with Google Cloud. With hundreds of labs and courses, it’s a go-to resource for anyone serious about advancing their cloud skills.&lt;/p&gt;
+
+&lt;p&gt;But if you’re an active user like me, you’ve probably faced a common challenge: it’s hard to remember which labs you’ve already finished. To solve this, I created the &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker&quot;&gt;Qwiklabs Lab Completion Tracker&lt;/a&gt;&lt;/strong&gt;, a free userscript designed to streamline your learning journey.&lt;/p&gt;
+
+&lt;p&gt;This simple script runs in your browser with an extension like Tampermonkey (available for Chrome, Firefox, Edge, and others). It enhances the Google Cloud Skills Boost website by adding clear visual indicators, so you can see your progress at a glance.&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;217&quot; height=&quot;40&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-key-features&quot;&gt;🚀 Key Features&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Completion Markers&lt;/strong&gt;: Automatically adds a green checkmark (&lt;i class=&quot;fa fa-check-circle&quot; style=&quot;color:green&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;) next to completed labs and courses, so you never have to guess what you’ve already done.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“New” Badges&lt;/strong&gt;: Instantly spot new labs and courses with an orange “New” badge (&lt;span role=&quot;img&quot; aria-label=&quot;NEW&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; enable-background=&quot;new 0 0 24 24&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24px&quot; height=&quot;24px&quot; fill=&quot;orange&quot;&gt;&lt;g&gt;&lt;rect fill=&quot;none&quot; height=&quot;24&quot; width=&quot;24&quot; x=&quot;0&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;g&gt;&lt;g&gt;&lt;g&gt;&lt;path d=&quot;M20,4H4C2.89,4,2.01,4.89,2.01,6L2,18c0,1.11,0.89,2,2,2h16c1.11,0,2-0.89,2-2V6C22,4.89,21.11,4,20,4z M8.5,15H7.3 l-2.55-3.5V15H3.5V9h1.25l2.5,3.5V9H8.5V15z M13.5,10.26H11v1.12h2.5v1.26H11v1.11h2.5V15h-4V9h4V10.26z M20.5,14 c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1V9h1.25v4.51h1.13V9.99h1.25v3.51h1.12V9h1.25V14z&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;) that have been added since your last sync.
+&lt;!-- Pending feature --&gt;
+&lt;!--  - **Automatic Database Updates**: Keeps your local progress database in sync by fetching your latest activity from your public profile page. --&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;One-Click Sync&lt;/strong&gt;: Manually trigger a database update with the sync button (&lt;i class=&quot;fas fa-sync-alt&quot; style=&quot;transform: rotate(50deg) scaleY(-1);&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;) on your Progress page.
+&lt;!-- Pending feature --&gt;
+&lt;!-- -**Data Export/Import**: Easily back up and restore your progress data in JSON format. --&gt;
+&lt;!-- Pending feature --&gt;
+&lt;!-- **Cross-Browser Sync**: Sync your progress across different browsers using a Gist. --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;-screenshots&quot;&gt;📸 Screenshots&lt;/h3&gt;
+
+&lt;p&gt;The script adds helpful visual cues across the Google Cloud Skills Boost website.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center mb-4&quot;&gt;&lt;amp-img width=&quot;1174&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-catalog-page-demo.webp&quot; alt=&quot;Screenshot of the Google Cloud Skills Boost catalog page with completion markers&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1174&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-catalog-page-demo.png&quot; alt=&quot;Screenshot of the Google Cloud Skills Boost catalog page with completion markers&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Status icons on the Catalog and Search pages&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;text-center mb-4&quot;&gt;&lt;amp-img width=&quot;544&quot; height=&quot;359&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-lab-page-demo.webp&quot; alt=&quot;Screenshot of a Lab page with a completion marker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;544&quot; height=&quot;359&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-lab-page-demo.png&quot; alt=&quot;Screenshot of a Lab page with a completion marker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;A clear completion marker on a lab page&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;sync-and-manage-your-data&quot;&gt;Sync and Manage Your Data&lt;/h3&gt;
+
+&lt;p&gt;Managing your progress is simple. Just visit your Progress page and use the one-click sync button to update your local database with your latest completions.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center mb-4&quot;&gt;&lt;amp-img width=&quot;1174&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-progress-page-demo.webp&quot; alt=&quot;Screenshot of the Profile page showing the script&amp;#39;s management features&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1174&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-progress-page-demo.png&quot; alt=&quot;Screenshot of the Profile page showing the script&amp;#39;s management features&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Management tools on your Progress page&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;changelog&quot;&gt;Changelog&lt;/h3&gt;
+
+&lt;p&gt;For a detailed list of updates and new features, check out the &lt;a href=&quot;/blog/qwiklabs/qwiklab-completion-tracker-versions&quot;&gt;Version History&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;h3 id=&quot;future-plans&quot;&gt;Future Plans&lt;/h3&gt;
+
+&lt;p&gt;This script is actively maintained, and I’m always looking for ways to improve it. You can follow the project’s progress, report bugs, or suggest new features on the &lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/issues/&quot;&gt;GitHub Issues&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;See Also&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/qwiklabs/qwiklabs-user-tips-for-learning-google-cloud-platform&quot;&gt;Learning Google Cloud Platform on Qwiklabs: Learning Map, Assistive Tool and Tips&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 11 Oct 2025 15:10:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/qwiklabs/google-cloud-skills-boost-progress-tracker/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/google-cloud-skills-boost-progress-tracker/</guid>
+        
+        <category>Qwiklabs</category>
+        
+        <category>Google Cloud</category>
+        
+        <category>Google Cloud Skills Boost</category>
+        
+        <category>Userscript</category>
+        
+        
+        <category>Project</category>
+        
+        <category>Cloud</category>
+        
+      </item>
+    
+      <item>
+        <title>Qwiklabs Lab Completion Tracker - Version History</title>
+        <description>&lt;p&gt;This page provides a detailed version history for the &lt;strong&gt;Qwiklabs Lab Completion Tracker&lt;/strong&gt; userscript. It documents the evolution of the script, from its initial release to the latest updates, detailing new features, improvements, and bug fixes designed to help users track their learning progress on &lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt; (formerly &lt;strong&gt;Qwiklabs&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;amp-img src=&quot;https://img.shields.io/github/v/release/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;94&quot; height=&quot;20&quot; alt=&quot;GitHub release (latest by date)&quot;&gt;&lt;/amp-img&gt;
+&lt;amp-img src=&quot;https://img.shields.io/badge/License-GPLv3-blue.svg&quot; width=&quot;96&quot; height=&quot;20&quot; alt=&quot;License: GPL v3&quot;&gt;&lt;/amp-img&gt;
+&lt;amp-img src=&quot;https://img.shields.io/github/issues-raw/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;92&quot; height=&quot;20&quot; alt=&quot;GitHub issues&quot;&gt;&lt;/amp-img&gt;
+
+&lt;p&gt;&lt;i class=&quot;fas fa-chevron-circle-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;a href=&quot;/blog/qwiklabs/google-cloud-skills-boost-progress-tracker/&quot;&gt;Back to the main post&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;152&quot; height=&quot;28&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;v300---migration-to-google-cloud-skills-boost-&quot;&gt;v3.0.0 - Migration to Google Cloud Skills Boost &lt;span role=&quot;img&quot; aria-label=&quot;Rocket emoji&quot;&gt;🚀&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2025-10-04&quot;&gt;2025-10-04&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;This major release marks a significant milestone, migrating the entire script to support the platform’s rebranding from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qwiklabs.com&lt;/code&gt; to the new &lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudskillsboost.google&lt;/code&gt;). This was a critical update to ensure continued functionality for all users. Beyond the migration, this version introduced several key enhancements. The script now automatically creates records for new activities, improving tracking on catalog search results. Under the hood, significant refactoring was done to improve robustness, readability, and security by avoiding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; and centralizing ID extraction.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Full migration from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qwiklabs.com&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudskillsboost.google&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Features&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Automatically create records for unregistered activities.&lt;/li&gt;
+      &lt;li&gt;Improve activity tracking for catalog search results.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fixes&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Improve robustness with null checks for DOM elements.&lt;/li&gt;
+      &lt;li&gt;Improve main function’s error logging.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Refactoring&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Improve script robustness, readability, and security by avoiding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;Centralize ID extraction using named groups in the router.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;v210---enhanced-profile-page-and-routing&quot;&gt;v2.1.0 - Enhanced Profile Page and Routing&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-10-14&quot;&gt;2021-10-14&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;This release enhanced the profile page with several key features. Pagination was added to allow browsing of the entire activity history. Visual cues, such as warning icons for unrecognized labs and a red background for failed ones, were introduced to make it easier to identify items requiring attention.&lt;/p&gt;
+
+&lt;p&gt;The main function was also refactored to use a more robust routing system, improving code maintainability and structure.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;v207---styling-and-bug-fixes&quot;&gt;v2.0.7 - Styling and Bug Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-10-13&quot;&gt;2021-10-13&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;This maintenance release included styling adjustments to align with a new activity card design on Qwiklabs. It also addressed several bugs related to the database update feature to improve its reliability.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;v20---revamp-for-new-qwiklabs-web-design-&quot;&gt;v2.0 - Revamp for New Qwiklabs Web Design &lt;span role=&quot;img&quot; aria-label=&quot;Helicopter emoji&quot;&gt;🚁&lt;/span&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-30&quot;&gt;2021-09-30&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;Following a major platform redesign by Qwiklabs in late September 2021, this version was released with a significant code rewrite to ensure compatibility with the new user interface. This update restored all core features of the tracker.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;v10---fix-the-change-in-my-learning-url&quot;&gt;v1.0 - Fix the Change in My Learning URL&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-18&quot;&gt;2021-09-18&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Replaced &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/profile/activity&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Changed the CSS selector and Regular Expression to look up the total number of activities.&lt;/li&gt;
+  &lt;li&gt;Do not support pages with a URL starting with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;v055---improved-activity-name-recognition&quot;&gt;v0.5.5 - Improved Activity Name Recognition&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-05-04&quot;&gt;2021-05-04&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;To address parsing issues with activity names containing special characters, this release improved data integrity by using the unique lab/quest ID as the primary key for database updates, rather than relying on the activity name.&lt;/p&gt;
+
+&lt;h2 id=&quot;v054---fix-the-change-in-my-learning-layout&quot;&gt;v0.5.4 - Fix the Change in My Learning Layout&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-04-09&quot;&gt;2021-04-09&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added a quick link to view all &lt;strong&gt;My Learning Activity&lt;/strong&gt; results&lt;/li&gt;
+  &lt;li&gt;Revised the way to update the database records with the new format of learning activity data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;v052--v053---adapting-to-ui-changes&quot;&gt;v0.5.2 &amp;amp; v0.5.3 - Adapting to UI Changes&lt;/h2&gt;
+
+&lt;p&gt;These minor updates were released to maintain compatibility with Qwiklabs’ evolving design. They included the removal of code for deprecated pages and adjustments to correctly parse the new &lt;strong&gt;Catalog&lt;/strong&gt; and &lt;strong&gt;My Learning Activity&lt;/strong&gt; table layouts.&lt;/p&gt;
+
+&lt;h2 id=&quot;v051&quot;&gt;v0.5.1&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-06-14&quot;&gt;2020-06-14&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;A one-click sync button was introduced to improve user experience. This feature allows for an instant update of all lab and quest statuses in the local database, eliminating the need for manual checks.&lt;/p&gt;
+
+&lt;h2 id=&quot;v050&quot;&gt;v0.5.0&lt;/h2&gt;
+
+&lt;p&gt;This foundational update migrated data storage from a simple markup-based system to &lt;strong&gt;IndexedDB&lt;/strong&gt;, resulting in more efficient and scalable data handling. A significant portion of the codebase was also refactored to use modern &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;async/await&lt;/code&gt; syntax, improving readability and maintainability.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;for-v048-or-earlier&quot;&gt;For v0.4.8 or Earlier&lt;/h2&gt;
+
+&lt;p&gt;Early versions of the script relied on a manually maintained list of completed labs stored within the userscript. The primary feature was a green check-circle (&lt;i class=&quot;fa fa-check-circle&quot; style=&quot;color:green&quot;&gt;&lt;/i&gt;) added to completed items on catalog pages to simplify progress tracking.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-catalog-page-old.webp&quot; alt=&quot;Green Check Mark and Highlight displays on Qwiklabs Catalog Page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-catalog-page-old.png&quot; alt=&quot;Green Check Mark and Highlight displays on Qwiklabs Catalog Page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the Qwiklabs catalog page (For version &amp;lt; 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;v048---support-tracking-home-and-my-learning-pages&quot;&gt;v0.4.8 - Support Tracking “Home” and “My Learning” Pages&lt;/h3&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-06-06&quot;&gt;2020-06-06&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;Tracking support was extended to the &lt;strong&gt;Home&lt;/strong&gt; and &lt;strong&gt;My Learning&lt;/strong&gt; pages. This version also introduced &lt;strong&gt;NEW&lt;/strong&gt; badges and yellow highlights for activities not yet present in the database, making it easier to identify new content.&lt;/p&gt;
+
+&lt;h3 id=&quot;v045&quot;&gt;v0.4.5&lt;/h3&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-05-20&quot;&gt;2020-05-20&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;This version introduced visual highlights for completed items to improve visibility. Annotations were extended to the “Your Favorites” section, and colored backgrounds were added to tables on the “Completed Courses” and “Completed Labs” pages for easier scanning. To help distinguish between different activity types, a purple highlight was added for game records.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+   &lt;figure class=&quot;col-md-6 text-center mb-4&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;339&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-courses-table.webp&quot; alt=&quot;Markers and Highlights on Completed Courses&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;339&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-courses-table.png&quot; alt=&quot;Markers and Highlights on Completed Courses&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the &lt;i&gt;Completed Courses&lt;/i&gt; page (For version &amp;gt;= 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
+
+   &lt;figure class=&quot;col-md-6 text-center mb-4&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;337&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-labs-table.webp&quot; alt=&quot;Markers and Highlights on Completed Labs pages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;337&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-labs-table.png&quot; alt=&quot;Markers and Highlights on Completed Labs pages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the &lt;i&gt;Completed Labs&lt;/i&gt; page (For version &amp;gt;= 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;/div&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Sat, 11 Oct 2025 14:10:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</guid>
+        
+        <category>Qwiklabs</category>
+        
+        <category>Google Cloud</category>
+        
+        <category>Google Cloud Skills Boost</category>
+        
+        <category>Userscript</category>
+        
+        <category>Changelog</category>
+        
+        
+        <category>Cloud</category>
+        
+        <category>Project</category>
+        
+      </item>
     
       <item>
         <title>Securely Self-Host n8n with Docker, Traefik, and Cloudflare</title>
@@ -1380,166 +1635,6 @@ Happy coding! 🚀&lt;/p&gt;
       </item>
     
       <item>
-        <title>Qwiklabs Lab Completion Tracker - Version History</title>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;amp-img src=&quot;https://img.shields.io/github/v/release/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;94&quot; height=&quot;20&quot; alt=&quot;GitHub release (latest by date)&quot;&gt;&lt;/amp-img&gt;
-&lt;amp-img src=&quot;https://img.shields.io/badge/License-GPLv3-blue.svg&quot; width=&quot;96&quot; height=&quot;20&quot; alt=&quot;License: GPL v3&quot;&gt;&lt;/amp-img&gt;
-&lt;amp-img src=&quot;https://img.shields.io/github/issues-raw/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;92&quot; height=&quot;20&quot; alt=&quot;GitHub issues&quot;&gt;&lt;/amp-img&gt;
-
-&lt;p&gt;&lt;i class=&quot;fas fa-chevron-circle-left&quot;&gt;&lt;/i&gt; &lt;a href=&quot;/blog/qwiklabs/userscript-for-labelling-completed-qwiklabs&quot;&gt;Userscript for Qwiklabs Completion Tracking&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;152&quot; height=&quot;28&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;v20---revamp-for-new-qwiklabs-web-design-&quot;&gt;v2.0 - Revamp for New Qwiklabs Web Design 🚁&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-30&quot;&gt;2021-09-30&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;Qwiklabs made a significant change in its web design at the end of September 2021. It broke most of the features in our previous versions. I’d made an effort to revise and update the code to keep up with the latest Qwiklabs web design. Today, I’m happy to announce the release the version 2.0 of our Qwiklabs Lab Completion Tracker.&lt;/p&gt;
-
-&lt;h3 id=&quot;-screenshots-of-major-changes-in-v20&quot;&gt;🖼 Screenshots of Major Changes in v2.0&lt;/h3&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;1326&quot; height=&quot;492&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/card-annotations-by-qwiklabs-lab-completion-tracker_1326x492-o128.webp&quot; alt=&quot;Card annotations on Qwiklabs Home page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1326&quot; height=&quot;492&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/card-annotations-by-qwiklabs-lab-completion-tracker_1326x492-o128.png&quot; alt=&quot;Card annotations on Qwiklabs Home page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Status icons are inserted under the progress bar of activity cards on Qwiklabs Home page&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;1384&quot; height=&quot;585&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/features-in-qwiklabs-activities-tab_1384x585-o128.webp&quot; alt=&quot;Add-ons features on Qwiklabs Profile page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1384&quot; height=&quot;585&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/features-in-qwiklabs-activities-tab_1384x585-o128.png&quot; alt=&quot;Add-ons features on Qwiklabs Profile page by Lab Completion Tracker&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;The &lt;q&gt;Update database records&lt;/q&gt; and &lt;q&gt;View last 100 records&lt;/q&gt; add-ons buttons on Qwiklabs Profile page&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;v10---fix-the-change-in-my-learning-url&quot;&gt;v1.0 - Fix the Change in My Learning URL&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-18&quot;&gt;2021-09-18&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Replaced &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/profile/activity&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Changed the CSS selector and Regular Expression to look up the total number of activities.&lt;/li&gt;
-  &lt;li&gt;Do not support pages with a URL starting with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v055---fix-not-recognize-activity-names-that-contains-colons-&quot;&gt;v0.5.5 - Fix Not Recognize Activity Names That Contains Colons (:)&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-05-04&quot;&gt;2021-05-04&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Set a custom attribute to tag the lab/quest 🆔 for the row of unmarked learning activities&lt;/li&gt;
-  &lt;li&gt;Change to use the lab/quest ID as the key 🗝 for batch update to DB&lt;/li&gt;
-  &lt;li&gt;Fix the type of lab/quest 🆔 (aka an integer) during update&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;v054---fix-the-change-in-my-learning-layout&quot;&gt;v0.5.4 - Fix the Change in My Learning Layout&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-04-09&quot;&gt;2021-04-09&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Added a quick link to view all &lt;strong&gt;My Learning Activity&lt;/strong&gt; results&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Revised the way to update the database records with the new format of learning activity data&lt;/p&gt;
-
-    &lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;1163&quot; height=&quot;534&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/my-qwiklabs-learning-activity-tracker-v0.5.4.webp&quot; alt=&quot;Quick link and batch update My Learning Activity to database&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-      &lt;amp-img fallback=&quot;&quot; width=&quot;1163&quot; height=&quot;534&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/my-qwiklabs-learning-activity-tracker-v0.5.4.png&quot; alt=&quot;Quick link and batch update My Learning Activity to database&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-    &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the new My Learning Activity section (For v0.5.4)&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;v053&quot;&gt;v0.5.3&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Eliminate scripts for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning/labs&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning/courses&lt;/code&gt; pages&lt;/li&gt;
-  &lt;li&gt;Modified to parse and annotate the new My &lt;strong&gt;Learning Activity&lt;/strong&gt; table&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;v052&quot;&gt;v0.5.2&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Amended for the new &lt;strong&gt;Catalog&lt;/strong&gt; page design&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;v051&quot;&gt;v0.5.1&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;One-click update the labs and quests status to the IndexedDB&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;v050&quot;&gt;v0.5.0&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Store the labs and quests data locally with IndexedDB&lt;/li&gt;
-  &lt;li&gt;Repackage JavaScript with Async/Await&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;for-v048-or-earlier&quot;&gt;For v0.4.8 or Earlier&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Each catalog item compares with the manually labelled array data storing within the userscript.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Label the completed labs and quests with a green check-circle (&lt;i class=&quot;fa fa-check-circle&quot; style=&quot;color:green&quot;&gt;&lt;/i&gt;) at the end of their titles.&lt;/p&gt;
-
-    &lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-catalog-page-old.webp&quot; alt=&quot;Green Check Mark and Highlight displays on Qwiklabs Catalog Page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-      &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-catalog-page-old.png&quot; alt=&quot;Green Check Mark and Highlight displays on Qwiklabs Catalog Page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-    &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the Qwiklabs catalog page (For version &amp;lt; 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;v048---support-tracking-home-and-my-learning-pages&quot;&gt;v0.4.8 - Support Tracking “Home” and “My Learning” Pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-06-06&quot;&gt;2020-06-06&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Add &lt;strong&gt;NEW&lt;/strong&gt; badges and yellow highlights to any unregistered labs and quests.&lt;/li&gt;
-  &lt;li&gt;Apply the color scheme to the short tables of the “Completed Courses” and “Completed Labs” pages on the &lt;strong&gt;My Learning&lt;/strong&gt; page.&lt;/li&gt;
-  &lt;li&gt;Apply the annotation scheme to the “Your Favorites”, “Featured Learning”, and “What’s Hots” sections on the &lt;strong&gt;Home&lt;/strong&gt; page.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;v045&quot;&gt;v0.4.5&lt;/h3&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-05-20&quot;&gt;2020-05-20&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Add green highlight to the titles of completed labs and quests.&lt;/li&gt;
-  &lt;li&gt;Add annotations to Your Favorites in the &lt;strong&gt;My Learning&lt;/strong&gt; page.&lt;/li&gt;
-  &lt;li&gt;Add color backgrounds to each row in tables of the &lt;strong&gt;Completed Courses&lt;/strong&gt; and &lt;strong&gt;Completed Labs&lt;/strong&gt; pages.&lt;/li&gt;
-  &lt;li&gt;Change to use JSON-markup for storing lab and quest data.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The &lt;strong&gt;version 0.4.5&lt;/strong&gt; start covering the “&lt;em&gt;Completed Courses&lt;/em&gt;” and “&lt;em&gt;Completed Labs&lt;/em&gt;” pages under the &lt;strong&gt;My Learning&lt;/strong&gt; section. Since the quests mix with speedrun games in the list of completed courses, each row of the game records highlights in purple color for distinguishing them.&lt;/p&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-
-   &lt;figure class=&quot;col-md-6 text-center mb-4&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;339&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-courses-table.webp&quot; alt=&quot;Markers and Highlights on Completed Courses&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;339&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-courses-table.png&quot; alt=&quot;Markers and Highlights on Completed Courses&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the &lt;i&gt;Completed Courses&lt;/i&gt; page (For version &amp;gt;= 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
-
-   &lt;figure class=&quot;col-md-6 text-center mb-4&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;337&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-labs-table.webp&quot; alt=&quot;Markers and Highlights on Completed Labs pages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;337&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-labs-table.png&quot; alt=&quot;Markers and Highlights on Completed Labs pages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the &lt;i&gt;Completed Labs&lt;/i&gt; page (For version &amp;gt;= 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;/div&gt;
-
-&lt;hr /&gt;
-</description>
-        <pubDate>Thu, 30 Sep 2021 18:00:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Userscript</category>
-        
-        <category>Changelog</category>
-        
-        
-        <category>Cloud</category>
-        
-        <category>Project</category>
-        
-      </item>
-    
-      <item>
         <title>My MATLAB Package and Toolbox Picks</title>
         <description>&lt;aside style=&quot;position: relative;&quot;&gt;
     &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
@@ -2284,208 +2379,6 @@ Happy coding! 🚀&lt;/p&gt;
         
         
         <category>Academic</category>
-        
-      </item>
-    
-      <item>
-        <title>☁ Serverless Firebase Development: Challenge Lab | logbook</title>
-        <description>&lt;p&gt;In this article, we will go through the lab &lt;strong&gt;GSP344&lt;/strong&gt; &lt;em&gt;&lt;a href=&quot;https://www.cloudskillsboost.google/focuses/14677?parent=catalog&quot;&gt;GSP344 Serverless Firebase Development: Challenge Lab&lt;/a&gt;&lt;/em&gt;, which is an &lt;a href=&quot;https://www.cloudskillsboost.google/course_templates/649&quot;&gt;advanced-level&lt;/a&gt; exercise on Qwiklabs. You will practice the skills for deploying a serverless web application with Firestore Database and Cloud Run on Google Cloud Platform.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Topics tested&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Firestore Database Create&lt;/li&gt;
-  &lt;li&gt;Firestore Database Populate&lt;/li&gt;
-  &lt;li&gt;Cloud Build Rest API Staging&lt;/li&gt;
-  &lt;li&gt;Cloud Build Rest API Production&lt;/li&gt;
-  &lt;li&gt;Cloud Build Frontend Staging&lt;/li&gt;
-  &lt;li&gt;Cloud Build Frontend Production&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;task-1-create-a-firestore-database&quot;&gt;Task 1: Create a Firestore database&lt;/h2&gt;
-
-&lt;p&gt;This task is super easy. In the Google Cloud Console,&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Navigate to &lt;strong&gt;Firestore&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Select &lt;strong&gt;Native mode&lt;/strong&gt; for this project.&lt;/li&gt;
-  &lt;li&gt;Choose &lt;strong&gt;nam5 (United States)&lt;/strong&gt; as the location of your database.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Click &lt;strong&gt;CREATE DATABASE&lt;/strong&gt;.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;968&quot; height=&quot;545&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task1-cloud-firebase-native-mode.webp&quot; alt=&quot;Setup Firebase database using GCP Console&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;968&quot; height=&quot;545&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task1-cloud-firebase-native-mode.png&quot; alt=&quot;Setup Firebase database using GCP Console&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-
-    &lt;p&gt;This usually takes a few minutes to initialize the Cloud Firestore.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-2-populate-the-database&quot;&gt;Task 2: Populate the Database&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open the Cloud Shell, run the following to clone the repo:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/rosera/pet-theory.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Follow the instructions to import CSV using the node sample code from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lab06&lt;/code&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/pet-theory/lab06/firebase-import-csv/solution
-npm &lt;span class=&quot;nb&quot;&gt;install
-&lt;/span&gt;node index.js netflix_titles_original.csv
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;804&quot; height=&quot;277&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp344-task2-populate-csv-data-to-firebase.webp&quot; alt=&quot;The shell output of loading the netflix_titles_original.csv file using the node sample code&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;804&quot; height=&quot;277&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp344-task2-populate-csv-data-to-firebase.png&quot; alt=&quot;The shell output of loading the netflix_titles_original.csv file using the node sample code&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-
-    &lt;p&gt;After the records written to the database, go back to the Cloud Console and verify the Firebase Database is updated.&lt;/p&gt;
-
-    &lt;figure&gt;&lt;amp-img width=&quot;1241&quot; height=&quot;549&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task2-uploaded-data-collection-in-firebase.webp&quot; alt=&quot;The firestore data collection after importing the records from the netflix_titles_original.csv&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-     &lt;amp-img fallback=&quot;&quot; width=&quot;1241&quot; height=&quot;549&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task2-uploaded-data-collection-in-firebase.png&quot; alt=&quot;The firestore data collection after importing the records from the netflix_titles_original.csv&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-   &lt;/amp-img&gt;&lt;/figure&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;task-3-create-a-rest-api&quot;&gt;Task 3: Create a REST API&lt;/h2&gt;
-
-&lt;p&gt;You will need to build and deploy the code in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pet-theory/lab06/firebase-rest-api/solution-01&lt;/code&gt; as a Cloud Run Service via Google Container Registry. Run the following in the Cloud Shell:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install
-
-&lt;/span&gt;gcloud builds submit &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--tag&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/rest-api:0.1
-
-gcloud beta run deploy netflix-dataset-service &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/rest-api:0.1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--platform&lt;/span&gt; managed &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--region&lt;/span&gt; us-central1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--allow-unauthenticated&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After the Cloud Run deployed, you can test the service by running the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;SERVICE_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;gcloud beta run services describe netflix-dataset-service &lt;span class=&quot;nt&quot;&gt;--platform&lt;/span&gt; managed &lt;span class=&quot;nt&quot;&gt;--region&lt;/span&gt; us-central1 &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;value(status.url)&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SERVICE_URL&lt;/span&gt;
-
-curl &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; GET &lt;span class=&quot;nv&quot;&gt;$SERVICE_URL&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;task-4-firestore-api-access&quot;&gt;Task 4: Firestore API access&lt;/h2&gt;
-
-&lt;p&gt;This time you have to repeat the previous task for revision 0.2 of the code. You can update the service by running the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../solution-02
-npm &lt;span class=&quot;nb&quot;&gt;install
-
-&lt;/span&gt;gcloud builds submit &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--tag&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/rest-api:0.2
-
-gcloud beta run deploy netflix-dataset-service &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/rest-api:0.2 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--platform&lt;/span&gt; managed &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--region&lt;/span&gt; us-central1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--allow-unauthenticated&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After the Cloud Run updated, you can test the service endpoint with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/2019&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;SERVICE_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;gcloud beta run services describe netflix-dataset-service &lt;span class=&quot;nt&quot;&gt;--platform&lt;/span&gt; managed &lt;span class=&quot;nt&quot;&gt;--region&lt;/span&gt; us-central1 &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;value(status.url)&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SERVICE_URL&lt;/span&gt;
-
-curl &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; GET &lt;span class=&quot;nv&quot;&gt;$SERVICE_URL&lt;/span&gt;/2019
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;task-5-deploy-the-staging-frontend&quot;&gt;Task 5: Deploy the Staging Frontend&lt;/h2&gt;
-
-&lt;p&gt;Next, go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pet-theory/lab06/firebase-frontend&lt;/code&gt; directory. You will build and deploy the staging frontend in a similar way.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcloud builds submit &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--tag&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/frontend-staging:0.1
-
-gcloud beta run deploy frontend-staging-service &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/frontend-staging:0.1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--platform&lt;/span&gt; managed &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--region&lt;/span&gt; us-central1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--allow-unauthenticated&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;1219&quot; height=&quot;788&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp344-task5-staging-frontend.webp&quot; alt=&quot;Screenshot of the deployed staging frontend&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;1219&quot; height=&quot;788&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp344-task5-staging-frontend.png&quot; alt=&quot;Screenshot of the deployed staging frontend&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;task-6-deploy-the-production-frontend&quot;&gt;Task 6: Deploy the Production Frontend&lt;/h2&gt;
-
-&lt;p&gt;To deploy a production frontend, you need to configure the service endpoint in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public/app.js&lt;/code&gt; file by modifying the following:&lt;/p&gt;
-
-&lt;figure&gt;&lt;amp-img width=&quot;866&quot; height=&quot;328&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task6-configure-rest-api-service-url-in-app-js.webp&quot; alt=&quot;File head of public/app.js&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;866&quot; height=&quot;328&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/qwiklabs/gsp334-task6-configure-rest-api-service-url-in-app-js.png&quot; alt=&quot;File head of public/app.js&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Comment out &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const REST_API_SERVICE = &quot;data/netflix.json&quot;&lt;/code&gt;. in line 4.&lt;/li&gt;
-  &lt;li&gt;Uncomment &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;// const REST_API_SERVICE = &quot;https://XXXX-SERVICE.run.app/2000&quot;&lt;/code&gt; in line 5.&lt;/li&gt;
-  &lt;li&gt;Replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://XXXX-SERVICE.run.app&lt;/code&gt; with the &lt;strong&gt;SERVICE URL&lt;/strong&gt; created in Task 4.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Re-build and deploy the updated code as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;frontend-production&lt;/code&gt; by running the following:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install
-   
-&lt;/span&gt;gcloud builds submit &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--tag&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/frontend-production:0.1
-   
-gcloud beta run deploy frontend-production-service &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--image&lt;/span&gt; gcr.io/&lt;span class=&quot;nv&quot;&gt;$GOOGLE_CLOUD_PROJECT&lt;/span&gt;/frontend-production:0.1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--platform&lt;/span&gt; managed &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--region&lt;/span&gt; us-central1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--allow-unauthenticated&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Congratulations! You completed this challenge lab.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;-demonstration-video&quot;&gt;&lt;i class=&quot;far fa-play-circle&quot;&gt;&lt;/i&gt; Demonstration Video&lt;/h2&gt;
-
-&lt;amp-youtube id=&quot;yt-4rqeFp87s6I&quot; width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-block-on-consent-purposes=&quot;1,3&quot; credentials=&quot;omit&quot; data-videoid=&quot;4rqeFp87s6I&quot; title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-title=&quot;GSP344 Serverless Firebase Development: Challenge Lab | 🐱‍🏍 GCP learning tour&quot; data-vars-video-url=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; data-param-rel=&quot;0&quot;&gt;
-  &lt;amp-img src=&quot;https://i.ytimg.com/vi/4rqeFp87s6I/mqdefault.jpg&quot; placeholder=&quot;&quot; layout=&quot;fill&quot; /&gt;
-  &lt;div fallback=&quot;&quot;&gt;
-    &lt;p&gt;This browser does not support the YouTube video player. &lt;a href=&quot;https://www.youtube.com/watch?v=4rqeFp87s6I&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/amp-youtube&gt;
-
-&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;⏱ &lt;span class=&quot;n&quot;&gt;Timestamps&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Overview&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Provision&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;environment&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;04&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task1&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Firestore&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;database&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;01&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;40&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task2&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Populate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Database&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;35&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task3&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;REST&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;API&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;06&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task4&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Firestore&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;API&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;access&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;08&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task5&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Deploy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Staging&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Frontend&lt;/span&gt;
-&lt;span class=&quot;m&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;m&quot;&gt;39&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task6&lt;/span&gt;: &lt;span class=&quot;n&quot;&gt;Deploy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Production&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Frontend&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Wed, 14 Jul 2021 11:30:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/serverless-firebase-development-challenge-lab</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/serverless-firebase-development-challenge-lab</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Logbook</category>
-        
-        <category>BigQuery</category>
-        
-        <category>Data Science</category>
-        
-        
-        <category>Cloud</category>
         
       </item>
     
