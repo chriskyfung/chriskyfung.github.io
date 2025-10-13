@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Oct 2025 18:49:18 +0800</pubDate>
-    <lastBuildDate>Sat, 11 Oct 2025 18:49:18 +0800</lastBuildDate>
+    <pubDate>Mon, 13 Oct 2025 15:34:24 +0800</pubDate>
+    <lastBuildDate>Mon, 13 Oct 2025 15:34:24 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -100,15 +100,15 @@
     
       <item>
         <title>Qwiklabs Lab Completion Tracker - Version History</title>
-        <description>&lt;p&gt;This page provides a detailed version history for the &lt;strong&gt;Qwiklabs Lab Completion Tracker&lt;/strong&gt; userscript. It documents the evolution of the script, from its initial release to the latest updates, detailing new features, improvements, and bug fixes designed to help users track their learning progress on &lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt; (formerly &lt;strong&gt;Qwiklabs&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;amp-img src=&quot;https://img.shields.io/github/v/release/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;94&quot; height=&quot;20&quot; alt=&quot;GitHub release (latest by date)&quot;&gt;&lt;/amp-img&gt;
+        <description>&lt;amp-img src=&quot;https://img.shields.io/github/v/release/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;94&quot; height=&quot;20&quot; alt=&quot;GitHub release (latest by date)&quot;&gt;&lt;/amp-img&gt;
 &lt;amp-img src=&quot;https://img.shields.io/badge/License-GPLv3-blue.svg&quot; width=&quot;96&quot; height=&quot;20&quot; alt=&quot;License: GPL v3&quot;&gt;&lt;/amp-img&gt;
 &lt;amp-img src=&quot;https://img.shields.io/github/issues-raw/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;92&quot; height=&quot;20&quot; alt=&quot;GitHub issues&quot;&gt;&lt;/amp-img&gt;
 
+&lt;p&gt;This page provides a detailed version history for the &lt;strong&gt;Qwiklabs Lab Completion Tracker&lt;/strong&gt; userscript. It documents the evolution of the script, from its initial release to the latest updates, detailing new features, improvements, and bug fixes designed to help users track their learning progress on &lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt; (formerly &lt;strong&gt;Qwiklabs&lt;/strong&gt;).&lt;/p&gt;
+
 &lt;p&gt;&lt;i class=&quot;fas fa-chevron-circle-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;a href=&quot;/blog/qwiklabs/google-cloud-skills-boost-progress-tracker/&quot;&gt;Back to the main post&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;152&quot; height=&quot;28&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;v300---migration-to-google-cloud-skills-boost-&quot;&gt;v3.0.0 - Migration to Google Cloud Skills Boost &lt;span role=&quot;img&quot; aria-label=&quot;Rocket emoji&quot;&gt;🚀&lt;/span&gt;&lt;/h2&gt;
 
@@ -184,6 +184,8 @@
 
 &lt;p&gt;To address parsing issues with activity names containing special characters, this release improved data integrity by using the unique lab/quest ID as the primary key for database updates, rather than relying on the activity name.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;v054---fix-the-change-in-my-learning-layout&quot;&gt;v0.5.4 - Fix the Change in My Learning Layout&lt;/h2&gt;
 
 &lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-04-09&quot;&gt;2021-04-09&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
@@ -193,15 +195,21 @@
   &lt;li&gt;Revised the way to update the database records with the new format of learning activity data&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;v052--v053---adapting-to-ui-changes&quot;&gt;v0.5.2 &amp;amp; v0.5.3 - Adapting to UI Changes&lt;/h2&gt;
 
 &lt;p&gt;These minor updates were released to maintain compatibility with Qwiklabs’ evolving design. They included the removal of code for deprecated pages and adjustments to correctly parse the new &lt;strong&gt;Catalog&lt;/strong&gt; and &lt;strong&gt;My Learning Activity&lt;/strong&gt; table layouts.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;v051&quot;&gt;v0.5.1&lt;/h2&gt;
 
 &lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-06-14&quot;&gt;2020-06-14&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;A one-click sync button was introduced to improve user experience. This feature allows for an instant update of all lab and quest statuses in the local database, eliminating the need for manual checks.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;v050&quot;&gt;v0.5.0&lt;/h2&gt;
 
@@ -270,6 +278,25 @@
 
 &lt;p&gt;I’m excited to share it with you today!&lt;/p&gt;
 
+&lt;aside style=&quot;position: relative;&quot;&gt;
+    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
+&lt;/aside&gt;
+
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-n8n-stack&quot; id=&quot;markdown-toc-what-is-n8n-stack&quot;&gt;What is n8n-stack?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-self-host-n8n-with-this-stack&quot; id=&quot;markdown-toc-why-self-host-n8n-with-this-stack&quot;&gt;Why Self-Host n8n with This Stack?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#key-features-of-n8n-stack&quot; id=&quot;markdown-toc-key-features-of-n8n-stack&quot;&gt;Key Features of n8n-stack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#getting-started-with-your-secure-n8n-instance&quot; id=&quot;markdown-toc-getting-started-with-your-secure-n8n-instance&quot;&gt;Getting Started with Your Secure n8n Instance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#let-me-know-what-you-think&quot; id=&quot;markdown-toc-let-me-know-what-you-think&quot;&gt;Let Me Know What You Think&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;what-is-n8n-stack&quot;&gt;What is n8n-stack?&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;n8n-stack&lt;/strong&gt; (officially &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n8n-traefik-cloudflared-stack&lt;/code&gt;) is a production-ready set of configuration files to help you self-host n8n using Docker or Podman. It comes with Traefik as a reverse proxy and is secured by Cloudflare Zero Trust, giving you a private and secure n8n environment.&lt;/p&gt;
@@ -283,6 +310,8 @@
   &lt;li&gt;&lt;strong&gt;Traefik:&lt;/strong&gt; A modern reverse proxy to handle web traffic efficiently.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Cloudflare Tunnel:&lt;/strong&gt; Securely exposes your n8n instance to the internet without opening firewall ports, thanks to Cloudflare Zero Trust.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;why-self-host-n8n-with-this-stack&quot;&gt;Why Self-Host n8n with This Stack?&lt;/h2&gt;
 
@@ -318,6 +347,8 @@
   &lt;li&gt;&lt;strong&gt;Follow the setup instructions:&lt;/strong&gt; The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md&lt;/code&gt; contains all the details for the initial configuration.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Choose your container engine:&lt;/strong&gt; Head over to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/docs&lt;/code&gt; directory and follow the specific guide for either Docker or Podman.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;let-me-know-what-you-think&quot;&gt;Let Me Know What You Think&lt;/h2&gt;
 
@@ -364,6 +395,21 @@
         <description>&lt;p&gt;In today’s digital age, managing saved &lt;a href=&quot;https://www.instapaper.com/&quot;&gt;Instapaper&lt;/a&gt; articles can be overwhelming, especially for free plan users who lack a search feature. Obtaining API keys for Instapaper APIs can also be time-consuming.&lt;/p&gt;
 
 &lt;p&gt;Say hello to &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/InstapaperScraper&quot;&gt;InstapaperScraper&lt;/a&gt;&lt;/strong&gt;—a lightweight Python script designed to simplify the process. With InstapaperScraper, you can scrape bookmarks from your Instapaper account and export them as neatly formatted CSV data—all without needing an API key.&lt;/p&gt;
+
+&lt;aside style=&quot;position: relative;&quot;&gt;
+    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
+&lt;/aside&gt;
+
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-instapaperscraper&quot; id=&quot;markdown-toc-what-is-instapaperscraper&quot;&gt;What Is InstapaperScraper?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#getting-started&quot; id=&quot;markdown-toc-getting-started&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#unlocking-data-driven-insights&quot; id=&quot;markdown-toc-unlocking-data-driven-insights&quot;&gt;Unlocking Data-Driven Insights&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#contribute--stay-updated&quot; id=&quot;markdown-toc-contribute--stay-updated&quot;&gt;Contribute &amp;amp; Stay Updated&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
 
 &lt;hr /&gt;
 
@@ -608,6 +654,29 @@ volta which netlify
 
 &lt;p&gt;This guide will show you how to use &lt;strong&gt;IFTTT’s “Filter Code”&lt;/strong&gt; to transform Google Sheets into a lightweight NoSQL database, capable of storing thousands of JSON-formatted entries. This bridges the gap between “triggers” and “actions” with streamlined data processing.&lt;/p&gt;
 
+&lt;aside style=&quot;position: relative;&quot;&gt;
+    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
+&lt;/aside&gt;
+
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#learning-objectives&quot; id=&quot;markdown-toc-learning-objectives&quot;&gt;Learning Objectives&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#practical-use-cases&quot; id=&quot;markdown-toc-practical-use-cases&quot;&gt;Practical Use Cases&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-by-step-guide&quot; id=&quot;markdown-toc-step-by-step-guide&quot;&gt;Step-by-Step Guide&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#prerequisites&quot; id=&quot;markdown-toc-prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-1-format-your-google-sheets-data&quot; id=&quot;markdown-toc-step-1-format-your-google-sheets-data&quot;&gt;Step 1: Format Your Google Sheets Data&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-2-create-an-ifttt-applet&quot; id=&quot;markdown-toc-step-2-create-an-ifttt-applet&quot;&gt;Step 2: Create an IFTTT Applet&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3-test-and-debug&quot; id=&quot;markdown-toc-step-3-test-and-debug&quot;&gt;Step 3: Test and Debug&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#key-takeaways&quot; id=&quot;markdown-toc-key-takeaways&quot;&gt;Key Takeaways&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#additional-resources&quot; id=&quot;markdown-toc-additional-resources&quot;&gt;Additional Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
+
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;learning-objectives&quot;&gt;Learning Objectives&lt;/h2&gt;
@@ -809,6 +878,35 @@ Paste this example TypeScript snippet into the filter editor for random selectio
       <item>
         <title>Fixing Old Emails in Your Git History: A Beginner&apos;s Guide</title>
         <description>&lt;p&gt;Git is a powerful version control system that acts like a diary for your code. Every change you make gets recorded in what’s called a commit history. But what if you realize some of your commits are tied to an outdated email address? Maybe you used a school email that’s no longer active, or your personal email for work projects and want to tidy up your digital footprint. Let’s learn how to fix that! In this guide, you’ll learn how to update your email address across all commits, using the mighty &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;aside style=&quot;position: relative;&quot;&gt;
+    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
+&lt;/aside&gt;
+
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#understanding-git-identity&quot; id=&quot;markdown-toc-understanding-git-identity&quot;&gt;Understanding Git Identity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-problem-ghosts-of-emails-past&quot; id=&quot;markdown-toc-the-problem-ghosts-of-emails-past&quot;&gt;The Problem: Ghosts of Emails Past&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-magic-command-git-filter-branch&quot; id=&quot;markdown-toc-the-magic-command-git-filter-branch&quot;&gt;The Magic Command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt;&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#variables-your-before-and-after&quot; id=&quot;markdown-toc-variables-your-before-and-after&quot;&gt;Variables (Your “Before” and “After”)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-find-and-replace-logic&quot; id=&quot;markdown-toc-the-find-and-replace-logic&quot;&gt;The “Find and Replace” Logic&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#scope-where-to-fix&quot; id=&quot;markdown-toc-scope-where-to-fix&quot;&gt;Scope (Where to Fix)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-by-step-safely-rewriting-history&quot; id=&quot;markdown-toc-step-by-step-safely-rewriting-history&quot;&gt;Step-by-Step: Safely Rewriting History&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#️-step-0-backup-your-repository&quot; id=&quot;markdown-toc-️-step-0-backup-your-repository&quot;&gt;⚠️ &lt;strong&gt;Step 0&lt;/strong&gt;: Backup Your Repository&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-1-run-the-script&quot; id=&quot;markdown-toc-step-1-run-the-script&quot;&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Run the Script&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-2-force-push-the-changes&quot; id=&quot;markdown-toc-step-2-force-push-the-changes&quot;&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Force-Push the Changes&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#caveats-and-helpful-tips&quot; id=&quot;markdown-toc-caveats-and-helpful-tips&quot;&gt;Caveats and Helpful Tips&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-bother-a-lesson-beyond-the-code&quot; id=&quot;markdown-toc-why-bother-a-lesson-beyond-the-code&quot;&gt;Why Bother? A Lesson Beyond the Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
 
 &lt;hr /&gt;
 
@@ -1084,6 +1182,8 @@ The official Git documentation explaining the &lt;code class=&quot;language-plai
 
 &lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;1-essential-git-commands&quot;&gt;1. Essential Git Commands&lt;/h2&gt;
 
 &lt;h3 id=&quot;11-enable-git-tab-completion-in-linux-bash&quot;&gt;1.1 Enable Git Tab Completion in Linux Bash&lt;/h3&gt;
@@ -1247,6 +1347,8 @@ git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Using these commands effectively helps maintain a well-organized and efficient workflow, allowing you to control which commits are pushed to the remote repository.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;2-useful-github-cli-commands&quot;&gt;2. Useful GitHub CLI Commands&lt;/h2&gt;
 
@@ -1486,6 +1588,8 @@ When dealing with large datasets or extensive codebases, these advanced cloning 
 
 &lt;p&gt;By leveraging these commands, you can efficiently manage and enhance your repositories, making them more accessible and tailored to your project’s requirements.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping Up&lt;/h2&gt;
 
 &lt;p&gt;Unlocking the power of Git and GitHub CLI commands not only streamlines your workflow but also elevates your collaboration skills, paving the way for success in both academic and professional arenas.&lt;/p&gt;
@@ -1493,6 +1597,8 @@ When dealing with large datasets or extensive codebases, these advanced cloning 
 &lt;p&gt;As you explore these tools, you’ll find that they offer endless possibilities for innovation and efficiency. Experiment, integrate them into your research toolkit, and watch your productivity soar. The more you practice, the more proficient you’ll become.&lt;/p&gt;
 
 &lt;p&gt;Embrace this journey of discovery. Happy coding!&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
 
@@ -1674,6 +1780,8 @@ Happy coding! 🚀&lt;/p&gt;
 
 &lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;cross-product-toolboxes&quot;&gt;Cross-Product Toolboxes&lt;/h2&gt;
 
 &lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;238&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/vintage-1318361_730x238.webp&quot; alt=&quot;orchestra&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
@@ -1729,6 +1837,8 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;/dd&gt;
 &lt;/dl&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;parallel-processing&quot;&gt;Parallel Processing&lt;/h2&gt;
 
 &lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;173&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/cpu-speed_730x173_o70.webp&quot; alt=&quot;cpu speedup&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
@@ -1769,6 +1879,8 @@ Happy coding! 🚀&lt;/p&gt;
     &lt;/dl&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;shorthands&quot;&gt;Shorthands&lt;/h2&gt;
 
@@ -1902,6 +2014,8 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;/dd&gt;
 &lt;/dl&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;file-systems&quot;&gt;File Systems&lt;/h2&gt;
 
 &lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;146&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/files-and-folders_730x146_o16.webp&quot; alt=&quot;database, folder, file, local and remote storages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
@@ -1928,6 +2042,8 @@ Happy coding! 🚀&lt;/p&gt;
 &lt;/dl&gt;
 
 &lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/matlab/file-io-and-file-system-in-matlab&quot;&gt;File I/O and File System in MATLAB&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
 
@@ -2194,6 +2310,8 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;/dd&gt;
 &lt;/dl&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;gui-components-and-utilities&quot;&gt;GUI Components and Utilities&lt;/h2&gt;
 
 &lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;220&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/graphical-user-interface-design_730x220_o16.webp&quot; alt=&quot;gui-component-design&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
@@ -2245,6 +2363,8 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://www.mathworks.com/discovery/matlab-gui.html&quot;&gt;MATLAB GUI - MathWorks&lt;/a&gt;&lt;/cite&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;statistics&quot;&gt;Statistics&lt;/h2&gt;
 
 &lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;174&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/distribution-159626_730x174_o16.webp&quot; alt=&quot;normal distributions&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
@@ -2266,6 +2386,8 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;/dd&gt;
 &lt;/dl&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;curve-and-surface-fitting&quot;&gt;Curve and Surface Fitting&lt;/h2&gt;
 
 &lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;183&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/measurement_730x183.webp&quot; alt=&quot;land surveying&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
@@ -2286,6 +2408,8 @@ Happy coding! 🚀&lt;/p&gt;
     &lt;p&gt;A function models a surface from data in the form of z(x,y) from scattered or semi-scattered data&lt;/p&gt;
   &lt;/dd&gt;
 &lt;/dl&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;science-and-engineering&quot;&gt;Science and Engineering&lt;/h2&gt;
 
@@ -2327,6 +2451,8 @@ Happy coding! 🚀&lt;/p&gt;
     &lt;p&gt;A toolbox draws 16 robots that the user select.&lt;/p&gt;
   &lt;/dd&gt;
 &lt;/dl&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;debugging&quot;&gt;Debugging&lt;/h2&gt;
 
