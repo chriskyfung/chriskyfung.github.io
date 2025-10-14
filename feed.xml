@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Oct 2025 15:34:24 +0800</pubDate>
-    <lastBuildDate>Mon, 13 Oct 2025 15:34:24 +0800</lastBuildDate>
+    <pubDate>Tue, 14 Oct 2025 22:11:16 +0800</pubDate>
+    <lastBuildDate>Tue, 14 Oct 2025 22:11:16 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -27,7 +27,7 @@
 
 &lt;p&gt;This simple script runs in your browser with an extension like Tampermonkey (available for Chrome, Firefox, Edge, and others). It enhances the Google Cloud Skills Boost website by adding clear visual indicators, so you can see your progress at a glance.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;217&quot; height=&quot;40&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot; title=&quot;Install userscript (opens in a new tab)&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;217&quot; height=&quot;40&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;-key-features&quot;&gt;🚀 Key Features&lt;/h3&gt;
 
@@ -36,7 +36,7 @@
   &lt;li&gt;&lt;strong&gt;“New” Badges&lt;/strong&gt;: Instantly spot new labs and courses with an orange “New” badge (&lt;span role=&quot;img&quot; aria-label=&quot;NEW&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; enable-background=&quot;new 0 0 24 24&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24px&quot; height=&quot;24px&quot; fill=&quot;orange&quot;&gt;&lt;g&gt;&lt;rect fill=&quot;none&quot; height=&quot;24&quot; width=&quot;24&quot; x=&quot;0&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;g&gt;&lt;g&gt;&lt;g&gt;&lt;path d=&quot;M20,4H4C2.89,4,2.01,4.89,2.01,6L2,18c0,1.11,0.89,2,2,2h16c1.11,0,2-0.89,2-2V6C22,4.89,21.11,4,20,4z M8.5,15H7.3 l-2.55-3.5V15H3.5V9h1.25l2.5,3.5V9H8.5V15z M13.5,10.26H11v1.12h2.5v1.26H11v1.11h2.5V15h-4V9h4V10.26z M20.5,14 c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1V9h1.25v4.51h1.13V9.99h1.25v3.51h1.12V9h1.25V14z&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;) that have been added since your last sync.
 &lt;!-- Pending feature --&gt;
 &lt;!--  - **Automatic Database Updates**: Keeps your local progress database in sync by fetching your latest activity from your public profile page. --&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;One-Click Sync&lt;/strong&gt;: Manually trigger a database update with the sync button (&lt;i class=&quot;fas fa-sync-alt&quot; style=&quot;transform: rotate(50deg) scaleY(-1);&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;) on your Progress page.
+  &lt;li&gt;&lt;strong&gt;One-Click Sync&lt;/strong&gt;: Manually trigger a database update with the sync button (&lt;i class=&quot;fas fa-sync-alt&quot; style=&quot;color: #4285f4; transform: rotate(50deg) scaleY(-1);&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;) on your Progress page.
 &lt;!-- Pending feature --&gt;
 &lt;!-- -**Data Export/Import**: Easily back up and restore your progress data in JSON format. --&gt;
 &lt;!-- Pending feature --&gt;
@@ -1996,7 +1996,7 @@ Happy coding! 🚀&lt;/p&gt;
   &lt;dd&gt;
     &lt;p&gt;A function converts a MATLAB matrix to a &lt;a href=&quot;https://www.lyx.org/&quot;&gt;LyX&lt;/a&gt; table.&lt;/p&gt;
   &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://wwww.mathworks.com/matlabcentral/fileexchange/20565-json-parser&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;JSON Parser&lt;/a&gt;&lt;/dt&gt;
+  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/20565-json-parser&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;JSON Parser&lt;/a&gt;&lt;/dt&gt;
   &lt;dd&gt;
     &lt;p&gt;A function parses JSON strings. It converts JSON arrays into cell arrays and JSON objects into structures.&lt;/p&gt;
   &lt;/dd&gt;
