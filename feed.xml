@@ -5,12 +5,12 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Oct 2025 22:11:16 +0800</pubDate>
-    <lastBuildDate>Tue, 14 Oct 2025 22:11:16 +0800</lastBuildDate>
+    <pubDate>Sat, 25 Oct 2025 11:24:39 +0800</pubDate>
+    <lastBuildDate>Sat, 25 Oct 2025 11:24:39 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>Supercharge Your Learning: A Free Userscript to Track Google Cloud Skills Boost Progress</title>
+        <title>Supercharge Your Learning: A Free Userscript to Track Google Skills Progress</title>
         <description>
 &lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;
 &lt;i class=&quot;fas fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Looking for an older version?
@@ -21,15 +21,24 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.cloudskillsboost.google/&quot;&gt;&lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt;&lt;/a&gt; (formerly Qwiklabs) is a fantastic platform for gaining hands-on experience with Google Cloud. With hundreds of labs and courses, it’s a go-to resource for anyone serious about advancing their cloud skills.&lt;/p&gt;
+&lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;
+&lt;i class=&quot;fas fa-wrench&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Important Update
+&lt;/div&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;Google has renamed “Google Cloud Skills Boost” to “Google Skills” and moved its domain from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudskillsboost.google&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;skills.google&lt;/code&gt; since October 2025. Please update the &lt;strong&gt;Lab Tracker userscript to v3.1.0 or later&lt;/strong&gt; to ensure compatibility with the new domain. For more details on the change, see this &lt;a href=&quot;https://cloud.google.com/blog/products/training-certifications/google-skills-your-new-home-for-ai-learning&quot;&gt;related post from Google’s Blog&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.skills.google/&quot;&gt;&lt;strong&gt;Google Skills&lt;/strong&gt;&lt;/a&gt; (formerly Qwiklabs) is a fantastic platform for gaining hands-on experience with Google Cloud. With hundreds of labs and courses, it’s a go-to resource for anyone serious about advancing their cloud skills.&lt;/p&gt;
 
 &lt;p&gt;But if you’re an active user like me, you’ve probably faced a common challenge: it’s hard to remember which labs you’ve already finished. To solve this, I created the &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker&quot;&gt;Qwiklabs Lab Completion Tracker&lt;/a&gt;&lt;/strong&gt;, a free userscript designed to streamline your learning journey.&lt;/p&gt;
 
-&lt;p&gt;This simple script runs in your browser with an extension like Tampermonkey (available for Chrome, Firefox, Edge, and others). It enhances the Google Cloud Skills Boost website by adding clear visual indicators, so you can see your progress at a glance.&lt;/p&gt;
+&lt;p&gt;This simple script runs in your browser with an extension like Tampermonkey (available for Chrome, Firefox, Edge, and others). It enhances the Google Skills website by adding clear visual indicators, so you can see your progress at a glance.&lt;/p&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;&lt;a href=&quot;https://github.com/chriskyfung/qwiklabs-completed-labs-tracker/raw/master/qwiklabs-explorer.user.js&quot; style=&quot;box-shadow: none&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot; title=&quot;Install userscript (opens in a new tab)&quot;&gt;&lt;amp-img src=&quot;https://img.shields.io/badge/-Install%20Script-brightgreen?color=green&amp;amp;logo=tampermonkey&amp;amp;style=for-the-badge&quot; width=&quot;217&quot; height=&quot;40&quot; alt=&quot;Install Script with Tampermonkey&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;-key-features&quot;&gt;🚀 Key Features&lt;/h3&gt;
+&lt;h3 id=&quot;-key-features&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🚀&lt;/span&gt; Key Features&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Completion Markers&lt;/strong&gt;: Automatically adds a green checkmark (&lt;i class=&quot;fa fa-check-circle&quot; style=&quot;color:green&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;) next to completed labs and courses, so you never have to guess what you’ve already done.&lt;/li&gt;
@@ -43,9 +52,9 @@
 &lt;!-- **Cross-Browser Sync**: Sync your progress across different browsers using a Gist. --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;-screenshots&quot;&gt;📸 Screenshots&lt;/h3&gt;
+&lt;h3 id=&quot;-screenshots&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;📸&lt;/span&gt; Screenshots&lt;/h3&gt;
 
-&lt;p&gt;The script adds helpful visual cues across the Google Cloud Skills Boost website.&lt;/p&gt;
+&lt;p&gt;The script adds helpful visual cues across the Google Skills website.&lt;/p&gt;
 
 &lt;figure class=&quot;text-center mb-4&quot;&gt;&lt;amp-img width=&quot;1174&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-catalog-page-demo.webp&quot; alt=&quot;Screenshot of the Google Cloud Skills Boost catalog page with completion markers&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
         &lt;amp-img fallback=&quot;&quot; width=&quot;1174&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/cloudskillsboost-tracker-catalog-page-demo.png&quot; alt=&quot;Screenshot of the Google Cloud Skills Boost catalog page with completion markers&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
@@ -87,7 +96,7 @@
         
         <category>Google Cloud</category>
         
-        <category>Google Cloud Skills Boost</category>
+        <category>Google Skills</category>
         
         <category>Userscript</category>
         
