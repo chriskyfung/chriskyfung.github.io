@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Nov 2025 16:42:24 +0800</pubDate>
-    <lastBuildDate>Fri, 21 Nov 2025 16:42:24 +0800</lastBuildDate>
+    <pubDate>Fri, 21 Nov 2025 16:44:55 +0800</pubDate>
+    <lastBuildDate>Fri, 21 Nov 2025 16:44:55 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -299,6 +299,7 @@
   &lt;li&gt;&lt;a href=&quot;#key-features-of-n8n-stack&quot; id=&quot;markdown-toc-key-features-of-n8n-stack&quot;&gt;Key Features of n8n-stack&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#getting-started-with-your-secure-n8n-instance&quot; id=&quot;markdown-toc-getting-started-with-your-secure-n8n-instance&quot;&gt;Getting Started with Your Secure n8n Instance&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#let-me-know-what-you-think&quot; id=&quot;markdown-toc-let-me-know-what-you-think&quot;&gt;Let Me Know What You Think&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#take-control-of-your-automation&quot; id=&quot;markdown-toc-take-control-of-your-automation&quot;&gt;Take Control of Your Automation&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -363,9 +364,19 @@
 
 &lt;p&gt;I built n8n-stack to solve my own n8n self-hosting challenges, and I hope it can be useful to others in the community. I’d love for you to check it out on GitHub, give it a try, and share your feedback.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/n8n-traefik-cloudflared-stack&quot;&gt;Check out the n8n-stack repository on GitHub&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fab fa-github&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/n8n-traefik-cloudflared-stack&quot;&gt;Check out the n8n-stack repository on GitHub&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;I’m always open to feedback and contributions, so feel free to open an issue or a pull request!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;take-control-of-your-automation&quot;&gt;Take Control of Your Automation&lt;/h2&gt;
+
+&lt;p&gt;Embarking on the self-hosting journey for your workflow automation can seem complex, but it doesn’t have to be a daunting task. With &lt;strong&gt;n8n-stack&lt;/strong&gt;, you are equipped with a clear, secure, and production-ready path to unlock the full potential of n8n on your own terms. This project was born from the desire to eliminate the initial setup hurdles, providing a robust environment with Docker, Traefik, and Cloudflare right out of the box.&lt;/p&gt;
+
+&lt;p&gt;This stack is more than just a collection of configuration files; it’s a launchpad designed to get you up and running quickly, so you can focus on what truly matters: building powerful, creative automations that solve real-world problems. The power to innovate is now firmly in your hands. Dive in, explore the possibilities, and start your n8n journey today.&lt;/p&gt;
+
+&lt;p&gt;Happy Automating! 🚀&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -379,8 +390,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 18 Sep 2025 09:09:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/secure-self-host-n8n-stack/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/secure-self-host-n8n-stack/</guid>
+        <link>https://chriskyfung.github.io/devtools/secure-self-host-n8n-stack/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/devtools/secure-self-host-n8n-stack/</guid>
         
         <category>n8n</category>
         
