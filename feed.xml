@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Nov 2025 16:58:45 +0800</pubDate>
-    <lastBuildDate>Fri, 21 Nov 2025 16:58:45 +0800</lastBuildDate>
+    <pubDate>Fri, 21 Nov 2025 19:42:53 +0800</pubDate>
+    <lastBuildDate>Fri, 21 Nov 2025 19:42:53 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -309,7 +309,7 @@
 
 &lt;h2 id=&quot;what-is-n8n-stack&quot;&gt;What is n8n-stack?&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;n8n-stack&lt;/strong&gt; (officially &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n8n-traefik-cloudflared-stack&lt;/code&gt;) is a production-ready set of configuration files to help you self-host n8n using Docker or Podman. It comes with Traefik as a reverse proxy and is secured by Cloudflare Zero Trust, giving you a private and secure n8n environment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/chriskyfung/n8n-traefik-cloudflared-stack&quot;&gt;&lt;strong&gt;n8n-stack&lt;/strong&gt;&lt;/a&gt; (officially &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n8n-traefik-cloudflared-stack&lt;/code&gt;) is a production-ready set of configuration files to help you self-host n8n using &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; or &lt;a href=&quot;https://podman.io/&quot;&gt;Podman&lt;/a&gt;. It comes with &lt;a href=&quot;https://doc.traefik.io/traefik/&quot;&gt;Traefik&lt;/a&gt; as a reverse proxy and is secured by &lt;a href=&quot;https://www.cloudflare.com/zero-trust/&quot;&gt;Cloudflare Zero Trust&lt;/a&gt;, giving you a private and secure n8n environment.&lt;/p&gt;
 
 &lt;p&gt;The project is based on an excellent tutorial by &lt;a href=&quot;https://kjetilfuras.com/self-host-n8n-with-cloudflare-zero-trust/&quot;&gt;Kjetil Furas&lt;/a&gt;, but I’ve added my own tweaks and enhancements to make it even more robust and user-friendly for a seamless n8n self-hosting experience.&lt;/p&gt;
 
