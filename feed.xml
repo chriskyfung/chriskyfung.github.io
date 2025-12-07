@@ -5,9 +5,115 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Nov 2025 19:42:53 +0800</pubDate>
-    <lastBuildDate>Fri, 21 Nov 2025 19:42:53 +0800</lastBuildDate>
+    <pubDate>Sun, 07 Dec 2025 18:36:46 +0800</pubDate>
+    <lastBuildDate>Sun, 07 Dec 2025 18:36:46 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Get a FREE, Automated YouTube Subscriber Tracker in Google Sheets</title>
+        <description>
+&lt;div class=&quot;alert alert--primary&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;What it is:&lt;/strong&gt; A simple, open-source script for Google Sheets (Google Apps Script).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What it does:&lt;/strong&gt; Automatically pulls new subscriber names and their channel links directly from your YouTube notification emails.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Best Part:&lt;/strong&gt; It archives the data in a sheet &lt;strong&gt;AND&lt;/strong&gt; moves the processed emails to the trash, &lt;strong&gt;decluttering your Gmail inbox&lt;/strong&gt; while you sleep.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Outcome:&lt;/strong&gt; A permanent, one-click engagement list for building loyal fans.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;why-you-need-this-free-script&quot;&gt;&lt;strong&gt;Why You Need This Free Script&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;For New YouTubers &amp;amp; Growing Channels:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We’ve all been there: The dopamine hit from a &lt;strong&gt;”[New User] has subscribed to you on YouTube!”&lt;/strong&gt; email. But that feeling fades instantly as the email gets buried in your inbox.&lt;/p&gt;
+
+&lt;p&gt;If you are just checking YouTube Studio for your total count, you are treating your audience like a metric. But for a growing channel, your first followers are the &lt;strong&gt;people&lt;/strong&gt; you need to impress, engage with, and thank.&lt;/p&gt;
+
+&lt;p&gt;Your first 1,000 subscribers are your &lt;strong&gt;founding members&lt;/strong&gt;. They deserve a personalized thank-you. Stop relying on fleeting email notifications and start building a real community roster.&lt;/p&gt;
+
+&lt;p&gt;This is where the &lt;a href=&quot;https://github.com/chriskyfung/youtube-subscriber-spreadsheet-apps-script&quot;&gt;&lt;strong&gt;youtube-subscriber-spreadsheet-apps-script&lt;/strong&gt;&lt;/a&gt; helps you build a real connection and a permanent record of your channel’s history—all for free.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-bootstrap-method-how-we-get-the-data-for-free&quot;&gt;&lt;strong&gt;The Bootstrap Method: How We Get the Data for Free&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Instead of wrestling with complex YouTube APIs, this project uses a smarter, simpler method: &lt;strong&gt;we leverage the notification emails already sitting in your Gmail.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This solution is entirely self-contained within Google’s free services (Sheets + Gmail).&lt;/p&gt;
+
+&lt;h3 id=&quot;the-automated-workflow-set-it-and-forget-it&quot;&gt;&lt;strong&gt;The Automated Workflow (Set It and Forget It)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The script executes this highly efficient four-step workflow automatically:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Search &amp;amp; Retrieve:&lt;/strong&gt; It uses the powerful built-in Gmail service to search for all new emails matching the specific YouTube notification subject line.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extract the Data:&lt;/strong&gt; The script quickly scans the raw email content. It uses clever data extraction techniques (Regular Expressions) to pull out the most important details: the subscriber’s name and their channel link.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Log &amp;amp; Archive:&lt;/strong&gt; The extracted Date, Subscriber Name, and Attribution Link are then logged as new entries in your Google Sheet.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clean Up:&lt;/strong&gt; Once the data is safely logged, the script moves the corresponding email to the &lt;strong&gt;Trash&lt;/strong&gt;, ensuring the same notification is never processed twice and achieving instant inbox decluttering.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;why-this-system-changes-the-game&quot;&gt;&lt;strong&gt;Why This System Changes the Game&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This system is built for efficiency and community engagement:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Declutter Your Gmail Inbox:&lt;/strong&gt; For multi-channel creators, the deluge of notifications is a nightmare. This system processes and archives them automatically, reserving your inbox for real conversations.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Zero Hosting Cost:&lt;/strong&gt; It runs inside Google’s free infrastructure, meaning no server bills or maintenance—ever.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A “Set It and Forget It” System:&lt;/strong&gt; After the initial 15-minute setup, you set a &lt;strong&gt;time-driven trigger&lt;/strong&gt; in the Apps Script dashboard. The script logs your new public subscribers while you sleep. &lt;strong&gt;No manual execution needed.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-elegant-output-your-new-roster&quot;&gt;&lt;strong&gt;The Elegant Output: Your New Roster&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;We skip the raw email data and deliver a clean, actionable log focused on building relationships:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-the-date-&quot;&gt;&lt;strong&gt;1. The Date 📅&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Actionable Insight:&lt;/strong&gt; See precisely when growth happened to correlate it with specific content or external events.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-the-subscriber-hyperlinked-&quot;&gt;&lt;strong&gt;2. The Subscriber (Hyperlinked) 🔗&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;The One-Click Engagement Hack:&lt;/strong&gt; The script uses a sheet formula to combine the name and the channel link (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=HYPERLINK(...)&lt;/code&gt;). This gives you a one-click engagement tool: Click the name, land on their channel, and leave a thank-you comment. &lt;strong&gt;You just turned a passive subscriber into a loyal superfan.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure&gt;&lt;amp-img width=&quot;612&quot; height=&quot;229&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/gsuite/youtube-subscriber-tracker-google-sheets-demo.webp&quot; alt=&quot;Screenshot of the Google Sheet showing subscriber names as clickable hyperlinks generated by the HYPERLINK function in Apps Script.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;612&quot; height=&quot;229&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/gsuite/youtube-subscriber-tracker-google-sheets-demo.png&quot; alt=&quot;Screenshot of the Google Sheet showing subscriber names as clickable hyperlinks generated by the HYPERLINK function in Apps Script.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Figure 1: The script uses the HYPERLINK function to make the subscriber&apos;s name a one-click link to their channel, as shown for Elara Vance.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;3-subscribed-channel-&quot;&gt;&lt;strong&gt;3. Subscribed Channel 📺&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Multi-Channel Utility:&lt;/strong&gt; If you manage multiple channels (e.g., a main channel and a clips channel), this provides instant clarity on which asset is driving the growth—all aggregated in one central log.&lt;/p&gt;
+
+&lt;h2 id=&quot;wrap-up-start-building-your-community-today&quot;&gt;&lt;strong&gt;Wrap-Up: Start Building Your Community Today&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Stop letting the most valuable names in your community disappear into your email trash. This free, open-source script gives you the perfect tool to nurture your early supporters, spot collaboration opportunities, and keep your inbox clean.&lt;/p&gt;
+
+&lt;p&gt;👉 &lt;a href=&quot;https://github.com/chriskyfung/youtube-subscriber-spreadsheet-apps-script&quot;&gt;&lt;strong&gt;Get the Script on GitHub&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you found this tool useful, give the repo a Star ⭐️ on GitHub. It helps other creators find this free solution!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Dec 2025 18:12:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/apps-script/youtube-subscriber-tracker-google-sheets-free/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/apps-script/youtube-subscriber-tracker-google-sheets-free/</guid>
+        
+        <category>Google Apps Script</category>
+        
+        <category>YouTube</category>
+        
+        <category>Notification</category>
+        
+        <category>Gmail</category>
+        
+        <category>Google Sheets</category>
+        
+        
+        <category>Project</category>
+        
+        <category>Apps Script</category>
+        
+      </item>
     
       <item>
         <title>Supercharge Your Learning: A Free Userscript to Track Google Skills Progress</title>
@@ -1757,774 +1863,6 @@ Happy coding! 🚀&lt;/p&gt;
         
         
         <category>Developer tools</category>
-        
-      </item>
-    
-      <item>
-        <title>My MATLAB Package and Toolbox Picks</title>
-        <description>&lt;aside style=&quot;position: relative;&quot;&gt;
-    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
-&lt;/aside&gt;
-
-&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
-
-&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#cross-product-toolboxes&quot; id=&quot;markdown-toc-cross-product-toolboxes&quot;&gt;Cross-Product Toolboxes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#parallel-processing&quot; id=&quot;markdown-toc-parallel-processing&quot;&gt;Parallel Processing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#shorthands&quot; id=&quot;markdown-toc-shorthands&quot;&gt;Shorthands&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#matlab-variables-and-data-type-operations&quot; id=&quot;markdown-toc-matlab-variables-and-data-type-operations&quot;&gt;MATLAB: Variables and Data Type Operations&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#arithmetic-operations&quot; id=&quot;markdown-toc-arithmetic-operations&quot;&gt;Arithmetic Operations&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#set-operations&quot; id=&quot;markdown-toc-set-operations&quot;&gt;Set Operations&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#m-file-utilities&quot; id=&quot;markdown-toc-m-file-utilities&quot;&gt;M-File Utilities&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#custom-display-interfaces&quot; id=&quot;markdown-toc-custom-display-interfaces&quot;&gt;Custom Display Interfaces&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#importexport&quot; id=&quot;markdown-toc-importexport&quot;&gt;Import/Export&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#file-systems&quot; id=&quot;markdown-toc-file-systems&quot;&gt;File Systems&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#graphics&quot; id=&quot;markdown-toc-graphics&quot;&gt;Graphics&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#advanced-plot-functions&quot; id=&quot;markdown-toc-advanced-plot-functions&quot;&gt;Advanced Plot Functions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#figure-and-subplot-utilities&quot; id=&quot;markdown-toc-figure-and-subplot-utilities&quot;&gt;Figure and Subplot Utilities&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#axis-control-and-callbacks&quot; id=&quot;markdown-toc-axis-control-and-callbacks&quot;&gt;Axis Control and Callbacks&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#labels-and-annotations&quot; id=&quot;markdown-toc-labels-and-annotations&quot;&gt;Labels and Annotations&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#colors-and-styling&quot; id=&quot;markdown-toc-colors-and-styling&quot;&gt;Colors and Styling&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#interactive-control-and-callbacks&quot; id=&quot;markdown-toc-interactive-control-and-callbacks&quot;&gt;Interactive Control and Callbacks&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#animation-maker&quot; id=&quot;markdown-toc-animation-maker&quot;&gt;Animation Maker&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#gui-components-and-utilities&quot; id=&quot;markdown-toc-gui-components-and-utilities&quot;&gt;GUI Components and Utilities&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#statistics&quot; id=&quot;markdown-toc-statistics&quot;&gt;Statistics&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#curve-and-surface-fitting&quot; id=&quot;markdown-toc-curve-and-surface-fitting&quot;&gt;Curve and Surface Fitting&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#science-and-engineering&quot; id=&quot;markdown-toc-science-and-engineering&quot;&gt;Science and Engineering&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#debugging&quot; id=&quot;markdown-toc-debugging&quot;&gt;Debugging&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;cross-product-toolboxes&quot;&gt;Cross-Product Toolboxes&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;238&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/vintage-1318361_730x238.webp&quot; alt=&quot;orchestra&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;238&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/vintage-1318361_730x238.png&quot; alt=&quot;orchestra&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;http://matlink.org/&quot;&gt;MATLink — Communicate with MATLAB from Mathematica&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;MATLink is a Mathematica™ application to communicate with MATLAB™, providing functionality to easily transfer data between the two systems, and use MATLAB functions, scripts, and toolboxes from within Mathematica.&lt;/p&gt;
-
-    &lt;p&gt;&lt;em&gt;&lt;strong&gt;Learn more&lt;/strong&gt;:&lt;/em&gt; &lt;cite&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=g1rzyVl9VCA&quot;&gt;MATLink Package for Mathematica - YouTube&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/20573-smatlink-let-matlab-dance-with-mathematica&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;SMATLINK - Let MATLAB Dance with Mathematica&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows calling Mathematica kernel from MATLAB 7.x&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/5051-matlab-r-link&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;MATLAB R-link&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;An interface that allows you to call R functions from within MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://github.com/victorlei/smop&quot;&gt;smop: Small MATLAB to Python compiler&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A Python package translates MATLAB code to Python. See also:&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://stackoverflow.com/questions/9845292/a-tool-to-convert-matlab-code-to-python&quot;&gt;A tool to convert MATLAB code to Python - Stack Overflow&lt;/a&gt;&lt;/cite&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://numpy.org/doc/stable/user/numpy-for-matlab-users.html&quot;&gt;NumPy for MATLAB users — NumPy Manual&lt;/a&gt;&lt;/cite&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://github.com/blink1073/oct2py&quot;&gt;oct2py: GNU Octave to Python bridge&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A Python package runs M-Files and Octave functions from Python&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/33128-parallel-distributed-processing-of-weka-algorithms-in-matlab&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Parallel Distributed Processing of Weka Algorithms in MATLAB&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;Run Weka algorithms in parallel across distributed computers in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/24839-mweka-running-machine-learning-tool-weka-from-matlab&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;mweka: Running Machine Learning Tool Weka from MATLAB&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A GUI runs the Weka classifiers and displays the results in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/42202-plotly-%7C-online-matlab-graphing&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Plotly | Online MATLAB Graphing&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package converts your MATLAB figures into online Plotly graphs with a single line of code.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/4667-matlab-for-kate-and-kwrite&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;MATLAB for Kate and Kwrite&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;Syntax highlighting file for Linux/KDE editors Kate and Kwrite.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;parallel-processing&quot;&gt;Parallel Processing&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;173&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/cpu-speed_730x173_o70.webp&quot; alt=&quot;cpu speedup&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;173&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/cpu-speed_730x173_o70.jpg&quot; alt=&quot;cpu speedup&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/13775-multicore-parallel-processing-on-multiple-cores&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Multicore - Parallel processing on multiple cores&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;This package provides parallel processing on multiple cores on a single machine or on multiple machines that have access to a common directory.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/34080-gpubench&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;GPUBench&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;This package times different MATLAB GPU tasks and estimates the peak performance of your GPU in floating-point operations per second (FLOP/s). It produces a detailed HTML report showing how your GPU’s performance compares to pre-stored performance results from a range of other GPUs.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mit.edu/~kepner/pMatlab/&quot;&gt;pMatlab&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;This package provides a set of MATLAB data structures and functions that implement distributed MATLAB arrays for Parallel array programming.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/28893-fast-string-to-double-conversion&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Fast String to Double Conversion&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function converts text to double like MATLAB’s str2double, but up to 400x faster! multithreaded.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Learn more&lt;/strong&gt;:&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://www.mathworks.com/help/matlab/matlab_prog/techniques-for-improving-performance.html&quot;&gt;Techniques to Improve Performance - MathWorks&lt;/a&gt;&lt;/cite&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://www.mathworks.com/help/matlab/matlab_prog/profiling-for-improving-performance.html&quot;&gt;Profile Your Code to Improve Performance - MathWorks&lt;/a&gt;&lt;/cite&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;&lt;cite&gt;&lt;a href=&quot;https://www.mathworks.com/help/matlab/matlab_prog/measure-performance-of-your-program.html&quot;&gt;Measure the Performance of Your Code - MathWorks&lt;/a&gt;&lt;/cite&gt;&lt;/dt&gt;
-      &lt;dt&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cputime&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;Estimate elapsed CPU time.
- &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tic&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toc&lt;/code&gt;&lt;/dd&gt;
-      &lt;dd&gt;Start stopwatch timer and read elapsed time from stopwatch, respectively.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;shorthands&quot;&gt;Shorthands&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;162&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/cooking-tools_730x162_o16.webp&quot; alt=&quot;cooking utensils&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;162&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/cooking-tools_730x162_o16.png&quot; alt=&quot;cooking utensils&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;matlab-variables-and-data-type-operations&quot;&gt;MATLAB: Variables and Data Type Operations&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/33866-disperse&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;disperse&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function assigns elements of an input array to individual output variables with a single function call.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/24742-shared-variable&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Shared variable&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A helper class to create a shared object as a nickname, or alias, for some other variable.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/7842-catstruct&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;CATSTRUCT&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A helper function to concatenate or merge structures with different field names.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://blogs.mathworks.com/pick/2015/02/27/for-each/&quot; title=&quot;For Each » File Exchange Pick of the Week - MATLAB &amp;amp; Simulink&quot;&gt;For-Each&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox enables simple, readable, and powerful for-loops in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/31532-pack-unpack-variables-to-from-structures-with-enhanced-functionality&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Pack &amp;amp; Unpack variables to &amp;amp; from structures with enhanced functionality&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function converts variables to structures, and vice versa&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;arithmetic-operations&quot;&gt;Arithmetic Operations&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/26212-round-with-significant-digits&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Round with significant digits&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function rounds a number (or the elements of a vector or matrix) towards the nearest number with N significant digits.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;set-operations&quot;&gt;Set Operations&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/7738-countmember&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;countmember&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function counts the number of times the elements of array A are present in array B.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/24380-cstrainbp&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;CStrAinBP&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function finds the overlapping element of 2 cell strings with 10-20 times faster than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;INTERSECT&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISMEMBER&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SETDIFF&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UNION&lt;/code&gt;.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/22786-findind&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;FINDIND&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function finds indices of matching elements between two arrays/matrices&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;m-file-utilities&quot;&gt;M-File Utilities&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/47918-align-equal-sign&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Align equal sign&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows you to align equal signs in the MATLAB editor.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/4645-matlab-comment-stripping-toolbox&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;% MATLAB Comment Stripping Toolbox&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A small collection of utilities for stripping MATLAB comments from MATLAB code.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/41623-betterhelp&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;BetterHelp&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox to improve MATLAB’s help functionality for functions that do not have their own help files.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;custom-display-interfaces&quot;&gt;Custom Display Interfaces&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/28067-text-progress-bar&quot;&gt;Text progress bar&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function to create a TEXT progress bar in your command window.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/14773-statusbar&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;statusbar&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function to set/get status bar(s) for GUI figures &amp;amp; MATLAB desktop.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/1255-timebar&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;timebar&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a progress window, similar to a waitbar, that shows the progress of calculations using a sliding bar, a displayed percentage complete, and an estimated time remaining.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;importexport&quot;&gt;Import/Export&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/47821-saveeditorprofile-m&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;SaveEditorProfile.m&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates the file ‘RestoreEditorProfile.m’ in the current directory.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/28016-straightforward-copy-and-paste-functions?requestedDomain=zh&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Straightforward COPY and PASTE functions&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;Allows very simple manual exchange with other applications through the clipboard.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/8559-mat2clip&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;MAT2CLIP&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function copies the contents of 2-D matrix A to the system clipboard.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/8472-num2clip--copy-numerical-arrays-to-clipboard&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;num2clip: copy numerical arrays to clipboard&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function copies a numerical array to the clipboard as a tab-separated string ready for pasting.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/37349-matrix2lyx&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;matrix2lyx&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function converts a MATLAB matrix to a &lt;a href=&quot;https://www.lyx.org/&quot;&gt;LyX&lt;/a&gt; table.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/20565-json-parser&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;JSON Parser&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function parses JSON strings. It converts JSON arrays into cell arrays and JSON objects into structures.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/33381-jsonlab--a-toolbox-to-encode-decode-json-files-in-matlab-octave&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;JSONlab: a toolbox to encode/decode JSON files in MATLAB/Octave&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox to encode/decode JSON/UBJSON/MessagePack files in MATLAB/Octave.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/28518-xml2struct&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;xml2struct&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function converts an XML file into a MATLAB structure for easy access to the data.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/34711-xmlnode&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;XMLNode&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows you to read an XML document into MATLAB as an XMLNode object.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;file-systems&quot;&gt;File Systems&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;146&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/files-and-folders_730x146_o16.webp&quot; alt=&quot;database, folder, file, local and remote storages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;146&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/files-and-folders_730x146_o16.png&quot; alt=&quot;database, folder, file, local and remote storages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/22209-genpath_exclude&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;genpath_exclude&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A wrapper for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;genpath&lt;/code&gt;, but can exclude/ignore directories using regular expressions.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/46047-lsr&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;lsr&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A wrapper for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt;, which lists the files in one or more folders with regexp and combinatorial logic (and, or, not, etc).&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Natural-Order Filename Sort&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox to alphanumeric sort of filenames or filepaths, with the customizable numeric format.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/32226-recursive-directory-listing-enhanced-rdir&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Recursive directory listing - Enhanced RDIR&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function lists files and directories in a directory and its subdirectories recursively.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/matlab/file-io-and-file-system-in-matlab&quot;&gt;File I/O and File System in MATLAB&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;278&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/charts-6246450_730x278_o128.webp&quot; alt=&quot;histogram, scatter plot, bar chart, line chart, area chart, box plot, circle plot, etc.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;278&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/charts-6246450_730x278_o128.png&quot; alt=&quot;histogram, scatter plot, bar chart, line chart, area chart, box plot, circle plot, etc.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;advanced-plot-functions&quot;&gt;Advanced Plot Functions&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/42560-line_fewer_markers&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;line_fewer_markers&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;An alias of the LINE command, with additional control for markers, in number and location.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/40790-plot-big&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Plot (Big)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox makes MATLAB’s line plots much faster by reduces data to the smallest possible set that looks identical given the number of pixels available on the screen.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/27237-prettyplot&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;prettyplot&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates prettier line plots with markers without  the line and markers being on top of each other.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/42673-beautiful-and-distinguishable-line-colors-colormap&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Beautiful and distinguishable line colors + colormap&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a plot with lots of lines with very distinguishable and aesthetically pleasing colors. Works for &lt;em&gt;N&lt;/em&gt; colors.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/38862-contour-line-smoothing&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Contour Line Smoothing&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a contour plot with smooth contour lines by fitting them with a 2-D spline.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/48576-circulargraph&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;circularGraph&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function plots an interactive circular graph to illustrate connections in a network in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/27485-boundedline-m&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;boundedline.m&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox plots one or more lines with a shaded boundary (can represent error, confidence intervals, etc).&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;figure-and-subplot-utilities&quot;&gt;Figure and Subplot Utilities&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/37176-distribute-figures&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Distribute figures&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function distributes figures on different parts of the screen(s). Supports secondary monitor(s).&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/48480-automatically-arrange-figure-windows&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Automatically arrange figure windows&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A helper function automatically arranges/aligns and fits figures within a monitor screen.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/20003-panel&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Panel&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package provides an alternative to MATLAB’s “subplot”, providing easier control over layout (particularly, easy elimination of whitespace).&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/23073-uisplitpane-split-a-container-figure-frame-uipanel-into-two-resizable-sub-containers&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;UISplitPane - Split a container (figure/frame/uipanel) into two resizable sub-containers&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package splits a container (figure/frame/uipanel) into two resizable sub-containers, like Java’s JSplitPane.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/40955-gui-to-assist-with-combining-pulling-out-figures-and-subplots&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;GUI to assist with combining/pulling out figures and subplots&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A GUI assists with generating new figures using data in existent figures.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/3162-useful-figure-management-utilities&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Useful Figure Management Utilities&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package of functions allows figures cascading, circulating, and filling the screen by managing the positioning of a bunch of on-screen figure windows in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/34055-tightfig-hfig&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;tightfig(hfig)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function encloses all axes in the figure without excess space around them.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/27991-tight_subplot-nh-nw-gap-marg_h-marg_w&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;tight_subplot(Nh, Nw, gap, marg_h, marg_w)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function adjusts the spacing between the axes as well as the margins around the axes.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/26587-clone-figure&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Clone Figure&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows you to copy a figure to another figure.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/34326-gridsubplot&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;gridSubplot&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows you to build a figure with subplots given by a vector of figure objects.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/37688-overlaytable&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;OverlayTable&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows you to create table overlays for figures which include full-text formatting and support for symbols.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;axis-control-and-callbacks&quot;&gt;Axis Control and Callbacks&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/36324-fancy-dualgraphs&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Fancy DualGraphs&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows you to create a double axis to use with MATLAB plotting tools, and automatically draw markers.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/9016-addaxis&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;addaxis&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows you to add multiple y-axes to plots, and make plots to be zoomable.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/317-plotxx-m&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;plotxx.m&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a graph with x-axes on both the top and bottom.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/1017-plotyyy&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;plotyyy&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a graph with three y-axes.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/47846-axis-xx&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Axis XX&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox adds multiple X or Y axes to plots, rescale data, use any function, add data tips, zoom, flexible.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/7169-samexaxis-nice-subplots-with-same-x-axis&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;samexaxis (nice subplots with same x axis)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A helper function to clean up subplots that have common x-axises.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/42905-break-x-axis&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Break X Axis&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows split the x-axis into 2 disjoint regions in order to hide an uninteresting portion of a figure.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;labels-and-annotations&quot;&gt;Labels and Annotations&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/16115-axis_prunelabels-clean-up-redundant-axis-labels&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Axis_Prunelabels – clean up redundant axis labels&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function minimizes redundant axis labels in a grid of subplots.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/45663-xyrotalabel-rotate-x-axis-and-y-axis-labels&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;XYrotalabel - rotate X-axis and Y-axis labels&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package gives simple control over label rotation with higher stability.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/38716-curly-brace-annotation&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Curly brace annotation&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function to draw curly brace on the current figure.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/16746-reflinexyz&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;REFLINEXYZ&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function plots reference lines from the 3D points (X, Y, Z) to the three cartesian planes (YZ, XZ, &amp;amp; XY planes).&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/15986-format-tick-labels&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Format Tick Labels&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function replaces axes tick labels with formatted text objects that can include both Tex and LaTex interpreted strings.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/46431-format-tick-labels-extended-v2&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Format Tick Labels (Extended v2)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function replaces axes tick labels with formatted text objects that can include both Tex and LaTex interpreted strings.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/11466-textbp-text-with-legend-style-best-placement&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;textbp: text with legend-style “best” placement&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function automatically locates text annotation to minimize figure obscuration.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/48331-add-a-title-to-a-legend&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Add a title to a legend&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function adds a title to a legend.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/43657-addmultiplelegends&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;AddMultipleLegends&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function adds multiple legends to a single figure/axes.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/37583-legendgrid&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;legendGrid&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function displays legend in a grid mode.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/47228-legappend&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;legappend&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function adds new entries to a legend.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/27389-simonhenin-columnlegend&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;simonhenin/columnlegend&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a legend with a specified number of columns.&lt;/p&gt;
-
-    &lt;p&gt;&lt;em&gt;&lt;strong&gt;Remark&lt;/strong&gt;: As of MATLAB 2018a, legend() now supports columns, so this function will no longer be maintained&lt;/em&gt;.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;colors-and-styling&quot;&gt;Colors and Styling&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/35903-make-pretty-publishable-graphs&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Make Pretty (Publishable) Graphs&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows easily Create Publishable Ready Figures. Change Font Size, Line Width, and Background Color. Makes all Axis Labels the same Precision.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/47921-plotpub-publication-quality-graphs-in-matlab&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;PlotPub - Publication Quality Graphs in MATLAB&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A free and open-source MATLAB library for creating beautiful, publication-quality graphs from instantly generated MATLAB figures or saved MATLAB fig files.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/42126-sciencestagram&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;sciencestagram&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function makes your plots look somewhat like they came from the dustiest section of the engineering library.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/46666-figfriends-tool-en-zip&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;figFriends_Tool_EN.zip&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package allows you to prepare figures with amplificated parts or another figure for scientific writing.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/9815-gridcolor&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;gridcolor&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function changes the color of gridlines to a color different from the label and box color, which is currently not implemented in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/28982-perceptually-improved-colormaps&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Perceptually improved colormaps&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A tool returns perceptually balanced colormaps.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;interactive-control-and-callbacks&quot;&gt;Interactive Control and Callbacks&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/4179-draggable&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;draggable&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows graphical objects to be dragged in a figure.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/2875-dualcursor?requestedDomain=zh&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;dualcursor&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A utility adds dual vertical cursors to a plot.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/26007-on-figure-magnifier&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;On-figure magnifier&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A utility provides a powerful zooming tool specially designed for the documentation of original and zoomed 2D graphics of images on the same plot.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/41513-textzoomable-x-y-varargin&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;TextZoomable(x,y,varargin)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function adds texts that zoom as you zoom your plot, rather than staying at a fixed font size.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/30196-fine-tuning-figure-toolbar&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Fine Tuning Figure Toolbar&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function adds a toolbar to fix axis position so as to remove annoying blank margins. Also, set precise figure size.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/29760-menubar&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;MenuBar&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows the user to create menus anywhere in a figure.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/21799-clickablelegend-interactive-highlighting-of-data-in-figures&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;clickableLegend - Interactive highlighting of data in figures&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a legend with clickable strings that let you hide and show objects in a plot.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/44065-draggable-data-tips&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Draggable data tips&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A utility enables the user to interactively drag any newly-created data-tip, anywhere in the MATLAB figure.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/47766-linecut&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;linecut&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function allows you to interact a 3D plot with a crosshair and dynamically view X and Y linecuts of surf or image data.&lt;/p&gt;
-
-    &lt;p&gt;&lt;em&gt;&lt;strong&gt;Remark&lt;/strong&gt;: This function does not work if the figure is being held on status&lt;/em&gt;.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/19891-3d-image-rotation-using-sliders&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;3D image rotation using sliders&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A GUI represents an image and rotate this image about the three axes in three-dimensional space using sliders.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/41405-volumetric-data-explorer&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Volumetric Data Explorer&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;An app provides an interactive environment to explore four and five-dimensional data using some of MATLAB’s abilities for volumetric visualization and animation.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h3 id=&quot;animation-maker&quot;&gt;Animation Maker&lt;/h3&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/21944-animated-gif&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Animated GIF&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;An example illustrates how to capture a series of screenshots, and saves the animation as a GIF image file.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;gui-components-and-utilities&quot;&gt;GUI Components and Utilities&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;220&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/graphical-user-interface-design_730x220_o16.webp&quot; alt=&quot;gui-component-design&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;220&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/graphical-user-interface-design_730x220_o16.png&quot; alt=&quot;gui-component-design&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/41426-akzoom&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;akZoom&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package allows direct zooming and panning with the mouse in 2D plots. Supports plotyy, loglog, subplot, etc.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/27971-copy-paste&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Copy Paste&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package allows a simple Cut, Copy, Paste context menu for edit boxes in GUI.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/27758-gui-layout-toolbox&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;GUI Layout Toolbox&lt;/a&gt;“GUI Layout Toolbox”&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox provides tools to create sophisticated MATLAB graphical user interfaces that resize gracefully.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/46509-easy-programatic-gui-layout&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Easy programatic GUI Layout&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates a GUI with the automatic placement of objects, which allows you to create panels, editboxes, text, listboxes, pushbuttons and more, without having to calculate its position.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/25938-multiple-tab-gui&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Multiple Tab GUI&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;An example illustrates how to create a figure with multiple Tabs.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/25862-inputsdlg--enhanced-input-dialog-box--v2-1-2-&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;inputsdlg: Enhanced Input Dialog Box (v2.1.2)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function creates an enhanced version of the standard INPUTDLG function with many additional features.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/25814-image-file-get-put-dialog-boxes&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Image File Get/Put Dialog Boxes&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package allows you to easily create open and save image file dialog boxes.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/13000-imageviewer&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;IMAGEVIEWER&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A GUI for viewing and interactively exploring image files.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/37679-uigetvariables-dialog-to-pass-variables-from-workspace-into-gui&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;UIGETVARIABLES: Dialog to pass variables from workspace into GUI&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package creates a dialog box for selecting variables from the base workspace.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Learn more&lt;/strong&gt;:&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;cite&gt;&lt;a href=&quot;https://www.mathworks.com/discovery/matlab-gui.html&quot;&gt;MATLAB GUI - MathWorks&lt;/a&gt;&lt;/cite&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;statistics&quot;&gt;Statistics&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;174&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/distribution-159626_730x174_o16.webp&quot; alt=&quot;normal distributions&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;174&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/distribution-159626_730x174_o16.png&quot; alt=&quot;normal distributions&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/39044-matlab-tools-for-scientist&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;MATLAB Tools for Scientist&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox for data analysis and visualization using an example of dose-response fitting.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/21033-calculate-number-of-bins-for-histogram&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Calculate number of bins for histogram&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows you to calculate the &lt;strong&gt;ideal&lt;/strong&gt; number of bins for a histogram, and plots the data with MATLAB’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HIST&lt;/code&gt; function.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/36000-fbd--find-the-best-distribution--tool&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;FBD - “Find the Best Distribution” tool&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A GUI allows you to find the best distribution that fits your data.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;curve-and-surface-fitting&quot;&gt;Curve and Surface Fitting&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;183&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/measurement_730x183.webp&quot; alt=&quot;land surveying&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;183&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/measurement_730x183.png&quot; alt=&quot;land surveying&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/10176-ezyfit-2-44&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;EzyFit 2.44&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox to perform simple curve fitting of one-dimensional data using arbitrary (non-linear) fitting functions.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/45356-fitting-quadratic-curves-and-surfaces&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Fitting quadratic curves and surfaces&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox provides a fairly comprehensive toolset of estimating quadratic curves and surfaces in an errors-in-variables context, with and without constraints.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/8998-surface-fitting-using-gridfit&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Surface Fitting using gridfit&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function models a surface from data in the form of z(x,y) from scattered or semi-scattered data&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;science-and-engineering&quot;&gt;Science and Engineering&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;218&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/space_730x218_o16.webp&quot; alt=&quot;space - sun, satellite, earth&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;218&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/space_730x218_o16.png&quot; alt=&quot;space - sun, satellite, earth&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/38833-mathexplorer-learning-maths-using-mupad-for-engineering-students&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;MathExplorer: Learning Maths using MuPAD for Engineering Students&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A set of MuPAD notebooks that allow engineering students to visualize and experiment with maths.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/3263-degrees-and-radians&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;degrees and radians&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;Two helper functions, one converts degrees to radians, the other rads to deg.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/9873-simple-units-and-dimensions-for-matlab&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Simple Units and Dimensions for MATLAB&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function provides an efficient, easy to use, method of incorporating real-world units.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/46045-unit-varargin&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;unit(varargin)&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A function converts between different units, and checks that their dimensions are consistent.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/10070-units-and-dimensions-suite-for-matlab&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Units and Dimensions Suite for MATLAB&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A complete suite for using real-world units in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/35258-unit-converters&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Unit Converters&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;Intuitive functions for conversion of acceleration, angle, area, computing, force, frequency, energy, length, mass, power, pressure, speed, temperature, time, or volume.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/31665-velocity-conversion-toolbox&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Velocity Conversion Toolbox&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox converts velocities between mph, m/s,km/h, kts, ft/s.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/24361-robotics&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Robotics&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox draws 16 robots that the user select.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;debugging&quot;&gt;Debugging&lt;/h2&gt;
-
-&lt;figure class=&quot;shadow-none&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;248&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/debug_730x248_o16.webp&quot; alt=&quot;bug fixing&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;248&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/matlab/debug_730x248_o16.png&quot; alt=&quot;bug fixing&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/46976-profile_history-display-graphical-profiling-timeline-data&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;profile_history - display graphical profiling timeline data&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A GUI to analyze the latest profiling session and displays the function-call timings and durations in a graphical timeline.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/28929-tracer4m&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;tracer4m&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox traces calls to methods and functions.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/46070-plot-subroutines&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;plot_subroutines&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package plots the subroutines in a function and their dependencies on each other.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/28492-intent-m&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;intent.m&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows you to create a plot of relationships between M-files in the current directory, as inferred by the names of input and output arguments.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/27262-functor&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;functor&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A package allows you to generate and visualize a mapping between functions and the composition of function handles.&lt;/p&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;&lt;a href=&quot;https://www.mathworks.com/matlabcentral/fileexchange/31572-automatische-dokumentation-matlab-quellcodes-automatic-documentation-matlab-source-codes&quot; title=&quot;File Exchange - MATLAB Central&quot;&gt;Automatic Documentation MATLAB source codes&lt;/a&gt;&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;p&gt;A toolbox allows you to generate m2html documentation with Graphviz on projects written in MATLAB.&lt;/p&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep on reading&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/matlab/Working-MATLAB-with-MS-Excel/&quot;&gt;Working MATLAB with MS Excel&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/matlab/Convert-MATLAB-Matrix-to-MS-Office-Equation&quot;&gt;Matrix Conversion between MATLAB and Microsoft Equation Editor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/matlab/expand-twitter-short-url&quot;&gt;Expand shorten URLs in MATLAB&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 18 Sep 2021 01:12:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/matlab/matlab-packages-and-toolboxes</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/matlab/matlab-packages-and-toolboxes</guid>
-        
-        <category>MATLAB</category>
-        
-        
-        <category>Academic</category>
         
       </item>
     
