@@ -5,9 +5,122 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Jan 2026 21:36:33 +0800</pubDate>
-    <lastBuildDate>Sun, 04 Jan 2026 21:36:33 +0800</lastBuildDate>
+    <pubDate>Mon, 05 Jan 2026 15:14:11 +0800</pubDate>
+    <lastBuildDate>Mon, 05 Jan 2026 15:14:11 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>InstapaperScraper v1.1: Now with JSON, SQLite Exports, and a Better CLI</title>
+        <description>&lt;p&gt;It’s time for a big update! I’m excited to announce the release of &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/InstapaperScraper&quot;&gt;InstapaperScraper v1.1&lt;/a&gt;&lt;/strong&gt;, a significant upgrade that makes the tool more powerful, flexible, and easier to use.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/blog/productivity/introducing-instapaper-scraper/&quot;&gt;original version&lt;/a&gt; was a simple script to help users export their bookmarks to CSV. This new version builds on that foundation, adding more export options and a much-improved user experience, while remaining a reliable tool for those who prefer not to use an API.&lt;/p&gt;
+
+&lt;p&gt;Let’s dive into what’s new.&lt;/p&gt;
+
+&lt;aside style=&quot;position: relative;&quot;&gt;
+    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
+&lt;/aside&gt;
+
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#whats-new-in-v11&quot; id=&quot;markdown-toc-whats-new-in-v11&quot;&gt;What’s New in v1.1?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#getting-started-with-v11&quot; id=&quot;markdown-toc-getting-started-with-v11&quot;&gt;Getting Started with v1.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#your-data-your-rules&quot; id=&quot;markdown-toc-your-data-your-rules&quot;&gt;Your Data, Your Rules&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#contribute--stay-updated&quot; id=&quot;markdown-toc-contribute--stay-updated&quot;&gt;Contribute &amp;amp; Stay Updated&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
+
+&lt;h2 id=&quot;whats-new-in-v11&quot;&gt;What’s New in v1.1?&lt;/h2&gt;
+
+&lt;p&gt;This release focuses on flexibility, robustness, and a more modern developer experience.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Multiple Export Formats:&lt;/strong&gt; You asked for it, you got it! In addition to CSV, you can now export your bookmarks to &lt;strong&gt;JSON&lt;/strong&gt; and &lt;strong&gt;SQLite&lt;/strong&gt;. This gives you the power to use your data in a wide range of applications, from data analysis pipelines to custom web apps.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;TOML for Configuration:&lt;/strong&gt; We’ve moved away from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; files to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.toml&lt;/code&gt;. This provides a standardized, more expressive way to configure folder settings and other options.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Powerful CLI:&lt;/strong&gt; The script now features a command-line interface (CLI) powered by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;argparse&lt;/code&gt;. You can specify folders, output and provides clear options to select export formats and manage authentication.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;getting-started-with-v11&quot;&gt;Getting Started with v1.1&lt;/h2&gt;
+
+&lt;p&gt;Getting started is simple. The tool is now a proper Python package available on PyPI.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Install the Package:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;instapaper-scraper
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Configure (Optional):&lt;/strong&gt;
+ To scrape specific folders, create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; file. You can place it in your user config directory (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.config/instapaper-scraper/config.toml&lt;/code&gt;) or the working directory.&lt;/p&gt;
+
+    &lt;div class=&quot;language-toml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;# Example config.toml&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;folders&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;]]&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ml&quot;&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1234567&quot;&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;slug&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;machine-learning&quot;&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;output_filename&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ml-articles.json&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Run the Scraper:&lt;/strong&gt;
+ The script will securely prompt for your credentials on the first run and save your session.&lt;/p&gt;
+
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;# Export to the default CSV format&lt;/span&gt;
+ instapaper-scraper
+
+ &lt;span class=&quot;c&quot;&gt;# Export to JSON&lt;/span&gt;
+ instapaper-scraper &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt; json
+
+ &lt;span class=&quot;c&quot;&gt;# Export a specific folder to a custom SQLite database&lt;/span&gt;
+ instapaper-scraper &lt;span class=&quot;nt&quot;&gt;--folder&lt;/span&gt; ml &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt; sqlite &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; my_ml_articles.db
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;You can also pass your credentials directly via the command line if you prefer.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;your-data-your-rules&quot;&gt;Your Data, Your Rules&lt;/h2&gt;
+
+&lt;p&gt;With these new export options, you have more control than ever:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Analyze with SQLite:&lt;/strong&gt; Run complex SQL queries on your bookmarks to uncover reading patterns.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Integrate with JSON:&lt;/strong&gt; Easily feed your data into other applications or web services.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keep it Simple with CSV:&lt;/strong&gt; Stick with the classic format for quick analysis in any spreadsheet program.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;contribute--stay-updated&quot;&gt;Contribute &amp;amp; Stay Updated&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/InstapaperScraper&quot;&gt;InstapaperScraper&lt;/a&gt;&lt;/strong&gt; is an open-source project. If you find it useful, please consider starring it on GitHub! Your contributions are also welcome—feel free to report issues, suggest features, or submit pull requests.&lt;/p&gt;
+
+&lt;p&gt;Happy reading, and may your data bring you as much joy as the articles you’ve saved!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Jan 2026 10:00:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/productivity/instapaper-scraper-v1/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/instapaper-scraper-v1/</guid>
+        
+        <category>Instapaper</category>
+        
+        <category>Python</category>
+        
+        <category>Read Later App</category>
+        
+        <category>Data Exporter</category>
+        
+        
+        <category>Productivity</category>
+        
+      </item>
     
       <item>
         <title>Get a FREE, Automated YouTube Subscriber Tracker in Google Sheets</title>
@@ -518,7 +631,15 @@
     
       <item>
         <title>InstapaperScraper: Export Your Bookmarks to CSV Effortlessly</title>
-        <description>&lt;p&gt;In today’s digital age, managing saved &lt;a href=&quot;https://www.instapaper.com/&quot;&gt;Instapaper&lt;/a&gt; articles can be overwhelming, especially for free plan users who lack a search feature. Obtaining API keys for Instapaper APIs can also be time-consuming.&lt;/p&gt;
+        <description>&lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;IMPORTANT&lt;/div&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    &lt;p&gt;This post describes an early version of InstapaperScraper. The project has since been updated to &lt;strong&gt;v1.1&lt;/strong&gt;, which offers more features, and is much more reliable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please &lt;a href=&quot;/blog/productivity/instapaper-scraper-v1/&quot;&gt;read the new announcement post&lt;/a&gt; for more information.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In today’s digital age, managing saved &lt;a href=&quot;https://www.instapaper.com/&quot;&gt;Instapaper&lt;/a&gt; articles can be overwhelming, especially for free plan users who lack a search feature. Obtaining API keys for Instapaper APIs can also be time-consuming.&lt;/p&gt;
 
 &lt;p&gt;Say hello to &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/InstapaperScraper&quot;&gt;InstapaperScraper&lt;/a&gt;&lt;/strong&gt;—a lightweight Python script designed to simplify the process. With InstapaperScraper, you can scrape bookmarks from your Instapaper account and export them as neatly formatted CSV data—all without needing an API key.&lt;/p&gt;
 
@@ -628,6 +749,8 @@
         <category>Python</category>
         
         <category>Read Later App</category>
+        
+        <category>Data Exporter</category>
         
         
         <category>Productivity</category>
@@ -1755,111 +1878,6 @@ When dealing with large datasets or extensive codebases, these advanced cloning 
         <category>User tips</category>
         
         <category>Command-line</category>
-        
-        
-        <category>Developer tools</category>
-        
-      </item>
-    
-      <item>
-        <title>Speed Up GitHub CLI: Custom Completion for &apos;gh repo clone&apos; Command</title>
-        <description>&lt;p&gt;Ever found yourself typing &lt;a href=&quot;https://cli.github.com/manual/gh_repo_clone&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt;&lt;/a&gt; and struggling to remember repository names? I’ve been there. As a developer who works with dozens of repositories daily, I needed a better solution. That’s why I created a custom completion script that makes the GitHub CLI’s clone command more powerful and user-friendly.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-custom-completion-matters&quot;&gt;Why Custom Completion Matters&lt;/h2&gt;
-
-&lt;p&gt;While the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; is incredibly useful, it lacks intelligent autocompletion. Here’s what you’re missing:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gh repo clone my&amp;lt;tab&amp;gt;
-my-awesome-project    my-docker-images     my-python-scripts
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I struggled to recall exact repository names, some of which are a mouthful. Then there were the flags that I could never remember. These tiny hurdles added up, hindering productivity, especially for those who constantly work with multiple repositories.&lt;/p&gt;
-
-&lt;p&gt;Driven by the desire for seamless interaction, I embarked on a quest to enhance my command-line experience. Instead of wrestling with repository names and flags, I decided to create a custom completion script for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; command. The script enables:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Smart Repository Suggestions&lt;/strong&gt;: Instantly see matching repositories as you type.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Flag Completion&lt;/strong&gt;: Access additional &lt;a href=&quot;https://git-scm.com/docs/git-clone&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt;&lt;/a&gt; options for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt; by pressing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tab&lt;/code&gt; twice after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt; flag.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The completion script automatically populates suggestions, enabling faster interaction and execution with the GitHub CLI.&lt;/p&gt;
-
-&lt;h3 id=&quot;common-use-cases&quot;&gt;Common Use Cases&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Clone only a single branch&lt;/span&gt;
-gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Clone with a specific branch&lt;/span&gt;
-gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branch&lt;/span&gt; feature-branch &lt;span class=&quot;nt&quot;&gt;--single-branch&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Shadow clone&lt;/span&gt;
-gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
-
-&lt;span class=&quot;c&quot;&gt;# Partial clone with sparse checkout&lt;/span&gt;
-gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--sparse&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/devtools/mastering-git-github-cli-essential-commands/&quot;&gt;Mastering Git &amp;amp; GitHub CLI: Essential Commands You Should Know&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;quick-setup-guide&quot;&gt;Quick Setup Guide&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Download the completion script to your computer&lt;/strong&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ~/.gh-repo-clone-completion.bash https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280/raw/.gh-repo-clone-completion.bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;You can view the source code on &lt;strong&gt;&lt;a href=&quot;https://gist.github.com/chriskyfung/50039cb2a9b586047adc2726085c6280&quot;&gt;GitHub Gist&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Add to your shell&lt;/strong&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;source ~/.gh-repo-clone-completion.bash&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc  &lt;span class=&quot;c&quot;&gt;# for bash&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# OR&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;source ~/.gh-repo-clone-completion.bash&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.zshrc   &lt;span class=&quot;c&quot;&gt;# for zsh&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Verify the Setup&lt;/strong&gt;:&lt;/p&gt;
-
-    &lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone &amp;lt;tab&amp;gt;&lt;/code&gt; in your terminal. If set up correctly, you should see repository suggestions as you type.&lt;/p&gt;
-
-    &lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone -- &amp;lt;tab&amp;gt;&lt;/code&gt; in your terminal. You should see additional &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; flags by listing them after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping Up&lt;/h2&gt;
-
-&lt;p&gt;Adding this custom completion function can really level up your GitHub CLI game, making it smoother and more user-friendly without the little frustrations. Give it a try and see how much faster your GitHub workflow becomes.&lt;/p&gt;
-
-&lt;p&gt;Got questions or suggestions?
-Feel free to contribute to the script on GitHub!  &lt;br /&gt;
-Happy coding! 🚀&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/linux/Useful-Ubuntu-Commands&quot;&gt;Useful command lines in Ubuntu that help using terminals&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.blog/engineering/engineering-principles/scripting-with-github-cli/&quot;&gt;Scripting with GitHub CLI - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.howtogeek.com/the-linux-bashrc-file-explained/&quot;&gt;The Linux .bashrc File: What It Is, Plus 6 Things You Can Do With It&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.howtogeek.com/830549/whats-the-difference-between-bashrc-and-profile-on-linux/&quot;&gt;What’s the Difference Between .bashrc and .profile on Linux?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 27 Dec 2024 15:12:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/devtools/github-cli-repo-clone-custom-completion/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/github-cli-repo-clone-custom-completion/</guid>
-        
-        <category>Bash</category>
-        
-        <category>Command-line</category>
-        
-        <category>GitHub CLI</category>
-        
-        <category>Autocompletions</category>
-        
-        <category>Linux</category>
         
         
         <category>Developer tools</category>
