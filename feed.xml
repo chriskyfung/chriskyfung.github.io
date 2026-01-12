@@ -5,9 +5,540 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Jan 2026 15:14:11 +0800</pubDate>
-    <lastBuildDate>Mon, 05 Jan 2026 15:14:11 +0800</lastBuildDate>
+    <pubDate>Tue, 13 Jan 2026 00:48:34 +0800</pubDate>
+    <lastBuildDate>Tue, 13 Jan 2026 00:48:34 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Organize Your Instapaper Library With No Code Using Carrot2</title>
+        <description>&lt;h2 id=&quot;the-challenge-too-many-bookmarks-no-system&quot;&gt;&lt;strong&gt;The Challenge: Too Many Bookmarks, No System&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;You’ve been using Instapaper for months or even years. Articles about various subjects, for example, career, personal development, productivity tips, programming tutorials, and random news stories—all sitting in one giant “Articles” folder. When you want to dive deep into a topic, you’re scrolling through hundreds of unrelated links.&lt;/p&gt;
+
+&lt;p&gt;Sound familiar?&lt;/p&gt;
+
+&lt;p&gt;The problem isn’t that Instapaper is bad. It’s that manually organizing 300+ articles into folders and tags takes &lt;em&gt;forever&lt;/em&gt;. What if you could just upload your bookmarks and let a smart tool automatically group them into topics?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That’s where Carrot2 comes in.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://search.carrot2.org/#/about&quot;&gt;&lt;strong&gt;Carrot2&lt;/strong&gt;&lt;/a&gt; is an open-source tool that automatically organizes documents into thematic clusters. &lt;em&gt;No coding required. No complex machine learning knowledge.&lt;/em&gt; Just upload your data, click a button, and watch the software discover the hidden themes in your reading collection. Think of it as an intelligent librarian who reads all your bookmarks and organizes them into neat thematic piles.&lt;/p&gt;
+
+&lt;p&gt;In this tutorial, I’ll show you how to use Carrot2 with your Instapaper exports to create a visual map of your reading interests.&lt;/p&gt;
+
+&lt;aside style=&quot;position: relative;&quot;&gt;
+    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
+&lt;/aside&gt;
+
+&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-challenge-too-many-bookmarks-no-system&quot; id=&quot;markdown-toc-the-challenge-too-many-bookmarks-no-system&quot;&gt;&lt;strong&gt;The Challenge: Too Many Bookmarks, No System&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-carrot2&quot; id=&quot;markdown-toc-what-is-carrot2&quot;&gt;&lt;strong&gt;What is Carrot2?&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-this-matters-for-your-reading-list&quot; id=&quot;markdown-toc-why-this-matters-for-your-reading-list&quot;&gt;&lt;strong&gt;Why This Matters for Your Reading List&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-1-prepare-your-data&quot; id=&quot;markdown-toc-part-1-prepare-your-data&quot;&gt;&lt;strong&gt;Part 1: Prepare Your Data&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-2-access-carrot2&quot; id=&quot;markdown-toc-part-2-access-carrot2&quot;&gt;&lt;strong&gt;Part 2: Access Carrot2&lt;/strong&gt;&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#option-a-use-the-online-demo-quickest&quot; id=&quot;markdown-toc-option-a-use-the-online-demo-quickest&quot;&gt;&lt;strong&gt;Option A: Use the Online Demo (Quickest)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#option-b-install-locally-maximum-privacy&quot; id=&quot;markdown-toc-option-b-install-locally-maximum-privacy&quot;&gt;&lt;strong&gt;Option B: Install Locally (Maximum Privacy)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-3-upload-your-bookmarks&quot; id=&quot;markdown-toc-part-3-upload-your-bookmarks&quot;&gt;&lt;strong&gt;Part 3: Upload Your Bookmarks&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-4-explore-your-results&quot; id=&quot;markdown-toc-part-4-explore-your-results&quot;&gt;&lt;strong&gt;Part 4: Explore Your Results&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-5-choosing-the-right-algorithm&quot; id=&quot;markdown-toc-part-5-choosing-the-right-algorithm&quot;&gt;&lt;strong&gt;Part 5: Choosing the Right Algorithm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-6-refine-and-export&quot; id=&quot;markdown-toc-part-6-refine-and-export&quot;&gt;&lt;strong&gt;Part 6: Refine and Export&lt;/strong&gt;&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#interpreting-weak-results&quot; id=&quot;markdown-toc-interpreting-weak-results&quot;&gt;&lt;strong&gt;Interpreting Weak Results&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#export-your-results&quot; id=&quot;markdown-toc-export-your-results&quot;&gt;&lt;strong&gt;Export Your Results&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-carrot2-beats-manual-organization&quot; id=&quot;markdown-toc-why-carrot2-beats-manual-organization&quot;&gt;&lt;strong&gt;Why Carrot2 Beats Manual Organization&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#constraints-and-limitations&quot; id=&quot;markdown-toc-constraints-and-limitations&quot;&gt;&lt;strong&gt;Constraints and Limitations&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#troubleshooting-when-results-seem-wrong&quot; id=&quot;markdown-toc-troubleshooting-when-results-seem-wrong&quot;&gt;&lt;strong&gt;Troubleshooting: When Results Seem Wrong&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#next-steps&quot; id=&quot;markdown-toc-next-steps&quot;&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;&lt;strong&gt;Final Thoughts&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#resources&quot; id=&quot;markdown-toc-resources&quot;&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
+
+&lt;h2 id=&quot;what-is-carrot2&quot;&gt;&lt;strong&gt;What is Carrot2?&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Think of Carrot2 as a “clustering engine” for documents. Here’s what that means in plain English:&lt;/p&gt;
+
+&lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;You give it a collection of articles or text documents. Carrot2 reads through them all and automatically groups similar articles into meaningful categories and labels them with short, descriptive phrases. It then creates beautiful, interactive visualizations so you can explore your clusters, drill down into specific groups, and understand the shape of your knowledge.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Unlike traditional folder-based organization (where you manually decide categories), Carrot2 discovers patterns in your data. It’s fast, runs in your web browser, and requires zero programming knowledge.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Key facts:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Completely free and open-source (no ads, no paywalls)&lt;/li&gt;
+  &lt;li&gt;Works entirely in your browser (no scary command line)&lt;/li&gt;
+  &lt;li&gt;Designed by researchers specifically for organizing documents&lt;/li&gt;
+  &lt;li&gt;Can run locally on your computer (your data never leaves your machine)&lt;/li&gt;
+  &lt;li&gt;Works perfectly with Instapaper export data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-this-matters-for-your-reading-list&quot;&gt;&lt;strong&gt;Why This Matters for Your Reading List&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;When you cluster your Instapaper library, you gain:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Quick overview&lt;/strong&gt;: See at a glance what topics dominate your reading habits&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Efficient browsing&lt;/strong&gt;: Find related articles on a subject without endless scrolling&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pattern discovery&lt;/strong&gt;: Realize “Oh, I really do read a lot about productivity and AI”&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Smarter organization&lt;/strong&gt;: Use the discovered clusters to better organize your bookmarks in the future&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Time saved&lt;/strong&gt;: Stop manually categorizing—let the algorithm do the work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;part-1-prepare-your-data&quot;&gt;&lt;strong&gt;Part 1: Prepare Your Data&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;First, export your Instapaper bookmarks. If you haven’t already, install &lt;a href=&quot;https://pypi.org/project/instapaper-scraper/&quot;&gt;&lt;strong&gt;Instapaper Scraper&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;instapaper-scraper
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then export to CSV format:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;instapaper-scraper &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt; csv &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; instapaper_bookmarks.csv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Open your CSV file&lt;/strong&gt; in Excel, Google Sheets, or any spreadsheet application. You should see columns like:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;id&lt;/th&gt;
+      &lt;th&gt;title&lt;/th&gt;
+      &lt;th&gt;url&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1234567890&lt;/td&gt;
+      &lt;td&gt;Introduction to Neural Networks&lt;/td&gt;
+      &lt;td&gt;https://…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1234567891&lt;/td&gt;
+      &lt;td&gt;React Hooks Tutorial&lt;/td&gt;
+      &lt;td&gt;https://…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1234567892&lt;/td&gt;
+      &lt;td&gt;Notion for Second Brains&lt;/td&gt;
+      &lt;td&gt;https://…&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Alternatively, export to JSON format:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;instapaper-scraper &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt; json &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; instapaper_bookmarks.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Either way, you end up with a data file (CSV or JSON) containing your bookmarks. This is exactly what Carrot2 wants to see. If your file looks good, you’re ready to move to the next step.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;Important note&lt;/strong&gt;: If your bookmark titles contain non-Latin characters (CJK and others like Greek), use JSON instead of CSV due to a file reading bug in Carrot2 (as observed in v4.8.3 while writing this post).&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;part-2-access-carrot2&quot;&gt;&lt;strong&gt;Part 2: Access Carrot2&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;You have two options here as well:&lt;/p&gt;
+
+&lt;h3 id=&quot;option-a-use-the-online-demo-quickest&quot;&gt;&lt;strong&gt;Option A: Use the Online Demo (Quickest)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Visit the &lt;strong&gt;Carrot2 Clustering Workbench&lt;/strong&gt; at the official demo site:&lt;/p&gt;
+
+&lt;p&gt;🔗 &lt;a href=&quot;https://search.carrot2.org/#/workbench&quot;&gt;https://search.carrot2.org/#/workbench&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the fastest way to try clustering without installing anything. Just visit the site in any modern browser (Chrome, Firefox, Safari, Edge).&lt;/p&gt;
+
+&lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;Important note&lt;/strong&gt;: The online demo has a limitation—your data is temporarily transferred to the Carrot2 server for processing. None of it is permanently stored, but if you’re concerned about privacy, use Option B instead.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;option-b-install-locally-maximum-privacy&quot;&gt;&lt;strong&gt;Option B: Install Locally (Maximum Privacy)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you prefer to keep your reading data on your own machine:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirements:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Java 11 or later (free, available at java.com)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Installation:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Download&lt;/strong&gt; the latest Carrot2 release from GitHub: &lt;a href=&quot;https://github.com/carrot2/carrot2/releases&quot;&gt;https://github.com/carrot2/carrot2/releases&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extract&lt;/strong&gt; the downloaded file to a folder on your computer&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs&lt;/code&gt; folder&lt;/strong&gt; and run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs&lt;/code&gt; script (on Mac/Linux) or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs.cmd&lt;/code&gt; (on Windows)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open your browser&lt;/strong&gt; and go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:8080&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That’s it. Carrot2 is now running on your machine, and all your data stays private.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; &lt;a href=&quot;https://carrot2.github.io/release/4.8.1/doc/rest-api-basics/#installation&quot;&gt;To change the port number&lt;/a&gt;, use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--port&lt;/code&gt; command line parameter, e.g.:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dcs &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt; 1234
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;part-3-upload-your-bookmarks&quot;&gt;&lt;strong&gt;Part 3: Upload Your Bookmarks&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Whether you’re using the online demo or local installation, the interface looks the same:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Select Data Source&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In the &lt;strong&gt;“Data source”&lt;/strong&gt; dropdown at the top left, choose &lt;strong&gt;“Local file”&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Upload Your CSV&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click the file upload area and select your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;instapaper_bookmarks.csv&lt;/code&gt; file&lt;/li&gt;
+  &lt;li&gt;You can also drag and drop the file directly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3: Choose Fields to Cluster&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Carrot2 automatically detects text fields in your CSV&lt;/li&gt;
+  &lt;li&gt;Recommended: enable &lt;strong&gt;“title”&lt;/strong&gt; and &lt;strong&gt;“description”&lt;/strong&gt; (if available)&lt;/li&gt;
+  &lt;li&gt;Disable numerical fields like “id” and “url”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4: Click “Cluster”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The software analyzes your data and generates clusters&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This usually takes just a few seconds for collections under 1,000 bookmarks. Sit back and let the magic happen.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-4-explore-your-results&quot;&gt;&lt;strong&gt;Part 4: Explore Your Results&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;After clustering completes, you’ll see your bookmarks organized into groups. Each cluster has:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;A descriptive label&lt;/strong&gt; (e.g., “Python”, “Machine Learning”, “Data Science”)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The article count&lt;/strong&gt; (how many bookmarks are in this group)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A list of documents&lt;/strong&gt; that belong to that cluster&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Carrot2 gives you multiple views of the same data:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;List View (Best for Reading Details)&lt;/strong&gt;
+Shows clusters as a simple list. Click any cluster to see the bookmarks it contains. Scroll through articles in a cluster to read titles, descriptions, and click links back to the original articles.
+This is the most straightforward view and best for exploring your data carefully.&lt;/p&gt;
+
+    &lt;figure&gt;&lt;amp-img width=&quot;960&quot; height=&quot;540&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-list-view-example.webp&quot; alt=&quot;Example: Carrot2 Cluster and Results Lists&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+     &lt;amp-img fallback=&quot;&quot; width=&quot;960&quot; height=&quot;540&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-list-view-example.png&quot; alt=&quot;Example: Carrot2 Cluster and Results Lists&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+   &lt;/amp-img&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Treemap View (Best for Spotting Proportions)&lt;/strong&gt;
+A visual representation where each cluster is a rectangle. &lt;strong&gt;Larger rectangles = more bookmarks in that cluster&lt;/strong&gt;.
+At a glance, you can see which topics dominate your library. For example, if the “Python” rectangle is huge but “Machine Learning” is tiny, you know where your reading priorities lie.&lt;/p&gt;
+
+    &lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;400&quot; height=&quot;287&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-treemap-example.webp&quot; alt=&quot;Example: Carrot2 Treemap&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+     &lt;amp-img fallback=&quot;&quot; width=&quot;400&quot; height=&quot;287&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-treemap-example.jpg&quot; alt=&quot;Example: Carrot2 Treemap&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+   &lt;/amp-img&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Pie Chart View (Best for Interactive Exploration)&lt;/strong&gt;
+A simple pie chart showing what percentage of your bookmarks fall into each cluster. Great for understanding the shape of your interests.&lt;/p&gt;
+
+    &lt;figure class=&quot;text-center shadow-none&quot;&gt;&lt;amp-img width=&quot;400&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-pie-chart-example.webp&quot; alt=&quot;Example: Carrot2 Pie Chart&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+     &lt;amp-img fallback=&quot;&quot; width=&quot;400&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-pie-chart-example.png&quot; alt=&quot;Example: Carrot2 Pie Chart&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+   &lt;/amp-img&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To switch between views, look for the tabs or icons at the top of the results panel—usually labeled &lt;strong&gt;“List”&lt;/strong&gt;, &lt;strong&gt;“Treemap”&lt;/strong&gt;, and &lt;strong&gt;“Pie Chart”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-5-choosing-the-right-algorithm&quot;&gt;&lt;strong&gt;Part 5: Choosing the Right Algorithm&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Behind the scenes, Carrot2 uses different mathematical approaches to clustering. You don’t need to understand the technical details, but here’s what you need to know:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Algorithm&lt;/th&gt;
+      &lt;th&gt;Best For&lt;/th&gt;
+      &lt;th&gt;Speed&lt;/th&gt;
+      &lt;th&gt;Label Quality&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Lingo&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;High-quality, descriptive labels&lt;/td&gt;
+      &lt;td&gt;Medium&lt;/td&gt;
+      &lt;td&gt;⭐⭐⭐⭐⭐&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;STC&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Very fast clustering, large collections&lt;/td&gt;
+      &lt;td&gt;Very Fast&lt;/td&gt;
+      &lt;td&gt;⭐⭐⭐&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;K-Means&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Simple, non-overlapping clusters&lt;/td&gt;
+      &lt;td&gt;Very Fast&lt;/td&gt;
+      &lt;td&gt;⭐⭐&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;For Instapaper bookmarks, we recommend Lingo&lt;/strong&gt;—it produces the most descriptive cluster labels, which makes it easier to understand what each group of articles is about.&lt;/p&gt;
+
+&lt;p&gt;To change the algorithm: look for the &lt;strong&gt;“Algorithm”&lt;/strong&gt; dropdown in the left panel, select your choice, and click &lt;strong&gt;“Cluster”&lt;/strong&gt; again.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-6-refine-and-export&quot;&gt;&lt;strong&gt;Part 6: Refine and Export&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;interpreting-weak-results&quot;&gt;&lt;strong&gt;Interpreting Weak Results&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;If your clusters don’t look quite right—for example, articles seem randomly grouped or labels don’t make sense—here are common fixes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Mixed-language content?&lt;/strong&gt; Select &lt;strong&gt;“English”&lt;/strong&gt; (or your language) from the language dropdown to improve label accuracy&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clusters too broad?&lt;/strong&gt; Try the &lt;strong&gt;STC algorithm&lt;/strong&gt; for more fine-grained grouping&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Not enough clusters?&lt;/strong&gt; The default settings work for most cases, but if you want to experiment, try adjusting clustering parameters through the left-side panel&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;export-your-results&quot;&gt;&lt;strong&gt;Export Your Results&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Once you’re happy with your clusters, you have options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Screenshot&lt;/strong&gt;: Use your browser’s screenshot tool to save a visual of the pie chart or treemap&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Copy cluster labels&lt;/strong&gt;: Manually note the cluster labels and use them to organize your Instapaper folders&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Create a report&lt;/strong&gt;: Export the cluster list and document assignments (check if there’s an export button in the interface)&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Click the &lt;strong&gt;Export&lt;/strong&gt; button (top right of results panel)&lt;/li&gt;
+      &lt;li&gt;Choose your format:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Excel&lt;/strong&gt; (easiest to work with)&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;CSV&lt;/strong&gt; (import to Google Sheets)&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;JSON&lt;/strong&gt; (for advanced use)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;p&gt;The export includes:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;NEW: A “Cluster” column&lt;/strong&gt; showing which group each article belongs to&lt;/li&gt;
+      &lt;li&gt;All your original columns (id, title, url, etc.)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Now you have a spreadsheet that looks like this:&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Cluster&lt;/th&gt;
+          &lt;th&gt;id&lt;/th&gt;
+          &lt;th&gt;title&lt;/th&gt;
+          &lt;th&gt;url&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Machine Learning&lt;/td&gt;
+          &lt;td&gt;1234567890&lt;/td&gt;
+          &lt;td&gt;Introduction to Neural Networks&lt;/td&gt;
+          &lt;td&gt;https://…&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Web Development&lt;/td&gt;
+          &lt;td&gt;1234567891&lt;/td&gt;
+          &lt;td&gt;React Hooks Tutorial&lt;/td&gt;
+          &lt;td&gt;https://…&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Productivity&lt;/td&gt;
+          &lt;td&gt;1234567892&lt;/td&gt;
+          &lt;td&gt;Notion for Second Brains&lt;/td&gt;
+          &lt;td&gt;https://…&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;&lt;strong&gt;What can you do with this?&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Import into Notion or Obsidian and organize by cluster&lt;/li&gt;
+      &lt;li&gt;Use as a reading roadmap (“This week, I’ll focus on the Machine Learning cluster”)&lt;/li&gt;
+      &lt;li&gt;Share curated topic lists with friends&lt;/li&gt;
+      &lt;li&gt;Identify knowledge gaps (are there clusters you thought would be bigger?)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why-carrot2-beats-manual-organization&quot;&gt;&lt;strong&gt;Why Carrot2 Beats Manual Organization&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Task&lt;/th&gt;
+      &lt;th&gt;Manual (Folders/Tags)&lt;/th&gt;
+      &lt;th&gt;Carrot2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Time to organize 300 articles&lt;/td&gt;
+      &lt;td&gt;2-3 hours&lt;/td&gt;
+      &lt;td&gt;5 minutes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Discover unexpected themes&lt;/td&gt;
+      &lt;td&gt;Unlikely&lt;/td&gt;
+      &lt;td&gt;Common&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Re-organize with new logic&lt;/td&gt;
+      &lt;td&gt;Hours of work&lt;/td&gt;
+      &lt;td&gt;30 seconds (re-cluster)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Visualize your knowledge&lt;/td&gt;
+      &lt;td&gt;Impossible&lt;/td&gt;
+      &lt;td&gt;Beautiful &amp;amp; interactive&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Keep data private&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;Yes (if local)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Learn new topics&lt;/td&gt;
+      &lt;td&gt;Your job&lt;/td&gt;
+      &lt;td&gt;Carrot2’s job&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;constraints-and-limitations&quot;&gt;&lt;strong&gt;Constraints and Limitations&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Be aware of these practical limits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Best for 100–1,000 bookmarks&lt;/strong&gt;:
+Carrot2 is optimized for small-to-medium collections. If you have 10,000+ articles, clustering will be slower and may use significant memory&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lingo algorithm slower for large collections&lt;/strong&gt;:
+If you’re clustering more than 1,000 items and it feels slow, switch to the STC algorithm&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quality depends on data quality&lt;/strong&gt;:
+Bookmarks with very short or vague titles may not cluster as well as those with descriptive ones&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;troubleshooting-when-results-seem-wrong&quot;&gt;&lt;strong&gt;Troubleshooting: When Results Seem Wrong&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;“One cluster is huge, others are tiny”&lt;/strong&gt;
+→ Your bookmarks might naturally cluster that way. Or try a different algorithm (STC instead of Lingo).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;“Articles in the same cluster don’t seem related”&lt;/strong&gt;
+→ Maybe they share some keywords but aren’t semantically related. Try re-clustering with different parameters or check if those articles have messy/generic titles.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;“Carrot2 won’t upload my file”&lt;/strong&gt;
+→ Make sure your file is valid CSV or Excel format. If stuck, use the online demo instead of local installation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;“Results are too granular (100 tiny clusters)”&lt;/strong&gt;
+→ Try the Lingo algorithm and adjust the parameter panel. Some algorithms create more clusters by default.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;“I want to change the cluster labels”&lt;/strong&gt;
+→ You can’t directly edit cluster labels in Carrot2, but you can export the results and manually rename clusters in Excel if needed.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Once you’ve discovered your clusters, here’s what you can do:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Reorganize Instapaper&lt;/strong&gt;: Create folders based on cluster labels and move bookmarks accordingly&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Set reading goals&lt;/strong&gt;: Pick a cluster you want to focus on this week (e.g., “Machine Learning”) and work through those articles&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Share your patterns&lt;/strong&gt;: The cluster breakdown tells you a lot about your interests—it can inform what you read next&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Combine with other tools&lt;/strong&gt;: Use the cluster information to feed a personal knowledge management system (Obsidian, Roam Research, Notion)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;&lt;strong&gt;Final Thoughts&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Carrot2 transforms a flat list of bookmarks into an organized, discoverable knowledge landscape. By automating the boring categorization work, you free yourself to focus on what matters: actually reading and learning from your saved articles.&lt;/p&gt;
+
+&lt;p&gt;The best part? It’s completely free, surprisingly fast, and works right in your browser. No advanced technical skills required—just your curiosity and your reading list.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Have you tried clustering your bookmarks?&lt;/strong&gt; Drop a comment below and share what interesting patterns you discovered in your own reading habits!&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://carrot2.org/&quot;&gt;Carrot2 Official Site&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://search.carrot2.org/#/workbench&quot;&gt;Carrot2 Online Demo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/carrot2/carrot2&quot;&gt;Carrot2 GitHub Repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.java.com/&quot;&gt;Java Downloads (if installing locally)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Carrot2&quot;&gt;Carrot2 - Wikipedia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://carrot2.github.io/release/4.8.1/doc/getting-started/&quot;&gt;Carrot2 Clustering Workbench Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://carrot2.github.io/release/4.8.1/doc/choosing-clustering-algorithm/&quot;&gt;Algorithm Comparison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://carrotsearch.com/lingo3g/comparison/&quot;&gt;Lingo3G or Carrot2? | Carrot Search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://carrot2.github.io/release/4.8.1/doc/tuning-clustering/&quot;&gt;Carrot2 Performance Guidelines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jscires.org/10.5530/jscires.20251005&quot;&gt;Personalized Library Book Recommendations Using K-Means Clustering and Association Rules – Journal of Scientometric Research&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.indexdata.com/clustering-snippets-carrot2/&quot;&gt;Clustering Snippets With Carrot2 - Index Data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ijert.org/analysis-and-comparison-of-web-document-clustering-algorithms-with-lingo&quot;&gt;Analysis and Comparison of Web Document Clustering Algorithms with Lingo – IJERT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 13 Jan 2026 00:01:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/productivity/organize-instapaper-bookmarks-with-carrot2/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/organize-instapaper-bookmarks-with-carrot2/</guid>
+        
+        <category>Carrot2</category>
+        
+        <category>Instapaper</category>
+        
+        <category>Data Visualization</category>
+        
+        <category>Knowledge Management</category>
+        
+        
+        <category>Productivity</category>
+        
+      </item>
     
       <item>
         <title>InstapaperScraper v1.1: Now with JSON, SQLite Exports, and a Better CLI</title>
@@ -1351,533 +1882,6 @@ The official Git documentation explaining the &lt;code class=&quot;language-plai
         <category>Command-line</category>
         
         <category>User tips</category>
-        
-        
-        <category>Developer tools</category>
-        
-      </item>
-    
-      <item>
-        <title>Mastering Git &amp; GitHub CLI: Essential Commands You Should Know</title>
-        <description>&lt;p&gt;Hello, future developers, engineers, researchers and scientists!&lt;/p&gt;
-
-&lt;p&gt;Whether you’re studying computer science, conducting scientific research, working with data, or diving into AI and machine learning, mastering Git and GitHub can significantly enhance your workflow.&lt;/p&gt;
-
-&lt;p&gt;These tools are not just for traditional software developers; they play a crucial role in managing code, datasets, and collaborative projects across various scientific disciplines.&lt;/p&gt;
-
-&lt;p&gt;In this post, we’ll explore essential &lt;strong&gt;&lt;a href=&quot;https://git-scm.com&quot;&gt;Git&lt;/a&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;a href=&quot;https://cli.github.com&quot;&gt;GitHub CLI&lt;/a&gt;&lt;/strong&gt; commands that will help you streamline your projects. &lt;em&gt;Let’s get started!&lt;/em&gt;&lt;/p&gt;
-
-&lt;aside style=&quot;position: relative;&quot;&gt;
-    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
-&lt;/aside&gt;
-
-&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
-
-&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-essential-git-commands&quot; id=&quot;markdown-toc-1-essential-git-commands&quot;&gt;1. Essential Git Commands&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-enable-git-tab-completion-in-linux-bash&quot; id=&quot;markdown-toc-11-enable-git-tab-completion-in-linux-bash&quot;&gt;1.1 Enable Git Tab Completion in Linux Bash&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-viewing-git-history-at-a-glance&quot; id=&quot;markdown-toc-12-viewing-git-history-at-a-glance&quot;&gt;1.2 Viewing Git History at a Glance&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-amend-the-last-git-commit&quot; id=&quot;markdown-toc-13-amend-the-last-git-commit&quot;&gt;1.3 Amend the Last Git Commit&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#14-undoing-changes-soft-reset&quot; id=&quot;markdown-toc-14-undoing-changes-soft-reset&quot;&gt;1.4 Undoing Changes: Soft Reset&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#15-interactive-rebase-organize-your-commits&quot; id=&quot;markdown-toc-15-interactive-rebase-organize-your-commits&quot;&gt;1.5 Interactive Rebase: Organize Your Commits&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#16-cleaning-up-remove-unwanted-files&quot; id=&quot;markdown-toc-16-cleaning-up-remove-unwanted-files&quot;&gt;1.6 Cleaning Up: Remove Unwanted Files&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#17-efficient-branch-management&quot; id=&quot;markdown-toc-17-efficient-branch-management&quot;&gt;1.7 Efficient Branch Management&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#171-creating-new-branches&quot; id=&quot;markdown-toc-171-creating-new-branches&quot;&gt;1.7.1 Creating New Branches&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#172-cherry-picking-commits&quot; id=&quot;markdown-toc-172-cherry-picking-commits&quot;&gt;1.7.2 Cherry-Picking Commits&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#173-rebasing-branches&quot; id=&quot;markdown-toc-173-rebasing-branches&quot;&gt;1.7.3 Rebasing Branches&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#18-pushing-commits-to-a-remote-repository&quot; id=&quot;markdown-toc-18-pushing-commits-to-a-remote-repository&quot;&gt;1.8 Pushing Commits to a Remote Repository&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#181-force-pushing&quot; id=&quot;markdown-toc-181-force-pushing&quot;&gt;1.8.1 Force Pushing&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#182-partial-push&quot; id=&quot;markdown-toc-182-partial-push&quot;&gt;1.8.2 Partial Push&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-useful-github-cli-commands&quot; id=&quot;markdown-toc-2-useful-github-cli-commands&quot;&gt;2. Useful GitHub CLI Commands&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#21-securely-authenticate-with-github&quot; id=&quot;markdown-toc-21-securely-authenticate-with-github&quot;&gt;2.1 Securely Authenticate with GitHub&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#22-list-repositories&quot; id=&quot;markdown-toc-22-list-repositories&quot;&gt;2.2 List Repositories&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#23-cloning-repositories&quot; id=&quot;markdown-toc-23-cloning-repositories&quot;&gt;2.3 Cloning Repositories&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#231-perform-a-shallow-clone&quot; id=&quot;markdown-toc-231-perform-a-shallow-clone&quot;&gt;2.3.1 Perform a Shallow Clone&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#232-perform-a-partial-clone&quot; id=&quot;markdown-toc-232-perform-a-partial-clone&quot;&gt;2.3.2 Perform a Partial Clone&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#233-perform-a-sparse-checkout&quot; id=&quot;markdown-toc-233-perform-a-sparse-checkout&quot;&gt;2.3.3 Perform a Sparse Checkout&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#234-combined-usage&quot; id=&quot;markdown-toc-234-combined-usage&quot;&gt;2.3.4 Combined Usage&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#24-creating-repositories-on-github&quot; id=&quot;markdown-toc-24-creating-repositories-on-github&quot;&gt;2.4 Creating Repositories on GitHub&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#241-create-a-repository-with-custom-settings&quot; id=&quot;markdown-toc-241-create-a-repository-with-custom-settings&quot;&gt;2.4.1 Create a Repository with Custom Settings&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#242-create-a-repository-based-on-a-template&quot; id=&quot;markdown-toc-242-create-a-repository-based-on-a-template&quot;&gt;2.4.2 Create a Repository Based on a Template&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#25-accessing-repository-details&quot; id=&quot;markdown-toc-25-accessing-repository-details&quot;&gt;2.5 Accessing Repository Details&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#251-view-repository-details&quot; id=&quot;markdown-toc-251-view-repository-details&quot;&gt;2.5.1 View Repository Details&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#252-open-a-repository-in-the-browser&quot; id=&quot;markdown-toc-252-open-a-repository-in-the-browser&quot;&gt;2.5.2 Open a Repository in the Browser&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#253-retrieve-description-and-topics-in-json&quot; id=&quot;markdown-toc-253-retrieve-description-and-topics-in-json&quot;&gt;2.5.3 Retrieve Description and Topics in JSON&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#254-retrieve-projects-in-json&quot; id=&quot;markdown-toc-254-retrieve-projects-in-json&quot;&gt;2.5.4 Retrieve Projects in JSON&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#255-monitor-disk-usage-in-json&quot; id=&quot;markdown-toc-255-monitor-disk-usage-in-json&quot;&gt;2.5.5 Monitor Disk Usage in JSON&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#26-enhance-and-edit-repositories&quot; id=&quot;markdown-toc-26-enhance-and-edit-repositories&quot;&gt;2.6 Enhance and Edit Repositories&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#261-add-topics-to-a-remote-repository&quot; id=&quot;markdown-toc-261-add-topics-to-a-remote-repository&quot;&gt;2.6.1 Add Topics to a Remote Repository&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#262-update-repository-description&quot; id=&quot;markdown-toc-262-update-repository-description&quot;&gt;2.6.2 Update Repository Description&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#263-change-repository-visibility&quot; id=&quot;markdown-toc-263-change-repository-visibility&quot;&gt;2.6.3 Change Repository Visibility&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#wrapping-up&quot; id=&quot;markdown-toc-wrapping-up&quot;&gt;Wrapping Up&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#additional-resources&quot; id=&quot;markdown-toc-additional-resources&quot;&gt;Additional Resources&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;1-essential-git-commands&quot;&gt;1. Essential Git Commands&lt;/h2&gt;
-
-&lt;h3 id=&quot;11-enable-git-tab-completion-in-linux-bash&quot;&gt;1.1 Enable Git Tab Completion in Linux Bash&lt;/h3&gt;
-
-&lt;p&gt;Imagine you’re in the middle of an intense coding session, &lt;kbd&gt;Tab&lt;/kbd&gt; completion speeds up command entry and minimizing errors, so you can focus more on what’s important—your research.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/share/bash-completion/completions/git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;12-viewing-git-history-at-a-glance&quot;&gt;1.2 Viewing Git History at a Glance&lt;/h3&gt;
-
-&lt;p&gt;Picture this: You’re tracking the evolution of a complex code project. Viewing your Git history in a simplified one-line format helps you quickly review changes and ensure that your latest modifications align with your project’s goals.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log &lt;span class=&quot;nt&quot;&gt;--oneline&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;13-amend-the-last-git-commit&quot;&gt;1.3 Amend the Last Git Commit&lt;/h3&gt;
-
-&lt;p&gt;When working with Git, you might need to amend the last commit for various reasons. This command is useful if you made a mistake in your commit message or forgot to include some changes.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After running this command, your text editor will open with the commit message. You can edit the message and save the changes. The last commit will be updated with the new message.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--date&lt;/code&gt; option&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;YYYY-MM-DDTHH:MM:SS&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;By adding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--date&lt;/code&gt; flag, you can set a new date and time for the commit. For instance, if you made a commit but forgot to set the correct date, running this command will update the date of your last commit.&lt;/p&gt;
-
-&lt;h3 id=&quot;14-undoing-changes-soft-reset&quot;&gt;1.4 Undoing Changes: Soft Reset&lt;/h3&gt;
-
-&lt;p&gt;When you realize there’s an issue with your last commit, but you don’t want to lose any of the changes, a soft reset can come to the rescue.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset &lt;span class=&quot;nt&quot;&gt;--soft&lt;/span&gt; HEAD^
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Unlike a hard reset, a soft reset doesn’t discard changes. Your files remain exactly as they were, ready to be modified or recommitted. This is particularly useful when you’ve committed too soon or need to tweak something in your latest changes.&lt;/p&gt;
-
-&lt;h3 id=&quot;15-interactive-rebase-organize-your-commits&quot;&gt;1.5 Interactive Rebase: Organize Your Commits&lt;/h3&gt;
-
-&lt;p&gt;Interactive rebase lets you reorganize commit sequences for clarity, ensuring that every team member can easily track the project’s progress. You can reorder, squash, edit, or drop commits to clean up your commit history.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &amp;lt;base&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Interactive Rebase With &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--root&lt;/code&gt; Option&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--root&lt;/code&gt; option extends interactive rebase to include the very first commit in your repository. This can be useful if you need to make changes that affect the entire history of the project, such as updating a license file in the initial commit.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--root&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;16-cleaning-up-remove-unwanted-files&quot;&gt;1.6 Cleaning Up: Remove Unwanted Files&lt;/h3&gt;
-
-&lt;p&gt;During long research projects, clutter can quickly accumulate. Regularly cleaning up your repository by removing outdated files ensures your work remains tidy and efficient, much like a well-organized lab.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; dir1/ dir2/
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Remove obsolete files&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;17-efficient-branch-management&quot;&gt;1.7 Efficient Branch Management&lt;/h3&gt;
-
-&lt;p&gt;Managing branches effectively in Git is crucial for maintaining a clean and organized project history. Here are some common commands and use cases for efficient branch management.&lt;/p&gt;
-
-&lt;h4 id=&quot;171-creating-new-branches&quot;&gt;1.7.1 Creating New Branches&lt;/h4&gt;
-
-&lt;p&gt;Creating a new branch allows you to work on separate features or fixes without affecting the main branch. This command creates a new branch from the current branch and checks it out.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &amp;lt;new-branch-name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;172-cherry-picking-commits&quot;&gt;1.7.2 Cherry-Picking Commits&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cherry-pick&lt;/code&gt; command allows you to copy and apply changes from a specific commit in another branch to your current branch.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git cherry-pick &amp;lt;commit-ref&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;173-rebasing-branches&quot;&gt;1.7.3 Rebasing Branches&lt;/h4&gt;
-
-&lt;p&gt;Rebasing allows you to move or combine a sequence of commits on top of an upstream branch, which can help keep your project history linear and clean.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &amp;lt;upstream&amp;gt; &amp;lt;branch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase main feature-branch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This command takes the commits from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; and applies them onto the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; branch.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Use cases&lt;/strong&gt;: If you’re developing different models for data analysis, creating separate branches lets you explore various methodologies concurrently. Once validated, you can merge the successful approaches into your main branch.&lt;/p&gt;
-
-&lt;h3 id=&quot;18-pushing-commits-to-a-remote-repository&quot;&gt;1.8 Pushing Commits to a Remote Repository&lt;/h3&gt;
-
-&lt;p&gt;When it’s time to share your hard work or back up your local changes to a remote repository, you’ll need to push your commits. This command pushes all the commits from your specified local branch to the remote branch, ensuring your remote branch is in sync with your local changes.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;branch-name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;181-force-pushing&quot;&gt;1.8.1 Force Pushing&lt;/h4&gt;
-
-&lt;p&gt;Force pushing lets you take control and overwrite the remote branch with your local branch, which is particularly useful after rewriting commit history, such as after a rebase or an amended commit, giving you a clean slate to work with.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;However, force pushing can be risky in a collaborative environment, as it may overwrite others’ work, leading to conflicts or lost commits.&lt;/p&gt;
-
-&lt;p&gt;To reduce these risks, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--force-with-lease&lt;/code&gt; instead, which only pushes if no one else has updated the remote branch since your last fetch, adding a layer of safety.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push &lt;span class=&quot;nt&quot;&gt;--force-with-lease&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Responsible use of force pushing helps maintain a clean and accurate project history while minimizing risks.&lt;/p&gt;
-
-&lt;h4 id=&quot;182-partial-push&quot;&gt;1.8.2 Partial Push&lt;/h4&gt;
-
-&lt;p&gt;Sometimes, you may need to push only specific commits to a remote repository rather than the entire branch. You can use the following command to achieve this:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;commit-ref&amp;gt;:&amp;lt;remote-branch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This command pushes a specific commit along with all its predecessors to the specified remote branch.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin abc1234:main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Using these commands effectively helps maintain a well-organized and efficient workflow, allowing you to control which commits are pushed to the remote repository.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;2-useful-github-cli-commands&quot;&gt;2. Useful GitHub CLI Commands&lt;/h2&gt;
-
-&lt;p&gt;The &lt;strong&gt;GitHub CLI&lt;/strong&gt; provides a powerful set of tools for managing your repositories and streamlining your workflow. While this guide covers some of the most essential commands, we encourage you to explore the full list of commands available in the official manual to take full advantage of everything the GitHub CLI has to offer.&lt;/p&gt;
-
-&lt;p&gt;For more detailed information, refer to the official manual: 📄 &lt;a href=&quot;https://cli.github.com/manual/&quot;&gt;GitHub CLI Manual&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;21-securely-authenticate-with-github&quot;&gt;2.1 Securely Authenticate with GitHub&lt;/h3&gt;
-
-&lt;p&gt;In an era where data security is paramount, the &lt;a href=&quot;https://cli.github.com/manual/gh_auth_login&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh auth login&lt;/code&gt;&lt;/a&gt; command allows you to authenticate with GitHub from the command line. You can use either a web browser or a token, ensuring a secure and efficient login process that securely connects your GitHub account.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh auth login
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;22-list-repositories&quot;&gt;2.2 List Repositories&lt;/h3&gt;
-
-&lt;p&gt;Managing multiple repositories can be challenging, but with the &lt;a href=&quot;https://cli.github.com/manual/gh_repo_list&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo list&lt;/code&gt;&lt;/a&gt; command, you can easily view all repositories for a specified owner. This command supports various flags that allow you to filter the list, providing a streamlined way to manage and navigate your projects efficiently.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo list &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;owner&amp;gt;] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;flags]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;23-cloning-repositories&quot;&gt;2.3 Cloning Repositories&lt;/h3&gt;
-
-&lt;p&gt;Cloning a repository is a fundamental operation when working with GitHub. The &lt;a href=&quot;https://cli.GitHub.com/manual/gh_repo_clone&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo clone&lt;/code&gt;&lt;/a&gt; command simplifies this process by allowing you to quickly clone a repository to your local machine, ensuring you have the latest version of the codebase for development or review.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;directory&amp;gt;]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;While the basic cloning command is sufficient for many use cases, there are advanced techniques available to optimize the cloning process for specific scenarios. These techniques can save time and space, particularly when dealing with large repositories or limited storage.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/devtools/github-cli-repo-clone-custom-completion/&quot;&gt;Speed Up GitHub CLI: Custom Completion for ‘gh repo clone’ Command&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;231-perform-a-shallow-clone&quot;&gt;2.3.1 Perform a Shallow Clone&lt;/h4&gt;
-
-&lt;p&gt;A shallow clone allows you to clone a repository with a limited history, which can significantly reduce the time and storage required.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;232-perform-a-partial-clone&quot;&gt;2.3.2 Perform a Partial Clone&lt;/h4&gt;
-
-&lt;p&gt;A partial clone enables you to clone a repository without downloading all the history and large binary files, further optimizing time and space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;233-perform-a-sparse-checkout&quot;&gt;2.3.3 Perform a Sparse Checkout&lt;/h4&gt;
-
-&lt;p&gt;Sparse checkout allows you to check out only a subset of files from the repository, which can be especially useful when working with large projects containing many files you do not need.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Clone the repository without checking out files:&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Enable sparse checkout mode:&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout init &lt;span class=&quot;nt&quot;&gt;--cone&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Define the specific directories or files you want to include in the checkout:&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git sparse-checkout &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &amp;lt;directory-or-file&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;234-combined-usage&quot;&gt;2.3.4 Combined Usage&lt;/h4&gt;
-
-&lt;p&gt;To efficiently clone a large repository with many binary files, you can combine shallow clone, partial clone, and sparse checkout techniques:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Commands&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo clone &amp;lt;repository&amp;gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt; 1 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;blob:none &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--no-checkout&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--sparse&lt;/span&gt;
-
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &amp;lt;repository&amp;gt;
-git sparse-checkout &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &amp;lt;directory-or-file&amp;gt;
-git checkout &amp;lt;branch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This approach minimizes the amount of data transferred and stored locally by including only the necessary files and excluding large binary files.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Benefit&lt;/strong&gt;:
-When dealing with large datasets or extensive codebases, these advanced cloning techniques help minimize storage use and download times, enabling you to focus on development and analysis more quickly. This efficiency is crucial for any data-driven research project, ensuring that resources are utilized effectively and processes remain streamlined.&lt;/p&gt;
-
-&lt;h3 id=&quot;24-creating-repositories-on-github&quot;&gt;2.4 Creating Repositories on GitHub&lt;/h3&gt;
-
-&lt;p&gt;With the GitHub CLI, you can create new repositories directly from the command line, simplifying the workflow and integrating seamlessly into your development process.&lt;/p&gt;
-
-&lt;h4 id=&quot;241-create-a-repository-with-custom-settings&quot;&gt;2.4.1 Create a Repository with Custom Settings&lt;/h4&gt;
-
-&lt;p&gt;Using the &lt;a href=&quot;https://cli.github.com/manual/gh_repo_create&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo create&lt;/code&gt;&lt;/a&gt; command, you can set various custom settings for your new repository, such as visibility (public or private), initialization options (like adding a README, .gitignore, or license), and choosing the default branch.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create &amp;lt;owner&amp;gt;/&amp;lt;new-name&amp;gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;flags]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Key Flags&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--public&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--private&lt;/code&gt;: Sets the visibility of the repository.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--readme&lt;/code&gt;: Initializes with a README file.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--gitignore&lt;/code&gt;: Adds a .gitignore file based on common templates.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--license&lt;/code&gt;: Adds a license file.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--default-branch &amp;lt;branch-name&amp;gt;&lt;/code&gt;: Sets the default branch.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create my-org/new-project &lt;span class=&quot;nt&quot;&gt;--private&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--readme&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--gitignore&lt;/span&gt; Node &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--license&lt;/span&gt; MIT &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;--default-branch&lt;/span&gt; main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;242-create-a-repository-based-on-a-template&quot;&gt;2.4.2 Create a Repository Based on a Template&lt;/h4&gt;
-
-&lt;p&gt;Using a template repository can save time and ensure consistency across your projects. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo create&lt;/code&gt; command allows you to create a new repository on GitHub based on a specified template repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo create &amp;lt;owner&amp;gt;/&amp;lt;new-name&amp;gt; &lt;span class=&quot;nt&quot;&gt;--template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;lt;repository&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;25-accessing-repository-details&quot;&gt;2.5 Accessing Repository Details&lt;/h3&gt;
-
-&lt;p&gt;Navigating and managing your repositories efficiently can be a game changer. The GitHub CLI offers some nifty commands to help you view various details about your repositories. Whether you need to open a repository in the browser, retrieve metadata, or monitor disk usage.&lt;/p&gt;
-
-&lt;h4 id=&quot;251-view-repository-details&quot;&gt;2.5.1 View Repository Details&lt;/h4&gt;
-
-&lt;p&gt;Want to see what’s under the hood of a repository? Use the &lt;a href=&quot;https://cli.github.com/manual/gh_repo_view&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo view&lt;/code&gt;&lt;/a&gt; command to display essential information, like the description and README, right in your terminal.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;252-open-a-repository-in-the-browser&quot;&gt;2.5.2 Open a Repository in the Browser&lt;/h4&gt;
-
-&lt;p&gt;Need to dive deeper? Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--web&lt;/code&gt; flag with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo view&lt;/code&gt; command to open the repository in your default web browser.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--web&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;253-retrieve-description-and-topics-in-json&quot;&gt;2.5.3 Retrieve Description and Topics in JSON&lt;/h4&gt;
-
-&lt;p&gt;Get the nitty-gritty details in a structured format. Fetch the description and topics of a repository in JSON format for integration or analysis, particularly useful for tagging and categorizing repositories programmatically.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; description,repositoryTopics
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;254-retrieve-projects-in-json&quot;&gt;2.5.4 Retrieve Projects in JSON&lt;/h4&gt;
-
-&lt;p&gt;Need an overview of ongoing work? Access a list of projects associated with a repository in JSON. It’s super handy for managing and analyzing project boards, especially in bigger projects with multiple tracking boards.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; projects
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;255-monitor-disk-usage-in-json&quot;&gt;2.5.5 Monitor Disk Usage in JSON&lt;/h4&gt;
-
-&lt;p&gt;Keep an eye on your storage. Monitor the disk usage of a repository to manage space efficiently, especially for those with large files or extensive histories.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo view &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--json&lt;/span&gt; diskUsage
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;By leveraging these commands, you can efficiently manage repository details, enhancing your workflow and keeping your projects running smoothly.&lt;/p&gt;
-
-&lt;h3 id=&quot;26-enhance-and-edit-repositories&quot;&gt;2.6 Enhance and Edit Repositories&lt;/h3&gt;
-
-&lt;p&gt;Effective management of repositories goes beyond viewing details. It involves enhancing and editing repository information to ensure they are well-categorized and easily discoverable. The &lt;a href=&quot;https://cli.github.com/manual/gh_repo_edit&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh repo edit&lt;/code&gt;&lt;/a&gt; command allows you to seamlessly edit various attributes of your repositories.&lt;/p&gt;
-
-&lt;h4 id=&quot;261-add-topics-to-a-remote-repository&quot;&gt;2.6.1 Add Topics to a Remote Repository&lt;/h4&gt;
-
-&lt;p&gt;Enhance your repository’s discoverability by adding relevant topics. This not only makes it easier for others to find but also helps it stand out.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--add-topic&lt;/span&gt; &amp;lt;strings&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit my-repo &lt;span class=&quot;nt&quot;&gt;--add-topic&lt;/span&gt; machine-learning,data-science
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;262-update-repository-description&quot;&gt;2.6.2 Update Repository Description&lt;/h4&gt;
-
-&lt;p&gt;Provide a clear and concise summary of your repository’s purpose by updating its description.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--description&lt;/span&gt; &amp;lt;string&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;263-change-repository-visibility&quot;&gt;2.6.3 Change Repository Visibility&lt;/h4&gt;
-
-&lt;p&gt;Adjust the visibility of your repository to make it public, private, or internal, depending on your needs.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gh repo edit &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;repository&amp;gt;] &lt;span class=&quot;nt&quot;&gt;--visibility&lt;/span&gt; &amp;lt;public|private|internal&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;By leveraging these commands, you can efficiently manage and enhance your repositories, making them more accessible and tailored to your project’s requirements.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping Up&lt;/h2&gt;
-
-&lt;p&gt;Unlocking the power of Git and GitHub CLI commands not only streamlines your workflow but also elevates your collaboration skills, paving the way for success in both academic and professional arenas.&lt;/p&gt;
-
-&lt;p&gt;As you explore these tools, you’ll find that they offer endless possibilities for innovation and efficiency. Experiment, integrate them into your research toolkit, and watch your productivity soar. The more you practice, the more proficient you’ll become.&lt;/p&gt;
-
-&lt;p&gt;Embrace this journey of discovery. Happy coding!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/git-guides&quot;&gt;Git Guides - GitHub&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85&quot;&gt;A Complete Beginners Guide to Git - DEV Community&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.git-tower.com/learn/&quot;&gt;Learn Version Control with Git - Git Tower&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.to/basementdevs/everything-that-you-need-to-know-about-git-2440&quot;&gt;Everything you need to know about GIT - DEV Community&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.to/sachinkg12/25-git-commands-every-developer-should-know-498f&quot;&gt;25 Git Commands Every Developer Should Know - DEV Community&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://bueltge.de/git/&quot;&gt;Get your Practice-Git on!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/git/tutorials/git-log&quot;&gt;Advanced Git Log - Atlassian Git Tutorial&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://about.gitlab.com/blog/2020/03/13/partial-clone-for-massive-repositories/&quot;&gt;How Git Partial Clone lets you fetch only the large file you need - GitLab&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/&quot;&gt;Get up to speed with partial clone and shallow clone - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout/&quot;&gt;Bring your monorepo down to size with sparse-checkout - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/github-cli/&quot;&gt;GitHub CLI: A Guide to GitHub from the Command Line - SitePoint&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Unleash the full potential of Git and GitHub, and watch your research endeavors reach new heights! 🌟&lt;/p&gt;
-</description>
-        <pubDate>Tue, 14 Jan 2025 16:01:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/devtools/mastering-git-github-cli-essential-commands/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/mastering-git-github-cli-essential-commands/</guid>
-        
-        <category>Git</category>
-        
-        <category>GitHub CLI</category>
-        
-        <category>User tips</category>
-        
-        <category>Command-line</category>
         
         
         <category>Developer tools</category>
