@@ -5,12 +5,12 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Jan 2026 00:48:34 +0800</pubDate>
-    <lastBuildDate>Tue, 13 Jan 2026 00:48:34 +0800</lastBuildDate>
+    <pubDate>Tue, 13 Jan 2026 18:07:17 +0800</pubDate>
+    <lastBuildDate>Tue, 13 Jan 2026 18:07:17 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>Organize Your Instapaper Library With No Code Using Carrot2</title>
+        <title>Declutter Instapaper for Free with Carrot2: A No-Code PoC Worflow</title>
         <description>&lt;h2 id=&quot;the-challenge-too-many-bookmarks-no-system&quot;&gt;&lt;strong&gt;The Challenge: Too Many Bookmarks, No System&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;You’ve been using Instapaper for months or even years. Articles about various subjects, for example, career, personal development, productivity tips, programming tutorials, and random news stories—all sitting in one giant “Articles” folder. When you want to dive deep into a topic, you’re scrolling through hundreds of unrelated links.&lt;/p&gt;
@@ -21,7 +21,7 @@
 
 &lt;p&gt;&lt;strong&gt;That’s where Carrot2 comes in.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://search.carrot2.org/#/about&quot;&gt;&lt;strong&gt;Carrot2&lt;/strong&gt;&lt;/a&gt; is an open-source tool that automatically organizes documents into thematic clusters. &lt;em&gt;No coding required. No complex machine learning knowledge.&lt;/em&gt; Just upload your data, click a button, and watch the software discover the hidden themes in your reading collection. Think of it as an intelligent librarian who reads all your bookmarks and organizes them into neat thematic piles.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://search.carrot2.org/#/about&quot;&gt;&lt;strong&gt;Carrot2&lt;/strong&gt;&lt;/a&gt; is a brilliant open-source tool that transforms your messy document collection into organized, thematic clusters. And the best part? &lt;em&gt;No coding, no complex machine learning knowledge required.&lt;/em&gt; Just upload your data, click a button, and watch as it uncovers the hidden themes in your reading list. Think of it as an intelligent librarian for your digital brain.&lt;/p&gt;
 
 &lt;p&gt;In this tutorial, I’ll show you how to use Carrot2 with your Instapaper exports to create a visual map of your reading interests.&lt;/p&gt;
 
@@ -34,14 +34,14 @@
 &lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#the-challenge-too-many-bookmarks-no-system&quot; id=&quot;markdown-toc-the-challenge-too-many-bookmarks-no-system&quot;&gt;&lt;strong&gt;The Challenge: Too Many Bookmarks, No System&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#what-is-carrot2&quot; id=&quot;markdown-toc-what-is-carrot2&quot;&gt;&lt;strong&gt;What is Carrot2?&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#why-this-matters-for-your-reading-list&quot; id=&quot;markdown-toc-why-this-matters-for-your-reading-list&quot;&gt;&lt;strong&gt;Why This Matters for Your Reading List&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-this-will-revolutionize-your-reading-list&quot; id=&quot;markdown-toc-why-this-will-revolutionize-your-reading-list&quot;&gt;&lt;strong&gt;Why This Will Revolutionize Your Reading List&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#part-1-prepare-your-data&quot; id=&quot;markdown-toc-part-1-prepare-your-data&quot;&gt;&lt;strong&gt;Part 1: Prepare Your Data&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#part-2-access-carrot2&quot; id=&quot;markdown-toc-part-2-access-carrot2&quot;&gt;&lt;strong&gt;Part 2: Access Carrot2&lt;/strong&gt;&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#option-a-use-the-online-demo-quickest&quot; id=&quot;markdown-toc-option-a-use-the-online-demo-quickest&quot;&gt;&lt;strong&gt;Option A: Use the Online Demo (Quickest)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#option-b-install-locally-maximum-privacy&quot; id=&quot;markdown-toc-option-b-install-locally-maximum-privacy&quot;&gt;&lt;strong&gt;Option B: Install Locally (Maximum Privacy)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-2-getting-started-with-carrot2&quot; id=&quot;markdown-toc-part-2-getting-started-with-carrot2&quot;&gt;&lt;strong&gt;Part 2: Getting Started with Carrot2&lt;/strong&gt;&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#option-a-the-online-demo-fastest-route&quot; id=&quot;markdown-toc-option-a-the-online-demo-fastest-route&quot;&gt;&lt;strong&gt;Option A: The Online Demo (Fastest Route)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#option-b-local-installation-maximum-privacy&quot; id=&quot;markdown-toc-option-b-local-installation-maximum-privacy&quot;&gt;&lt;strong&gt;Option B: Local Installation (Maximum Privacy)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#part-3-upload-your-bookmarks&quot; id=&quot;markdown-toc-part-3-upload-your-bookmarks&quot;&gt;&lt;strong&gt;Part 3: Upload Your Bookmarks&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-3-let-the-clustering-begin&quot; id=&quot;markdown-toc-part-3-let-the-clustering-begin&quot;&gt;&lt;strong&gt;Part 3: Let the Clustering Begin!&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#part-4-explore-your-results&quot; id=&quot;markdown-toc-part-4-explore-your-results&quot;&gt;&lt;strong&gt;Part 4: Explore Your Results&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#part-5-choosing-the-right-algorithm&quot; id=&quot;markdown-toc-part-5-choosing-the-right-algorithm&quot;&gt;&lt;strong&gt;Part 5: Choosing the Right Algorithm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#part-6-refine-and-export&quot; id=&quot;markdown-toc-part-6-refine-and-export&quot;&gt;&lt;strong&gt;Part 6: Refine and Export&lt;/strong&gt;&lt;/a&gt;    &lt;ul&gt;
@@ -49,10 +49,10 @@
       &lt;li&gt;&lt;a href=&quot;#export-your-results&quot; id=&quot;markdown-toc-export-your-results&quot;&gt;&lt;strong&gt;Export Your Results&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#why-carrot2-beats-manual-organization&quot; id=&quot;markdown-toc-why-carrot2-beats-manual-organization&quot;&gt;&lt;strong&gt;Why Carrot2 Beats Manual Organization&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#constraints-and-limitations&quot; id=&quot;markdown-toc-constraints-and-limitations&quot;&gt;&lt;strong&gt;Constraints and Limitations&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#carrot2-vs-the-old-way-no-contest&quot; id=&quot;markdown-toc-carrot2-vs-the-old-way-no-contest&quot;&gt;&lt;strong&gt;Carrot2 vs. The Old Way: No Contest&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#things-to-keep-in-mind&quot; id=&quot;markdown-toc-things-to-keep-in-mind&quot;&gt;&lt;strong&gt;Things to Keep in Mind&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#troubleshooting-when-results-seem-wrong&quot; id=&quot;markdown-toc-troubleshooting-when-results-seem-wrong&quot;&gt;&lt;strong&gt;Troubleshooting: When Results Seem Wrong&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#next-steps&quot; id=&quot;markdown-toc-next-steps&quot;&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#your-next-move&quot; id=&quot;markdown-toc-your-next-move&quot;&gt;&lt;strong&gt;Your Next Move&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;&lt;strong&gt;Final Thoughts&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#resources&quot; id=&quot;markdown-toc-resources&quot;&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -61,18 +61,18 @@
 
 &lt;h2 id=&quot;what-is-carrot2&quot;&gt;&lt;strong&gt;What is Carrot2?&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;Think of Carrot2 as a “clustering engine” for documents. Here’s what that means in plain English:&lt;/p&gt;
+&lt;p&gt;In simple terms, Carrot2 is a “clustering engine.” Here’s what that means for you:&lt;/p&gt;
 
 &lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
     
-&lt;p&gt;You give it a collection of articles or text documents. Carrot2 reads through them all and automatically groups similar articles into meaningful categories and labels them with short, descriptive phrases. It then creates beautiful, interactive visualizations so you can explore your clusters, drill down into specific groups, and understand the shape of your knowledge.&lt;/p&gt;
+&lt;p&gt;You feed it a collection of texts—like your Instapaper articles. Carrot2 reads through them all, identifies similarities, and automatically groups them into meaningful categories. It then labels these groups with short, descriptive phrases and presents them in stunning, interactive visualizations. You can explore your clusters, drill down into specific topics, and finally understand the true shape of your knowledge.&lt;/p&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Unlike traditional folder-based organization (where you manually decide categories), Carrot2 discovers patterns in your data. It’s fast, runs in your web browser, and requires zero programming knowledge.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Key facts:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why it’s a game-changer:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Completely free and open-source (no ads, no paywalls)&lt;/li&gt;
@@ -82,9 +82,9 @@
   &lt;li&gt;Works perfectly with Instapaper export data&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;why-this-matters-for-your-reading-list&quot;&gt;&lt;strong&gt;Why This Matters for Your Reading List&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;why-this-will-revolutionize-your-reading-list&quot;&gt;&lt;strong&gt;Why This Will Revolutionize Your Reading List&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;When you cluster your Instapaper library, you gain:&lt;/p&gt;
+&lt;p&gt;When you apply this clustering magic to your Instapaper library, you gain:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Quick overview&lt;/strong&gt;: See at a glance what topics dominate your reading habits&lt;/li&gt;
@@ -98,12 +98,14 @@
 
 &lt;h2 id=&quot;part-1-prepare-your-data&quot;&gt;&lt;strong&gt;Part 1: Prepare Your Data&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;First, export your Instapaper bookmarks. If you haven’t already, install &lt;a href=&quot;https://pypi.org/project/instapaper-scraper/&quot;&gt;&lt;strong&gt;Instapaper Scraper&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;First things first, you need to get your bookmarks out of Instapaper. If you haven’t already, the &lt;a href=&quot;https://pypi.org/project/instapaper-scraper/&quot;&gt;&lt;strong&gt;Instapaper Scraper&lt;/strong&gt;&lt;/a&gt; tool is your best friend.&lt;/p&gt;
+
+&lt;p&gt;Install it with a simple command:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;instapaper-scraper
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Then export to CSV format:&lt;/p&gt;
+&lt;p&gt;Then, export your articles into a CSV file:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;instapaper-scraper &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt; csv &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; instapaper_bookmarks.csv
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -120,80 +122,80 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;1234567890&lt;/td&gt;
+      &lt;td&gt;123…&lt;/td&gt;
       &lt;td&gt;Introduction to Neural Networks&lt;/td&gt;
       &lt;td&gt;https://…&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;1234567891&lt;/td&gt;
+      &lt;td&gt;456…&lt;/td&gt;
       &lt;td&gt;React Hooks Tutorial&lt;/td&gt;
       &lt;td&gt;https://…&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;1234567892&lt;/td&gt;
+      &lt;td&gt;789…&lt;/td&gt;
       &lt;td&gt;Notion for Second Brains&lt;/td&gt;
       &lt;td&gt;https://…&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Alternatively, export to JSON format:&lt;/p&gt;
+&lt;p&gt;You can also export to JSON, which is a better option for international users:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;instapaper-scraper &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt; json &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; instapaper_bookmarks.json
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Either way, you end up with a data file (CSV or JSON) containing your bookmarks. This is exactly what Carrot2 wants to see. If your file looks good, you’re ready to move to the next step.&lt;/p&gt;
+&lt;p&gt;Either way, you end up with a data file packed with your bookmarks. This is the fuel for Carrot2.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
     
-&lt;p&gt;&lt;strong&gt;Important note&lt;/strong&gt;: If your bookmark titles contain non-Latin characters (CJK and others like Greek), use JSON instead of CSV due to a file reading bug in Carrot2 (as observed in v4.8.3 while writing this post).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important note&lt;/strong&gt;: If your bookmark titles include non-Latin characters (like CJK or Greek), you should definitely use the JSON format. As of version 4.8.3, Carrot2 has a small bug with reading these characters from CSV files.&lt;/p&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;part-2-access-carrot2&quot;&gt;&lt;strong&gt;Part 2: Access Carrot2&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;part-2-getting-started-with-carrot2&quot;&gt;&lt;strong&gt;Part 2: Getting Started with Carrot2&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;You have two options here as well:&lt;/p&gt;
+&lt;p&gt;You have two paths here—the quick and easy way, or the super-private way.&lt;/p&gt;
 
-&lt;h3 id=&quot;option-a-use-the-online-demo-quickest&quot;&gt;&lt;strong&gt;Option A: Use the Online Demo (Quickest)&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;option-a-the-online-demo-fastest-route&quot;&gt;&lt;strong&gt;Option A: The Online Demo (Fastest Route)&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Visit the &lt;strong&gt;Carrot2 Clustering Workbench&lt;/strong&gt; at the official demo site:&lt;/p&gt;
 
 &lt;p&gt;🔗 &lt;a href=&quot;https://search.carrot2.org/#/workbench&quot;&gt;https://search.carrot2.org/#/workbench&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This is the fastest way to try clustering without installing anything. Just visit the site in any modern browser (Chrome, Firefox, Safari, Edge).&lt;/p&gt;
+&lt;p&gt;This is the quickest way to test the waters without installing a single thing. Just visit the site in any modern browser.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
     
-&lt;p&gt;&lt;strong&gt;Important note&lt;/strong&gt;: The online demo has a limitation—your data is temporarily transferred to the Carrot2 server for processing. None of it is permanently stored, but if you’re concerned about privacy, use Option B instead.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A quick note on privacy:&lt;/strong&gt; The online demo has a limitation—your data is temporarily transferred to the Carrot2 server for processing. While nothing is stored permanently, if you’re concerned about privacy, you might prefer the local option.&lt;/p&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;option-b-install-locally-maximum-privacy&quot;&gt;&lt;strong&gt;Option B: Install Locally (Maximum Privacy)&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;option-b-local-installation-maximum-privacy&quot;&gt;&lt;strong&gt;Option B: Local Installation (Maximum Privacy)&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;If you prefer to keep your reading data on your own machine:&lt;/p&gt;
+&lt;p&gt;If you’d rather keep your reading data completely on your own machine, this is the way to go.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Requirements:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What you’ll need:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Java 11 or later (free, available at java.com)&lt;/li&gt;
+  &lt;li&gt;Java 11 or a newer version (it’s free and available from java.com).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Installation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installation steps:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Download&lt;/strong&gt; the latest Carrot2 release from GitHub: &lt;a href=&quot;https://github.com/carrot2/carrot2/releases&quot;&gt;https://github.com/carrot2/carrot2/releases&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extract&lt;/strong&gt; the downloaded file to a folder on your computer&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs&lt;/code&gt; folder&lt;/strong&gt; and run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs&lt;/code&gt; script (on Mac/Linux) or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs.cmd&lt;/code&gt; (on Windows)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Open your browser&lt;/strong&gt; and go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:8080&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Download&lt;/strong&gt; the latest Carrot2 release from their &lt;a href=&quot;https://github.com/carrot2/carrot2/releases&quot;&gt;GitHub page&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extract&lt;/strong&gt; the downloaded ZIP file to a folder on your computer.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Navigate into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs&lt;/code&gt; folder&lt;/strong&gt; and run the appropriate script: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs&lt;/code&gt; for Mac/Linux or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcs.cmd&lt;/code&gt; for Windows.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open your web browser&lt;/strong&gt; and go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:8080&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;That’s it. Carrot2 is now running on your machine, and all your data stays private.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
     
-&lt;p&gt;&lt;strong&gt;Tips:&lt;/strong&gt; &lt;a href=&quot;https://carrot2.github.io/release/4.8.1/doc/rest-api-basics/#installation&quot;&gt;To change the port number&lt;/a&gt;, use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--port&lt;/code&gt; command line parameter, e.g.:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; If you want to change the port number, you can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--port&lt;/code&gt; command-line parameter. For example:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dcs &lt;span class=&quot;nt&quot;&gt;--port&lt;/span&gt; 1234
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -202,29 +204,29 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;part-3-upload-your-bookmarks&quot;&gt;&lt;strong&gt;Part 3: Upload Your Bookmarks&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;part-3-let-the-clustering-begin&quot;&gt;&lt;strong&gt;Part 3: Let the Clustering Begin!&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;Whether you’re using the online demo or local installation, the interface looks the same:&lt;/p&gt;
+&lt;p&gt;Whether you’re online or local, the interface is identical. Here’s what to do:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 1: Select Data Source&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1: Choose Your Data Source&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;In the &lt;strong&gt;“Data source”&lt;/strong&gt; dropdown at the top left, choose &lt;strong&gt;“Local file”&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;In the &lt;strong&gt;“Data source”&lt;/strong&gt; dropdown at the top left, select &lt;strong&gt;“Local file”&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 2: Upload Your CSV&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2: Upload Your Bookmarks&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Click the file upload area and select your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;instapaper_bookmarks.csv&lt;/code&gt; file&lt;/li&gt;
-  &lt;li&gt;You can also drag and drop the file directly&lt;/li&gt;
+  &lt;li&gt;Click the upload area and select your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;instapaper_bookmarks.csv&lt;/code&gt; (or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.json&lt;/code&gt;) file.&lt;/li&gt;
+  &lt;li&gt;You can also just drag and drop the file onto the page.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3: Choose Fields to Cluster&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Carrot2 automatically detects text fields in your CSV&lt;/li&gt;
-  &lt;li&gt;Recommended: enable &lt;strong&gt;“title”&lt;/strong&gt; and &lt;strong&gt;“description”&lt;/strong&gt; (if available)&lt;/li&gt;
-  &lt;li&gt;Disable numerical fields like “id” and “url”&lt;/li&gt;
+  &lt;li&gt;The tool will automatically detect the text fields in your file.&lt;/li&gt;
+  &lt;li&gt;For best results, make sure &lt;strong&gt;“title”&lt;/strong&gt; and &lt;strong&gt;“description”&lt;/strong&gt; (if you have it) are checked.&lt;/li&gt;
+  &lt;li&gt;Uncheck nonverbal fields like “id” and “url” to avoid confusing the algorithm.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4: Click “Cluster”&lt;/strong&gt;&lt;/p&gt;
@@ -237,38 +239,36 @@
 
 &lt;h2 id=&quot;part-4-explore-your-results&quot;&gt;&lt;strong&gt;Part 4: Explore Your Results&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;After clustering completes, you’ll see your bookmarks organized into groups. Each cluster has:&lt;/p&gt;
+&lt;p&gt;Once the analysis is done, you’ll see your bookmarks neatly sorted into groups. Each cluster comes with:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;A descriptive label&lt;/strong&gt; (e.g., “Python”, “Machine Learning”, “Data Science”)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The article count&lt;/strong&gt; (how many bookmarks are in this group)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;A list of documents&lt;/strong&gt; that belong to that cluster&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A descriptive label&lt;/strong&gt; (e.g., “Python,” “Machine Learning,” “Data Science”)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The article count&lt;/strong&gt; for that group&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A list of the articles&lt;/strong&gt; within that cluster&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Carrot2 gives you multiple views of the same data:&lt;/p&gt;
+&lt;p&gt;Carrot2 offers a few fantastic ways to visualize this data:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;List View (Best for Reading Details)&lt;/strong&gt;
-Shows clusters as a simple list. Click any cluster to see the bookmarks it contains. Scroll through articles in a cluster to read titles, descriptions, and click links back to the original articles.
-This is the most straightforward view and best for exploring your data carefully.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;List View (For the Details)&lt;/strong&gt;
+This is your home base. It shows a simple list of clusters. Click on any cluster to see the articles inside. It’s perfect for carefully exploring what the algorithm has uncovered.&lt;/p&gt;
 
     &lt;figure&gt;&lt;amp-img width=&quot;960&quot; height=&quot;540&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-list-view-example.webp&quot; alt=&quot;Example: Carrot2 Cluster and Results Lists&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;960&quot; height=&quot;540&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-list-view-example.png&quot; alt=&quot;Example: Carrot2 Cluster and Results Lists&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Treemap View (Best for Spotting Proportions)&lt;/strong&gt;
-A visual representation where each cluster is a rectangle. &lt;strong&gt;Larger rectangles = more bookmarks in that cluster&lt;/strong&gt;.
-At a glance, you can see which topics dominate your library. For example, if the “Python” rectangle is huge but “Machine Learning” is tiny, you know where your reading priorities lie.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Treemap View (For the Big Picture)&lt;/strong&gt;
+This view turns your clusters into a mosaic of rectangles. &lt;strong&gt;The bigger the rectangle, the more bookmarks it contains.&lt;/strong&gt; At a glance, you can see which topics dominate your reading. Is “Python” a giant slab and “Machine Learning” a tiny sliver? Now you know.&lt;/p&gt;
 
     &lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;400&quot; height=&quot;287&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-treemap-example.webp&quot; alt=&quot;Example: Carrot2 Treemap&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;400&quot; height=&quot;287&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-treemap-example.jpg&quot; alt=&quot;Example: Carrot2 Treemap&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
    &lt;/amp-img&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Pie Chart View (Best for Interactive Exploration)&lt;/strong&gt;
-A simple pie chart showing what percentage of your bookmarks fall into each cluster. Great for understanding the shape of your interests.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Pie Chart View (For a Quick Snapshot)&lt;/strong&gt;
+A clean, simple pie chart that shows the percentage of your library dedicated to each cluster. It’s a great way to quickly grasp the overall shape of your interests.&lt;/p&gt;
 
     &lt;figure class=&quot;text-center shadow-none&quot;&gt;&lt;amp-img width=&quot;400&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-pie-chart-example.webp&quot; alt=&quot;Example: Carrot2 Pie Chart&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
      &lt;amp-img fallback=&quot;&quot; width=&quot;400&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/read-later-app/carrot2-file-pie-chart-example.png&quot; alt=&quot;Example: Carrot2 Pie Chart&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
@@ -276,7 +276,7 @@ A simple pie chart showing what percentage of your bookmarks fall into each clus
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;To switch between views, look for the tabs or icons at the top of the results panel—usually labeled &lt;strong&gt;“List”&lt;/strong&gt;, &lt;strong&gt;“Treemap”&lt;/strong&gt;, and &lt;strong&gt;“Pie Chart”&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Switch between these views using the tabs at the top of the results panel.&lt;/p&gt;
 
 &lt;h2 id=&quot;part-5-choosing-the-right-algorithm&quot;&gt;&lt;strong&gt;Part 5: Choosing the Right Algorithm&lt;/strong&gt;&lt;/h2&gt;
 
@@ -313,120 +313,112 @@ A simple pie chart showing what percentage of your bookmarks fall into each clus
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;For Instapaper bookmarks, we recommend Lingo&lt;/strong&gt;—it produces the most descriptive cluster labels, which makes it easier to understand what each group of articles is about.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For Instapaper bookmarks, Lingo is your best bet.&lt;/strong&gt; It produces the most descriptive labels, making it easy to see what each group is about at a glance.&lt;/p&gt;
 
-&lt;p&gt;To change the algorithm: look for the &lt;strong&gt;“Algorithm”&lt;/strong&gt; dropdown in the left panel, select your choice, and click &lt;strong&gt;“Cluster”&lt;/strong&gt; again.&lt;/p&gt;
+&lt;p&gt;To switch algorithms, just use the &lt;strong&gt;“Algorithm”&lt;/strong&gt; dropdown on the left, make your selection, and hit &lt;strong&gt;“Cluster”&lt;/strong&gt; again.&lt;/p&gt;
 
 &lt;h2 id=&quot;part-6-refine-and-export&quot;&gt;&lt;strong&gt;Part 6: Refine and Export&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;h3 id=&quot;interpreting-weak-results&quot;&gt;&lt;strong&gt;Interpreting Weak Results&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;If your clusters don’t look quite right—for example, articles seem randomly grouped or labels don’t make sense—here are common fixes:&lt;/p&gt;
+&lt;p&gt;If your clusters feel a little off—maybe the labels are vague or articles seem mismatched—here are a few quick fixes:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Mixed-language content?&lt;/strong&gt; Select &lt;strong&gt;“English”&lt;/strong&gt; (or your language) from the language dropdown to improve label accuracy&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Clusters too broad?&lt;/strong&gt; Try the &lt;strong&gt;STC algorithm&lt;/strong&gt; for more fine-grained grouping&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Not enough clusters?&lt;/strong&gt; The default settings work for most cases, but if you want to experiment, try adjusting clustering parameters through the left-side panel&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mixed-language content?&lt;/strong&gt; Specify your primary language in the language dropdown to improve accuracy.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clusters too broad?&lt;/strong&gt; The &lt;strong&gt;STC algorithm&lt;/strong&gt; can sometimes create more specific, fine-grained groups.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Not enough clusters?&lt;/strong&gt; While the defaults are usually great, you can always experiment with the clustering parameters in the left-side panel.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;export-your-results&quot;&gt;&lt;strong&gt;Export Your Results&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;Once you’re happy with your clusters, you have options:&lt;/p&gt;
+&lt;p&gt;Once you’re happy with the clusters, it’s time to put them to work.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Screenshot&lt;/strong&gt;: Use your browser’s screenshot tool to save a visual of the pie chart or treemap&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Copy cluster labels&lt;/strong&gt;: Manually note the cluster labels and use them to organize your Instapaper folders&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Create a report&lt;/strong&gt;: Export the cluster list and document assignments (check if there’s an export button in the interface)&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;Click the &lt;strong&gt;Export&lt;/strong&gt; button (top right of results panel)&lt;/li&gt;
-      &lt;li&gt;Choose your format:
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;Excel&lt;/strong&gt; (easiest to work with)&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;CSV&lt;/strong&gt; (import to Google Sheets)&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;JSON&lt;/strong&gt; (for advanced use)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;p&gt;The export includes:&lt;/p&gt;
-
+&lt;ol&gt;
+  &lt;li&gt;Click the &lt;strong&gt;Export&lt;/strong&gt; button in the top right of the results panel.&lt;/li&gt;
+  &lt;li&gt;Choose your preferred format:
     &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;NEW: A “Cluster” column&lt;/strong&gt; showing which group each article belongs to&lt;/li&gt;
-      &lt;li&gt;All your original columns (id, title, url, etc.)&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;Now you have a spreadsheet that looks like this:&lt;/p&gt;
-
-    &lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Cluster&lt;/th&gt;
-          &lt;th&gt;id&lt;/th&gt;
-          &lt;th&gt;title&lt;/th&gt;
-          &lt;th&gt;url&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Machine Learning&lt;/td&gt;
-          &lt;td&gt;1234567890&lt;/td&gt;
-          &lt;td&gt;Introduction to Neural Networks&lt;/td&gt;
-          &lt;td&gt;https://…&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Web Development&lt;/td&gt;
-          &lt;td&gt;1234567891&lt;/td&gt;
-          &lt;td&gt;React Hooks Tutorial&lt;/td&gt;
-          &lt;td&gt;https://…&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Productivity&lt;/td&gt;
-          &lt;td&gt;1234567892&lt;/td&gt;
-          &lt;td&gt;Notion for Second Brains&lt;/td&gt;
-          &lt;td&gt;https://…&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-
-    &lt;p&gt;&lt;strong&gt;What can you do with this?&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Import into Notion or Obsidian and organize by cluster&lt;/li&gt;
-      &lt;li&gt;Use as a reading roadmap (“This week, I’ll focus on the Machine Learning cluster”)&lt;/li&gt;
-      &lt;li&gt;Share curated topic lists with friends&lt;/li&gt;
-      &lt;li&gt;Identify knowledge gaps (are there clusters you thought would be bigger?)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Excel&lt;/strong&gt; (super easy to work with)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;CSV&lt;/strong&gt; (great for Google Sheets)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;JSON&lt;/strong&gt; (for more advanced uses)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The export includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;NEW: A “Cluster” column&lt;/strong&gt; showing which group each article belongs to&lt;/li&gt;
+  &lt;li&gt;All your original columns (id, title, url, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now you have a spreadsheet that looks like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Cluster&lt;/th&gt;
+      &lt;th&gt;id&lt;/th&gt;
+      &lt;th&gt;title&lt;/th&gt;
+      &lt;th&gt;url&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Machine Learning&lt;/td&gt;
+      &lt;td&gt;123…&lt;/td&gt;
+      &lt;td&gt;Introduction to Neural Networks&lt;/td&gt;
+      &lt;td&gt;https://…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web Development&lt;/td&gt;
+      &lt;td&gt;456…&lt;/td&gt;
+      &lt;td&gt;React Hooks Tutorial&lt;/td&gt;
+      &lt;td&gt;https://…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Productivity&lt;/td&gt;
+      &lt;td&gt;789…&lt;/td&gt;
+      &lt;td&gt;Notion for Second Brains&lt;/td&gt;
+      &lt;td&gt;https://…&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;So, what can you do with this?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Build a better second brain:&lt;/strong&gt; Import it into Notion or Obsidian and organize your notes by cluster.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Create a reading roadmap:&lt;/strong&gt; “This week, I’m tackling the ‘Machine Learning’ cluster.”&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Share curated reading lists:&lt;/strong&gt; Easily send topic-specific article lists to friends or colleagues.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Identify knowledge gaps:&lt;/strong&gt; Are there topics you thought you read more about? Now you’ll know.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;why-carrot2-beats-manual-organization&quot;&gt;&lt;strong&gt;Why Carrot2 Beats Manual Organization&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;carrot2-vs-the-old-way-no-contest&quot;&gt;&lt;strong&gt;Carrot2 vs. The Old Way: No Contest&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Task&lt;/th&gt;
-      &lt;th&gt;Manual (Folders/Tags)&lt;/th&gt;
+      &lt;th&gt;Manual (Folders &amp;amp; Tags)&lt;/th&gt;
       &lt;th&gt;Carrot2&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;Time to organize 300 articles&lt;/td&gt;
-      &lt;td&gt;2-3 hours&lt;/td&gt;
-      &lt;td&gt;5 minutes&lt;/td&gt;
+      &lt;td&gt;2-3 grueling hours&lt;/td&gt;
+      &lt;td&gt;~5 minutes&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;Discover unexpected themes&lt;/td&gt;
       &lt;td&gt;Unlikely&lt;/td&gt;
-      &lt;td&gt;Common&lt;/td&gt;
+      &lt;td&gt;Almost guaranteed&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;Re-organize with new logic&lt;/td&gt;
-      &lt;td&gt;Hours of work&lt;/td&gt;
+      &lt;td&gt;Another weekend gone&lt;/td&gt;
       &lt;td&gt;30 seconds (re-cluster)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -437,27 +429,24 @@ A simple pie chart showing what percentage of your bookmarks fall into each clus
     &lt;tr&gt;
       &lt;td&gt;Keep data private&lt;/td&gt;
       &lt;td&gt;Yes&lt;/td&gt;
-      &lt;td&gt;Yes (if local)&lt;/td&gt;
+      &lt;td&gt;Yes (with local install)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;Learn new topics&lt;/td&gt;
-      &lt;td&gt;Your job&lt;/td&gt;
-      &lt;td&gt;Carrot2’s job&lt;/td&gt;
+      &lt;td&gt;All on you&lt;/td&gt;
+      &lt;td&gt;Carrot2 guides the way&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;constraints-and-limitations&quot;&gt;&lt;strong&gt;Constraints and Limitations&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;things-to-keep-in-mind&quot;&gt;&lt;strong&gt;Things to Keep in Mind&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;Be aware of these practical limits:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Best for 100–1,000 bookmarks&lt;/strong&gt;:
-Carrot2 is optimized for small-to-medium collections. If you have 10,000+ articles, clustering will be slower and may use significant memory&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Lingo algorithm slower for large collections&lt;/strong&gt;:
-If you’re clustering more than 1,000 items and it feels slow, switch to the STC algorithm&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Quality depends on data quality&lt;/strong&gt;:
-Bookmarks with very short or vague titles may not cluster as well as those with descriptive ones&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Best for 100–1,000 bookmarks:&lt;/strong&gt; Carrot2 shines with small-to-medium collections. With 10,000+ articles, it will be slower and more memory-intensive.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Lingo algorithm can be slower:&lt;/strong&gt; If you’re clustering a massive collection and things feel sluggish, switch to the faster STC algorithm.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Garbage in, garbage out:&lt;/strong&gt; Bookmarks with vague or short titles won’t cluster as effectively as those with rich, descriptive ones.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;troubleshooting-when-results-seem-wrong&quot;&gt;&lt;strong&gt;Troubleshooting: When Results Seem Wrong&lt;/strong&gt;&lt;/h2&gt;
@@ -472,8 +461,8 @@ Bookmarks with very short or vague titles may not cluster as well as those with 
 → Maybe they share some keywords but aren’t semantically related. Try re-clustering with different parameters or check if those articles have messy/generic titles.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;“Carrot2 won’t upload my file”&lt;/strong&gt;
-→ Make sure your file is valid CSV or Excel format. If stuck, use the online demo instead of local installation.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;“Carrot2 won’t upload my file!”&lt;/strong&gt;
+→ Double-check that your file is a valid CSV or JSON. When in doubt, the online demo is a great fallback.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;“Results are too granular (100 tiny clusters)”&lt;/strong&gt;
@@ -485,7 +474,7 @@ Bookmarks with very short or vague titles may not cluster as well as those with 
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;next-steps&quot;&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;your-next-move&quot;&gt;&lt;strong&gt;Your Next Move&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;Once you’ve discovered your clusters, here’s what you can do:&lt;/p&gt;
 
@@ -493,18 +482,18 @@ Bookmarks with very short or vague titles may not cluster as well as those with 
   &lt;li&gt;&lt;strong&gt;Reorganize Instapaper&lt;/strong&gt;: Create folders based on cluster labels and move bookmarks accordingly&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Set reading goals&lt;/strong&gt;: Pick a cluster you want to focus on this week (e.g., “Machine Learning”) and work through those articles&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Share your patterns&lt;/strong&gt;: The cluster breakdown tells you a lot about your interests—it can inform what you read next&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Combine with other tools&lt;/strong&gt;: Use the cluster information to feed a personal knowledge management system (Obsidian, Roam Research, Notion)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Combine with other tools&lt;/strong&gt;: Use the cluster information to feed your personal knowledge management system (Obsidian, Notion, Google NotebookLM)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;final-thoughts&quot;&gt;&lt;strong&gt;Final Thoughts&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;Carrot2 transforms a flat list of bookmarks into an organized, discoverable knowledge landscape. By automating the boring categorization work, you free yourself to focus on what matters: actually reading and learning from your saved articles.&lt;/p&gt;
+&lt;p&gt;Carrot2 does more than just sort a list; it transforms a flat, overwhelming backlog of bookmarks into a vibrant, discoverable landscape of knowledge. By automating the soul-crushing work of categorization, it frees you up to do what you intended all along: &lt;strong&gt;actually read, learn, and grow.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The best part? It’s completely free, surprisingly fast, and works right in your browser. No advanced technical skills required—just your curiosity and your reading list.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Have you tried clustering your bookmarks?&lt;/strong&gt; Drop a comment below and share what interesting patterns you discovered in your own reading habits!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Have you tried clustering your own bookmarks?&lt;/strong&gt; I’d love to hear about it. Drop a comment below and share the most interesting patterns you discovered in your reading habits!&lt;/p&gt;
 
 &lt;h2 id=&quot;resources&quot;&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/h2&gt;
 
@@ -523,7 +512,7 @@ Bookmarks with very short or vague titles may not cluster as well as those with 
   &lt;li&gt;&lt;a href=&quot;https://www.ijert.org/analysis-and-comparison-of-web-document-clustering-algorithms-with-lingo&quot;&gt;Analysis and Comparison of Web Document Clustering Algorithms with Lingo – IJERT&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Tue, 13 Jan 2026 00:01:00 +0800</pubDate>
+        <pubDate>Tue, 13 Jan 2026 17:01:00 +0800</pubDate>
         <link>https://chriskyfung.github.io/blog/productivity/organize-instapaper-bookmarks-with-carrot2/</link>
         <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/organize-instapaper-bookmarks-with-carrot2/</guid>
         
