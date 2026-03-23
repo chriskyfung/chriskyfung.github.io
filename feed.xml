@@ -5,9 +5,269 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Mar 2026 12:47:59 +0800</pubDate>
-    <lastBuildDate>Mon, 23 Mar 2026 12:47:59 +0800</lastBuildDate>
+    <pubDate>Mon, 23 Mar 2026 18:04:10 +0800</pubDate>
+    <lastBuildDate>Mon, 23 Mar 2026 18:04:10 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Automate Box File Renaming with n8n: The Complete Workflow Guide</title>
+        <description>&lt;h2 id=&quot;reclaim-your-time-from-manual-file-management&quot;&gt;Reclaim Your Time from Manual File Management&lt;/h2&gt;
+
+&lt;p&gt;Have you ever found yourself spending an afternoon just renaming files in Box? Maybe you’re preparing a client deliverable, organizing quarterly reports, or cleaning up a messy shared drive. You click, type, hit enter, repeat. By the 50th file, your wrist hurts, and your mind wanders.&lt;/p&gt;
+
+&lt;p&gt;I feel you. I’ve seen brilliant teams lose hours of creative energy to repetitive admin work. It doesn’t have to be this way.&lt;/p&gt;
+
+&lt;p&gt;Today, I’m walking you through building a &lt;strong&gt;smart n8n workflow&lt;/strong&gt; that renames Box files automatically. Whether you’re standardizing naming conventions or batching updates, this setup will handle the heavy lifting while you focus on what matters.&lt;/p&gt;
+
+&lt;p&gt;Let’s build something that works for you.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert--primary&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Automatically rename files stored in Box cloud storage.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tool:&lt;/strong&gt; n8n (workflow automation platform).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Core Nodes:&lt;/strong&gt; Manual Trigger → Box Search → Filter → HTTP Request (PUT).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Key Config:&lt;/strong&gt; Use Folder ID &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; for root search; employ Box API &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PUT&lt;/code&gt; endpoint for renaming.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Time Saved:&lt;/strong&gt; Hours per week on manual data entry.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Beginner to Intermediate.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;️-the-workflow-architecture&quot;&gt;🗺️ The Workflow Architecture&lt;/h2&gt;
+
+&lt;p&gt;Before we dive into the nodes, let’s visualize the journey. Our workflow is a linear pipeline designed for safety and precision. We don’t just rename everything; we search, verify, then act.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;800&quot; height=&quot;284&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-file-renaming-workflow_800x284.webp&quot; alt=&quot;Screenshot of the n8n workflow for Box file renaming, showing the flow from Manual Trigger to Box Search, Filter, and HTTP Request nodes&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;800&quot; height=&quot;284&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-file-renaming-workflow_800x284.png&quot; alt=&quot;Screenshot of the n8n workflow for Box file renaming, showing the flow from Manual Trigger to Box Search, Filter, and HTTP Request nodes&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Visual representation of the n8n workflow for automating Box file renaming&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;This structure ensures we only touch the files we intend to change. Accuracy builds trust—with your data and your team.&lt;/p&gt;
+
+&lt;h2 id=&quot;️-step-1-the-manual-trigger&quot;&gt;🛠️ Step 1: The Manual Trigger&lt;/h2&gt;
+
+&lt;p&gt;Every great workflow starts with control. While we can automate this to run on a schedule later, starting with a &lt;strong&gt;Manual Trigger&lt;/strong&gt; gives you the confidence to test without unintended consequences.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; Manual Trigger&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why:&lt;/strong&gt; Allows you to run the workflow on demand during setup.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Once perfected, swap this for a Schedule Trigger to run nightly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;📌&lt;/span&gt; Reminder:&lt;/strong&gt; Always manual testing first. Ensure you see exactly what data is moving before it goes live.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;-step-2-search-files-in-box&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🔍&lt;/span&gt; Step 2: Search Files in Box&lt;/h2&gt;
+
+&lt;p&gt;Now, we need to find the files that need renaming. The Box node in n8n is powerful, but it needs clear direction.&lt;/p&gt;
+
+&lt;h3 id=&quot;configuration-details&quot;&gt;Configuration Details&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Resource:&lt;/strong&gt; File&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Operation:&lt;/strong&gt; Search&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Folder IDs:&lt;/strong&gt; Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; to search from the Root Folder.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Query:&lt;/strong&gt; The string to search for (matches names, descriptions, content).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;411&quot; height=&quot;471&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file_411x471.webp&quot; alt=&quot;n8n Box node settings showing Folder ID set to 0 and search query input&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;411&quot; height=&quot;471&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file_411x471.png&quot; alt=&quot;n8n Box node settings showing Folder ID set to 0 and search query input&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Configuring the Box Search node to target the root directory&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;leveraging-advanced-search-filters&quot;&gt;Leveraging Advanced Search Filters&lt;/h3&gt;
+
+&lt;p&gt;Beyond the basic query and folder IDs, the Box Search node offers robust filtering capabilities to refine your search. These options are crucial for targeting specific file types, statuses, or timeframes, ensuring precision in your automation.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;File Extensions:&lt;/strong&gt; Target files by their extension (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdf&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xlsx&lt;/code&gt;). This is particularly useful when you need to process only documents of a certain format.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sort:&lt;/strong&gt; Define the order in which search results are returned (either “Relevance” or “Modified At”). Sorting can simplify subsequent processing steps.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Trash Content:&lt;/strong&gt; Include or exclude items that are in the trash. This can be set to “Trashed Only” to search only within the trash, or “Non Trashed Only” to exclude trashed items from the search results.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Content Type:&lt;/strong&gt; Filter by the type of content (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video&lt;/code&gt;). This can help narrow down searches in repositories with diverse file types.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Created At Range:&lt;/strong&gt; Specify a date range for when files were created. Ideal for processing recently added files or historical data.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Size Range:&lt;/strong&gt; Filter files based on their size. File size ranges are defined as comma-separated byte sizes (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1000,2000&lt;/code&gt; for files between 1KB and 2KB). Useful for identifying large documents or excluding small, irrelevant files.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Updated At Range:&lt;/strong&gt; Define a date range for when files were last modified. This is effective for workflows that need to react to recent changes or synchronize data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These advanced filters empower you to create highly specific and efficient search queries, minimizing the risk of unintended operations on your Box files.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;235&quot; height=&quot;480&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file-additional-fields_235x480.webp&quot; alt=&quot;Screenshot of n8n Box node settings showing additional search fields like File Extensions, Sort, Trash Content, Content Type, Created At Range, Size Range, and Updated At Range.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;235&quot; height=&quot;480&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file-additional-fields_235x480.png&quot; alt=&quot;Screenshot of n8n Box node settings showing additional search fields like File Extensions, Sort, Trash Content, Content Type, Created At Range, Size Range, and Updated At Range.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Additional configuration options in the n8n Box Search node for precise file targeting.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;Why This Matters:&lt;/strong&gt; The query string is your filter’s first line of defense. It matches against item names, descriptions, and even text content within files. Be specific here to avoid pulling in unrelated documents.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;-step-3-the-filter-node-your-safety-net&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🛑&lt;/span&gt; Step 3: The Filter Node (Your Safety Net)&lt;/h2&gt;
+
+&lt;p&gt;Search queries can sometimes be too broad. That’s where the &lt;strong&gt;Filter Node&lt;/strong&gt; shines. It acts as a gatekeeper, ensuring only files meeting your exact criteria proceed to the renaming stage.&lt;/p&gt;
+
+&lt;h3 id=&quot;common-filter-logic&quot;&gt;Common Filter Logic&lt;/h3&gt;
+
+&lt;p&gt;You might want to rename only files named with certain prefix, or only files created after a specific date.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;374&quot; height=&quot;718&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-filter-node-example-conditions_374x718.webp&quot; alt=&quot;n8n Filter node showing condition logic for file extension and name matching&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;374&quot; height=&quot;718&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-filter-node-example-conditions_374x718.png&quot; alt=&quot;n8n Filter node showing condition logic for file extension and name matching&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Setting up filter conditions to prevent unintended file changes&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;-step-4-http-request-for-renaming&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;📡&lt;/span&gt; Step 4: HTTP Request for Renaming&lt;/h2&gt;
+
+&lt;p&gt;This is where the magic happens. Since the n8n Box node currently does not offer a direct file renaming operation, using the &lt;strong&gt;HTTP Request node&lt;/strong&gt; is necessary to access the Box API for this specific action.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;492&quot; height=&quot;1043&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-http-node-box-api_492x1043.webp&quot; alt=&quot;n8n HTTP Request node configured with PUT method and Box API endpoint URL&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;492&quot; height=&quot;1043&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-http-node-box-api_492x1043.png&quot; alt=&quot;n8n HTTP Request node configured with PUT method and Box API endpoint URL&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Using the Box API endpoint to execute the file rename command&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Method:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PUT&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://api.box.com/2.0/files/{{ $json.id }}&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Credential Type:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Box OAuth2 API&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Send Body:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JSON&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Body Content:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;New_File_Name.ext&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;ml-li&quot;&gt;
+
+&lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;💡&lt;/span&gt; Pro Tips: Dynamic Naming&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You don’t have to hardcode names. Use expressions to transform existing data:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;{{ $json.name.replace(&apos;OLD_PATTERN&apos;, &apos;NEW_STRING&apos;) }}&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This expression uses JavaScript’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;replace()&lt;/code&gt; method to transform the existing filename (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$json.name&lt;/code&gt;). You would replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;OLD_PATTERN&apos;&lt;/code&gt; with the specific text or regular expression you want to find, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;NEW_STRING&apos;&lt;/code&gt; with the desired replacement. For instance, to replace “Draft” with “Final” in a filename, the expression would be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{{ $json.name.replace(&apos;Draft&apos;, &apos;Final&apos;) }}&lt;/code&gt;.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;-implementation-checklist&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🚀&lt;/span&gt; Implementation Checklist&lt;/h2&gt;
+
+&lt;p&gt;Ready to build? Here’s your quick launch plan:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Credentials:&lt;/strong&gt; Ensure your Box OAuth2 credentials are active in n8n.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Build:&lt;/strong&gt; Drag and drop the four nodes as described.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Test:&lt;/strong&gt; Run manually with a single test file in Box.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Verify:&lt;/strong&gt; Check Box to confirm the rename occurred.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Activate:&lt;/strong&gt; Schedule or deploy for team use.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;alert alert--danger&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;⚠️&lt;/span&gt; Security &amp;amp; Privacy Note&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Please handle API credentials with care. Never share your tokens publicly. Use n8n’s built-in credential management to keep your secrets secure. Protecting your digital identity is just as important as automating your tasks.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;-troubleshooting-common-hurdles&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🔧&lt;/span&gt; Troubleshooting Common Hurdles&lt;/h2&gt;
+
+&lt;p&gt;Even the best workflows hit bumps. Here’s how to smooth them out:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Issue&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Likely Cause&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Solution&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Auth Error&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Invalid Token&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reconnect Box credentials in n8n settings.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;No Files Found&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Query too specific&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Broaden your search string or check Folder ID.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Wrong Files Renamed&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Filter missing&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Add stricter conditions in the Filter node.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Rate Limit&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Too many requests&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Add a “Wait” node between iterations.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;-taking-it-further&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🌱&lt;/span&gt; Taking It Further&lt;/h2&gt;
+
+&lt;p&gt;Once you’ve mastered this basic renaming workflow, the world is your oyster. Consider:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Logging:&lt;/strong&gt; Send a summary to Slack or Google Sheets.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Versioning:&lt;/strong&gt; Move original files to an archive folder before renaming.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Conditional Logic:&lt;/strong&gt; Apply different naming rules based on file type.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Automation is a journey, not a destination. Each workflow you build teaches you something new about efficiency and care.&lt;/p&gt;
+
+&lt;h2 id=&quot;-join-the-conversation&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;📢&lt;/span&gt; Join the Conversation&lt;/h2&gt;
+
+&lt;p&gt;Have you built a similar workflow? I’d love to hear about your experience. Did you encounter any unique challenges with the Box API?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;👇&lt;/span&gt; Drop a comment below&lt;/strong&gt; or share this guide with a colleague who’s drowning in manual file tasks. Let’s build a community of efficient, empowered creators.&lt;/p&gt;
+
+&lt;div class=&quot;flex-center&quot;&gt;
+  &lt;a href=&quot;https://buymeacoffee.com/chriskyfung/e/522617&quot; id=&quot;n8n-workflow-download-button&quot; class=&quot;btn btn-primary&quot;&gt;Download the Workflow Template&lt;/a&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 23 Mar 2026 18:03:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/productivity/n8n-box-file-renaming-workflow/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/n8n-box-file-renaming-workflow/</guid>
+        
+        <category>n8n</category>
+        
+        <category>Box API</category>
+        
+        <category>File Automation</category>
+        
+        <category>Workflow Automation</category>
+        
+        <category>Cloud Storage</category>
+        
+        <category>File Renaming</category>
+        
+        <category>API Integration</category>
+        
+        
+        <category>Productivity</category>
+        
+      </item>
     
       <item>
         <title>Declutter Instapaper for Free with Carrot2: A No-Code PoC Worflow</title>
@@ -633,7 +893,7 @@ A clean, simple pie chart that shows the percentage of your library dedicated to
         
         <category>Python</category>
         
-        <category>Read Later App</category>
+        <category>Read-Later App</category>
         
         <category>Data Exporter</category>
         
@@ -1134,7 +1394,7 @@ A clean, simple pie chart that shows the percentage of your library dedicated to
         
         <category>n8n</category>
         
-        <category>self-hosting</category>
+        <category>Self-Hosting</category>
         
         <category>Docker</category>
         
@@ -1142,7 +1402,7 @@ A clean, simple pie chart that shows the percentage of your library dedicated to
         
         <category>Traefik</category>
         
-        <category>Cloudflare</category>
+        <category>Cloudflare Tuunel</category>
         
         
         <category>Developer tools</category>
@@ -1268,7 +1528,7 @@ A clean, simple pie chart that shows the percentage of your library dedicated to
         
         <category>Python</category>
         
-        <category>Read Later App</category>
+        <category>Read-Later App</category>
         
         <category>Data Exporter</category>
         
@@ -1404,13 +1664,13 @@ volta which netlify
         
         <category>Netlify CLI</category>
         
-        <category>NodeJS</category>
+        <category>Node.js</category>
+        
+        <category>User Tips</category>
         
         <category>Volta</category>
         
         <category>Windows</category>
-        
-        <category>User tips</category>
         
         
         <category>Developer tools</category>
@@ -1637,243 +1897,10 @@ Paste this example TypeScript snippet into the filter editor for random selectio
         
         <category>Google Sheets</category>
         
-        <category>User tips</category>
+        <category>User Tips</category>
         
         
         <category>Productivity</category>
-        
-      </item>
-    
-      <item>
-        <title>Fixing Old Emails in Your Git History: A Beginner&apos;s Guide</title>
-        <description>&lt;p&gt;Git is a powerful version control system that acts like a diary for your code. Every change you make gets recorded in what’s called a commit history. But what if you realize some of your commits are tied to an outdated email address? Maybe you used a school email that’s no longer active, or your personal email for work projects and want to tidy up your digital footprint. Let’s learn how to fix that! In this guide, you’ll learn how to update your email address across all commits, using the mighty &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt; command.&lt;/p&gt;
-
-&lt;aside style=&quot;position: relative;&quot;&gt;
-    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
-&lt;/aside&gt;
-
-&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
-
-&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#understanding-git-identity&quot; id=&quot;markdown-toc-understanding-git-identity&quot;&gt;Understanding Git Identity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-problem-ghosts-of-emails-past&quot; id=&quot;markdown-toc-the-problem-ghosts-of-emails-past&quot;&gt;The Problem: Ghosts of Emails Past&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-magic-command-git-filter-branch&quot; id=&quot;markdown-toc-the-magic-command-git-filter-branch&quot;&gt;The Magic Command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt;&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#variables-your-before-and-after&quot; id=&quot;markdown-toc-variables-your-before-and-after&quot;&gt;Variables (Your “Before” and “After”)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-find-and-replace-logic&quot; id=&quot;markdown-toc-the-find-and-replace-logic&quot;&gt;The “Find and Replace” Logic&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#scope-where-to-fix&quot; id=&quot;markdown-toc-scope-where-to-fix&quot;&gt;Scope (Where to Fix)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#step-by-step-safely-rewriting-history&quot; id=&quot;markdown-toc-step-by-step-safely-rewriting-history&quot;&gt;Step-by-Step: Safely Rewriting History&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#️-step-0-backup-your-repository&quot; id=&quot;markdown-toc-️-step-0-backup-your-repository&quot;&gt;⚠️ &lt;strong&gt;Step 0&lt;/strong&gt;: Backup Your Repository&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-1-run-the-script&quot; id=&quot;markdown-toc-step-1-run-the-script&quot;&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Run the Script&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-2-force-push-the-changes&quot; id=&quot;markdown-toc-step-2-force-push-the-changes&quot;&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Force-Push the Changes&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#caveats-and-helpful-tips&quot; id=&quot;markdown-toc-caveats-and-helpful-tips&quot;&gt;Caveats and Helpful Tips&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#why-bother-a-lesson-beyond-the-code&quot; id=&quot;markdown-toc-why-bother-a-lesson-beyond-the-code&quot;&gt;Why Bother? A Lesson Beyond the Code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;understanding-git-identity&quot;&gt;Understanding Git Identity&lt;/h2&gt;
-
-&lt;p&gt;When you make a commit, Git records two key pieces of identity information:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Author&lt;/strong&gt;: The person who originally wrote the code.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Committer&lt;/strong&gt;: The person who added the code to the repository (often the same as the author).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If either of these fields uses an out-of-date email address, it can lead to confusion—especially if you want your work to reflect who you are today.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;the-problem-ghosts-of-emails-past&quot;&gt;The Problem: Ghosts of Emails Past&lt;/h2&gt;
-
-&lt;p&gt;Imagine your coding journey is like a scrapbook. Each commit is a snapshot of your progress. You set up Git with your shiny new GitHub email, but when you push code, your commits are still linked to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;old_school_email@university.edu&lt;/code&gt;—an account you can’t even access anymore!
-It might confuse future readers (or even recruiters) checking your portfolio. Updating your commit history helps you:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Present a Professional Image: Your Git history becomes a polished record of your growth.&lt;/li&gt;
-  &lt;li&gt;Improve Traceability: Linking commits to your current email makes it easier to track contributions.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This happened to me when I tried to share code from my postgraduate projects. My commits were tied to an ancient email, making my contributions invisible on GitHub. Worse, collaborators couldn’t recognize my work.&lt;/p&gt;
-
-&lt;p&gt;The solution? Rewriting Git history to update old emails. Let’s break down how to do this safely.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;the-magic-command-git-filter-branch&quot;&gt;The Magic Command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;To magically update your old commits, we use a shell script with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt;—Git’s built-in “history editor.” Think of it as a “find and replace” feature for your entire Git history that has the old email with your updated details.&lt;/p&gt;
-
-&lt;p&gt;While powerful, it’s not beginner-friendly—so follow closely! Here’s the script to update emails and names in all commits:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git filter-branch &lt;span class=&quot;nt&quot;&gt;--env-filter&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;  
-WRONG_EMAIL=&quot;old.email@example.com&quot;
-NEW_NAME=&quot;Your New Name&quot;
-NEW_EMAIL=&quot;new.email@newdomain.com&quot;
-
-if [ &quot;$GIT_AUTHOR_EMAIL&quot; = &quot;$WRONG_EMAIL&quot; ]; then  
-    export GIT_AUTHOR_NAME=&quot;$NEW_NAME&quot;  
-    export GIT_AUTHOR_EMAIL=&quot;$NEW_EMAIL&quot;  
-fi
-
-if [ &quot;$GIT_COMMITTER_EMAIL&quot; = &quot;$WRONG_EMAIL&quot; ]; then  
-    export GIT_COMMITTER_NAME=&quot;$NEW_NAME&quot;  
-    export GIT_COMMITTER_EMAIL=&quot;$NEW_EMAIL&quot;  
-fi
-&apos;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--tag-name-filter&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--branches&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--tags&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Let’s break it down:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;variables-your-before-and-after&quot;&gt;Variables (Your “Before” and “After”)&lt;/h3&gt;
-
-    &lt;p&gt;At the start of the script, you assign your details:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WRONG_EMAIL&lt;/code&gt;: The email you want to replace (e.g., an old school address).&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_NAME&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_EMAIL&lt;/code&gt;: Your current name and email (like your GitHub credentials).&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;Replace these placeholders with your actual values.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;the-find-and-replace-logic&quot;&gt;The “Find and Replace” Logic&lt;/h3&gt;
-
-    &lt;p&gt;The script checks whether the commit’s author or committer email matches your old email. If it does, it replaces the name and email with your new ones. In plain terms:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;If this commit was made with the wrong email, update it.&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;scope-where-to-fix&quot;&gt;Scope (Where to Fix)&lt;/h3&gt;
-
-    &lt;p&gt;Finally, the options &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--tag-name-filter cat -- --branches --tags&lt;/code&gt; ensure that every branch and tag in your repository is checked and updated if needed.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;step-by-step-safely-rewriting-history&quot;&gt;Step-by-Step: Safely Rewriting History&lt;/h2&gt;
-
-&lt;h3 id=&quot;️-step-0-backup-your-repository&quot;&gt;⚠️ &lt;strong&gt;Step 0&lt;/strong&gt;: Backup Your Repository&lt;/h3&gt;
-
-&lt;p&gt;Rewriting history is a big change! Make sure you have a backup (or clone) of your repository before running the script.&lt;/p&gt;
-
-&lt;p&gt;You can clone a copy of your repo:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone &lt;span class=&quot;nt&quot;&gt;--mirror&lt;/span&gt; your-repo-url backup-folder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;step-1-run-the-script&quot;&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Run the Script&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Open Git Bash or Terminal.&lt;/li&gt;
-  &lt;li&gt;Navigate to your repository (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd your-repo&lt;/code&gt;).
-&lt;strong&gt;Note:&lt;/strong&gt; Replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;your-repo&lt;/code&gt; with your actual repository name.&lt;/li&gt;
-  &lt;li&gt;Paste the script, replacing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WRONG_EMAIL&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_NAME&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEW_EMAIL&lt;/code&gt; with your details.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;step-2-force-push-the-changes&quot;&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Force-Push the Changes&lt;/h3&gt;
-
-&lt;p&gt;Since history has been rewritten, you need to force-push the changes to your remote repository:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
-git push origin &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--tags&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you work on a team, coordinate with your teammates before force-pushing, as this can disrupt others’ work.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;caveats-and-helpful-tips&quot;&gt;Caveats and Helpful Tips&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Working in a Team&lt;/strong&gt;: Rewriting history changes commit IDs (hashes). Make sure everyone on your project is aware and ready to adjust their local copies.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Large Repositories&lt;/strong&gt;: The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-branch&lt;/code&gt; command can be slow on big projects. For faster results, consider using &lt;a href=&quot;https://rtyley.github.io/bfg-repo-cleaner/&quot;&gt;BFG Repo-Cleaner&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Modern Alternatives&lt;/strong&gt;: The Git community now often recommends using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git filter-repo&lt;/code&gt; for such tasks. While this guide focuses on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter-branch&lt;/code&gt; (because of its wide use and educational value), it’s worth exploring newer tools as you advance.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Prevent Future Headaches&lt;/strong&gt;: Configure Git to use your correct email globally.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;Your Name&quot;&lt;/span&gt;  
-git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email &lt;span class=&quot;s2&quot;&gt;&quot;your@email.com&quot;&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Check Your Work&lt;/strong&gt;: After running the script, verify a commit’s details with&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%an &amp;lt;%ae&amp;gt;, %cn &amp;lt;%ce&amp;gt;&quot;&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;why-bother-a-lesson-beyond-the-code&quot;&gt;Why Bother? A Lesson Beyond the Code&lt;/h2&gt;
-
-&lt;p&gt;Fixing your Git history isn’t just a technical task—it’s a lesson in attention to detail, responsibility, and self-improvement. Your Git history is like your academic portfolio; keeping it accurate reflects your growth as a programmer. Plus, you’re learning a technique that could prove useful when dealing with sensitive data or accidental mistakes in the future.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-
-&lt;p&gt;Rewriting Git history isn’t something you’ll need to do every day. It might seem intimidating at first, but with careful steps and a clear understanding, it’s a powerful skill. By updating your commit emails, you’re not only tidying up your past work but also setting up a professional foundation for your future projects.&lt;/p&gt;
-
-&lt;p&gt;So, take a deep breath, back up your work, and give it a try. With each commit, you are fine-tuning your development story—a story that is uniquely yours!&lt;/p&gt;
-
-&lt;p&gt;Happy coding!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://gklsan.medium.com/how-to-change-git-commit-author-information-for-all-commits-a-complete-guide-29c954e8319d&quot;&gt;How to Change Git Commit Author Information for All Commits: A Complete Guide | by Gokul | Medium&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/67308161&quot;&gt;command line - Git commits are not getting linked with my GitHub account - Stack Overflow&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://git-scm.com/docs/git-filter-branch&quot;&gt;Git Official Documentation on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter-branch&lt;/code&gt;&lt;/a&gt;&lt;br /&gt;
-The official Git documentation explaining the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter-branch&lt;/code&gt; command.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://exchangetuts.com/index.php/git-commits-are-not-getting-linked-with-my-github-account-1639701252030376&quot;&gt;Git commits are not getting linked with my GitHub account&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://medium.com/@alameerashraf/protecting-your-code-how-to-prevent-and-fix-sensitive-data-exposure-on-github-e1934611847f&quot;&gt;Protecting Your Code: How to Prevent and Fix Sensitive Data Exposure on GitHub | by ALameer Ashraf | Medium&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 11 Mar 2025 20:03:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/devtools/fixing-old-emails-in-your-git-history/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/fixing-old-emails-in-your-git-history/</guid>
-        
-        <category>Git</category>
-        
-        <category>Command-line</category>
-        
-        <category>User tips</category>
-        
-        
-        <category>Developer tools</category>
         
       </item>
     
