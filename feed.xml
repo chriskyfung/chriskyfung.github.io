@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Mar 2026 18:17:17 +0800</pubDate>
-    <lastBuildDate>Mon, 23 Mar 2026 18:17:17 +0800</lastBuildDate>
+    <pubDate>Tue, 24 Mar 2026 17:53:46 +0800</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2026 17:53:46 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -17,7 +17,7 @@
 
 &lt;p&gt;I feel you. I’ve seen brilliant teams lose hours of creative energy to repetitive admin work. It doesn’t have to be this way.&lt;/p&gt;
 
-&lt;p&gt;Today, I’m walking you through building a &lt;strong&gt;smart n8n workflow&lt;/strong&gt; that renames Box files automatically. Whether you’re standardizing naming conventions or batching updates, this setup will handle the heavy lifting while you focus on what matters.&lt;/p&gt;
+&lt;p&gt;Today, I’m walking you through building a &lt;strong&gt;n8n workflow&lt;/strong&gt; that renames Box files automatically. Whether you’re standardizing naming conventions or batching updates, this setup will handle the heavy lifting while you focus on what matters.&lt;/p&gt;
 
 &lt;p&gt;Let’s build something that works for you.&lt;/p&gt;
 
@@ -46,7 +46,7 @@
         &lt;amp-img fallback=&quot;&quot; width=&quot;800&quot; height=&quot;284&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-file-renaming-workflow_800x284.png&quot; alt=&quot;Screenshot of the n8n workflow for Box file renaming, showing the flow from Manual Trigger to Box Search, Filter, and HTTP Request nodes&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
       &lt;/amp-img&gt;&lt;figcaption&gt;Visual representation of the n8n workflow for automating Box file renaming&lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;This structure ensures we only touch the files we intend to change. Accuracy builds trust—with your data and your team.&lt;/p&gt;
+&lt;p&gt;This structure ensures we only touch the files we intend to change.&lt;/p&gt;
 
 &lt;h2 id=&quot;️-step-1-the-manual-trigger&quot;&gt;🛠️ Step 1: The Manual Trigger&lt;/h2&gt;
 
@@ -72,8 +72,8 @@
 &lt;h3 id=&quot;configuration-details&quot;&gt;Configuration Details&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Resource:&lt;/strong&gt; File&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Operation:&lt;/strong&gt; Search&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Resource:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;File&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Operation:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Search&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Folder IDs:&lt;/strong&gt; Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; to search from the Root Folder.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Query:&lt;/strong&gt; The string to search for (matches names, descriptions, content).&lt;/li&gt;
 &lt;/ul&gt;
@@ -88,8 +88,8 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;File Extensions:&lt;/strong&gt; Target files by their extension (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdf&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docx&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xlsx&lt;/code&gt;). This is particularly useful when you need to process only documents of a certain format.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Sort:&lt;/strong&gt; Define the order in which search results are returned (either “Relevance” or “Modified At”). Sorting can simplify subsequent processing steps.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Trash Content:&lt;/strong&gt; Include or exclude items that are in the trash. This can be set to “Trashed Only” to search only within the trash, or “Non Trashed Only” to exclude trashed items from the search results.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sort:&lt;/strong&gt; Define the order in which search results are returned (either &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Relevance&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Modified At&lt;/code&gt;). Sorting can simplify subsequent processing steps.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Trash Content:&lt;/strong&gt; Include or exclude items that are in the trash. This can be set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Trashed Only&lt;/code&gt; to search only within the trash, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Non Trashed Only&lt;/code&gt; to exclude trashed items from the search results.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Content Type:&lt;/strong&gt; Filter by the type of content (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;document&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video&lt;/code&gt;). This can help narrow down searches in repositories with diverse file types.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Created At Range:&lt;/strong&gt; Specify a date range for when files were created. Ideal for processing recently added files or historical data.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Size Range:&lt;/strong&gt; Filter files based on their size. File size ranges are defined as comma-separated byte sizes (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1000,2000&lt;/code&gt; for files between 1KB and 2KB). Useful for identifying large documents or excluding small, irrelevant files.&lt;/li&gt;
@@ -98,9 +98,9 @@
 
 &lt;p&gt;These advanced filters empower you to create highly specific and efficient search queries, minimizing the risk of unintended operations on your Box files.&lt;/p&gt;
 
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;235&quot; height=&quot;480&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file-additional-fields_235x480.webp&quot; alt=&quot;Screenshot of n8n Box node settings showing additional search fields like File Extensions, Sort, Trash Content, Content Type, Created At Range, Size Range, and Updated At Range.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;235&quot; height=&quot;480&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file-additional-fields_235x480.png&quot; alt=&quot;Screenshot of n8n Box node settings showing additional search fields like File Extensions, Sort, Trash Content, Content Type, Created At Range, Size Range, and Updated At Range.&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Additional configuration options in the n8n Box Search node for precise file targeting.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;235&quot; height=&quot;480&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file-additional-fields_235x480.webp&quot; alt=&quot;Screenshot of n8n Box node settings showing additional search fields like File Extensions, Sort, Trash Content, Content Type, Created At Range, Size Range, and Updated At Range&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;235&quot; height=&quot;480&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/n8n/n8n-box-node-search-file-additional-fields_235x480.png&quot; alt=&quot;Screenshot of n8n Box node settings showing additional search fields like File Extensions, Sort, Trash Content, Content Type, Created At Range, Size Range, and Updated At Range&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Additional configuration options in the Box Search node for precise file targeting&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;div class=&quot;alert alert--info&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
     
@@ -109,7 +109,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;-step-3-the-filter-node-your-safety-net&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🛑&lt;/span&gt; Step 3: The Filter Node (Your Safety Net)&lt;/h2&gt;
+&lt;h2 id=&quot;-step-3-the-filter-node-your-safety-net&quot;&gt;&lt;span role=&quot;img&quot; aria-hidden=&quot;true&quot;&gt;🚥&lt;/span&gt; Step 3: The Filter Node (Your Safety Net)&lt;/h2&gt;
 
 &lt;p&gt;Search queries can sometimes be too broad. That’s where the &lt;strong&gt;Filter Node&lt;/strong&gt; shines. It acts as a gatekeeper, ensuring only files meeting your exact criteria proceed to the renaming stage.&lt;/p&gt;
 
@@ -219,7 +219,7 @@
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Rate Limit&lt;/strong&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Too many requests&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Add a “Wait” node between iterations.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Add batch interval in the HTTP Request node.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
