@@ -5,9 +5,228 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Apr 2026 17:05:30 +0800</pubDate>
-    <lastBuildDate>Tue, 28 Apr 2026 17:05:30 +0800</lastBuildDate>
+    <pubDate>Fri, 01 May 2026 15:51:09 +0800</pubDate>
+    <lastBuildDate>Fri, 01 May 2026 15:51:09 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction</title>
+        <description>&lt;p&gt;In the era of Generative AI, the “Garbage In, Garbage Out” (GIGO) principle has never been more relevant. For developers building RAG (Retrieval-Augmented Generation) pipelines or AI agents, the biggest bottleneck isn’t the LLM—it’s the data. Web scraping is easy; maintaining scrapers across thousands of shifting CSS selectors, hidden sidebars, and cluttered DOM structures is a nightmare.&lt;/p&gt;
+
+&lt;p&gt;If you’re tired of your automation flows breaking every time a target site tweaks its layout, it’s time to offload the heavy lifting to a professional engine. Enter &lt;a href=&quot;https://instaparser.com/&quot;&gt;&lt;strong&gt;Instaparser&lt;/strong&gt;&lt;/a&gt;: a specialized extraction service designed to let you focus on your core logic while it handles the “messy” web.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert--primary&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;The Pedigree:&lt;/strong&gt; Built on the same battle-tested engine that has powered Instapaper for over a decade.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Core APIs:&lt;/strong&gt; High-fidelity Article, PDF, and Summary APIs that convert messy URLs into clean, structured JSON.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Developer Experience:&lt;/strong&gt; Native Python/Node.js SDKs and first-class n8n integration.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Transparent Economics:&lt;/strong&gt; A credit-based system with 1,000 free monthly credits; paid tiers start at $150/mo with predictable scaling.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Market Fit:&lt;/strong&gt; While competitors focus on broad “crawling,” Instaparser specializes in high-accuracy “content parsing”—making it the most stable choice for high-quality data pipelines.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;what-exactly-is-instaparser&quot;&gt;&lt;strong&gt;What exactly is Instaparser?&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;You might not know &lt;a href=&quot;https://instaparser.com/&quot;&gt;&lt;strong&gt;Instaparser&lt;/strong&gt;&lt;/a&gt; yet, but you definitely know &lt;a href=&quot;https://vocus.cc/article/68385ec7fd8978000187f4af&quot;&gt;Instapaper&lt;/a&gt;. As one of the original pioneers of the “Read-it-Later” category, Instapaper has spent 18 years perfecting the art of stripping away the noise from the web.&lt;/p&gt;
+
+&lt;p&gt;Instaparser is that core technology—refined over millions of pages and countless CMS variations—packaged as a commercial API. Launched as a standalone service in March 2026, it offers three production-ready endpoints:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Article API:&lt;/strong&gt; Extracts titles, authors, clean body text, and metadata from any URL with ~95% accuracy across all web layouts.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PDF API:&lt;/strong&gt; Parses PDFs (via URL or upload) into structured text or clean HTML.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Summary API:&lt;/strong&gt; Uses intelligent extraction to pull key sentences, ideal for summarizing long-form content before feeding it into your LLM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;quick-start&quot;&gt;&lt;strong&gt;Quick Start&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Instaparser’s onboarding is refreshingly lean. You can sign-up your account and test the service without ever touching a credit card:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Register:&lt;/strong&gt; Head to &lt;a href=&quot;https://instaparser.com/&quot;&gt;instaparser.com&lt;/a&gt; and hit “Get API Key.”&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Verify:&lt;/strong&gt; Fill in your details and verify your email.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Deploy:&lt;/strong&gt; Your unique API Key is sent straight to your inbox.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Explore:&lt;/strong&gt; Log in to your dashboard to monitor usage and manage your environment.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Free Tier:&lt;/strong&gt; Every user gets 1,000 free credits monthly to stress-test the API.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;527&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//devtools/instaparser-dashboard.webp&quot; alt=&quot;Image in Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;527&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//devtools/instaparser-dashboard.jpg&quot; alt=&quot;Image in Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;The Instaparser Dashboard (Source: Author)&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;pricing--unit-economics&quot;&gt;&lt;strong&gt;Pricing &amp;amp; Unit Economics&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Instaparser uses a “pay-for-success” credit system. You are only billed for successful API calls, making your burn rate highly predictable.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;452&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//devtools/instaparser-pricing-table.webp&quot; alt=&quot;Image in Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;452&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//devtools/instaparser-pricing-table.jpg&quot; alt=&quot;Image in Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;The Instaparser Pricing Table (Source: instaparser.com)&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tier&lt;/th&gt;
+      &lt;th&gt;Monthly Fee&lt;/th&gt;
+      &lt;th&gt;Included Credits&lt;/th&gt;
+      &lt;th&gt;Overage (per credit)&lt;/th&gt;
+      &lt;th&gt;Rate Limit&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Trial&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Free&lt;/td&gt;
+      &lt;td&gt;1,000&lt;/td&gt;
+      &lt;td&gt;N/A&lt;/td&gt;
+      &lt;td&gt;1 req/sec&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Beta&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;$150&lt;/td&gt;
+      &lt;td&gt;100,000&lt;/td&gt;
+      &lt;td&gt;$0.0012&lt;/td&gt;
+      &lt;td&gt;5 req/sec&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Live&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;$500&lt;/td&gt;
+      &lt;td&gt;500,000&lt;/td&gt;
+      &lt;td&gt;$0.0011&lt;/td&gt;
+      &lt;td&gt;25 req/sec&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Scale&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;$900&lt;/td&gt;
+      &lt;td&gt;1,000,000&lt;/td&gt;
+      &lt;td&gt;$0.001&lt;/td&gt;
+      &lt;td&gt;50 req/sec&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;real-world-unit-costs-beta-tier&quot;&gt;&lt;strong&gt;Real-World Unit Costs (Beta Tier):&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Extracting 1 Web Article&lt;/strong&gt; = 1 Credit ≈ &lt;strong&gt;$0.0015&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Generating 1 Summary&lt;/strong&gt; = 10 Credits ≈ &lt;strong&gt;$0.015&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Parsing a 10-page PDF&lt;/strong&gt; = 10 × 5 Credits ≈ &lt;strong&gt;$0.075&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;competitor-matrix-where-does-instaparser-fit&quot;&gt;&lt;strong&gt;Competitor Matrix: Where does Instaparser fit?&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Firecrawl:&lt;/strong&gt; Designed specifically for RAG with Markdown output. While it offers a great developer experience, its unit costs are significantly higher (e.g., ~$125/mo for only 3,000 crawls), especially when dynamic rendering is involved.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bright Data:&lt;/strong&gt; The enterprise heavyweight. They specialize in “getting the HTML” through massive proxy networks to beat anti-bot measures, but the cleaning and parsing logic is still on you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Crawl4AI:&lt;/strong&gt; The open-source darling. It’s “free” if your time is free, but you’ll bear the infrastructure costs and the constant maintenance required to dodge IP bans.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tool&lt;/th&gt;
+      &lt;th&gt;Avg. Unit Cost&lt;/th&gt;
+      &lt;th&gt;Anti-Bot Depth&lt;/th&gt;
+      &lt;th&gt;Ease of Use&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Instaparser&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;~$0.0015 / page&lt;/td&gt;
+      &lt;td&gt;Moderate&lt;/td&gt;
+      &lt;td&gt;High&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Firecrawl&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;~$0.0417 / crawl&lt;/td&gt;
+      &lt;td&gt;Moderate&lt;/td&gt;
+      &lt;td&gt;Medium&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Bright Data&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;~$0.0015 / request&lt;/td&gt;
+      &lt;td&gt;High&lt;/td&gt;
+      &lt;td&gt;Low&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Crawl4AI&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Server Costs Only&lt;/td&gt;
+      &lt;td&gt;Low&lt;/td&gt;
+      &lt;td&gt;Low&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;implementation-from-n8n-to-python-sdk&quot;&gt;&lt;strong&gt;Implementation: From n8n to Python SDK&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-native-n8n-integration&quot;&gt;&lt;strong&gt;1. Native n8n Integration&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;For the No-Code and Low-Code crowd, the official &lt;a href=&quot;https://github.com/Instapaper/n8n-nodes-instaparser&quot;&gt;n8n-nodes-instaparser&lt;/a&gt; community node is a game changer. Just plug in your API key, and you can pipe clean JSON directly into Notion, Airtable, or your vector database.&lt;/p&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;1280&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//devtools/instaparser-n8n-node.webp&quot; alt=&quot;Image in Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1280&quot; height=&quot;720&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//devtools/instaparser-n8n-node.jpg&quot; alt=&quot;Image in Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Building a stable content pipeline in n8n (Source: Author)&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;2-lightweight-sdks&quot;&gt;&lt;strong&gt;2. Lightweight SDKs&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you’re building custom apps, Instaparser’s SDKs are among the leanest I’ve seen.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip install instaparser&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Node.js:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install instaparser-api&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The logic is unified across both languages—whether you’re handling a complex URL or a messy PDF, the code remains minimal and readable.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts-why-instaparser-is-worth-considering&quot;&gt;&lt;strong&gt;Final Thoughts: Why Instaparser is Worth Considering&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;As an AI engineer, I see three reasons why Instaparser is becoming a sleeper hit in the dev community:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-technical-legacy-as-a-moat&quot;&gt;&lt;strong&gt;1. Technical Legacy as a Moat&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;In an industry full of “wrapper” startups, Instaparser has a genuine pedigree. Handling the “long tail” of weird edge cases in web formatting is something you can only learn by doing it for a decade. This translates to fewer “broken” parses for your application.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-the-llm-noise-filter&quot;&gt;&lt;strong&gt;2. The LLM Noise Filter&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;LLMs are expensive and have finite context windows. Feeding them raw HTML is a waste of tokens. Instaparser acts as a high-fidelity “pre-processor,” ensuring that your AI is only looking at relevant content, which improves both accuracy and cost-efficiency.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-operational-stability&quot;&gt;&lt;strong&gt;3. Operational Stability&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Most teams underestimate the “maintenance tax” of web scrapers. By using a managed parsing service, you trade a fraction of a cent per call for hours of saved engineering time.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Stop debugging scrapers at 2 AM. Leverage ten years of Instapaper engineering to feed your AI agents the cleanest data possible.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unlike Firecrawl or Crawl4AI, which focus on the &lt;em&gt;quantity&lt;/em&gt; of pages crawled, &lt;strong&gt;Instaparser focuses on the &lt;em&gt;quality&lt;/em&gt; of the parse.&lt;/strong&gt; For teams that prioritize uptime and low maintenance, it is the most friction-less way to turn the chaotic web into a reliable database.&lt;/p&gt;
+
+&lt;p&gt;If you’re building a market research tool, a personal knowledge base, or an autonomous AI agent, Instaparser is the missing piece of your stack. With 1,000 free credits a month, there’s no reason not to give it a spin. In automation, stability is the ultimate feature—and Instaparser delivers it in spades.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 May 2026 15:05:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/devtools/unlock-the-power-of-instaparser-for-content-extraction/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/unlock-the-power-of-instaparser-for-content-extraction/</guid>
+        
+        <category>DevTools</category>
+        
+        <category>Instapaper</category>
+        
+        <category>n8n</category>
+        
+        <category>WebScraping</category>
+        
+        <category>API Integration</category>
+        
+        
+        <category>Developer tools</category>
+        
+      </item>
     
       <item>
         <title>Automate Box File Renaming with n8n: The Complete Workflow Guide</title>
@@ -1674,233 +1893,6 @@ volta which netlify
         
         
         <category>Developer tools</category>
-        
-      </item>
-    
-      <item>
-        <title>Unlock IFTTT: Build a Dynamic Database with Google Sheets</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://ifttt.com/join?referral_code=r_uGpbe_3SEbCqwVweoOEBtPuSQdQswV&quot;&gt;IFTTT&lt;/a&gt; (If This Then That), a leading automation platform supporting over 900 apps and services, simplifies cross-platform tasks in everyday life. However, its lack of native database integration &lt;strong&gt;forces users to rely on Google Sheets as a workaround for data storage&lt;/strong&gt;, creating challenges for data-driven workflows like content scheduling or random task assignment.&lt;/p&gt;
-
-&lt;p&gt;This guide will show you how to use &lt;strong&gt;IFTTT’s “Filter Code”&lt;/strong&gt; to transform Google Sheets into a lightweight NoSQL database, capable of storing thousands of JSON-formatted entries. This bridges the gap between “triggers” and “actions” with streamlined data processing.&lt;/p&gt;
-
-&lt;aside style=&quot;position: relative;&quot;&gt;
-    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
-&lt;/aside&gt;
-
-&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
-
-&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#learning-objectives&quot; id=&quot;markdown-toc-learning-objectives&quot;&gt;Learning Objectives&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#practical-use-cases&quot; id=&quot;markdown-toc-practical-use-cases&quot;&gt;Practical Use Cases&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#step-by-step-guide&quot; id=&quot;markdown-toc-step-by-step-guide&quot;&gt;Step-by-Step Guide&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#prerequisites&quot; id=&quot;markdown-toc-prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-1-format-your-google-sheets-data&quot; id=&quot;markdown-toc-step-1-format-your-google-sheets-data&quot;&gt;Step 1: Format Your Google Sheets Data&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-2-create-an-ifttt-applet&quot; id=&quot;markdown-toc-step-2-create-an-ifttt-applet&quot;&gt;Step 2: Create an IFTTT Applet&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-3-test-and-debug&quot; id=&quot;markdown-toc-step-3-test-and-debug&quot;&gt;Step 3: Test and Debug&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#key-takeaways&quot; id=&quot;markdown-toc-key-takeaways&quot;&gt;Key Takeaways&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#additional-resources&quot; id=&quot;markdown-toc-additional-resources&quot;&gt;Additional Resources&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;learning-objectives&quot;&gt;Learning Objectives&lt;/h2&gt;
-
-&lt;p&gt;Before diving in, it’s important to note that &lt;strong&gt;IFTTT isn’t the ideal automation tool for complex data workflows.&lt;/strong&gt; Platforms like &lt;em&gt;Zapier&lt;/em&gt;, &lt;em&gt;Make&lt;/em&gt;, &lt;em&gt;n8n&lt;/em&gt;, and &lt;em&gt;Microsoft Power Automate&lt;/em&gt; are better suited for such tasks. &lt;strong&gt;This guide focuses on extending IFTTT’s capabilities and unlocking greater value for users already familiar with IFTTT’s interface.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;By the end of this tutorial, you’ll be able to:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Overcome IFTTT’s Limits:&lt;/strong&gt; Fully utilize the query allowance (i.e. single-row A-Z columns, up to 30,000 characters per cell) to bypass bottlenecks in data processing.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Optimize Data Storage:&lt;/strong&gt; Compress thousands of structured data entries into JSON format within a single row, turning your spreadsheet into a functional database.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Streamline Data Handling:&lt;/strong&gt; Extract content for random selection or conditional filtering and push results to designated platforms such as email, notifications, or social media.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;practical-use-cases&quot;&gt;Practical Use Cases&lt;/h2&gt;
-
-&lt;p&gt;Here are some creative ways to apply this setup:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Content Creation:&lt;/strong&gt; Pull blog topics or daily writing prompts automatically.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Digital Marketing:&lt;/strong&gt; Schedule social media posts from a curated database to maintain brand or product exposure.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Education:&lt;/strong&gt; Share quiz questions or motivational quotes to boost engagement.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Everyday Life:&lt;/strong&gt; Automate recipe suggestions or fitness challenges for variety.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;step-by-step-guide&quot;&gt;Step-by-Step Guide&lt;/h2&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;An &lt;strong&gt;IFTTT Pro+ Subscription&lt;/strong&gt; (required for Queries and Filter Code features).&lt;/li&gt;
-  &lt;li&gt;A &lt;strong&gt;Google Sheets Document&lt;/strong&gt; (formatted data as described below).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;step-1-format-your-google-sheets-data&quot;&gt;Step 1: Format Your Google Sheets Data&lt;/h3&gt;
-
-&lt;p&gt;Organize your data as &lt;strong&gt;comma-separated JSON objects&lt;/strong&gt; within cells. For example:&lt;/p&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;quote&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Success is a lousy teacher. It seduces smart people into thinking they can’t lose.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Bill Gates&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hashtag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#MotivationalQuotes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;quote&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;I don’t spend my time pontificating about high-concept things; I spend my time solving engineering and manufacturing problems.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Elon Musk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hashtag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#CareerWisdom&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;quote&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Quality is more important than quantity. One home run is much better than two doubles.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Steve Jobs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hashtag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#LifePhilosophy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Key points:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Spread datasets across columns A-Z in a single row.&lt;/li&gt;
-  &lt;li&gt;Ensure no cell exceeds 30,000 characters.&lt;/li&gt;
-  &lt;li&gt;Validate your JSON syntax with tools like &lt;a href=&quot;https://jsonlint.com/&quot;&gt;JSONLint&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;step-2-create-an-ifttt-applet&quot;&gt;Step 2: Create an IFTTT Applet&lt;/h3&gt;
-
-&lt;figure class=&quot;shadow-none text-center&quot;&gt;&lt;amp-img width=&quot;600&quot; height=&quot;600&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/ifttt/ifttt-google-sheets-workflow-scaled.webp&quot; alt=&quot;Create an automated process: when a button is pressed, query the current values of a row from a Google Sheets document and handle them with filter code, then send the email&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;600&quot; height=&quot;600&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/ifttt/ifttt-google-sheets-workflow-scaled.png&quot; alt=&quot;Create an automated process: when a button is pressed, query the current values of a row from a Google Sheets document and handle them with filter code, then send the email&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Select a Trigger&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Testing Phase:&lt;/em&gt; Use &lt;strong&gt;Button Widget&lt;/strong&gt; for manual execution.&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Routine Operations:&lt;/em&gt; Use &lt;strong&gt;Date &amp;amp; Time&lt;/strong&gt; for scheduled triggers.&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Advanced Options:&lt;/em&gt; Integrate other apps for event-based triggers or use &lt;strong&gt;Webhooks&lt;/strong&gt; for API calls.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Set Up a Google Sheets Query&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Choose &lt;strong&gt;Current values of a row&lt;/strong&gt; (read current values from a specific row).&lt;/li&gt;
-      &lt;li&gt;Provide your spreadsheet’s shareable link and specify the row to query (e.g., Row 2).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Add Actions&lt;/strong&gt; (Supports multiple actions)
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Notifications:&lt;/em&gt; Add &lt;strong&gt;Email &amp;gt; Send me an email&lt;/strong&gt; to receive updates directly.&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Dynamic updates:&lt;/em&gt; Add &lt;strong&gt;Google Sheets &amp;gt; Update cell in spreadsheet&lt;/strong&gt;  for advanced customization.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Add Filter Code&lt;/strong&gt;
-Paste this example TypeScript snippet into the filter editor for random selection:&lt;/p&gt;
-
-    &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Retrieve data from columns A-Z&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;GoogleSheets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cellValuesInRow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-   
-&lt;span class=&quot;c1&quot;&gt;// Initialize an empty array to store parsed JSON data&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Record&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
-   
-&lt;span class=&quot;c1&quot;&gt;// Parse JSON strings&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/^Column/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jsonChunks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\{&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?\}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;jsonChunks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chunk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chunk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-   
-&lt;span class=&quot;c1&quot;&gt;// Random selection&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;randomIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectedData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;randomIndex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;No valid data&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-   
-&lt;span class=&quot;c1&quot;&gt;// Output result&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sendMeEmail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setBody&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`Today’s Recommendation: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;selectedData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;No data&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;&lt;strong&gt;Optional Enhancements:&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Add conditional statements for dynamic filtering.&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Perform real-time updates by modifying a cell with the &lt;strong&gt;Update cell in spreadsheet&lt;/strong&gt; action. For example:&lt;/p&gt;
-
-        &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Retrieve the value of ColumnE&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cellValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;ColumnE&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-     
-&lt;span class=&quot;c1&quot;&gt;// Example: Convert the value to uppercase (customize logic as needed)&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-     
-&lt;span class=&quot;c1&quot;&gt;// Update the specified cell in the spreadsheet (e.g., B5)&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;GoogleSheets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;updateCellInSpreadsheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;B5&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;GoogleSheets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;updateCellInSpreadsheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;newCellValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;step-3-test-and-debug&quot;&gt;Step 3: Test and Debug&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use your chosen trigger to test the applet and observe the execution results.&lt;/li&gt;
-  &lt;li&gt;Check whether the data updates in the spreadsheet as intended.&lt;/li&gt;
-  &lt;li&gt;Track error messages via &lt;a href=&quot;https://ifttt.com/activity&quot;&gt;&lt;strong&gt;IFTTT Activity Log&lt;/strong&gt;&lt;/a&gt; and make adjustments.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;key-takeaways&quot;&gt;Key Takeaways&lt;/h2&gt;
-
-&lt;p&gt;By leveraging &lt;strong&gt;Filter Code and Google Sheets&lt;/strong&gt;, you can unlock a new level of flexibility for IFTTT workflows. Despite limitations like single-row queries, column constraints (A–Z), and a 30,000-character cell limit, compressing data into JSON fragments and reassembling it opens up endless possibilities.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What creative possibilities come to mind for you?&lt;/strong&gt; If you’re already an IFTTT Pro+ user, consider these applications:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Daily Recipe Rotation:&lt;/strong&gt; Keep meals fresh with automated suggestions.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Smart Task Assignment:&lt;/strong&gt; Allocate tasks based on team performance data.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Weather-Based Alerts:&lt;/strong&gt; Combine real-time weather data with personalized reminders.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you haven’t joined IFTTT yet, sign up via &lt;a href=&quot;https://ifttt.com/join?referral_code=r_uGpbe_3SEbCqwVweoOEBtPuSQdQswV&quot;&gt;&lt;strong&gt;this referral link&lt;/strong&gt;&lt;/a&gt; to enjoy 10% off and start creating your automations today!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-
-&lt;p&gt;This tutorial isn’t just about technical workarounds—&lt;strong&gt;it’s about reimagining the possibilities of tools.&lt;/strong&gt; Just as DeepSeek creatively overcomes hardware constraints to develop groundbreaking AI technology, we too can push the boundaries of what’s achievable through clever design and innovative thinking.&lt;/p&gt;
-
-&lt;p&gt;Let’s break boundaries with creativity! Feel free to share your unique ideas in the comments section and explore more creative applications together!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053706813-IFTTT-Plans-at-a-glance&quot;&gt;IFTTT Plans at a glance – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053502173-What-is-a-query&quot;&gt;What is a query? – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360052451954-Building-with-filter-code&quot;&gt;Building with filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4406412223771-How-to-add-filter-code&quot;&gt;How to add filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/1260805596369-Filter-code-generators&quot;&gt;Filter code generators – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053657913-Example-Applets-using-queries-and-filter-code&quot;&gt;Example Applets using queries and filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4405029291163-Parsing-JSON-body-with-filter-code&quot;&gt;Parsing JSON body with filter code – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/360053527994-Can-I-make-my-Applets-run-only-at-certain-times&quot;&gt;Can I make my Applets run only at certain times? – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4406117732251-Get-random-strings-from-an-array-with-no-duplicates&quot;&gt;Get random strings from an array with no duplicates – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/4410084170651-How-to-create-multi-action-Applets&quot;&gt;How to create multi-action Applets – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/1260803229749-IFTTT-Service-Rate-Limits&quot;&gt;IFTTT Service Rate Limits – IFTTT Help Center&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://business.tutsplus.com/tutorials/how-to-use-ifttt-with-google-sheets--cms-28355&quot;&gt;How to Use IFTTT With Google Sheets | Envato Tuts+&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 20 Mar 2025 00:03:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/productivity/ifttt-tutorial-google-sheets-database/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/ifttt-tutorial-google-sheets-database/</guid>
-        
-        <category>IFTTT</category>
-        
-        <category>Google Sheets</category>
-        
-        <category>User Tips</category>
-        
-        
-        <category>Productivity</category>
         
       </item>
     
