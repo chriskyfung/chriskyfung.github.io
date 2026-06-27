@@ -5,9 +5,91 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Jun 2026 19:03:19 +0800</pubDate>
-    <lastBuildDate>Sat, 27 Jun 2026 19:03:19 +0800</lastBuildDate>
+    <pubDate>Sat, 27 Jun 2026 19:05:52 +0800</pubDate>
+    <lastBuildDate>Sat, 27 Jun 2026 19:05:52 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>TheBrain 15: Does It Make Digital Mind-Mapping Great Again?</title>
+        <description>&lt;p&gt;I’ve been using &lt;a href=&quot;https://www.thebrain.com/&quot;&gt;TheBrain&lt;/a&gt; for over a decade, starting back in 2012. The first version I ever touched was version 6 or version 7 (almost version 7).&lt;/p&gt;
+
+&lt;p&gt;Back then, TheBrain only supported Windows—there were no mobile apps for iOS or Android. It didn’t even support Markdown yet; all notes were stored in HTML format. Of course, the JAMstack architecture wasn’t popular back then, and we were still perfectly comfortable using WYSIWYG (What You See Is What You Get) editors rather than lightweight Markdown.&lt;/p&gt;
+
+&lt;p&gt;Despite those early limitations, I loved it. I truly believed TheBrain was a brilliant note-taking app–a pioneer of sorts for what we now call a knowledge graph. During those years, it was far superior to giants like Evernote and OneNote for personal knowledge management. There was no Notion, no Obsidian. Even though I was still paying for Evernote’s 10 GB monthly plan, TheBrain shone brightly during what felt like the dark ages of digital note-taking.&lt;/p&gt;
+
+&lt;p&gt;Technology has advanced and evolved rapidly over the last ten years. We now have plenty of excellent alternatives, making it easy to dump Evernote. Yet, I stuck with TheBrain, even though it lagged behind in mobile app development and AI integration. Awesome new features kept being introduced with each major version upgrade.&lt;/p&gt;
+
+&lt;h2 id=&quot;thebrain-15-making-it-great-again&quot;&gt;&lt;strong&gt;TheBrain 15: Making It Great Again&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;In recent years, almost every software vendor has rushed to introduce some form of AI feature. TheBrain was no exception. &lt;a href=&quot;https://thebrain.com/products/thebrain/thebrain14&quot;&gt;Version 14&lt;/a&gt; was the first to integrate OpenAI’s ChatGPT for Pro users. But honestly, that was about it–I didn’t feel it justified the subscription cost. So, I started looking for alternatives and experimenting with AI-first note-taking apps for a better user experience.&lt;/p&gt;
+
+&lt;p&gt;However, the release of TheBrain 15 completely changed my mind. It is an absolute game-changer. Here are some of the standout features:&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-like&quot;&gt;&lt;strong&gt;What I Like:&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;A revamped, more agentic and capable AI user interface:&lt;/strong&gt; It even comes with free allowances (reasonable hourly, daily, and weekly usage limits powered by GPT-5.1) available to everyone, including free tier users.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cerebro, the new AI agent:&lt;/strong&gt; It doesn’t just edit a single thought (node); it can also explore related notes, suggest links and relationships, and perform research via web searches.&lt;/p&gt;
+
+    &lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;687&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//thebrain15/thebrain15-cerebro_730x687.webp&quot; alt=&quot;TheBrain 15 Cerebro&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+      &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;687&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//thebrain15/thebrain15-cerebro_730x687.png&quot; alt=&quot;TheBrain 15 Cerebro&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+    &lt;/amp-img&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Local LLM support:&lt;/strong&gt; It supports local models (via LM Studio, Ollama, and vLLM) on the desktop version, ensuring complete privacy and unlimited AI queries.&lt;/p&gt;
+
+    &lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;675&quot; height=&quot;626&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//thebrain15/thebrain15-local-ai-settings_675x626.webp&quot; alt=&quot;TheBrain 15 Local AI settings&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+      &lt;amp-img fallback=&quot;&quot; width=&quot;675&quot; height=&quot;626&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts//thebrain15/thebrain15-local-ai-settings_675x626.png&quot; alt=&quot;TheBrain 15 Local AI settings&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+    &lt;/amp-img&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Unified UI:&lt;/strong&gt; Enjoy a consistent user interface across all major platforms (Windows, macOS, Linux, iOS, Android, and Web).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Native Linux support.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A much more powerful API:&lt;/strong&gt; Greatly improves third-party integrations and automation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, no software in the world is perfect.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-dont-like&quot;&gt;&lt;strong&gt;What I Don’t Like:&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Slight bloat and performance lag:&lt;/strong&gt; TheBrain 15 feels somewhat heavier and slightly slower than previous versions, particularly the desktop app. It feels like more parts of the app are now powered by web-based technologies, making it feel less like a native Windows application.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;No mobile local LLM support:&lt;/strong&gt; The mobile versions (iOS and Android) do not support local LLMs yet.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Feature limitations with local LLMs:&lt;/strong&gt; Web search and “thinking” (reasoning) options are unavailable when using local LLMs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tiered cloud sync limits:&lt;/strong&gt; Free accounts are now capped at 100 MB and roughly 7,000 thoughts (nodes) in total across all synced brains. While this policy forces you to prune outdated notes to free up space, the restrictions feel fair, especially considering you get a free AI quota in return.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clunky Markdown support:&lt;/strong&gt; Markdown integration still feels a bit buggy and less intuitive in the note editor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;my-final-thoughts&quot;&gt;&lt;strong&gt;My Final Thoughts&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;TheBrain 15 is undoubtedly a stellar upgrade for existing users. I think everyone will appreciate the new AI interface. Improved cross-platform consistency ensures a seamless experience on all your devices, whether you stick with Windows or finally ditch it to embrace the Linux ecosystem. Developers will also love the &lt;a href=&quot;https://www.thebrain.com/blog/thebrain-api-local&quot;&gt;new local API&lt;/a&gt; featured in the desktop client.&lt;/p&gt;
+
+&lt;p&gt;What about for newcomers? Well, it depends. Nowadays, you can build a very similar networked mind map using &lt;a href=&quot;https://obsidian.md/&quot;&gt;Obsidian&lt;/a&gt; coupled with the &lt;a href=&quot;https://community.obsidian.md/plugins/excalibrain&quot;&gt;ExcaliBrain&lt;/a&gt; plugin—and that route is entirely open-source. Some users are perfectly satisfied with Obsidian’s default &lt;a href=&quot;https://obsidian.md/help/plugins/graph&quot;&gt;graph view&lt;/a&gt;, though I personally am not. I prefer the explicit parent, child, and sibling relationships that only TheBrain delivers.&lt;/p&gt;
+
+&lt;p&gt;If you prefer a highly structured hierarchy over a web of random connections, give TheBrain a try. Best of all, you won’t be vendor-locked: all notes can be exported as folders, text outlines, Markdown, or JSON files. There is absolutely no harm in giving it a spin.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, everyone’s brain works a little differently. Just choose the tool that best fits your personal style and workflow philosophy.&lt;/p&gt;
+
+&lt;p&gt;Happy learning!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 27 Jun 2026 18:06:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/productivity/thebrain-15-review-ai-mind-mapping/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/productivity/thebrain-15-review-ai-mind-mapping/</guid>
+        
+        <category>TheBrain</category>
+        
+        <category>Knowledge Management</category>
+        
+        <category>PKM</category>
+        
+        <category>Second Brain</category>
+        
+        <category>Research Tool</category>
+        
+        
+        <category>Productivity</category>
+        
+      </item>
     
       <item>
         <title>Instaparser: Leveraging a Decade of Instapaper Tech for Rock-Solid Content Extraction</title>
@@ -1753,146 +1835,6 @@ A clean, simple pie chart that shows the percentage of your library dedicated to
         
         
         <category>Productivity</category>
-        
-      </item>
-    
-      <item>
-        <title>Fix Netlify CLI &amp; Node Task List `ntl` Conflict on Windows with Volta</title>
-        <description>&lt;p&gt;If you’re a web developer hosting your projects on Netlify, chances are the &lt;a href=&quot;https://docs.netlify.com/cli/get-started/&quot;&gt;Netlify CLI&lt;/a&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netlify-cli&lt;/code&gt;) is one of your must-have tools for streamline deployments, configuring site settings, and debugging issues—all right from your terminal. At the same time, &lt;a href=&quot;https://www.npmjs.com/package/ntl&quot;&gt;Node Task List&lt;/a&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt;) is a fantastic utlity that scans your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt; and creates an interactive menu of npm scripts. With NTL, you can easily launch tasks like starting a server or running builds in just a few clicks, saving you time and effort.&lt;/p&gt;
-
-&lt;p&gt;The catch is that both packages attempt to register the same executable name, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt;. When installed globally via npm, this results in a naming conflict and produces installation errors.&lt;/p&gt;
-
-&lt;h2 id=&quot;common-errors&quot;&gt;Common Errors&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;On Linux with NVM&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Terminal
-&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl
-&lt;span class=&quot;gr&quot;&gt;npm error code EEXIST
-npm error path /home/user/.nvm/versions/node/v20.17.0/bin/ntl
-npm error EEXIST: file already exists
-npm error File exists: /home/user/.nvm/versions/node/v20.17.0/bin/ntl
-npm error Remove the existing file and try again, or run npm
-npm error with --force to overwrite files recklessly.
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Luckily, fixing the conflict on Linux is straightforward if you’re using the Node version manager &lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;NVM&lt;/a&gt;. Simply install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netlify-cli&lt;/code&gt; first, then force the installation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--force&lt;/code&gt; option to overwrite the conflicting executable.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;On Windows with Volta&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# PowerShell
-&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt;
-&lt;span class=&quot;gr&quot;&gt;Volta error: Executable &apos;ntl&apos; is already installed by netlify-cli
-&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;
-Please remove netlify-cli before installing ntl
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;For Windows users especially who rely on &lt;a href=&quot;https://volta.sh/&quot;&gt;Volta&lt;/a&gt; as their Node version manager, the issue is  a bit trickier. Volta doesn’t allow conflicting executables, so forcing the installation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; won’t resolve the problem.&lt;/p&gt;
-
-&lt;p&gt;In this guide, we’ll walk you through the steps to resolve the naming conflict on Windows, ensuring that both tools can coexist peacefully and letting you enjoy the best of both worlds in your development workflow.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;step-by-step-guide-to-fix-the-conflict&quot;&gt;Step-by-Step Guide to Fix the Conflict&lt;/h2&gt;
-
-&lt;h3 id=&quot;1-uninstall-node-task-list-if-already-installed&quot;&gt;1. Uninstall Node Task List (if already installed)&lt;/h3&gt;
-
-&lt;p&gt;To ensure there are no lingering conflicts, begin by uninstalling any global installation of Node Task List:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm uninstall &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;2-install-netlify-cli&quot;&gt;2. Install Netlify CLI&lt;/h3&gt;
-
-&lt;p&gt;Next, install the Netlify CLI globally. This sets up the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; executable for Netlify:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; netlify-cli
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;3-verify-the-netlify-cli-installation&quot;&gt;3. Verify the Netlify CLI Installation&lt;/h3&gt;
-
-&lt;p&gt;Check that Netlify CLI is properly installed by running:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;volta which ntl
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You should see an output similar to:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Users\&amp;lt;User Name&amp;gt;\AppData\Local\Volta\tools\image\packages\netlify-cli\ntl&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;4-modify-voltas-user-binaries-configuration&quot;&gt;4. Modify Volta’s User Binaries Configuration&lt;/h3&gt;
-
-&lt;p&gt;Open File Explorer and navigate to:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Users\&amp;lt;User Name&amp;gt;\AppData\Local\Volta\tools\user\bins\&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;5-remove-the-conflicting-registration-file&quot;&gt;5. Remove the Conflicting Registration File&lt;/h3&gt;
-
-&lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bins&lt;/code&gt; folder, locate and delete the file named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl.json&lt;/code&gt;. Removing this file clears the conflicting registration for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; command.&lt;/p&gt;
-
-&lt;h3 id=&quot;6-reinstall-node-task-list&quot;&gt;6. Reinstall Node Task List&lt;/h3&gt;
-
-&lt;p&gt;With the conflicting file removed, reinstall Node Task List globally:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; ntl
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This command registers Node Task List with its own executable path without interfering with Netlify CLI.&lt;/p&gt;
-
-&lt;h3 id=&quot;7-verify-both-installations-are-working-separately&quot;&gt;7. Verify Both Installations Are Working Separately&lt;/h3&gt;
-
-&lt;p&gt;Finally, ensure both tools are correctly configured by checking their respective executable paths:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;volta which ntl
-volta which netlify
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The outputs should point to different locations, for example:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Node Task List:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;...\Volta\tools\image\packages\ntl\ntl&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Netlify CLI:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;...\Volta\tools\image\packages\netlify-cli\netlify&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now you’re all set! You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ntl&lt;/code&gt; command to run Node Task List tasks, while the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netlify&lt;/code&gt; command will work with the Netlify CLI—without any conflicts.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;By following these steps, you resolve the executable naming conflict between Node Task List and Netlify CLI on a Windows machine with Volta. This solution is perfect for Netlify developers who want to maintain a smooth, efficient workflow without installation hassles.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested in more tips, be sure to check out our blog for additional resources.&lt;/p&gt;
-
-&lt;p&gt;Happy coding!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;additional-resources&quot;&gt;Additional Resources&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.netlify.com/cli/get-started/&quot;&gt;Get started with Netlify CLI | Netlify Docs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.to/kizmelvin/top-10-netlify-cli-commands-13ai&quot;&gt;Top 10 Netlify CLI Commands - DEV Community&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 10 Apr 2025 23:04:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/devtools/resolve-netlify-cli-node-task-list-ntl-conflict-windows-volta/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/resolve-netlify-cli-node-task-list-ntl-conflict-windows-volta/</guid>
-        
-        <category>Netlify CLI</category>
-        
-        <category>Node.js</category>
-        
-        <category>User Tips</category>
-        
-        <category>Volta</category>
-        
-        <category>Windows</category>
-        
-        
-        <category>Developer tools</category>
         
       </item>
     
