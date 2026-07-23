@@ -5,8 +5,8 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Jul 2026 20:55:08 +0800</pubDate>
-    <lastBuildDate>Wed, 22 Jul 2026 20:55:08 +0800</lastBuildDate>
+    <pubDate>Thu, 23 Jul 2026 15:46:23 +0800</pubDate>
+    <lastBuildDate>Thu, 23 Jul 2026 15:46:23 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -73,7 +73,8 @@
 
 &lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;Note&lt;/div&gt;&lt;div class=&quot;alert__content&quot;&gt;
     
-&lt;p&gt;On macOS, replace the path with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/Library/Application\ Support/Code/User/globalStorage/storage.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;On macOS, replace the path with &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/Library/Application Support/Code/User/globalStorage/storage.json&lt;/code&gt;&lt;/p&gt;
 
 
   &lt;/div&gt;
