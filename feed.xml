@@ -5,9 +5,98 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Aug 2026 17:53:21 +0800</pubDate>
-    <lastBuildDate>Fri, 21 Aug 2026 17:53:21 +0800</lastBuildDate>
+    <pubDate>Sun, 23 Aug 2026 12:13:01 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Aug 2026 12:13:01 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>How I Export My Cline Usage Data using n8n and an Undocumented API</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/&quot;&gt;After Google sunsetted the Gemini CLI&lt;/a&gt;, I completely shifted my daily workflow to &lt;a href=&quot;https://cline.bot/&quot;&gt;&lt;strong&gt;Cline&lt;/strong&gt;&lt;/a&gt;. Being able to Bring Your Own Key (BYOK), and connect local models across IDE and terminal environments gave me back control over my dev setup without worrying about vendor lock-in.&lt;/p&gt;
+
+&lt;p&gt;Most days, its free-tier models like &lt;a href=&quot;https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash&quot;&gt;DeepSeek v4 Flash&lt;/a&gt; get the job done just fine. But whenever I need to swap to a paid model for heavy-lifting tasks, &lt;a href=&quot;https://docs.cline.bot/getting-started/cline-provider&quot;&gt;API credits&lt;/a&gt; can burn down surprisingly fast.&lt;/p&gt;
+
+&lt;p&gt;Cline has an online dashboard to check your usage history, but it caps you at 10 items per page. Manually clicking through pages just to see what I spent last week was painfully slow–so I looked under the hood.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-hidden-api-endpoint&quot;&gt;The Hidden API Endpoint&lt;/h2&gt;
+
+&lt;p&gt;Since Cline’s dashboard is rendered on the client side, it fetches everything via a quiet internal REST API:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://api.cline.bot/api/v1/users/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;YOUR_USER_ID&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/usages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;While the browser uses cookies, I tested it with a standard &lt;a href=&quot;https://docs.cline.bot/api/authentication&quot;&gt;&lt;strong&gt;Cline API Key&lt;/strong&gt;&lt;/a&gt;–and it authorized without a hitch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A few quick rules of this endpoint:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Reverse Chronological&lt;/strong&gt;: It returns your newest records first.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Custom Limits&lt;/strong&gt;: The default page size is 10, but passing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;limit=100&lt;/code&gt; works smoothly to speed up downloads.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cursor Pagination&lt;/strong&gt;: Each response provides a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nextToken&lt;/code&gt; string, which acts as your cursor for the next fetch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;automating-the-export-with-n8n&quot;&gt;Automating the Export with n8n&lt;/h2&gt;
+
+&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;1168&quot; height=&quot;209&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/n8n-fetch-all-cline-usages-workflow.webp&quot; alt=&quot;n8n workflow&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1168&quot; height=&quot;209&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/n8n-fetch-all-cline-usages-workflow.png&quot; alt=&quot;n8n workflow&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;/figure&gt;
+
+&lt;p&gt;Instead of writing a custom script, I set up a simple n8n workflow to pull the paginated records and dump them into a CSV file.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Manual Trigger&lt;/strong&gt;: Starts the flow on demand.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Set Variables&lt;/strong&gt;: Defines your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UserID&lt;/code&gt; string in one place.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;HTTP Request&lt;/strong&gt;: Calls the endpoint with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;limit=100&lt;/code&gt; and Bearer auth. It uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$response.body.data.nextToken&lt;/code&gt; to handle pagination automatically, with a 3-second pause between requests to stay polite.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Split Out&lt;/strong&gt;: Extracts the nested &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data.items&lt;/code&gt; array into clean, individual JSON records.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Convert to File&lt;/strong&gt;: Formats the JSON items into a structured CSV download.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;alert alert--primary&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;🎁 Free Template&lt;/div&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;Want to skip the manual setup? You can &lt;a href=&quot;https://buymeacoffee.com/chriskyfung/e/568170&quot;&gt;download the complete n8n workflow template for free&lt;/a&gt; on &lt;strong&gt;Buy Me a Coffee&lt;/strong&gt;.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert--warning&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;Keep your keys safe&lt;/div&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;Store your Cline API keys in n8n’s Credentials Manager instead of hardcoding them into workflow nodes.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert--success&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;alert__title&quot;&gt;Pro-Tips&lt;/div&gt;&lt;div class=&quot;alert__content&quot;&gt;
+    
+&lt;p&gt;If you are a heavy user, pulling thousands of historical entries in one go might trigger rate limits. In n8n’s HTTP node, you can toggle &lt;strong&gt;Limit Pages Fetched&lt;/strong&gt; to cap how far back you grab data. Alternatively, tweak the stop condition to halt as soon as it sees a record ID you’ve already saved.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once you have the CSV file ready, you can easily attach nodes to sync it straight to &lt;a href=&quot;https://www.dropbox.com/referrals/AACiQSPlFY8-uRraFxyjP8XhkJe-Q5ZvC6k?src=global9&quot;&gt;Dropbox&lt;/a&gt; or push records into MySQL for long-term tracking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Related:&lt;/strong&gt; &lt;a href=&quot;/blog/devtools/secure-self-host-n8n-stack/&quot;&gt;Securely Self-Host n8n with Docker, Traefik, and Cloudflare&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;wrap-up--community-questions&quot;&gt;Wrap-up &amp;amp; Community Questions&lt;/h2&gt;
+
+&lt;p&gt;Running LLMs takes real infrastructure, power, and water—the free lunch won’t last forever. Getting clear visibility into your token usage is the easiest way to keep costs reasonable.&lt;/p&gt;
+
+&lt;p&gt;Have you tried the &lt;a href=&quot;https://cline.bot/cline-pass&quot;&gt;&lt;strong&gt;ClinePass&lt;/strong&gt;&lt;/a&gt; subscription yet? For daily vibe coding, do you stick to open weights models or proprietary options?&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Aug 2026 12:08:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/devtools/export-cline-usages-with-n8n/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/export-cline-usages-with-n8n/</guid>
+        
+        <category>Cline</category>
+        
+        <category>API</category>
+        
+        <category>n8n</category>
+        
+        <category>DevTools</category>
+        
+        
+        <category>Developer tools</category>
+        
+      </item>
     
       <item>
         <title>Ultimate Guide to Automating VS Code Profile &amp; Extensions Backups</title>
@@ -1865,135 +1954,6 @@ A clean, simple pie chart that shows the percentage of your library dedicated to
         <category>Cloud</category>
         
         <category>Project</category>
-        
-      </item>
-    
-      <item>
-        <title>Securely Self-Host n8n with Docker, Traefik, and Cloudflare</title>
-        <description>&lt;p&gt;I’m a huge fan of &lt;a href=&quot;https://n8n.io/&quot;&gt;n8n&lt;/a&gt;, the powerful workflow automation tool. While self-hosting n8n offers great flexibility, I found the initial setup process could be complex and time-consuming. I wanted a simple, secure, and repeatable way to deploy my own n8n instance. That’s why I created &lt;strong&gt;n8n-stack&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I’m excited to share it with you today!&lt;/p&gt;
-
-&lt;aside style=&quot;position: relative;&quot;&gt;
-    &lt;a href=&quot;#toc-skipped&quot; class=&quot;screen-reader-only&quot;&gt;Skip table of contents&lt;/a&gt;
-&lt;/aside&gt;
-
-&lt;div id=&quot;toc&quot;&gt;Table of Contents&lt;/div&gt;
-
-&lt;ul class=&quot;no_toc&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#what-is-n8n-stack&quot; id=&quot;markdown-toc-what-is-n8n-stack&quot;&gt;What is n8n-stack?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#why-self-host-n8n-with-this-stack&quot; id=&quot;markdown-toc-why-self-host-n8n-with-this-stack&quot;&gt;Why Self-Host n8n with This Stack?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#key-features-of-n8n-stack&quot; id=&quot;markdown-toc-key-features-of-n8n-stack&quot;&gt;Key Features of n8n-stack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#getting-started-with-your-secure-n8n-instance&quot; id=&quot;markdown-toc-getting-started-with-your-secure-n8n-instance&quot;&gt;Getting Started with Your Secure n8n Instance&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#let-me-know-what-you-think&quot; id=&quot;markdown-toc-let-me-know-what-you-think&quot;&gt;Let Me Know What You Think&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#take-control-of-your-automation&quot; id=&quot;markdown-toc-take-control-of-your-automation&quot;&gt;Take Control of Your Automation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;aside id=&quot;toc-skipped&quot;&gt;&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;what-is-n8n-stack&quot;&gt;What is n8n-stack?&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/chriskyfung/n8n-traefik-cloudflared-stack&quot;&gt;&lt;strong&gt;n8n-stack&lt;/strong&gt;&lt;/a&gt; (officially &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n8n-traefik-cloudflared-stack&lt;/code&gt;) is a production-ready set of configuration files to help you self-host n8n using &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; or &lt;a href=&quot;https://podman.io/&quot;&gt;Podman&lt;/a&gt;. It comes with &lt;a href=&quot;https://doc.traefik.io/traefik/&quot;&gt;Traefik&lt;/a&gt; as a reverse proxy and is secured by &lt;a href=&quot;https://www.cloudflare.com/zero-trust/&quot;&gt;Cloudflare Zero Trust&lt;/a&gt;, giving you a private and secure n8n environment.&lt;/p&gt;
-
-&lt;p&gt;The project is based on an excellent tutorial by &lt;a href=&quot;https://kjetilfuras.com/self-host-n8n-with-cloudflare-zero-trust/&quot;&gt;Kjetil Furas&lt;/a&gt;, but I’ve added my own tweaks and enhancements to make it even more robust and user-friendly for a seamless n8n self-hosting experience.&lt;/p&gt;
-
-&lt;p&gt;The stack includes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;n8n:&lt;/strong&gt; The star of the show for all your automation needs.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Traefik:&lt;/strong&gt; A modern reverse proxy to handle web traffic efficiently.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cloudflare Tunnel:&lt;/strong&gt; Securely exposes your n8n instance to the internet without opening firewall ports, thanks to Cloudflare Zero Trust.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;why-self-host-n8n-with-this-stack&quot;&gt;Why Self-Host n8n with This Stack?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Enhanced Security:&lt;/strong&gt; By using Cloudflare Tunnel, you don’t expose your server directly to the internet. All traffic is routed through Cloudflare’s secure network.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Simplified Management:&lt;/strong&gt; The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; files are pre-configured for a quick start.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cost-Effective:&lt;/strong&gt; Self-hosting can be cheaper than paid plans, especially if you already have a server.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Full Control:&lt;/strong&gt; You have complete control over your data, workflows, and the n8n environment.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;key-features-of-n8n-stack&quot;&gt;Key Features of n8n-stack&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Docker and Podman Ready:&lt;/strong&gt; Includes compose files for both Docker and rootless Podman, so you can use your preferred container engine.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Security Hardened:&lt;/strong&gt; The default configuration is enhanced for better security, such as using a file-based provider for Traefik.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Simple Backup and Restore:&lt;/strong&gt; A handy script is included to help you back up and restore your n8n data with ease.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Clear Documentation:&lt;/strong&gt; Comprehensive documentation is available in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/docs&lt;/code&gt; directory to guide you through every step.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Pinned Versions:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n8n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;traefik&lt;/code&gt; image versions are pinned to ensure stable and predictable deployments.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;getting-started-with-your-secure-n8n-instance&quot;&gt;Getting Started with Your Secure n8n Instance&lt;/h2&gt;
-
-&lt;p&gt;I’ve tried to make it as simple as possible to get up and running:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Clone the repository:&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/chriskyfung/n8n-traefik-cloudflared-stack.git
- &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;n8n-traefik-cloudflared-stack
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Follow the setup instructions:&lt;/strong&gt; The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md&lt;/code&gt; contains all the details for the initial configuration.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Choose your container engine:&lt;/strong&gt; Head over to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/docs&lt;/code&gt; directory and follow the specific guide for either Docker or Podman.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;let-me-know-what-you-think&quot;&gt;Let Me Know What You Think&lt;/h2&gt;
-
-&lt;p&gt;I built n8n-stack to solve my own n8n self-hosting challenges, and I hope it can be useful to others in the community. I’d love for you to check it out on GitHub, give it a try, and share your feedback.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;fab fa-github&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;strong&gt;&lt;a href=&quot;https://github.com/chriskyfung/n8n-traefik-cloudflared-stack&quot;&gt;Check out the n8n-stack repository on GitHub&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I’m always open to feedback and contributions, so feel free to open an issue or a pull request!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;take-control-of-your-automation&quot;&gt;Take Control of Your Automation&lt;/h2&gt;
-
-&lt;p&gt;Embarking on the self-hosting journey for your workflow automation can seem complex, but it doesn’t have to be a daunting task. With &lt;strong&gt;n8n-stack&lt;/strong&gt;, you are equipped with a clear, secure, and production-ready path to unlock the full potential of n8n on your own terms. This project was born from the desire to eliminate the initial setup hurdles, providing a robust environment with Docker, Traefik, and Cloudflare right out of the box.&lt;/p&gt;
-
-&lt;p&gt;This stack is more than just a collection of configuration files; it’s a launchpad designed to get you up and running quickly, so you can focus on what truly matters: building powerful, creative automations that solve real-world problems. The power to innovate is now firmly in your hands. Dive in, explore the possibilities, and start your n8n journey today.&lt;/p&gt;
-
-&lt;p&gt;Happy Automating! 🚀&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kjetilfuras.com/self-host-n8n-with-cloudflare-zero-trust/&quot;&gt;Self-Host n8n with Cloudflare Zero Trust and Docker&lt;/a&gt; by Kjetil Furas&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.n8n.io/&quot;&gt;n8n Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://doc.traefik.io/traefik/&quot;&gt;Traefik Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/&quot;&gt;Cloudflare Zero Trust Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.podman.io/&quot;&gt;Podman Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/&quot;&gt;Docker Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 18 Sep 2025 09:09:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/devtools/secure-self-host-n8n-stack/</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/secure-self-host-n8n-stack/</guid>
-        
-        <category>n8n</category>
-        
-        <category>Self-Hosting</category>
-        
-        <category>Docker</category>
-        
-        <category>Podman</category>
-        
-        <category>Traefik</category>
-        
-        <category>Cloudflare Tuunel</category>
-        
-        
-        <category>Developer tools</category>
         
       </item>
     
