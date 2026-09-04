@@ -5,9 +5,152 @@
     <description>Feel free to bookmark this to keep an eye on my project updates</description>
     <link>https://chriskyfung.github.io/</link>
     <atom:link href="https://chriskyfung.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Aug 2026 12:13:01 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Aug 2026 12:13:01 +0800</lastBuildDate>
+    <pubDate>Fri, 04 Sep 2026 21:21:31 +0800</pubDate>
+    <lastBuildDate>Fri, 04 Sep 2026 21:21:31 +0800</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Visualizing Cline API Token Usage in Jupyter &amp; Google Colab</title>
+        <description>&lt;h2 id=&quot;introduction--from-raw-data-to-visual-insights&quot;&gt;&lt;strong&gt;Introduction – From Raw Data to Visual Insights&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Vibe coding with &lt;a href=&quot;https://cline.bot/&quot;&gt;&lt;strong&gt;Cline&lt;/strong&gt;&lt;/a&gt; makes building software faster than ever, but as you scale up your workflow, staying on top of your API spending becomes essential.&lt;/p&gt;
+
+&lt;p&gt;In my previous article, &lt;a href=&quot;/blog/devtools/export-cline-usages-with-n8n/&quot;&gt;&lt;em&gt;How I Export My Cline Usage Data using n8n and an Undocumented API&lt;/em&gt;&lt;/a&gt;, we walked through retrieving raw usage records automatically using n8n workflows and Cline’s internal API endpoint.&lt;/p&gt;
+
+&lt;p&gt;While having a raw CSV file or spreadsheet is a great first step, long tables of token numbers won’t easily tell you the full story. Browsing hundreds of rows makes it almost impossible to spot sudden cost spikes, measure prompt cache savings, or see when you do most of your vibe coding.&lt;/p&gt;
+
+&lt;p&gt;To turn that raw export into clear, actionable intelligence, I created a dedicated &lt;strong&gt;&lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter&lt;/a&gt; / &lt;a href=&quot;https://jupyter.org/&quot;&gt;Google Colab&lt;/a&gt; Notebook&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Instead of requiring you to build complex database pipelines or configure heavy BI dashboards, this solution provides a zero-setup, one-click visualization suite tailored specifically for Cline users. By leveraging Python’s &lt;a href=&quot;https://pandas.pydata.org/&quot;&gt;pandas&lt;/a&gt; and &lt;a href=&quot;https://seaborn.pydata.org/&quot;&gt;seaborn&lt;/a&gt; libraries, the notebook automatically processes your usage history—handling nested API fields and ISO timestamps—to generate a comprehensive financial and operational dashboard.&lt;/p&gt;
+
+&lt;p&gt;With this notebook, you can instantly:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Track Financial Velocity:&lt;/strong&gt; Plot daily API costs alongside a running total to catch budget spikes early.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Measure Prompt Caching Savings:&lt;/strong&gt; Visualize exact cache efficiency percentages across models so you know how much budget prompt caching is preserving.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Identify Context Inflation:&lt;/strong&gt; Pinpoint runaway prompts and heavy context sessions before they drain your API credits.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Map Coding Habits:&lt;/strong&gt; Generate productivity heatmaps by day and hour to see when you consume the most tokens.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;purpose--core-benefits&quot;&gt;&lt;strong&gt;Purpose &amp;amp; Core Benefits&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;When vibe coding with frontier paid AI models, API costs can fluctuate drastically depending on prompt length, file context, and iteration loops.&lt;/p&gt;
+
+&lt;p&gt;This notebook was built to give every developer complete transparency into their AI tooling expense without the need to learn backend data engineering.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-zero-infrastructure-required&quot;&gt;&lt;strong&gt;1. Zero Infrastructure Required&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;You don’t need to spin up a SQL database, manage Grafana instances, or host a web app. The entire analysis runs locally inside Jupyter or on Google Colab’s free cloud infrastructure.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-privacy-first&quot;&gt;&lt;strong&gt;2. Privacy First&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Your API key metadata, file history, and spending data remain entirely within your own execution environment. Nothing is sent to third-party telemetry services.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-understanding-token-economics&quot;&gt;&lt;strong&gt;3. Understanding Token Economics&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;API pricing isn’t uniform. Input tokens, output tokens, and cached tokens carry vastly different cost multipliers. The notebook breaks down these tiers visually so you can optimize how you prompt Cline.&lt;/p&gt;
+
+&lt;h2 id=&quot;dashboard-tour--visualizations&quot;&gt;&lt;strong&gt;Dashboard Tour &amp;amp; Visualizations&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Here is a quick walkthrough of the four main chart suites generated automatically when you run the notebook:&lt;/p&gt;
+
+&lt;amp-carousel width=&quot;730&quot; height=&quot;365&quot; layout=&quot;responsive&quot; type=&quot;slides&quot; role=&quot;region&quot; aria-label=&quot;Looping carousel&quot; autoplay=&quot;&quot; delay=&quot;5000&quot; loop=&quot;&quot;&gt;
+
+&lt;figure class=&quot;text-center carousel-image&quot;&gt;&lt;amp-img width=&quot;948&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-cost-and-financial-analytics_948x400.webp&quot; alt=&quot;Daily vs. Cumulative Spend: Bar Chart \+ Cumulative Line&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;948&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-cost-and-financial-analytics_948x400.png&quot; alt=&quot;Daily vs. Cumulative Spend: Bar Chart \+ Cumulative Line&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Daily vs. Cumulative Spend&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;text-center carousel-image&quot;&gt;&lt;amp-img width=&quot;1085&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-token-volume-and-caching-efficiency_1085x400.webp&quot; alt=&quot;Prompt Cache Efficiency: Model Cache Hit Ratio Box&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1085&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-token-volume-and-caching-efficiency_1085x400.png&quot; alt=&quot;Prompt Cache Efficiency: Model Cache Hit Ratio Box&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Prompt Cache Efficiency&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;text-center carousel-image&quot;&gt;&lt;amp-img width=&quot;1085&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-model-usage-patterns_1085x400.webp&quot; alt=&quot;Context Size Distribution: Prompt Token Boxplot per Model&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;1085&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-model-usage-patterns_1085x400.png&quot; alt=&quot;Context Size Distribution: Prompt Token Boxplot per Model&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Context Size Distribution&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;text-center carousel-image&quot;&gt;&lt;amp-img width=&quot;860&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-productivity-heatmap_860x400.webp&quot; alt=&quot;Productivity Heatmap: Day vs. Hour Matrix&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
+        &lt;amp-img fallback=&quot;&quot; width=&quot;860&quot; height=&quot;400&quot; layout=&quot;intrinsic&quot; src=&quot;/images/posts/devtools/cline-visual-analysis-productivity-heatmap_860x400.png&quot; alt=&quot;Productivity Heatmap: Day vs. Hour Matrix&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
+      &lt;/amp-img&gt;&lt;figcaption&gt;Productivity Heatmap&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;/amp-carousel&gt;
+
+&lt;h3 id=&quot;1-daily-spend-vs-cumulative-total-usd&quot;&gt;&lt;strong&gt;1. Daily Spend vs. Cumulative Total (USD)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;What it shows:&lt;/strong&gt; A dual-axis graph combining daily cost bars with a line tracking your total cumulative spend over time.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why it matters:&lt;/strong&gt; Helps you instantly spot anomaly days where a complex refactoring session consumed $10+ in API credits, keeping your monthly spend predictable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-prompt-caching-efficiency-by-model-&quot;&gt;&lt;strong&gt;2. Prompt Caching Efficiency by Model (%)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;What it shows:&lt;/strong&gt; Boxplots evaluating the percentage of prompt tokens retrieved from cache across various AI models.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why it matters:&lt;/strong&gt; Caching can reduce input costs by up to 90%. This chart confirms whether your prompts are reusing context effectively or forcing full context re-indexes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-prompt-token-distribution-context-size&quot;&gt;&lt;strong&gt;3. Prompt Token Distribution (Context Size)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;What it shows:&lt;/strong&gt; A distribution of input tokens sent per request across different model providers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why it matters:&lt;/strong&gt; Detects “context inflation”—scenarios where Cline sends large directory listings or massive code bases with every prompt turn.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-productivity-heatmap-requests-by-day-and-hour&quot;&gt;&lt;strong&gt;4. Productivity Heatmap: Requests by Day and Hour&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;What it shows:&lt;/strong&gt; A color-coded grid mapping your coding frequency across the 24 hours of the day and 7 days of the week.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Why it matters:&lt;/strong&gt; Reveals your natural vibe coding rhythm—showing whether you burn most tokens during late-night weekend sprints or structured weekday afternoons.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;-get-started-immediately&quot;&gt;&lt;strong&gt;🚀 Get Started Immediately&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;You can make a copy of the notebook directly in Google Colab and start analyzing your spend in minutes:&lt;/p&gt;
+
+&lt;figure class=&quot;shadow-none text-center&quot;&gt;&lt;a href=&quot;https://colab.research.google.com/gist/chriskyfung/c46bc0ab6ecc36c8c0d084765d0f5ede/cline-usage-history-export-analytics-notebook.ipynb&quot;&gt;&lt;amp-img width=&quot;140&quot; height=&quot;24&quot; layout=&quot;intrinsic&quot; src=&quot;https://colab.research.google.com/assets/colab-badge.svg&quot; alt=&quot;Open In Colab&quot;&gt;&lt;/amp-img&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-1-open-the-notebook-in-google-colab&quot;&gt;&lt;strong&gt;Step 1: Open the Notebook in Google Colab&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Click the &lt;strong&gt;Open in Colab&lt;/strong&gt; badge above. In Google Colab, select &lt;strong&gt;File &amp;gt; Save a copy in Drive&lt;/strong&gt; to create your editable copy.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-upload-your-usage-csv&quot;&gt;&lt;strong&gt;Step 2: Upload Your Usage CSV&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Upload your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cline_usage_history.csv&lt;/code&gt; file generated from the n8n pipeline (or from the included API extraction cell) directly into the Colab file sidebar.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-run-all-cells&quot;&gt;&lt;strong&gt;Step 3: Run All Cells&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Navigate to &lt;strong&gt;Runtime &amp;gt; Run all&lt;/strong&gt; (or press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;F9&lt;/kbd&gt; / &lt;kbd&gt;Cmd&lt;/kbd&gt; + &lt;kbd&gt;F9&lt;/kbd&gt;). The notebook will validate your columns, calculate cache hit rates, reformat time zones, and render all four graph suites sequentially.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5-conclusion--community-feedback&quot;&gt;&lt;strong&gt;Section 5: Conclusion &amp;amp; Community Feedback&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Vibe coding empowers us to build software at unprecedented speeds, but keeping your development costs sustainable is key to maintaining long-term momentum. By transforming raw usage logs into visual dashboards, you gain full clarity on where every token goes.&lt;/p&gt;
+
+&lt;h3 id=&quot;try-it-out&quot;&gt;&lt;strong&gt;Try it out!&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Access the &lt;a href=&quot;https://colab.research.google.com/gist/chriskyfung/c46bc0ab6ecc36c8c0d084765d0f5ede/cline-usage-history-export-analytics-notebook.ipynb&quot;&gt;Google Colab Notebook&lt;/a&gt; Template&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What model is saving you the most on prompt caching?&lt;/strong&gt; Are you sticking to free/cheap open models like DeepSeek, or relying on Claude Sonnet for heavy lifting? Let me know in the comments below!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 04 Sep 2026 21:09:00 +0800</pubDate>
+        <link>https://chriskyfung.github.io/blog/devtools/visualize-cline-api-tokens-google-colab/</link>
+        <guid isPermaLink="true">https://chriskyfung.github.io/blog/devtools/visualize-cline-api-tokens-google-colab/</guid>
+        
+        <category>Cline</category>
+        
+        <category>API</category>
+        
+        <category>Python</category>
+        
+        <category>Google Colab</category>
+        
+        <category>Jupyter Notebook</category>
+        
+        <category>Data Visualization</category>
+        
+        
+        <category>Developer tools</category>
+        
+      </item>
     
       <item>
         <title>How I Export My Cline Usage Data using n8n and an Undocumented API</title>
@@ -80,6 +223,8 @@
 &lt;p&gt;Running LLMs takes real infrastructure, power, and water—the free lunch won’t last forever. Getting clear visibility into your token usage is the easiest way to keep costs reasonable.&lt;/p&gt;
 
 &lt;p&gt;Have you tried the &lt;a href=&quot;https://cline.bot/cline-pass&quot;&gt;&lt;strong&gt;ClinePass&lt;/strong&gt;&lt;/a&gt; subscription yet? For daily vibe coding, do you stick to open weights models or proprietary options?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Related&lt;/strong&gt;: &lt;a href=&quot;/blog/devtools/visualize-cline-api-tokens-google-colab/&quot;&gt;Visualizing Cline API Token Usage in Jupyter &amp;amp; Google Colab&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Aug 2026 12:08:00 +0800</pubDate>
         <link>https://chriskyfung.github.io/blog/devtools/export-cline-usages-with-n8n/</link>
@@ -1780,180 +1925,6 @@ A clean, simple pie chart that shows the percentage of your library dedicated to
         <category>Project</category>
         
         <category>Cloud</category>
-        
-      </item>
-    
-      <item>
-        <title>Qwiklabs Lab Completion Tracker - Version History</title>
-        <description>&lt;amp-img src=&quot;https://img.shields.io/github/v/release/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;94&quot; height=&quot;20&quot; alt=&quot;GitHub release (latest by date)&quot;&gt;&lt;/amp-img&gt;
-&lt;amp-img src=&quot;https://img.shields.io/badge/License-GPLv3-blue.svg&quot; width=&quot;96&quot; height=&quot;20&quot; alt=&quot;License: GPL v3&quot;&gt;&lt;/amp-img&gt;
-&lt;amp-img src=&quot;https://img.shields.io/github/issues-raw/chriskyfung/qwiklabs-completed-labs-tracker&quot; width=&quot;92&quot; height=&quot;20&quot; alt=&quot;GitHub issues&quot;&gt;&lt;/amp-img&gt;
-
-&lt;p&gt;This page provides a detailed version history for the &lt;strong&gt;Qwiklabs Lab Completion Tracker&lt;/strong&gt; userscript. It documents the evolution of the script, from its initial release to the latest updates, detailing new features, improvements, and bug fixes designed to help users track their learning progress on &lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt; (formerly &lt;strong&gt;Qwiklabs&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;fas fa-chevron-circle-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;a href=&quot;/blog/qwiklabs/google-cloud-skills-boost-progress-tracker/&quot;&gt;Back to the main post&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v300---migration-to-google-cloud-skills-boost-&quot;&gt;v3.0.0 - Migration to Google Cloud Skills Boost &lt;span role=&quot;img&quot; aria-label=&quot;Rocket emoji&quot;&gt;🚀&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2025-10-04&quot;&gt;2025-10-04&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;This major release marks a significant milestone, migrating the entire script to support the platform’s rebranding from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qwiklabs.com&lt;/code&gt; to the new &lt;strong&gt;Google Cloud Skills Boost&lt;/strong&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudskillsboost.google&lt;/code&gt;). This was a critical update to ensure continued functionality for all users. Beyond the migration, this version introduced several key enhancements. The script now automatically creates records for new activities, improving tracking on catalog search results. Under the hood, significant refactoring was done to improve robustness, readability, and security by avoiding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; and centralizing ID extraction.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Full migration from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qwiklabs.com&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloudskillsboost.google&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Features&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Automatically create records for unregistered activities.&lt;/li&gt;
-      &lt;li&gt;Improve activity tracking for catalog search results.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Fixes&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Improve robustness with null checks for DOM elements.&lt;/li&gt;
-      &lt;li&gt;Improve main function’s error logging.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Refactoring&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Improve script robustness, readability, and security by avoiding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;Centralize ID extraction using named groups in the router.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v210---enhanced-profile-page-and-routing&quot;&gt;v2.1.0 - Enhanced Profile Page and Routing&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-10-14&quot;&gt;2021-10-14&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;This release enhanced the profile page with several key features. Pagination was added to allow browsing of the entire activity history. Visual cues, such as warning icons for unrecognized labs and a red background for failed ones, were introduced to make it easier to identify items requiring attention.&lt;/p&gt;
-
-&lt;p&gt;The main function was also refactored to use a more robust routing system, improving code maintainability and structure.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v207---styling-and-bug-fixes&quot;&gt;v2.0.7 - Styling and Bug Fixes&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-10-13&quot;&gt;2021-10-13&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;This maintenance release included styling adjustments to align with a new activity card design on Qwiklabs. It also addressed several bugs related to the database update feature to improve its reliability.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v20---revamp-for-new-qwiklabs-web-design-&quot;&gt;v2.0 - Revamp for New Qwiklabs Web Design &lt;span role=&quot;img&quot; aria-label=&quot;Helicopter emoji&quot;&gt;🚁&lt;/span&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-30&quot;&gt;2021-09-30&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;Following a major platform redesign by Qwiklabs in late September 2021, this version was released with a significant code rewrite to ensure compatibility with the new user interface. This update restored all core features of the tracker.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v10---fix-the-change-in-my-learning-url&quot;&gt;v1.0 - Fix the Change in My Learning URL&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-09-18&quot;&gt;2021-09-18&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Replaced &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/profile/activity&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Changed the CSS selector and Regular Expression to look up the total number of activities.&lt;/li&gt;
-  &lt;li&gt;Do not support pages with a URL starting with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/my_learning&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v055---improved-activity-name-recognition&quot;&gt;v0.5.5 - Improved Activity Name Recognition&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-05-04&quot;&gt;2021-05-04&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;To address parsing issues with activity names containing special characters, this release improved data integrity by using the unique lab/quest ID as the primary key for database updates, rather than relying on the activity name.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v054---fix-the-change-in-my-learning-layout&quot;&gt;v0.5.4 - Fix the Change in My Learning Layout&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2021-04-09&quot;&gt;2021-04-09&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Added a quick link to view all &lt;strong&gt;My Learning Activity&lt;/strong&gt; results&lt;/li&gt;
-  &lt;li&gt;Revised the way to update the database records with the new format of learning activity data&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v052--v053---adapting-to-ui-changes&quot;&gt;v0.5.2 &amp;amp; v0.5.3 - Adapting to UI Changes&lt;/h2&gt;
-
-&lt;p&gt;These minor updates were released to maintain compatibility with Qwiklabs’ evolving design. They included the removal of code for deprecated pages and adjustments to correctly parse the new &lt;strong&gt;Catalog&lt;/strong&gt; and &lt;strong&gt;My Learning Activity&lt;/strong&gt; table layouts.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v051&quot;&gt;v0.5.1&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-06-14&quot;&gt;2020-06-14&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;A one-click sync button was introduced to improve user experience. This feature allows for an instant update of all lab and quest statuses in the local database, eliminating the need for manual checks.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;v050&quot;&gt;v0.5.0&lt;/h2&gt;
-
-&lt;p&gt;This foundational update migrated data storage from a simple markup-based system to &lt;strong&gt;IndexedDB&lt;/strong&gt;, resulting in more efficient and scalable data handling. A significant portion of the codebase was also refactored to use modern &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;async/await&lt;/code&gt; syntax, improving readability and maintainability.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;for-v048-or-earlier&quot;&gt;For v0.4.8 or Earlier&lt;/h2&gt;
-
-&lt;p&gt;Early versions of the script relied on a manually maintained list of completed labs stored within the userscript. The primary feature was a green check-circle (&lt;i class=&quot;fa fa-check-circle&quot; style=&quot;color:green&quot;&gt;&lt;/i&gt;) added to completed items on catalog pages to simplify progress tracking.&lt;/p&gt;
-
-&lt;figure class=&quot;text-center&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-catalog-page-old.webp&quot; alt=&quot;Green Check Mark and Highlight displays on Qwiklabs Catalog Page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;576&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-catalog-page-old.png&quot; alt=&quot;Green Check Mark and Highlight displays on Qwiklabs Catalog Page&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the Qwiklabs catalog page (For version &amp;lt; 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;v048---support-tracking-home-and-my-learning-pages&quot;&gt;v0.4.8 - Support Tracking “Home” and “My Learning” Pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-06-06&quot;&gt;2020-06-06&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;Tracking support was extended to the &lt;strong&gt;Home&lt;/strong&gt; and &lt;strong&gt;My Learning&lt;/strong&gt; pages. This version also introduced &lt;strong&gt;NEW&lt;/strong&gt; badges and yellow highlights for activities not yet present in the database, making it easier to identify new content.&lt;/p&gt;
-
-&lt;h3 id=&quot;v045&quot;&gt;v0.4.5&lt;/h3&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;i class=&quot;fas fa-calendar-day fa-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;time datetime=&quot;2020-05-20&quot;&gt;2020-05-20&lt;/time&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;This version introduced visual highlights for completed items to improve visibility. Annotations were extended to the “Your Favorites” section, and colored backgrounds were added to tables on the “Completed Courses” and “Completed Labs” pages for easier scanning. To help distinguish between different activity types, a purple highlight was added for game records.&lt;/p&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-
-   &lt;figure class=&quot;col-md-6 text-center mb-4&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;339&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-courses-table.webp&quot; alt=&quot;Markers and Highlights on Completed Courses&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;339&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-courses-table.png&quot; alt=&quot;Markers and Highlights on Completed Courses&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the &lt;i&gt;Completed Courses&lt;/i&gt; page (For version &amp;gt;= 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
-
-   &lt;figure class=&quot;col-md-6 text-center mb-4&quot;&gt;&lt;amp-img width=&quot;730&quot; height=&quot;337&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-labs-table.webp&quot; alt=&quot;Markers and Highlights on Completed Labs pages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;
-        &lt;amp-img fallback=&quot;&quot; width=&quot;730&quot; height=&quot;337&quot; layout=&quot;intrinsic&quot; src=&quot;/images/projects/qwiklabs-complete-indicator-labs-table.png&quot; alt=&quot;Markers and Highlights on Completed Labs pages&quot; on=&quot;tap:lightbox1&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;lightbox&quot;&gt;&lt;/amp-img&gt;
-      &lt;/amp-img&gt;&lt;figcaption&gt;Effects on the &lt;i&gt;Completed Labs&lt;/i&gt; page (For version &amp;gt;= 0.4.5)&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;/div&gt;
-
-&lt;hr /&gt;
-</description>
-        <pubDate>Sat, 11 Oct 2025 14:10:00 +0800</pubDate>
-        <link>https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</link>
-        <guid isPermaLink="true">https://chriskyfung.github.io/blog/qwiklabs/qwiklab-completion-tracker-versions</guid>
-        
-        <category>Qwiklabs</category>
-        
-        <category>Google Cloud</category>
-        
-        <category>Google Cloud Skills Boost</category>
-        
-        <category>Userscript</category>
-        
-        <category>Changelog</category>
-        
-        
-        <category>Cloud</category>
-        
-        <category>Project</category>
         
       </item>
     
